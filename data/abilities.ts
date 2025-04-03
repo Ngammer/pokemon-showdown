@@ -715,7 +715,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Love Ball') {
-			this.boost({ spa: 2}, pokemon)
+			this.boost({ spa: 2 }, pokemon)
 			pokemon.useItem();
 			}
 		},
@@ -1020,7 +1020,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Competi Ball') {
-			this.boost({ atk: 2}, pokemon)
+			this.boost({ atk: 2 }, pokemon)
 			pokemon.useItem();
 			}
 		},
@@ -4048,7 +4048,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Dusk Ball') {
-			this.boost({ spe: 2}, pokemon)
+			this.boost({ spe: 2 }, pokemon)
 			pokemon.useItem();
 			}
 		},
@@ -5641,7 +5641,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			pokemon.addVolatile('truant');
 		},
-		condition: {},
+		condition: { },
 		flags: { },
 		name: "Truant",
 		rating: -1,
@@ -6348,7 +6348,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	llamasiniestra: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move' && effect.type === "Dark") {
-				this.boost({ spa: 2}, source);
+				this.boost({ spa: 2 }, source);
 			}
 		},
 		onSourceDamagingHit(damage, target, source, move) {
@@ -6891,7 +6891,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	name: "Protector del Bosque",
 	rating: 2.5,
 	num: -142,
-},
+ },
 	sabiodelbosque: {
 	onAnyModifyBoost(boosts, pokemon) {
 		const unawareUser = this.effectState.target;
@@ -6922,7 +6922,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	name: "Sabio del Bosque",
 	rating: 3.5,
 	num: -143,
-},
+ },
 cabezajerarquica: {
 	onSourceModifyDamage(damage, source, target, move) {
 		let mod = 1;
@@ -6956,7 +6956,7 @@ cabezajerarquica: {
 	name: "Cabeza Jerarquica",
 	rating: 1.5,
 	num: -144,
-},
+ },
 caparazoninestable: {
 	onResidualOrder: 29,
 	onResidual(pokemon) {
@@ -6976,7 +6976,7 @@ caparazoninestable: {
 	name: "Caparazon Inestable",
 	rating: 5,
 	num: -145,
-},
+ },
 letrassagradas: {
 	onPrepareHit(source, target, move) {
 		if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
@@ -7036,7 +7036,7 @@ letrassagradas: {
 	name: "Letras Sagradas",
 	rating: 4,
 	num: -146,
-},
+ },
 entradatriunfal: {
 	onStart(pokemon) {
 		let activated = false;
@@ -7051,7 +7051,7 @@ entradatriunfal: {
 	name: "Entrada Triunfal",
 	rating: 2,
 	num: -147,
-},
+ },
 ignomotor: {
 	onTryHit(target, source, move) {
 		if (target !== source && move.type === 'Fire' ) {
@@ -7073,7 +7073,7 @@ ignomotor: {
 	name: "Ignomotor",
 	rating: 3,
 	num: -148,
-},
+ },
 patadabrutal: {
 	onBasePowerPriority: 19,
 	onBasePower(basePower, attacker, defender, move) {
@@ -7085,5 +7085,5 @@ patadabrutal: {
 	name: "Patada Brutal",
 	rating: 3.5,
 	num: -149,
-},
+ },
 };
