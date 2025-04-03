@@ -715,8 +715,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Love Ball') {
-			this.boost({ spa: 2 }, pokemon)
-			pokemon.useItem();
+				this.boost({ spa: 2 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -815,7 +815,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (item.isBerry && pokemon.addVolatile('cudchew')) {
 				pokemon.volatiles['cudchew'].berry = item;
 			}
-			this.heal(pokemon.baseMaxhp / 4)
+			this.heal(pokemon.baseMaxhp / 4);
 		},
 		onEnd(pokemon) {
 			delete pokemon.volatiles['cudchew'];
@@ -1020,8 +1020,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Competi Ball') {
-			this.boost({ atk: 2 }, pokemon)
-			pokemon.useItem();
+				this.boost({ atk: 2 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -1221,8 +1221,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEnd(pokemon) {
 			if (pokemon.getItem().name === 'Chrish Ball') {
-			pokemon.useItem();
-		}
+				pokemon.useItem();
+			}
 		},
 		// Implemented in statuses.js
 		rating: 1.5,
@@ -1440,8 +1440,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Chrish Ball') {
-				pokemon.addVolatile('flashfire')
-			pokemon.useItem();
+				pokemon.addVolatile('flashfire');
+				pokemon.useItem();
 			}
 		},
 		flags: { breakable: 1 },
@@ -1600,7 +1600,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of pokemon.foes()) {
 				if (target.item) {
 					this.add('-item', target, target.getItem().name, '[from] ability: Frisk', '[of] ' + pokemon);
-					target.addVolatile("embargo")
+					target.addVolatile("embargo");
 				}
 			}
 		},
@@ -1702,7 +1702,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEnd(pokemon) {
 			if (pokemon.getItem().name === 'Net Ball') {
-			pokemon.useItem();
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -1878,9 +1878,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualSubOrder: 3,
 		onStart(pokemon) {
 			const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
-				for (const ally of allies) {
-					ally.cureStatus()
-				}
+			for (const ally of allies) {
+				ally.cureStatus();
+			}
 		},
 		onResidual(pokemon) {
 			for (const allyActive of pokemon.adjacentAllies()) {
@@ -2138,7 +2138,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	illuminate: {
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move && (source === this.effectState.target)) {
-				return accuracy += 10;
+				accuracy += 10;
 			}
 			return accuracy;
 		},
@@ -2357,8 +2357,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Master Ball') {
-			this.boost({ atk: 1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ atk: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -2466,8 +2466,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Fast Ball') {
-			this.boost({ spa: 1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ spa: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { breakable: 1 },
@@ -2676,7 +2676,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSwitchIn(pokemon) {
 			if (pokemon.hasItem('ultraball')) {
-				this.boost({ spa: 1, atk: 1 }, pokemon)
+				this.boost({ spa: 1, atk: 1 }, pokemon);
 				pokemon.useItem();
 			}
 		},
@@ -2867,39 +2867,39 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
 			if (pokemon.activeTurns < 9) {
-			let stats: BoostID[] = [];
-			const boost: SparseBoostsTable = {};
-			let statPlus: BoostID;
-			for (statPlus in pokemon.boosts) {
-				if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
-				if (pokemon.boosts[statPlus] < 6) {
-					stats.push(statPlus);
+				let stats: BoostID[] = [];
+				const boost: SparseBoostsTable = {};
+				let statPlus: BoostID;
+				for (statPlus in pokemon.boosts) {
+					if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
+					if (pokemon.boosts[statPlus] < 6) {
+						stats.push(statPlus);
+					}
 				}
-			}
-			let randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
-			if (randomStat) boost[randomStat] = 1;
-			stats = [];
+				const randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
+				if (randomStat) boost[randomStat] = 1;
+				stats = [];
 
-			this.boost(boost, pokemon, pokemon);
-		}
+				this.boost(boost, pokemon, pokemon);
+			}
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Park Ball') {
 				let stats: BoostID[] = [];
-			const boost: SparseBoostsTable = {};
-			let statPlus: BoostID;
-			for (statPlus in pokemon.boosts) {
-				if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
-				if (pokemon.boosts[statPlus] < 6) {
-					stats.push(statPlus);
+				const boost: SparseBoostsTable = {};
+				let statPlus: BoostID;
+				for (statPlus in pokemon.boosts) {
+					if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
+					if (pokemon.boosts[statPlus] < 6) {
+						stats.push(statPlus);
+					}
 				}
-			}
-			let randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
-			if (randomStat) boost[randomStat] = 1;
-			stats = [];
+				const randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
+				if (randomStat) boost[randomStat] = 1;
+				stats = [];
 
-			this.boost(boost, pokemon, pokemon);
-			pokemon.useItem();
+				this.boost(boost, pokemon, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -2918,13 +2918,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSourceDamagingHit(damage, target, source, move) {
 			if (source.hasItem('Electirizer') && move.type === 'Electric' && source.species.name === 'Electivire') {
-				this.boost({ spe: 1 }, source)
+				this.boost({ spe: 1 }, source);
 			}
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Quick Ball') {
-			this.boost({ spe: 1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ spe: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { breakable: 1 },
@@ -2940,8 +2940,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Luxury Ball') {
-			this.boost({ atk: 1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ atk: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -3457,9 +3457,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				const r = this.random(100);
 				if (r < 34) {
 					const item = target.takeItem();
-				if (item) {
-					this.add('-enditem', target, item.name, '[from] ability: Pickpocket', '[of] ' + source);
-				}
+					if (item) {
+						this.add('-enditem', target, item.name, '[from] ability: Pickpocket', '[of] ' + source);
+					}
 				}
 			}
 		},
@@ -3472,7 +3472,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualOrder: 28,
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
-			const oldItem = pokemon.item
+			const oldItem = pokemon.item;
 			const pickupTargets = this.getAllActive().filter(target => (
 				target.lastItem && target.usedItemThisTurn && pokemon.isAdjacent(target)
 			));
@@ -3623,11 +3623,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
 				if (this.field.isTerrain('psychicterrain')) {
-					target.addVolatile("gastroacid")
+					target.addVolatile("gastroacid");
 				}
 			}
 			if (this.field.isTerrain('grassyterrain')) {
-				this.heal(pokemon.baseMaxhp / 16.5, pokemon, pokemon)
+				this.heal(pokemon.baseMaxhp / 16.5, pokemon, pokemon);
 			}
 		},
 		onModifyDamage(damage, source, target, move) {
@@ -3637,19 +3637,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onTryBoost(boost, target, source, effect) {
 			if (this.field.isTerrain('mistyterrain')) {
-			if (source && target === source) return;
-			let showMsg = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					delete boost[i];
-					showMsg = true;
+				if (source && target === source) return;
+				let showMsg = false;
+				let i: BoostID;
+				for (i in boost) {
+					if (boost[i]! < 0) {
+						delete boost[i];
+						showMsg = true;
+					}
+				}
+				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+					this.add("-fail", target, "unboost", "[from] ability: Power of Alchemy", "[of] " + target);
 				}
 			}
-			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: Power of Alchemy", "[of] " + target);
-			}
-		}
 		},
 		flags: { breakable: 1 },
 		name: "Power of Alchemy",
@@ -4048,8 +4048,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Dusk Ball') {
-			this.boost({ spe: 2 }, pokemon)
-			pokemon.useItem();
+				this.boost({ spe: 2 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -4246,7 +4246,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			} else if (move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel') {
 				this.debug('Sand Force boost');
-					return this.chainModify(1.25);
+				return this.chainModify(1.25);
 			}
 		},
 		onImmunity(type, pokemon) {
@@ -4268,7 +4268,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEnd(pokemon) {
 			if (pokemon.getItem().name === 'Nest Ball') {
-			pokemon.useItem();
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -4323,8 +4323,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Friend Ball') {
-			this.boost({ atk: 1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ atk: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { breakable: 1 },
@@ -4451,7 +4451,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!pokemon.hasAbility('shadowtag') && pokemon.isAdjacent(this.effectState.target) && !(pokemon.hasType('Ghost') || pokemon.hasType('Bug') || pokemon.hasType('Dark')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
 				pokemon.tryTrap(true);
 			}
-
 		},
 		onFoeMaybeTrapPokemon(pokemon, source) {
 			if (!source) source = this.effectState.target;
@@ -4463,7 +4462,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidual(pokemon) {
 			for (const target of pokemon.adjacentFoes()) {
 				if (!target.volatiles['shadowtag']) {
-				target.addVolatile('shadowtag')
+					target.addVolatile('shadowtag');
 				}
 			}
 		},
@@ -4478,7 +4477,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 			onTrapPokemon(pokemon) {
 				if (pokemon.volatiles['shadowtag']?.turns >= 2) {
-				pokemon.trapped = pokemon.maybeTrapped = false;
+					pokemon.trapped = pokemon.maybeTrapped = false;
 				}
 			},
 		},
@@ -4631,10 +4630,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onModifyAtk(atk, pokemon) {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
-			return this.chainModify(1.3);
-		} else if (!pokemon.volatiles['slowstart']) {
-			return this.chainModify(1.05);
-		}
+				return this.chainModify(1.3);
+			} else if (!pokemon.volatiles['slowstart']) {
+				return this.chainModify(1.05);
+			}
 		},
 		onModifySpe(spe, pokemon) {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
@@ -4662,19 +4661,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-				let debuff = 1.3 - (0.1 * this.effectState.duration!)
-				return this.chainModify(debuff); }
-				else {
-				let debuff = 1.05 - (0.05 * this.effectState.duration!)
-				return this.chainModify(debuff);
-			}
-		},
+					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					return this.chainModify(debuff);
+				} else {
+					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					return this.chainModify(debuff);
+				}
+			},
 			onModifySpe(spe, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					let debuff = 1.3 - (0.1 * this.effectState.duration!)
-					return this.chainModify(debuff); }
-					else {
-					let debuff = 1.05 - (0.05 * this.effectState.duration!)
+					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					return this.chainModify(debuff);
+				} else {
+					const debuff = 1.05 - (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
@@ -4695,7 +4694,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEnd(pokemon) {
 			if (pokemon.getItem().name === 'Moon Ball') {
-			pokemon.useItem();
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -4918,8 +4917,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Repeat Ball') {
-			this.boost({ spe: 1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ spe: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { breakable: 1 },
@@ -5031,9 +5030,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Dive Ball') {
-			this.boost({ spa: 1 }, pokemon)
-			pokemon.useItem();
-		}
+				this.boost({ spa: 1 }, pokemon);
+				pokemon.useItem();
+			}
 		},
 		flags: { breakable: 1 },
 		name: "Storm Drain",
@@ -5081,7 +5080,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (target.hasItem('covertcloak')) return;
 			if (this.checkMoveMakesContact(move, target, source)) {
-				target.addVolatile('trapped', source, move, 'trapper')
+				target.addVolatile('trapped', source, move, 'trapper');
 			}
 		},
 		flags: { breakable: 1 },
@@ -5214,13 +5213,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	swiftswim: {
 		onModifySpe(spe, pokemon) {
-			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather() ) || pokemon.volatiles['lureball']) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) || pokemon.volatiles['lureball']) {
 				return this.chainModify(2);
 			}
 		},
 		onEnd(pokemon) {
 			if (pokemon.getItem().name === 'Lure Ball') {
-			pokemon.useItem();
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -5326,7 +5325,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tanglinghair: {
 		onStart(target) {
-			target.swordBoost = false
+			target.swordBoost = false;
 		},
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target, true)) {
@@ -5538,7 +5537,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
 
 			/* if (this.randomChance(3, 10)) { */
-				target.trySetStatus('tox', source);
+			target.trySetStatus('tox', source);
 			/* } */
 		},
 
@@ -5690,7 +5689,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEnd(pokemon) {
 			pokemon.removeVolatile('unburden');
-			pokemon.removeVolatile('healball')
+			pokemon.removeVolatile('healball');
 		},
 		condition: {
 			onModifySpe(spe, pokemon) {
@@ -5701,7 +5700,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Heal Ball') {
-			pokemon.useItem();
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -5770,8 +5769,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			if (target.swordBoost) return;
 			if (target.hp <= target.maxhp / 2) {
-			target.swordBoost = true;
-			this.heal(target.baseMaxhp / 2, target, target);
+				target.swordBoost = true;
+				this.heal(target.baseMaxhp / 2, target, target);
 			}
 		},
 		flags: { },
@@ -5911,8 +5910,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Timer Ball') {
-			this.boost({ spe: 2, def: -1 }, pokemon)
-			pokemon.useItem();
+				this.boost({ spe: 2, def: -1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -6170,7 +6169,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	// Nuevo Meta
 	escudoescama: {
 		onDamagingHit(damage, target, source, move) {
-			if (this.checkMoveMakesContact(move, source, target)  && source.runStatusImmunity('powder')) {
+			if (this.checkMoveMakesContact(move, source, target) && source.runStatusImmunity('powder')) {
 				const r = this.random(100);
 				if (r < 11) {
 					source.setStatus('slp', target);
@@ -6216,7 +6215,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	gigantificacion: {
 		onStart(pokemon) {
 			const bestStat = pokemon.getBestStat(true, true);
-				this.boost({ [bestStat]: 1 }, pokemon);
+			this.boost({ [bestStat]: 1 }, pokemon);
 		},
 		flags: { },
 		name: "Gigantificacion",
@@ -6245,7 +6244,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onSourceModifyDamage(damage, source, target, move) {
-				return this.chainModify(0.9);
+			return this.chainModify(0.9);
 		},
 		flags: { breakable: 1 },
 		name: "Frubujas",
@@ -6303,8 +6302,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			let success = false;
-			for (const active of this.getAllActive()) {
-			}
 			const removeAll = ['stealthrock'];
 			const sides = [pokemon.side, ...pokemon.side.foeSidesWithConditions()];
 			for (const side of sides) {
@@ -6315,7 +6312,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 				}
 			}
-
 		},
 		flags: { breakable: 1 },
 		name: "Mineralizacion",
@@ -6384,8 +6380,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	inteligenciaartificial: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-				this.debug('Inteligencia Artificial boost');
-				return this.chainModify(1.4);
+			this.debug('Inteligencia Artificial boost');
+			return this.chainModify(1.4);
 		},
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
@@ -6426,14 +6422,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	inteligenciaavanzada: {
 		onModifyMove(move, pokemon, target) {
 			if (target) {
-			if (target.getStat('spd', false, true) > target.getStat('def', false, true) && move.category === "Special") {
-				move.overrideDefensiveStat = 'def';
-				move.basePower *= 0.8;
-			} else if (target.getStat('def', false, true) > target.getStat('spd', false, true) && move.category === "Physical") {
-				move.overrideDefensiveStat = 'spd';
-				move.basePower *= 0.8;
+				if (target.getStat('spd', false, true) > target.getStat('def', false, true) && move.category === "Special") {
+					move.overrideDefensiveStat = 'def';
+					move.basePower *= 0.8;
+				} else if (target.getStat('def', false, true) > target.getStat('spd', false, true) && move.category === "Physical") {
+					move.overrideDefensiveStat = 'spd';
+					move.basePower *= 0.8;
+				}
 			}
-		}
 		},
 		flags: { },
 		name: "Inteligencia Avanzada",
@@ -6442,10 +6438,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	inteligenciaantigua: {
 		onModifyMove(move, pokemon, target) {
-			if (typeof move.accuracy === 'number' ) {
-			 let change = 100 - move.accuracy
-			 move.accuracy += change
-			 move.basePower -= change * 0.25
+			if (typeof move.accuracy === 'number') {
+				const change = 100 - move.accuracy;
+				move.accuracy += change;
+				move.basePower -= change * 0.25;
 			}
 		},
 		flags: { },
@@ -6496,10 +6492,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	almapura: {
 		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod = 1) {
+			if (target.getMoveHitData(move).typeMod === 1) {
 				this.debug('Alma Pura neutralize');
 				return this.chainModify(0.5);
-			} else if (target.getMoveHitData(move).typeMod = 2) {
+			} else if (target.getMoveHitData(move).typeMod === 2) {
 				this.debug('Alma Pura neutralize');
 				return this.chainModify(0.25);
 			}
@@ -6513,12 +6509,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			for (const ally of pokemon.adjacentAllies()) {
 				if (ally.hp <= ally.baseMaxhp / 4) {
-					this.damage(ally.baseMaxhp / 4, ally, pokemon)
+					this.damage(ally.baseMaxhp / 4, ally, pokemon);
 				}
 			}
 			for (const foe of pokemon.adjacentFoes()) {
 				if (foe.hp <= foe.baseMaxhp / 4) {
-					this.damage(foe.baseMaxhp / 4, foe, pokemon)
+					this.damage(foe.baseMaxhp / 4, foe, pokemon);
 				}
 			}
 		},
@@ -6537,7 +6533,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onModifyMove(move) {
 			if (move.flags['bite']) {
-			move.drain = [1, 2];
+				move.drain = [1, 2];
 			}
 		},
 		flags: { },
@@ -6571,16 +6567,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -124,
 	},
 	heroismo: {
-			onDamagingHit(damage, target, source, move) {
-				if (target.getMoveHitData(move).typeMod > 0) {
+		onDamagingHit(damage, target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
 				this.boost({ spe: 1 });
-				}
-			},
-			onFoeModifyPriority(priority, pokemon, target, move) {
-				if (priority > 0) {
-					return 0;
-				}
-			},
+			}
+		},
+		onFoeModifyPriority(priority, pokemon, target, move) {
+			if (priority > 0) {
+				return 0;
+			}
+		},
 		flags: { breakable: 1 },
 		name: "Heroismo",
 		rating: 2.5,
@@ -6610,9 +6606,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	tectoanclaje: {
 		onDragOut(pokemon, source) {
 			if ((source && source !== pokemon) && !source.hasType('Flying')) {
-			this.add('-activate', pokemon, 'ability: Tectoanclaje');
-			this.damage(source.baseMaxhp / 3.333, source, pokemon)
-			return null;
+				this.add('-activate', pokemon, 'ability: Tectoanclaje');
+				this.damage(source.baseMaxhp / 3.333, source, pokemon);
+				return null;
 			}
 		},
 		onDamagingHit(damage, target, source, move) {
@@ -6689,7 +6685,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// crear condicion propia
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
-					target.addVolatile("taunt")
+				target.addVolatile("taunt");
 			}
 		},
 		flags: { },
@@ -6713,17 +6709,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	cuerpobendito: {
 		onDamagingHit(damage, target, source, effect) {
 			const r = this.random(100);
-				if (r < 20) {
-					this.boost({ atk: 1 });
-				} else if (r < 40) {
-					this.boost({ spa: 1 });
-				} else if (r < 60) {
-					this.boost({ def: 1 });
-				} else if (r < 80) {
-					this.boost({ spd: 1 });
-				} else if (r < 100) {
-					this.boost({ spe: 1 });
-				}
+			if (r < 20) {
+				this.boost({ atk: 1 });
+			} else if (r < 40) {
+				this.boost({ spa: 1 });
+			} else if (r < 60) {
+				this.boost({ def: 1 });
+			} else if (r < 80) {
+				this.boost({ spd: 1 });
+			} else if (r < 100) {
+				this.boost({ spe: 1 });
+			}
 		},
 		flags: { },
 		name: "Cuerpo Bendito",
@@ -6861,19 +6857,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMove(move, pokemon, target) {
 			if (move.type === 'Flying') {
 				if (this.randomChance(33, 100)) {
-				const r = this.random(100);
-				if (r < 20) {
-					this.boost({ atk: 1 });
-				} else if (r < 40) {
-					this.boost({ spa: 1 });
-				} else if (r < 60) {
-					this.boost({ def: 1 });
-				} else if (r < 80) {
-					this.boost({ spd: 1 });
-				} else if (r < 100) {
-					this.boost({ spe: 1 });
+					const r = this.random(100);
+					if (r < 20) {
+						this.boost({ atk: 1 });
+					} else if (r < 40) {
+						this.boost({ spa: 1 });
+					} else if (r < 60) {
+						this.boost({ def: 1 });
+					} else if (r < 80) {
+						this.boost({ spd: 1 });
+					} else if (r < 100) {
+						this.boost({ spe: 1 });
+					}
 				}
-			}
 			}
 		},
 		flags: { },
@@ -6884,206 +6880,206 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	protectordelbosque: {
 		onDamagingHit(damage, target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-			this.boost({ spa: 2 });
+				this.boost({ spa: 2 });
 			}
 		},
-	flags: { },
-	name: "Protector del Bosque",
-	rating: 2.5,
-	num: -142,
- },
+		flags: { },
+		name: "Protector del Bosque",
+		rating: 2.5,
+		num: -142,
+	},
 	sabiodelbosque: {
-	onAnyModifyBoost(boosts, pokemon) {
-		const unawareUser = this.effectState.target;
-		if (unawareUser === pokemon) return;
-		if (unawareUser === this.activePokemon && pokemon === this.activeTarget) {
-			boosts['def'] = 0;
-			boosts['spd'] = 0;
-			boosts['evasion'] = 0;
-		}
-		if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
-			boosts['atk'] = 0;
-			boosts['def'] = 0;
-			boosts['spa'] = 0;
-			boosts['accuracy'] = 0;
-		}
-	},
-	onTryAddVolatile(status, pokemon) {
-		if (status.id === 'confusion') return null;
-		if (status.id === 'taunt') return null;
-		if (status.id === 'torment') return null;
-	},
-	onDamagingHit(damage, target, source, move) {
-		if (target.getMoveHitData(move).typeMod > 0) {
-		this.boost({ spa: 2 });
-		}
-	},
-	flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, breakable: 1 },
-	name: "Sabio del Bosque",
-	rating: 3.5,
-	num: -143,
- },
-cabezajerarquica: {
-	onSourceModifyDamage(damage, source, target, move) {
-		let mod = 1;
-		if (target.hp >= target.maxhp / 1.5) mod *= 0.50;
-		return this.chainModify(mod);
-	},
-	onTryBoost(boost, target, source, effect) {
-		if ((target.hp <= target.maxhp / 1.5) && (target.hp >= target.maxhp / 3)) {
-		if (source && target === source) return;
-		let showMsg = false;
-		let i: BoostID;
-		for (i in boost) {
-			if (boost[i]! < 0) {
-				delete boost[i];
-				showMsg = true;
+		onAnyModifyBoost(boosts, pokemon) {
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (unawareUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
+				boosts['spd'] = 0;
+				boosts['evasion'] = 0;
 			}
-		}
-		if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-			this.add("-fail", target, "unboost", "[from] ability: Clear Body", "[of] " + target);
-		}
-	}
+			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
+				boosts['atk'] = 0;
+				boosts['def'] = 0;
+				boosts['spa'] = 0;
+				boosts['accuracy'] = 0;
+			}
+		},
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'confusion') return null;
+			if (status.id === 'taunt') return null;
+			if (status.id === 'torment') return null;
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.boost({ spa: 2 });
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, breakable: 1 },
+		name: "Sabio del Bosque",
+		rating: 3.5,
+		num: -143,
 	},
-	onBasePowerPriority: 19,
+	cabezajerarquica: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (target.hp >= target.maxhp / 1.5) mod *= 0.50;
+			return this.chainModify(mod);
+		},
+		onTryBoost(boost, target, source, effect) {
+			if ((target.hp <= target.maxhp / 1.5) && (target.hp >= target.maxhp / 3)) {
+				if (source && target === source) return;
+				let showMsg = false;
+				let i: BoostID;
+				for (i in boost) {
+					if (boost[i]! < 0) {
+						delete boost[i];
+						showMsg = true;
+					}
+				}
+				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+					this.add("-fail", target, "unboost", "[from] ability: Clear Body", "[of] " + target);
+				}
+			}
+		},
+		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hp <= attacker.maxhp / 3) {
 				this.debug('Cabeza Jerarquica boost');
 				return this.chainModify(1.33);
 			}
 		},
-	flags: { breakable: 1 },
-	name: "Cabeza Jerarquica",
-	rating: 1.5,
-	num: -144,
- },
-caparazoninestable: {
-	onResidualOrder: 29,
-	onResidual(pokemon) {
-		if (pokemon.baseSpecies.baseSpecies !== 'Slastma' || pokemon.transformed || !pokemon.hp) return;
-		if (pokemon.species.id === 'slastmaliberado' || pokemon.hp > pokemon.maxhp / 2) return;
-		this.add('-activate', pokemon, 'ability: Caparazon Inestable');
-		pokemon.formeChange('Slastma-Liberado', this.effect, true);
-		pokemon.baseMaxhp = Math.floor(Math.floor(
-			2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
-		) * pokemon.level / 100 + 10);
-		const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
-		pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
-		pokemon.maxhp = newMaxHP;
-		this.actions.useMove('caparazoninestable', pokemon);
+		flags: { breakable: 1 },
+		name: "Cabeza Jerarquica",
+		rating: 1.5,
+		num: -144,
 	},
-	flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
-	name: "Caparazon Inestable",
-	rating: 5,
-	num: -145,
- },
-letrassagradas: {
-	onPrepareHit(source, target, move) {
-		if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
-		const type = move.type;
-		if (type && type !== '???' && source.getTypes().join() !== type && (move.id === 'hiddenpower' || move.realMove === "Hidden Power")) {
-			if (!source.setType(type)) return;
-			this.effectState.protean = true;
-			this.add('-start', source, 'typechange', type, '[from] ability: Letras Sagradas');
-		}
+	caparazoninestable: {
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Slastma' || pokemon.transformed || !pokemon.hp) return;
+			if (pokemon.species.id === 'slastmaliberado' || pokemon.hp > pokemon.maxhp / 2) return;
+			this.add('-activate', pokemon, 'ability: Caparazon Inestable');
+			pokemon.formeChange('Slastma-Liberado', this.effect, true);
+			pokemon.baseMaxhp = Math.floor(Math.floor(
+				2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
+			) * pokemon.level / 100 + 10);
+			const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
+			pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
+			pokemon.maxhp = newMaxHP;
+			this.actions.useMove('caparazoninestable', pokemon);
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "Caparazon Inestable",
+		rating: 5,
+		num: -145,
 	},
-	onSwitchIn(pokemon) {
-		delete this.effectState.protean;
-	},
-	onTryMove(source, target, move) {
-		let type = "Normal"
-		if (move.type === type) return;
-		if ((target.hasType('Normal') || target.hasType('Rock') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Dark')) && !(target.hasType('Ghost') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Psychic') || target.hasType('Fairy'))) {
-			type = "Fighting"
-		} else if ((target.hasType('Bug') || target.hasType('Grass') || target.hasType('Ice') || target.hasType('Steel')) && !(target.hasType('Rock') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Dragon'))) {
-			type = "Fire"
-		} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Fire')) && !(target.hasType('Water') || target.hasType('Grass') || target.hasType('Dragon'))) {
-			type = "Water"
-		} else if ((target.hasType('Fighting') || target.hasType('Bug') || target.hasType('Grass')) && !(target.hasType('Rock') || target.hasType('Electric') || target.hasType('Steel'))) {
-			type = "Flying"
-		} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Water')) && !(target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Grass') || target.hasType('Dragon') || target.hasType('Steel'))) {
-			type = "Grass"
-		} else if ((target.hasType('Grass') || target.hasType('Fairy')) && !(target.hasType('Poison') || target.hasType('Ground') || target.hasType('Rock') || target.hasType('Ghost') || target.hasType('Steel'))) {
-			type = "Poison"
-		} else if ((target.hasType('Flying') || target.hasType('Water')) && !(target.hasType('Grass') || target.hasType('Electric') || target.hasType('Ground') || target.hasType('Dragon'))) {
-			type = "Electric"
-		} else if ((target.hasType('Poison') || target.hasType('Rock') || target.hasType('Fire') || target.hasType('Electric')|| target.hasType('Steel')) && !(target.hasType('Bug') || target.hasType('Grass') || target.hasType('Flying'))) {
-			type = "Ground"
-		} else if ((target.hasType('Fighting') || target.hasType('Poison')) && !(target.hasType('Psychic') || target.hasType('Steel') || target.hasType('Dark'))) {
-			type = "Psychic"
-		} else if ((target.hasType('Flying') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Ice')) && !(target.hasType('Fighting') || target.hasType('Ground') || target.hasType('Steel'))) {
-			type = "Rock"
-		} else if ((target.hasType('Flying') || target.hasType('Ground') || target.hasType('Grass') || target.hasType('Dragon')) && !(target.hasType('Water') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Fire'))) {
-			type = "Ice"
-		} else if ((target.hasType('Grass') || target.hasType('Psychic') || target.hasType('Dark')) && !(target.hasType('Fighting') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Ghost') || target.hasType('Steel') || target.hasType('Fire') || target.hasType('Fairy'))) {
-			type = "Bug"
-		} else if ((target.hasType('Dragon')) && !(target.hasType('Steel') || target.hasType('Fairy'))) {
-			type = "Dragon"
-		} else if ((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Normal'))) {
-			type = "Ghost"
-		} else if ((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Fighting') || target.hasType('Fairy'))) {
-			type = "Dark"
-		} else if ((target.hasType('Rock') || target.hasType('Ice') || target.hasType('Fairy')) && !(target.hasType('Steel') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Electric'))) {
-			type = "Steel"
-		} else if ((target.hasType('Fighting') || target.hasType('Dragon') || target.hasType('Dark')) && !(target.hasType('Poison') || target.hasType('Steel') || target.hasType('Fire'))) {
-			type = "Fairy"
-		}
-		 if (move.id === 'hiddenpower' || move.realMove === "Hidden Power") {
-			move.type = type
-		 }
-	},
-	flags: { },
-	name: "Letras Sagradas",
-	rating: 4,
-	num: -146,
- },
-entradatriunfal: {
-	onStart(pokemon) {
-		let activated = false;
-		const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				for (const condition of sideConditions) {
-					if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots')) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Entrada Triunfal', '[of] ' + pokemon);
-					}
-				}
-	},
-	flags: { },
-	name: "Entrada Triunfal",
-	rating: 2,
-	num: -147,
- },
-ignomotor: {
-	onTryHit(target, source, move) {
-		if (target !== source && move.type === 'Fire' ) {
-			if (!this.boost({ spe: 1 })) {
-				this.add('-immune', target, '[from] ability: Ignomotor');
+	letrassagradas: {
+		onPrepareHit(source, target, move) {
+			if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
+			const type = move.type;
+			if (type && type !== '???' && source.getTypes().join() !== type && (move.id === 'hiddenpower' || move.realMove === "Hidden Power")) {
+				if (!source.setType(type)) return;
+				this.effectState.protean = true;
+				this.add('-start', source, 'typechange', type, '[from] ability: Letras Sagradas');
 			}
-			return null;
-		} else if (source.hasItem('Magmarizer') && move.type === 'Fire') {
-			this.boost({ spe: 1 }, source)
-		}
+		},
+		onSwitchIn(pokemon) {
+			delete this.effectState.protean;
+		},
+		onTryMove(source, target, move) {
+			let type = "Normal";
+			if (move.type === type) return;
+			if ((target.hasType('Normal') || target.hasType('Rock') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Dark')) && !(target.hasType('Ghost') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Psychic') || target.hasType('Fairy'))) {
+				type = "Fighting";
+			} else if ((target.hasType('Bug') || target.hasType('Grass') || target.hasType('Ice') || target.hasType('Steel')) && !(target.hasType('Rock') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Dragon'))) {
+				type = "Fire";
+			} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Fire')) && !(target.hasType('Water') || target.hasType('Grass') || target.hasType('Dragon'))) {
+				type = "Water";
+			} else if ((target.hasType('Fighting') || target.hasType('Bug') || target.hasType('Grass')) && !(target.hasType('Rock') || target.hasType('Electric') || target.hasType('Steel'))) {
+				type = "Flying";
+			} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Water')) && !(target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Grass') || target.hasType('Dragon') || target.hasType('Steel'))) {
+				type = "Grass";
+			} else if ((target.hasType('Grass') || target.hasType('Fairy')) && !(target.hasType('Poison') || target.hasType('Ground') || target.hasType('Rock') || target.hasType('Ghost') || target.hasType('Steel'))) {
+				type = "Poison";
+			} else if ((target.hasType('Flying') || target.hasType('Water')) && !(target.hasType('Grass') || target.hasType('Electric') || target.hasType('Ground') || target.hasType('Dragon'))) {
+				type = "Electric";
+			} else if ((target.hasType('Poison') || target.hasType('Rock') || target.hasType('Fire') || target.hasType('Electric') || target.hasType('Steel')) && !(target.hasType('Bug') || target.hasType('Grass') || target.hasType('Flying'))) {
+				type = "Ground";
+			} else if ((target.hasType('Fighting') || target.hasType('Poison')) && !(target.hasType('Psychic') || target.hasType('Steel') || target.hasType('Dark'))) {
+				type = "Psychic";
+			} else if ((target.hasType('Flying') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Ice')) && !(target.hasType('Fighting') || target.hasType('Ground') || target.hasType('Steel'))) {
+				type = "Rock";
+			} else if ((target.hasType('Flying') || target.hasType('Ground') || target.hasType('Grass') || target.hasType('Dragon')) && !(target.hasType('Water') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Fire'))) {
+				type = "Ice";
+			} else if ((target.hasType('Grass') || target.hasType('Psychic') || target.hasType('Dark')) && !(target.hasType('Fighting') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Ghost') || target.hasType('Steel') || target.hasType('Fire') || target.hasType('Fairy'))) {
+				type = "Bug";
+			} else if ((target.hasType('Dragon')) && !(target.hasType('Steel') || target.hasType('Fairy'))) {
+				type = "Dragon";
+			} else if ((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Normal'))) {
+				type = "Ghost";
+			} else if ((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Fighting') || target.hasType('Fairy'))) {
+				type = "Dark";
+			} else if ((target.hasType('Rock') || target.hasType('Ice') || target.hasType('Fairy')) && !(target.hasType('Steel') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Electric'))) {
+				type = "Steel";
+			} else if ((target.hasType('Fighting') || target.hasType('Dragon') || target.hasType('Dark')) && !(target.hasType('Poison') || target.hasType('Steel') || target.hasType('Fire'))) {
+				type = "Fairy";
+			}
+			if (move.id === 'hiddenpower' || move.realMove === "Hidden Power") {
+				move.type = type;
+			}
+		},
+		flags: { },
+		name: "Letras Sagradas",
+		rating: 4,
+		num: -146,
 	},
-	/*onStart(pokemon) {
+	entradatriunfal: {
+		onStart(pokemon) {
+			const activated = false;
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots')) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Entrada Triunfal', '[of] ' + pokemon);
+				}
+			}
+		},
+		flags: { },
+		name: "Entrada Triunfal",
+		rating: 2,
+		num: -147,
+	},
+	ignomotor: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				if (!this.boost({ spe: 1 })) {
+					this.add('-immune', target, '[from] ability: Ignomotor');
+				}
+				return null;
+			} else if (source.hasItem('Magmarizer') && move.type === 'Fire') {
+				this.boost({ spe: 1 }, source);
+			}
+		},
+		/* onStart(pokemon) {
 		if (pokemon.getItem().name === 'Quick Ball') {
 		this.boost({ spe: 1 }, pokemon)
 		pokemon.useItem();
 		}
-	},*/
-	flags: { breakable: 1 },
-	name: "Ignomotor",
-	rating: 3,
-	num: -148,
- },
-patadabrutal: {
-	onBasePowerPriority: 19,
-	onBasePower(basePower, attacker, defender, move) {
-		if (move.flags['kick']) {
-			return this.chainModify(1.5);
-		}
+	}, */
+		flags: { breakable: 1 },
+		name: "Ignomotor",
+		rating: 3,
+		num: -148,
 	},
-	flags: { },
-	name: "Patada Brutal",
-	rating: 3.5,
-	num: -149,
- },
+	patadabrutal: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Patada Brutal",
+		rating: 3.5,
+		num: -149,
+	},
 };
