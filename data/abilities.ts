@@ -187,8 +187,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Level Ball') {
-			this.boost({spe: 1, def: -1, spa: 1, spd: -1, atk: 1}, pokemon)
-			pokemon.useItem()
+				this.boost({ spe: 1, def: -1, spa: 1, spd: -1, atk: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		flags: {},
@@ -207,7 +207,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						this.dex.getImmunity(moveType, pokemon) && this.dex.getEffectiveness(moveType, pokemon) > 0 ||
 						move.ohko
 					) {
-						target.addVolatile('disable', pokemon)
+						target.addVolatile('disable', pokemon);
 						this.add('-ability', pokemon, 'Anticipation');
 						return;
 					}
@@ -234,9 +234,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.maybeTrapped = true;
 			}
 		},
-		onResidual(pokemon){
+		onResidual(pokemon) {
 			for (const target of pokemon.adjacentFoes()) {
-				if(!target.volatiles['arenatrap']){
+				if (!target.volatiles['arenatrap']) {
 				target.addVolatile('arenatrap')
 				}
 			}
@@ -251,7 +251,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			},
 			onTrapPokemon(pokemon) {
-				if(pokemon.volatiles['arenatrap']?.turns >= 2){
+				if (pokemon.volatiles['arenatrap']?.turns >= 2) {
 				pokemon.trapped = pokemon.maybeTrapped = false;
 				}
 			},
@@ -394,7 +394,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	battlearmor: {
 		onSourceModifyDamage(damage, source, target, move) {
-			if (target.activeTurns <= 1){
+			if (target.activeTurns <= 1) {
 				return this.chainModify(0.5);
 			}
 		},
@@ -595,11 +595,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			source.abilityState.ending = true;
 			if (this.field.isWeather(['snowscape','hail'])) {
 				this.boost({def: 1});
-			} else if (this.field.isWeather('sunnyday')){
+			} else if (this.field.isWeather('sunnyday')) {
 				this.boost({atk: 1});
-			} else if (this.field.isWeather('raindance')){
+			} else if (this.field.isWeather('raindance')) {
 				this.boost({spa: 1});
-			} else if (this.field.isWeather('sandstorm')){
+			} else if (this.field.isWeather('sandstorm')) {
 				this.boost({spd: 1});
 			} else if (source.hasItem('pokeball')) {
 				this.boost({spd: 1, spa: 1, atk: 1, def: 1}, source);
@@ -797,7 +797,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					activated = true;
 				}
 				this.boost({spe: -1}, pokemon, target, null, true);
-				if(move.type === 'Flying'){
+				if (move.type === 'Flying') {
 					this.damage(pokemon.baseMaxhp / 4, pokemon, target);
 				}
 			}
@@ -886,7 +886,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					source.addVolatile('cutecharm');
 				}
 				const currentStack = source.volatiles['cutecharm'].stack || 0;
-				if (!target.fainted){
+				if (!target.fainted) {
 					source.volatiles['cutecharm'].stack = Math.min(currentStack + 0.1, 0.9);
 				}
 			}
@@ -1212,7 +1212,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Early Bird",
 		onModifyPriority(priority, source, target, move) {
-			if(['sunnyday', 'desolateland'].includes(source.effectiveWeather()) || source.volatiles['dreamball']){
+			if (['sunnyday', 'desolateland'].includes(source.effectiveWeather()) || source.volatiles['dreamball']) {
 				return priority + 1;
 			}
 		},
@@ -2863,7 +2863,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualOrder: 28,
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
-			if(pokemon.activeTurns < 9){
+			if (pokemon.activeTurns < 9) {
 			let stats: BoostID[] = [];
 			const boost: SparseBoostsTable = {};
 			let statPlus: BoostID;
@@ -2881,7 +2881,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		}
 		},
 		onStart(pokemon) {
-			if (pokemon.getItem().name === 'Park Ball'){
+			if (pokemon.getItem().name === 'Park Ball') {
 				let stats: BoostID[] = [];
 			const boost: SparseBoostsTable = {};
 			let statPlus: BoostID;
@@ -3479,7 +3479,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			randomTarget.lastItem = '';
 			this.add('-item', pokemon, this.dex.items.get(item), '[from] ability: Pickup');
 			pokemon.setItem(item);
-			if(pokemon.getItem().isBerry){
+			if (pokemon.getItem().isBerry) {
 				pokemon.eatItem();
 			};
 			pokemon.useItem()
@@ -3623,17 +3623,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					target.addVolatile("gastroacid")
 				}
 			}
-			if (this.field.isTerrain('grassyterrain')){
+			if (this.field.isTerrain('grassyterrain')) {
 				this.heal(pokemon.baseMaxhp / 16.5, pokemon, pokemon)
 			}
 		},
 		onModifyDamage(damage, source, target, move) {
-			if(this.field.isTerrain('electricterrain')){
+			if (this.field.isTerrain('electricterrain')) {
 				return this.chainModify(1.25);
 			}
 		},
 		onTryBoost(boost, target, source, effect) {
-			if (this.field.isTerrain('mistyterrain')){
+			if (this.field.isTerrain('mistyterrain')) {
 			if (source && target === source) return;
 			let showMsg = false;
 			let i: BoostID;
@@ -4241,7 +4241,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					this.debug('Sand Force boost');
 					return this.chainModify(1.5);
 				}
-			} else if(move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel') {
+			} else if (move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel') {
 				this.debug('Sand Force boost');
 					return this.chainModify(1.25);
 			}
@@ -4457,9 +4457,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.maybeTrapped = true;
 			}
 		},
-		onResidual(pokemon){
+		onResidual(pokemon) {
 			for (const target of pokemon.adjacentFoes()) {
-				if(!target.volatiles['shadowtag']){
+				if (!target.volatiles['shadowtag']) {
 				target.addVolatile('shadowtag')
 				}
 			}
@@ -4474,7 +4474,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			},
 			onTrapPokemon(pokemon) {
-				if(pokemon.volatiles['shadowtag']?.turns >= 2){
+				if (pokemon.volatiles['shadowtag']?.turns >= 2) {
 				pokemon.trapped = pokemon.maybeTrapped = false;
 				}
 			},
@@ -4627,16 +4627,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			pokemon.addVolatile('slowstart');
 		},
 		onModifyAtk(atk, pokemon) {
-			if(!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']){
+			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 			return this.chainModify(1.3);
-		} else if(!pokemon.volatiles['slowstart']) {
+		} else if (!pokemon.volatiles['slowstart']) {
 			return this.chainModify(1.05);
 		}
 		},
 		onModifySpe(spe, pokemon) {
-			if(!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']){
+			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
-			} else if(!pokemon.volatiles['slowstart']) {
+			} else if (!pokemon.volatiles['slowstart']) {
 				return this.chainModify(1.05);
 			}
 		},
@@ -4658,7 +4658,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, pokemon) {
-				if(pokemon.volatiles['premierball']){
+				if (pokemon.volatiles['premierball']) {
 				let debuff = 1.3 - (0.1 * this.effectState.duration!)
 				return this.chainModify(debuff);}
 				else {
@@ -4667,7 +4667,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 			onModifySpe(spe, pokemon) {
-				if(pokemon.volatiles['premierball']){
+				if (pokemon.volatiles['premierball']) {
 					let debuff = 1.3 - (0.1 * this.effectState.duration!)
 					return this.chainModify(debuff);}
 					else {
@@ -5027,7 +5027,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onStart(pokemon) {
-			if (pokemon.getItem().name === 'Dive Ball'){
+			if (pokemon.getItem().name === 'Dive Ball') {
 			this.boost({spa: 1}, pokemon)
 			pokemon.useItem()
 		}
@@ -5092,7 +5092,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.volatiles['superluck'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Super Luck');
 				return 5;
-			} else if ((pokemon.volatiles['superluck']?.turns >= 2 && pokemon.item === 'scopelens')){
+			} else if ((pokemon.volatiles['superluck']?.turns >= 2 && pokemon.item === 'scopelens')) {
 				pokemon.volatiles['superluck'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Super Luck');
 				return 5;
@@ -5766,7 +5766,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	vitalspirit: {
 		onDamagingHit(damage, target, source, move) {
 			if (target.swordBoost) return;
-			if(target.hp <= target.maxhp / 2){
+			if (target.hp <= target.maxhp / 2) {
 			target.swordBoost = true;
 			this.heal(target.baseMaxhp / 2, target, target);
 			}
@@ -6298,7 +6298,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		onStart(pokemon){
+		onStart(pokemon) {
 			let success = false;
 			for (const active of this.getAllActive()) {
 			}
@@ -6422,11 +6422,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	inteligenciaavanzada: {
 		onModifyMove(move, pokemon, target) {
-			if(target){
-			if (target.getStat('spd', false, true) > target.getStat('def', false, true) && move.category === "Special"){
+			if (target) {
+			if (target.getStat('spd', false, true) > target.getStat('def', false, true) && move.category === "Special") {
 				move.overrideDefensiveStat = 'def';
 				move.basePower *= 0.8;
-			} else if (target.getStat('def', false, true) > target.getStat('spd', false, true) && move.category === "Physical"){
+			} else if (target.getStat('def', false, true) > target.getStat('spd', false, true) && move.category === "Physical") {
 				move.overrideDefensiveStat = 'spd';
 				move.basePower *= 0.8;
 			}
@@ -6439,7 +6439,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	inteligenciaantigua: {
 		onModifyMove(move, pokemon, target) {
-			if(typeof move.accuracy === 'number' ){
+			if (typeof move.accuracy === 'number' ) {
 			 let change = 100 - move.accuracy
 			 move.accuracy += change
 			 move.basePower -= change*0.25
@@ -6482,7 +6482,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	liberaalmas: {
 		onStart(pokemon) {
-			if(pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn){
+			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
 				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, pokemon);
 			}
 		},
@@ -6509,12 +6509,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	ultimogolpe: {
 		onStart(pokemon) {
 			for (const ally of pokemon.adjacentAllies()) {
-				if(ally.hp <= ally.baseMaxhp / 4){
+				if (ally.hp <= ally.baseMaxhp / 4) {
 					this.damage(ally.baseMaxhp / 4, ally, pokemon)
 				}
 			}
 			for (const foe of pokemon.adjacentFoes()) {
-				if(foe.hp <= foe.baseMaxhp / 4){
+				if (foe.hp <= foe.baseMaxhp / 4) {
 					this.damage(foe.baseMaxhp / 4, foe, pokemon)
 				}
 			}
@@ -6569,7 +6569,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	heroismo: {
 			onDamagingHit(damage, target, source, move) {
-				if(target.getMoveHitData(move).typeMod > 0){
+				if (target.getMoveHitData(move).typeMod > 0) {
 				this.boost({spe: 1});
 				}
 			},
@@ -6606,7 +6606,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tectoanclaje: {
 		onDragOut(pokemon, source) {
-			if((source && source != pokemon) && !source.hasType('Flying')){
+			if ((source && source != pokemon) && !source.hasType('Flying')) {
 			this.add('-activate', pokemon, 'ability: Tectoanclaje');
 			this.damage(source.baseMaxhp / 3.333, source, pokemon)
 			return null;
@@ -6696,9 +6696,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	defensaabrumadora: {
 		onModifyMove(move, pokemon, target) {
-			if (move.category === "Special"){
+			if (move.category === "Special") {
 				move.overrideOffensiveStat = 'spd';
-			} else if (move.category === "Physical"){
+			} else if (move.category === "Physical") {
 				move.overrideOffensiveStat = 'def';
 			}
 		},
@@ -6857,7 +6857,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	plumaarcoiris: {
 		onModifyMove(move, pokemon, target) {
 			if (move.type === 'Flying') {
-				if(this.randomChance(33, 100)){
+				if (this.randomChance(33, 100)) {
 				const r = this.random(100);
 				if (r < 20) {
 					this.boost({atk: 1});
@@ -6880,7 +6880,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	protectordelbosque: {
 		onDamagingHit(damage, target, source, move) {
-			if(target.getMoveHitData(move).typeMod > 0){
+			if (target.getMoveHitData(move).typeMod > 0) {
 			this.boost({spa: 2});
 			}
 		},
@@ -6911,7 +6911,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		if (status.id === 'torment') return null;
 	},
 	onDamagingHit(damage, target, source, move) {
-		if(target.getMoveHitData(move).typeMod > 0){
+		if (target.getMoveHitData(move).typeMod > 0) {
 		this.boost({spa: 2});
 		}
 	},
@@ -6927,7 +6927,7 @@ cabezajerarquica: {
 		return this.chainModify(mod);
 	},
 	onTryBoost(boost, target, source, effect) {
-		if((target.hp <= target.maxhp / 1.5) && (target.hp >= target.maxhp / 3)){
+		if ((target.hp <= target.maxhp / 1.5) && (target.hp >= target.maxhp / 3)) {
 		if (source && target === source) return;
 		let showMsg = false;
 		let i: BoostID;
@@ -6990,42 +6990,42 @@ letrassagradas: {
 	onTryMove(source, target, move) {
 		let type = "Normal"
 		if (move.type === type) return;
-		if((target.hasType('Normal') || target.hasType('Rock') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Dark')) && !(target.hasType('Ghost') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Psychic') || target.hasType('Fairy'))){
+		if ((target.hasType('Normal') || target.hasType('Rock') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Dark')) && !(target.hasType('Ghost') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Psychic') || target.hasType('Fairy'))) {
 			type = "Fighting"
-		} else if((target.hasType('Bug') || target.hasType('Grass') || target.hasType('Ice') || target.hasType('Steel')) && !(target.hasType('Rock') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Dragon'))) {
+		} else if ((target.hasType('Bug') || target.hasType('Grass') || target.hasType('Ice') || target.hasType('Steel')) && !(target.hasType('Rock') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Dragon'))) {
 			type = "Fire"
-		} else if((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Fire')) && !(target.hasType('Water') || target.hasType('Grass') || target.hasType('Dragon'))) {
+		} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Fire')) && !(target.hasType('Water') || target.hasType('Grass') || target.hasType('Dragon'))) {
 			type = "Water"
-		} else if((target.hasType('Fighting') || target.hasType('Bug') || target.hasType('Grass')) && !(target.hasType('Rock') || target.hasType('Electric') || target.hasType('Steel'))) {
+		} else if ((target.hasType('Fighting') || target.hasType('Bug') || target.hasType('Grass')) && !(target.hasType('Rock') || target.hasType('Electric') || target.hasType('Steel'))) {
 			type = "Flying"
-		} else if((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Water')) && !(target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Grass') || target.hasType('Dragon') || target.hasType('Steel'))) {
+		} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Water')) && !(target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Grass') || target.hasType('Dragon') || target.hasType('Steel'))) {
 			type = "Grass"
-		} else if((target.hasType('Grass') || target.hasType('Fairy')) && !(target.hasType('Poison') || target.hasType('Ground') || target.hasType('Rock') || target.hasType('Ghost') || target.hasType('Steel'))) {
+		} else if ((target.hasType('Grass') || target.hasType('Fairy')) && !(target.hasType('Poison') || target.hasType('Ground') || target.hasType('Rock') || target.hasType('Ghost') || target.hasType('Steel'))) {
 			type = "Poison"
-		} else if((target.hasType('Flying') || target.hasType('Water')) && !(target.hasType('Grass') || target.hasType('Electric') || target.hasType('Ground') || target.hasType('Dragon'))) {
+		} else if ((target.hasType('Flying') || target.hasType('Water')) && !(target.hasType('Grass') || target.hasType('Electric') || target.hasType('Ground') || target.hasType('Dragon'))) {
 			type = "Electric"
-		} else if((target.hasType('Poison') || target.hasType('Rock') || target.hasType('Fire') || target.hasType('Electric')|| target.hasType('Steel')) && !(target.hasType('Bug') || target.hasType('Grass') || target.hasType('Flying'))) {
+		} else if ((target.hasType('Poison') || target.hasType('Rock') || target.hasType('Fire') || target.hasType('Electric')|| target.hasType('Steel')) && !(target.hasType('Bug') || target.hasType('Grass') || target.hasType('Flying'))) {
 			type = "Ground"
-		} else if((target.hasType('Fighting') || target.hasType('Poison')) && !(target.hasType('Psychic') || target.hasType('Steel') || target.hasType('Dark'))) {
+		} else if ((target.hasType('Fighting') || target.hasType('Poison')) && !(target.hasType('Psychic') || target.hasType('Steel') || target.hasType('Dark'))) {
 			type = "Psychic"
-		} else if((target.hasType('Flying') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Ice')) && !(target.hasType('Fighting') || target.hasType('Ground') || target.hasType('Steel'))) {
+		} else if ((target.hasType('Flying') || target.hasType('Bug') || target.hasType('Fire') || target.hasType('Ice')) && !(target.hasType('Fighting') || target.hasType('Ground') || target.hasType('Steel'))) {
 			type = "Rock"
-		} else if((target.hasType('Flying') || target.hasType('Ground') || target.hasType('Grass') || target.hasType('Dragon')) && !(target.hasType('Water') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Fire'))) {
+		} else if ((target.hasType('Flying') || target.hasType('Ground') || target.hasType('Grass') || target.hasType('Dragon')) && !(target.hasType('Water') || target.hasType('Ice') || target.hasType('Steel') || target.hasType('Fire'))) {
 			type = "Ice"
-		} else if((target.hasType('Grass') || target.hasType('Psychic') || target.hasType('Dark')) && !(target.hasType('Fighting') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Ghost') || target.hasType('Steel') || target.hasType('Fire') || target.hasType('Fairy'))) {
+		} else if ((target.hasType('Grass') || target.hasType('Psychic') || target.hasType('Dark')) && !(target.hasType('Fighting') || target.hasType('Flying') || target.hasType('Poison') || target.hasType('Ghost') || target.hasType('Steel') || target.hasType('Fire') || target.hasType('Fairy'))) {
 			type = "Bug"
-		} else if((target.hasType('Dragon')) && !(target.hasType('Steel') || target.hasType('Fairy'))) {
+		} else if ((target.hasType('Dragon')) && !(target.hasType('Steel') || target.hasType('Fairy'))) {
 			type = "Dragon"
-		} else if((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Normal'))) {
+		} else if ((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Normal'))) {
 			type = "Ghost"
-		} else if((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Fighting') || target.hasType('Fairy'))) {
+		} else if ((target.hasType('Ghost') || target.hasType('Psychic')) && !(target.hasType('Dark') || target.hasType('Fighting') || target.hasType('Fairy'))) {
 			type = "Dark"
-		} else if((target.hasType('Rock') || target.hasType('Ice') || target.hasType('Fairy')) && !(target.hasType('Steel') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Electric'))) {
+		} else if ((target.hasType('Rock') || target.hasType('Ice') || target.hasType('Fairy')) && !(target.hasType('Steel') || target.hasType('Fire') || target.hasType('Water') || target.hasType('Electric'))) {
 			type = "Steel"
-		} else if((target.hasType('Fighting') || target.hasType('Dragon') || target.hasType('Dark')) && !(target.hasType('Poison') || target.hasType('Steel') || target.hasType('Fire'))) {
+		} else if ((target.hasType('Fighting') || target.hasType('Dragon') || target.hasType('Dark')) && !(target.hasType('Poison') || target.hasType('Steel') || target.hasType('Fire'))) {
 			type = "Fairy"
 		}
-		 if(move.id === 'hiddenpower' || move.realMove === "Hidden Power"){
+		 if (move.id === 'hiddenpower' || move.realMove === "Hidden Power") {
 			move.type = type
 		 }
 	},
