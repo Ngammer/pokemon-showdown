@@ -192,7 +192,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return this.random(5, 7);
 		},
 		onStart(pokemon, source) {
-			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
+			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, `[of] ${source}`);
 			this.effectState.boundDivisor = source.hasItem('bindingband') ? 4 : 8;
 		},
 		onResidualOrder: 13,
