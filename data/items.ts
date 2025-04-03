@@ -992,7 +992,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onSourceModifyDamage(damage, target, source, move) {
-			if (source.baseSpecies.name == 'Polteageist-Antique') {
+			if (source.baseSpecies.name === 'Polteageist-Antique') {
 				this.chainModify(0.5);
 				source.useItem();
 			}
@@ -1285,7 +1285,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onSourceModifyDamage(damage, target, source, move) {
-			if (source.baseSpecies.name == 'Polteageist') {
+			if (source.baseSpecies.name === 'Polteageist') {
 				this.chainModify(0.8);
 			}
 		},
@@ -1382,7 +1382,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.evoItem == 'Shiny Stone') {
+			if (pokemon.baseSpecies.evoItem === 'Shiny Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
@@ -1707,7 +1707,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Dusk Stone' && move.type === 'Ghost') {
+			if (source.baseSpecies.evoItem === 'Dusk Stone' && move.type === 'Ghost') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -2151,7 +2151,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Fire Stone' && move.type === 'Fire') {
+			if (source.baseSpecies.evoItem === 'Fire Stone' && move.type === 'Fire') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -2322,10 +2322,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target.volatiles['focusband']) {
 				target.volatiles['focusband'].turns++;
 			}
-			if (target.volatiles['focusband']?.turns >= 3 && move.category == 'Physical') {
+			if (target.volatiles['focusband']?.turns >= 3 && move.category === 'Physical') {
 				this.boost({ def: 1 }, target);
 				target.volatiles['focusband'].turns = 0;
-			} else if (target.volatiles['focusband']?.turns >= 3 && move.category == 'Special') {
+			} else if (target.volatiles['focusband']?.turns >= 3 && move.category === 'Special') {
 				this.boost({ spd: 1 }, target);
 				target.volatiles['focusband'].turns = 0;
 			}
@@ -2456,7 +2456,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.species.name == 'Slowbro-Galar')
+			if (pokemon.species.name === 'Slowbro-Galar')
 				pokemon.addVolatile('galaricawreath');
 		},
 		condition: {},
@@ -3095,7 +3095,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Ice Stone' && move.type === 'Ice') {
+			if (source.baseSpecies.evoItem === 'Ice Stone' && move.type === 'Ice') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -3488,7 +3488,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Leaf Stone' && move.type === 'Grass') {
+			if (source.baseSpecies.evoItem === 'Leaf Stone' && move.type === 'Grass') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -4038,7 +4038,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 4,
 		onStart(pokemon) {
-			if (pokemon.species.name == 'Sinistcha-Masterpiece') {
+			if (pokemon.species.name === 'Sinistcha-Masterpiece') {
 				pokemon.addVolatile('masterpieceteacup');
 			}
 		},
@@ -4163,7 +4163,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Metal Alloy",
 		spritenum: 761,
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.name == 'Archaludon' && (move.type === 'Steel' || move.type === 'Electric')) {
+			if (source.baseSpecies.name === 'Archaludon' && (move.type === 'Steel' || move.type === 'Electric')) {
 				return this.chainModify([6144, 4096]);
 			}
 		},
@@ -4462,7 +4462,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.evoItem == 'Shiny Stone') {
+			if (pokemon.baseSpecies.evoItem === 'Shiny Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
@@ -5192,7 +5192,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Milotic') {
+			if (pokemon.baseSpecies.name === 'Milotic') {
 				this.boost({ spa: 1 }, pokemon);
 			}
 		},
@@ -5849,7 +5849,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 4,
 		onResidual(pokemon) {
-			if (pokemon.baseSpecies.name == 'Aromatisse') {
+			if (pokemon.baseSpecies.name === 'Aromatisse') {
 				this.heal(pokemon.baseMaxhp / 8);
 			}
 		},
@@ -6087,7 +6087,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Sun Stone' && move.type === 'Fairy') {
+			if (source.baseSpecies.evoItem === 'Sun Stone' && move.type === 'Fairy') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -6612,7 +6612,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.evoItem == 'Shiny Stone') {
+			if (pokemon.baseSpecies.evoItem === 'Shiny Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
@@ -6643,9 +6643,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		isBerry: true,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Flapple') {
+			if (pokemon.baseSpecies.name === 'Flapple') {
 				const r = this.random(2);
-				if (r == 1) {
+				if (r === 1) {
 					this.boost({ spd: 1 }, pokemon);
 				} else {
 					this.boost({ def: 1 }, pokemon);
@@ -6665,11 +6665,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		isBerry: true,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Flapple') {
+			if (pokemon.baseSpecies.name === 'Flapple') {
 				this.boost({ atk: 2 }, pokemon);
 				pokemon.useItem();
 			}
-			if (pokemon.baseSpecies.name == 'Appletun') {
+			if (pokemon.baseSpecies.name === 'Appletun') {
 				this.boost({ def: 2, spd: 2 }, pokemon);
 				pokemon.useItem();
 			}
@@ -6740,7 +6740,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		isBerry: true,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Flapple') {
+			if (pokemon.baseSpecies.name === 'Flapple') {
 				this.boost({ spe: 1 }, pokemon);
 				pokemon.useItem();
 			}
@@ -6799,7 +6799,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Thunder Stone' && move.type === 'Electric') {
+			if (source.baseSpecies.evoItem === 'Thunder Stone' && move.type === 'Electric') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -8405,7 +8405,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 4,
 		onStart(pokemon) {
-			if (pokemon.species.name == 'Sinistcha') {
+			if (pokemon.species.name === 'Sinistcha') {
 				pokemon.addVolatile('unremarkableteacup');
 			}
 		},
@@ -8433,7 +8433,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Porygon-Z') {
+			if (pokemon.baseSpecies.name === 'Porygon-Z') {
 				this.boost({ spe: 1 }, pokemon);
 			}
 			pokemon.useItem();
@@ -8550,7 +8550,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem == 'Water Stone' && move.type === 'Water') {
+			if (source.baseSpecies.evoItem === 'Water Stone' && move.type === 'Water') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
@@ -8672,7 +8672,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onSourceModifyDamage(damage, target, source, move) {
-			if (source.baseSpecies.name == 'Slurpuff')
+			if (source.baseSpecies.name === 'Slurpuff')
 				this.chainModify(0);
 			source.useItem();
 		},
