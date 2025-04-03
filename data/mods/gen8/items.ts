@@ -49,7 +49,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	dracoplate: {
 		inherit: true,
-		 
+
 	},
 	dragonmemory: {
 		inherit: true,
@@ -61,7 +61,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	dreadplate: {
 		inherit: true,
-		 
+
 	},
 	dubiousdisc: {
 		inherit: true,
@@ -69,7 +69,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	earthplate: {
 		inherit: true,
-		 
+
 	},
 	electirizer: {
 		inherit: true,
@@ -97,11 +97,11 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	fistplate: {
 		inherit: true,
-		 
+
 	},
 	flameplate: {
 		inherit: true,
-		 
+
 	},
 	flowersweet: {
 		inherit: true,
@@ -164,15 +164,15 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	icicleplate: {
 		inherit: true,
-		 
+
 	},
 	insectplate: {
 		inherit: true,
-		 
+
 	},
 	ironplate: {
 		inherit: true,
-		 
+
 	},
 	jabocaberry: {
 		inherit: true,
@@ -212,7 +212,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	meadowplate: {
 		inherit: true,
-		 
+
 	},
 	metalpowder: {
 		inherit: true,
@@ -224,7 +224,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	mindplate: {
 		inherit: true,
-		 
+
 	},
 	oddincense: {
 		inherit: true,
@@ -248,7 +248,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	razorfang: {
 		inherit: true,
-		 
+
 	},
 	ribbonsweet: {
 		inherit: true,
@@ -284,15 +284,15 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	skyplate: {
 		inherit: true,
-		 
+
 	},
 	splashplate: {
 		inherit: true,
-		 
+
 	},
 	spookyplate: {
 		inherit: true,
-		 
+
 	},
 	starsweet: {
 		inherit: true,
@@ -300,7 +300,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	stoneplate: {
 		inherit: true,
-		 
+
 	},
 	strawberrysweet: {
 		inherit: true,
@@ -320,7 +320,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	toxicplate: {
 		inherit: true,
-		 
+
 	},
 	tr00: {
 		inherit: true,
@@ -740,6 +740,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	zapplate: {
 		inherit: true,
-		 
+
 	},
 };

@@ -1,7 +1,7 @@
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	aurawheel: {
 		inherit: true,
-		 
+
 	},
 	bloodmoon: {
 		inherit: true,
@@ -9,23 +9,23 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	clangingscales: {
 		inherit: true,
-		 
+
 	},
 	clangoroussoul: {
 		inherit: true,
-		 
+
 	},
 	darkvoid: {
 		inherit: true,
-		 
+
 	},
 	doomdesire: {
 		inherit: true,
-		 
+
 	},
 	forestscurse: {
 		inherit: true,
-		 
+
 	},
 	grassyglide: {
 		inherit: true,
@@ -45,11 +45,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	seedflare: {
 		inherit: true,
-		 
+
 	},
 	strangesteam: {
 		inherit: true,
-		 
+
 	},
 	syrupbomb: {
 		inherit: true,
@@ -57,14 +57,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	tailglow: {
 		inherit: true,
-		 
+
 	},
 	takeheart: {
 		inherit: true,
-		 
+
 	},
 	toxicthread: {
 		inherit: true,
-		 
+
 	},
 };

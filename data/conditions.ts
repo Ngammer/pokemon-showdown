@@ -62,8 +62,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (target.hasAbility('earlybird')) {
 				this.effectState.startTime = 2;
 			} else {
-			this.effectState.startTime = 3;
-		}
+				this.effectState.startTime = 3;
+			}
 			this.effectState.time = this.effectState.startTime;
 
 			if (target.removeVolatile('nightmare')) {
@@ -98,7 +98,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onResidualOrder: 10,
 		onResidual(pokemon) {
 			this.damage(pokemon.baseMaxhp / 16);
-
 		},
 	},
 	psn: {
@@ -158,8 +157,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-end', target, 'confusion');
 		},
 		onModifyMove(move, pokemon, target) {
-			 move.recoil = [25, 100];
-
+			move.recoil = [25, 100];
 		},
 	},
 	flinch: {

@@ -664,11 +664,11 @@ const OFFICIAL_AVATARS_SELENA = new Set([
 ]);
 
 const CUSTOM_AVATARS_NGAMMER = new Set([
-	'juansssss', 'ngammer'
+	'juansssss', 'ngammer',
 ]);
 
 const CUSTOM_AVATARS_NGAMMER2 = new Set([
-	'ngammer2'
+	'ngammer2',
 ]);
 
 for (const avatar of OFFICIAL_AVATARS_BELIOT419) OFFICIAL_AVATARS.add(avatar);

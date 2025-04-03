@@ -1,23 +1,23 @@
 export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	berrysweet: {
 		inherit: true,
-		 
+
 	},
 	cloversweet: {
 		inherit: true,
-		 
+
 	},
 	dragonscale: {
 		inherit: true,
-		 
+
 	},
 	dubiousdisc: {
 		inherit: true,
-		 
+
 	},
 	electirizer: {
 		inherit: true,
-		 
+
 	},
 	eviolite: {
 		inherit: true,
@@ -34,15 +34,15 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	flowersweet: {
 		inherit: true,
-		 
+
 	},
 	lovesweet: {
 		inherit: true,
-		 
+
 	},
 	magmarizer: {
 		inherit: true,
-		 
+
 	},
 	metalalloy: {
 		inherit: true,
@@ -50,26 +50,26 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	protector: {
 		inherit: true,
-		 
+
 	},
 	ribbonsweet: {
 		inherit: true,
-		 
+
 	},
 	souldew: {
 		inherit: true,
-		 
+
 	},
 	starsweet: {
 		inherit: true,
-		 
+
 	},
 	strawberrysweet: {
 		inherit: true,
-		 
+
 	},
 	upgrade: {
 		inherit: true,
-		 
+
 	},
 };

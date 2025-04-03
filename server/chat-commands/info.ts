@@ -774,7 +774,6 @@ export const commands: Chat.ChatCommands = {
 					if (move.flags['light'] && dex.gen >= 9) details["&#10003; Light move"] = "";
 					if (move.flags['beam'] && dex.gen >= 9) details["&#10003; Beam move"] = "";
 
-
 					if (dex.gen >= 7) {
 						if (move.gen >= 8 && move.isMax) {
 							// Don't display Z-Power for Max/G-Max moves

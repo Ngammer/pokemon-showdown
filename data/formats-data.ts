@@ -221,7 +221,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	pikachustarter: {
- 		tier: "Illegal",
+		tier: "Illegal",
 	},
 	pikachugmax: {
 
@@ -1000,7 +1000,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	eeveestarter: {
- 		tier: "Illegal",
+		tier: "Illegal",
 	},
 	eeveegmax: {
 		tier: "Illegal",

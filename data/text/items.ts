@@ -2463,5 +2463,5 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Dimencionador",
 		shortDesc: "Holder's use of Trick Room, Wonder Room, Magic Room, or Gravity lasts 8 turns instead of 5.",
 	},
-	
+
 };

@@ -1,4 +1,4 @@
-export const MovesText: {[id: IDEntry]: MoveText} = {
+export const MovesText: { [id: IDEntry]: MoveText } = {
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",
 		desc: "Has a very high chance for a critical hit.",
@@ -4310,7 +4310,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 			desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, all of its HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Rain Dance or Sandstorm, all rounded down.",
 		},
 	},
-	mordidadragon:{
+	mordidadragon: {
 		name: "Mordida Dragon",
 		desc: "Has a 10% chance to lower the target's Defense by 1 stage and a 10% chance to make it flinch.",
 		shortDesc: "10% -1 Def. 10% chance to flinch.",

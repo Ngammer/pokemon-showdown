@@ -19,7 +19,6 @@ The column value will be ignored for repeat sections.
 
 export const Formats: import('../sim/dex-formats').FormatList = [
 
-
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
 
@@ -358,7 +357,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// Pet Mods
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "Pet Mods",
 	},
@@ -500,7 +499,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// OM of the Month
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "OM of the Month",
 		column: 2,
@@ -644,7 +643,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 */
 	// Other Metagames
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "Other Metagames",
 		column: 2,
@@ -1836,8 +1835,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 					Object.assign(t.side.slotConditions[t.position]['futuremove'], {
 						duration: 3,
 						move: moveData.id,
-						source: source,
-						moveData: moveData,
+						source,
+						moveData,
 					});
 					this.add('-message', `${source.name} foresaw an attack!`);
 					return this.NOT_FAIL;
@@ -1907,7 +1906,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			if (this.ruleTable.isRestricted(`move:${move.id}`) ||
 				((accuracyLoweringMove || move.ohko || move.multihit || move.id === 'beatup' || move.flags['charge'] ||
 					move.priority > 0 || move.damageCallback || flinchMove || freezeMove) &&
-				!this.ruleTable.has(`+move:${move.id}`))) {
+					!this.ruleTable.has(`+move:${move.id}`))) {
 				problems.push(`The move ${move.name} can't be used as an item.`);
 			}
 			return problems.length ? problems : null;
@@ -1925,7 +1924,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		onModifyMove(move, pokemon, target) {
 			const forte: ActiveMove = pokemon.m.forte;
 			if (move.category !== 'Status' && forte) {
-				move.flags = {...move.flags, ...forte.flags};
+				move.flags = { ...move.flags, ...forte.flags };
 				if (forte.self) {
 					if (forte.self.onHit && move.self?.onHit) {
 						for (const i in forte.self) {
@@ -1933,11 +1932,11 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 							(move.self as any)[i] = (forte.self as any)[i];
 						}
 					} else {
-						move.self = {...(move.self || {}), ...forte.self};
+						move.self = { ...(move.self || {}), ...forte.self };
 					}
 				}
 				if (forte.selfBoost?.boosts) {
-					if (!move.selfBoost?.boosts) move.selfBoost = {boosts: {}};
+					if (!move.selfBoost?.boosts) move.selfBoost = { boosts: {} };
 					let boostid: BoostID;
 					for (boostid in forte.selfBoost.boosts) {
 						if (!move.selfBoost.boosts![boostid]) move.selfBoost.boosts![boostid] = 0;
@@ -2269,13 +2268,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			}
 		},
 	},
-	/*{
+	/* {
 		name: "[Gen 9] Pure Hackmons",
 		desc: `Anything directly hackable onto a set (EVs, IVs, forme, ability, item, and move) and is usable in local battles is allowed.`,
 		mod: 'gen9',
 		searchShow: false,
 		ruleset: ['Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Hackmons Forme Legality', 'Species Reveal Clause', 'Endless Battle Clause'],
-	},*/
+	}, */
 	{
 		name: "[Gen 9] Revelationmons",
 		desc: `The moves in the first slot(s) of a Pok&eacute;mon's set have their types changed to match the Pok&eacute;mon's type(s).`,
@@ -2894,7 +2893,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// Randomized Format Spotlight
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "Randomized Format Spotlight",
 		column: 3,
@@ -2910,7 +2909,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 */
 	// Randomized Metas
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "Randomized Metas",
 		column: 3,
@@ -3616,7 +3615,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// Sw/Sh Doubles
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "Sw/Sh Doubles",
 		column: 4,
@@ -3820,7 +3819,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// US/UM Doubles
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "US/UM Doubles",
 		column: 4,
@@ -4014,7 +4013,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// OR/AS Doubles/Triples
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "OR/AS Doubles/Triples",
 		column: 4,
@@ -4213,7 +4212,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// B2/W2 Doubles
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "B2/W2 Doubles",
 		column: 4,
@@ -4365,7 +4364,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// DPP Doubles
 	///////////////////////////////////////////////////////////////////
-/*
+	/*
 	{
 		section: "DPP Doubles",
 		column: 4,
