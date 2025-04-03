@@ -547,7 +547,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 				const unfaintedActive = oldActive?.hp ? oldActive : null;
 				if (unfaintedActive) {
 					oldActive.beingCalledBack = true;
-					let switchCopyFlag: 'copyvolatile' | 'shedtail' | boolean = false;
+					let switchCopyFlag: 'copyvolatile' | 'shedtail' | 'doubleteam' | boolean = false;
 					if (sourceEffect && typeof (sourceEffect as Move).selfSwitch) {
 						if (typeof (sourceEffect as Move).selfSwitch === 'string') {
 							switchCopyFlag = (sourceEffect as Move).selfSwitch!;

@@ -695,7 +695,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 		zubl: 'ZUBL', zu: 'ZU',
 		nfe: 'NFE',
 		lc: 'LC',
-		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE', pendiente: 'Pendiente', pendientes: 'Pendiente',
+		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE',
 	});
 	const singlesTiersValues: { [k: string]: number } = Object.assign(Object.create(null), {
 		AG: 14, Uber: 13,
