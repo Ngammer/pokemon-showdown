@@ -1515,7 +1515,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	ursaring: {
-		tier: "ZU",
+		tier: "NFE",
 		doublesTier: "NFE",
 		natDexTier: "NFE",
 	},
@@ -4923,11 +4923,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	hatterene: {
 		tier: "Illegal",
-		doublesTier: "DOU",
-		natDexTier: "OU",
 	},
 	hatterenegmax: {
-
 		tier: "Illegal",
 	},
 	impidimp: {
