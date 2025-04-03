@@ -5974,7 +5974,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (move.critRatio && move.critRatio >= 2) {
 				move.willCrit = true;
 			}
-			return move.willCrit
+			return move.willCrit;
 		},
 		num: 232,
 		gen: 2,
