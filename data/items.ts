@@ -5972,8 +5972,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onModifyMove(move, pokemon, target) {
 			if (move.critRatio && move.critRatio >= 2) {
-				return move.willCrit = true;
+				move.willCrit = true;
 			}
+			return move.willCrit
 		},
 		num: 232,
 		gen: 2,
