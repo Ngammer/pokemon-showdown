@@ -2201,7 +2201,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return false;
 		},
-		//TODO: immunidad a volatiles
+		// TODO: immunidad a volatiles
 		flags: { breakable: 1 },
 		name: "Immunity",
 		rating: 2,
@@ -2665,7 +2665,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.suppressingAbility(pokemon)) return;
 			this.add('-ability', pokemon, 'Magnet Pull');
 		},
-		//todo: no usar ruinedDef
+		// Todo: no usar ruinedDef
 		onAnyModifyDef(def, target, source, move) {
 			const abilityHolder = this.effectState.target;
 			if (!target.hasType('Steel')) return;
@@ -4038,12 +4038,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	rattled: {
 		onDamagingHit(damage, target, source, move) {
 			if (['Dark', 'Bug', 'Ghost'].includes(move.type)) {
-				this.boost({ spe: 2});
+				this.boost({ spe: 2 });
 			}
 		},
 		onAfterBoost(boost, target, source, effect) {
 			if (effect?.name === 'Intimidate' && boost.atk) {
-				this.boost({ spe: 2});
+				this.boost({ spe: 2 });
 			}
 		},
 		onStart(pokemon) {
@@ -4663,7 +4663,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onModifyAtk(atk, pokemon) {
 				if (pokemon.volatiles['premierball']) {
 				let debuff = 1.3 - (0.1 * this.effectState.duration!)
-				return this.chainModify(debuff);}
+				return this.chainModify(debuff); }
 				else {
 				let debuff = 1.05 - (0.05 * this.effectState.duration!)
 				return this.chainModify(debuff);
@@ -4672,7 +4672,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onModifySpe(spe, pokemon) {
 				if (pokemon.volatiles['premierball']) {
 					let debuff = 1.3 - (0.1 * this.effectState.duration!)
-					return this.chainModify(debuff);}
+					return this.chainModify(debuff); }
 					else {
 					let debuff = 1.05 - (0.05 * this.effectState.duration!)
 					return this.chainModify(debuff);
@@ -5537,9 +5537,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
 
-			/*if (this.randomChance(3, 10)) {*/
+			/* if (this.randomChance(3, 10)) { */
 				target.trySetStatus('tox', source);
-			/*}*/
+			/* } */
 		},
 
 		flags: { },
@@ -6253,7 +6253,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -106,
 	},
 	colocapantallas: {
-		//aplicado en moves.ts
+		// aplicado en moves.ts
 		name: "Coloca Pantallas",
 		rating: 3.5,
 		num: -107,
@@ -6445,7 +6445,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (typeof move.accuracy === 'number' ) {
 			 let change = 100 - move.accuracy
 			 move.accuracy += change
-			 move.basePower -= change*0.25
+			 move.basePower -= change * 0.25
 			}
 		},
 		flags: { },
@@ -6609,7 +6609,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tectoanclaje: {
 		onDragOut(pokemon, source) {
-			if ((source && source != pokemon) && !source.hasType('Flying')) {
+			if ((source && source !== pokemon) && !source.hasType('Flying')) {
 			this.add('-activate', pokemon, 'ability: Tectoanclaje');
 			this.damage(source.baseMaxhp / 3.333, source, pokemon)
 			return null;
@@ -6884,7 +6884,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	protectordelbosque: {
 		onDamagingHit(damage, target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-			this.boost({ spa: 2});
+			this.boost({ spa: 2 });
 			}
 		},
 	flags: { },
@@ -6915,7 +6915,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	onDamagingHit(damage, target, source, move) {
 		if (target.getMoveHitData(move).typeMod > 0) {
-		this.boost({ spa: 2});
+		this.boost({ spa: 2 });
 		}
 	},
 	flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, breakable: 1 },
