@@ -223,14 +223,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	arenatrap: {
 		onFoeTrapPokemon(pokemon) {
 			if (!pokemon.isAdjacent(this.effectState.target)) return;
-			if (!(pokemon.hasType('Ground') || pokemon.hasType('Bug') || pokemon.hasType('Flying')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
+			if (!(pokemon.hasType('Ground') || pokemon.hasType('Bug') ||
+			pokemon.hasType('Flying')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
 				pokemon.tryTrap(true);
 			}
 		},
 		onFoeMaybeTrapPokemon(pokemon, source) {
 			if (!source) source = this.effectState.target;
 			if (!source || !pokemon.isAdjacent(source)) return;
-			if (pokemon.isGrounded(!pokemon.knownType) && pokemon.isAdjacent(this.effectState.target) && !(pokemon.hasType('Ground') || pokemon.hasType('Bug') || pokemon.hasType('Flying')) && pokemon.hp <= pokemon.baseMaxhp / 2) { // Negate immunity if the type is unknown
+			if (pokemon.isGrounded(!pokemon.knownType) && pokemon.isAdjacent(this.effectState.target) &&
+			!(pokemon.hasType('Ground') || pokemon.hasType('Bug') || pokemon.hasType('Flying')) &&
+			pokemon.hp <= pokemon.baseMaxhp / 2) { // Negate immunity if the type is unknown
 				pokemon.maybeTrapped = true;
 			}
 		},
@@ -238,10 +241,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of pokemon.adjacentFoes()) {
 				if (!target.volatiles['arenatrap']) {
 				target.addVolatile('arenatrap')
-				}
+					}
 			}
 		},
-		condition:{
+		condition: {
 			onStart() {
 				this.effectState.turns = 0;
 			},
@@ -4464,7 +4467,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		condition:{
+		condition: {
 			onStart() {
 				this.effectState.turns = 0;
 			},
