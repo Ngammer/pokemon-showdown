@@ -10,7 +10,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] Nuevo Meta",
 		mod: 'gen9',
-		ruleset: ['Standard NatDex', 'Species Clause', 'Sleep Clause Mod', 'Terastal Clause', 'Nuevo Meta Pokedex', 'Item Clause = 1'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Nuevo Meta Pokedex', 'Item Clause = 1'],
 		banlist: ['Baton Pass', 'Uber'],
 	},
 	{
@@ -18,7 +18,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
 		mod: 'gen9',
 		team: 'randomFactory',
-		ruleset: ['Standard NatDex', 'PotD', 'Species Clause', 'Sleep Clause Mod', 'Illusion Level Mod', 'Kanto Pokedex', 'Terastal Clause', 'Item Clause = 1'],
+		ruleset: ['Standard NatDex', 'PotD', 'Illusion Level Mod', 'Nuevo Meta Pokedex', 'Terastal Clause', 'Item Clause = 1'],
 	},
 
 ];
