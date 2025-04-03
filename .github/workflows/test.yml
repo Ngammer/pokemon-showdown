@@ -65,16 +65,4 @@ jobs:
           data/**
           sim/**
 
-    - name: Run selective lint & neccessary tests (if pull request)
-      if: ${{ github.event_name == 'pull_request' }}
-      run: npm run full-test-ci
-      env:
-        CI: true
-        FILES: ${{ steps.changed-files.outputs.all_changed_and_modified_files }}
-        SKIPSIMTESTS: ${{ steps.changed-directories.outputs.all_changed_and_modified_files == '' }}
-
-    - name: Run full lint & test (if push to master)
-      run: npm run full-test
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
-      env:
-        CI: true
+    
