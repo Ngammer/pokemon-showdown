@@ -109,7 +109,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onAfterBoost(boost, target, source, effect) {
 			if (source && target === source) return;
-			let showMsg = false;
+			const showMsg = false;
 			let i: BoostID;
 			for (i in boost) {
 				if (boost[i]! < 0) {
@@ -282,7 +282,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -299,11 +299,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.useItem();
 			}
 		},
-		boosts: {def: 1},
+		boosts: { def: 1 },
 		num: 104,
 		gen: 4,
 
@@ -449,9 +449,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 			type: "Electric",
 		},
-		onModifyMove(move, pokemon, target){
-			if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.eatItem()){
-				this.heal(pokemon.baseMaxhp / 5, pokemon)
+		onModifyMove(move, pokemon, target) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.eatItem()) {
+				this.heal(pokemon.baseMaxhp / 5, pokemon);
 				move.ignoreImmunity = true;
 			}
 		},
@@ -469,14 +469,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 4,
 		onStart(pokemon) {
-			pokemon.addVolatile('berryjuice')
+			pokemon.addVolatile('berryjuice');
 		},
 		onResidual(pokemon) {
-			if(pokemon.maxhp !== pokemon.hp && pokemon.volatiles['berryjuice'].turns < 5){
+			if (pokemon.maxhp !== pokemon.hp && pokemon.volatiles['berryjuice'].turns < 5) {
 				this.heal(pokemon.baseMaxhp / 8);
-				pokemon.volatiles['berryjuice'].turns += 1
+				pokemon.volatiles['berryjuice'].turns += 1;
 			}
-			if (pokemon.volatiles['berryjuice'].turns >= 5){
+			if (pokemon.volatiles['berryjuice'].turns >= 5) {
 				pokemon.useItem();
 			}
 		},
@@ -496,7 +496,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onModifySpD(spd, pokemon) {
-			 if(pokemon.baseSpecies.name === "Alcremie"){
+			if (pokemon.baseSpecies.name === "Alcremie") {
 				return this.chainModify(1.5);
 			}
 		},
@@ -512,9 +512,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 130,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if(move.type === 'Steel'){
+			if (move.type === 'Steel') {
 				target.trySetStatus('par', source);
-				source.useItem()
+				source.useItem();
 			}
 		},
 		num: 581,
@@ -650,10 +650,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Fire",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.trySetStatus('brn', source);
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -706,9 +706,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			pokemon.addVolatile('bottlecap')
+			pokemon.addVolatile('bottlecap');
 		},
-		condition:{
+		condition: {
 			duration: 3,
 			onModifyMove(move) {
 				move.ignoreAbility = true;
@@ -993,8 +993,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onSourceModifyDamage(damage, target, source, move) {
 			if (source.baseSpecies.name == 'Polteageist-Antique') {
-			this.chainModify(0.5)
-			source.useItem()
+				this.chainModify(0.5);
+				source.useItem();
 			}
 		},
 		itemUser: ['Polteageist-Antique'],
@@ -1103,11 +1103,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.useItem();
 			}
 		},
-		boosts: {atk: 1},
+		boosts: { atk: 1 },
 		num: 100,
 		gen: 3,
 
@@ -1143,11 +1143,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.name === "Alcremie"){
-			  return this.chainModify(1.5);
-		  }
-	  },
-	  forcedForme: "Alcremie-Clover",
+			if (pokemon.baseSpecies.name === "Alcremie") {
+				return this.chainModify(1.5);
+			}
+		},
+		forcedForme: "Alcremie-Clover",
 		itemUser: ["Alcremie-Clover"],
 		num: 1112,
 		gen: 8,
@@ -1230,10 +1230,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Bug",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.trySetStatus('tox', source);
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -1248,17 +1248,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-				pokemon.addVolatile('coverfossil')
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.addVolatile('coverfossil');
+				pokemon.useItem();
 			}
 		},
 		onEnd(pokemon) {
-			pokemon.removeVolatile('coverfossil')
+			pokemon.removeVolatile('coverfossil');
 		},
-		condition:{
+		condition: {
 			onSourceModifyDamage(damage, target, source, move) {
-				this.chainModify(0.7)
+				this.chainModify(0.7);
 			},
 		},
 		num: 572,
@@ -1286,7 +1286,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onSourceModifyDamage(damage, target, source, move) {
 			if (source.baseSpecies.name == 'Polteageist') {
-			this.chainModify(0.8)
+				this.chainModify(0.8);
 			}
 		},
 		itemUser: ['Polteageist'],
@@ -1384,7 +1384,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem == 'Shiny Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
-				this.boost({[bestStat]: 1}, pokemon);
+				this.boost({ [bestStat]: 1 }, pokemon);
 			}
 		},
 		itemUser: ['Gallade', 'Froslass'],
@@ -1485,15 +1485,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-				pokemon.addVolatile('domefossil')
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.addVolatile('domefossil');
+				pokemon.useItem();
 			}
 		},
 		onEnd(pokemon) {
-			pokemon.removeVolatile('domefossil')
+			pokemon.removeVolatile('domefossil');
 		},
-		condition:{
+		condition: {
 			onSetStatus(status, target, source, effect) {
 				if ((effect as Move)?.status) {
 					this.add('-immune', target, '[from] item: Dome Fossil');
@@ -1650,7 +1650,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Dream Ball",
 		spritenum: 111,
 		onStart(pokemon) {
-			pokemon.addVolatile('dreamball')
+			pokemon.addVolatile('dreamball');
 		},
 		condition: {},
 		num: 576,
@@ -1808,7 +1808,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onModifyMove(move, pokemon, target) {
 			if (move.type === 'Electric' && pokemon.species.name === 'Electivire' && pokemon.hasAbility('motordrive')) {
-			pokemon.addVolatile('charge')
+				pokemon.addVolatile('charge');
 			}
 		},
 		num: 322,
@@ -1860,13 +1860,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (!pokemon.ignoringItem() && this.field.isTerrain('electricterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('electricseed')
+				pokemon.addVolatile('electricseed');
 			}
 		},
 		onTerrainChange(pokemon) {
 			if (this.field.isTerrain('electricterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('electricseed')
+				pokemon.addVolatile('electricseed');
 			}
 		},
 		boosts: {
@@ -1880,15 +1880,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			},
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, attacker, defender, move) {
-					this.debug('Electric Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Electric Seed boost');
+				return this.chainModify(1.5);
 			},
 			onModifySpAPriority: 5,
 			onModifySpA(atk, attacker, defender, move) {
-					this.debug('Electric Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Electric Seed boost');
+				return this.chainModify(1.5);
 			},
 			onEnd(target) {
 				this.add('-end', target, 'item: Electric Seed', '[silent]');
@@ -2251,11 +2249,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 0,
 		},
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.name === "Alcremie"){
-			  return this.chainModify(1.5);
-		  }
-	  },
-	  forcedForme: "Alcremie-Flower",
+			if (pokemon.baseSpecies.name === "Alcremie") {
+				return this.chainModify(1.5);
+			}
+		},
+		forcedForme: "Alcremie-Flower",
 		itemUser: ["Alcremie-Flower"],
 		num: 1113,
 		gen: 8,
@@ -2318,18 +2316,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			pokemon.addVolatile('focusband');
 		},
 		onEnd(target) {
-			 target.removeVolatile('focusband');
+			target.removeVolatile('focusband');
 		},
 		onDamagingHit(damage, target, source, move) {
-			if (target.volatiles['focusband'] ) {
+			if (target.volatiles['focusband']) {
 				target.volatiles['focusband'].turns++;
 			}
 			if (target.volatiles['focusband']?.turns >= 3 && move.category == 'Physical') {
-				this.boost({def: 1}, target)
+				this.boost({ def: 1 }, target);
 				target.volatiles['focusband'].turns = 0;
-			}
-			else if (target.volatiles['focusband']?.turns >= 3 && move.category == 'Special') {
-				this.boost({spd: 1}, target)
+			} else if (target.volatiles['focusband']?.turns >= 3 && move.category == 'Special') {
+				this.boost({ spd: 1 }, target);
 				target.volatiles['focusband'].turns = 0;
 			}
 		},
@@ -2365,9 +2362,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if(source.hasAbility("Mineralizacion")){
+			if (source.hasAbility("Mineralizacion")) {
 				target.trySetStatus('par', source);
-				source.useItem()
+				source.useItem();
 			}
 		},
 		num: 1105,
@@ -2381,9 +2378,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if(source.hasAbility("Mineralizacion")){
+			if (source.hasAbility("Mineralizacion")) {
 				target.trySetStatus('frz', source);
-				source.useItem()
+				source.useItem();
 			}
 		},
 		num: 1108,
@@ -2397,9 +2394,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if(source.hasAbility("Mineralizacion")){
+			if (source.hasAbility("Mineralizacion")) {
 				target.addVolatile('flinch', source);
-				source.useItem()
+				source.useItem();
 			}
 		},
 		num: 1107,
@@ -2413,9 +2410,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if(source.hasAbility("Mineralizacion")){
+			if (source.hasAbility("Mineralizacion")) {
 				target.addVolatile('confusion', source);
-				source.useItem()
+				source.useItem();
 			}
 		},
 		num: 1106,
@@ -2444,7 +2441,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			const dazzlingHolder = this.effectState.target;
 			if ((source.isAlly(dazzlingHolder) || move.target === 'all') && move.priority > 0.1) {
 				this.attrLastMove('[still]');
-				source.useItem()
+				source.useItem();
 				return false;
 			}
 		},
@@ -2460,7 +2457,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.species.name == 'Slowbro-Galar')
-			pokemon.addVolatile('galaricawreath')
+				pokemon.addVolatile('galaricawreath');
 		},
 		condition: {},
 		itemUser: ['Slowbro-Galar'],
@@ -2501,7 +2498,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -2622,9 +2619,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			pokemon.addVolatile('goldbottlecap')
+			pokemon.addVolatile('goldbottlecap');
 		},
-		condition:{
+		condition: {
 			duration: 3,
 			onModifyMove(move) {
 				move.ignoreEvasion = true;
@@ -2692,13 +2689,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (!pokemon.ignoringItem() && this.field.isTerrain('grassyterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('grassyseed')
+				pokemon.addVolatile('grassyseed');
 			}
 		},
 		onTerrainChange(pokemon) {
 			if (this.field.isTerrain('grassyterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('grassyseed')
+				pokemon.addVolatile('grassyseed');
 			}
 		},
 		boosts: {
@@ -2712,15 +2709,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			},
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, attacker, defender, move) {
-					this.debug('Grassy Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Grassy Seed boost');
+				return this.chainModify(1.5);
 			},
 			onModifySpAPriority: 5,
 			onModifySpA(atk, attacker, defender, move) {
-					this.debug('Grassy Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Grassy Seed boost');
+				return this.chainModify(1.5);
 			},
 			onEnd(target) {
 				this.add('-end', target, 'item: Grassy Seed', '[silent]');
@@ -2733,14 +2728,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Great Ball",
 		spritenum: 174,
 		onStart(pokemon) {
-			if (pokemon.hasAbility('effectspore')){
-			pokemon.addVolatile(`greatball`)
+			if (pokemon.hasAbility('effectspore')) {
+				pokemon.addVolatile(`greatball`);
 			}
 		},
 		condition: {
 			onSourceTryHit(target, source, move) {
 				target.trySetStatus('slp', source);
-				source.useItem()
+				source.useItem();
 			},
 		},
 		num: 3,
@@ -2916,12 +2911,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Heal Ball",
 		spritenum: 188,
 		onStart(pokemon) {
-			pokemon.addVolatile('healball')
+			pokemon.addVolatile('healball');
 		},
 		condition: {
 			onBasePower(basepower) {
-				this.chainModify(1.15)
-			}
+				this.chainModify(1.15);
+			},
 		},
 		num: 14,
 		gen: 4,
@@ -3007,10 +3002,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Ground",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.trySetStatus('par', source);
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -3236,16 +3231,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyMove(move, pokemon) {
 			if (move.id === 'explosion' || move.id === 'selfdestruct') {
 				const types = pokemon.getTypes();
-				if(pokemon.types[0]){
-				let type = types[0];
-				if (type === 'Bird') type = '???';
-				if (type === '???' && types[1]) type = types[1];
-				move.type = type;
-				} else if (pokemon.types[1]){
+				if (pokemon.types[0]) {
+					let type = types[0];
+					if (type === 'Bird') type = '???';
+					if (type === '???' && types[1]) type = types[1];
+					move.type = type;
+				} else if (pokemon.types[1]) {
 					let type = types[1];
-				if (type === 'Bird') type = '???';
-				if (type === '???' && types[0]) type = types[0];
-				move.type = type;
+					if (type === 'Bird') type = '???';
+					if (type === '???' && types[0]) type = types[0];
+					move.type = type;
 				}
 				pokemon.eatItem();
 			}
@@ -3328,11 +3323,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onAfterMoveSecondary(target, source, move) {
 			if (move.category === 'Physical' && target.eatItem()) {
 				if (move.id === 'present' && move.heal) return;
-
 			}
 		},
 		onEat(pokemon) {
-			this.boost({def: 2});
+			this.boost({ def: 2 });
 		},
 		num: 687,
 		gen: 6,
@@ -3348,15 +3342,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			let activated = false;
 			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-					for (const condition of sideConditions) {
-						if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-							this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] item: Kelpsy Berry', '[of] ' + pokemon);
-							activated = true
-						}
-					}
-					if(activated){
-						pokemon.eatItem()
-					}
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] item: Kelpsy Berry', '[of] ' + pokemon);
+					activated = true;
+				}
+			}
+			if (activated) {
+				pokemon.eatItem();
+			}
 		},
 		onEat() { },
 		num: 170,
@@ -3436,7 +3430,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -3482,7 +3476,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onSourceModifyDamage(damage, source, target, move) {
 			return this.chainModify(0.9);
-	},
+		},
 		num: 255,
 		gen: 3,
 
@@ -3581,7 +3575,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -3689,11 +3683,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.name === "Alcremie"){
-			  return this.chainModify(1.5);
-		  }
-	  },
-	  forcedForme: "Alcremie-Love",
+			if (pokemon.baseSpecies.name === "Alcremie") {
+				return this.chainModify(1.5);
+			}
+		},
+		forcedForme: "Alcremie-Love",
 		itemUser: ["Alcremie-Love"],
 		num: 1110,
 		gen: 8,
@@ -3763,15 +3757,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onAfterMove(pokemon, target, move) {
-				if(target && pokemon !== target){
-					if(move.type === 'Grass'){
-						pokemon.useItem()
-					}
+			if (target && pokemon !== target) {
+				if (move.type === 'Grass') {
+					pokemon.useItem();
 				}
+			}
 		},
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (target && (target.hasType('Water') || target.hasType('Flying')) && move.type === 'Grass'){
-				return 1
+			if (target && (target.hasType('Water') || target.hasType('Flying')) && move.type === 'Grass') {
+				return 1;
 			};
 		},
 		num: 648,
@@ -3792,7 +3786,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Lure Ball",
 		spritenum: 264,
 		onStart(pokemon) {
-			pokemon.addVolatile('lureball')
+			pokemon.addVolatile('lureball');
 		},
 		condition: {},
 		num: 494,
@@ -3878,7 +3872,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onModifyMove(move, pokemon, target) {
 			if (move.type === 'Fire' && pokemon.species.name === 'Magmortar' && pokemon.hasAbility('ignomotor')) {
-			pokemon.addVolatile('flashfire')
+				pokemon.addVolatile('flashfire');
 			}
 		},
 		num: 323,
@@ -3934,10 +3928,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Rock",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.addVolatile('attract');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -3953,9 +3947,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (this.activeMove.id !== 'knockoff' && this.activeMove.id !== 'thief' && this.activeMove.id !== 'covet') return false;
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			 if(move.selfSwitch && source.useItem()){
-				this.boost({atk: -1, spa: -1}, target, source)
-			 }
+			if (move.selfSwitch && source.useItem()) {
+				this.boost({ atk: -1, spa: -1 }, target, source);
+			}
 		},
 		num: 137,
 		gen: 2,
@@ -4009,11 +4003,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onAfterMoveSecondary(target, source, move) {
 			if (move.category === 'Special' && target.eatItem()) {
 				if (move.id === 'present' && move.heal) return;
-
 			}
 		},
 		onEat(pokemon) {
-			this.boost({spd: 2});
+			this.boost({ spd: 2 });
 		},
 		num: 688,
 		gen: 6,
@@ -4046,14 +4039,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualSubOrder: 4,
 		onStart(pokemon) {
 			if (pokemon.species.name == 'Sinistcha-Masterpiece') {
-			pokemon.addVolatile('masterpieceteacup')
+				pokemon.addVolatile('masterpieceteacup');
 			}
 		},
 		onResidual(pokemon) {
-			if(pokemon.maxhp !== pokemon.hp && pokemon.volatiles['masterpieceteacup'].turns < 5){
-				pokemon.volatiles['masterpieceteacup'].turns += 1
+			if (pokemon.maxhp !== pokemon.hp && pokemon.volatiles['masterpieceteacup'].turns < 5) {
+				pokemon.volatiles['masterpieceteacup'].turns += 1;
 			}
-			if (pokemon.volatiles['masterpieceteacup'].turns >= 5){
+			if (pokemon.volatiles['masterpieceteacup'].turns >= 5) {
 				this.heal(pokemon.baseMaxhp / 2);
 			}
 		},
@@ -4170,7 +4163,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Metal Alloy",
 		spritenum: 761,
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.name == 'Archaludon' && (move.type === 'Steel' || move.type === 'Electric')){
+			if (source.baseSpecies.name == 'Archaludon' && (move.type === 'Steel' || move.type === 'Electric')) {
 				return this.chainModify([6144, 4096]);
 			}
 		},
@@ -4203,14 +4196,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyDef(def, pokemon) {
 			if (pokemon.species.name === 'Ditto' && !pokemon.transformed) {
 				return this.chainModify(2);
-			} else if (pokemon.baseSpecies.name === 'Ditto' && pokemon.transformed){
+			} else if (pokemon.baseSpecies.name === 'Ditto' && pokemon.transformed) {
 				return this.chainModify(1.2);
 			}
 		},
 		onModifySpD(spd, pokemon) {
 			if (pokemon.species.name === 'Ditto' && !pokemon.transformed) {
 				return this.chainModify(2);
-			} else if (pokemon.baseSpecies.name === 'Ditto' && pokemon.transformed){
+			} else if (pokemon.baseSpecies.name === 'Ditto' && pokemon.transformed) {
 				return this.chainModify(1.2);
 			}
 		},
@@ -4229,14 +4222,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			pokemon.addVolatile('metronome');
 		},
 		onEnd(target) {
-			 target.removeVolatile('metronome');
+			target.removeVolatile('metronome');
 		},
 		onResidual(pokemon) {
 			if (pokemon.volatiles['metronome']) {
 				pokemon.volatiles['metronome'].turns++;
 			}
 			if (pokemon.volatiles['metronome']?.turns >= 4) {
-				this.boost({spe: 1}, pokemon)
+				this.boost({ spe: 1 }, pokemon);
 				pokemon.volatiles['metronome'].turns = 0;
 			}
 		},
@@ -4417,13 +4410,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (!pokemon.ignoringItem() && this.field.isTerrain('mistyterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('mistyseed')
+				pokemon.addVolatile('mistyseed');
 			}
 		},
 		onTerrainChange(pokemon) {
 			if (this.field.isTerrain('mistyterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('mistyseed')
+				pokemon.addVolatile('mistyseed');
 			}
 		},
 		boosts: {
@@ -4437,15 +4430,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			},
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, attacker, defender, move) {
-					this.debug('Misty Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Misty Seed boost');
+				return this.chainModify(1.5);
 			},
 			onModifySpAPriority: 5,
 			onModifySpA(atk, attacker, defender, move) {
-					this.debug('Misty Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Misty Seed boost');
+				return this.chainModify(1.5);
 			},
 			onEnd(target) {
 				this.add('-end', target, 'item: Misty Seed', '[silent]');
@@ -4458,7 +4449,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Moon Ball",
 		spritenum: 294,
 		onStart(pokemon) {
-			pokemon.addVolatile('moonball')
+			pokemon.addVolatile('moonball');
 		},
 		num: 498,
 		gen: 2,
@@ -4473,7 +4464,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem == 'Shiny Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
-				this.boost({[bestStat]: 1}, pokemon);
+				this.boost({ [bestStat]: 1 }, pokemon);
 			}
 		},
 		itemUser: ['Nidoqueen', 'Nidoking', 'Clefable', 'Wigglytuff', 'Delcatty', 'Musharna'],
@@ -4490,14 +4481,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			pokemon.addVolatile('muscleband');
 		},
 		onEnd(target) {
-			 target.removeVolatile('muscleband');
+			target.removeVolatile('muscleband');
 		},
 		onBeforeMove(pokemon, target, move) {
 			if (pokemon.volatiles['muscleband'] && move.category === 'Physical') {
 				pokemon.volatiles['muscleband'].turns++;
 			}
 			if (pokemon.volatiles['muscleband']?.turns >= 3) {
-				this.boost({atk: 1}, pokemon)
+				this.boost({ atk: 1 }, pokemon);
 				pokemon.volatiles['muscleband'].turns = 0;
 			}
 		},
@@ -4533,10 +4524,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Water",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.addVolatile('confusion');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -4548,7 +4539,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Nest Ball",
 		spritenum: 303,
 		onStart(pokemon) {
-			pokemon.addVolatile('nestball')
+			pokemon.addVolatile('nestball');
 		},
 		condition: {},
 		num: 8,
@@ -4590,7 +4581,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Dragon' || move.type === 'Flying') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -4653,7 +4644,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onDamagingHit(damage, target, source, move) {
 			this.field.setTerrain('psychicterrain');
-			target.useItem()
+			target.useItem();
 		},
 		num: 314,
 		gen: 4,
@@ -4666,11 +4657,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.useItem();
 			}
 		},
-		boosts: {spe: 1},
+		boosts: { spe: 1 },
 		num: 103,
 		gen: 3,
 
@@ -4727,10 +4718,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Steel",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.addVolatile('curse');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -4844,7 +4835,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -4903,7 +4894,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Grass' || move.type === 'Fairy') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -5047,10 +5038,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			type: "Ice",
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if((source.baseMaxhp / 2 > source.hp) ){
-				this.heal(source.baseMaxhp / 5, source)
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
 				target.trySetStatus('frz', source);
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -5176,7 +5167,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Premier Ball",
 		spritenum: 363,
 		onStart(pokemon) {
-			pokemon.addVolatile('premierball')
+			pokemon.addVolatile('premierball');
 		},
 		condition: {},
 		num: 12,
@@ -5201,8 +5192,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Milotic'){
-				this.boost({spa: 1}, pokemon)
+			if (pokemon.baseSpecies.name == 'Milotic') {
+				this.boost({ spa: 1 }, pokemon);
 			}
 		},
 		itemUser: ['Milotic'],
@@ -5294,13 +5285,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (!pokemon.ignoringItem() && this.field.isTerrain('psychicterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('psychicseed')
+				pokemon.addVolatile('psychicseed');
 			}
 		},
 		onTerrainChange(pokemon) {
 			if (this.field.isTerrain('psychicterrain')) {
 				pokemon.useItem();
-				pokemon.addVolatile('psychicseed')
+				pokemon.addVolatile('psychicseed');
 			}
 		},
 		boosts: {
@@ -5314,15 +5305,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			},
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, attacker, defender, move) {
-					this.debug('Psychic Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Psychic Seed boost');
+				return this.chainModify(1.5);
 			},
 			onModifySpAPriority: 5,
 			onModifySpA(atk, attacker, defender, move) {
-					this.debug('Psychic Seed boost');
-					return this.chainModify(1.5);
-
+				this.debug('Psychic Seed boost');
+				return this.chainModify(1.5);
 			},
 			onEnd(target) {
 				this.add('-end', target, 'item: Psychic Seed', '[silent]');
@@ -5372,7 +5361,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Poison' || move.type === 'Ground') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -5408,7 +5397,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifySpe(spe, pokemon) {
 			if (pokemon.species.name === 'Ditto' && !pokemon.transformed) {
 				return this.chainModify(2);
-			} else if (pokemon.baseSpecies.name === 'Ditto' && pokemon.transformed){
+			} else if (pokemon.baseSpecies.name === 'Ditto' && pokemon.transformed) {
 				return this.chainModify(1.2);
 			}
 		},
@@ -5430,7 +5419,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Ghost' || move.type === 'Rock') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -5510,7 +5499,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Steel' || move.type === 'Water') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -5589,11 +5578,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.name === "Alcremie"){
-			  return this.chainModify(1.5);
-		  }
-	  },
-	  forcedForme: "Alcremie-Ribbon",
+			if (pokemon.baseSpecies.name === "Alcremie") {
+				return this.chainModify(1.5);
+			}
+		},
+		forcedForme: "Alcremie-Ribbon",
 		itemUser: ["Alcremie-Ribbon"],
 		num: 1115,
 		gen: 8,
@@ -5628,9 +5617,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 10,
 		},
-		onModifyMove(move, pokemon, target){
-			if (target && !target.runImmunity(move.type)){
-			move.ignoreImmunity = true;
+		onModifyMove(move, pokemon, target) {
+			if (target && !target.runImmunity(move.type)) {
+				move.ignoreImmunity = true;
 			}
 		},
 		num: 543,
@@ -5658,7 +5647,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onDamagingHit(damage, target, source, move) {
 			this.field.setWeather('sandstorm');
-			target.useItem()
+			target.useItem();
 		},
 		num: 315,
 		gen: 4,
@@ -5744,11 +5733,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.useItem();
 			}
 		},
-		boosts: {spd: 1},
+		boosts: { spd: 1 },
 		num: 99,
 		gen: 3,
 
@@ -5761,7 +5750,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onDamagingHit(damage, target, source, move) {
 			this.field.setTerrain('grassyterrain');
-			target.useItem()
+			target.useItem();
 		},
 		num: 318,
 		gen: 4,
@@ -5860,7 +5849,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualOrder: 5,
 		onResidualSubOrder: 4,
 		onResidual(pokemon) {
-			if (pokemon.baseSpecies.name == 'Aromatisse'){
+			if (pokemon.baseSpecies.name == 'Aromatisse') {
 				this.heal(pokemon.baseMaxhp / 8);
 			}
 		},
@@ -5872,7 +5861,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Safari Ball",
 		spritenum: 425,
 		onStart(pokemon) {
-			pokemon.addVolatile('safariball')
+			pokemon.addVolatile('safariball');
 		},
 		condition: {},
 		num: 5,
@@ -5904,11 +5893,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.useItem();
 			}
 		},
-		boosts: {spa: 1},
+		boosts: { spa: 1 },
 		num: 711,
 		gen: 6,
 
@@ -5982,9 +5971,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onModifyMove(move, pokemon, target) {
-			 if (move.critRatio && move.critRatio >= 2){
-				return move.willCrit = true
-			 }
+			if (move.critRatio && move.critRatio >= 2) {
+				return move.willCrit = true;
+			}
 		},
 		num: 232,
 		gen: 2,
@@ -6002,7 +5991,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		boosts: {
-			spe: -1
+			spe: -1,
 		},
 		num: 254,
 		gen: 3,
@@ -6047,7 +6036,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			pokemon.addVolatile('shedshell');
 		},
 		onEnd(target) {
-			 target.removeVolatile('shedshell');
+			target.removeVolatile('shedshell');
 		},
 		onResidualOrder: 5,
 		onResidualSubOrder: 3,
@@ -6055,15 +6044,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (pokemon.volatiles['shedshell']) {
 				pokemon.volatiles['shedshell'].turns++;
 			}
-				if (pokemon.volatiles['shedshell']?.turns >= 5) {
+			if (pokemon.volatiles['shedshell']?.turns >= 5) {
 				if (pokemon.status) {
 					this.add('-activate', pokemon, 'item: Shed Shell');
 					this.add('-message', `${pokemon.name}'s Shed Shell cured its status!`);
 					pokemon.cureStatus();
 				}
 				this.effectState.turns = 0;
-				}
-			},
+			}
+		},
 		onTrapPokemonPriority: -10,
 		onTrapPokemon(pokemon) {
 			pokemon.trapped = pokemon.maybeTrapped = false;
@@ -6205,25 +6194,25 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if(pokemon.hasAbility("Mineralizacion")){
-			pokemon.useItem()
+			if (pokemon.hasAbility("Mineralizacion")) {
+				pokemon.useItem();
 			}
 		},
 		onEnd(pokemon) {
-			pokemon.removeVolatile('coverfossil')
+			pokemon.removeVolatile('coverfossil');
 		},
 		condition: {
 			onBasePowerPriority: 19,
-		onBasePower(basePower, attacker, defender, move) {
+			onBasePower(basePower, attacker, defender, move) {
 				this.debug('Inteligencia Artificial boost');
 				return this.chainModify(1.5);
-		},
-		onSourceModifyAccuracyPriority: -1,
-		onSourceModifyAccuracy(accuracy, target, source, move) {
-			if (typeof accuracy === 'number') {
-				return this.chainModify(0.9);
-			}
-		},
+			},
+			onSourceModifyAccuracyPriority: -1,
+			onSourceModifyAccuracy(accuracy, target, source, move) {
+				if (typeof accuracy === 'number') {
+					return this.chainModify(0.9);
+				}
+			},
 		},
 		num: 105,
 		gen: 4,
@@ -6372,7 +6361,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Dark' || move.type === 'Normal') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -6466,11 +6455,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.name === "Alcremie"){
-			  return this.chainModify(1.5);
-		  }
-	  },
-	  forcedForme: "Alcremie-Star",
+			if (pokemon.baseSpecies.name === "Alcremie") {
+				return this.chainModify(1.5);
+			}
+		},
+		forcedForme: "Alcremie-Star",
 		itemUser: ["Alcremie-Star"],
 		num: 1114,
 		gen: 8,
@@ -6607,11 +6596,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.name === "Alcremie"){
-			  return this.chainModify(1.5);
-		  }
-	  },
-	  forcedForme: "Alcremie-Star",
+			if (pokemon.baseSpecies.name === "Alcremie") {
+				return this.chainModify(1.5);
+			}
+		},
+		forcedForme: "Alcremie-Star",
 		itemUser: ["Alcremie-Star"],
 		num: 1109,
 		gen: 8,
@@ -6625,7 +6614,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem == 'Shiny Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
-				this.boost({[bestStat]: 1}, pokemon);
+				this.boost({ [bestStat]: 1 }, pokemon);
 			}
 		},
 		itemUser: ['Bellosom', 'Sunflora', 'Sunfulwer', 'Whimsicott', 'Liligant', 'Liligant-Hisui', 'Heliolisk'],
@@ -6657,13 +6646,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (pokemon.baseSpecies.name == 'Flapple') {
 				const r = this.random(2);
 				if (r == 1) {
-					this.boost({spd: 1}, pokemon);
+					this.boost({ spd: 1 }, pokemon);
 				} else {
-					this.boost({def: 1}, pokemon);
-				pokemon.useItem()
+					this.boost({ def: 1 }, pokemon);
+					pokemon.useItem();
 				}
 			}
-
 		},
 		itemUser: ['Appletun'],
 		num: 1116,
@@ -6677,13 +6665,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		isBerry: true,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Flapple'){
-				this.boost({atk: 2}, pokemon)
-				pokemon.useItem()
+			if (pokemon.baseSpecies.name == 'Flapple') {
+				this.boost({ atk: 2 }, pokemon);
+				pokemon.useItem();
 			}
-			if (pokemon.baseSpecies.name == 'Appletun'){
-				this.boost({def: 2, spd: 2}, pokemon)
-				pokemon.useItem()
+			if (pokemon.baseSpecies.name == 'Appletun') {
+				this.boost({ def: 2, spd: 2 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		itemUser: ['Appletun', 'Flapple'],
@@ -6703,7 +6691,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Psychic' || move.type === 'Fighting') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -6752,9 +6740,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		isBerry: true,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Flapple'){
-				this.boost({spe: 1}, pokemon)
-				pokemon.useItem()
+			if (pokemon.baseSpecies.name == 'Flapple') {
+				this.boost({ spe: 1 }, pokemon);
+				pokemon.useItem();
 			}
 		},
 		itemUser: ['Flapple'],
@@ -6867,9 +6855,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			 if(source.useItem() && move.name === 'Swords Dance'){
-				this.boost({spe: 1}, source, source)
-			 }
+			if (source.useItem() && move.name === 'Swords Dance') {
+				this.boost({ spe: 1 }, source, source);
+			}
 		},
 		spritenum: 721,
 		num: 1130,
@@ -6882,10 +6870,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Body Slam'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Body Slam') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1131,
 		gen: 8,
@@ -6897,10 +6885,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Flamethrower'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Flamethrower') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 730,
 		num: 1132,
 		gen: 8,
@@ -6912,10 +6900,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Hydro Pump'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Hydro Pump') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 731,
 		num: 1133,
 		gen: 8,
@@ -6927,10 +6915,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Surf'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Surf') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 731,
 		num: 1134,
 		gen: 8,
@@ -6942,10 +6930,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Ice Beam'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Ice Beam') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 735,
 		num: 1135,
 		gen: 8,
@@ -6957,10 +6945,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Blizzard'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Blizzard') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 735,
 		num: 1136,
 		gen: 8,
@@ -6972,10 +6960,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Low Kick'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Low Kick') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 722,
 		num: 1137,
 		gen: 8,
@@ -6987,10 +6975,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Thunderbolt'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Thunderbolt') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 733,
 		num: 1138,
 		gen: 8,
@@ -7002,10 +6990,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Thunder'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Thunder') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 733,
 		num: 1139,
 		gen: 8,
@@ -7017,10 +7005,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Earthquake'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Earthquake') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 725,
 		num: 1140,
 		gen: 8,
@@ -7032,10 +7020,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Psychic'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Psychic') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1141,
 		gen: 8,
@@ -7047,10 +7035,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Agility'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Agility') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1142,
 		gen: 8,
@@ -7062,10 +7050,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Focus Energy'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Focus Energy') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1143,
 		gen: 8,
@@ -7077,10 +7065,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Metronome'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Metronome') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1144,
 		gen: 8,
@@ -7092,10 +7080,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Fire Blast'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Fire Blast') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 730,
 		num: 1145,
 		gen: 8,
@@ -7107,10 +7095,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Waterfall'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Waterfall') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 731,
 		num: 1146,
 		gen: 8,
@@ -7122,10 +7110,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Amnesia'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Amnesia') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1147,
 		gen: 8,
@@ -7137,10 +7125,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Leech Life'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Leech Life') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 727,
 		num: 1148,
 		gen: 8,
@@ -7152,10 +7140,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Tri Attack'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Tri Attack') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1149,
 		gen: 8,
@@ -7167,10 +7155,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Substitute'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Substitute') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1150,
 		gen: 8,
@@ -7182,10 +7170,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Reversal'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Reversal') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 722,
 		num: 1151,
 		gen: 8,
@@ -7197,10 +7185,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Sludge bomb'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Sludge bomb') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 724,
 		num: 1152,
 		gen: 8,
@@ -7212,10 +7200,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Spikes'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Spikes') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 725,
 		num: 1153,
 		gen: 8,
@@ -7227,10 +7215,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Outrage'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Outrage') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 736,
 		num: 1154,
 		gen: 8,
@@ -7242,10 +7230,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Psyshock'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Psyshock') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1155,
 		gen: 8,
@@ -7257,10 +7245,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Endure'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Endure') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1156,
 		gen: 8,
@@ -7272,10 +7260,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Sleep Talk'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Sleep Talk') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1157,
 		gen: 8,
@@ -7287,10 +7275,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Megahorn'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Megahorn') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 727,
 		num: 1158,
 		gen: 8,
@@ -7302,10 +7290,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Baton Pass'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Baton Pass') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1159,
 		gen: 8,
@@ -7317,10 +7305,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Encore'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Encore') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1160,
 		gen: 8,
@@ -7332,10 +7320,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Iron Tail'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Iron Tail') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 729,
 		num: 1161,
 		gen: 8,
@@ -7347,10 +7335,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Crunch'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Crunch') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 737,
 		num: 1162,
 		gen: 8,
@@ -7362,10 +7350,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Shadow Ball'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Shadow Ball') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 728,
 		num: 1163,
 		gen: 8,
@@ -7377,10 +7365,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Future Sight'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Future Sight') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1164,
 		gen: 8,
@@ -7392,10 +7380,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Uproar'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Uproar') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1165,
 		gen: 8,
@@ -7407,10 +7395,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Heat Wave'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Heat Wave') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 730,
 		num: 1166,
 		gen: 8,
@@ -7422,10 +7410,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Taunt'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Taunt') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 737,
 		num: 1167,
 		gen: 8,
@@ -7437,10 +7425,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Trick'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Trick') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1168,
 		gen: 8,
@@ -7452,10 +7440,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Superpower'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Superpower') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 722,
 		num: 1169,
 		gen: 8,
@@ -7467,10 +7455,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Skill Swap'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Skill Swap') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1170,
 		gen: 8,
@@ -7482,10 +7470,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Blaze Kick'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Blaze Kick') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 730,
 		num: 1171,
 		gen: 8,
@@ -7497,10 +7485,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Hyper Voice'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Hyper Voice') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 721,
 		num: 1172,
 		gen: 8,
@@ -7512,10 +7500,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 130,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Overheat'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Overheat') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 730,
 		num: 1173,
 		gen: 8,
@@ -7527,10 +7515,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Cosmic Power'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Cosmic Power') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1174,
 		gen: 8,
@@ -7542,10 +7530,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Muddy Water'){
-			  this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Muddy Water') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 731,
 		num: 1175,
 		gen: 8,
@@ -7557,10 +7545,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Iron Defense'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Iron Defense') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 729,
 		num: 1176,
 		gen: 8,
@@ -7572,10 +7560,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Dragon Claw'){
-			  this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Dragon Claw') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 736,
 		num: 1177,
 		gen: 8,
@@ -7587,10 +7575,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Bulk Up'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Bulk Up') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 722,
 		num: 1178,
 		gen: 8,
@@ -7602,10 +7590,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Calm Mind'){
-			  this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Calm Mind') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	  },
+		},
 		spritenum: 734,
 		num: 1179,
 		gen: 8,
@@ -7617,10 +7605,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Leaf Blade'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Leaf Blade') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 732,
 		num: 1180,
 		gen: 8,
@@ -7632,10 +7620,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Dragon Dance'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Dragon Dance') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 736,
 		num: 1181,
 		gen: 8,
@@ -7647,10 +7635,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Gyro Ball'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Gyro Ball') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 729,
 		num: 1182,
 		gen: 8,
@@ -7662,10 +7650,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Close Combat'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Close Combat') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 722,
 		num: 1183,
 		gen: 8,
@@ -7677,10 +7665,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Toxic Spikes'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Toxic Spikes') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 724,
 		num: 1184,
 		gen: 8,
@@ -7692,10 +7680,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Flare Blitz'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Flare Blitz') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 730,
 		num: 1185,
 		gen: 8,
@@ -7707,10 +7695,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Aura Sphere'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Aura Sphere') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 722,
 		num: 1186,
 		gen: 8,
@@ -7722,10 +7710,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Poison Jab'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Poison Jab') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 724,
 		num: 1187,
 		gen: 8,
@@ -7737,10 +7725,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Dark Pulse'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Dark Pulse') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 737,
 		num: 1188,
 		gen: 8,
@@ -7752,10 +7740,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Seed Bomb'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Seed Bomb') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 732,
 		num: 1189,
 		gen: 8,
@@ -7767,10 +7755,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'X-Scissor'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'X-Scissor') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 727,
 		num: 1190,
 		gen: 8,
@@ -7782,10 +7770,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Bug Buzz'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Bug Buzz') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 727,
 		num: 1191,
 		gen: 8,
@@ -7797,10 +7785,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Dragon Pulse'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Dragon Pulse') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 736,
 		num: 1192,
 		gen: 8,
@@ -7812,10 +7800,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Power Gem'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Power Gem') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 726,
 		num: 1193,
 		gen: 8,
@@ -7827,10 +7815,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Focus Blast'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Focus Blast') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 722,
 		num: 1194,
 		gen: 8,
@@ -7842,10 +7830,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Energy Ball'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Energy Ball') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 732,
 		num: 1195,
 		gen: 8,
@@ -7857,10 +7845,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Brave Bird'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Brave Bird') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 723,
 		num: 1196,
 		gen: 8,
@@ -7872,10 +7860,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Earth Power'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Earth Power') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 725,
 		num: 1197,
 		gen: 8,
@@ -7887,10 +7875,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Nasty Plot'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Nasty Plot') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 737,
 		num: 1198,
 		gen: 8,
@@ -7902,10 +7890,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Zen Headbutt'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Zen Headbutt') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 734,
 		num: 1199,
 		gen: 8,
@@ -7917,10 +7905,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Flash Cannon'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Flash Cannon') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 729,
 		num: 1200,
 		gen: 8,
@@ -7932,10 +7920,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 130,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Leaf Storm'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Leaf Storm') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 732,
 		num: 1201,
 		gen: 8,
@@ -7947,10 +7935,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Power Whip'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Power Whip') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 732,
 		num: 1202,
 		gen: 8,
@@ -7962,10 +7950,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Gunk Shot'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Gunk Shot') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 724,
 		num: 1203,
 		gen: 8,
@@ -7977,10 +7965,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Iron Head'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Iron Head') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 729,
 		num: 1204,
 		gen: 8,
@@ -7992,10 +7980,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Stone Edge'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Stone Edge') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 726,
 		num: 1205,
 		gen: 8,
@@ -8007,10 +7995,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Stealth Rock'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Stealth Rock') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 726,
 		num: 1206,
 		gen: 8,
@@ -8022,10 +8010,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Grass Knot'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Grass Knot') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 732,
 		num: 1207,
 		gen: 8,
@@ -8037,10 +8025,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Sludge Wave'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Sludge Wave') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 724,
 		num: 1208,
 		gen: 8,
@@ -8052,10 +8040,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Heavy Slam'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Heavy Slam') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 729,
 		num: 1209,
 		gen: 8,
@@ -8067,10 +8055,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Electro Ball'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Electro Ball') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 733,
 		num: 1210,
 		gen: 8,
@@ -8082,10 +8070,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Foul Play'){
-			   this.boost({def: 1}, source, source)
+			if (source.useItem() && move.name === 'Foul Play') {
+				this.boost({ def: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 737,
 		num: 1211,
 		gen: 8,
@@ -8097,10 +8085,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 20,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Stored Power'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Stored Power') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 734,
 		num: 1212,
 		gen: 8,
@@ -8112,10 +8100,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Ally Switch'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Ally Switch') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 734,
 		num: 1213,
 		gen: 8,
@@ -8127,10 +8115,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Scald'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Scald') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 731,
 		num: 1214,
 		gen: 8,
@@ -8142,10 +8130,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Work Up'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Work Up') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 721,
 		num: 1215,
 		gen: 8,
@@ -8157,10 +8145,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Wild Charge'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Wild Charge') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 733,
 		num: 1216,
 		gen: 8,
@@ -8172,10 +8160,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Drill Run'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Drill Run') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 725,
 		num: 1217,
 		gen: 8,
@@ -8187,10 +8175,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Heat Crash'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Heat Crash') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 730,
 		num: 1218,
 		gen: 8,
@@ -8202,10 +8190,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Hurricane'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Hurricane') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 723,
 		num: 1219,
 		gen: 8,
@@ -8217,10 +8205,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Play Rough'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Play Rough') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 738,
 		num: 1220,
 		gen: 8,
@@ -8232,10 +8220,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Venom Drench'){
-			   this.boost({spe: 1}, source, source)
+			if (source.useItem() && move.name === 'Venom Drench') {
+				this.boost({ spe: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 724,
 		num: 1221,
 		gen: 8,
@@ -8247,10 +8235,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Dazzling Gleam'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Dazzling Gleam') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 738,
 		num: 1222,
 		gen: 8,
@@ -8262,10 +8250,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Darkest Lariat'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Darkest Lariat') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 737,
 		num: 1223,
 		gen: 8,
@@ -8277,10 +8265,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'High Horsepower'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'High Horsepower') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 725,
 		num: 1224,
 		gen: 8,
@@ -8292,10 +8280,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Throat Chop'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Throat Chop') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 737,
 		num: 1225,
 		gen: 8,
@@ -8307,10 +8295,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Pollen Puff'){
-			   this.boost({spa: 1}, source, source)
+			if (source.useItem() && move.name === 'Pollen Puff') {
+				this.boost({ spa: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 727,
 		num: 1226,
 		gen: 8,
@@ -8322,10 +8310,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Psychic Fangs'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Psychic Fangs') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 734,
 		num: 1227,
 		gen: 8,
@@ -8337,10 +8325,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Liquidation'){
-			   this.boost({atk: 1}, source, source)
+			if (source.useItem() && move.name === 'Liquidation') {
+				this.boost({ atk: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 731,
 		num: 1228,
 		gen: 8,
@@ -8352,10 +8340,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if(source.useItem() && move.name === 'Body Press'){
-			   this.boost({def: 1}, source, source)
+			if (source.useItem() && move.name === 'Body Press') {
+				this.boost({ def: 1 }, source, source);
 			}
-	   },
+		},
 		spritenum: 722,
 		num: 1229,
 		gen: 8,
@@ -8418,14 +8406,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onResidualSubOrder: 4,
 		onStart(pokemon) {
 			if (pokemon.species.name == 'Sinistcha') {
-			pokemon.addVolatile('unremarkableteacup')
+				pokemon.addVolatile('unremarkableteacup');
 			}
 		},
 		onResidual(pokemon) {
-			if(pokemon.maxhp !== pokemon.hp && pokemon.volatiles['unremarkableteacup'].turns < 3){
-				pokemon.volatiles['unremarkableteacup'].turns += 1
+			if (pokemon.maxhp !== pokemon.hp && pokemon.volatiles['unremarkableteacup'].turns < 3) {
+				pokemon.volatiles['unremarkableteacup'].turns += 1;
 			}
-			if (pokemon.volatiles['unremarkableteacup'].turns >= 3){
+			if (pokemon.volatiles['unremarkableteacup'].turns >= 3) {
 				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
@@ -8445,10 +8433,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name == 'Porygon-Z'){
-				this.boost({spe: 1}, pokemon)
+			if (pokemon.baseSpecies.name == 'Porygon-Z') {
+				this.boost({ spe: 1 }, pokemon);
 			}
-			pokemon.useItem()
+			pokemon.useItem();
 		},
 		itemUser: ['Porygon-Z'],
 		num: 252,
@@ -8595,7 +8583,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Fire' || move.type === 'Bug') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -8611,7 +8599,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onDamagingHit(damage, target, source, move) {
 			this.field.setWeather('raindance');
-			target.useItem()
+			target.useItem();
 		},
 		num: 317,
 		gen: 4,
@@ -8669,7 +8657,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (target === source || move.category === 'Status') return;
 			if ((move.type === 'Electric' || move.type === 'Ice') && source.hp < source.baseMaxhp / 2) {
 				source.addVolatile('gem');
-				source.eatItem()
+				source.eatItem();
 			}
 		},
 		onEat() { },
@@ -8685,8 +8673,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onSourceModifyDamage(damage, target, source, move) {
 			if (source.baseSpecies.name == 'Slurpuff')
-			this.chainModify(0)
-			source.useItem()
+				this.chainModify(0);
+			source.useItem();
 		},
 		itemUser: ['Slurpuff'],
 		num: 646,
@@ -8790,14 +8778,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			pokemon.addVolatile('wiseglasses');
 		},
 		onEnd(target) {
-			 target.removeVolatile('wiseglasses');
+			target.removeVolatile('wiseglasses');
 		},
 		onBeforeMove(pokemon, target, move) {
 			if (pokemon.volatiles['wiseglasses'] && move.category === 'Special') {
 				pokemon.volatiles['wiseglasses'].turns++;
 			}
 			if (pokemon.volatiles['wiseglasses']?.turns >= 3) {
-				this.boost({spa: 1}, pokemon)
+				this.boost({ spa: 1 }, pokemon);
 				pokemon.volatiles['wiseglasses'].turns = 0;
 			}
 		},
@@ -9190,7 +9178,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		isNonstandard: "CAP",
 	},
 
-// Nuevo Meta items
+	// Nuevo Meta items
 
 	butterfreetite: {
 		name: "Butterfreetite",
@@ -9225,13 +9213,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 758,
 		pseudoMegaStone: true,
 		onSwitchIn(pokemon) {
-			if (pokemon.baseSpecies.otherFormes ) {
-				let base = pokemon.species.name
+			if (pokemon.baseSpecies.otherFormes) {
+				const base = pokemon.species.name;
 				pokemon.formeChange(base + '-Totem', this.effect, true);
 			}
 		},
 		onTakeItem(item, source) {
-         return false;
+			return false;
 		},
 		itemUser: ["Raticate-Alola", 'Marowak-Alola', "Electrode-Hisui", "Arcanine-Hisui", "Xatu"],
 		num: -103,
@@ -9293,66 +9281,66 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Piedra Antigua",
 		spritenum: 743,
 		onTakeItem(item, pokemon, source) {
-			 return false;
+			return false;
 		},
 		onStart(pokemon) {
-			 const stats = {
-				  atk: pokemon.getStat('atk', true, true),
-				  def: pokemon.getStat('def', true, true),
-				  spa: pokemon.getStat('spa', true, true),
-				  spd: pokemon.getStat('spd', true, true),
-				  spe: pokemon.getStat('spe', true, true),
-			 };
-			 const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
-			 this.effectState.bestStats = sortedStats.slice(0, 2).map(s => s[0]); // Store top 2 stats
-			 this.debug(`Piedra Antigua boosts: ${this.effectState.bestStats.join(', ')}`);
+			const stats = {
+				atk: pokemon.getStat('atk', true, true),
+				def: pokemon.getStat('def', true, true),
+				spa: pokemon.getStat('spa', true, true),
+				spd: pokemon.getStat('spd', true, true),
+				spe: pokemon.getStat('spe', true, true),
+			};
+			const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
+			this.effectState.bestStats = sortedStats.slice(0, 2).map(s => s[0]); // Store top 2 stats
+			this.debug(`Piedra Antigua boosts: ${this.effectState.bestStats.join(', ')}`);
 		},
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
-			 if (!this.effectState.bestStats?.includes('atk')) return;
-			 this.debug('Piedra Antigua atk boost');
-			 return this.chainModify(1.5);
+			if (!this.effectState.bestStats?.includes('atk')) return;
+			this.debug('Piedra Antigua atk boost');
+			return this.chainModify(1.5);
 		},
 		onModifyDefPriority: 6,
 		onModifyDef(def, pokemon) {
-			 if (!this.effectState.bestStats?.includes('def')) return;
-			 this.debug('Piedra Antigua def boost');
-			 return this.chainModify(1.5);
+			if (!this.effectState.bestStats?.includes('def')) return;
+			this.debug('Piedra Antigua def boost');
+			return this.chainModify(1.5);
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			 if (!this.effectState.bestStats?.includes('spa')) return;
-			 this.debug('Piedra Antigua spa boost');
-			 return this.chainModify(1.5);
+			if (!this.effectState.bestStats?.includes('spa')) return;
+			this.debug('Piedra Antigua spa boost');
+			return this.chainModify(1.5);
 		},
 		onModifySpDPriority: 6,
 		onModifySpD(spd, pokemon) {
-			 if (!this.effectState.bestStats?.includes('spd')) return;
-			 this.debug('Piedra Antigua spd boost');
-			 return this.chainModify(1.5);
+			if (!this.effectState.bestStats?.includes('spd')) return;
+			this.debug('Piedra Antigua spd boost');
+			return this.chainModify(1.5);
 		},
 		onModifySpe(spe, pokemon) {
-			 if (!this.effectState.bestStats?.includes('spe')) return;
-			 this.debug('Piedra Antigua spe boost');
-			 return this.chainModify(1.5);
+			if (!this.effectState.bestStats?.includes('spe')) return;
+			this.debug('Piedra Antigua spe boost');
+			return this.chainModify(1.5);
 		},
 		itemUser: ["Quagsire-Feudal", "Slowking-Feudal", "Wungsparce-Feudal", "Granbull-Feudal", "Qwilfish-Feudal", "Ursaring-Feudal", "Mantine-Feudal", "Kingdra-Feudal", "Donphan-Feudal", "Celebi-Feudal"],
 		num: -107,
 		gen: 8,
-  },
-  criosfera: {
-	name: "Criosfera",
-	spritenum: 219,
-	fling: {
-		basePower: 30,
-		status: 'frz',
 	},
-	onResidualOrder: 28,
-	onResidualSubOrder: 3,
-	onResidual(pokemon) {
-		pokemon.trySetStatus('frz', pokemon);
+	criosfera: {
+		name: "Criosfera",
+		spritenum: 219,
+		fling: {
+			basePower: 30,
+			status: 'frz',
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('frz', pokemon);
+		},
+		num: -108,
+		gen: 4,
 	},
-	num: -108,
-	gen: 4,
-},
 };
