@@ -8375,9 +8375,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.effectState.startingTurn = this.getOverflowedTurnCount();
 			},
 			onResidualOrder: 4,
-			onResidual(side: any) {
+			onResidual(target: Pokemon) {
 				if (this.getOverflowedTurnCount() <= this.effectState.startingTurn + 1) return;
-				side.removeSlotCondition(this.getAtSlot(this.effectState.sourceSlot), 'happyhour');
+				target.side.removeSlotCondition(this.getAtSlot(this.effectState.sourceSlot), 'happyhour');
 			},
 			onEnd(target) {
 				if (target.hp === target.baseMaxhp) {

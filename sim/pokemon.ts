@@ -1023,7 +1023,7 @@ export class Pokemon {
 		if (!skipChecks) {
 			if (!this.side.canDynamaxNow()) return;
 			if (
-				this.species.isMega || this.species.isPrimal || this.species.forme === "Ultra" ||
+				this.species.isMega || this.species.isTotem || this.species.isPrimal || this.species.forme === "Ultra" ||
 				this.getItem().zMove || this.canMegaEvo
 			) {
 				return;
@@ -1197,7 +1197,8 @@ export class Pokemon {
 
 	copyVolatileFrom(pokemon: Pokemon, switchCause?: string | boolean) {
 		this.clearVolatile();
-		if (switchCause !== 'shedtail') this.boosts = pokemon.boosts;
+		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') this.boosts = pokemon.boosts;
+		if (switchCause === 'doubleteam') this.setBoost({ spe: 1 });
 		for (const i in pokemon.volatiles) {
 			if (switchCause === 'shedtail' && i !== 'substitute') continue;
 			if (this.battle.dex.conditions.getByID(i as ID).noCopy) continue;
@@ -2073,6 +2074,7 @@ export class Pokemon {
 		// If a Fire/Flying type uses Burn Up and Roost, it becomes ???/Flying-type, but it's still grounded.
 		if (!negateImmunity && this.hasType('Flying') && !(this.hasType('???') && 'roost' in this.volatiles)) return false;
 		if (this.hasAbility('levitate') && !this.battle.suppressingAbility(this)) return null;
+		if (this.hasAbility('surgesurfer') && !this.battle.suppressingAbility(this)) return null;
 		if ('magnetrise' in this.volatiles) return false;
 		if ('telekinesis' in this.volatiles) return false;
 		return item !== 'airballoon';
