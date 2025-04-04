@@ -139,7 +139,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	blackbelt: {
 		name: "Black Belt",
-		shortDesc: "Holder's Fighting-type attacks have 1.2x power.",
+		shortDesc: "Holder's Fighting-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Fighting-type attacks have 1.1x power.",
 		},
@@ -152,7 +152,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	blackglasses: {
 		name: "Black Glasses",
-		shortDesc: "Holder's Dark-type attacks have 1.2x power.",
+		shortDesc: "Holder's Dark-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Dark-type attacks have 1.1x power.",
 		},
@@ -221,7 +221,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	charcoal: {
 		name: "Charcoal",
-		shortDesc: "Holder's Fire-type attacks have 1.2x power.",
+		shortDesc: "Holder's Fire-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Fire-type attacks have 1.1x power.",
 		},
@@ -390,7 +390,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	dragonfang: {
 		name: "Dragon Fang",
-		shortDesc: "Holder's Dragon-type attacks have 1.2x power.",
+		shortDesc: "Holder's Dragon-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Dragon-type attacks have 1.1x power.",
 		},
@@ -512,7 +512,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fairyfeather: {
 		name: "Fairy Feather",
-		shortDesc: "Holder's Fairy-type attacks have 1.2x power.",
+		shortDesc: "Holder's Fairy-type attacks have 1.25x power.",
 	},
 	fairygem: {
 		name: "Fairy Gem",
@@ -766,7 +766,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	hardstone: {
 		name: "Hard Stone",
-		shortDesc: "Holder's Rock-type attacks have 1.2x power.",
+		shortDesc: "Holder's Rock-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Rock-type attacks have 1.1x power.",
 		},
@@ -1055,7 +1055,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	magnet: {
 		name: "Magnet",
-		shortDesc: "Holder's Electric-type attacks have 1.2x power.",
+		shortDesc: "Holder's Electric-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Electric-type attacks have 1.1x power.",
 		},
@@ -1131,8 +1131,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	metalcoat: {
 		name: "Metal Coat",
-		desc: "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
-		shortDesc: "Holder's Steel-type attacks have 1.2x power.",
+		desc: "Holder's Steel-type attacks have 1.25x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
+		shortDesc: "Holder's Steel-type attacks have 1.25x power.",
 		gen3: {
 			desc: "Holder's Steel-type attacks have 1.1x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
 			shortDesc: "Holder's Steel-type attacks have 1.1x power.",
@@ -1178,7 +1178,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	miracleseed: {
 		name: "Miracle Seed",
-		shortDesc: "Holder's Grass-type attacks have 1.2x power.",
+		shortDesc: "Holder's Grass-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Grass-type attacks have 1.1x power.",
 		},
@@ -1208,7 +1208,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	mysticwater: {
 		name: "Mystic Water",
-		shortDesc: "Holder's Water-type attacks have 1.2x power.",
+		shortDesc: "Holder's Water-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Water-type attacks have 1.1x power.",
 		},
@@ -1227,7 +1227,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	nevermeltice: {
 		name: "Never-Melt Ice",
-		shortDesc: "Holder's Ice-type attacks have 1.2x power.",
+		shortDesc: "Holder's Ice-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Ice-type attacks have 1.1x power.",
 		},
@@ -1325,7 +1325,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	poisonbarb: {
 		name: "Poison Barb",
-		shortDesc: "Holder's Poison-type attacks have 1.2x power.",
+		shortDesc: "Holder's Poison-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Poison-type attacks have 1.1x power.",
 		},
@@ -1609,7 +1609,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sharpbeak: {
 		name: "Sharp Beak",
-		shortDesc: "Holder's Flying-type attacks have 1.2x power.",
+		shortDesc: "Holder's Flying-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Flying-type attacks have 1.1x power.",
 		},
@@ -1643,14 +1643,14 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	silkscarf: {
 		name: "Silk Scarf",
-		shortDesc: "Holder's Normal-type attacks have 1.2x power.",
+		shortDesc: "Holder's Normal-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Normal-type attacks have 1.1x power.",
 		},
 	},
 	silverpowder: {
 		name: "Silver Powder",
-		shortDesc: "Holder's Bug-type attacks have 1.2x power.",
+		shortDesc: "Holder's Bug-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Bug-type attacks have 1.1x power.",
 		},
@@ -1668,7 +1668,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	skyplate: {
 		name: "Sky Plate",
-		shortDesc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
+		shortDesc: "Holder's Flying-type attacks have 1.25x power. Judgment is Flying type.",
 	},
 	slowbronite: {
 		name: "Slowbronite",
@@ -1688,7 +1688,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	softsand: {
 		name: "Soft Sand",
-		shortDesc: "Holder's Ground-type attacks have 1.2x power.",
+		shortDesc: "Holder's Ground-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Ground-type attacks have 1.1x power.",
 		},
@@ -1706,7 +1706,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	spelltag: {
 		name: "Spell Tag",
-		shortDesc: "Holder's Ghost-type attacks have 1.2x power.",
+		shortDesc: "Holder's Ghost-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Ghost-type attacks have 1.1x power.",
 		},
@@ -1844,407 +1844,407 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	tr00: {
 		name: "TR00",
-		shortDesc: "Teaches certain Pokemon the move Swords Dance. One use.",
+		shortDesc: "Raises Speed by 1 stage if Sworce Dance is used. Consumed after activation.",
 	},
 	tr01: {
 		name: "TR01",
-		shortDesc: "Teaches certain Pokemon the move Body Slam. One use.",
+		shortDesc: "Raises Attack by 1 stage if Body Slam is used. Consumed after activation.",
 	},
 	tr02: {
 		name: "TR02",
-		shortDesc: "Teaches certain Pokemon the move Flamethrower. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Flamethrower is used. Consumed after activation.",
 	},
 	tr03: {
 		name: "TR03",
-		shortDesc: "Teaches certain Pokemon the move Hydro Pump. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Hydropump is used. Consumed after activation.",
 	},
 	tr04: {
 		name: "TR04",
-		shortDesc: "Teaches certain Pokemon the move Surf. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Surf is used. Consumed after activation.",
 	},
 	tr05: {
 		name: "TR05",
-		shortDesc: "Teaches certain Pokemon the move Ice Beam. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Ice Beam is used. Consumed after activation.",
 	},
 	tr06: {
 		name: "TR06",
-		shortDesc: "Teaches certain Pokemon the move Blizzard. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Blizzard is used. Consumed after activation.",
 	},
 	tr07: {
 		name: "TR07",
-		shortDesc: "Teaches certain Pokemon the move Low Kick. One use.",
+		shortDesc: "Raises Attack by 1 stage if Low Kick is used. Consumed after activation.",
 	},
 	tr08: {
 		name: "TR08",
-		shortDesc: "Teaches certain Pokemon the move Thunderbolt. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Thunderbolt is used. Consumed after activation.",
 	},
 	tr09: {
 		name: "TR09",
-		shortDesc: "Teaches certain Pokemon the move Thunder. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Thunderbolt is used. Consumed after activation.",
 	},
 	tr10: {
 		name: "TR10",
-		shortDesc: "Teaches certain Pokemon the move Earthquake. One use.",
+		shortDesc: "Raises Attack by 1 stage if Earthquake is used. Consumed after activation.",
 	},
 	tr11: {
 		name: "TR11",
-		shortDesc: "Teaches certain Pokemon the move Psychic. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Psychic is used. Consumed after activation.",
 	},
 	tr12: {
 		name: "TR12",
-		shortDesc: "Teaches certain Pokemon the move Agility. One use.",
+		shortDesc: "Raises Speed by 1 stage if Agillity is used. Consumed after activation.",
 	},
 	tr13: {
 		name: "TR13",
-		shortDesc: "Teaches certain Pokemon the move Focus Energy. One use.",
+		shortDesc: "Raises Speed by 1 stage if Focus Energy is used. Consumed after activation.",
 	},
 	tr14: {
 		name: "TR14",
-		shortDesc: "Teaches certain Pokemon the move Metronome. One use.",
+		shortDesc: "Raises Speed by 1 stage if Metronome is used. Consumed after activation.",
 	},
 	tr15: {
 		name: "TR15",
-		shortDesc: "Teaches certain Pokemon the move Fire Blast. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Fire Blast is used. Consumed after activation.",
 	},
 	tr16: {
 		name: "TR16",
-		shortDesc: "Teaches certain Pokemon the move Waterfall. One use.",
+		shortDesc: "Raises Attack by 1 stage if Waterfall is used. Consumed after activation.",
 	},
 	tr17: {
 		name: "TR17",
-		shortDesc: "Teaches certain Pokemon the move Amnesia. One use.",
+		shortDesc: "Raises Speed by 1 stage if Amnesia is used. Consumed after activation.",
 	},
 	tr18: {
 		name: "TR18",
-		shortDesc: "Teaches certain Pokemon the move Leech Life. One use.",
+		shortDesc: "Raises Attack by 1 stage if Leech Life is used. Consumed after activation.",
 	},
 	tr19: {
 		name: "TR19",
-		shortDesc: "Teaches certain Pokemon the move Tri Attack. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Tri-Attack is used. Consumed after activation.",
 	},
 	tr20: {
 		name: "TR20",
-		shortDesc: "Teaches certain Pokemon the move Substitute. One use.",
+		shortDesc: "Raises Speed by 1 stage if Substitute is used. Consumed after activation.",
 	},
 	tr21: {
 		name: "TR21",
-		shortDesc: "Teaches certain Pokemon the move Reversal. One use.",
+		shortDesc: "Raises Attack by 1 stage if Reversal is used. Consumed after activation.",
 	},
 	tr22: {
 		name: "TR22",
-		shortDesc: "Teaches certain Pokemon the move Sludge Bomb. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Sludge Bomb is used. Consumed after activation.",
 	},
 	tr23: {
 		name: "TR23",
-		shortDesc: "Teaches certain Pokemon the move Spikes. One use.",
+		shortDesc: "Raises Attack by 1 stage if Spikes is used. Consumed after activation.",
 	},
 	tr24: {
 		name: "TR24",
-		shortDesc: "Teaches certain Pokemon the move Outrage. One use.",
+		shortDesc: "Raises Attack by 1 stage if Outrage is used. Consumed after activation.",
 	},
 	tr25: {
 		name: "TR25",
-		shortDesc: "Teaches certain Pokemon the move Psyshock. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Psyshock is used. Consumed after activation.",
 	},
 	tr26: {
 		name: "TR26",
-		shortDesc: "Teaches certain Pokemon the move Endure. One use.",
+		shortDesc: "Raises Speed by 1 stage if Endure is used. Consumed after activation.",
 	},
 	tr27: {
 		name: "TR27",
-		shortDesc: "Teaches certain Pokemon the move Sleep Talk. One use.",
+		shortDesc: "Raises Speed by 1 stage if Sleep Talk is used. Consumed after activation.",
 	},
 	tr28: {
 		name: "TR28",
-		shortDesc: "Teaches certain Pokemon the move Megahorn. One use.",
+		shortDesc: "Raises Attack by 1 stage if Megahorn is used. Consumed after activation.",
 	},
 	tr29: {
 		name: "TR29",
-		shortDesc: "Teaches certain Pokemon the move Baton Pass. One use.",
+		shortDesc: "Raises Speed by 1 stage if Baton Pass is used. Consumed after activation.",
 	},
 	tr30: {
 		name: "TR30",
-		shortDesc: "Teaches certain Pokemon the move Encore. One use.",
+		shortDesc: "Raises Speed by 1 stage if Encore is used. Consumed after activation.",
 	},
 	tr31: {
 		name: "TR31",
-		shortDesc: "Teaches certain Pokemon the move Iron Tail. One use.",
+		shortDesc: "Raises Attack by 1 stage if Iron Tail is used. Consumed after activation.",
 	},
 	tr32: {
 		name: "TR32",
-		shortDesc: "Teaches certain Pokemon the move Crunch. One use.",
+		shortDesc: "Raises Attack by 1 stage if Crunch is used. Consumed after activation.",
 	},
 	tr33: {
 		name: "TR33",
-		shortDesc: "Teaches certain Pokemon the move Shadow Ball. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Shadow Ball is used. Consumed after activation.",
 	},
 	tr34: {
 		name: "TR34",
-		shortDesc: "Teaches certain Pokemon the move Future Sight. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Future Sight is used. Consumed after activation.",
 	},
 	tr35: {
 		name: "TR35",
-		shortDesc: "Teaches certain Pokemon the move Uproar. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Uproar is used. Consumed after activation.",
 	},
 	tr36: {
 		name: "TR36",
-		shortDesc: "Teaches certain Pokemon the move Heat Wave. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Heat Wave is used. Consumed after activation.",
 	},
 	tr37: {
 		name: "TR37",
-		shortDesc: "Teaches certain Pokemon the move Taunt. One use.",
+		shortDesc: "Raises Speed by 1 stage if Taun is used. Consumed after activation.",
 	},
 	tr38: {
 		name: "TR38",
-		shortDesc: "Teaches certain Pokemon the move Trick. One use.",
+		shortDesc: "Raises Speed by 1 stage if Trick used. Consumed after activation.",
 	},
 	tr39: {
 		name: "TR39",
-		shortDesc: "Teaches certain Pokemon the move Superpower. One use.",
+		shortDesc: "Raises Attack by 1 stage if Superpower is used. Consumed after activation.",
 	},
 	tr40: {
 		name: "TR40",
-		shortDesc: "Teaches certain Pokemon the move Skill Swap. One use.",
+		shortDesc: "Raises Speed by 1 stage if Skill Swap is used. Consumed after activation.",
 	},
 	tr41: {
 		name: "TR41",
-		shortDesc: "Teaches certain Pokemon the move Blaze Kick. One use.",
+		shortDesc: "Raises Attack by 1 stage if Blaze Kick is used. Consumed after activation.",
 	},
 	tr42: {
 		name: "TR42",
-		shortDesc: "Teaches certain Pokemon the move Hyper Voice. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Hyper Voice is used. Consumed after activation.",
 	},
 	tr43: {
 		name: "TR43",
-		shortDesc: "Teaches certain Pokemon the move Overheat. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Overheat is used. Consumed after activation.",
 	},
 	tr44: {
 		name: "TR44",
-		shortDesc: "Teaches certain Pokemon the move Cosmic Power. One use.",
+		shortDesc: "Raises Speed by 1 stage if Cosmic Powder is used. Consumed after activation.",
 	},
 	tr45: {
 		name: "TR45",
-		shortDesc: "Teaches certain Pokemon the move Muddy Water. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Muddy Water is used. Consumed after activation.",
 	},
 	tr46: {
 		name: "TR46",
-		shortDesc: "Teaches certain Pokemon the move Iron Defense. One use.",
+		shortDesc: "Raises Speed by 1 stage if Iron Defense is used. Consumed after activation.",
 	},
 	tr47: {
 		name: "TR47",
-		shortDesc: "Teaches certain Pokemon the move Dragon Claw. One use.",
+		shortDesc: "Raises Attack by 1 stage if Dragon Claw is used. Consumed after activation.",
 	},
 	tr48: {
 		name: "TR48",
-		shortDesc: "Teaches certain Pokemon the move Bulk Up. One use.",
+		shortDesc: "Raises Speed by 1 stage if Bulk Up is used. Consumed after activation.",
 	},
 	tr49: {
 		name: "TR49",
-		shortDesc: "Teaches certain Pokemon the move Calm Mind. One use.",
+		shortDesc: "Raises Speed by 1 stage if Calm Mind is used. Consumed after activation.",
 	},
 	tr50: {
 		name: "TR50",
-		shortDesc: "Teaches certain Pokemon the move Leaf Blade. One use.",
+		shortDesc: "Raises Attack by 1 stage if Leaf Blade is used. Consumed after activation.",
 	},
 	tr51: {
 		name: "TR51",
-		shortDesc: "Teaches certain Pokemon the move Dragon Dance. One use.",
+		shortDesc: "Raises Speed by 1 stage if Dragon Dance is used. Consumed after activation.",
 	},
 	tr52: {
 		name: "TR52",
-		shortDesc: "Teaches certain Pokemon the move Gyro Ball. One use.",
+		shortDesc: "Raises Attack by 1 stage if Gyro Ball is used. Consumed after activation.",
 	},
 	tr53: {
 		name: "TR53",
-		shortDesc: "Teaches certain Pokemon the move Close Combat. One use.",
+		shortDesc: "Raises Attack by 1 stage if Close Combat is used. Consumed after activation.",
 	},
 	tr54: {
 		name: "TR54",
-		shortDesc: "Teaches certain Pokemon the move Toxic Spikes. One use.",
+		shortDesc: "Raises Speed by 1 stage if Toxic Spikes is used. Consumed after activation.",
 	},
 	tr55: {
 		name: "TR55",
-		shortDesc: "Teaches certain Pokemon the move Flare Blitz. One use.",
+		shortDesc: "Raises Attack by 1 stage if Flare Blitz is used. Consumed after activation.",
 	},
 	tr56: {
 		name: "TR56",
-		shortDesc: "Teaches certain Pokemon the move Aura Sphere. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Aura Sphere is used. Consumed after activation.",
 	},
 	tr57: {
 		name: "TR57",
-		shortDesc: "Teaches certain Pokemon the move Poison Jab. One use.",
+		shortDesc: "Raises Attack by 1 stage if Poison Jab is used. Consumed after activation.",
 	},
 	tr58: {
 		name: "TR58",
-		shortDesc: "Teaches certain Pokemon the move Dark Pulse. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Dark Pulse is used. Consumed after activation.",
 	},
 	tr59: {
 		name: "TR59",
-		shortDesc: "Teaches certain Pokemon the move Seed Bomb. One use.",
+		shortDesc: "Raises Attack by 1 stage if Seed Bomb is used. Consumed after activation.",
 	},
 	tr60: {
 		name: "TR60",
-		shortDesc: "Teaches certain Pokemon the move X-Scissor. One use.",
+		shortDesc: "Raises Attack by 1 stage if X-Scissor is used. Consumed after activation.",
 	},
 	tr61: {
 		name: "TR61",
-		shortDesc: "Teaches certain Pokemon the move Bug Buzz. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Bug Buzz is used. Consumed after activation.",
 	},
 	tr62: {
 		name: "TR62",
-		shortDesc: "Teaches certain Pokemon the move Dragon Pulse. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Dragon Pulse is used. Consumed after activation.",
 	},
 	tr63: {
 		name: "TR63",
-		shortDesc: "Teaches certain Pokemon the move Power Gem. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Power Gem is used. Consumed after activation.",
 	},
 	tr64: {
 		name: "TR64",
-		shortDesc: "Teaches certain Pokemon the move Focus Blast. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Focus Blast is used. Consumed after activation.",
 	},
 	tr65: {
 		name: "TR65",
-		shortDesc: "Teaches certain Pokemon the move Energy Ball. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Energy Ball is used. Consumed after activation.",
 	},
 	tr66: {
 		name: "TR66",
-		shortDesc: "Teaches certain Pokemon the move Brave Bird. One use.",
+		shortDesc: "Raises Attack by 1 stage if Brave Bird is used. Consumed after activation.",
 	},
 	tr67: {
 		name: "TR67",
-		shortDesc: "Teaches certain Pokemon the move Earth Power. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Earth Power is used. Consumed after activation.",
 	},
 	tr68: {
 		name: "TR68",
-		shortDesc: "Teaches certain Pokemon the move Nasty Plot. One use.",
+		shortDesc: "Raises Speed by 1 stage if Nasty Plot is used. Consumed after activation.",
 	},
 	tr69: {
 		name: "TR69",
-		shortDesc: "Teaches certain Pokemon the move Zen Headbutt. One use.",
+		shortDesc: "Raises Attack by 1 stage if Zen Headbutt is used. Consumed after activation.",
 	},
 	tr70: {
 		name: "TR70",
-		shortDesc: "Teaches certain Pokemon the move Flash Cannon. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Flash Cannon is used. Consumed after activation.",
 	},
 	tr71: {
 		name: "TR71",
-		shortDesc: "Teaches certain Pokemon the move Leaf Storm. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Leaf Storm is used. Consumed after activation.",
 	},
 	tr72: {
 		name: "TR72",
-		shortDesc: "Teaches certain Pokemon the move Power Whip. One use.",
+		shortDesc: "Raises Attack by 1 stage if Power Whip is used. Consumed after activation.",
 	},
 	tr73: {
 		name: "TR73",
-		shortDesc: "Teaches certain Pokemon the move Gunk Shot. One use.",
+		shortDesc: "Raises Attack by 1 stage if Gunk Shot is used. Consumed after activation.",
 	},
 	tr74: {
 		name: "TR74",
-		shortDesc: "Teaches certain Pokemon the move Iron Head. One use.",
+		shortDesc: "Raises Attack by 1 stage if Iron Head is used. Consumed after activation.",
 	},
 	tr75: {
 		name: "TR75",
-		shortDesc: "Teaches certain Pokemon the move Stone Edge. One use.",
+		shortDesc: "Raises Attack by 1 stage if Stone-Edge is used. Consumed after activation.",
 	},
 	tr76: {
 		name: "TR76",
-		shortDesc: "Teaches certain Pokemon the move Stealth Rock. One use.",
+		shortDesc: "Raises Speed by 1 stage if Stealth Rock is used. Consumed after activation.",
 	},
 	tr77: {
 		name: "TR77",
-		shortDesc: "Teaches certain Pokemon the move Grass Knot. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Grass Knot move is used. Consumed after activation.",
 	},
 	tr78: {
 		name: "TR78",
-		shortDesc: "Teaches certain Pokemon the move Sludge Wave. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Sludge Wave is used. Consumed after activation.",
 	},
 	tr79: {
 		name: "TR79",
-		shortDesc: "Teaches certain Pokemon the move Heavy Slam. One use.",
+		shortDesc: "Raises Attack by 1 stage if Heavy Slam is used. Consumed after activation.",
 	},
 	tr80: {
 		name: "TR80",
-		shortDesc: "Teaches certain Pokemon the move Electro Ball. One use.",
+		shortDesc: "Raises Speed by 1 stage if Electro Ball is used. Consumed after activation.",
 	},
 	tr81: {
 		name: "TR81",
-		shortDesc: "Teaches certain Pokemon the move Foul Play. One use.",
+		shortDesc: "Raises Defense by 1 stage if Foul Play is used. Consumed after activation.",
 	},
 	tr82: {
 		name: "TR82",
-		shortDesc: "Teaches certain Pokemon the move Stored Power. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Stored Power is used. Consumed after activation.",
 	},
 	tr83: {
 		name: "TR83",
-		shortDesc: "Teaches certain Pokemon the move Ally Switch. One use.",
+		shortDesc: "Raises Speed by 1 stage if Ally Switch is used. Consumed after activation.",
 	},
 	tr84: {
 		name: "TR84",
-		shortDesc: "Teaches certain Pokemon the move Scald. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Scald is used. Consumed after activation.",
 	},
 	tr85: {
 		name: "TR85",
-		shortDesc: "Teaches certain Pokemon the move Work Up. One use.",
+		shortDesc: "Raises Speed by 1 stage if Work Up is used. Consumed after activation.",
 	},
 	tr86: {
 		name: "TR86",
-		shortDesc: "Teaches certain Pokemon the move Wild Charge. One use.",
+		shortDesc: "Raises Attack by 1 stage if Wild Charge is used. Consumed after activation.",
 	},
 	tr87: {
 		name: "TR87",
-		shortDesc: "Teaches certain Pokemon the move Drill Run. One use.",
+		shortDesc: "Raises Attack by 1 stage if Drill Run is used. Consumed after activation.",
 	},
 	tr88: {
 		name: "TR88",
-		shortDesc: "Teaches certain Pokemon the move Heat Crash. One use.",
+		shortDesc: "Raises Attack by 1 stage if Heat Crash is used. Consumed after activation.",
 	},
 	tr89: {
 		name: "TR89",
-		shortDesc: "Teaches certain Pokemon the move Hurricane. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Hurricane is used. Consumed after activation.",
 	},
 	tr90: {
 		name: "TR90",
-		shortDesc: "Teaches certain Pokemon the move Play Rough. One use.",
+		shortDesc: "Raises Attack by 1 stage if Play Rough is used. Consumed after activation.",
 	},
 	tr91: {
 		name: "TR91",
-		shortDesc: "Teaches certain Pokemon the move Venom Drench. One use.",
+		shortDesc: "Raises Speed by 1 stage if Venom Drench is used. Consumed after activation.",
 	},
 	tr92: {
 		name: "TR92",
-		shortDesc: "Teaches certain Pokemon the move Dazzling Gleam. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Dazzling Gleam is used. Consumed after activation.",
 	},
 	tr93: {
 		name: "TR93",
-		shortDesc: "Teaches certain Pokemon the move Darkest Lariat. One use.",
+		shortDesc: "Raises Attack by 1 stage if Darkets Lariat is used. Consumed after activation.",
 	},
 	tr94: {
 		name: "TR94",
-		shortDesc: "Teaches certain Pokemon the move High Horsepower. One use.",
+		shortDesc: "Raises Attack by 1 stage if High Horsepower is used. Consumed after activation.",
 	},
 	tr95: {
 		name: "TR95",
-		shortDesc: "Teaches certain Pokemon the move Throat Chop. One use.",
+		shortDesc: "Raises Attack by 1 stage if Throat Shop is used. Consumed after activation.",
 	},
 	tr96: {
 		name: "TR96",
-		shortDesc: "Teaches certain Pokemon the move Pollen Puff. One use.",
+		shortDesc: "Raises Special Attack by 1 stage if Pollen Puff is used. Consumed after activation.",
 	},
 	tr97: {
 		name: "TR97",
-		shortDesc: "Teaches certain Pokemon the move Psychic Fangs. One use.",
+		shortDesc: "Raises Attack by 1 stage if Psychic Fangs is used. Consumed after activation.",
 	},
 	tr98: {
 		name: "TR98",
-		shortDesc: "Teaches certain Pokemon the move Liquidation. One use.",
+		shortDesc: "Raises Attack by 1 stage if Liquidation is used. Consumed after activation.",
 	},
 	tr99: {
 		name: "TR99",
-		shortDesc: "Teaches certain Pokemon the move Body Press. One use.",
+		shortDesc: "Raises Defense by 1 stage if Body Press is used. Consumed after activation.",
 	},
 	twistedspoon: {
 		name: "Twisted Spoon",
-		shortDesc: "Holder's Psychic-type attacks have 1.2x power.",
+		shortDesc: "Holder's Psychic-type attacks have 1.25x power.",
 		gen3: {
 			shortDesc: "Holder's Psychic-type attacks have 1.1x power.",
 		},
