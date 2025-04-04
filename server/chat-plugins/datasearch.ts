@@ -695,7 +695,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 		zubl: 'ZUBL', zu: 'ZU',
 		nfe: 'NFE',
 		lc: 'LC',
-		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE', pendiente: 'Pendiente', pendientes: 'Pendiente'
+		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE',
 	});
 	const singlesTiersValues: { [k: string]: number } = Object.assign(Object.create(null), {
 		AG: 14, Uber: 13,
@@ -1003,8 +1003,8 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 			}
 
 			if (target === 'totem') {
-				if (totemSearch === isNotSearch) return {error: "A search cannot include and exclude 'totem'."};
-				if (parameters.length > 1) return {error: "The parameter 'totem' cannot have alternative parameters."};
+				if (totemSearch === isNotSearch) return { error: "A search cannot include and exclude 'totem'." };
+				if (parameters.length > 1) return { error: "The parameter 'totem' cannot have alternative parameters." };
 				totemSearch = !isNotSearch;
 				orGroup.skip = true;
 				break;
@@ -1207,7 +1207,8 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 	}
 	if (
 		showAll && searches.length === 0 && singleTypeSearch === null &&
-		megaSearch === null && totemSearch === null && gmaxSearch === null && fullyEvolvedSearch === null && restrictedSearch === null && sort === null
+		megaSearch === null && totemSearch === null && gmaxSearch === null &&
+		fullyEvolvedSearch === null && restrictedSearch === null && sort === null
 	) {
 		return {
 			error: "No search parameters other than 'all' were found. Try '/help dexsearch' for more information on this command.",

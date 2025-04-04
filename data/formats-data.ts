@@ -221,7 +221,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	pikachustarter: {
- 		tier: "Illegal",
+		tier: "Illegal",
 	},
 	pikachugmax: {
 
@@ -1000,7 +1000,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	eeveestarter: {
- 		tier: "Illegal",
+		tier: "Illegal",
 	},
 	eeveegmax: {
 		tier: "Illegal",
@@ -1515,7 +1515,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	ursaring: {
-		tier: "ZU",
+		tier: "NFE",
 		doublesTier: "NFE",
 		natDexTier: "NFE",
 	},
@@ -4923,11 +4923,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	hatterene: {
 		tier: "Illegal",
-		doublesTier: "DOU",
-		natDexTier: "OU",
 	},
 	hatterenegmax: {
-
 		tier: "Illegal",
 	},
 	impidimp: {

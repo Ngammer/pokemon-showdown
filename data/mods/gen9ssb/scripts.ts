@@ -837,7 +837,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			const unfaintedActive = oldActive?.hp ? oldActive : null;
 			if (unfaintedActive) {
 				oldActive.beingCalledBack = true;
-				let switchCopyFlag: 'copyvolatile' | 'shedtail' | boolean = false;
+				let switchCopyFlag: 'copyvolatile' | 'shedtail' | 'doubleteam' | boolean = false;
 				if (sourceEffect && typeof (sourceEffect as Move).selfSwitch === 'string') {
 					switchCopyFlag = (sourceEffect as Move).selfSwitch!;
 				}

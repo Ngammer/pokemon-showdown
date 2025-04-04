@@ -103,7 +103,6 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 	/** Is this item a TR? */
 	readonly isTR: boolean;
 
-
 	declare readonly condition?: ConditionData;
 	declare readonly forcedForme?: string;
 	declare readonly isChoice?: boolean;
@@ -139,7 +138,6 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 		this.isIncense = !!data.isIncense;
 		this.isTR = !!data.isTR;
 
-
 		if (!this.gen) {
 			if (this.num >= 1124) {
 				this.gen = 9;
@@ -159,7 +157,6 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 			// Due to difference in gen 2 item numbering, gen 2 items must be
 			// specified manually
 		}
-
 		if (this.isBerry) this.fling = { basePower: 10 };
 		if (this.id.endsWith('plate')) this.fling = { basePower: 90 };
 		if (this.onDrive) this.fling = { basePower: 70 };

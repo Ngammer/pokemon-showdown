@@ -64,11 +64,11 @@ interface MoveFlags {
 	sound?: 1; // Has no effect on Pokemon with the Ability Soundproof.
 	wind?: 1; // Activates the Wind Power and Wind Rider Abilities.
 	tail?: 1; // Movimientos que usan la cola(s) del pokemon
-	head?: 1; //Movimientos que usan la cabeza del pokemon
-	wing?: 1; //Movmientos que usan el ala del pokemon
-	kick?: 1; //Movimientos que usan las patas del pokémon
-	light?: 1; //Movimientos basados en luz
-	beam?: 1; //Movimientos basados en rayos
+	head?: 1; // Movimientos que usan la cabeza del pokemon
+	wing?: 1; // Movmientos que usan el ala del pokemon
+	kick?: 1; // Movimientos que usan las patas del pokémon
+	light?: 1; // Movimientos basados en luz
+	beam?: 1; // Movimientos basados en rayos
 }
 
 export interface HitEffect {
@@ -202,8 +202,8 @@ export interface MoveData extends EffectData, MoveEventMethods, HitEffect {
 	thawsTarget?: boolean;
 	heal?: number[] | null;
 	forceSwitch?: boolean;
-	selfSwitch?: 'copyvolatile' | 'shedtail' | 'doubleteam' | boolean ;
-	selfBoost?: {boosts?: SparseBoostsTable};
+	selfSwitch?: 'copyvolatile' | 'shedtail' | 'doubleteam' | boolean;
+	selfBoost?: { boosts?: SparseBoostsTable };
 	selfdestruct?: 'always' | 'ifHit' | boolean;
 	breaksProtect?: boolean;
 	/**

@@ -123,7 +123,6 @@ interface BasicEffect extends EffectData {
 	toString: () => string;
 }
 
-
 type Condition = import('./dex-conditions').Condition;
 
 type ActiveMove = import('./dex-moves').ActiveMove;

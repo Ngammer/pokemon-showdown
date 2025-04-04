@@ -25,15 +25,15 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	prismscale: {
 		inherit: true,
-		 
+
 	},
 	razorfang: {
 		inherit: true,
-		 
+
 	},
 	reapercloth: {
 		inherit: true,
-		 
+
 	},
 	rowapberry: {
 		inherit: true,

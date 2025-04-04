@@ -1,135 +1,51 @@
 {
-  "chienpao": {
-      "weight": 10,
-      "sets": [
-          {
-              "species": "Chien-Pao",
-              "weight": 35,
-              "moves": [
-                  ["Icicle Crash"],
-                  ["Sucker Punch"],
-                  ["Sacred Sword"],
-                  ["Crunch", "Sheer Cold"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Ghost"],
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 15,
-              "moves": [
-                  ["Icicle Crash"],
-                  ["Sucker Punch"],
-                  ["Sacred Sword"],
-                  ["Tera Blast"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Electric"],
-              "wantsTera": true,
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 5,
-              "moves": [
-                  ["Tera Blast"],
-                  ["Sacred Sword", "Sheer Cold"],
-                  ["Icicle Crash"],
-                  ["Sucker Punch"]
-              ],
-              "item": ["Assault Vest"],
-              "nature": "Adamant",
-              "evs": {"hp": 140, "atk": 236, "def": 4, "spd": 12, "spe": 116},
-              "teraType": ["Electric", "Fairy", "Grass"],
-              "wantsTera": true,
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 5,
-              "moves": [
-                  ["Ice Spinner", "Icicle Crash"],
-                  ["Tera Blast"],
-                  ["Crunch"],
-                  ["Sacred Sword"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Electric", "Fairy", "Grass"],
-              "wantsTera": true,
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 10,
-              "moves": [
-                  ["Ice Spinner", "Icicle Crash"],
-                  ["Crunch", "Throat Chop"],
-                  ["Ice Shard", "Sucker Punch"],
-                  ["Sacred Sword"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Dark"],
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 10,
-              "moves": [
-                  ["Ice Spinner", "Icicle Crash"],
-                  ["Tera Blast"],
-                  ["Ice Shard", "Sucker Punch"],
-                  ["Sacred Sword"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Electric", "Fairy", "Grass"],
-              "wantsTera": true,
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 5,
-              "moves": [
-                  ["Icicle Crash"],
-                  ["Recover"],
-                  ["Ice Shard", "Sucker Punch"],
-                  ["Sacred Sword"]
-              ],
-              "item": ["Rocky Helmet"],
-              "nature": "Jolly",
-              "evs": {"hp": 252, "atk": 68, "def": 180, "spd": 4, "spe": 4},
-              "teraType": ["Fairy", "Poison"],
-              "wantsTera": true,
-              "ability": ["Sword of Ruin"]
-          },
-          {
-              "species": "Chien-Pao",
-              "weight": 15,
-              "moves": [
-                  ["Swords Dance"],
-                  ["Icicle Crash"],
-                  ["Tera Blast"],
-                  ["Ice Shard", "Sucker Punch"]
-              ],
-              "item": ["Lum Berry"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Electric"],
-              "wantsTera": true,
-              "ability": ["Sword of Ruin"]
-          }
-      ]
-  },
+ "venusaur": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Venusaur",
+                "weight": 50,
+                "moves": [
+                    ["Mega Drain", "Giga Drain"],
+                    ["Earth Power", "Weather Ball"],
+                    ["Sludge Bomb"],
+                    ["Growth"]
+                ],
+                "item": ["Life Orb"],
+                "nature": "modest",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ability": ["Chlorophyll", "Overgrow"]
+            },
+            {
+                "species": "Venusaur",
+                "weight": 30,
+                "moves": [
+                    ["Mega Drain", "Giga Drain"],
+                    ["Sludge Bomb", "Poison Powder"],
+                    ["Substitute"],
+                    ["Leech Seed"]
+                ],
+                "item": ["Black Sludge"],
+                "nature": "modest",
+                "evs": {"spd": 252, "spda": 8, "hp": 248},
+                "ability": ["Chlorophyll", "Overgrow"]
+            },
+            {
+                "species": "Venusaur",
+                "weight": 20,
+                "moves": [
+                    ["Giga Drain"],
+                    ["Acid Spray", "Sludge Bomb"],
+                    ["Toxic", "Sleep Powder", "Poison Powder"],
+                    ["Knock Off"]
+                ],
+                "item": ["Life Orb"],
+                "nature": "modest",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ability": ["Chlorophyll", "Overgrow"]
+            }
+        ]
+    },
   "dragonite": {
       "weight": 10,
       "sets": [

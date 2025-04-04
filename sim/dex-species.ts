@@ -324,7 +324,8 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.canGigantamax = data.canGigantamax || undefined;
 		this.gmaxUnreleased = !!data.gmaxUnreleased;
 		this.cannotDynamax = !!data.cannotDynamax;
-		this.battleOnly = data.battleOnly || (this.isMega ? this.baseSpecies : undefined) || (this.isTotem ? this.baseSpecies : undefined);
+		this.battleOnly = data.battleOnly || (this.isMega ? this.baseSpecies : undefined) ||
+			(this.isTotem ? this.baseSpecies : undefined);
 		this.changesFrom = data.changesFrom ||
 			(this.battleOnly !== this.baseSpecies ? this.battleOnly : this.baseSpecies);
 		if (Array.isArray(this.changesFrom)) this.changesFrom = this.changesFrom[0];
@@ -333,9 +334,9 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		if (!this.gen && this.num >= 1) {
 			if (this.num >= 906 || this.forme.includes('Paldea')) {
 				this.gen = 9;
-			} else if (this.num >= 810 /*|| ['Gmax', 'Galar', 'Galar-Zen', 'Hisui'].includes(this.forme)*/) {
+			} else if (this.num >= 810 /* || ['Gmax', 'Galar', 'Galar-Zen', 'Hisui'].includes(this.forme) */) {
 				this.gen = 8;
-			} else if (this.num >= 722 /*|| this.forme.startsWith('Alola')*/ || this.forme === 'Starter') {
+			} else if (this.num >= 722 /* || this.forme.startsWith('Alola') */ || this.forme === 'Starter') {
 				this.gen = 7;
 			} else if (this.forme === 'Primal') {
 				this.gen = 6;

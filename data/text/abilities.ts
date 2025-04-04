@@ -2387,43 +2387,43 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	tectoanclaje: {
 		name: "Tecto Anclaje",
-		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses."
+		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses.",
 	},
 	sabio: {
 		name: "Sabio",
-		shortDesc: "Works like Unaware. Cannot be confused, taunted, or tormented."
+		shortDesc: "Works like Unaware. Cannot be confused, taunted, or tormented.",
 	},
 	oscuridadenvolvente: {
 		name: "Oscuridad Envolvente",
-		shortDesc: "Immune to Light moves. Dark moves never miss."
+		shortDesc: "Immune to Light moves. Dark moves never miss.",
 	},
 	provocador: {
 		name: "Provocador",
-		shortDesc: "Applies Taunt to all active Pokemon on switch-in."
+		shortDesc: "Applies Taunt to all active Pokemon on switch-in.",
 	},
 	defensaabrumadora: {
 		name: "Defensa Abrumadora",
-		shortDesc: "Uses Defense for physical attacks, Special Defense for special attacks."
+		shortDesc: "Uses Defense for physical attacks, Special Defense for special attacks.",
 	},
 	cuerpobendito: {
 		name: "Cuerpo Bendito",
-		shortDesc: "Raises a random stat when hit by an attack."
+		shortDesc: "Raises a random stat when hit by an attack.",
 	},
 	artilleriapesada: {
 		name: "Artilleria Pesada",
-		shortDesc: "2x power for projectile moves, 15% self HP loss after each attack."
+		shortDesc: "2x power for projectile moves, 15% self HP loss after each attack.",
 	},
 	cabezadura: {
 		name: "Cabeza Dura",
-		shortDesc: "1.5x power for head-based moves."
+		shortDesc: "1.5x power for head-based moves.",
 	},
 	voltioemergente: {
 		name: "Voltio Emergente",
-		shortDesc: "Electric moves gain priority at 1/2 HP or less."
+		shortDesc: "Electric moves gain priority at 1/2 HP or less.",
 	},
 	auravolcan: {
 		name: "Aura Volcan",
-		shortDesc: "Absorbs Water moves for immunity."
+		shortDesc: "Absorbs Water moves for immunity.",
 	},
 	conocimiento: {
 		name: "Conocimiento",
@@ -2433,45 +2433,5 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Conjurador",
 		desc: "On switch-in, this Pokemon lowers the Special Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of opponents by 1 stage.",
-	},
-	aguapura: {
-		name: "Agua Pura",
-		shortDesc: "Water moves are super effective against Poison. Immune to Poison, cannot be poisoned. Resists Poison type.",
-	},
-	marino: {
-		name: "Marino",
-		shortDesc: "2x power of Water-type moves.",
-	},
-	plumaarcoiris: {
-		name: "Pluma Arcoiris",
-		shortDesc: "Flying-type moves have a 33% chance to raise a random stat.",
-	},
-	protectordelbosque: {
-		name: "Protector del Bosque",
-		shortDesc: "Raises Special Attack by 2 stages when hit by a super effective attack.",
-	},
-	caparazoninestable: {
-		name: "Caparazon Inestable",
-		shortDesc: "At less than 50% HP, shell explodes with 40 BP move, changes form.",
-	},
-	sabiodelbosque: {
-		name: "Caparazon Inestable",
-		shortDesc: "Combination of the Sabio and Protector del Bosque Abilities.",
-	},
-	entradatriunfal: {
-		name: "Entrada Triunfal",
-		shortDesc: "Removes entry hazards on switch-in, if not holding Heavy-Duty Boots.",
-	},
-	letrassagradas: {
-		name: "Letras Sagradas",
-		shortDesc: "Hidden Power changes to a type that is super effective against a pokemon and the user takes that type.",
-	},
-	ignomotor: {
-		name: "Ignomotor",
-		shortDesc: "Raises Speed when hit by a Fire-type attack.",
-	},
-	patadabrutal: {
-		name: "Patada Brutal",
-		shortDesc: "1.5x power for kicking moves.",
 	}
 };
