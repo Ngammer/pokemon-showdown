@@ -6282,8 +6282,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	spite: {
 		name: "Spite",
-		desc: "Causes the target's last move used to lose 4 PP. Fails if the target has not made a move, if the move has 0 PP, or if it no longer knows the move.",
-		shortDesc: "Lowers the PP of the target's last move by 4.",
+		desc: "Causes the target's last move used to lose 3 PP. Fails if the target has not made a move, if the move has 0 PP, or if it no longer knows the move.",
+		shortDesc: "Lowers the PP of the target's last move by 3.",
 		gen3: {
 			desc: "Causes the target's last move used to lose 2 to 5 PP, at random. Fails if the target has not made a move, if the move has 0 or 1 PP, or if it no longer knows the move.",
 			shortDesc: "Lowers the PP of the target's last move by 2-5.",
