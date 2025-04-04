@@ -2809,7 +2809,7 @@ export class RandomTeams {
 			item: this.sampleIfArray(setData.set.item) || "",
 			ability: this.sampleIfArray(setData.set.ability),
 			shiny: this.randomChance(1, 1024),
-			level: 50,
+			level: 100,
 			happiness: 255,
 			evs: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0, ...setData.set.evs },
 			ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31, ...setData.set.ivs },
