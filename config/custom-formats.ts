@@ -17,7 +17,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] Nuevo Meta Random",
 		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
 		mod: 'gen9',
-		team: 'randomFactory',
+		team: 'randomBSSFactory',
 		ruleset: ['Standard NatDex', 'PotD', 'Illusion Level Mod', 'Nuevo Meta Pokedex', 'Terastal Clause', 'Item Clause = 1'],
 	},
 

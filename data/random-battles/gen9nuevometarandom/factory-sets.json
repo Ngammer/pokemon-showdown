@@ -813,8 +813,8 @@
 	},
 	"UU": {
 		"venusaur": {
-        "weight": 10,
-        "sets": [{
+      "weight": 10,
+      "sets": [{
         "species": "Venusaur",
         "wantsTera": true,
         "weight": 50,
@@ -824,8 +824,8 @@
         "nature": "Modest",
         "teraType": ["Fairy", "Fire", "Flying"],
         "moves": [["Mega Drain", "Giga Drain"], ["Earth Power", "Weather Ball"], ["Sludge Bomb"], ["Growth"]]
-            },{
-                "species": "Venusaur",
+      }, {
+        "species": "Venusaur",
                 "weight": 30,
                 "moves": [
                     ["Mega Drain", "Giga Drain"],
