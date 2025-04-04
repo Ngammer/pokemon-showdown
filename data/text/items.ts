@@ -15,7 +15,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	absorbbulb: {
 		name: "Absorb Bulb",
-		shortDesc: "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
+		shortDesc: "Raises holder's Sp. Atk, Atk by 2 stage if hit by a Water-type attack. Single use.",
 	},
 	adamantcrystal: {
 		name: "Adamant Crystal",
@@ -27,7 +27,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	adrenalineorb: {
 		name: "Adrenaline Orb",
-		shortDesc: "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
+		shortDesc: "Forces opponent switch-out when user's stats are lowered by them. Does not trigger on self stat drops. Foe switches first.",
 	},
 	aerodactylite: {
 		name: "Aerodactylite",
@@ -116,7 +116,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	berryjuice: {
 		name: "Berry Juice",
-		shortDesc: "Restores 20 HP when at 1/2 max HP or less. Single use.",
+		shortDesc: "Restores 12.5% of the user's HP for 5 turns.",
 	},
 	berrysweet: {
 		name: "Berry Sweet",
@@ -187,7 +187,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	brightpowder: {
 		name: "Bright Powder",
-		shortDesc: "The accuracy of attacks against the holder is 0.9x.",
+		shortDesc: "Light moves never miss.",
 		gen2: {
 			shortDesc: "An attack against the holder has its accuracy out of 255 lowered by 20.",
 		},
@@ -217,7 +217,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	cellbattery: {
 		name: "Cell Battery",
-		shortDesc: "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
+		shortDesc: "Raises holder's Attack, Sp. Attack by 2 if hit by an Electric-type attack. Single use.",
 	},
 	charcoal: {
 		name: "Charcoal",
@@ -485,7 +485,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	electricseed: {
 		name: "Electric Seed",
-		shortDesc: "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
+		shortDesc: "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use. 1.5x Electric Moves 1 turn",
 	},
 	electriumz: {
 		name: "Electrium Z",
@@ -646,7 +646,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fullincense: {
 		name: "Full Incense",
-		shortDesc: "Holder moves last in its priority bracket.",
+		shortDesc: "The first priority move the user is about to receive is nullified.",
 	},
 	galaricacuff: {
 		name: "Galarica Cuff",
@@ -662,7 +662,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ganlonberry: {
 		name: "Ganlon Berry",
-		shortDesc: "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
+		shortDesc: "Raises holder's Defense by 1 stage when at 1/2 max HP or less. Single use.",
 	},
 	garchompite: {
 		name: "Garchompite",
@@ -716,7 +716,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	grassyseed: {
 		name: "Grassy Seed",
-		shortDesc: "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
+		shortDesc: "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use. 1.5x Grass Moves 1 turn",
 	},
 	greatball: {
 		name: "Great Ball",
@@ -724,11 +724,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	grepaberry: {
 		name: "Grepa Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "When hit by a contact move, reduces the attacker's HP by 20%.",
 	},
 	gripclaw: {
 		name: "Grip Claw",
-		shortDesc: "Holder's partial-trapping moves always last 7 turns.",
+		shortDesc: "Holder's partial-trapping moves always last 10 turns.",
 	},
 	griseouscore: {
 		name: "Griseous Core",
@@ -888,11 +888,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	keeberry: {
 		name: "Kee Berry",
-		shortDesc: "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
+		shortDesc: "Raises holder's Defense by 2 stage when at 1/2 max HP or less. Single use.",
 	},
 	kelpsyberry: {
 		name: "Kelpsy Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "Removes all entry hazards from the user's side of the field when consumed.",
 	},
 	kangaskhanite: {
 		name: "Kangaskhanite",
@@ -909,11 +909,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	laggingtail: {
 		name: "Lagging Tail",
-		shortDesc: "Holder moves last in its priority bracket.",
+		shortDesc: "Powers up tail moves by 25%.",
 	},
 	lansatberry: {
 		name: "Lansat Berry",
-		shortDesc: "Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.",
+		shortDesc: "Holder gains the Focus Energy effect when at 1/2 max HP or less. Single use.",
 	},
 	latiasite: {
 		name: "Latiasite",
@@ -960,7 +960,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	liechiberry: {
 		name: "Liechi Berry",
-		shortDesc: "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
+		shortDesc: "Raises holder's Attack by 1 stage when at 1/2 max HP or less. Single use.",
 	},
 	lifeorb: {
 		name: "Life Orb",
@@ -1191,7 +1191,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	mistyseed: {
 		name: "Misty Seed",
-		shortDesc: "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+		shortDesc: "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use. 1.5x Fairy Moves 1 turn",
 	},
 	moonball: {
 		name: "Moon Ball",
@@ -1293,7 +1293,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	petayaberry: {
 		name: "Petaya Berry",
-		shortDesc: "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
+		shortDesc: "Raises holder's Sp. Atk by 1 stage when at 1/2 max HP or less. Single use.",
 	},
 	pidgeotite: {
 		name: "Pidgeotite",
@@ -1418,7 +1418,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	psychicseed: {
 		name: "Psychic Seed",
-		shortDesc: "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+		shortDesc: "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use. 1.5x Psychic Moves 1 turn",
 	},
 	psychiumz: {
 		name: "Psychium Z",
@@ -1426,7 +1426,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	punchingglove: {
 		name: "Punching Glove",
-		shortDesc: "Holder's punch-based attacks have 1.1x power and do not make contact.",
+		shortDesc: "Powers up punching moves by 25%.",
 	},
 	qualotberry: {
 		name: "Qualot Berry",
