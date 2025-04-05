@@ -13028,7 +13028,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-
 		name: "Natural Gift",
 		pp: 15,
 		priority: 0,
