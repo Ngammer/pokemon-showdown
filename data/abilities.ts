@@ -239,7 +239,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onResidual(pokemon) {
 			for (const target of pokemon.adjacentFoes()) {
-				if (!target.volatiles['arenatrap']) {
+				if (!target.volatiles['arenatrap'] && target.hp <= target.baseMaxhp / 2) {
 					target.addVolatile('arenatrap');
 				}
 			}
@@ -4464,7 +4464,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onResidual(pokemon) {
 			for (const target of pokemon.adjacentFoes()) {
-				if (!target.volatiles['shadowtag']) {
+				if (!target.volatiles['shadowtag'] && target.hp <= target.baseMaxhp / 2) {
 					target.addVolatile('shadowtag');
 				}
 			}
