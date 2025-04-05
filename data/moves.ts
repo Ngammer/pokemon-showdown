@@ -21161,7 +21161,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	venoshock: {
 		num: 474,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 50,
 		category: "Special",
 		name: "Venoshock",
 		pp: 10,
