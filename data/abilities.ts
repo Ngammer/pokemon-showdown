@@ -224,14 +224,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onFoeTrapPokemon(pokemon) {
 			if (!pokemon.isAdjacent(this.effectState.target)) return;
 			if (!(pokemon.hasType('Ground') || pokemon.hasType('Bug') ||
-				pokemon.hasType('Flying')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
+				pokemon.hasType('Flying')) && pokemon.hp <= pokemon.baseMaxhp / 2 && pokemon.isGrounded()) {
 				pokemon.tryTrap(true);
 			}
 		},
 		onFoeMaybeTrapPokemon(pokemon, source) {
 			if (!source) source = this.effectState.target;
 			if (!source || !pokemon.isAdjacent(source)) return;
-			if (pokemon.isGrounded(!pokemon.knownType) && pokemon.isAdjacent(this.effectState.target) &&
+			if (pokemon.isGrounded(!pokemon.knownType) &&
 				!(pokemon.hasType('Ground') || pokemon.hasType('Bug') || pokemon.hasType('Flying')) &&
 				pokemon.hp <= pokemon.baseMaxhp / 2) { // Negate immunity if the type is unknown
 				pokemon.maybeTrapped = true;
@@ -4448,14 +4448,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	shadowtag: {
 		onFoeTrapPokemon(pokemon) {
-			if (!pokemon.hasAbility('shadowtag') && pokemon.isAdjacent(this.effectState.target) && !(pokemon.hasType('Ghost') || pokemon.hasType('Bug') || pokemon.hasType('Dark')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
+			if (!pokemon.hasAbility('shadowtag') && pokemon.isAdjacent(this.effectState.target) &&
+			!(pokemon.hasType('Ghost') || pokemon.hasType('Bug') || pokemon.hasType('Dark')) &&
+			pokemon.hp <= pokemon.baseMaxhp / 2) {
 				pokemon.tryTrap(true);
 			}
 		},
 		onFoeMaybeTrapPokemon(pokemon, source) {
 			if (!source) source = this.effectState.target;
 			if (!source || !pokemon.isAdjacent(source)) return;
-			if (!pokemon.hasAbility('shadowtag') && pokemon.isAdjacent(this.effectState.target) && !(pokemon.hasType('Ghost') || pokemon.hasType('Bug') || pokemon.hasType('Dark')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
+			if (!pokemon.hasAbility('shadowtag') && !(pokemon.hasType('Ghost') ||
+			pokemon.hasType('Bug') || pokemon.hasType('Dark')) && pokemon.hp <= pokemon.baseMaxhp / 2) {
 				pokemon.maybeTrapped = true;
 			}
 		},
