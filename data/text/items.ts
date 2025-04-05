@@ -925,7 +925,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	laxincense: {
 		name: "Lax Incense",
-		shortDesc: "The accuracy of attacks against the holder is 0.9x.",
+		shortDesc: "Reduces the power of received moves by 10%.",
 		gen3: {
 			shortDesc: "The accuracy of attacks against the holder is 0.95x.",
 		},
@@ -1019,7 +1019,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	luminousmoss: {
 		name: "Luminous Moss",
-		shortDesc: "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.",
+		shortDesc: "The first Grass-type move deals super effective Electric-type damage.",
 	},
 	lunaliumz: {
 		name: "Lunalium Z",
@@ -1088,7 +1088,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	marangaberry: {
 		name: "Maranga Berry",
-		shortDesc: "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
+		shortDesc: "Raises holder's Sp. Def by 2 stage after it is hit by a special attack. Single use.",
 	},
 	marshadiumz: {
 		name: "Marshadium Z",
@@ -1149,7 +1149,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Metronome",
 		shortDesc: "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
 		gen4: {
-			shortDesc: "Damage of moves used on consecutive turns is increased. Max 2x after 10 turns.",
+			shortDesc: "Raises the user's Speed by 1 stage every 4 turns.",
 		},
 	},
 	mewniumz: {
@@ -1166,7 +1166,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	micleberry: {
 		name: "Micle Berry",
-		shortDesc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+		shortDesc: "The next move used never misses.",
 	},
 	mimikiumz: {
 		name: "Mimikium Z",
@@ -1204,7 +1204,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	muscleband: {
 		name: "Muscle Band",
-		shortDesc: "Holder's physical attacks have 1.1x power.",
+		shortDesc: "Raises Attack by 1 stage every 3 physical attacks.",
 	},
 	mysticwater: {
 		name: "Mystic Water",
@@ -1253,7 +1253,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	oddincense: {
 		name: "Odd Incense",
-		shortDesc: "Holder's Psychic-type attacks have 1.2x power.",
+		shortDesc: "Summons Psychic Terrain when hit and is consumed.",
 	},
 	oldamber: {
 		name: "Old Amber",
@@ -1397,7 +1397,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	protectivepads: {
 		name: "Protective Pads",
-		shortDesc: "Holder's moves are protected from adverse contact effects, except Pickpocket.",
+		shortDesc: "1.1x power for punching moves, prevents negative contact effects.",
 
 		block: "  [POKEMON] protected itself with its Protective Pads!",
 	},
@@ -1438,7 +1438,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	quickclaw: {
 		name: "Quick Claw",
-		shortDesc: "Each turn, holder has a 20% chance to move first in its priority bracket.",
+		shortDesc: "Raises the user's Speed by 10%.",
 		gen2: {
 			shortDesc: "Each turn, holder has a ~23.4% chance to move first in its priority bracket.",
 		},
@@ -1464,12 +1464,12 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	razorclaw: {
 		name: "Razor Claw",
 		desc: "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
-		shortDesc: "Holder's critical hit ratio is raised by 1 stage.",
+		shortDesc: "Raises critical hit ratio by 2 stages.",
 	},
 	razorfang: {
 		name: "Razor Fang",
 		desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
-		shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+		shortDesc: "Powers up biting moves by 25%.",
 	},
 	razzberry: {
 		name: "Razz Berry",
@@ -1514,7 +1514,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rockincense: {
 		name: "Rock Incense",
-		shortDesc: "Holder's Rock-type attacks have 1.2x power.",
+		shortDesc: "Summons Sandstorm when hit and is consumed.",
 	},
 	rockmemory: {
 		name: "Rock Memory",
@@ -1532,7 +1532,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	roomservice: {
 		name: "Room Service",
-		shortDesc: "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use.",
+		shortDesc: "If Trick Room is active, the holder's Speed is lowered by 3 stage. Single use.",
 	},
 	rootfossil: {
 		name: "Root Fossil",
@@ -1540,7 +1540,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	roseincense: {
 		name: "Rose Incense",
-		shortDesc: "Holder's Grass-type attacks have 1.2x power.",
+		shortDesc: "Summons Grassy Terrain when hit and is consumed.",
 	},
 	roseliberry: {
 		name: "Roseli Berry",
@@ -1604,7 +1604,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Sea Incense",
 		shortDesc: "Holder's Water-type attacks have 1.2x power.",
 		gen3: {
-			shortDesc: "Holder's Water-type attacks have 1.05x power.",
+			shortDesc: "The next Water-type move hits with double power, but the user loses Speed.",
 		},
 	},
 	sharpbeak: {
@@ -1620,11 +1620,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	shedshell: {
 		name: "Shed Shell",
-		shortDesc: "Holder cannot be prevented from choosing to switch out by any effect.",
+		shortDesc: "Additionally, cures status conditions every 5 turns.",
 	},
 	shellbell: {
 		name: "Shell Bell",
-		shortDesc: "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.",
+		shortDesc: "After an attack, holder gains 1/6 of the damage in HP dealt to other Pokemon.",
 
 		heal: "  [POKEMON] restored a little HP using its Shell Bell!",
 	},
@@ -1684,7 +1684,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	snowball: {
 		name: "Snowball",
-		shortDesc: "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
+		shortDesc: "Raises holder's Attack, Special Attack by 2 if hit by an Ice-type attack.",
 	},
 	softsand: {
 		name: "Soft Sand",
@@ -1763,7 +1763,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	stickybarb: {
 		name: "Sticky Barb",
-		shortDesc: "Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.",
+		shortDesc: "Ignores the target's defensive stats.",
 	},
 	stoneplate: {
 		name: "Stone Plate",
@@ -1812,7 +1812,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	terrainextender: {
 		name: "Terrain Extender",
-		shortDesc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
+		shortDesc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 10 turns instead of 5.",
 	},
 	thickclub: {
 		name: "Thick Club",
@@ -2275,7 +2275,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	utilityumbrella: {
 		name: "Utility Umbrella",
 		desc: "The holder ignores rain- and sun-based effects, including those of its Ability unless it is Orichalcum Pulse or Protosynthesis. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
-		shortDesc: "The holder ignores rain- and sun-based effects.",
+		shortDesc: "Increases the duration of Tailwind to 5 turns.",
 		gen8: {
 			desc: "The holder ignores rain- and sun-based effects, including those of its Ability. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
 		},
@@ -2314,7 +2314,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	waveincense: {
 		name: "Wave Incense",
-		shortDesc: "Holder's Water-type attacks have 1.2x power.",
+		shortDesc: "Summons Rain Dance when hit and is consumed.",
 	},
 	weaknesspolicy: {
 		name: "Weakness Policy",
@@ -2354,7 +2354,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	wiseglasses: {
 		name: "Wise Glasses",
-		shortDesc: "Holder's special attacks have 1.1x power.",
+		shortDesc: "Raises Special Attack by 1 stage every 3 special attacks.",
 	},
 	yacheberry: {
 		name: "Yache Berry",
