@@ -1091,6 +1091,9 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	ubadhesive: "Poipole",
 
 	// moves
+	"3p": "Tripico",
+	"9l": "Nonallamas",
+	"9e": "Nonaesquirla",
 	bb: "Brave Bird",
 	bd: "Belly Drum",
 	bde: "Baby-Doll Eyes",
@@ -1138,6 +1141,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	hijumpkick: "High Jump Kick",
 	knock: "Knock Off",
 	lr: "Last Respects",
+	md: "Mordida Dragon",
 	mir: "Make It Rain",
 	mterrain: "Misty Terrain",
 	np: "Nasty Plot",
@@ -1151,6 +1155,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	pterrain: "Psychic Terrain",
 	pup: "Power-up Punch",
 	qd: "Quiver Dance",
+	rg: "Roca Galvanizada",
 	rocks: "Stealth Rock",
 	sd: "Swords Dance",
 	se: "Stone Edge",
