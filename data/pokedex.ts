@@ -369,7 +369,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Pidgey",
 		types: ["Normal", "Flying"],
 		baseStats: { hp: 40, atk: 50, def: 40, spa: 35, spd: 35, spe: 80 },
-		abilities: { 0: "Keen Eye", 1: "Tangled Feet", H: "Big Pecks" },
+		abilities: { 0: "Keen Eye", 1: "Tangled Feet", H: "Adaptability" },
 		heightm: 0.3,
 		weightkg: 1.8,
 		color: "Brown",
