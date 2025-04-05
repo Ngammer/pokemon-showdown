@@ -850,13 +850,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const ally of pokemon.adjacentAllies()) {
 				ally.clearBoosts();
 				ally.cureStatus();
-				this.add('-clearboost', ally, '[from] ability: Curious Medicine', '[of] ' + pokemon);
+				this.add('-clearboost', ally, '[from] ability: Curious Medicine', `[of] ${pokemon}`);
 			}
 		},
 		onSwitchIn(pokemon) {
 			if (pokemon.hasItem('galaricawreath') && pokemon.species.name === 'Slowking-Galar') {
 				this.heal(pokemon.baseMaxhp / 4, pokemon, pokemon);
-				this.add('-heal', pokemon, '[from] ability: Curious Medicine', '[of] ' + pokemon);
+				this.add('-heal', pokemon, '[from] ability: Curious Medicine', `[of] ${pokemon}`);
 			}
 		},
 		flags: { },
@@ -1599,7 +1599,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
 				if (target.item) {
-					this.add('-item', target, target.getItem().name, '[from] ability: Frisk', '[of] ' + pokemon);
+					this.add('-item', target, target.getItem().name, '[from] ability: Frisk', `[of] ${pokemon}`);
 					target.addVolatile("embargo");
 				}
 			}
@@ -2391,7 +2391,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	leafguard: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
-			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather(['sunnyday', 'desolateland']))) mod *= 0.75;
+			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 &&
+				this.field.isWeather(['sunnyday', 'desolateland']))) mod *= 0.75;
 			return this.chainModify(mod);
 		},
 		flags: { breakable: 1 },
@@ -2493,7 +2494,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (source && target === source && boost.spe && boost.spe < 0) {
 				delete boost.spe;
 				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", "[of] " + target);
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", `[of] ${target}`);
 				}
 			}
 		},
@@ -3458,7 +3459,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (r < 34) {
 					const item = target.takeItem();
 					if (item) {
-						this.add('-enditem', target, item.name, '[from] ability: Pickpocket', '[of] ' + source);
+						this.add('-enditem', target, item.name, '[from] ability: Pickpocket', `[of] ${source}`);
 					}
 				}
 			}
@@ -3534,7 +3535,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: Plus", "[of] " + target);
+				this.add("-fail", target, "unboost", "[from] ability: Plus", `[of] ${target}`);
 			}
 		},
 		flags: { },
@@ -3647,7 +3648,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 				}
 				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-					this.add("-fail", target, "unboost", "[from] ability: Power of Alchemy", "[of] " + target);
+					this.add("-fail", target, "unboost", "[from] ability: Power of Alchemy", `[of] ${target}`);
 				}
 			}
 		},
@@ -4224,7 +4225,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (boost.spe && boost.spe < 0) {
 				delete boost.spe;
 				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", "[of] " + target);
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", `[of] ${target}`);
 				}
 			}
 		},
@@ -4720,7 +4721,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	snowcloak: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
-			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather(['hail', 'snowscape']))) mod *= 0.75;
+			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 &&
+				this.field.isWeather(['hail', 'snowscape']))) mod *= 0.75;
 			return this.chainModify(mod);
 		},
 		flags: { breakable: 1 },
@@ -6304,14 +6306,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onStart(pokemon) {
-			let success = false;
 			const removeAll = ['stealthrock'];
 			const sides = [pokemon.side, ...pokemon.side.foeSidesWithConditions()];
 			for (const side of sides) {
 				for (const sideCondition of removeAll) {
 					if (side.removeSideCondition(sideCondition)) {
 						this.add('-sideend', side, this.dex.conditions.get(sideCondition).name);
-						success = true;
 					}
 				}
 			}
@@ -6940,7 +6940,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 				}
 				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-					this.add("-fail", target, "unboost", "[from] ability: Clear Body", "[of] " + target);
+					this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
 				}
 			}
 		},
@@ -6980,7 +6980,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onPrepareHit(source, target, move) {
 			if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
 			const type = move.type;
-			if (type && type !== '???' && source.getTypes().join() !== type && (move.id === 'hiddenpower' || move.realMove === "Hidden Power")) {
+			if (type && type !== '???' && source.getTypes().join() !== type &&
+				(move.id === 'hiddenpower' || move.realMove === "Hidden Power")) {
 				if (!source.setType(type)) return;
 				this.effectState.protean = true;
 				this.add('-start', source, 'typechange', type, '[from] ability: Letras Sagradas');
@@ -7002,8 +7003,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Fire')) &&
 				!(target.hasType('Water') || target.hasType('Grass') || target.hasType('Dragon'))) {
 				type = "Water";
-			} else if ((target.hasType('Fighting') || target.hasType('Bug') || target.hasType('Grass')) && !(target.hasType('Rock') ||
-				target.hasType('Electric') || target.hasType('Steel'))) {
+			} else if ((target.hasType('Fighting') || target.hasType('Bug') || target.hasType('Grass')) &&
+				!(target.hasType('Rock') || target.hasType('Electric') || target.hasType('Steel'))) {
 				type = "Flying";
 			} else if ((target.hasType('Ground') || target.hasType('Rock') || target.hasType('Water')) &&
 				!(target.hasType('Flying') || target.hasType('Poison') || target.hasType('Bug') || target.hasType('Fire') ||
@@ -7012,11 +7013,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			} else if ((target.hasType('Grass') || target.hasType('Fairy')) && !(target.hasType('Poison') ||
 				target.hasType('Ground') || target.hasType('Rock') || target.hasType('Ghost') || target.hasType('Steel'))) {
 				type = "Poison";
-			} else if ((target.hasType('Flying') || target.hasType('Water')) && !(target.hasType('Grass') || target.hasType('Electric') ||
-				target.hasType('Ground') || target.hasType('Dragon'))) {
+			} else if ((target.hasType('Flying') || target.hasType('Water')) &&
+				!(target.hasType('Grass') || target.hasType('Electric') || target.hasType('Ground') || target.hasType('Dragon'))) {
 				type = "Electric";
-			} else if ((target.hasType('Poison') || target.hasType('Rock') || target.hasType('Fire') || target.hasType('Electric') ||
-				target.hasType('Steel')) && !(target.hasType('Bug') || target.hasType('Grass') || target.hasType('Flying'))) {
+			} else if ((target.hasType('Poison') || target.hasType('Rock') || target.hasType('Fire') ||
+				target.hasType('Electric') || target.hasType('Steel')) && !(target.hasType('Bug') || target.hasType('Grass') || target.hasType('Flying'))) {
 				type = "Ground";
 			} else if ((target.hasType('Fighting') || target.hasType('Poison')) && !(target.hasType('Psychic') ||
 				target.hasType('Steel') || target.hasType('Dark'))) {
@@ -7060,8 +7061,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const activated = false;
 			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 			for (const condition of sideConditions) {
-				if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots')) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Entrada Triunfal', '[of] ' + pokemon);
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Entrada Triunfal', `[of] ${pokemon}`);
 				}
 			}
 		},
