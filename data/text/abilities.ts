@@ -2473,5 +2473,5 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	patadabrutal: {
 		name: "Patada Brutal",
 		shortDesc: "1.5x power for kicking moves.",
-	}
+	},
 };

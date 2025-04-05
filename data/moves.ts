@@ -13473,7 +13473,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 70,
 		basePowerCallback(pokemon, target, move) {
-			if (target.hasType('Flying')) {
+			if (pokemon.hasType('Flying')) {
 				this.debug('BP doubled from status condition');
 				return move.basePower * 1.5;
 			}
@@ -17134,7 +17134,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 70,
 		basePowerCallback(pokemon, target, move) {
-			if (target.hasType('Fairy')) {
+			if (pokemon.hasType('Fairy')) {
 				return move.basePower * 1.5;
 			}
 			return move.basePower;
