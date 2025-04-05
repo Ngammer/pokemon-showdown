@@ -1098,6 +1098,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	bpass: "Baton Pass",
 	bpress: "Body Press",
 	bp: "Baton Pass",
+	btr: "Bomba Tinta Refinada",
 	cane: "Hurricane",
 	cc: "Close Combat",
 	cm: "Calm Mind",
