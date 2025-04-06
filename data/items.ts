@@ -4680,10 +4680,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onTryEatItem(item, pokemon) {
-			if (!this.runEvent('TryHeal', pokemon, null, this.effect, 10)) return false;
+			if (!this.runEvent('TryHeal', pokemon, null, this.effect, 75)) return false;
 		},
 		onEat(pokemon) {
-			this.heal(10);
+			this.heal(75);
 		},
 		num: 155,
 		gen: 3,

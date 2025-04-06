@@ -76,7 +76,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	armorfossil: {
 		name: "Armor Fossil",
-		shortDesc: "Can be revived into Shieldon.",
+		shortDesc: "Increases Defense when the ability Mineralization is active.",
 	},
 	aspearberry: {
 		name: "Aspear Berry",
@@ -92,7 +92,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	auspiciousarmor: {
 		name: "Auspicious Armor",
-		shortDesc: "Evolves Charcadet into Armarouge when used.",
+		shortDesc: "(Armarouge only) Multi-turn moves are executed in one turn.",
 	},
 	babiriberry: {
 		name: "Babiri Berry",
@@ -104,7 +104,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	beastball: {
 		name: "Beast Ball",
-		shortDesc: "A special Poke Ball designed to catch Ultra Beasts.",
+		shortDesc: "Activates the Beast Boost Ability upon entering the field.",
 	},
 	beedrillite: {
 		name: "Beedrillite",
@@ -112,7 +112,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	belueberry: {
 		name: "Belue Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, recovers 20% HP and the next move ignores immunities.",
 	},
 	berryjuice: {
 		name: "Berry Juice",
@@ -120,11 +120,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	berrysweet: {
 		name: "Berry Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Water as a secondary type. +50% Special Defense.",
 	},
 	bignugget: {
 		name: "Big Nugget",
-		shortDesc: "A big nugget of pure gold that gives off a lustrous gleam.",
+		shortDesc: "The next Steel-type move paralyzes. Consumed after use.",
 	},
 	bigroot: {
 		name: "Big Root",
@@ -135,7 +135,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	bindingband: {
 		name: "Binding Band",
-		shortDesc: "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
+		shortDesc: "Holder's partial-trapping moves deal 1/4 max HP per turn instead of 1/8.",
 	},
 	blackbelt: {
 		name: "Black Belt",
@@ -171,7 +171,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	blukberry: {
 		name: "Bluk Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will burn the target.",
 	},
 	blunderpolicy: {
 		name: "Blunder Policy",
@@ -183,7 +183,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	bottlecap: {
 		name: "Bottle Cap",
-		shortDesc: "Used for Hyper Training. One of a Pokemon's stats is calculated with an IV of 31.",
+		shortDesc: "For 3 turns while active, opposing Abilities have no effect.",
 	},
 	brightpowder: {
 		name: "Bright Powder",
@@ -201,7 +201,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	bugmemory: {
 		name: "Bug Memory",
-		shortDesc: "Holder's Multi-Attack is Bug type.",
+		shortDesc: "Holder's Multi-Attack is Bug type. Holder's Bug-type attacks have 1.25x power.",
 	},
 	buginiumz: {
 		name: "Buginium Z",
@@ -244,7 +244,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	cherishball: {
 		name: "Cherish Ball",
-		shortDesc: "A rare Poke Ball that has been crafted to commemorate an occasion.",
+		shortDesc: "Activates the Flash Fire Ability upon entering the field.",
 	},
 	chestoberry: {
 		name: "Chesto Berry",
@@ -260,7 +260,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	chippedpot: {
 		name: "Chipped Pot",
-		shortDesc: "Evolves Sinistea-Antique into Polteageist-Antique when used.",
+		shortDesc: "Reduces damage taken by Polteageist by 20%.",
 	},
 	choiceband: {
 		name: "Choice Band",
@@ -280,7 +280,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	clawfossil: {
 		name: "Claw Fossil",
-		shortDesc: "Can be revived into Anorith.",
+		shortDesc: "Increases Attack when the ability Mineralization is active.",
 	},
 	clearamulet: {
 		name: "Clear Amulet",
@@ -290,7 +290,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	cloversweet: {
 		name: "Clover Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Grass as a secondary type. +50% Special Defense.",
 	},
 	cobaberry: {
 		name: "Coba Berry",
@@ -306,11 +306,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	cornnberry: {
 		name: "Cornn Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will badly poisoned the target.",
 	},
 	coverfossil: {
 		name: "Cover Fossil",
-		shortDesc: "Can be revived into Tirtouga.",
+		shortDesc: "With Mineralization, consumes to reduce damage taken by 30% until switched out.",
 	},
 	covertcloak: {
 		name: "Covert Cloak",
@@ -318,7 +318,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	crackedpot: {
 		name: "Cracked Pot",
-		shortDesc: "Evolves Sinistea into Polteageist when used.",
+		shortDesc: "The first move used against Polteageist deals half damage.",
 	},
 	custapberry: {
 		name: "Custap Berry",
@@ -339,7 +339,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	darkmemory: {
 		name: "Dark Memory",
-		shortDesc: "Holder's Multi-Attack is Dark type.",
+		shortDesc: "Holder's Multi-Attack is Dark type. Holder's Dark-type attacks have 1.25x power.",
 	},
 	darkiniumz: {
 		name: "Darkinium Z",
@@ -348,7 +348,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	dawnstone: {
 		name: "Dawn Stone",
 		desc: "Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "Raises the highest stat of the Pokémon that evolves using this stone by 1 stage.",
 	},
 	decidiumz: {
 		name: "Decidium Z",
@@ -356,17 +356,18 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	deepseascale: {
 		name: "Deep Sea Scale",
-		desc: "If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.",
-		shortDesc: "If held by a Clamperl, its Sp. Def is doubled.",
+		desc: "If held by a Gorebyss, its Sp. Atk is doubled.",
+		shortDesc: "If held by a Gorebyss, its Sp. Atk is doubled.",
 	},
 	deepseatooth: {
 		name: "Deep Sea Tooth",
-		desc: "If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.",
-		shortDesc: "If held by a Clamperl, its Sp. Atk is doubled.",
+		desc: "If held by a Huntail, its Atk is doubled.",
+		shortDesc: "If held by a Huntail, its Atk is doubled.",
 	},
 	destinyknot: {
 		name: "Destiny Knot",
-		shortDesc: "If holder becomes infatuated, the other Pokemon also becomes infatuated.",
+		desc: "Immune to destiny moves and infatuation. Destiny moves: Future Sight, Foresight, Destiny Bond, Doom Desire",
+		shortDesc: "Immune to destiny moves and infatuation..",
 	},
 	diancite: {
 		name: "Diancite",
@@ -374,11 +375,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	diveball: {
 		name: "Dive Ball",
-		shortDesc: "A Poke Ball that works especially well on Pokemon that live underwater.",
+		shortDesc: "Activates the Storm Drain Ability upon entering the field.",
 	},
 	domefossil: {
 		name: "Dome Fossil",
-		shortDesc: "Can be revived into Kabuto.",
+		shortDesc: "With Mineralization, consumes to prevent status conditions until switched out.",
 	},
 	dousedrive: {
 		name: "Douse Drive",
@@ -407,11 +408,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	dragonmemory: {
 		name: "Dragon Memory",
-		shortDesc: "Holder's Multi-Attack is Dragon type.",
+		shortDesc: "Holder's Multi-Attack is Dragon type. Holder's Dragon-type attacks have 1.25x power.",
 	},
 	dragonscale: {
 		name: "Dragon Scale",
-		shortDesc: "Evolves Seadra into Kingdra when traded.",
+		shortDesc: "Increases Seadra's Attack, Sp. Attack by 75%.",
 		gen2: {
 			shortDesc: "Holder's Dragon-type attacks have 1.1x power. Evolves Seadra (trade).",
 		},
@@ -428,7 +429,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Dream Ball",
 		shortDesc: "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep.",
 		gen7: {
-			shortDesc: "A special Poke Ball that appears out of nowhere in a bag at the Entree Forest.",
+			shortDesc: "Activates the Early Bird Ability upon entering the field.",
 		},
 	},
 	dubiousdisc: {
@@ -441,7 +442,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	duskball: {
 		name: "Dusk Ball",
-		shortDesc: "A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.",
+		shortDesc: "Activates the Rattled Ability upon entering the field.",
 	},
 	duskstone: {
 		name: "Dusk Stone",
@@ -481,7 +482,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	electricmemory: {
 		name: "Electric Memory",
-		shortDesc: "Holder's Multi-Attack is Electric type.",
+		shortDesc: "Holder's Multi-Attack is Electric type. Holder's Electric-type attacks have 1.25x power.",
 	},
 	electricseed: {
 		name: "Electric Seed",
@@ -493,7 +494,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	enigmaberry: {
 		name: "Enigma Berry",
-		shortDesc: "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",
+		shortDesc: "At less than 50% HP, the user uses a random move and recovers 10% HP.",
 		gen3: {
 			shortDesc: "No competitive use.",
 		},
@@ -520,11 +521,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fairymemory: {
 		name: "Fairy Memory",
-		shortDesc: "Holder's Multi-Attack is Fairy type.",
+		shortDesc: "Holder's Multi-Attack is Fairy type. Holder's Fairy-type attacks have 1.25x power.",
 	},
 	fastball: {
 		name: "Fast Ball",
-		shortDesc: "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
+		shortDesc: "Activates the Lightning Rood Ability upon entering the field.",
 	},
 	fightinggem: {
 		name: "Fighting Gem",
@@ -535,7 +536,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fightingmemory: {
 		name: "Fighting Memory",
-		shortDesc: "Holder's Multi-Attack is Fighting type.",
+		shortDesc: "Holder's Multi-Attack is Fighting type. Holder's Fighting-type attacks have 1.25x power.",
 	},
 	fightiniumz: {
 		name: "Fightinium Z",
@@ -560,7 +561,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	firememory: {
 		name: "Fire Memory",
-		shortDesc: "Holder's Multi-Attack is Fire type.",
+		shortDesc: "Holder's Multi-Attack is Fire type. Holder's Fire-type attacks have 1.25x power.",
 	},
 	firestone: {
 		name: "Fire Stone",
@@ -585,11 +586,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	floatstone: {
 		name: "Float Stone",
-		shortDesc: "Holder's weight is halved.",
+		shortDesc: "Holder's weight is halved. Grounds Flying-type Pokémon.",
 	},
 	flowersweet: {
 		name: "Flower Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Fighting as a secondary type. +50% Special Defense.",
 	},
 	flyinggem: {
 		name: "Flying Gem",
@@ -600,7 +601,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	flyingmemory: {
 		name: "Flying Memory",
-		shortDesc: "Holder's Multi-Attack is Flying type.",
+		shortDesc: "Holder's Multi-Attack is Flying type. Holder's Flying-type attacks have 1.25x power.",
 	},
 	flyiniumz: {
 		name: "Flyinium Z",
@@ -608,7 +609,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	focusband: {
 		name: "Focus Band",
-		shortDesc: "Holder has a 10% chance to survive an attack that would KO it with 1 HP.",
+		shortDesc: "Raises Defense after taking 3 physical hits.",
 		gen2: {
 			shortDesc: "Holder has a ~11.7% chance to survive an attack that would KO it with 1 HP.",
 		},
@@ -642,7 +643,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	friendball: {
 		name: "Friend Ball",
-		shortDesc: "A Poke Ball that makes caught Pokemon more friendly.",
+		shortDesc: "Activates the Sap Sipper Ability upon entering the field.",
 	},
 	fullincense: {
 		name: "Full Incense",
@@ -685,7 +686,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ghostmemory: {
 		name: "Ghost Memory",
-		shortDesc: "Holder's Multi-Attack is Ghost type.",
+		shortDesc: "Holder's Multi-Attack is Ghost type. Holder's Ghost-type attacks have 1.25x power.",
 	},
 	ghostiumz: {
 		name: "Ghostium Z",
@@ -708,7 +709,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	grassmemory: {
 		name: "Grass Memory",
-		shortDesc: "Holder's Multi-Attack is Grass type.",
+		shortDesc: "Holder's Multi-Attack is Grass type. Holder's Grass-type attacks have 1.25x power.",
 	},
 	grassiumz: {
 		name: "Grassium Z",
@@ -720,7 +721,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	greatball: {
 		name: "Great Ball",
-		shortDesc: "A high-performance Ball that provides a higher catch rate than a Poke Ball.",
+		shortDesc: "Activates the Effect Spore Ability upon entering the field.",
 	},
 	grepaberry: {
 		name: "Grepa Berry",
@@ -750,7 +751,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	groundmemory: {
 		name: "Ground Memory",
-		shortDesc: "Holder's Multi-Attack is Ground type.",
+		shortDesc: "Holder's Multi-Attack is Ground type. Holder's Ground-type attacks have 1.25x power.",
 	},
 	groundiumz: {
 		name: "Groundium Z",
@@ -773,7 +774,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	healball: {
 		name: "Heal Ball",
-		shortDesc: "A remedial Poke Ball that restores the caught Pokemon's HP and status problem.",
+		shortDesc: "Activates the Unburden Ability upon entering the field.",
 	},
 	hearthflamemask: {
 		name: "Hearthflame Mask",
@@ -785,7 +786,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	heavyball: {
 		name: "Heavy Ball",
-		shortDesc: "A Poke Ball for catching very heavy Pokemon.",
+		shortDesc: "Activates the Aftermath Ability upon entering the field.",
 	},
 	heavydutyboots: {
 		name: "Heavy-Duty Boots",
@@ -801,7 +802,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	hondewberry: {
 		name: "Hondew Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will paralize the target.",
 	},
 	houndoominite: {
 		name: "Houndoominite",
@@ -826,7 +827,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	icememory: {
 		name: "Ice Memory",
-		shortDesc: "Holder's Multi-Attack is Ice type.",
+		shortDesc: "Holder's Multi-Attack is Ice type. Holder's Ice-type attacks have 1.25x power.",
 	},
 	icestone: {
 		name: "Ice Stone",
@@ -863,7 +864,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Iron Ball",
 		shortDesc: "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.",
 		gen4: {
-			shortDesc: "Holder's Speed is halved and it becomes grounded.",
+			shortDesc: "Holder's Speed is halved and it becomes grounded. Increases the power of projectile moves by 25%.",
 		},
 	},
 	ironplate: {
@@ -872,7 +873,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	jabocaberry: {
 		name: "Jaboca Berry",
-		shortDesc: "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
+		shortDesc: "Changes Self-Destruct or Explosion to the user's primary type.",
 	},
 	jawfossil: {
 		name: "Jaw Fossil",
@@ -940,7 +941,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	leek: {
 		name: "Leek",
-		shortDesc: "If held by a Farfetch’d or Sirfetch’d, its critical hit ratio is raised by 2 stages.",
+		shortDesc: "If held by a Sirfetch’d, its Atk and Def x1.5.",
 	},
 	leftovers: {
 		name: "Leftovers",
@@ -956,7 +957,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	levelball: {
 		name: "Level Ball",
-		shortDesc: "A Poke Ball for catching Pokemon that are a lower level than your own.",
+		shortDesc: "Activates the Anger Shell Ability upon entering the field.",
 	},
 	liechiberry: {
 		name: "Liechi Berry",
@@ -996,11 +997,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	loveball: {
 		name: "Love Ball",
-		shortDesc: "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
+		shortDesc: "Activates the Competitive Ability upon entering the field.",
 	},
 	lovesweet: {
 		name: "Love Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Psychic as a secondary type. +50% Special Defense.",
 	},
 	lucarionite: {
 		name: "Lucarionite",
@@ -1008,7 +1009,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	luckypunch: {
 		name: "Lucky Punch",
-		shortDesc: "If held by a Chansey, its critical hit ratio is raised by 2 stages.",
+		shortDesc: "Punching moves are always critical hits, but critical hit damage is 1.1x.",
 		gen2: {
 			shortDesc: "If held by a Chansey, its critical hit ratio is always at stage 2. (25% crit rate)",
 		},
@@ -1027,7 +1028,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	lureball: {
 		name: "Lure Ball",
-		shortDesc: "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",
+		shortDesc: "Activates the Swift Swim Ability upon entering the field.",
 	},
 	lustrousglobe: {
 		name: "Lustrous Globe",
@@ -1039,7 +1040,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	luxuryball: {
 		name: "Luxury Ball",
-		shortDesc: "A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.",
+		shortDesc: "Activates the Moxie Ability upon entering the field.",
 	},
 	lycaniumz: {
 		name: "Lycanium Z",
@@ -1047,7 +1048,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	machobrace: {
 		name: "Macho Brace",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, ignores the opponent's Ability.",
 	},
 	magmarizer: {
 		name: "Magmarizer",
@@ -1072,7 +1073,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	magostberry: {
 		name: "Magost Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will infatuated the target.",
 	},
 	mail: {
 		name: "Mail",
@@ -1096,7 +1097,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	masterball: {
 		name: "Master Ball",
-		shortDesc: "The best Ball with the ultimate performance. It will catch any wild Pokemon.",
+		shortDesc: "Activates the Justified Ability upon entering the field.",
 	},
 	masterpieceteacup: {
 		name: "Masterpiece Teacup",
@@ -1195,12 +1196,12 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	moonball: {
 		name: "Moon Ball",
-		shortDesc: "A Poke Ball for catching Pokemon that evolve using the Moon Stone.",
+		shortDesc: "Activates the Slush Rush Ability upon entering the field.",
 	},
 	moonstone: {
 		name: "Moon Stone",
 		desc: "Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "Raises the highest stat of the Pokémon that evolves using this stone by 1 stage.",
 	},
 	muscleband: {
 		name: "Muscle Band",
@@ -1215,15 +1216,15 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	nanabberry: {
 		name: "Nanab Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will confuse the target.",
 	},
 	nestball: {
 		name: "Nest Ball",
-		shortDesc: "A Poke Ball that works especially well on weaker Pokemon in the wild.",
+		shortDesc: "Activates the Sand Rush Ability upon entering the field.",
 	},
 	netball: {
 		name: "Net Ball",
-		shortDesc: "A Poke Ball that works especially well on Water- and Bug-type Pokemon.",
+		shortDesc: "Activates the Gooey Ability upon entering the field.",
 	},
 	nevermeltice: {
 		name: "Never-Melt Ice",
@@ -1234,7 +1235,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	nomelberry: {
 		name: "Nomel Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Dragon or Flying move has 1.5x power.",
 	},
 	normalgem: {
 		name: "Normal Gem",
@@ -1257,11 +1258,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	oldamber: {
 		name: "Old Amber",
-		shortDesc: "Can be revived into Aerodactyl.",
+		shortDesc: "Increases Speed when the ability Mineralization is active.",
 	},
 	oranberry: {
 		name: "Oran Berry",
-		shortDesc: "Restores 10 HP when at 1/2 max HP or less. Single use.",
+		shortDesc: "Restores 75 HP when at 1/2 max HP or less. Single use.",
 	},
 	ovalstone: {
 		name: "Oval Stone",
@@ -1269,11 +1270,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	pamtreberry: {
 		name: "Pamtre Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will curse the target.",
 	},
 	parkball: {
 		name: "Park Ball",
-		shortDesc: "A special Poke Ball for the Pal Park.",
+		shortDesc: "Activates the Moody Ability upon entering the field.",
 	},
 	passhoberry: {
 		name: "Passho Berry",
@@ -1309,7 +1310,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	pinapberry: {
 		name: "Pinap Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Grass or Fairy move has 1.5x power.",
 	},
 	pinsirite: {
 		name: "Pinsirite",
@@ -1339,7 +1340,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	poisonmemory: {
 		name: "Poison Memory",
-		shortDesc: "Holder's Multi-Attack is Poison type.",
+		shortDesc: "Holder's Multi-Attack is Poison type. Holder's Poison-type attacks have 1.25x power.",
 	},
 	poisoniumz: {
 		name: "Poisonium Z",
@@ -1347,45 +1348,45 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	pokeball: {
 		name: "Poke Ball",
-		shortDesc: "A device for catching wild Pokemon. It is designed as a capsule system.",
+		shortDesc: "Activates the Cloud Nine Ability upon entering the field.",
 	},
 	pomegberry: {
 		name: "Pomeg Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will freeze the target.",
 	},
 	poweranklet: {
 		name: "Power Anklet",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, Defense increased by 25%",
 	},
 	powerband: {
 		name: "Power Band",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, Special Defense increased by 25%.",
 	},
 	powerbelt: {
 		name: "Power Belt",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, Attack increased by 25%.",
 	},
 	powerbracer: {
 		name: "Power Bracer",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, Special Attack increased by 25%.",
 	},
 	powerherb: {
 		name: "Power Herb",
-		shortDesc: "Holder's two-turn moves complete in one turn (except Sky Drop). Single use.",
+		shortDesc: "Holder's two-turn moves complete in one turn. Single use.",
 
 		end: "  [POKEMON] became fully charged due to its Power Herb!",
 	},
 	powerlens: {
 		name: "Power Lens",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, accuracy increased by 25%.",
 	},
 	powerweight: {
 		name: "Power Weight",
-		shortDesc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+		shortDesc: "Speed halved, move power increased by 25%.",
 	},
 	premierball: {
 		name: "Premier Ball",
-		shortDesc: "A rare Poke Ball that has been crafted to commemorate an event.",
+		shortDesc: "Activates the Slow Start Ability upon entering the field.",
 	},
 	primariumz: {
 		name: "Primarium Z",
@@ -1414,7 +1415,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	psychicmemory: {
 		name: "Psychic Memory",
-		shortDesc: "Holder's Multi-Attack is Psychic type.",
+		shortDesc: "Holder's Multi-Attack is Psychic type. Holder's Psychic-type attacks have 1.25x power.",
 	},
 	psychicseed: {
 		name: "Psychic Seed",
@@ -1430,11 +1431,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	qualotberry: {
 		name: "Qualot Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Poison or Ground move has 1.5x power.",
 	},
 	quickball: {
 		name: "Quick Ball",
-		shortDesc: "A Poke Ball that provides a better catch rate at the start of a wild encounter.",
+		shortDesc: "Activates the Motordrive, Ignomotor Ability upon entering the field.",
 	},
 	quickclaw: {
 		name: "Quick Claw",
@@ -1451,7 +1452,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rabutaberry: {
 		name: "Rabuta Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Ghost or Rock move has 1.5x power.",
 	},
 	rarebone: {
 		name: "Rare Bone",
@@ -1473,7 +1474,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	razzberry: {
 		name: "Razz Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Steel or Water move has 1.5x power.",
 	},
 	reapercloth: {
 		name: "Reaper Cloth",
@@ -1491,11 +1492,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	repeatball: {
 		name: "Repeat Ball",
-		shortDesc: "A Poke Ball that works well on Pokemon species that were previously caught.",
+		shortDesc: "Activates the Steadfast Ability upon entering the field.",
 	},
 	ribbonsweet: {
 		name: "Ribbon Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Ghost as a secondary type. +50% Special Defense.",
 	},
 	rindoberry: {
 		name: "Rindo Berry",
@@ -1503,7 +1504,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ringtarget: {
 		name: "Ring Target",
-		shortDesc: "The holder's type immunities granted solely by its typing are negated.",
+		shortDesc: "The first hit ignores the target's immunities.",
 	},
 	rockgem: {
 		name: "Rock Gem",
@@ -1518,7 +1519,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rockmemory: {
 		name: "Rock Memory",
-		shortDesc: "Holder's Multi-Attack is Rock type.",
+		shortDesc: "Holder's Multi-Attack is Rock type. Holder's Rock-type attacks have 1.25x power.",
 	},
 	rockiumz: {
 		name: "Rockium Z",
@@ -1536,7 +1537,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rootfossil: {
 		name: "Root Fossil",
-		shortDesc: "Can be revived into Lileep.",
+		shortDesc: "Increases Special Defense when the ability Mineralization is active.",
 	},
 	roseincense: {
 		name: "Rose Incense",
@@ -1548,7 +1549,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rowapberry: {
 		name: "Rowap Berry",
-		shortDesc: "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
+		shortDesc: "On contact, sets up two layers of Spikes on the opponent's side.",
 	},
 	rustedshield: {
 		name: "Rusted Shield",
@@ -1568,7 +1569,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	safariball: {
 		name: "Safari Ball",
-		shortDesc: "A special Poke Ball that is used only in the Safari Zone and Great Marsh.",
+		shortDesc: "Activates the Chlorophyll Ability upon entering the field.",
 	},
 	safetygoggles: {
 		name: "Safety Goggles",
@@ -1578,7 +1579,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sailfossil: {
 		name: "Sail Fossil",
-		shortDesc: "Can be revived into Amaura.",
+		shortDesc: "Increases Special Attack when the ability Mineralization is active.",
 	},
 	salacberry: {
 		name: "Salac Berry",
@@ -1699,7 +1700,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	souldew: {
 		name: "Soul Dew",
-		shortDesc: "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.",
+		shortDesc: "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.5x power.",
 		gen6: {
 			shortDesc: "If held by a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x.",
 		},
@@ -1713,7 +1714,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	spelonberry: {
 		name: "Spelon Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Dark or Normal move has 1.5x power.",
 	},
 	splashplate: {
 		name: "Splash Plate",
@@ -1725,7 +1726,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sportball: {
 		name: "Sport Ball",
-		shortDesc: "A special Poke Ball for the Bug-Catching Contest.",
+		shortDesc: "Activates the Defiant Ability upon entering the field.",
 	},
 	starfberry: {
 		name: "Starf Berry",
@@ -1733,7 +1734,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	starsweet: {
 		name: "Star Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Electric as a secondary type. +50% Special Defense.",
 	},
 	steelixite: {
 		name: "Steelixite",
@@ -1748,7 +1749,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	steelmemory: {
 		name: "Steel Memory",
-		shortDesc: "Holder's Multi-Attack is Steel type.",
+		shortDesc: "Holder's Multi-Attack is Steel type. Holder's Steel-type attacks have 1.25x power.",
 	},
 	steeliumz: {
 		name: "Steelium Z",
@@ -1756,7 +1757,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	stick: {
 		name: "Stick",
-		shortDesc: "If held by a Farfetch’d, its critical hit ratio is raised by 2 stages.",
+		shortDesc: "If held by a Farfetch’d-Galar, its Atk and Def is doubled.",
 		gen2: {
 			shortDesc: "If held by a Farfetch’d, its critical hit ratio is always at stage 2. (25% crit rate)",
 		},
@@ -1771,16 +1772,16 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	strangeball: {
 		name: "Strange Ball",
-		shortDesc: "Placeholder if caught in Poke Ball not in current game.",
+		shortDesc: "Activates the Battle Bond Ability upon entering the field.",
 	},
 	strawberrysweet: {
 		name: "Strawberry Sweet",
-		shortDesc: "Evolves Milcery into Alcremie when held and spun around.",
+		shortDesc: "(Alcremie only) Gains Fire as a secondary type. +50% Special Defense.",
 	},
 	sunstone: {
 		name: "Sun Stone",
 		desc: "Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "Raises the highest stat of the Pokémon that evolves using this stone by 1 stage.",
 	},
 	swampertite: {
 		name: "Swampertite",
@@ -1796,7 +1797,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	tamatoberry: {
 		name: "Tamato Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Psychic or Fighting move has 1.5x power.",
 	},
 	tangaberry: {
 		name: "Tanga Berry",
@@ -1832,7 +1833,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	timerball: {
 		name: "Timer Ball",
-		shortDesc: "A Poke Ball that becomes better the more turns there are in a battle.",
+		shortDesc: "Activates the Weak Armor Ability upon entering the field.",
 	},
 	toxicorb: {
 		name: "Toxic Orb",
@@ -2255,7 +2256,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ultraball: {
 		name: "Ultra Ball",
-		shortDesc: "An ultra-performance Ball that provides a higher catch rate than a Great Ball.",
+		shortDesc: "Activates the Magnet Pull Ability upon entering the field.",
 	},
 	ultranecroziumz: {
 		name: "Ultranecrozium Z",
@@ -2297,7 +2298,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	watermemory: {
 		name: "Water Memory",
-		shortDesc: "Holder's Multi-Attack is Water type.",
+		shortDesc: "Holder's Multi-Attack is Water type. Holder's Water-type attacks have 1.25x power.",
 	},
 	waterstone: {
 		name: "Water Stone",
@@ -2310,7 +2311,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	watmelberry: {
 		name: "Watmel Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Fire or Bug move has 1.5x power.",
 	},
 	waveincense: {
 		name: "Wave Incense",
@@ -2326,7 +2327,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	wepearberry: {
 		name: "Wepear Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "At less than 1/2 HP, the next Electric or Ice move has 1.5x power.",
 	},
 	whippeddream: {
 		name: "Whipped Dream",
@@ -2340,7 +2341,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	widelens: {
 		name: "Wide Lens",
-		shortDesc: "The accuracy of attacks by the holder is 1.1x.",
+		shortDesc: "The accuracy of attacks by the holder is 1.15x.",
 	},
 	wikiberry: {
 		name: "Wiki Berry",
@@ -2366,7 +2367,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	zoomlens: {
 		name: "Zoom Lens",
-		shortDesc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
+		shortDesc: "If the user moves last, its moves never miss.",
 	},
 
 	// Gen 2 items
