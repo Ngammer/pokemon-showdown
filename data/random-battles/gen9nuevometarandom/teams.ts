@@ -10,6 +10,8 @@ export interface TeamData {
 	typeComboCount: { [k: string]: number };
 	baseFormes: { [k: string]: number };
 	megaCount?: number;
+	totemCount?: number;
+	feudalCount?: number;
 	zCount?: number;
 	wantsTeraCount?: number;
 	has: { [k: string]: number };
@@ -23,6 +25,7 @@ export interface TeamData {
 export interface BattleFactorySpecies {
 	sets: BattleFactorySet[];
 	weight: number;
+	flags: { megaOnly?: 1, zmoveOnly?: 1, totemOnly?: 1, feudalOnly?: 1, limEevee?: 1 };
 }
 interface BattleFactorySet {
 	species: string;
@@ -2874,10 +2877,24 @@ export class RandomTeams {
 			const species = this.dex.species.get(shuffledSpecies.pop()!.speciesName);
 			if (!species.exists) continue;
 
+			const speciesFlags = this.randomBSSFactorySets[species.id].flags;
+
 			if (this.forceMonotype && !species.types.includes(this.forceMonotype)) continue;
 
 			// Limit to one of each species (Species Clause)
 			if (teamData.baseFormes[species.baseSpecies]) continue;
+
+			// Limit the number of Megas to one
+			if (!teamData.megaCount) teamData.megaCount = 0;
+			if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
+
+			// Limit the number of Megas to one
+			if (!teamData.feudalCount) teamData.feudalCount = 0;
+			if (teamData.feudalCount >= 1 && speciesFlags.feudalOnly) continue;
+
+			// Limit the number of Megas to one
+			if (!teamData.totemCount) teamData.totemCount = 0;
+			if (teamData.totemCount >= 1 && speciesFlags.totemOnly) continue;
 
 			// Limit 2 of any type (most of the time)
 			const types = species.types;

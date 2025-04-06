@@ -1140,14 +1140,14 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	metalpowder: {
 		name: "Metal Powder",
-		shortDesc: "If held by a Ditto , its Defense is increased.",
+		shortDesc: "If held by a Ditto, its Defense and Sp. Def are 1.2x, even while Transformed.",
 		gen2: {
 			shortDesc: "If held by a Ditto, its Defense and Sp. Def are 1.2x, even while Transformed.",
 		},
 	},
 	metronome: {
 		name: "Metronome",
-		shortDesc: "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
+		shortDesc: "Raises the user's Speed by 1 stage every 4 turns.",
 		gen4: {
 			shortDesc: "Raises the user's Speed by 1 stage every 4 turns.",
 		},

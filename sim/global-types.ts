@@ -465,6 +465,8 @@ declare namespace RandomTeamsTypes {
 	}
 	export interface FactoryTeamDetails {
 		megaCount?: number;
+		totemCount?: number;
+		feudalCount?: number;
 		zCount?: number;
 		wantsTeraCount?: number;
 		forceResult: boolean;
