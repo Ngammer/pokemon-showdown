@@ -15750,6 +15750,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderpunch: ["9M", "9M", "9T"],
 			toxic: ["9M", "9M"],
 			uproar: ["9M", "9T"],
+			wildcharge: ["9M", "9M", "9M"],
 			willowisp: ["9M", "9L36", "9M", "9M", "9L23"],
 		},
 	},
@@ -15833,6 +15834,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderpunch: ["9T"],
 			toxic: ["9M"],
 			uproar: ["9T"],
+			wildcharge: ["9M", "9M", "9M"],
 			willowisp: ["9M", "9L23", "7S0"],
 		},
 		eventData: [

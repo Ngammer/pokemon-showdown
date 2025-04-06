@@ -1880,7 +1880,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	tr09: {
 		name: "TR09",
-		shortDesc: "Raises Special Attack by 1 stage if Thunderbolt is used. Consumed after activation.",
+		shortDesc: "Raises Special Attack by 1 stage if Thunder is used. Consumed after activation.",
 	},
 	tr10: {
 		name: "TR10",
