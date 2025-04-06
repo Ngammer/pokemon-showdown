@@ -4960,16 +4960,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 252,
 	},
 	stench: {
-		onSourceModifyDamage(damage, source, target, move) {
-			let mod = 1;
-			if (move.flags['wind']) mod /= 2;
-			return this.chainModify(mod);
-		},
-		onBasePowerPriority: 19,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Poison') {
-				this.debug('Stench boost');
-				return this.chainModify(1.1);
+		onResidual(pokemon) {
+			for (const foe of pokemon.adjacentFoes()) {
+				this.damage(foe.baseMaxhp / 16, foe, pokemon);
 			}
 		},
 		flags: { },
