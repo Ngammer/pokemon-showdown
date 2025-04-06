@@ -124,22 +124,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
-		onSourceModifyAccuracyPriority: -1,
-		onSourceModifyAccuracy(accuracy, pokemon, source) {
-			let boosted2 = true;
-			for (const target of this.getAllActive()) {
-				if (target === source) continue;
-				if (this.queue.willMove(target)) {
-					boosted2 = false;
-					break;
-				}
-			}
-			if (boosted2) {
-				if (typeof accuracy !== 'number') return;
-				this.debug('Analytic - enhancing accuracy');
-				return this.chainModify(5);
-			}
-		},
 		flags: { },
 		name: "Analytic",
 		rating: 2.5,
