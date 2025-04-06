@@ -60,7 +60,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	aloraichiumz: {
 		name: "Aloraichium Z",
-		shortDesc: "If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.",
+		shortDesc: "If held by an Alolan Raichu with Electro Ball, it can use Stoked Sparksurfer.",
 	},
 	altarianite: {
 		name: "Altarianite",

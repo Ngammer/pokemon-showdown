@@ -1256,7 +1256,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	poisonpoint: {
 		name: "Poison Point",
-		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be poisoned.",
+		shortDesc: "50% chance a Pokemon making contact with this Pokemon will be badly poisoned.",
 		gen4: {
 			desc: "30% chance a Pokemon making contact with this Pokemon will be poisoned. This effect does not happen if this Pokemon did not lose HP from the attack.",
 		},
