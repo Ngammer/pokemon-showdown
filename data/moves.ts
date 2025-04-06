@@ -15854,7 +15854,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rock Climb",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1 },
 		secondary: {
 			chance: 20,
 			volatileStatus: 'confusion',
