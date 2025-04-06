@@ -194,7 +194,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	buggem: {
 		name: "Bug Gem",
-		shortDesc: "Holder's first successful Bug-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Bug-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Bug-type attack will have 1.5x power. Single use.",
 		},
@@ -332,7 +332,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	darkgem: {
 		name: "Dark Gem",
-		shortDesc: "Holder's first successful Dark-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Dark-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Dark-type attack will have 1.5x power. Single use.",
 		},
@@ -401,7 +401,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	dragongem: {
 		name: "Dragon Gem",
-		shortDesc: "Holder's first successful Dragon-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Dragon-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Dragon-type attack will have 1.5x power. Single use.",
 		},
@@ -434,7 +434,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	dubiousdisc: {
 		name: "Dubious Disc",
-		shortDesc: "Evolves Porygon2 into Porygon-Z when traded.",
+		shortDesc: "Porygon-Z changes type to the first move used on switch-in.",
 	},
 	durinberry: {
 		name: "Durin Berry",
@@ -447,7 +447,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	duskstone: {
 		name: "Dusk Stone",
 		desc: "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Ghost moves. Only for Pokémon evolving this way.",
 	},
 	earthplate: {
 		name: "Earth Plate",
@@ -471,11 +471,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	electirizer: {
 		name: "Electirizer",
-		shortDesc: "Evolves Electabuzz into Electivire when traded.",
+		shortDesc: "When Electivire uses an Electric move, activates Motor Drive and gains Charge.",
 	},
 	electricgem: {
 		name: "Electric Gem",
-		shortDesc: "Holder's first successful Electric-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Electric-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Electric-type attack will have 1.5x power. Single use.",
 		},
@@ -517,7 +517,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fairygem: {
 		name: "Fairy Gem",
-		shortDesc: "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Fairy-type attack will have 1.5x power. Single use.",
 	},
 	fairymemory: {
 		name: "Fairy Memory",
@@ -529,7 +529,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fightinggem: {
 		name: "Fighting Gem",
-		shortDesc: "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Fighting-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Fighting-type attack will have 1.5x power. Single use.",
 		},
@@ -554,7 +554,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	firegem: {
 		name: "Fire Gem",
-		shortDesc: "Holder's first successful Fire-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Fire-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Fire-type attack will have 1.5x power. Single use.",
 		},
@@ -566,7 +566,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	firestone: {
 		name: "Fire Stone",
 		desc: "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Fire moves. Only for Pokémon evolving this way.",
 	},
 	firiumz: {
 		name: "Firium Z",
@@ -594,7 +594,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	flyinggem: {
 		name: "Flying Gem",
-		shortDesc: "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
 		},
@@ -627,19 +627,19 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fossilizedbird: {
 		name: "Fossilized Bird",
-		shortDesc: "Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Dino.",
+		shortDesc: "Next move paralyzes with Mineralization.",
 	},
 	fossilizeddino: {
 		name: "Fossilized Dino",
-		shortDesc: "Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Bird.",
+		shortDesc: "Next move freezes with Mineralization.",
 	},
 	fossilizeddrake: {
 		name: "Fossilized Drake",
-		shortDesc: "Can revive into Dracozolt with Fossilized Bird or Dracovish with Fossilized Fish.",
+		shortDesc: "Next move flinch with Mineralization.",
 	},
 	fossilizedfish: {
 		name: "Fossilized Fish",
-		shortDesc: "Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Dino.",
+		shortDesc: "Next move confuse with Mineralization.",
 	},
 	friendball: {
 		name: "Friend Ball",
@@ -651,11 +651,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	galaricacuff: {
 		name: "Galarica Cuff",
-		shortDesc: "Evolves Galarian Slowpoke into Galarian Slowbro when used.",
+		shortDesc: "(Galarian Slowbro only) Quick Draw activates every two turns.",
 	},
 	galaricawreath: {
 		name: "Galarica Wreath",
-		shortDesc: "Evolves Galarian Slowpoke into Galarian Slowking when used.",
+		shortDesc: "(Galarian Slowking only) Strange Medicine heals 25% HP on switch-in.",
 	},
 	galladite: {
 		name: "Galladite",
@@ -679,7 +679,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ghostgem: {
 		name: "Ghost Gem",
-		shortDesc: "Holder's first successful Ghost-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Ghost-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Ghost-type attack will have 1.5x power. Single use.",
 		},
@@ -698,11 +698,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	goldbottlecap: {
 		name: "Gold Bottle Cap",
-		shortDesc: "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31.",
+		shortDesc: "For 3 turns, ignores the opponents' positive stat changes.",
 	},
 	grassgem: {
 		name: "Grass Gem",
-		shortDesc: "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Grass-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Grass-type attack will have 1.5x power. Single use.",
 		},
@@ -744,7 +744,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	groundgem: {
 		name: "Ground Gem",
-		shortDesc: "Holder's first successful Ground-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Ground-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Ground-type attack will have 1.5x power. Single use.",
 		},
@@ -820,7 +820,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	icegem: {
 		name: "Ice Gem",
-		shortDesc: "Holder's first successful Ice-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Ice-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Ice-type attack will have 1.5x power. Single use.",
 		},
@@ -832,7 +832,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	icestone: {
 		name: "Ice Stone",
 		desc: "Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, Eevee into Glaceon, and Galarian Darumaka into Galarian Darmanitan when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Ice moves. Only for Pokémon evolving this way.",
 		gen7: {
 			desc: "Evolves Alolan Sandshrew into Alolan Sandslash and Alolan Vulpix into Alolan Ninetales when used.",
 		},
@@ -934,7 +934,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	leafstone: {
 		name: "Leaf Stone",
 		desc: "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Grass moves. Only for Pokémon evolving this way.",
 		gen7: {
 			desc: "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
 		},
@@ -1052,7 +1052,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	magmarizer: {
 		name: "Magmarizer",
-		shortDesc: "Evolves Magmar into Magmortar when traded.",
+		shortDesc: "(Magmortar only) Activates No Guard and gains Flash Fire.",
 	},
 	magnet: {
 		name: "Magnet",
@@ -1077,11 +1077,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	mail: {
 		name: "Mail",
-		shortDesc: "Cannot be given to or taken from a Pokemon, except by Covet/Knock Off/Thief.",
+		shortDesc: "Pivot moves lower the target's Attack and Special Attack by 1 stage on hit.",
 	},
 	maliciousarmor: {
 		name: "Malicious Armor",
-		shortDesc: "Evolves Charcadet into Ceruledge when used.",
+		shortDesc: "(Ceruledge only) Multi-turn moves are executed in one turn.",
 	},
 	manectite: {
 		name: "Manectite",
@@ -1101,7 +1101,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	masterpieceteacup: {
 		name: "Masterpiece Teacup",
-		shortDesc: "Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.",
+		shortDesc: "Sinistcha recovers 50% HP every 5 turns.",
 	},
 	mawilite: {
 		name: "Mawilite",
@@ -1128,7 +1128,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	metalalloy: {
 		name: "Metal Alloy",
-		shortDesc: "Evolves Duraludon into Archaludon when used.",
+		shortDesc: "1.5x power for Archaludon's Steel and Electric moves.",
 	},
 	metalcoat: {
 		name: "Metal Coat",
@@ -1239,7 +1239,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	normalgem: {
 		name: "Normal Gem",
-		shortDesc: "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Normal-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Normal-type attack will have 1.5x power. Single use.",
 		},
@@ -1266,7 +1266,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ovalstone: {
 		name: "Oval Stone",
-		shortDesc: "Evolves Happiny into Chansey when held and leveled up during the day.",
+		shortDesc: "If holder's species can evolve, its Atk and Sp. Atk are 1.5x.",
 	},
 	pamtreberry: {
 		name: "Pamtre Berry",
@@ -1322,7 +1322,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	plumefossil: {
 		name: "Plume Fossil",
-		shortDesc: "Can be revived into Archen.",
+		shortDesc: "Next move has +1 priority with Mineralization.",
 	},
 	poisonbarb: {
 		name: "Poison Barb",
@@ -1333,7 +1333,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	poisongem: {
 		name: "Poison Gem",
-		shortDesc: "Holder's first successful Poison-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Poison-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Poison-type attack will have 1.5x power. Single use.",
 		},
@@ -1394,7 +1394,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	prismscale: {
 		name: "Prism Scale",
-		shortDesc: "Evolves Feebas into Milotic when traded.",
+		shortDesc: "On switch-in, Milotic's Special Attack is raised by 1 stage.",
 	},
 	protectivepads: {
 		name: "Protective Pads",
@@ -1404,11 +1404,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	protector: {
 		name: "Protector",
-		shortDesc: "Evolves Rhydon into Rhyperior when traded.",
+		shortDesc: "Rhyperior's Defense and Special Defense are increased by 50%.",
 	},
 	psychicgem: {
 		name: "Psychic Gem",
-		shortDesc: "Holder's first successful Psychic-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Psychic-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Psychic-type attack will have 1.5x power. Single use.",
 		},
@@ -1478,7 +1478,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	reapercloth: {
 		name: "Reaper Cloth",
-		shortDesc: "Evolves Dusclops into Dusknoir when traded.",
+		shortDesc: "Prevents Dusknoir from being statused.",
 	},
 	redcard: {
 		name: "Red Card",
@@ -1508,7 +1508,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rockgem: {
 		name: "Rock Gem",
-		shortDesc: "Holder's first successful Rock-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Rock-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Rock-type attack will have 1.5x power. Single use.",
 		},
@@ -1565,7 +1565,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sachet: {
 		name: "Sachet",
-		shortDesc: "Evolves Spritzee into Aromatisse when traded.",
+		shortDesc: "Aromatisse recovers 12.5% HP each turn.",
 	},
 	safariball: {
 		name: "Safari Ball",
@@ -1632,7 +1632,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	shinystone: {
 		name: "Shiny Stone",
 		desc: "Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Fairy moves. Only for Pokémon evolving this way.",
 	},
 	shockdrive: {
 		name: "Shock Drive",
@@ -1665,7 +1665,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	skullfossil: {
 		name: "Skull Fossil",
-		shortDesc: "Can be revived into Cranidos.",
+		shortDesc: "1.5x move power, -10% accuracy with Mineralization.",
 	},
 	skyplate: {
 		name: "Sky Plate",
@@ -1742,7 +1742,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	steelgem: {
 		name: "Steel Gem",
-		shortDesc: "Holder's first successful Steel-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Steel-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Steel-type attack will have 1.5x power. Single use.",
 		},
@@ -1789,11 +1789,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sweetapple: {
 		name: "Sweet Apple",
-		shortDesc: "Evolves Applin into Appletun when used.",
+		shortDesc: "Appletun's Defense or Special Defense is raised by 1 stage. Both with Ripen.",
 	},
 	syrupyapple: {
 		name: "Syrupy Apple",
-		shortDesc: "Evolves Applin into Dipplin when used.",
+		shortDesc: "(Flapple) +2 Atk on switch-in; (Appletun) +2 Def & SpD on switch-in. Doubled with Ripen. Consumed.",
 	},
 	tamatoberry: {
 		name: "Tamato Berry",
@@ -1809,7 +1809,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	tartapple: {
 		name: "Tart Apple",
-		shortDesc: "Evolves Applin into Flapple when used.",
+		shortDesc: "Flapple's Speed is raised by 1 stage. Double with Ripen.",
 	},
 	terrainextender: {
 		name: "Terrain Extender",
@@ -1826,7 +1826,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	thunderstone: {
 		name: "Thunder Stone",
 		desc: "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Electric moves. Only for Pokémon evolving this way.",
 		gen7: {
 			desc: "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, and Eelektrik into Eelektross when used.",
 		},
@@ -2267,11 +2267,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	unremarkableteacup: {
 		name: "Unremarkable Teacup",
-		shortDesc: "Evolves Poltchageist into Sinistcha when used.",
+		shortDesc: "Sinistcha recovers 25% HP every 3 turns.",
 	},
 	upgrade: {
 		name: "Up-Grade",
-		shortDesc: "Evolves Porygon into Porygon2 when traded.",
+		shortDesc: "On switch-in, Porygon-Z's Special Attack is raised by 1 stage.",
 	},
 	utilityumbrella: {
 		name: "Utility Umbrella",
@@ -2291,7 +2291,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	watergem: {
 		name: "Water Gem",
-		shortDesc: "Holder's first successful Water-type attack will have 1.3x power. Single use.",
+		shortDesc: "Holder's first successful Water-type attack will have 1.5x power. Single use.",
 		gen5: {
 			shortDesc: "Holder's first successful Water-type attack will have 1.5x power. Single use.",
 		},
@@ -2303,7 +2303,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	waterstone: {
 		name: "Water Stone",
 		desc: "Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "1.5x power for Water moves. Only for Pokémon evolving this way.",
 	},
 	wateriumz: {
 		name: "Waterium Z",
@@ -2331,7 +2331,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	whippeddream: {
 		name: "Whipped Dream",
-		shortDesc: "Evolves Swirlix into Slurpuff when traded.",
+		shortDesc: "Absorbs the first offensive hit against Slurpuff. Consumed afterward.",
 	},
 	whiteherb: {
 		name: "White Herb",
