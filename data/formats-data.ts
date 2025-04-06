@@ -1216,10 +1216,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	hoothoot: {
-		tier: "OU",
+		tier: "LC",
 	},
 	noctowl: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},

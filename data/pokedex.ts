@@ -827,7 +827,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 26,
 		name: "Raichu",
 		types: ["Electric"],
-		baseStats: { hp: 60, atk: 100, def: 55, spa: 100, spd: 75, spe: 110 },
+		baseStats: { hp: 60, atk: 115, def: 55, spa: 85, spd: 75, spe: 110 },
 		abilities: { 0: "Static", H: "Lightning Rod" },
 		heightm: 0.8,
 		weightkg: 30,

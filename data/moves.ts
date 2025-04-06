@@ -4597,7 +4597,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!pokemon.volatiles['echoedvoice'] || move.hit === 1) {
 				pokemon.addVolatile('echoedvoice');
 			}
-			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['echoedvoice'].increase, 1, 600);
+			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['echoedvoice'].increase, 1, 150);
 			this.debug(`BP: ${bp}`);
 			return bp;
 		},
@@ -5659,8 +5659,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	firespin: {
 		num: 83,
-		accuracy: 85,
-		basePower: 35,
+		accuracy: 100,
+		basePower: 20,
 		category: "Special",
 		name: "Fire Spin",
 		pp: 15,
@@ -13211,7 +13211,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	nightslash: {
 		num: 400,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Night Slash",
 		pp: 15,
@@ -13301,7 +13301,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	nuzzle: {
 		num: 609,
 		accuracy: 100,
-		basePower: 20,
+		basePower: 40,
 		category: "Physical",
 		name: "Nuzzle",
 		pp: 20,
@@ -13892,7 +13892,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	pinmissile: {
 		num: 42,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		name: "Pin Missile",
@@ -14928,7 +14928,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return power;
 		},
 		category: "Physical",
-
 		name: "Punishment",
 		pp: 5,
 		priority: 0,
@@ -15855,7 +15854,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rock Climb",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, },
 		secondary: {
 			chance: 20,
 			volatileStatus: 'confusion',
@@ -16152,7 +16151,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	round: {
 		num: 496,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		basePowerCallback(target, source, move) {
 			if (move.sourceEffect === 'round') {
 				this.debug('BP doubled');
@@ -16373,8 +16372,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	sandtomb: {
 		num: 328,
-		accuracy: 85,
-		basePower: 35,
+		accuracy: 100,
+		basePower: 20,
 		category: "Physical",
 		name: "Sand Tomb",
 		pp: 15,
@@ -21596,8 +21595,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	whirlpool: {
 		num: 250,
-		accuracy: 85,
-		basePower: 35,
+		accuracy: 100,
+		basePower: 20,
 		category: "Special",
 		name: "Whirlpool",
 		pp: 15,
