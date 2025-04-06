@@ -129,7 +129,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				}
 			}
 			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: Clear Body", "[of] " + target);
+				this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
 			}
 		},
 		num: 846,
@@ -3344,7 +3344,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 			for (const condition of sideConditions) {
 				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] item: Kelpsy Berry', '[of] ' + pokemon);
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] item: Kelpsy Berry', `[of] ${pokemon}`);
 					activated = true;
 				}
 			}

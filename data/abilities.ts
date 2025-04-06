@@ -6039,7 +6039,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	wonderskin: {
 		onTryHit(target, source, move) {
-			if (move.category === 'Status') {
+			if (move.category === 'Status' && target !== source) {
 				this.add('-immune', target, '[from] ability: Wonder Skin');
 				return null;
 			}
