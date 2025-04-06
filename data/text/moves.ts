@@ -4538,7 +4538,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	odorsleuth: {
 		name: "Odor Sleuth",
 		desc: "No additional effect.",
-		shortDesc: "Usually goes first.",
+		shortDesc: "If a foe is switching out, hits it at 2x power..",
 		gen4: {
 			desc: "As long as the target remains active, its evasiveness stat stage is ignored during accuracy checks against it if it is greater than 0, and Normal- and Fighting-type attacks can hit the target if it is a Ghost type.",
 		},
