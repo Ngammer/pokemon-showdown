@@ -1,10 +1,13 @@
 {
- "venusaur": {
+    "venusaur": {
         "weight": 10,
+        "flags": {
+			"megaOnly": 1
+		},
         "sets": [
             {
                 "species": "Venusaur",
-                "weight": 50,
+                "weight": 15,
                 "moves": [
                     ["Mega Drain", "Giga Drain"],
                     ["Earth Power", "Weather Ball"],
@@ -20,7 +23,7 @@
             },
             {
                 "species": "Venusaur",
-                "weight": 30,
+                "weight": 20,
                 "moves": [
                     ["Mega Drain", "Giga Drain"],
                     ["Sludge Bomb", "Poison Powder"],
@@ -28,8 +31,39 @@
                     ["Leech Seed"]
                 ],
                 "item": ["Black Sludge"],
+                "nature": "Calm",
+                "evs": {"spd": 252, "spa": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Chlorophyll", "Overgrow"]
+            },
+            {
+                "species": "Venusaur",
+                "weight": 15,
+                "moves": [
+                    ["Giga Drain"],
+                    ["Synthesis"],
+                    ["Toxic", "Sleep Powder"],
+                    ["Knock Off"]
+                ],
+                "item": ["Life Orb"],
                 "nature": "Modest",
-                "evs": {"spd": 252, "spda": 8, "hp": 248},
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Chlorophyll", "Overgrow"]
+            },
+            {
+                "species": "Venusaur",
+                "weight": 15,
+                "moves": [
+                    ["Mega Drain", "Giga Drain"],
+                    ["Earth Power"],
+                    ["Sludge Bomb"],
+                    ["Work Up"]
+                ],
+                "item": ["Venusaurite"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
                "wantsTera": true,
                 "ability": ["Chlorophyll", "Overgrow"]
@@ -38,17 +72,338 @@
                 "species": "Venusaur",
                 "weight": 20,
                 "moves": [
-                    ["Giga Drain"],
-                    ["Acid Spray", "Sludge Bomb"],
-                    ["Toxic", "Sleep Powder", "Poison Powder"],
-                    ["Knock Off"]
+                    ["Mega Drain", "Giga Drain"],
+                    ["Earth Power"],
+                    ["Substitute"],
+                    ["Leech Seed"]
                 ],
-                "item": ["Life Orb"],
+                "item": ["Venusaurite"],
+                "nature": "Calm",
+                "evs": {"spd": 252, "spa": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Chlorophyll", "Overgrow"]
+            },
+            {
+                "species": "Venusaur",
+                "weight": 15,
+                "moves": [
+                    ["Earth Power"],
+                    ["Synthesis"],
+                    ["Toxic"],
+                    ["Venoshock"]
+                ],
+                "item": ["Venusaurite"],
+                "nature": "Modest",
+                "evs": {"spa": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Chlorophyll", "Overgrow"]
+            }
+        ]
+    },
+    "blastoise": {
+        "weight": 10,
+        "flags": {
+			"megaOnly": 1
+		},
+        "sets": [
+            {
+                "species": "Blastoise",
+                "weight": 20,
+                "moves": [
+                    ["Shell Smash"],
+                    ["Surf", "Hydro Pump"],
+                    ["Aura Sphere", "Dragon Pulse"],
+                    ["Ice Beam", "Signal Beam"]
+                ],
+                "item": ["White Herb"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "wantsTera": true,
-                "ability": ["Chlorophyll", "Overgrow"]
+               "wantsTera": true,
+                "ability": ["Torrent"]
+            },
+            {
+                "species": "Blastoise",
+                "weight": 15,
+                "moves": [
+                    ["Flip Turn"],
+                    ["Life Dew"],
+                    ["Scald", "Chilling Water"],
+                    ["Rapid Spin"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Relaxed",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Torrent"]
+            },
+            {
+                "species": "Blastoise",
+                "weight": 15,
+                "moves": [
+                    ["Chilling Water"],
+                    ["Life Dew"],
+                    ["Flip Turn"],
+                    ["Body Press"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Modest",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Torrent"]
+            },
+            {
+                "species": "Blastoise",
+                "weight": 15,
+                "moves": [
+                    ["Shell Smash"],
+                    ["Flash Cannon"],
+                    ["Hydro Pump"],
+                    ["Aura Sphere", "Dark Pulse"]
+                ],
+                "item": ["Blastoisinite"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Torrent"]
+            },
+            {
+                "species": "Blastoise",
+                "weight": 20,
+                "moves": [
+                    ["Flip Turn"],
+                    ["Hydro Cannon"],
+                    ["Flash Cannon"],
+                    ["Aura Sphere", "Dark Pulse"]
+                ],
+                "item": ["Blastoisinite"],
+                "nature": "Modest",
+                "evs": {"spa": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Torrent"]
+            },
+            {
+                "species": "Blastoise",
+                "weight": 15,
+                "moves": [
+                    ["Hydro Cannon"],
+                    ["Flash Cannon"],
+                    ["Flip Turn", "Body Press"],
+                    ["Life Dew"]
+                ],
+                "item": ["Blastoisinite"],
+                "nature": "Relaxed",
+                "evs": {"def": 252, "spa": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Torrent"]
+            }
+        ]
+    },
+    "charizard": {
+        "weight": 10,
+        "flags": {
+			"megaOnly": 1
+		},
+        "sets": [
+            {
+                "species": "Charizard",
+                "weight": 5,
+                "moves": [
+                    ["Celebrate"],
+                    ["Flamethrower"],
+                    ["Air Slash", "Hurricane"],
+                    ["Scorching Sands", "Submission"]
+                ],
+                "item": ["TR02"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Blaze"]
+            },
+            {
+                "species": "Charizard",
+                "weight": 10,
+                "moves": [
+                    ["Flare Blitz"],
+                    ["Earthquake", "Thunder Punch"],
+                    ["Dual Wingbeat"],
+                    ["Dragon Dance"]
+                ],
+                "item": ["TR55"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Blaze"]
+            },
+            {
+                "species": "Charizard",
+                "weight": 15,
+                "moves": [
+                    ["Defog"],
+                    ["Ember", "Scorching Sands"],
+                    ["Roost"],
+                    ["Incinerate"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Timid",
+                "evs": {"spe": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Blaze"]
+            },
+            {
+                "species": "Charizard",
+                "weight": 10,
+                "moves": [
+                    ["Roost"],
+                    ["Defog"],
+                    ["Ember", "Scorching Sands"],
+                    ["Weather Ball"]
+                ],
+                "item": ["Charizardite Y"],
+                "nature": "Calm",
+                "evs": {"hp": 248, "spe": 8, "spd": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Blaze"]
+            },
+            {
+                "species": "Charizard",
+                "weight": 10,
+                "moves": [
+                    ["Solar Beam"],
+                    ["Roost"],
+                    ["Weather Ball"],
+                    ["Scorching Sands"]
+                ],
+                "item": ["Charizardite Y"],
+                "nature": "Modest",
+                "evs": {"spa": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Blaze"]
+            },
+            {
+                "species": "Charizard",
+                "weight": 10,
+                "moves": [
+                    ["Solar Beam"],
+                    ["Weather Ball"],
+                    ["Scorching Sands"],
+                    ["Air Slash", "Air Cutter"]
+                ],
+                "item": ["Charizardite Y"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Blaze"]
+            },
+            {
+                "species": "Charizard",
+                "weight": 20,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Earthquake", "Thunder Punch"],
+                    ["Dragon Rush", "Dragon Claw", "Outrage"],
+                    ["Temper Flare", "Flare Blitz"]
+                ],
+                "item": ["Charizardite X"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Blaze"]
+            }
+        ]
+    },
+    "butterfree": {
+        "weight": 10,
+        "flags": {
+			"megaOnly": 1
+		},
+        "sets": [
+            {
+                "species": "Butterfree",
+                "weight": 20,
+                "moves": [
+                    ["Sleep Powder"],
+                    ["Quiver Dance"],
+                    ["Hurricane"],
+                    ["Bug Buzz", "Mega Drain"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Compound Eyes"]
+            },
+            {
+                "species": "Butterfree",
+                "weight": 15,
+                "moves": [
+                    ["U-turn"],
+                    ["Defog"],
+                    ["Giga Drain", "Hurricane", "Bug Buzz"],
+                    ["Stun Spore"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Relaxed",
+                "evs": {"def": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Compound Eyes"]
+            },
+            {
+                "species": "Butterfree",
+                "weight": 15,
+                "moves": [
+                    ["Quiver Dance"],
+                    ["Silver Wind"],
+                    ["Mega Drain", "Giga Drain"],
+                    ["Psychic"]
+                ],
+                "item": ["Butterfreetite"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Shield Dust"]
+            },
+            {
+                "species": "Butterfree",
+                "weight": 15,
+                "moves": [
+                    ["Silver Wind"],
+                    ["Infestation"],
+                    ["Roost"],
+                    ["Psywave"]
+                ],
+                "item": ["Butterfreetite"],
+                "nature": "Calm",
+                "evs": {"def": 252, "spa": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Shield Dust"]
+            },
+            {
+                "species": "Butterfree",
+                "weight": 15,
+                "moves": [
+                    ["Sleep Powder"],
+                    ["Infestation"],
+                    ["Dream Eater"],
+                    ["Nightmare"]
+                ],
+                "item": ["Butterfreetite"],
+                "nature": "Calm",
+                "evs": {"def": 252, "spa": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Compound Eyes"]
             }
         ]
     },

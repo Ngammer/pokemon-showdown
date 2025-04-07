@@ -2308,7 +2308,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	mentefria: {
 		name: "Mente Fria",
 		desc: "",
-		shortDesc: "This Pokemon's special moves that don't make contact have their power multiplied by 1.15 and 30% chance of freezing.",
+		shortDesc: "This Pokemon's special moves that don't make contact have their power multiplied by 1.3 and 30% chance of freezing.",
 	},
 	llamasiniestra: {
 		name: "Llama Siniestra",

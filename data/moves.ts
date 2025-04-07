@@ -1443,7 +1443,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	blazekick: {
 		num: 299,
-		accuracy: 90,
+		accuracy: 95,
 		basePower: 85,
 		category: "Physical",
 		name: "Blaze Kick",
