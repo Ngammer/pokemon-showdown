@@ -2835,6 +2835,8 @@ export class RandomTeams {
 			typeCount: {},
 			typeComboCount: {},
 			baseFormes: {},
+			megaCount: 0,
+			zCount: 0,
 			has: {},
 			wantsTeraCount: 0,
 			forceResult,
@@ -2923,6 +2925,9 @@ export class RandomTeams {
 			const itemData = this.dex.items.get(set.item);
 			if (teamData.has[itemData.id]) continue; // Item Clause
 
+			// Actually limit the number of Megas to one
+			if (teamData.megaCount >= 1 && itemData.megaStone) continue;
+
 			// Okay, the set passes, add it to our team
 			pokemon.push(set);
 
@@ -2941,6 +2946,12 @@ export class RandomTeams {
 			}
 
 			teamData.baseFormes[species.baseSpecies] = 1;
+
+			if (itemData.megaStone) teamData.megaCount++;
+			if (itemData.zMove) {
+				if (!teamData.zCount) teamData.zCount = 0;
+				teamData.zCount++;
+			}
 
 			teamData.has[itemData.id] = 1;
 
