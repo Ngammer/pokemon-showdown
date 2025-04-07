@@ -329,7 +329,7 @@
         "sets": [
             {
                 "species": "Butterfree",
-                "weight": 20,
+                "weight": 15,
                 "moves": [
                     ["Sleep Powder"],
                     ["Quiver Dance"],
@@ -361,7 +361,7 @@
             },
             {
                 "species": "Butterfree",
-                "weight": 15,
+                "weight": 40,
                 "moves": [
                     ["Quiver Dance"],
                     ["Silver Wind"],
@@ -404,6 +404,110 @@
                 "evs": {"def": 252, "spa": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Compound Eyes"]
+            }
+        ]
+    },
+    "beedrill": {
+        "weight": 10,
+        "flags": {
+			"megaOnly": 1
+		},
+        "sets": [
+            {
+                "species": "Beedrill",
+                "weight": 20,
+                "moves": [
+                    ["Pin Missile"],
+                    ["Spike Cannon"],
+                    ["Drill Run"],
+                    ["Swords Dance"]
+                ],
+                "item": ["Loaded Dice"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Run Away"]
+            },
+            {
+                "species": "Beedrill",
+                "weight": 20,
+                "moves": [
+                    ["Fell Stinger"],
+                    ["Drill Run"],
+                    ["Focus Energy"],
+                    ["Cross Poison"]
+                ],
+                "item": ["Clear Amulet"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Swarm"]
+            },
+            {
+                "species": "Beedrill",
+                "weight": 20,
+                "moves": [
+                    ["U-turn"],
+                    ["Defog"],
+                    ["Toxic Spikes"],
+                    ["Knock Off"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Swarm"]
+            },
+            {
+                "species": "Beedrill",
+                "weight": 20,
+                "moves": [
+                    ["X-Scissor"],
+                    ["Focus Energy"],
+                    ["Cross Poison"],
+                    ["Drill Run"]
+                ],
+                "item": ["Beedrillite"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Run Away"]
+            },
+            {
+                "species": "Beedrill",
+                "weight": 20,
+                "moves": [
+                    ["U-turn"],
+                    ["Drill Run"],
+                    ["Knock Off"],
+                    ["Poison Jab", "Cross Poison"]
+                ],
+                "item": ["Beedrillite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Run Away"]
+            },
+            {
+                "species": "Beedrill",
+                "weight": 20,
+                "moves": [
+                    ["Swords Dance"],
+                    ["Twineedle"],
+                    ["Poison Sting", "Poison Jab"],
+                    ["Drill Run"]
+                ],
+                "item": ["Beedrillite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+               "wantsTera": true,
+                "ability": ["Run Away"]
             }
         ]
     },
