@@ -1,9 +1,9 @@
 {
     "venusaur": {
-        "weight": 10,
-        "flags": {
+      "flags": {
 			"megaOnly": 1
 		},
+        "weight": 10,
         "sets": [
             {
                 "species": "Venusaur",
@@ -102,10 +102,10 @@
         ]
     },
     "blastoise": {
-        "weight": 10,
-        "flags": {
+      "flags": {
 			"megaOnly": 1
 		},
+        "weight": 10,
         "sets": [
             {
                 "species": "Blastoise",
@@ -204,10 +204,10 @@
         ]
     },
     "charizard": {
-        "weight": 10,
         "flags": {
 			"megaOnly": 1
 		},
+        "weight": 10,
         "sets": [
             {
                 "species": "Charizard",
@@ -322,10 +322,10 @@
         ]
     },
     "butterfree": {
-        "weight": 10,
         "flags": {
 			"megaOnly": 1
 		},
+        "weight": 10,
         "sets": [
             {
                 "species": "Butterfree",
@@ -408,10 +408,10 @@
         ]
     },
     "beedrill": {
-        "weight": 10,
         "flags": {
 			"megaOnly": 1
 		},
+        "weight": 10,
         "sets": [
             {
                 "species": "Beedrill",
@@ -963,456 +963,6 @@
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Normal"],
               "ability": ["Mind's Eye"]
-          }
-      ]
-  },
-  "ironbundle": {
-      "weight": 9,
-      "sets": [
-          {
-              "species": "Iron Bundle",
-              "weight": 10,
-              "moves": [
-                  ["Flip Turn"],
-                  ["Freeze-Dry"],
-                  ["Hydro Pump"],
-                  ["Encore"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "teraType": ["Ghost"],
-              "ability": ["Quark Drive"]
-          },
-          {
-              "species": "Iron Bundle",
-              "weight": 70,
-              "moves": [
-                  ["Substitute"],
-                  ["Encore"],
-                  ["Hydro Pump"],
-                  ["Freeze-Dry"]
-              ],
-              "item": ["Booster Energy"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Ghost", "Steel", "Water"],
-              "ability": ["Quark Drive"]
-          },
-          {
-              "species": "Iron Bundle",
-              "weight": 10,
-              "moves": [
-                  ["Ice Beam"],
-                  ["Hydro Pump"],
-                  ["Freeze-Dry"],
-                  ["Tera Blast"]
-              ],
-              "item": ["Choice Specs"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy"],
-              "ability": ["Quark Drive"]
-          },
-          {
-              "species": "Iron Bundle",
-              "weight": 10,
-              "moves": [
-                  ["Ice Beam"],
-                  ["Hydro Pump"],
-                  ["Freeze-Dry"],
-                  ["Flip Turn"]
-              ],
-              "item": ["Choice Specs"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "teraType": ["Water"],
-              "ability": ["Quark Drive"]
-          }
-      ]
-  },
-  "urshifu": {
-      "weight": 9,
-      "sets": [
-          {
-              "species": "Urshifu",
-              "weight": 55,
-              "moves": [
-                  ["Swords Dance"],
-                  ["Wicked Blow"],
-                  ["Close Combat", "Drain Punch"],
-                  ["Sucker Punch"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "def": 4, "spe": 252},
-              "teraType": ["Dark", "Ghost"],
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu",
-              "weight": 25,
-              "moves": [
-                  ["Swords Dance"],
-                  ["Wicked Blow"],
-                  ["Close Combat", "Drain Punch"],
-                  ["Sucker Punch"]
-              ],
-              "item": ["Black Glasses"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "def": 4, "spe": 252},
-              "teraType": ["Dark", "Ghost", "Poison"],
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu",
-              "weight": 5,
-              "moves": [
-                  ["Counter"],
-                  ["Wicked Blow"],
-                  ["Close Combat", "Drain Punch"],
-                  ["Sucker Punch"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "def": 4, "spe": 252},
-              "teraType": ["Dark", "Ghost"],
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu",
-              "weight": 5,
-              "moves": [
-                  ["Wicked Blow"],
-                  ["Close Combat", "Drain Punch"],
-                  ["Sucker Punch"],
-                  ["U-turn"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "def": 4, "spe": 252},
-              "teraType": ["Dark", "Ghost", "Poison"],
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu",
-              "weight": 5,
-              "moves": [
-                  ["Wicked Blow"],
-                  ["Close Combat", "Drain Punch"],
-                  ["Sucker Punch"],
-                  ["Iron Head"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "def": 4, "spe": 252},
-              "teraType": ["Steel"],
-              "wantsTera": true,
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu",
-              "weight": 5,
-              "moves": [
-                  ["Wicked Blow"],
-                  ["Close Combat"],
-                  ["Sucker Punch"],
-                  ["U-turn"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "def": 4, "spe": 252},
-              "teraType": ["Dark"],
-              "ability": ["Unseen Fist"]
-          }
-      ]
-  },
-  "tinglu": {
-      "weight": 9,
-      "sets": [
-          {
-              "species": "Ting-Lu",
-              "weight": 65,
-              "moves": [
-                  ["Stealth Rock"],
-                  ["Ruination"],
-                  ["Earthquake", "Heavy Slam"],
-                  ["Whirlwind"]
-              ],
-              "item": ["Sitrus Berry"],
-              "nature": "Impish",
-              "evs": {"hp": 244, "atk": 20, "def": 116, "spd": 124, "spe": 4},
-              "teraType": ["Fairy", "Poison", "Water"],
-              "ability": ["Vessel of Ruin"]
-          },
-          {
-              "species": "Ting-Lu",
-              "weight": 15,
-              "moves": [
-                  ["Stealth Rock"],
-                  ["Spikes"],
-                  ["Earthquake", "Heavy Slam"],
-                  ["Whirlwind"]
-              ],
-              "item": ["Sitrus Berry"],
-              "nature": "Impish",
-              "evs": {"hp": 244, "atk": 20, "def": 116, "spd": 124, "spe": 4},
-              "teraType": ["Fairy", "Poison", "Water"],
-              "ability": ["Vessel of Ruin"]
-          },
-          {
-              "species": "Ting-Lu",
-              "weight": 5,
-              "moves": [
-                  ["Earthquake"],
-                  ["Heavy Slam"],
-                  ["Fissure", "Stone Edge"],
-                  ["Ruination"]
-              ],
-              "item": ["Assault Vest"],
-              "nature": "Adamant",
-              "evs": {"hp": 4, "atk": 252, "def": 4, "spd": 108, "spe": 140},
-              "teraType": ["Steel"],
-              "ability": ["Vessel of Ruin"]
-          },
-          {
-              "species": "Ting-Lu",
-              "weight": 5,
-              "moves": [
-                  ["Earthquake"],
-                  ["Heavy Slam"],
-                  ["Tera Blast"],
-                  ["Ruination"]
-              ],
-              "item": ["Assault Vest"],
-              "nature": "Adamant",
-              "evs": {"hp": 4, "atk": 252, "def": 4, "spd": 108, "spe": 140},
-              "teraType": ["Electric", "Fairy"],
-              "wantsTera": true,
-              "ability": ["Vessel of Ruin"]
-          },
-          {
-              "species": "Ting-Lu",
-              "weight": 10,
-              "moves": [
-                  ["Earthquake"],
-                  ["Heavy Slam"],
-                  ["Rock Tomb"],
-                  ["Ruination"]
-              ],
-              "item": ["Sitrus Berry"],
-              "nature": "Impish",
-              "evs": {"hp": 244, "atk": 76, "def": 116, "spd": 68, "spe": 4},
-              "teraType": ["Steel"],
-              "ability": ["Vessel of Ruin"]
-          }
-      ]
-  },
-  "gholdengo": {
-      "weight": 9,
-      "sets": [
-          {
-              "species": "Gholdengo",
-              "weight": 25,
-              "moves": [
-                  ["Make It Rain"],
-                  ["Shadow Ball"],
-                  ["Focus Blast", "Recover", "Thunderbolt"],
-                  ["Trick"]
-              ],
-              "item": ["Choice Specs"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Flying", "Steel", "Water"],
-              "ability": ["Good as Gold"]
-          },
-          {
-              "species": "Gholdengo",
-              "weight": 30,
-              "moves": [
-                  ["Make It Rain"],
-                  ["Shadow Ball"],
-                  ["Focus Blast", "Recover", "Thunderbolt"],
-                  ["Trick"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Flying", "Normal", "Steel", "Water"],
-              "ability": ["Good as Gold"]
-          },
-          {
-              "species": "Gholdengo",
-              "weight": 15,
-              "moves": [
-                  ["Focus Blast", "Make It Rain"],
-                  ["Hex"],
-                  ["Thunder Wave"],
-                  ["Recover"]
-              ],
-              "item": ["Rocky Helmet"],
-              "nature": "Bold",
-              "evs": {"hp": 252, "def": 252, "spa": 4},
-              "ivs": {"atk": 0},
-              "teraType": ["Flying", "Water"],
-              "ability": ["Good as Gold"]
-          },
-          {
-              "species": "Gholdengo",
-              "weight": 20,
-              "moves": [
-                  ["Make It Rain"],
-                  ["Shadow Ball"],
-                  ["Nasty Plot"],
-                  ["Recover"]
-              ],
-              "item": ["Covert Cloak"],
-              "nature": "Modest",
-              "evs": {"hp": 164, "def": 156, "spa": 36, "spd": 4, "spe": 148},
-              "ivs": {"atk": 0},
-              "teraType": ["Flying"],
-              "ability": ["Good as Gold"]
-          },
-          {
-              "species": "Gholdengo",
-              "weight": 5,
-              "moves": [
-                  ["Tera Blast"],
-                  ["Shadow Ball"],
-                  ["Nasty Plot"],
-                  ["Recover"]
-              ],
-              "item": ["Covert Cloak"],
-              "nature": "Modest",
-              "evs": {"hp": 164, "def": 156, "spa": 36, "spd": 4, "spe": 148},
-              "ivs": {"atk": 0},
-              "teraType": ["Fighting", "Water"],
-              "wantsTera": true,
-              "ability": ["Good as Gold"]
-          },
-          {
-              "species": "Gholdengo",
-              "weight": 5,
-              "moves": [
-                  ["Make It Rain"],
-                  ["Shadow Ball"],
-                  ["Nasty Plot"],
-                  ["Psyshock", "Recover", "Substitute"]
-              ],
-              "item": ["Air Balloon"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Flying"],
-              "ability": ["Good as Gold"]
-          }
-      ]
-  },
-  "chiyu": {
-      "weight": 9,
-      "sets": [
-          {
-              "species": "Chi-Yu",
-              "weight": 20,
-              "moves": [
-                  ["Overheat"],
-                  ["Dark Pulse"],
-                  ["Tera Blast"],
-                  ["Flamethrower"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Modest",
-              "evs": {"hp": 116, "def": 84, "spa": 156, "spd": 4, "spe": 148},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Grass"],
-              "wantsTera": true,
-              "ability": ["Beads of Ruin"]
-          },
-          {
-              "species": "Chi-Yu",
-              "weight": 35,
-              "moves": [
-                  ["Overheat"],
-                  ["Lava Plume"],
-                  ["Dark Pulse"],
-                  ["Psychic"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Modest",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fire", "Ghost"],
-              "ability": ["Beads of Ruin"]
-          },
-          {
-              "species": "Chi-Yu",
-              "weight": 10,
-              "moves": [
-                  ["Flame Charge", "Ruination"],
-                  ["Overheat"],
-                  ["Dark Pulse"],
-                  ["Tera Blast"]
-              ],
-              "item": ["Assault Vest"],
-              "nature": "Calm",
-              "evs": {"hp": 252, "def": 4, "spa": 76, "spd": 156, "spe": 20},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Ghost", "Grass", "Water"],
-              "wantsTera": true,
-              "ability": ["Beads of Ruin"]
-          },
-          {
-              "species": "Chi-Yu",
-              "weight": 5,
-              "moves": [
-                  ["Lava Plume"],
-                  ["Ruination"],
-                  ["Taunt"],
-                  ["Dark Pulse"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Ghost"],
-              "ability": ["Beads of Ruin"]
-          },
-          {
-              "species": "Chi-Yu",
-              "weight": 20,
-              "moves": [
-                  ["Overheat"],
-                  ["Flamethrower"],
-                  ["Dark Pulse"],
-                  ["Psychic"]
-              ],
-              "item": ["Choice Specs"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fire"],
-              "ability": ["Beads of Ruin"]
-          },
-          {
-              "species": "Chi-Yu",
-              "weight": 10,
-              "moves": [
-                  ["Overheat"],
-                  ["Flamethrower"],
-                  ["Dark Pulse"],
-                  ["Tera Blast"]
-              ],
-              "item": ["Choice Specs"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Ghost", "Water"],
-              "wantsTera": true,
-              "ability": ["Beads of Ruin"]
           }
       ]
   }

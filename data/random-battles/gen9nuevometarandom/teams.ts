@@ -23,10 +23,17 @@ export interface TeamData {
 	gigantamax?: boolean;
 }
 export interface BattleFactorySpecies {
+	flags: { megaOnly?: 1, zmoveOnly?: 1, totemOnly?: 1, feudalOnly?: 1, limEevee?: 1 };
 	sets: BattleFactorySet[];
 	weight: number;
-	flags: { megaOnly?: 1, zmoveOnly?: 1, totemOnly?: 1, feudalOnly?: 1, limEevee?: 1 };
 }
+
+export interface BSSFactorySpecies {
+	flags: { megaOnly?: 1, zmoveOnly?: 1, totemOnly?: 1, feudalOnly?: 1, limEevee?: 1 };
+	sets: BSSFactorySet[];
+	weight: number;
+}
+
 interface BattleFactorySet {
 	species: string;
 	weight: number;
@@ -153,7 +160,7 @@ function sereneGraceBenefits(move: Move) {
 	return move.secondary?.chance && move.secondary.chance > 20 && move.secondary.chance < 100;
 }
 
-export class RandomTeams {
+export class RandomNMTeams {
 	readonly dex: ModdedDex;
 	gen: number;
 	factoryTier: string;
@@ -1513,10 +1520,13 @@ export class RandomTeams {
 
 		const types = species.types;
 		const abilities = set.abilities!;
+		// Use the mega's ability for moveset generation
+		const megaAbilities = (species.battleOnly && !species.requiredAbility) ? Object.values(species.abilities) : abilities;
 
 		// Get moves
-		const moves = this.randomMoveset(types, abilities, teamDetails, species, isLead, isDoubles, movePool, teraType, role);
-		const counter = this.queryMoves(moves, species, teraType, abilities);
+		const moves = this.randomMoveset(types, megaAbilities, teamDetails, species, isLead, isDoubles, movePool,
+			teraType, role);
+		const counter = this.queryMoves(moves, species, teraType, megaAbilities);
 
 		// Get ability
 		ability = this.getAbility(types, moves, abilities, counter, teamDetails, species, isLead, isDoubles, teraType, role);
@@ -1665,6 +1675,7 @@ export class RandomTeams {
 		const potd = usePotD ? this.dex.species.get(Config.potd) : null;
 
 		const baseFormes: { [k: string]: number } = {};
+		let hasMega = false;
 
 		const typeCount: { [k: string]: number } = {};
 		const typeComboCount: { [k: string]: number } = {};
@@ -1679,11 +1690,30 @@ export class RandomTeams {
 		let leadsRemaining = this.format.gameType === 'doubles' ? 2 : 1;
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			const baseSpecies = this.sampleNoReplace(baseSpeciesPool);
-			let species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+			const currentSpeciesPool: Species[] = [];
+			// Check if the base species has a mega forme available
+			let canMega = false;
+			for (const poke of pokemonPool[baseSpecies]) {
+				const species = this.dex.species.get(poke);
+				if (!hasMega && species.isMega) canMega = true;
+			}
+			for (const poke of pokemonPool[baseSpecies]) {
+				const species = this.dex.species.get(poke);
+				// Prevent multiple megas
+				if (hasMega && species.isMega) continue;
+				// Prevent base forme, if a mega is available
+				if (canMega && !species.isMega) continue;
+				currentSpeciesPool.push(species);
+			}
+
+			let species = this.sample(currentSpeciesPool);
 			if (!species.exists) continue;
 
 			// Limit to one of each species (Species Clause)
 			if (baseFormes[species.baseSpecies]) continue;
+
+			// Limit one Mega per team
+			if (hasMega && species.isMega) continue;
 
 			// Treat Ogerpon formes and Terapagos like the Tera Blast user role; reject if team has one already
 			if (['ogerpon', 'ogerponhearthflame', 'terapagos'].includes(species.id) && teamDetails.teraBlast) continue;
@@ -1779,6 +1809,8 @@ export class RandomTeams {
 				pokemon.push(set);
 			}
 
+			const item = this.dex.items.get(set.item);
+
 			// Don't bother tracking details for the last Pokemon
 			if (pokemon.length === this.maxTeamSize) break;
 
@@ -1819,6 +1851,7 @@ export class RandomTeams {
 			if (set.level === 100) numMaxLevelPokemon++;
 
 			// Track what the team has
+			if (item.megaStone || species.name === 'Rayquaza-Mega') hasMega = true;
 			if (set.ability === 'Drizzle' || set.moves.includes('raindance')) teamDetails.rain = 1;
 			if (set.ability === 'Drought' || set.ability === 'Orichalcum Pulse' || set.moves.includes('sunnyday')) {
 				teamDetails.sun = 1;
@@ -2580,6 +2613,8 @@ export class RandomTeams {
 			const species = this.dex.species.get(shuffledSpecies.pop()!.speciesName);
 			if (!species.exists) continue;
 
+			const speciesFlags = this.randomFactorySets[this.factoryTier][species.id].flags;
+
 			// Lessen the need of deleting sets of Pokemon after tier shifts
 			if (
 				this.factoryTier in tierValues && species.tier in tierValues &&
@@ -2590,6 +2625,10 @@ export class RandomTeams {
 
 			// Limit to one of each species (Species Clause)
 			if (teamData.baseFormes[species.baseSpecies]) continue;
+
+			// Limit the number of Megas to one
+			if (!teamData.megaCount) teamData.megaCount = 0;
+			if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
 
 			// Limit 2 of any type (most of the time)
 			const types = species.types;
@@ -2704,6 +2743,7 @@ export class RandomTeams {
 		species: Species, teamData: RandomTeamsTypes.FactoryTeamDetails
 	): RandomTeamsTypes.RandomFactorySet | null {
 		const id = toID(species.name);
+		// const flags = this.randomBSSFactorySets[tier][id].flags;
 		const setList = this.randomBSSFactorySets[id].sets;
 
 		const movesMax: { [k: string]: number } = {
@@ -2738,6 +2778,11 @@ export class RandomTeams {
 
 		for (const curSet of setList) {
 			let reject = false;
+
+			const items = this.dex.items.get(curSet.item);
+			if (teamData.megaCount && teamData.megaCount > 1 && items.megaStone) continue; // reject 3+ mega stones
+			if (teamData.zCount && teamData.zCount > 1 && items.zMove) continue; // reject 3+ Z stones
+			if (teamData.has[items.id]) continue; // Item clause
 
 			// limit to 2 dedicated tera users per team
 			if (curSet.wantsTera && teamData.wantsTeraCount && teamData.wantsTeraCount >= maxWantsTera) {
@@ -2836,6 +2881,8 @@ export class RandomTeams {
 			typeComboCount: {},
 			baseFormes: {},
 			megaCount: 0,
+			totemCount: 0,
+			feudalCount: 0,
 			zCount: 0,
 			has: {},
 			wantsTeraCount: 0,
@@ -2880,6 +2927,7 @@ export class RandomTeams {
 			if (!species.exists) continue;
 
 			const speciesFlags = this.randomBSSFactorySets[species.id].flags;
+			if (!teamData.megaCount) teamData.megaCount = 0;
 
 			if (this.forceMonotype && !species.types.includes(this.forceMonotype)) continue;
 
@@ -2887,8 +2935,7 @@ export class RandomTeams {
 			if (teamData.baseFormes[species.baseSpecies]) continue;
 
 			// Limit the number of Megas to one
-			if (!teamData.megaCount) teamData.megaCount = 0;
-			if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
+			/* if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue; */
 
 			// Limit the number of Megas to one
 			if (!teamData.feudalCount) teamData.feudalCount = 0;
@@ -3045,4 +3092,4 @@ export class RandomTeams {
 	}
 }
 
-export default RandomTeams;
+export default RandomNMTeams;
