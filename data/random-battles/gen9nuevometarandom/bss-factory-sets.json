@@ -18,7 +18,6 @@
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             },
             {
@@ -34,7 +33,6 @@
                 "nature": "Calm",
                 "evs": {"spd": 252, "spa": 8, "hp": 248},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             },
             {
@@ -65,7 +63,6 @@
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             },
             {
@@ -81,7 +78,6 @@
                 "nature": "Calm",
                 "evs": {"spd": 252, "spa": 8, "hp": 248},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             },
             {
@@ -120,7 +116,6 @@
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Torrent"]
             },
             {
@@ -136,7 +131,6 @@
                 "nature": "Relaxed",
                 "evs": {"def": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Torrent"]
             },
             {
@@ -167,7 +161,6 @@
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Torrent"]
             },
             {
@@ -183,7 +176,6 @@
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Torrent"]
             },
             {
@@ -222,7 +214,6 @@
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Blaze"]
             },
             {
@@ -238,7 +229,6 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Blaze"]
             },
             {
@@ -269,7 +259,6 @@
                 "nature": "Calm",
                 "evs": {"hp": 248, "spe": 8, "spd": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Blaze"]
             },
             {
@@ -285,7 +274,6 @@
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 8, "hp": 248},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Blaze"]
             },
             {
@@ -316,7 +304,6 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Blaze"]
             }
         ]
@@ -340,7 +327,6 @@
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Compound Eyes"]
             },
             {
@@ -356,7 +342,6 @@
                 "nature": "Relaxed",
                 "evs": {"def": 252, "spd": 8, "hp": 248},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Compound Eyes"]
             },
             {
@@ -372,7 +357,6 @@
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Shield Dust"]
             },
             {
@@ -426,7 +410,6 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Run Away"]
             },
             {
@@ -442,7 +425,6 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Swarm"]
             },
             {
@@ -458,7 +440,6 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Swarm"]
             },
             {
@@ -474,7 +455,6 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Run Away"]
             },
             {
@@ -490,7 +470,6 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Run Away"]
             },
             {
@@ -506,127 +485,106 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-               "wantsTera": true,
                 "ability": ["Run Away"]
             }
         ]
     },
-  "dragonite": {
-      "weight": 10,
-      "sets": [
+  "pidgeot": {
+        "flags": {
+			"megaOnly": 1
+		},
+        "weight": 10,
+        "sets": [
           {
-              "species": "Dragonite",
-              "weight": 40,
-              "moves": [
-                  ["Extreme Speed"],
-                  ["Earthquake"],
-                  ["Dragon Dance", "Encore"],
-                  ["Roost"]
-              ],
-              "item": ["Heavy-Duty Boots", "Leftovers", "Rocky Helmet"],
-              "nature": "Adamant",
-              "evs": {"hp": 196, "atk": 204, "def": 4, "spd": 4, "spe": 100},
-              "teraType": ["Normal"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
-          },
-          {
-              "species": "Dragonite",
-              "weight": 10,
-              "moves": [
-                  ["Tera Blast"],
-                  ["Earthquake"],
-                  ["Dragon Dance"],
-                  ["Roost"]
-              ],
-              "item": ["Heavy-Duty Boots", "Leftovers", "Lum Berry", "Rocky Helmet"],
-              "nature": "Adamant",
-              "evs": {"hp": 196, "atk": 204, "def": 4, "spd": 4, "spe": 100},
-              "teraType": ["Fairy", "Fire", "Flying"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
-          },
-          {
-              "species": "Dragonite",
-              "weight": 5,
-              "moves": [
-                  ["Outrage"],
-                  ["Extreme Speed"],
-                  ["Earthquake"],
-                  ["Iron Head"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Adamant",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Normal", "Steel"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
-          },
-          {
-              "species": "Dragonite",
-              "weight": 15,
-              "moves": [
-                  ["Outrage"],
-                  ["Extreme Speed"],
-                  ["Earthquake"],
-                  ["Tera Blast"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Adamant",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Flying"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
-          },
-          {
-              "species": "Dragonite",
-              "weight": 5,
-              "moves": [
-                  ["Air Slash"],
-                  ["Encore", "Substitute"],
-                  ["Thunder Wave"],
-                  ["Roost"]
-              ],
-              "item": ["Rocky Helmet"],
-              "nature": "Bold",
-              "evs": {"hp": 244, "def": 148, "spe": 116},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Poison", "Water"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
-          },
-          {
-              "species": "Dragonite",
+              "species": "Pidgeot",
               "weight": 20,
               "moves": [
-                  ["Scale Shot"],
-                  ["Iron Head"],
-                  ["Earthquake", "Low Kick"],
-                  ["Dragon Dance"]
+                  ["Quick Attack"],
+                  ["Swords Dance"],
+                  ["Brave Bird"],
+                  ["Double-Edge"]
               ],
-              "item": ["Loaded Dice"],
+              "item": ["Silk Scarf"],
               "nature": "Jolly",
-              "evs": {"hp": 4, "atk": 252, "spe": 252},
-              "teraType": ["Steel"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
+              "teraType": ["Normal"],
+              "ability": ["Keen Eye"]
           },
           {
-              "species": "Dragonite",
-              "weight": 5,
+              "species": "Pidgeot",
+              "weight": 15,
               "moves": [
-                  ["Fire Spin"],
-                  ["Earthquake", "Thunder Wave"],
+                  ["U-turn"],
+                  ["Defog"],
                   ["Roost"],
-                  ["Encore"]
+                  ["Brave Bird"]
               ],
-              "item": ["Leftovers"],
-              "nature": "Careful",
-              "evs": {"hp": 244, "atk": 12, "spd": 252},
-              "teraType": ["Fairy", "Poison", "Steel"],
-              "wantsTera": true,
-              "ability": ["Multiscale"]
-          }
+              "item": ["Heavy-Duty Boots"],
+              "nature": "Jolly",
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
+              "teraType": ["Normal"],
+              "ability": ["Big Pecks"]
+          },
+          {
+            "species": "Pidgeot",
+            "weight": 15,
+            "moves": [
+                ["Substitute"],
+                ["Swords Dance"],
+                ["Brave Bird"],
+                ["Natural Gift"]
+            ],
+            "item": ["Hondew Berry"],
+            "nature": "Jolly",
+            "evs": {"hp": 4, "atk": 252, "spe": 252},
+            "teraType": ["Normal"],
+            "ability": ["Tangled Feet"]
+        },
+        {
+          "species": "Pidgeot",
+          "weight": 20,
+          "moves": [
+              ["Feather Dance"],
+              ["Ominous Wind"],
+              ["Heat Wave"],
+              ["Hurricane"]
+          ],
+          "item": ["Pidgeotite"],
+          "nature": "Timid",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Normal"],
+          "ability": ["Tangled Feet", "Big Pecks"]
+      },
+      {
+        "species": "Pidgeot",
+        "weight": 15,
+        "moves": [
+            ["U-turn"],
+            ["Heat Wave"],
+            ["Hurricane"],
+            ["Defog"]
+        ],
+        "item": ["Pidgeotite"],
+        "nature": "Timid",
+        "evs": {"atk": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "ability": ["Tangled Feet", "Big Pecks"]
+    },
+    {
+      "species": "Pidgeot",
+      "weight": 15,
+      "moves": [
+          ["Roost"],
+          ["Feather Dance"],
+          ["Hurricane"],
+          ["Uproar"]
+      ],
+      "item": ["Pidgeotite"],
+      "nature": "Modest",
+      "evs": {"hp": 252, "spa": 252, "spd": 4},
+      "teraType": ["Normal"],
+      "ability": ["Tangled Feet", "Big Pecks"]
+  }
       ]
   },
   "fluttermane": {
