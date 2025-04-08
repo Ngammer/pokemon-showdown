@@ -526,19 +526,19 @@
               "ability": ["Big Pecks"]
           },
           {
-            "species": "Pidgeot",
-            "weight": 15,
-            "moves": [
-                ["Substitute"],
-                ["Swords Dance"],
-                ["Brave Bird"],
-                ["Natural Gift"]
-            ],
-            "item": ["Hondew Berry"],
-            "nature": "Jolly",
-            "evs": {"hp": 4, "atk": 252, "spe": 252},
-            "teraType": ["Normal"],
-            "ability": ["Tangled Feet"]
+             "species": "Pidgeot",
+              "weight": 15,
+              "moves": [
+                 ["Substitute"],
+                 ["Swords Dance"],
+                 ["Brave Bird"],
+                 ["Natural Gift"]
+              ],
+              "item": ["Hondew Berry"],
+              "nature": "Jolly",
+              "evs": {"hp": 4, "atk": 252, "spe": 252},
+              "teraType": ["Normal"],
+              "ability": ["Tangled Feet"]
         },
         {
           "species": "Pidgeot",
