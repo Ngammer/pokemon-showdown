@@ -655,70 +655,102 @@
       }
       ]
   },
-  "urshifurapidstrike": {
+  "raticatealola": {
+    "flags": {
+			"totemOnly": 1
+		},
       "weight": 10,
       "sets": [
           {
-              "species": "Urshifu-Rapid-Strike",
-              "weight": 40,
-              "moves": [
-                  ["Surging Strikes"],
-                  ["Close Combat", "Drain Punch"],
-                  ["Aqua Jet", "Substitute"],
-                  ["Swords Dance"]
-              ],
-              "item": ["Punching Glove"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Grass", "Poison", "Water"],
-              "wantsTera": true,
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu-Rapid-Strike",
-              "weight": 25,
-              "moves": [
-                  ["Surging Strikes"],
-                  ["Close Combat"],
-                  ["U-turn"],
-                  ["Ice Punch"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Water"],
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu-Rapid-Strike",
-              "weight": 15,
-              "moves": [
-                  ["Surging Strikes"],
-                  ["Close Combat"],
-                  ["U-turn"],
-                  ["Aqua Jet"]
-              ],
-              "item": ["Choice Band"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Grass", "Poison", "Water"],
-              "ability": ["Unseen Fist"]
-          },
-          {
-              "species": "Urshifu-Rapid-Strike",
+              "species": "Raticate-Alola",
               "weight": 20,
               "moves": [
-                  ["Surging Strikes"],
-                  ["Close Combat"],
-                  ["Aqua Jet"],
-                  ["Counter", "Ice Punch"]
+                  ["Knock Off"],
+                  ["Taunt"],
+                  ["U-turn"],
+                  ["Super Fang"]
               ],
-              "item": ["Focus Sash"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
-              "teraType": ["Ghost", "Water"],
-              "ability": ["Unseen Fist"]
-          }
+              "item": ["Leftovers"],
+              "nature": "Careful",
+              "evs": {"hp": 252, "atk": 4, "spd": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Thick Fat"]
+          },
+          {
+            "species": "Raticate-Alola",
+            "weight": 15,
+            "moves": [
+                ["Bulk Up"],
+                ["Super Fang"],
+                ["Stomping Tantrum"],
+                ["Knock Off"]
+            ],
+            "item": ["Shell Bell"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Hustle"]
+        },
+        {
+          "species": "Raticate-Alola",
+          "weight": 15,
+          "moves": [
+              ["Covet"],
+              ["Stockpile"],
+              ["Swords Dance"],
+              ["Power Trip"]
+          ],
+          "item": ["Leftovers"],
+          "nature": "Adamant",
+          "evs": {"hp": 252, "atk": 252, "spd": 4},
+          "teraType": ["Fairy", "Water"],
+          "ability": ["Hustle"]
+      },
+      {
+        "species": "Raticate-Alola",
+        "weight": 20,
+        "moves": [
+            ["Sucker Punch"],
+            ["Toxic"],
+            ["U-turn"],
+            ["Super Fang"]
+        ],
+        "item": ["Totem Gigante"],
+        "nature": "Careful",
+        "evs": {"hp": 248, "atk": 8, "spd": 252},
+        "teraType": ["Fairy", "Water"],
+        "ability": ["Thick Fat", "Hustle"]
+    },
+    {
+      "species": "Raticate-Alola",
+      "weight": 15,
+      "moves": [
+          ["Rest"],
+          ["Sleep Talk"],
+          ["Stockpile"],
+          ["Power Trip"]
+      ],
+      "item": ["Totem Gigante"],
+      "nature": "Adamant",
+      "evs": {"hp": 248, "atk": 252, "spd": 8},
+      "teraType": ["Fairy", "Water"],
+      "ability": ["Thick Fat", "Hustle"]
+  },
+  {
+    "species": "Raticate-Alola",
+    "weight": 15,
+    "moves": [
+        ["Final Gambit"],
+        ["U-turn"],
+        ["Toxic"],
+        ["Knock Off"]
+    ],
+    "item": ["Totem Gigante"],
+    "nature": "Careful",
+    "evs": {"hp": 252, "spd": 252, "spe": 4},
+    "teraType": ["Fairy", "Water"],
+    "ability": ["Thick Fat", "Hustle"]
+}
       ]
   },
   "ogerponhearthflame": {
