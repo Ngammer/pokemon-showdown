@@ -17,6 +17,7 @@
                 "item": ["Life Orb"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Chlorophyll", "Overgrow"]
             },
@@ -32,6 +33,7 @@
                 "item": ["Black Sludge"],
                 "nature": "Calm",
                 "evs": {"spd": 252, "spa": 8, "hp": 248},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Chlorophyll", "Overgrow"]
             },
@@ -62,6 +64,7 @@
                 "item": ["Venusaurite"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Chlorophyll", "Overgrow"]
             },
@@ -77,6 +80,7 @@
                 "item": ["Venusaurite"],
                 "nature": "Calm",
                 "evs": {"spd": 252, "spa": 8, "hp": 248},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Chlorophyll", "Overgrow"]
             },
@@ -92,6 +96,7 @@
                 "item": ["Venusaurite"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "hp": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Chlorophyll", "Overgrow"]
             }
@@ -115,6 +120,7 @@
                 "item": ["White Herb"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Torrent"]
             },
@@ -160,6 +166,7 @@
                 "item": ["Blastoisinite"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Torrent"]
             },
@@ -213,6 +220,7 @@
                 "item": ["TR02"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Blaze"]
             },
@@ -243,6 +251,7 @@
                 "item": ["Heavy-Duty Boots"],
                 "nature": "Timid",
                 "evs": {"spe": 252, "spd": 4, "hp": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Blaze"]
             },
@@ -258,6 +267,7 @@
                 "item": ["Charizardite Y"],
                 "nature": "Calm",
                 "evs": {"hp": 248, "spe": 8, "spd": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Blaze"]
             },
@@ -273,6 +283,7 @@
                 "item": ["Charizardite Y"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 8, "hp": 248},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Blaze"]
             },
@@ -288,6 +299,7 @@
                 "item": ["Charizardite Y"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Blaze"]
             },
@@ -326,6 +338,7 @@
                 "item": ["Heavy-Duty Boots"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Compound Eyes"]
             },
@@ -356,6 +369,7 @@
                 "item": ["Butterfreetite"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Shield Dust"]
             },
@@ -371,6 +385,7 @@
                 "item": ["Butterfreetite"],
                 "nature": "Calm",
                 "evs": {"def": 252, "spa": 4, "hp": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Shield Dust"]
             },
@@ -386,6 +401,7 @@
                 "item": ["Butterfreetite"],
                 "nature": "Calm",
                 "evs": {"def": 252, "spa": 4, "hp": 252},
+                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Compound Eyes"]
             }
@@ -552,6 +568,7 @@
           "item": ["Pidgeotite"],
           "nature": "Timid",
           "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "ivs": {"atk": 0},
           "teraType": ["Normal"],
           "ability": ["Tangled Feet", "Big Pecks"]
       },
@@ -582,175 +599,60 @@
       "item": ["Pidgeotite"],
       "nature": "Modest",
       "evs": {"hp": 252, "spa": 252, "spd": 4},
+      "ivs": {"atk": 0},
       "teraType": ["Normal"],
       "ability": ["Tangled Feet", "Big Pecks"]
   }
       ]
   },
-  "fluttermane": {
+  "raticate": {
       "weight": 10,
       "sets": [
           {
-              "species": "Flutter Mane",
-              "weight": 20,
+              "species": "Raticate",
+              "weight": 35,
               "moves": [
-                  ["Moonblast"],
-                  ["Calm Mind", "Shadow Ball"],
-                  ["Charm"],
-                  ["Pain Split"]
+                  ["Facade"],
+                  ["Protect"],
+                  ["Sucker Punch"],
+                  ["Covet"]
               ],
-              "item": ["Booster Energy"],
-              "nature": "Timid",
-              "evs": {"hp": 252, "def": 252, "spa": 4},
-              "ivs": {"atk": 0},
+              "item": ["Criosfera"],
+              "nature": "Jolly",
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Protosynthesis"]
+              "ability": ["Guts"]
           },
           {
-              "species": "Flutter Mane",
-              "weight": 5,
-              "moves": [
-                  ["Draining Kiss"],
-                  ["Shadow Ball"],
-                  ["Charm"],
-                  ["Calm Mind"]
-              ],
-              "item": ["Booster Energy"],
-              "nature": "Timid",
-              "evs": {"hp": 252, "def": 252, "spa": 4},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Water"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 15,
-              "moves": [
-                  ["Moonblast"],
-                  ["Shadow Ball"],
-                  ["Mystical Fire", "Pain Split", "Substitute"],
-                  ["Calm Mind"]
-              ],
-              "item": ["Booster Energy"],
-              "nature": "Timid",
-              "evs": {"hp": 4, "def": 132, "spa": 116, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Water"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 5,
-              "moves": [
-                  ["Moonblast"],
-                  ["Shadow Ball", "Substitute"],
-                  ["Tera Blast"],
-                  ["Calm Mind"]
-              ],
-              "item": ["Booster Energy"],
-              "nature": "Timid",
-              "evs": {"hp": 4, "def": 132, "spa": 116, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Ground", "Water"],
-              "wantsTera": true,
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 10,
-              "moves": [
-                  ["Moonblast"],
-                  ["Hex"],
-                  ["Pain Split", "Taunt"],
-                  ["Thunder Wave"]
-              ],
-              "item": ["Booster Energy"],
-              "nature": "Bold",
-              "evs": {"hp": 228, "def": 252, "spe": 28},
-              "ivs": {"atk": 0},
-              "teraType": ["Water"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 5,
-              "moves": [
-                  ["Moonblast"],
-                  ["Shadow Ball"],
-                  ["Hyper Voice", "Power Gem", "Thunderbolt"],
-                  ["Perish Song"]
-              ],
-              "item": ["Choice Scarf"],
-              "nature": "Modest",
-              "evs": {"hp": 20, "def": 44, "spa": 204, "spd": 4, "spe": 236},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 25,
-              "moves": [
-                  ["Moonblast"],
-                  ["Shadow Ball"],
-                  ["Hyper Voice", "Mystical Fire", "Power Gem", "Psyshock", "Thunderbolt"],
-                  ["Perish Song"]
-              ],
-              "item": ["Choice Specs"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 10,
-              "moves": [
-                  ["Moonblast"],
-                  ["Hex", "Shadow Ball"],
-                  ["Thunder Wave"],
-                  ["Taunt"]
-              ],
-              "item": ["Focus Sash"],
-              "nature": "Timid",
-              "evs": {"spa": 252, "spd": 4, "spe": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Normal"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 2,
-              "moves": [
-                  ["Moonblast"],
-                  ["Shadow Ball"],
-                  ["Psyshock"],
-                  ["Energy Ball"]
-              ],
-              "item": ["Assault Vest"],
-              "nature": "Modest",
-              "evs": {"hp": 164, "def": 28, "spa": 196, "spd": 4, "spe": 116},
-              "ivs": {"atk": 0},
-              "teraType": ["Grass"],
-              "ability": ["Protosynthesis"]
-          },
-          {
-              "species": "Flutter Mane",
-              "weight": 3,
-              "moves": [
-                  ["Moonblast"],
-                  ["Shadow Ball"],
-                  ["Psyshock"],
-                  ["Mystical Fire"]
-              ],
-              "item": ["Assault Vest"],
-              "nature": "Modest",
-              "evs": {"hp": 164, "def": 28, "spa": 196, "spd": 4, "spe": 116},
-              "ivs": {"atk": 0},
-              "teraType": ["Fire"],
-              "ability": ["Protosynthesis"]
-          }
+            "species": "Raticate",
+            "weight": 30,
+            "moves": [
+                ["Wild Charge"],
+                ["Last Resort"],
+                ["Natural Gift"],
+                ["Substitute"]
+            ],
+            "item": ["Hondew Berry"],
+            "nature": "Jolly",
+            "evs": {"hp": 4, "atk": 252, "spe": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Hustle"]
+        },
+        {
+          "species": "Raticate",
+          "weight": 35,
+          "moves": [
+              ["U-turn"],
+              ["Super Fang"],
+              ["Thunder Wave", "Toxic"],
+              ["Stomping Tantrum"]
+          ],
+          "item": ["Leftovers"],
+          "nature": "Jolly",
+          "evs": {"hp": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Water"],
+          "ability": ["Run Away"]
+      }
       ]
   },
   "urshifurapidstrike": {
