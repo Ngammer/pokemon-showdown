@@ -753,55 +753,38 @@
 }
       ]
   },
-  "ogerponhearthflame": {
+  "fearill": {
       "weight": 10,
       "sets": [
           {
-              "species": "Ogerpon-Hearthflame",
-              "weight": 40,
+              "species": "Fearill",
+              "weight": 60,
               "moves": [
-                  ["Ivy Cudgel"],
-                  ["Knock Off", "Play Rough"],
-                  ["Encore", "Swords Dance"],
-                  ["Horn Leech", "Trailblaze"]
+                  ["U-turn"],
+                  ["Malepico"],
+                  ["Brave Bird"],
+                  ["Stomping Tantrum"]
               ],
-              "gender": "F",
-              "item": ["Hearthflame Mask"],
+              "item": ["Black Glasses"],
               "nature": "Jolly",
-              "evs": {"hp": 4, "atk": 252, "spe": 252},
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fire"],
-              "ability": ["Mold Breaker"]
+              "ability": ["Malicia"]
           },
           {
-              "species": "Ogerpon-Hearthflame",
+              "species": "Fearill",
               "weight": 40,
               "moves": [
-                  ["Ivy Cudgel"],
-                  ["Horn Leech"],
-                  ["Swords Dance"],
-                  ["Play Rough", "Substitute", "Trailblaze"]
+                  ["U-turn"],
+                  ["Malepico"],
+                  ["Rock Wrecker"],
+                  ["Pluck", "Sky Attack"]
               ],
-              "gender": "F",
-              "item": ["Hearthflame Mask"],
+              "item": ["Life Orb", "Heavy-Duty Boots"],
               "nature": "Jolly",
-              "evs": {"hp": 156, "atk": 36, "def": 4, "spd": 60, "spe": 252},
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fire"],
-              "ability": ["Mold Breaker"]
-          },
-          {
-              "species": "Ogerpon-Hearthflame",
-              "weight": 20,
-              "moves": [
-                  ["Ivy Cudgel"],
-                  ["Substitute"],
-                  ["Leech Seed"],
-                  ["Encore", "Horn Leech", "Play Rough"]
-              ],
-              "item": ["Hearthflame Mask"],
-              "nature": "Jolly",
-              "evs": {"hp": 156, "atk": 36, "def": 4, "spd": 60, "spe": 252},
-              "teraType": ["Fire"],
-              "ability": ["Mold Breaker"]
+              "ability": ["Sniper", "Keen Eye"]
           }
       ]
   },
