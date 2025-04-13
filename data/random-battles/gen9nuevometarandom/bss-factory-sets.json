@@ -837,5 +837,110 @@
               "ability": ["Intimidate"]
           }
       ]
-  }
+  },
+  "pikachurockstar": {
+    "weight": 10,
+    "sets": [
+        {
+            "species": "Pikachu-Rock-Star",
+            "weight": 100,
+            "moves": [
+                ["Sucker Punch"],
+                ["Snarl"],
+                ["Overdrive"],
+                ["Volt Switch"]
+            ],
+            "gender": "F",
+            "item": ["Light Ball"],
+            "nature": "Hasty",
+            "evs": {"atk": 4, "spa": 252, "spe": 252},
+            "teraType": ["Fairy", "Poison"],
+            "ability": ["Punk Rock"]
+        }
+    ]
+},
+"pikachupopstar": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Pikachu-Pop-Star",
+          "weight": 100,
+          "moves": [
+              ["Agility"],
+              ["Echoed Voice"],
+              ["Electro Ball"],
+              ["Grass Knot"]
+          ],
+          "gender": "F",
+          "item": ["Light Ball"],
+          "nature": "Modest",
+          "evs": {"spa": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Pixilate"]
+      }
+  ]
+},
+"pikachuphd": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Pikachu-PhD",
+          "weight": 100,
+          "moves": [
+              ["Thunderbolt"],
+              ["Psyshock"],
+              ["Grass Knot"],
+              ["Charge"]
+          ],
+          "gender": "F",
+          "item": ["Light Ball"],
+          "nature": "Timid",
+          "evs": {"spa": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Pressure"]
+      }
+  ]
+},
+"pikachulibre": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Pikachu-Libre",
+          "weight": 100,
+          "moves": [
+              ["Fake Out"],
+              ["Mach Punch"],
+              ["Plasma Fists"],
+              ["Flying Press"]
+          ],
+          "gender": "F",
+          "item": ["Light Ball"],
+          "nature": "Jolly",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Iron Fist"]
+      }
+  ]
+},
+"pikachubelle": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Pikachu-Belle",
+          "weight": 100,
+          "moves": [
+              ["Fake Out"],
+              ["Present"],
+              ["Ice Shard"],
+              ["Spark"]
+          ],
+          "gender": "F",
+          "item": ["Light Ball"],
+          "nature": "Jolly",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Snow Cloak"]
+      }
+  ]
+}
 }
