@@ -788,56 +788,53 @@
           }
       ]
   },
-  "ursalunabloodmoon": {
+  "arbok": {
       "weight": 10,
       "sets": [
           {
-              "species": "Ursaluna-Bloodmoon",
+              "species": "Arbok",
               "weight": 15,
               "moves": [
-                  ["Blood Moon"],
-                  ["Earth Power"],
-                  ["Vacuum Wave"],
-                  ["Body Press"]
+                  ["Coil"],
+                  ["Earthquake"],
+                  ["Ice Fang"],
+                  ["Poison Sting"]
               ],
-              "item": ["Rocky Helmet"],
-              "nature": "Bold",
-              "evs": {"hp": 116, "def": 236, "spa": 4, "spd": 116, "spe": 36},
-              "ivs": {"atk": 0},
+              "item": ["Black Sludge"],
+              "nature": "Jolly",
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fairy", "Poison"],
-              "ability": ["Mind's Eye"]
+              "ability": ["Shed Skin"]
           },
           {
-              "species": "Ursaluna-Bloodmoon",
+              "species": "Arbok",
               "weight": 25,
               "moves": [
-                  ["Blood Moon", "Hyper Voice"],
-                  ["Moonlight"],
-                  ["Calm Mind"],
-                  ["Yawn"]
+                  ["Toxic Spikes"],
+                  ["Poison Tail"],
+                  ["Knock Off", "Switcheroo"],
+                  ["Shadow Sneak"]
               ],
-              "item": ["Covert Cloak", "Leftovers"],
-              "nature": "Modest",
-              "evs": {"hp": 100, "def": 4, "spa": 236, "spd": 12, "spe": 156},
-              "ivs": {"atk": 0},
+              "item": ["Black Sludge"],
+              "nature": "Jolly",
+              "evs": {"hp": 252, "spd": 4, "spe": 252},
               "teraType": ["Fairy", "Poison"],
-              "ability": ["Mind's Eye"]
+              "ability": ["Intimidate"]
           },
           {
-              "species": "Ursaluna-Bloodmoon",
+              "species": "Arbok",
               "weight": 60,
               "moves": [
-                  ["Blood Moon"],
-                  ["Vacuum Wave"],
-                  ["Earth Power"],
-                  ["Hyper Voice"]
+                  ["Haze"],
+                  ["Glare", "Toxic"],
+                  ["Leech Life"],
+                  ["Knock Off"]
               ],
-              "item": ["Assault Vest"],
-              "nature": "Modest",
-              "evs": {"hp": 4, "spa": 252, "spd": 252},
-              "ivs": {"atk": 0},
+              "item": ["Black Sludge"],
+              "nature": "Jolly",
+              "evs": {"hp": 252, "atk": 4, "spe": 252},
               "teraType": ["Fairy", "Normal"],
-              "ability": ["Mind's Eye"]
+              "ability": ["Intimidate"]
           }
       ]
   }
