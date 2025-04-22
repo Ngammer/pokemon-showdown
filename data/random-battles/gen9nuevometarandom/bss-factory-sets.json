@@ -1035,7 +1035,7 @@
       "moves": [
           ["Thunderbolt"],
           ["Nasty Plot"],
-          ["Grass Knot"], 
+          ["Grass Knot"],
           ["Psyshock"]
       ],
       "item": ["Heavy-Duty Boots"],
@@ -1044,6 +1044,56 @@
       "ivs": {"atk": 0},
       "teraType": ["Fairy", "Poison"],
       "ability": ["Surge Surfer"]
+  }
+  ]
+},
+"sandslash": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Sandslash",
+          "weight": 30,
+          "moves": [
+              ["Stealth Rock"],
+              ["Rapid Spin"],
+              ["Knock Off"],
+              ["Earthquake"]
+          ],
+          "item": ["Rocky Helmet", "Leftovers"],
+          "nature": "Jolly",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Sand Veil"]
+      },
+      {
+        "species": "Sandslash",
+        "weight": 30,
+        "moves": [
+            ["Swords Dance"],
+            ["Rapid Spin"],
+            ["Smack Down"],
+            ["Earthquake"]
+        ],
+        "item": ["Rocky Helmet", "Leftovers"],
+        "nature": "Jolly",
+        "evs": {"atk": 252, "spd": 4, "spe": 252},
+        "teraType": ["Fairy", "Poison"],
+        "ability": ["Sand Veil"]
+    },
+    {
+      "species": "Sandslash",
+      "weight": 30,
+      "moves": [
+          ["Spikes"],
+          ["Stealth Rock"],
+          ["Toxic"],
+          ["Earthquake"]
+      ],
+      "item": ["Rocky Helmet", "Leftovers"],
+      "nature": "Impish",
+      "evs": {"hp": 252, "atk": 4, "def": 252},
+      "teraType": ["Fairy", "Poison"],
+      "ability": ["Sand Veil"]
   }
   ]
 }
