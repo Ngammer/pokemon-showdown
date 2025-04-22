@@ -1052,7 +1052,7 @@
   "sets": [
       {
           "species": "Sandslash",
-          "weight": 30,
+          "weight": 35,
           "moves": [
               ["Stealth Rock"],
               ["Rapid Spin"],
@@ -1067,7 +1067,7 @@
       },
       {
         "species": "Sandslash",
-        "weight": 30,
+        "weight": 35,
         "moves": [
             ["Swords Dance"],
             ["Rapid Spin"],
@@ -1094,6 +1094,56 @@
       "evs": {"hp": 252, "atk": 4, "def": 252},
       "teraType": ["Fairy", "Poison"],
       "ability": ["Sand Veil"]
+  }
+  ]
+},
+"sandslashalola": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Sandslash-Alola",
+          "weight": 35,
+          "moves": [
+            ["Swords Dance"],
+            ["Ice Ball"],
+            ["Iron Head"],
+            ["Earthquake"]
+          ],
+          "item": ["Moon Ball"],
+          "nature": "Jolly",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Slush Rush"]
+      },
+      {
+        "species": "Sandslash-Alola",
+        "weight": 30,
+        "moves": [
+            ["Chilly Reception"],
+            ["Stealth Rock"],
+            ["Iron Head"],
+            ["Icicle Crash"]
+        ],
+        "item": ["Icy Rock"],
+        "nature": "Jolly",
+        "evs": {"atk": 252, "spd": 4, "spe": 252},
+        "teraType": ["Fairy", "Poison"],
+        "ability": ["Slush Rush"]
+    },
+    {
+      "species": "Sandslash-Alola",
+      "weight": 35,
+      "moves": [
+          ["Ice Ball"],
+          ["Iron Tail"],
+          ["Rapid Spin"],
+          ["Ice Shard"]
+      ],
+      "item": ["Weakness Policy"],
+      "nature": "Jolly",
+      "evs": {"atk": 252, "spd": 4, "spe": 252},
+      "teraType": ["Fairy", "Poison"],
+      "ability": ["Snow Cloak"]
   }
   ]
 }
