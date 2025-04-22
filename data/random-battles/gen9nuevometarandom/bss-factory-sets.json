@@ -875,6 +875,7 @@
           "item": ["Light Ball"],
           "nature": "Modest",
           "evs": {"spa": 252, "spd": 4, "spe": 252},
+          "ivs": {"atk": 0},
           "teraType": ["Fairy", "Poison"],
           "ability": ["Pixilate"]
       }
@@ -896,6 +897,7 @@
           "item": ["Light Ball"],
           "nature": "Timid",
           "evs": {"spa": 252, "spd": 4, "spe": 252},
+          "ivs": {"atk": 0},
           "teraType": ["Fairy", "Poison"],
           "ability": ["Pressure"]
       }
@@ -941,6 +943,56 @@
           "teraType": ["Fairy", "Poison"],
           "ability": ["Snow Cloak"]
       }
+  ]
+},
+"raichu": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Raichu",
+          "weight": 30,
+          "moves": [
+              ["Fake Out"],
+              ["Knock Off"],
+              ["Nuzzle"],
+              ["Volt Switch"]
+          ],
+          "item": ["Assault Vest"],
+          "nature": "Hasty",
+          "evs": {"atk": 252, "spa": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Lightning Rod"]
+      },
+      {
+        "species": "Raichu",
+        "weight": 35,
+        "moves": [
+            ["Fake Out"],
+            ["Happy Hour"],
+            ["Nuzzle"],
+            ["Volt Switch"]
+        ],
+        "item": ["Heavy-Duty Boots"],
+        "nature": "Jolly",
+        "evs": {"atk": 252, "spd": 4, "spe": 252},
+        "teraType": ["Fairy", "Poison"],
+        "ability": ["Lightning Rod"]
+    },
+    {
+      "species": "Raichu",
+      "weight": 35,
+      "moves": [
+          ["Extreme Speed"],
+          ["Present"],
+          ["Volt Switch"],
+          ["Volt Tackle"]
+      ],
+      "item": ["Choice Band"],
+      "nature": "Jolly",
+      "evs": {"atk": 252, "spd": 4, "spe": 252},
+      "teraType": ["Fairy", "Poison"],
+      "ability": ["Static"]
+  }
   ]
 }
 }
