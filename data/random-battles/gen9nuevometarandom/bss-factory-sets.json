@@ -994,5 +994,57 @@
       "ability": ["Static"]
   }
   ]
+},
+"raichualola": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Raichu-Alola",
+          "weight": 30,
+          "moves": [
+              ["Happy Hour"],
+              ["Teleport"],
+              ["Nuzzle"],
+              ["Alluring Voice", "Grass Knot", "Psychic Noise"]
+          ],
+          "item": ["Heavy-Duty Boots"],
+          "nature": "Timid",
+          "evs": {"hp": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Surge Surfer"]
+      },
+      {
+        "species": "Raichu-Alola",
+        "weight": 35,
+        "moves": [
+            ["Electro Ball"],
+            ["Agility"],
+            ["Grass Knot"],
+            ["Psyshock"]
+        ],
+        "item": ["Aloraichium Z"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Fairy", "Poison"],
+        "ability": ["Surge Surfer"]
+    },
+    {
+      "species": "Raichu-Alola",
+      "weight": 35,
+      "moves": [
+          ["Thunderbolt"],
+          ["Nasty Plot"],
+          ["Grass Knot"], 
+          ["Psyshock"]
+      ],
+      "item": ["Heavy-Duty Boots"],
+      "nature": "Timid",
+      "evs": {"spa": 252, "spd": 4, "spe": 252},
+      "ivs": {"atk": 0},
+      "teraType": ["Fairy", "Poison"],
+      "ability": ["Surge Surfer"]
+  }
+  ]
 }
 }
