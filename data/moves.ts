@@ -22283,7 +22283,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 95,
 		basePower: 45,
 		category: "Physical",
-		name: "Tripico",
+		name: "Tripeck",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
@@ -22301,7 +22301,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 95,
 		basePower: 70,
 		category: "Physical",
-		name: "Colmillo Burbuja",
+		name: "Bubble Fang",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
@@ -22325,7 +22325,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 95,
 		basePower: 85,
 		category: "Physical",
-		name: "Mordida Dragon",
+		name: "Dragon Bite",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
@@ -22349,7 +22349,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 95,
 		basePower: 65,
 		category: "Physical",
-		name: "Bomba Pegajosa",
+		name: "Sticky Bomb",
 		pp: 5,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bullet: 1 },
@@ -22376,7 +22376,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Quagsire)",
+		name: "Bubble Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1 },
@@ -22400,7 +22400,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Slowking)",
+		name: "Lazy Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, protect: 1, reflectable: 1, mirror: 1, allyanim: 1, nosketch: 1, cantusetwice: 1 },
@@ -22438,7 +22438,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Wungsparce)",
+		name: "Mistycal Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1 },
@@ -22458,7 +22458,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Granbull)",
+		name: "Brave Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1 },
@@ -22476,7 +22476,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Qwilfish)",
+		name: "Spiky Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { reflectable: 1, nonsky: 1, mustpressure: 1, dance: 1, nosketch: 1 },
@@ -22500,7 +22500,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Ursaring)",
+		name: "Honey Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1 },
@@ -22520,7 +22520,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Mantine)",
+		name: "Acrobatic Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1 },
@@ -22537,7 +22537,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Kingdra)",
+		name: "Delusion Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1 },
@@ -22554,18 +22554,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onHit(target) {
 			this.directDamage(target.maxhp / 4);
 			target.addVolatile('substitute', this.effectState.target);
-			target.addVolatile('ritoancestralkingdra', this.effectState.target);
+			target.addVolatile('delusionancientrite', this.effectState.target);
 		},
-		volatileStatus: 'ritoancestralkingdra',
+		volatileStatus: 'delusionancientrite',
 		condition: {
 			onStart(target, source, effect) {
 				if (target.volatiles['dragoncheer']) return false;
 				if (effect?.id === 'zpower') {
-					this.add('-start', target, 'move: Rito Ancestral (Kingdra)', '[zeffect]');
+					this.add('-start', target, 'move: Delusion Ancient Rite', '[zeffect]');
 				} else if (effect && (['costar', 'imposter', 'psychup', 'transform'].includes(effect.id))) {
-					this.add('-start', target, 'move: Rito Ancestral (Kingdra)', '[silent]');
+					this.add('-start', target, 'move: Delusion Ancient Rite', '[silent]');
 				} else {
-					this.add('-start', target, 'move: Rito Ancestral (Kingdra)');
+					this.add('-start', target, 'move: Delusion Ancient Rite');
 				}
 			},
 			onModifyCritRatio(critRatio) {
@@ -22583,7 +22583,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Donphan)",
+		name: "Meditation Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1 },
@@ -22603,12 +22603,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Rito Ancestral (Celebi)",
+		name: "Transcendental Ancient Rite",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1 },
 		onHit(target, source) {
-			this.add('-activate', source, 'move: Rito Ancestral');
+			this.add('-activate', source, 'move: Transcendental Ancient Rite');
 			let success = false;
 			const allies = [...source.side.pokemon, ...source.side.allySide?.pokemon || []];
 			for (const ally of allies) {
@@ -22619,11 +22619,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			return success;
 		},
-		volatileStatus: 'ritoancestralcelebi',
+		volatileStatus: 'transcendentalancientrite',
 		condition: {
 			onStart(pokemon) {
 				if (pokemon.terastallized) return false;
-				this.add('-start', pokemon, 'Rito Ancestral (Celebi)');
+				this.add('-start', pokemon, 'Transcendental Ancient Rite');
 			},
 			onEffectivenessPriority: -2,
 			onEffectiveness(typeMod, target, type, move) {
@@ -22644,12 +22644,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Bloqueo Oculto",
+		name: "Hidden Block",
 		pp: 15,
 		priority: 4,
 		flags: { noassist: 1, failcopycat: 1 },
 		stallingMove: true,
-		volatileStatus: 'bloqueooculto',
+		volatileStatus: 'hiddenblock',
 		onPrepareHit(pokemon) {
 			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
 		},
@@ -22702,7 +22702,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		name: "Esfera Ciclon",
+		name: "Ciclon Sphere",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1, snatch: 1, pulse: 1 },
@@ -22721,7 +22721,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
-		name: "Astarcilla",
+		name: "Antclay",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, head: 1 },
@@ -22740,7 +22740,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
-		name: "Enredo Discreto",
+		name: "Discreete Tangle",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
@@ -22764,7 +22764,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Aumento Secreto",
+		name: "Hidden Increase",
 		pp: 15,
 		priority: 0,
 		flags: { snatch: 1, metronome: 1 },
@@ -22792,7 +22792,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Reintegracion Secreta",
+		name: "Hidden Reintegration",
 		pp: 15,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
@@ -22836,7 +22836,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 85,
 		basePower: 40,
 		category: "Special",
-		name: "Bomba Tinta Refinada",
+		name: "Refined Ink Pump",
 		pp: 5,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, bullet: 1 },
