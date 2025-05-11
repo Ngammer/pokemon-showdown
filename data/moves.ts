@@ -854,7 +854,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
-				if (source?.hasItem('lightclay') || source?.hasAbility('colocapantallas')) {
+				if (source?.hasItem('lightclay') || source?.hasAbility('screensetter')) {
 					return 8;
 				}
 				return 5;
@@ -10695,7 +10695,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
-				if (source?.hasItem('lightclay') || source?.hasAbility('colocapantallas')) {
+				if (source?.hasItem('lightclay') || source?.hasAbility('screensetter')) {
 					return 8;
 				}
 				return 5;
@@ -15477,7 +15477,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
-				if (source?.hasItem('lightclay') || source?.hasAbility('colocapantallas')) {
+				if (source?.hasItem('lightclay') || source?.hasAbility('screensetter')) {
 					return 8;
 				}
 				return 5;

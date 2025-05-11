@@ -6217,7 +6217,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -105,
 	},
-	frubujas: {
+	frubble: {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
@@ -6229,13 +6229,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return this.chainModify(0.9);
 		},
 		flags: { breakable: 1 },
-		name: "Frubujas",
+		name: "Frubble",
 		rating: 3.5,
 		num: -106,
 	},
-	colocapantallas: {
+	screensetter: {
 		// aplicado en moves.ts
-		name: "Coloca Pantallas",
+		name: "Screen Setter",
 		rating: 3.5,
 		num: -107,
 	},
@@ -6537,12 +6537,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -123,
 	},
-	jovial: {
+	joyful: {
 		onDamagingHit(damage, target, source, effect) {
 			this.boost({ spa: 1 });
 		},
 		flags: { },
-		name: "Jovial",
+		name: "Joyful",
 		rating: 1,
 		num: -124,
 	},
@@ -6583,10 +6583,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -126,
 	},
-	tectoanclaje: {
+	tectoanchor: {
 		onDragOut(pokemon, source) {
 			if ((source && source !== pokemon) && !source.hasType('Flying')) {
-				this.add('-activate', pokemon, 'ability: Tectoanclaje');
+				this.add('-activate', pokemon, 'ability: Tectoanchor');
 				this.damage(source.baseMaxhp / 3.333, source, pokemon);
 				return null;
 			}
@@ -6600,7 +6600,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return this.chainModify(1.15);
 		},
 		flags: { },
-		name: "Tectoanclaje",
+		name: "Tectoanchor",
 		rating: 3.5,
 		num: -127,
 	},
@@ -6737,12 +6737,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -135,
 	},
-	conjurador: {
+	conjurator: {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
 				if (!activated) {
-					this.add('-ability', pokemon, 'Conjurador', 'boost');
+					this.add('-ability', pokemon, 'Conjurator', 'boost');
 					activated = true;
 				}
 				if (target.volatiles['substitute']) {
@@ -6753,7 +6753,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Conjurador",
+		name: "Conjurator",
 		rating: 3.5,
 		num: -136,
 	},
@@ -6899,7 +6899,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -143,
 	},
-	cabezajerarquica: {
+	hierarchicalhead: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
 			if (target.hp >= target.maxhp / 1.5) mod *= 0.50;
@@ -6924,12 +6924,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hp <= attacker.maxhp / 3) {
-				this.debug('Cabeza Jerarquica boost');
+				this.debug('Hierarchical Head boost');
 				return this.chainModify(1.33);
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Cabeza Jerarquica",
+		name: "Hierarchical Head",
 		rating: 1.5,
 		num: -144,
 	},

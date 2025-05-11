@@ -2280,13 +2280,13 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Malice",
 		shortDesc: "This Pokemon's Dark-type moves have their power multiplied by 1.2.",
 	},
-	frubujas: {
-		name: "Frubujas",
+	frubble: {
+		name: "Frubble",
 		desc: "This Pokemon receives 1/10 damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
 		shortDesc: "This Pokemon receives 1/10 damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
 	},
-	colocapantallas: {
-		name: "Coloca Pantallas",
+	screensetter: {
+		name: "Screen Setter",
 		desc: "",
 		shortDesc: "This Pokemon's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
 	},
@@ -2369,12 +2369,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Galvanized Hair",
 		shortDesc: "Special attacks have a 20% chance to inflict paralysis.",
 	},
-	jovial: {
-		name: "Jovial",
+	joyful: {
+		name: "Joyful",
 		shortDesc: "This Pokemon's Special Attack is raised by 1 stage after it is damaged by a move.",
 	},
-	cabezajerarquica: {
-		name: "Cabeza Jerarquica",
+	hierarchicalhead: {
+		name: "Hierarchical Head",
 		shortDesc: "Reduces damage by 50% at >66% HP, prevents stat drops at >33% HP, and boosts move power by 33% at <33% HP.",
 	},
 	heroism: {
@@ -2385,7 +2385,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Heavy Hand",
 		shortDesc: "Boosts contact and Steel-type moves by 15%. Contact moves have a 10% chance to flinch the target.",
 	},
-	tectoanclaje: {
+	tectoanchor: {
 		name: "Tecto Anclaje",
 		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses.",
 	},
@@ -2429,8 +2429,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Knowledge",
 		shortDesc: "This Pokemon's Psychic-type moves have their power multiplied by 1.2.",
 	},
-	conjurador: {
-		name: "Conjurador",
+	conjurator: {
+		name: "Conjurator",
 		desc: "On switch-in, this Pokemon lowers the Special Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of opponents by 1 stage.",
 	},

@@ -3698,7 +3698,7 @@
             {
                 "role": "Fast Support",
                 "movepool": ["Reflect", "Light Screen", "Fake Out", "Mystical Fire"],
-                "abilities": ["Coloca Pantallas"],
+                "abilities": ["Screen Setter"],
                 "teraTypes": ["Water"],
                 "items": "Leftovers",
                 "nature": "timid",
@@ -3712,7 +3712,7 @@
             {
                 "role": "Specially Defensive",
                 "movepool": ["Reflect", "Light Screen", "Trick Room", "Mystical Fire"],
-                "abilities": ["Coloca Pantallas"],
+                "abilities": ["Screen Setter"],
                 "teraTypes": ["Water"],
                 "items": "Dimencionador",
                 "nature": "sassy",
