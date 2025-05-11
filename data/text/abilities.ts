@@ -2450,12 +2450,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Protector del Bosque",
 		shortDesc: "Raises Special Attack by 2 stages when hit by a super effective attack.",
 	},
-	caparazoninestable: {
-		name: "Caparazon Inestable",
+	unstableshell: {
+		name: "Unstable Shell",
 		shortDesc: "At less than 50% HP, shell explodes with 40 BP move, changes form.",
 	},
 	sabiodelbosque: {
-		name: "Caparazon Inestable",
+		name: "Unstable Shell",
 		shortDesc: "Combination of the Sabio and Protector del Bosque Abilities.",
 	},
 	entradatriunfal: {

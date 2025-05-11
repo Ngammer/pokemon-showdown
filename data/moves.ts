@@ -22395,7 +22395,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralslowking: {
+	lazyancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22433,7 +22433,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralwungsparce: {
+	mistycalancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22453,7 +22453,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralgranbull: {
+	braveancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22471,7 +22471,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralqwilfish: {
+	spikyancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22495,7 +22495,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralursaring: {
+	honeyancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22515,7 +22515,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralmantine: {
+	acrobaticancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22532,7 +22532,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralkingdra: {
+	delusionancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22578,7 +22578,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestraldonphan: {
+	meditationancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22598,7 +22598,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	ritoancestralcelebi: {
+	transcendentalancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22639,7 +22639,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	bloqueooculto: {
+	hiddenblock: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22697,12 +22697,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { def: 1 } },
 		contestType: "Tough",
 	},
-	esferaciclon: {
+	cyclonesphere: {
 		num: 0,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		name: "Ciclon Sphere",
+		name: "Cyclone Sphere",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1, snatch: 1, pulse: 1 },
@@ -22716,7 +22716,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Cool",
 	},
-	astarcilla: {
+	antclay: {
 		num: 0,
 		accuracy: 100,
 		basePower: 90,
@@ -22735,12 +22735,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ground",
 		contestType: "Cool",
 	},
-	enredodiscreto: {
+	discreettangle: {
 		num: 0,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
-		name: "Discreete Tangle",
+		name: "Discreet Tangle",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
@@ -22759,7 +22759,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Bug",
 	},
-	aumentosecreto: {
+	hiddenincrease: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22787,7 +22787,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
 	},
-	reintegracionsecreta: {
+	hiddenreintegration: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,
@@ -22818,12 +22818,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
 	},
-	caparazoninestable: {
+	unstableshell: {
 		num: 0,
 		accuracy: true,
 		basePower: 40,
 		category: "Special",
-		name: "Caparazon Inestable",
+		name: "Unstable Shell",
 		pp: 1,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nosketch: 1 },
@@ -22831,12 +22831,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Tough",
 	},
-	bombatintarefinada: {
+	refinedinkbomb: {
 		num: 0,
 		accuracy: 85,
 		basePower: 40,
 		category: "Special",
-		name: "Refined Ink Pump",
+		name: "Refined Ink Bomb",
 		pp: 5,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, bullet: 1 },

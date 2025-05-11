@@ -4755,7 +4755,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseForme: "Caparazon",
 		types: ["Rock", "Fire"],
 		baseStats: { hp: 65, atk: 67, def: 158, spa: 93, spd: 102, spe: 15 },
-		abilities: { 0: "Caparazon Inestable" },
+		abilities: { 0: "Unstable Shell" },
 		heightm: 1,
 		weightkg: 100,
 		color: "Red",
