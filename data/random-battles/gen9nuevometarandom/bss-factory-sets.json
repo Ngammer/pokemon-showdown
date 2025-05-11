@@ -607,6 +607,7 @@
   },
   "raticate": {
       "weight": 10,
+      "flags": {},
       "sets": [
           {
               "species": "Raticate",
@@ -755,6 +756,7 @@
   },
   "fearill": {
       "weight": 10,
+      "flags": {},
       "sets": [
           {
               "species": "Fearill",
@@ -790,6 +792,7 @@
   },
   "arbok": {
       "weight": 10,
+      "flags": {},
       "sets": [
           {
               "species": "Arbok",
@@ -840,6 +843,7 @@
   },
   "pikachurockstar": {
     "weight": 10,
+    "flags": {},
     "sets": [
         {
             "species": "Pikachu-Rock-Star",
@@ -861,6 +865,7 @@
 },
 "pikachupopstar": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-Pop-Star",
@@ -883,6 +888,7 @@
 },
 "pikachuphd": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-PhD",
@@ -905,6 +911,7 @@
 },
 "pikachulibre": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-Libre",
@@ -926,6 +933,7 @@
 },
 "pikachubelle": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-Belle",
@@ -947,6 +955,7 @@
 },
 "raichu": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Raichu",
@@ -997,6 +1006,7 @@
 },
 "raichualola": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Raichu-Alola",
@@ -1049,6 +1059,7 @@
 },
 "sandslash": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Sandslash",
@@ -1099,6 +1110,7 @@
 },
 "sandslashalola": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Sandslash-Alola",
@@ -1149,6 +1161,7 @@
 },
 "nidoqueen": {
         "weight": 10,
+        "flags": {},
         "sets": [
             {
                 "species": "Nidoqueen",
@@ -1169,6 +1182,7 @@
     },
     "Nidoking": {
         "weight": 10,
+        "flags": {},
         "sets": [
             {
                 "species": "Nidoking",
