@@ -622,8 +622,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Has a 30% chance to paralize the target. Cannot be selected the turn after it's used.",
 		shortDesc: "30% chance to PRZ the target. Cannot be selected the turn after it's used.",
 	},
-	bombapegajosa: {
-		name: "Bomba Pegajosa",
+	stickybomb: {
+		name: "Sticky Bomb",
 		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, lowering the Speed by 1 stage of each opposing Pokemon that switches in, unless it is a Flying-type Pokemon or has the Levitate Ability. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
 		shortDesc: "Sets a Sticky Web on the opposing side.",
 	},
@@ -1004,8 +1004,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Damage is multiplied by 1.3333 if this move is super effective against the target.",
 		shortDesc: "Deals 1.3333x damage with supereffective hits.",
 	},
-	colmilloburbuja: {
-		name: "Colmillo Burbuja",
+	bubblefang: {
+		name: "Bubble Fang",
 		desc: "Has a 20% chance to lower the target's Speed by 1 stage and a 10% chance to make it flinch.",
 		shortDesc: "20% -1 Spe. 10% chance to flinch.",
 	},
@@ -3840,8 +3840,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 
 		activate: "#payday",
 	},
-	malepico: {
-		name: "Malepico",
+	beakdrill: {
+		name: "Beakdrill",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
 	},
@@ -4293,8 +4293,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "For 5 turns, the terrain becomes Misty Terrain. During the effect, the power of Dragon-type attacks used against grounded Pokemon is multiplied by 0.5 and grounded Pokemon cannot be inflicted with a non-volatile status condition. Grounded Pokemon can become affected by Yawn but cannot fall asleep from its effect. Camouflage transforms the user into a Fairy type, Nature Power becomes Moonblast, and Secret Power has a 30% chance to lower Special Attack by 1 stage. Fails if the current terrain is Misty Terrain.",
 		},
 	},
-	monolito: {
-		name: "Monolito",
+	monolith: {
+		name: "Monolith",
 		desc: "Has a 50% chance to make the target flinch. If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 1/2 recoil. 50% chance to flinch.",
 	},
@@ -4328,8 +4328,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, all of its HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Rain Dance or Sandstorm, all rounded down.",
 		},
 	},
-	mordidadragon: {
-		name: "Mordida Dragon",
+	dragonbite: {
+		name: "Dragon Bite",
 		desc: "Has a 10% chance to lower the target's Defense by 1 stage and a 10% chance to make it flinch.",
 		shortDesc: "10% -1 Def. 10% chance to flinch.",
 	},
@@ -4494,13 +4494,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Lowers the target's Attack, Special Attack, defense and special defense by 2 stage.",
 		shortDesc: "Lowers the target's Atk, Spa, def and spd by 2.",
 	},
-	nonallamas: {
-		name: "Nonallamas",
+	nineflames: {
+		name: "Nineflames",
 		desc: "Hits nine times. Has a 10% chance to burn the target.",
 		shortDesc: "10% chance to burn the target. Hits 9 times.",
 	},
-	nonaesquirla: {
-		name: "Nonaesquirla",
+	nineshard: {
+		name: "Nineshard",
 		desc: "For nine turns, causes damage to the target equal to 1/20 of its maximum HP, rounded down, at the end of each turn during effect. This effect ends when the target is no longer active.",
 		shortDesc: "Deals 1/20 max HP each turn for 9 turns.",
 
@@ -4728,8 +4728,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
 		},
 	},
-	pinzainfecciosa: {
-		name: "Pinza Infecciosa",
+	parasiticclamp: {
+		name: "Parasitic Clamp",
 		desc: "Has a 50% chance to lower the target's Defense by 1 stage and a 30% chance to make it fall asleep.",
 		shortDesc: "Target: 50% -1 Defense, 30% sleep.",
 	},
@@ -5367,8 +5367,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Roar of Time",
 		shortDesc: "Has 1/2 recoil. Nullifies the object of the target",
 	},
-	rocagalvanizada: {
-		name: "Roca Galvanizada",
+	galvanizedrock: {
+		name: "Galvanized Rock",
 		desc: "Has a 30% chance to paralyze the target.",
 		shortDesc: "30% chance to paralyze the target.",
 	},
@@ -7168,8 +7168,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "For 5 turns, all active Pokemon with lower Speed will move before those with higher Speed, within their priority brackets. If this move is used during the effect, the effect ends.",
 		},
 	},
-	tripico: {
-		name: "Tripico",
+	tripeck: {
+		name: "Tripeck",
 		desc: "Hits three times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
 		shortDesc: "Hits 3 times. Each hit can miss.",
 	},

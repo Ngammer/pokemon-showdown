@@ -761,7 +761,7 @@
               "weight": 60,
               "moves": [
                   ["U-turn"],
-                  ["Malepico"],
+                  ["Beakdrill"],
                   ["Brave Bird"],
                   ["Stomping Tantrum"]
               ],
@@ -769,14 +769,14 @@
               "nature": "Jolly",
               "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fire"],
-              "ability": ["Malicia"]
+              "ability": ["Malice"]
           },
           {
               "species": "Fearill",
               "weight": 40,
               "moves": [
                   ["U-turn"],
-                  ["Malepico"],
+                  ["Beakdrill"],
                   ["Rock Wrecker"],
                   ["Pluck", "Sky Attack"]
               ],

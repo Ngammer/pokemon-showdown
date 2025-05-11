@@ -1595,7 +1595,7 @@ export class TeamValidator {
 			}
 		} else if (species.name === 'Slastma-Liberado') {
 			set.species = 'Slastma';
-			set.ability = 'Caparazon Inestable';
+			set.ability = 'Unstable Shell';
 		} else if (species.name === 'Zygarde-Complete') {
 			problems.push(`Zygarde-Complete must start the battle as Zygarde or Zygarde-10% with Power Construct. Please specify which Zygarde it should start as.`);
 		} else if (species.baseSpecies === 'Terapagos') {

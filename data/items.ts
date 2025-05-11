@@ -299,7 +299,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.useItem();
 			}
 		},
@@ -1103,7 +1103,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.useItem();
 			}
 		},
@@ -1248,7 +1248,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.addVolatile('coverfossil');
 				pokemon.useItem();
 			}
@@ -1485,7 +1485,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.addVolatile('domefossil');
 				pokemon.useItem();
 			}
@@ -2362,7 +2362,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if (source.hasAbility("Mineralizacion")) {
+			if (source.hasAbility("Fossilization")) {
 				target.trySetStatus('par', source);
 				source.useItem();
 			}
@@ -2378,7 +2378,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if (source.hasAbility("Mineralizacion")) {
+			if (source.hasAbility("Fossilization")) {
 				target.trySetStatus('frz', source);
 				source.useItem();
 			}
@@ -2394,7 +2394,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if (source.hasAbility("Mineralizacion")) {
+			if (source.hasAbility("Fossilization")) {
 				target.addVolatile('flinch', source);
 				source.useItem();
 			}
@@ -2410,7 +2410,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if (source.hasAbility("Mineralizacion")) {
+			if (source.hasAbility("Fossilization")) {
 				target.addVolatile('confusion', source);
 				source.useItem();
 			}
@@ -4657,7 +4657,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.useItem();
 			}
 		},
@@ -4946,7 +4946,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onFractionalPriority(priority, pokemon) {
 			if (
 				priority <= 0 &&
-				(pokemon.hasAbility("Mineralizacion"))
+				(pokemon.hasAbility("Fossilization"))
 			) {
 				if (pokemon.useItem()) {
 					this.add('-activate', pokemon, 'item: Plume Fossil');
@@ -5733,7 +5733,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.useItem();
 			}
 		},
@@ -5893,7 +5893,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.useItem();
 			}
 		},
@@ -6195,7 +6195,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onStart(pokemon) {
-			if (pokemon.hasAbility("Mineralizacion")) {
+			if (pokemon.hasAbility("Fossilization")) {
 				pokemon.useItem();
 			}
 		},
@@ -6205,7 +6205,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		condition: {
 			onBasePowerPriority: 19,
 			onBasePower(basePower, attacker, defender, move) {
-				this.debug('Inteligencia Artificial boost');
+				this.debug('Artificial intelligence boost');
 				return this.chainModify(1.5);
 			},
 			onSourceModifyAccuracyPriority: -1,
