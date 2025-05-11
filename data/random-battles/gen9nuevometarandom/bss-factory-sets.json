@@ -761,7 +761,7 @@
               "weight": 60,
               "moves": [
                   ["U-turn"],
-                  ["Malepico"],
+                  ["Beakdrill"],
                   ["Brave Bird"],
                   ["Stomping Tantrum"]
               ],
@@ -776,7 +776,7 @@
               "weight": 40,
               "moves": [
                   ["U-turn"],
-                  ["Malepico"],
+                  ["Beakdrill"],
                   ["Rock Wrecker"],
                   ["Pluck", "Sky Attack"]
               ],

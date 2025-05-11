@@ -22157,7 +22157,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
 	// Nuevo meta moves
 
-	malepico: {
+	beakdrill: {
 		num: 0,
 		accuracy: 90,
 		basePower: 100,
@@ -22172,7 +22172,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dark",
 		contestType: "Cool",
 	},
-	nonallamas: {
+	nineflames: {
 		num: 0,
 		accuracy: 100,
 		basePower: 10,
@@ -22190,7 +22190,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 	},
-	nonaesquirla: {
+	nineshard: {
 		num: 0,
 		accuracy: 100,
 		basePower: 90,
@@ -22220,7 +22220,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 	},
-	pinzainfecciosa: {
+	parasiticclamp: {
 		num: 0,
 		accuracy: 100,
 		basePower: 85,
@@ -22243,7 +22243,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 	},
-	monolito: {
+	monolith: {
 		num: 0,
 		accuracy: 90,
 		basePower: 100,
@@ -22261,7 +22261,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		contestType: "Tough",
 	},
-	rocagalvanizada: {
+	galvanizedrock: {
 		num: 0,
 		accuracy: 100,
 		basePower: 80,
@@ -22278,7 +22278,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		contestType: "Beautiful",
 	},
-	tripico: {
+	tripeck: {
 		num: 0,
 		accuracy: 95,
 		basePower: 45,
@@ -22296,7 +22296,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		maxMove: { basePower: 80 },
 		contestType: "Cool",
 	},
-	colmilloburbuja: {
+	bubblefang: {
 		num: 0,
 		accuracy: 95,
 		basePower: 70,
@@ -22320,7 +22320,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		contestType: "Cool",
 	},
-	mordidadragon: {
+	dragonbite: {
 		num: 0,
 		accuracy: 95,
 		basePower: 85,
@@ -22344,7 +22344,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dragon",
 		contestType: "Cool",
 	},
-	bombapegajosa: {
+	stickybomb: {
 		num: 0,
 		accuracy: 95,
 		basePower: 65,
@@ -22371,7 +22371,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Bug",
 	},
-	ritoancestralquagsire: {
+	bubbleancientrite: {
 		num: 0,
 		accuracy: true,
 		basePower: 0,

@@ -798,7 +798,7 @@
             },
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Malepico", "U-turn", "Rock Wrecker", "Sky Attack"],
+                "movepool": ["Beakdrill", "U-turn", "Rock Wrecker", "Sky Attack"],
                 "abilities": ["Sniper"],
                 "teraTypes": ["Water"],
                 "items": "Heavy-Duty Boots",
@@ -973,7 +973,7 @@
             },
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Electro Shot", "Surf", "Roca Galvanizada", "Grass Knot"],
+                "movepool": ["Electro Shot", "Surf", "Galvanized Rock", "Grass Knot"],
                 "abilities": ["Lightning Rod"],
                 "teraTypes": ["Water"],
                 "items": "Power Herb",
@@ -1288,7 +1288,7 @@
         "sets": [
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Nonallamas", "Hex", "Solar Beam", "Nasty Plot"],
+                "movepool": ["Nineflames", "Hex", "Solar Beam", "Nasty Plot"],
                 "abilities": ["Drought"],
                 "teraTypes": ["Water"],
                 "items": "Heat Rock",
@@ -1302,7 +1302,7 @@
             },
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Nonallamas", "Scorching Sands", "Solar Beam", "Taunt"],
+                "movepool": ["Nineflames", "Scorching Sands", "Solar Beam", "Taunt"],
                 "abilities": ["Drought"],
                 "teraTypes": ["Water"],
                 "items": "Heat Rock",
@@ -1316,7 +1316,7 @@
             },
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Nonallamas", "Hex", "Solar Beam", "Taunt"],
+                "movepool": ["Nineflames", "Hex", "Solar Beam", "Taunt"],
                 "abilities": ["Drought"],
                 "teraTypes": ["Water"],
                 "items": "Heavy-Duty Boots",
@@ -1335,7 +1335,7 @@
         "sets": [
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Nonaesquirla", "Substitute", "Moonblast", "Nasty Plot"],
+                "movepool": ["Nineshard", "Substitute", "Moonblast", "Nasty Plot"],
                 "abilities": ["Snow Cloak"],
                 "teraTypes": ["Water"],
                 "items": "Leftovers",
@@ -1523,7 +1523,7 @@
         "sets": [
             {
                 "role": "Bulky Band",
-                "movepool": ["Pinza Infecciosa", "Knock Off", "Leech Life", "Brick Break"],
+                "movepool": ["Parasitic Clamp", "Knock Off", "Leech Life", "Brick Break"],
                 "abilities": ["Damp"],
                 "teraTypes": ["Water"],
                 "items": "Choice Band",
@@ -1537,7 +1537,7 @@
             },
             {
                 "role": "Bulky Physical Sweeper",
-                "movepool": ["Pinza Infecciosa", "Knock Off", "Leech Life", "Brick Break"],
+                "movepool": ["Parasitic Clamp", "Knock Off", "Leech Life", "Brick Break"],
                 "abilities": ["Damp"],
                 "teraTypes": ["Water"],
                 "items": "Assault Vest",
@@ -1551,7 +1551,7 @@
             },
             {
                 "role": "Bulky Physical Sweeper",
-                "movepool": ["Pinza Infecciosa", "Knock Off", "Leech Life", "Spore"],
+                "movepool": ["Parasitic Clamp", "Knock Off", "Leech Life", "Spore"],
                 "abilities": ["Damp"],
                 "teraTypes": ["Water"],
                 "items": "Life Orb",
@@ -1918,7 +1918,7 @@
             },
             {
                 "role": "Fast Band",
-                "movepool": ["Monolito", "Flare Blitz", "Extreme Speed", "Wild Charge"],
+                "movepool": ["Monolith", "Flare Blitz", "Extreme Speed", "Wild Charge"],
                 "abilities": ["Rock Head"],
                 "teraTypes": ["Water"],
                 "items": "Choice Band",
@@ -1932,7 +1932,7 @@
             },
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Extreme Speed", "Monolito", "Flare Blitz", "Wild Charge"],
+                "movepool": ["Extreme Speed", "Monolith", "Flare Blitz", "Wild Charge"],
                 "abilities": ["Rock Head"],
                 "teraTypes": ["Water"],
                 "items": "Life Orb",
@@ -1974,7 +1974,7 @@
             },
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Extreme Speed", "Monolito", "Flare Blitz", "Wild Charge"],
+                "movepool": ["Extreme Speed", "Monolith", "Flare Blitz", "Wild Charge"],
                 "abilities": ["Intimidate"],
                 "teraTypes": ["Water"],
                 "items": "Totem Gigante",
@@ -2257,7 +2257,7 @@
         "sets": [
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Earth Power", "Volt Switch", "Roca Galvanizada", "Flamethrower"],
+                "movepool": ["Earth Power", "Volt Switch", "Galvanized Rock", "Flamethrower"],
                 "abilities": ["Magnet Pull"],
                 "teraTypes": ["Water"],
                 "items": "Life Orb",
@@ -2271,7 +2271,7 @@
             },
             {
                 "role": "Fast Special Sweeper",
-                "movepool": ["Autotomize", "Flamethrower", "Roca Galvanizada", "Thunderbolt"],
+                "movepool": ["Autotomize", "Flamethrower", "Galvanized Rock", "Thunderbolt"],
                 "abilities": ["Sturdy"],
                 "teraTypes": ["Water"],
                 "items": "Weakness Policy",
@@ -2285,7 +2285,7 @@
             },
             {
                 "role": "Special Scarf",
-                "movepool": ["Volt Switch", "Self-Destruct", "Roca Galvanizada", "Earth Power"],
+                "movepool": ["Volt Switch", "Self-Destruct", "Galvanized Rock", "Earth Power"],
                 "abilities": ["Galvanize"],
                 "teraTypes": ["Water"],
                 "items": "Choice Scarf",
@@ -2535,7 +2535,7 @@
             },
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Swords Dance", "Tripico", "Bullet Seed", "Fury Attack"],
+                "movepool": ["Swords Dance", "Tripeck", "Bullet Seed", "Fury Attack"],
                 "abilities": ["Skill Link"],
                 "teraTypes": ["Water"],
                 "items": "Heavy-Duty Boots",
@@ -2549,7 +2549,7 @@
             },
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Swords Dance", "Tripico", "Bullet Seed", "Fury Attack"],
+                "movepool": ["Swords Dance", "Tripeck", "Bullet Seed", "Fury Attack"],
                 "abilities": ["Tangled Feet"],
                 "teraTypes": ["Water"],
                 "items": "Loaded Dice",
@@ -5260,7 +5260,7 @@
         "sets": [
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Dragon Dance", "Colmillo Burbuja", "Mordida Dragon", "Ice Fang"],
+                "movepool": ["Dragon Dance", "Bubble Fang", "Dragon Bite", "Ice Fang"],
                 "abilities": ["Strong Jaw"],
                 "teraTypes": ["Water"],
                 "items": "Life Orb",
@@ -5274,7 +5274,7 @@
             },
             {
                 "role": "Fast Physical Sweeper",
-                "movepool": ["Dragon Dance", "Colmillo Burbuja", "Mordida Dragon", "Ice Fang"],
+                "movepool": ["Dragon Dance", "Bubble Fang", "Dragon Bite", "Ice Fang"],
                 "abilities": ["Strong Jaw"],
                 "teraTypes": ["Water"],
                 "items": "Clear Amulet",
@@ -5288,7 +5288,7 @@
             },
             {
                 "role": "Fast Band",
-                "movepool": ["Psychic Fangs", "Colmillo Burbuja", "Mordida Dragon", "Ice Fang"],
+                "movepool": ["Psychic Fangs", "Bubble Fang", "Dragon Bite", "Ice Fang"],
                 "abilities": ["Strong Jaw"],
                 "teraTypes": ["Water"],
                 "items": "Choice Band",
