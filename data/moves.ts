@@ -17208,7 +17208,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
-		name: "Viento Escama",
+		name: "Scale Wind",
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1, nosketch: 1 },
@@ -22162,7 +22162,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
-		name: "Malepico",
+		name: "Beakdrill",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1, bullet: 1 },
@@ -22177,7 +22177,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 10,
 		category: "Special",
-		name: "Nonallamas",
+		name: "Nineflames",
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -22195,7 +22195,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
-		name: "Nonaesquirla",
+		name: "Nineshard",
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, slicing: 1, bullet: 1 },
@@ -22203,19 +22203,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			duration: 9,
 			noCopy: true,
 			onStart(pokemon) {
-				this.add('-start', pokemon, 'Nonaesquirla');
+				this.add('-start', pokemon, 'Nineshard');
 			},
 			onResidualOrder: 13,
 			onResidual(pokemon) {
 				this.damage(pokemon.baseMaxhp / 16);
 			},
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Nonaesquirla');
+				this.add('-end', pokemon, 'Nineshard');
 			},
 		},
 		secondary: {
 			chance: 100,
-			volatileStatus: 'nonaesquirla',
+			volatileStatus: 'nineshard',
 		},
 		target: "normal",
 		type: "Ice",
@@ -22225,7 +22225,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
-		name: "Pinza Infecciosa",
+		name: "Parasitic Clamp",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, slicing: 1 },
@@ -22248,7 +22248,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
-		name: "Monolito",
+		name: "Monolith",
 		pp: 5,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
@@ -22266,7 +22266,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		name: "Roca Galvanizada",
+		name: "Galvanized Rock",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
