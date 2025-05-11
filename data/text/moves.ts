@@ -4504,8 +4504,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "For nine turns, causes damage to the target equal to 1/20 of its maximum HP, rounded down, at the end of each turn during effect. This effect ends when the target is no longer active.",
 		shortDesc: "Deals 1/20 max HP each turn for 9 turns.",
 
-		start: "  [POKEMON] is being nonaesquirla!",
-		damage: "  [POKEMON] is hurt by Nonaesquirla!",
+		start: "  [POKEMON] is being nineshard!",
+		damage: "  [POKEMON] is hurt by Nineshard!",
 	},
 	noretreat: {
 		name: "No Retreat",

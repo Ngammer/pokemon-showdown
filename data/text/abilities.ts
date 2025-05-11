@@ -2454,9 +2454,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Unstable Shell",
 		shortDesc: "At less than 50% HP, shell explodes with 40 BP move, changes form.",
 	},
-	sabiodelbosque: {
-		name: "Caparazon Inestable",
-		shortDesc: "Combination of the Sabio and Protector del Bosque Abilities.",
+	forestsage: {
+		name: "Unstable Shell",
+		shortDesc: "Combination of the Sage and Forest Guardian Abilities.",
 	},
 	triumphalentry: {
 		name: "Triumphal Entry",

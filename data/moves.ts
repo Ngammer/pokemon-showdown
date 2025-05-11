@@ -22697,7 +22697,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { def: 1 } },
 		contestType: "Tough",
 	},
-	esferaciclon: {
+	cyclonesphere: {
 		num: 0,
 		accuracy: 100,
 		basePower: 80,
@@ -22735,7 +22735,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ground",
 		contestType: "Cool",
 	},
-	enredodiscreto: {
+	discreettangle: {
 		num: 0,
 		accuracy: 100,
 		basePower: 75,
@@ -22818,12 +22818,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
 	},
-	caparazoninestable: {
+	unstableshell: {
 		num: 0,
 		accuracy: true,
 		basePower: 40,
 		category: "Special",
-		name: "Caparazon Inestable",
+		name: "Unstable Shell",
 		pp: 1,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nosketch: 1 },
@@ -22831,7 +22831,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Tough",
 	},
-	bombatintarefinada: {
+	refinedinkbomb: {
 		num: 0,
 		accuracy: 85,
 		basePower: 40,
