@@ -2254,30 +2254,30 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 
 	// Nuevo Meta
-	escudoescama: {
-		name: "Escudo Escama",
+	scaleshield: {
+		name: "Scale Shield",
 		desc: "Puede envenenar, paralizar y dormir al contacto (33% de posibilidad para cada alteración de estado). Convierte el movimiento Viento Plata en Viento Escama.",
 		shortDesc: "50% chance of poison/paralysis/sleep on others dealing damage",
 	},
-	nudillosdepiedra: {
-		name: "Nudillos De Piedra",
+	stoneknuckles: {
+		name: "Stone Knuckles",
 		desc: "This Pokemon's punch-based attacks have their power multiplied by 2, but it loses 15% of its max HP after the attack.",
 		shortDesc: "This Pokemon's punch-based attacks have 2x power. It loses 15% of its max HP after the attack.",
 
 		damage: "  [POKEMON] lost some of its HP!",
 	},
-	suertudo: {
-		name: "Suertudo",
+	lucky: {
+		name: "Lucky",
 		desc: "",
 		shortDesc: "This Pokemon's attacks are critical hits.",
 	},
-	gigantificacion: {
-		name: "Gigantificacion",
+	gigantification: {
+		name: "Gigantification",
 		desc: "",
 		shortDesc: "On switch-in, this Pokemon's highest stat is raised by 1 stage.",
 	},
-	malicia: {
-		name: "Malicia",
+	malice: {
+		name: "Malice",
 		shortDesc: "This Pokemon's Dark-type moves have their power multiplied by 1.2.",
 	},
 	frubujas: {
@@ -2290,83 +2290,83 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "",
 		shortDesc: "This Pokemon's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
 	},
-	cantohelado: {
-		name: "Canto Helado",
+	icysong: {
+		name: "Icy Song",
 		desc: "This Pokemon's sound-based moves become Ice-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. This Pokemon's sound-based moves have a 30% chance of freezing.",
 		shortDesc: "This Pokemon's sound-based moves become Ice type. This Pokemon's sound-based moves have a 30% chance of freezing",
 	},
-	vatios: {
-		name: "Vatios",
+	watts: {
+		name: "Watts",
 		desc: "",
 		shortDesc: "This Pokemon's Electric-type moves have their power multiplied by 1.2.",
 	},
-	mineralizacion: {
-		name: "Mineralizacion",
+	fossilization: {
+		name: "Fossilization",
 		desc: "This Pokemon is immune to Rock-type and Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type or Steel-type move. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them.",
 		shortDesc: "This Pokemon is healed 1/4 by Rock and Steel. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them.",
 	},
-	mentefria: {
-		name: "Mente Fria",
+	coldmind: {
+		name: "Cold mind",
 		desc: "",
 		shortDesc: "This Pokemon's special moves that don't make contact have their power multiplied by 1.3 and 30% chance of freezing.",
 	},
-	llamasiniestra: {
-		name: "Llama Siniestra",
+	sinisterflame: {
+		name: "Sinister Flame",
 		desc: "This Pokemon's Special Attack is raised by 2 stages if it attacks and knocks out another Pokemon with a Dark-type attack. This Pokemon's Dark-type moves have a 100% chance of burning. This effect comes after a move's inherent secondary effect chance.",
 		shortDesc: "This Pokemon's Special Attack is raised by 2 stages if it attacks and KOes another Pokemon with a Dark-type attack. This Pokemon's Dark-type moves have a 100% chance of burning.",
 	},
-	inteligenciaasertiva: {
-		name: "Inteligencia Asertiva",
+	assertiveintelligence: {
+		name: "Assertive Intelligence",
 		desc: "This Pokemon's moves and their effects ignore immunities, protection, stat stages and certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.	",
 		shortDesc: "This Pokemon ignores the Abilities, stat stages, immunities and protection of other Pokemon when doing damage.",
 	},
-	inteligenciaartificial: {
-		name: "Inteligencia Artificial",
+	artificialintelligence: {
+		name: "Artificial intelligence",
 		desc: "This Pokemon's moves have their power multiplied by 1.4 and the accuracy of its attacks is multiplied by 0.95.",
 		shortDesc: "This Pokemon's moves have 1.4x power and accuracy of its attacks is 0.95x.",
 	},
 	comealmas: {
-		name: "Come Almas",
+		name: "Soul Eater",
 		desc: "This Pokemon's moves have their power multiplied by 1+(X*0.05), where X is the total number of times any Pokemon has fainted when this Ability became active, and X cannot be greater than 10.",
 		shortDesc: "This Pokemon's moves have 5% more power for each fainted Pokemon, up to 10 Pokemon.",
 
 		activate: "  [POKEMON] gained strength from the fallen!",
 	},
-	inteligenciaavanzada: {
-		name: "Inteligencia Avanzada",
+	advancedintelligence: {
+		name: "Advanced Intelligence",
 		desc: "Deals damage to the target based on its Defense instead of Special Defense, whichever is lower, but damage is multiplied by 0.8.",
 		shortDesc: "Damages target based on the foes' weaker Defense, but offensive stat is multiplied by 0.8.",
 	},
-	inteligenciaantigua: {
-		name: "Inteligencia Antigua",
+	ancientintelligence: {
+		name: "Ancient Intelligence",
 		desc: "This Pokemon's moves will always hit and the power of its attacks is decreased by X/2, where X is the difference between the moves accuracy and 100.",
 		shortDesc: "Every move used by this Pokemon will always hit, but power is decreased by 1/2 the accuracy increase.",
 	},
-	plumawatt: {
-		name: "Pluma Watt",
+	wattfeather: {
+		name: "Watt Feather",
 		shortDesc: "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
 
-		activate: "  Pluma Watt made [POKEMON] move faster!",
+		activate: "  Watt Feather made [POKEMON] move faster!",
 	},
-	liberaalmas: {
-		name: "Libera Almas",
+	soulliberator: {
+		name: "Soul Liberator",
 		shortDesc: "After an ally has fainted, if user switches-in, user's all stats +1.",
 		activate: "  [POKEMON] has led the fallen one along the path of light!",
 	},
-	almapura: {
-		name: "Alma Pura",
+	puresoul: {
+		name: "Pure Soul",
 		shortDesc: "User does't receive supereffective damage.",
 	},
-	ultimogolpe: {
-		name: "Ultimo Golpe",
+	lastblow: {
+		name: "Last Blow",
 		shortDesc: "On Switching in, automatically knocks out foes with less than 25% HP when.",
 	},
-	vampirismo: {
-		name: "Vampirismo",
+	vampirism: {
+		name: "Vampirism",
 		shortDesc: "Boosts the power of biting moves by 20% and heals 50% of the damage dealt.",
 	},
-	cabellogalvanico: {
-		name: "Cabello Galvanico",
+	galvanizedhair: {
+		name: "Galvanized Hair",
 		shortDesc: "Special attacks have a 20% chance to inflict paralysis.",
 	},
 	jovial: {
@@ -2377,56 +2377,56 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Cabeza Jerarquica",
 		shortDesc: "Reduces damage by 50% at >66% HP, prevents stat drops at >33% HP, and boosts move power by 33% at <33% HP.",
 	},
-	heroismo: {
-		name: "Heroismo",
+	heroism: {
+		name: "Heroism",
 		shortDesc: "Negates opponent's priority moves, and boosts Speed when hit by a super effective move.",
 	},
-	manopesada: {
-		name: "Mano Pesada",
+	heavyhand: {
+		name: "Heavy Hand",
 		shortDesc: "Boosts contact and Steel-type moves by 15%. Contact moves have a 10% chance to flinch the target.",
 	},
 	tectoanclaje: {
 		name: "Tecto Anclaje",
 		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses.",
 	},
-	sabio: {
-		name: "Sabio",
+	sage: {
+		name: "Sage",
 		shortDesc: "Works like Unaware. Cannot be confused, taunted, or tormented.",
 	},
-	oscuridadenvolvente: {
-		name: "Oscuridad Envolvente",
+	envelopingdarkness: {
+		name: "Enveloping Darkness",
 		shortDesc: "Immune to Light moves. Dark moves never miss.",
 	},
-	provocador: {
-		name: "Provocador",
+	provocateur: {
+		name: "Provocateur",
 		shortDesc: "Applies Taunt to all active Pokemon on switch-in.",
 	},
-	defensaabrumadora: {
-		name: "Defensa Abrumadora",
+	overwhelmingdefense: {
+		name: "Overwhelming Defense",
 		shortDesc: "Uses Defense for physical attacks, Special Defense for special attacks.",
 	},
-	cuerpobendito: {
-		name: "Cuerpo Bendito",
+	blessedbody: {
+		name: "Blessed Body",
 		shortDesc: "Raises a random stat when hit by an attack.",
 	},
-	artilleriapesada: {
-		name: "Artilleria Pesada",
+	heavyartillery: {
+		name: "Heavy artillery",
 		shortDesc: "2x power for projectile moves, 15% self HP loss after each attack.",
 	},
-	cabezadura: {
-		name: "Cabeza Dura",
+	hardhead: {
+		name: "Hardhead",
 		shortDesc: "1.5x power for head-based moves.",
 	},
-	voltioemergente: {
-		name: "Voltio Emergente",
+	emergingvolt: {
+		name: "Emerging Volt",
 		shortDesc: "Electric moves gain priority at 1/2 HP or less.",
 	},
-	auravolcan: {
-		name: "Aura Volcan",
+	volcanoaura: {
+		name: "Volcano Aura",
 		shortDesc: "Absorbs Water moves for immunity.",
 	},
-	conocimiento: {
-		name: "Conocimiento",
+	knowledge: {
+		name: "Knowledge",
 		shortDesc: "This Pokemon's Psychic-type moves have their power multiplied by 1.2.",
 	},
 	conjurador: {
@@ -2434,44 +2434,44 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "On switch-in, this Pokemon lowers the Special Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of opponents by 1 stage.",
 	},
-	aguapura: {
-		name: "Agua Pura",
+	cleanwater: {
+		name: "Clean Water",
 		shortDesc: "Water moves are super effective against Poison. Immune to Poison, cannot be poisoned. Resists Poison type.",
 	},
-	marino: {
-		name: "Marino",
+	marine: {
+		name: "Marine",
 		shortDesc: "2x power of Water-type moves.",
 	},
-	plumaarcoiris: {
-		name: "Pluma Arcoiris",
+	rainbowfeather: {
+		name: "Rainbow Feather",
 		shortDesc: "Flying-type moves have a 33% chance to raise a random stat.",
 	},
-	protectordelbosque: {
-		name: "Protector del Bosque",
+	forestguardian: {
+		name: "Forest Guardian",
 		shortDesc: "Raises Special Attack by 2 stages when hit by a super effective attack.",
 	},
 	unstableshell: {
 		name: "Unstable Shell",
 		shortDesc: "At less than 50% HP, shell explodes with 40 BP move, changes form.",
 	},
-	sabiodelbosque: {
+	forestsage: {
 		name: "Unstable Shell",
-		shortDesc: "Combination of the Sabio and Protector del Bosque Abilities.",
+		shortDesc: "Combination of the Sage and Forest Guardian Abilities.",
 	},
-	entradatriunfal: {
-		name: "Entrada Triunfal",
+	triumphalentry: {
+		name: "Triumphal Entry",
 		shortDesc: "Removes entry hazards on switch-in, if not holding Heavy-Duty Boots.",
 	},
-	letrassagradas: {
-		name: "Letras Sagradas",
+	sacredletters: {
+		name: "Sacred Letters",
 		shortDesc: "Hidden Power changes to a type that is super effective against a pokemon and the user takes that type.",
 	},
 	ignomotor: {
 		name: "Ignomotor",
 		shortDesc: "Raises Speed when hit by a Fire-type attack.",
 	},
-	patadabrutal: {
-		name: "Patada Brutal",
+	brutalkick: {
+		name: "Brutal Kick",
 		shortDesc: "1.5x power for kicking moves.",
 	},
 };

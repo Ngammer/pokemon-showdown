@@ -769,7 +769,7 @@
               "nature": "Jolly",
               "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fire"],
-              "ability": ["Malicia"]
+              "ability": ["Malice"]
           },
           {
               "species": "Fearill",

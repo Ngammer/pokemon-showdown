@@ -17161,7 +17161,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		onTryHit(target, pokemon) {
 			let move = 'silverwind2';
-			if (pokemon.hasAbility("Escudo Escama")) {
+			if (pokemon.hasAbility("Scale Shield")) {
 				move = 'silverwind3';
 			}
 			this.actions.useMove(move, pokemon, { target });
@@ -18577,7 +18577,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onSwitchIn(pokemon) {
 				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious") ||
-					pokemon.hasAbility("Mineralizacion")) return;
+					pokemon.hasAbility("Fossilization")) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
 			},

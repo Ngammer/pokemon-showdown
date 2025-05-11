@@ -6149,7 +6149,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 
 	// Nuevo Meta
-	escudoescama: {
+	scaleshield: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target) && source.runStatusImmunity('powder')) {
 				const r = this.random(100);
@@ -6163,15 +6163,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Escudo Escama",
+		name: "Scale Shield",
 		rating: 2,
 		num: -101,
 	},
-	nudillosdepiedra: {
+	stoneknuckles: {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['punch']) {
-				this.debug('Nudillos De Piedra boost');
+				this.debug('Stone Knuckles boost');
 				return this.chainModify(2);
 			}
 		},
@@ -6181,39 +6181,39 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Nudillos De Piedra",
+		name: "Stone Knuckles",
 		rating: 3,
 		num: -102,
 	},
-	suertudo: {
+	lucky: {
 		onModifyCritRatio(critRatio) {
 			return 5;
 		},
 		flags: { },
-		name: "Suertudo",
+		name: "Lucky",
 		rating: 1.5,
 		num: -103,
 	},
-	gigantificacion: {
+	gigantification: {
 		onStart(pokemon) {
 			const bestStat = pokemon.getBestStat(true, true);
 			this.boost({ [bestStat]: 1 }, pokemon);
 		},
 		flags: { },
-		name: "Gigantificacion",
+		name: "Gigantification",
 		rating: 4,
 		num: -104,
 	},
-	malicia: {
+	malice: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Dark') {
-				this.debug('Malicia boost');
+				this.debug('Malice boost');
 				return this.chainModify(1.2);
 			}
 		},
 		flags: { },
-		name: "Malicia",
+		name: "Malice",
 		rating: 2,
 		num: -105,
 	},
@@ -6239,7 +6239,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -107,
 	},
-	cantohelado: {
+	icysong: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
@@ -6256,28 +6256,28 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Canto Helado",
+		name: "Icy Song",
 		rating: 1.5,
 		num: -108,
 	},
-	vatios: {
+	watts: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Electric') {
-				this.debug('Vatios boost');
+				this.debug('Watts boost');
 				return this.chainModify(1.2);
 			}
 		},
 		flags: { },
-		name: "Vatios",
+		name: "Watts",
 		rating: 2,
 		num: -109,
 	},
-	mineralizacion: {
+	fossilization: {
 		onTryHit(target, source, move) {
 			if (target !== source && (move.type === 'Rock' || move.type === 'Steel')) {
 				if (!this.heal(target.baseMaxhp / 4)) {
-					this.add('-immune', target, '[from] ability: Mineralizacion');
+					this.add('-immune', target, '[from] ability: Fossilization');
 				}
 				return null;
 			}
@@ -6294,11 +6294,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Mineralizacion",
+		name: "Fossilization",
 		rating: 3.5,
 		num: -110,
 	},
-	mentefria: {
+	coldmind: {
 		onModifyTypePriority: -1,
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
@@ -6317,11 +6317,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Mente Fria",
+		name: "Cold mind",
 		rating: 1.5,
 		num: -111,
 	},
-	llamasiniestra: {
+	sinisterflame: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move' && effect.type === "Dark") {
 				this.boost({ spa: 2 }, source);
@@ -6337,13 +6337,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Llama Siniestra",
+		name: "Sinister Flame",
 		rating: 3,
 		num: -112,
 	},
-	inteligenciaasertiva: {
+	assertiveintelligence: {
 		onStart(pokemon) {
-			this.add('-ability', pokemon, 'Inteligencia Asertiva');
+			this.add('-ability', pokemon, 'Assertive Intelligence');
 		},
 		onModifyMove(move) {
 			move.ignoreAbility = true;
@@ -6353,14 +6353,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			move.ignoreDefensive = true;
 		},
 		flags: { },
-		name: "Inteligencia Asertiva",
+		name: "Assertive Intelligence",
 		rating: 3,
 		num: -113,
 	},
-	inteligenciaartificial: {
+	artificialintelligence: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			this.debug('Inteligencia Artificial boost');
+			this.debug('Artificial intelligence boost');
 			return this.chainModify(1.4);
 		},
 		onSourceModifyAccuracyPriority: -1,
@@ -6370,14 +6370,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Inteligencia Artificial",
+		name: "Artificial intelligence",
 		rating: 3,
 		num: -114,
 	},
-	comealmas: {
+	souleater: {
 		onStart(pokemon) {
 			if (pokemon.side.totalFainted) {
-				this.add('-activate', pokemon, 'ability: Come Almas');
+				this.add('-activate', pokemon, 'ability: Soul Eater');
 				const fallen = Math.min(pokemon.side.totalFainted + pokemon.side.foe.totalFainted, 10);
 				this.add('-start', pokemon, `fallen${fallen}`, '[silent]');
 				this.effectState.fallen = fallen;
@@ -6390,16 +6390,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (this.effectState.fallen) {
 				const powMod = [4096, 4301, 4506, 4710, 4915, 5120, 5325, 5530, 5734, 5939, 6144];
-				this.debug(`Come Almas boost: ${powMod[this.effectState.fallen]}/4096`);
+				this.debug(`Soul Eater boost: ${powMod[this.effectState.fallen]}/4096`);
 				return this.chainModify([powMod[this.effectState.fallen], 4096]);
 			}
 		},
 		flags: { },
-		name: "Come Almas",
+		name: "Soul Eater",
 		rating: 4,
 		num: -115,
 	},
-	inteligenciaavanzada: {
+	advancedintelligence: {
 		onModifyMove(move, pokemon, target) {
 			if (target) {
 				if (target.getStat('spd', false, true) > target.getStat('def', false, true) && move.category === "Special") {
@@ -6412,11 +6412,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Inteligencia Avanzada",
+		name: "Advanced Intelligence",
 		rating: 3,
 		num: -116,
 	},
-	inteligenciaantigua: {
+	ancientintelligence: {
 		onModifyMove(move, pokemon, target) {
 			if (typeof move.accuracy === 'number') {
 				const change = 100 - move.accuracy;
@@ -6425,27 +6425,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Inteligencia Antigua",
+		name: "Ancient Intelligence",
 		rating: 3,
 		num: -117,
 	},
-	plumawatt: {
+	wattfeather: {
 		onStart(pokemon) {
-			pokemon.addVolatile('plumawatt');
+			pokemon.addVolatile('wattfeather');
 		},
 		onResidualOrder: 1,
 		onResidualSubOrder: 1,
 		onResidual(pokemon) {
-			if (pokemon.volatiles['plumawatt']) {
-				pokemon.volatiles['plumawatt'].turns++;
+			if (pokemon.volatiles['wattfeather']) {
+				pokemon.volatiles['wattfeather'].turns++;
 			}
 		},
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (attacker.volatiles['plumawatt']?.turns >= 3 || attacker.status === 'par') {
-				this.debug('Pluma Watt boost');
-				attacker.volatiles['plumawatt'].turns = 0;
-				this.add('-activate', attacker, 'ability: Pluma Watt');
+			if (attacker.volatiles['wattfeather']?.turns >= 3 || attacker.status === 'par') {
+				this.debug('Watt Feather boost');
+				attacker.volatiles['wattfeather'].turns = 0;
+				this.add('-activate', attacker, 'ability: Watt Feather');
 				return this.chainModify(2);
 			}
 		},
@@ -6455,37 +6455,37 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 		},
 		flags: { },
-		name: "Pluma Watt",
+		name: "Watt Feather",
 		rating: 2.5,
 		num: -118,
 	},
-	liberaalmas: {
+	soulliberator: {
 		onStart(pokemon) {
 			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
 				this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, pokemon);
 			}
 		},
 		flags: { },
-		name: "Libera Almas",
+		name: "Soul Liberator",
 		rating: 2,
 		num: -119,
 	},
-	almapura: {
+	puresoul: {
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).typeMod === 1) {
-				this.debug('Alma Pura neutralize');
+				this.debug('Pure Soul neutralize');
 				return this.chainModify(0.5);
 			} else if (target.getMoveHitData(move).typeMod === 2) {
-				this.debug('Alma Pura neutralize');
+				this.debug('Pure Soul neutralize');
 				return this.chainModify(0.25);
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Alma Pura",
+		name: "Pure Soul",
 		rating: 3,
 		num: -120,
 	},
-	ultimogolpe: {
+	lastblow: {
 		onStart(pokemon) {
 			for (const ally of pokemon.adjacentAllies()) {
 				if (ally.hp <= ally.baseMaxhp / 4) {
@@ -6499,15 +6499,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Ultimo Golpe",
+		name: "Last Blow",
 		rating: 2,
 		num: -121,
 	},
-	vampirismo: {
+	vampirism: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['bite']) {
-				this.debug('Vampirismo boost');
+				this.debug('Vampirism boost');
 				return this.chainModify(1.2);
 			}
 		},
@@ -6517,11 +6517,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Vampirismo",
+		name: "Vampirism",
 		rating: 3.5,
 		num: -122,
 	},
-	cabellogalvanico: {
+	galvanizedhair: {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
@@ -6533,7 +6533,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Cabello Galvanico",
+		name: "Galvanized Hair",
 		rating: 2,
 		num: -123,
 	},
@@ -6546,7 +6546,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1,
 		num: -124,
 	},
-	heroismo: {
+	heroism: {
 		onDamagingHit(damage, target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
 				this.boost({ spe: 1 });
@@ -6558,11 +6558,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Heroismo",
+		name: "Heroism",
 		rating: 2.5,
 		num: -125,
 	},
-	manopesada: {
+	heavyhand: {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['contact']) {
@@ -6579,7 +6579,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Mano Pesada",
+		name: "Heavy Hand",
 		rating: 3.5,
 		num: -126,
 	},
@@ -6604,7 +6604,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -127,
 	},
-	sabio: {
+	sage: {
 		onAnyModifyBoost(boosts, pokemon) {
 			const unawareUser = this.effectState.target;
 			if (unawareUser === pokemon) return;
@@ -6626,27 +6626,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (status.id === 'torment') return null;
 		},
 		flags: { breakable: 1 },
-		name: "Sabio",
+		name: "Sage",
 		rating: 4,
 		num: -128,
 	},
-	conocimiento: {
+	knowledge: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Psychic') {
-				this.debug('Malicia boost');
+				this.debug('Malice boost');
 				return this.chainModify(1.2);
 			}
 		},
 		flags: { },
-		name: "Conocimiento",
+		name: "Knowledge",
 		rating: 2,
 		num: -129,
 	},
-	oscuridadenvolvente: {
+	envelopingdarkness: {
 		onTryHit(pokemon, target, move) {
 			if (move.flags['light']) {
-				this.add('-immune', pokemon, '[from] ability: Oscuridad Envolvente');
+				this.add('-immune', pokemon, '[from] ability: Enveloping Darkness');
 				return null;
 			}
 		},
@@ -6657,11 +6657,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return accuracy;
 		},
 		flags: { breakable: 1 },
-		name: "Oscuridad Envolvente",
+		name: "Enveloping Darkness",
 		rating: 3,
 		num: -130,
 	},
-	provocador: {
+	provocateur: {
 		// crear condicion propia
 		onStart(pokemon) {
 			for (const target of pokemon.foes()) {
@@ -6669,11 +6669,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Provocador",
+		name: "Provocateur",
 		rating: 1.5,
 		num: -131,
 	},
-	defensaabrumadora: {
+	overwhelmingdefense: {
 		onModifyMove(move, pokemon, target) {
 			if (move.category === "Special") {
 				move.overrideOffensiveStat = 'spd';
@@ -6682,11 +6682,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Defensa Abrumadora",
+		name: "Overwhelming Defense",
 		rating: 3,
 		num: -132,
 	},
-	cuerpobendito: {
+	blessedbody: {
 		onDamagingHit(damage, target, source, effect) {
 			const r = this.random(100);
 			if (r < 20) {
@@ -6702,15 +6702,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Cuerpo Bendito",
+		name: "Blessed Body",
 		rating: 1,
 		num: -133,
 	},
-	artilleriapesada: {
+	heavyartillery: {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['bullet']) {
-				this.debug('Artilleria Pesada boost');
+				this.debug('Heavy artillery boost');
 				return this.chainModify(2);
 			}
 		},
@@ -6720,20 +6720,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Artilleria Pesada",
+		name: "Heavy artillery",
 		rating: 3,
 		num: -134,
 	},
-	cabezadura: {
+	hardhead: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['head']) {
-				this.debug('Cabeza Dura boost');
+				this.debug('Hardhead boost');
 				return this.chainModify(1.5);
 			}
 		},
 		flags: { },
-		name: "Cabeza Dura",
+		name: "Hardhead",
 		rating: 3.5,
 		num: -135,
 	},
@@ -6757,7 +6757,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -136,
 	},
-	voltioemergente: {
+	emergingvolt: {
 		onModifyPriority(priority, pokemon, target, move) {
 			if (((pokemon.baseMaxhp / 2) < pokemon.hp) && move.type === 'Electric') {
 				move.pranksterBoosted = true;
@@ -6765,59 +6765,59 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Voltio Emergente",
+		name: "Emerging Volt",
 		rating: 4,
 		num: -137,
 	},
-	auravolcan: {
+	volcanoaura: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
-				this.add('-immune', target, '[from] ability: Aura Volcan');
+				this.add('-immune', target, '[from] ability: Volcano Aura');
 				return null;
 			}
 		},
 		flags: { },
-		name: "Aura Volcan",
+		name: "Volcano Aura",
 		rating: 3.5,
 		num: -138,
 	},
-	aguapura: {
+	cleanwater: {
 		onEffectiveness(typeMod, target, type, move) {
 			if (type === 'Poison' && move.type === 'Water') return 1;
 		},
 		onUpdate(pokemon) {
 			if (pokemon.status === 'brn') {
-				this.add('-activate', pokemon, 'ability: Agua Pura');
+				this.add('-activate', pokemon, 'ability: Clean Water');
 				pokemon.cureStatus();
 			}
 		},
 		onSetStatus(status, target, source, effect) {
 			if (status.id !== 'brn') return;
 			if ((effect as Move)?.status) {
-				this.add('-immune', target, '[from] ability: Agua Pura');
+				this.add('-immune', target, '[from] ability: Clean Water');
 			}
 			return false;
 		},
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Poison') {
-				this.debug('Agua Pura weaken');
+				this.debug('Clean Water weaken');
 				return this.chainModify(0.5);
 			}
 		},
 		onSourceModifySpAPriority: 5,
 		onSourceModifySpA(spa, attacker, defender, move) {
 			if (move.type === 'Poison') {
-				this.debug('Agua Pura weaken');
+				this.debug('Clean Water weaken');
 				return this.chainModify(0.5);
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Agua Pura",
+		name: "Clean Water",
 		rating: 2,
 		num: -139,
 	},
-	marino: {
+	marine: {
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Water') {
 				return this.chainModify(2);
@@ -6829,11 +6829,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Marino",
+		name: "Marine",
 		rating: 4.5,
 		num: -140,
 	},
-	plumaarcoiris: {
+	rainbowfeather: {
 		onModifyMove(move, pokemon, target) {
 			if (move.type === 'Flying') {
 				if (this.randomChance(33, 100)) {
@@ -6853,22 +6853,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Pluma Arcoiris",
+		name: "Rainbow Feather",
 		rating: 2,
 		num: -141,
 	},
-	protectordelbosque: {
+	forestguardian: {
 		onDamagingHit(damage, target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
 				this.boost({ spa: 2 });
 			}
 		},
 		flags: { },
-		name: "Protector del Bosque",
+		name: "Forest Guardian",
 		rating: 2.5,
 		num: -142,
 	},
-	sabiodelbosque: {
+	forestsage: {
 		onAnyModifyBoost(boosts, pokemon) {
 			const unawareUser = this.effectState.target;
 			if (unawareUser === pokemon) return;
@@ -6895,7 +6895,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, breakable: 1 },
-		name: "Sabio del Bosque",
+		name: "Forest Sage",
 		rating: 3.5,
 		num: -143,
 	},
@@ -6953,7 +6953,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: -145,
 	},
-	letrassagradas: {
+	sacredletters: {
 		onPrepareHit(source, target, move) {
 			if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
 			const type = move.type;
@@ -6961,7 +6961,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				(move.id === 'hiddenpower' || move.realMove === "Hidden Power")) {
 				if (!source.setType(type)) return;
 				this.effectState.protean = true;
-				this.add('-start', source, 'typechange', type, '[from] ability: Letras Sagradas');
+				this.add('-start', source, 'typechange', type, '[from] ability: Sacred Letters');
 			}
 		},
 		onSwitchIn(pokemon) {
@@ -7029,22 +7029,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Letras Sagradas",
+		name: "Sacred Letters",
 		rating: 4,
 		num: -146,
 	},
-	entradatriunfal: {
+	triumphalentry: {
 		onStart(pokemon) {
 			const activated = false;
 			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 			for (const condition of sideConditions) {
 				if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Entrada Triunfal', `[of] ${pokemon}`);
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Triumphal Entry', `[of] ${pokemon}`);
 				}
 			}
 		},
 		flags: { },
-		name: "Entrada Triunfal",
+		name: "Triumphal Entry",
 		rating: 2,
 		num: -147,
 	},
@@ -7070,7 +7070,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -148,
 	},
-	patadabrutal: {
+	brutalkick: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['kick']) {
@@ -7078,7 +7078,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Patada Brutal",
+		name: "Brutal Kick",
 		rating: 3.5,
 		num: -149,
 	},
