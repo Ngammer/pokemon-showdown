@@ -2242,8 +2242,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	focusblast: {
 		name: "Focus Blast",
-		desc: "Lowers the user's Special Attack by 2 stages.",
-		shortDesc: "Lowers the user's Sp. Atk by 2.",
+		desc: "Lowers the user's Special Attack by 1 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 1.",
 	},
 	focusenergy: {
 		name: "Focus Energy",

@@ -1146,5 +1146,80 @@
       "ability": ["Snow Cloak"]
   }
   ]
-}
+},
+"nidoqueen": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Nidoqueen",
+                "weight": 100,
+                "moves": [
+                    ["Stealth Rock", "Toxic Spikes"],
+                    ["Shore Up"],
+                    ["Poison Tail", "Taunt", "Incinerate"],
+                    ["Earthquake", "Body Press"]
+                ],
+                "item": ["Black Sludge", "Rocky Helmet"],
+                "nature": "Impish",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sand Veil"]
+            }
+        ]
+    },
+    "Nidoking": {
+        "flags": {
+			"megaOnly": 1
+		},
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Nidoking",
+                "weight": 30,
+                "moves": [
+                    ["Flamethrower", "Incinerate"],
+                    ["Earth Power"],
+                    ["Sludge Wave"],
+                    ["Thunderbolt", "Ice Beam"]
+                ],
+                "item": ["Moon Stone", "Life Orb"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sheer Force"]
+            },
+            {
+                "species": "Nidoking",
+                "weight": 40,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Earthquake"],
+                    ["Poison Jab", "Thief"],
+                    ["Ice Punch", "Thunder Punch"]
+                ],
+                "item": ["Life Orb", "Moon Stone"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sheer Force"]
+            },
+            {
+                "species": "Nidoking",
+                "weight": 30,
+                "moves": [
+                    ["Sludge Wave", "Poison Jab"],
+                    ["Earthquake", "Earth Power"],
+                    ["Megahorn", "Thief", "Sucker Punch", "Focus Blast"],
+                    ["Incinerate", "Thunder Punch", "Ice Punch", "Fire Punch", "Flamethrower", "Ice Beam", "Thunderbolt"]
+                ],
+                "item": ["Moon Stone", "Life Orb", "Ring Target"],
+                "nature": "Naive",
+                "evs": {"spe": 252, "spa": 4, "atk": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sheer Force"]
+            }
+        ]
+    }
 }
