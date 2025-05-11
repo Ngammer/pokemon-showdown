@@ -1168,9 +1168,6 @@
         ]
     },
     "Nidoking": {
-        "flags": {
-			"megaOnly": 1
-		},
         "weight": 10,
         "sets": [
             {
@@ -1216,7 +1213,6 @@
                 "item": ["Moon Stone", "Life Orb", "Ring Target"],
                 "nature": "Naive",
                 "evs": {"spe": 252, "spa": 4, "atk": 252},
-                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Sheer Force"]
             }
