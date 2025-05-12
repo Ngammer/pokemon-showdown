@@ -514,6 +514,9 @@ declare namespace RandomTeamsTypes {
 		dynamaxLevel?: number;
 		gigantamax?: boolean;
 		wantsTera?: boolean;
+		wantsMega?: boolean;
+		wantsZ?: boolean;
+		wantsTotem?: boolean;
 		teraType?: string;
 	}
 	export interface RandomDraftFactorySet {
