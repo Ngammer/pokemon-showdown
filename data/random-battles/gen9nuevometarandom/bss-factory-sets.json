@@ -1,8 +1,5 @@
 {
-    "venusaur": {
-      "flags": {
-			"megaOnly": 1
-		},
+  "venusaur": {
         "weight": 10,
         "sets": [
             {
@@ -66,6 +63,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             },
             {
@@ -82,6 +80,7 @@
                 "evs": {"spd": 252, "spa": 8, "hp": 248},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             },
             {
@@ -98,14 +97,12 @@
                 "evs": {"spa": 252, "spd": 4, "hp": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Chlorophyll", "Overgrow"]
             }
         ]
     },
     "blastoise": {
-      "flags": {
-			"megaOnly": 1
-		},
         "weight": 10,
         "sets": [
             {
@@ -168,6 +165,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Torrent"]
             },
             {
@@ -183,6 +181,7 @@
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Torrent"]
             },
             {
@@ -198,14 +197,12 @@
                 "nature": "Relaxed",
                 "evs": {"def": 252, "spa": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Torrent"]
             }
         ]
     },
     "charizard": {
-        "flags": {
-			"megaOnly": 1
-		},
         "weight": 10,
         "sets": [
             {
@@ -269,6 +266,7 @@
                 "evs": {"hp": 248, "spe": 8, "spd": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Blaze"]
             },
             {
@@ -285,6 +283,7 @@
                 "evs": {"spa": 252, "spd": 8, "hp": 248},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Blaze"]
             },
             {
@@ -301,6 +300,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Blaze"]
             },
             {
@@ -316,14 +316,12 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Blaze"]
             }
         ]
     },
     "butterfree": {
-        "flags": {
-			"megaOnly": 1
-		},
         "weight": 10,
         "sets": [
             {
@@ -371,6 +369,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Shield Dust"]
             },
             {
@@ -387,6 +386,7 @@
                 "evs": {"def": 252, "spa": 4, "hp": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Shield Dust"]
             },
             {
@@ -403,14 +403,12 @@
                 "evs": {"def": 252, "spa": 4, "hp": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Compound Eyes"]
             }
         ]
     },
     "beedrill": {
-        "flags": {
-			"megaOnly": 1
-		},
         "weight": 10,
         "sets": [
             {
@@ -471,6 +469,7 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Run Away"]
             },
             {
@@ -486,6 +485,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Run Away"]
             },
             {
@@ -501,14 +501,12 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Run Away"]
             }
         ]
     },
   "pidgeot": {
-        "flags": {
-			"megaOnly": 1
-		},
         "weight": 10,
         "sets": [
           {
@@ -570,6 +568,7 @@
           "evs": {"atk": 252, "spd": 4, "spe": 252},
           "ivs": {"atk": 0},
           "teraType": ["Normal"],
+          "wantsMega": true,
           "ability": ["Tangled Feet", "Big Pecks"]
       },
       {
@@ -585,6 +584,7 @@
         "nature": "Timid",
         "evs": {"atk": 252, "spd": 4, "spe": 252},
         "teraType": ["Normal"],
+        "wantsMega": true,
         "ability": ["Tangled Feet", "Big Pecks"]
     },
     {
@@ -601,12 +601,14 @@
       "evs": {"hp": 252, "spa": 252, "spd": 4},
       "ivs": {"atk": 0},
       "teraType": ["Normal"],
+      "wantsMega": true,
       "ability": ["Tangled Feet", "Big Pecks"]
   }
       ]
   },
   "raticate": {
       "weight": 10,
+      "flags": {},
       "sets": [
           {
               "species": "Raticate",
@@ -656,9 +658,6 @@
       ]
   },
   "raticatealola": {
-    "flags": {
-			"totemOnly": 1
-		},
       "weight": 10,
       "sets": [
           {
@@ -719,6 +718,7 @@
         "nature": "Careful",
         "evs": {"hp": 248, "atk": 8, "spd": 252},
         "teraType": ["Fairy", "Water"],
+        "wantsTotem": true,
         "ability": ["Thick Fat", "Hustle"]
     },
     {
@@ -734,6 +734,7 @@
       "nature": "Adamant",
       "evs": {"hp": 248, "atk": 252, "spd": 8},
       "teraType": ["Fairy", "Water"],
+      "wantsTotem": true,
       "ability": ["Thick Fat", "Hustle"]
   },
   {
@@ -749,12 +750,14 @@
     "nature": "Careful",
     "evs": {"hp": 252, "spd": 252, "spe": 4},
     "teraType": ["Fairy", "Water"],
+    "wantsTotem": true,
     "ability": ["Thick Fat", "Hustle"]
 }
       ]
   },
   "fearill": {
       "weight": 10,
+      "flags": {},
       "sets": [
           {
               "species": "Fearill",
@@ -790,6 +793,7 @@
   },
   "arbok": {
       "weight": 10,
+      "flags": {},
       "sets": [
           {
               "species": "Arbok",
@@ -840,6 +844,7 @@
   },
   "pikachurockstar": {
     "weight": 10,
+    "flags": {},
     "sets": [
         {
             "species": "Pikachu-Rock-Star",
@@ -861,6 +866,7 @@
 },
 "pikachupopstar": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-Pop-Star",
@@ -883,6 +889,7 @@
 },
 "pikachuphd": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-PhD",
@@ -905,6 +912,7 @@
 },
 "pikachulibre": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-Libre",
@@ -926,6 +934,7 @@
 },
 "pikachubelle": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Pikachu-Belle",
@@ -947,6 +956,7 @@
 },
 "raichu": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Raichu",
@@ -997,6 +1007,7 @@
 },
 "raichualola": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Raichu-Alola",
@@ -1027,6 +1038,7 @@
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
         "teraType": ["Fairy", "Poison"],
+        "wantsZ": true,
         "ability": ["Surge Surfer"]
     },
     {
@@ -1049,6 +1061,7 @@
 },
 "sandslash": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Sandslash",
@@ -1099,6 +1112,7 @@
 },
 "sandslashalola": {
   "weight": 10,
+  "flags": {},
   "sets": [
       {
           "species": "Sandslash-Alola",
@@ -1149,6 +1163,7 @@
 },
 "nidoqueen": {
         "weight": 10,
+        "flags": {},
         "sets": [
             {
                 "species": "Nidoqueen",
@@ -1167,11 +1182,9 @@
             }
         ]
     },
-    "Nidoking": {
-        "flags": {
-			"megaOnly": 1
-		},
+    "nidoking": {
         "weight": 10,
+        "flags": {},
         "sets": [
             {
                 "species": "Nidoking",
@@ -1216,7 +1229,6 @@
                 "item": ["Moon Stone", "Life Orb", "Ring Target"],
                 "nature": "Naive",
                 "evs": {"spe": 252, "spa": 4, "atk": 252},
-                "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Sheer Force"]
             }
