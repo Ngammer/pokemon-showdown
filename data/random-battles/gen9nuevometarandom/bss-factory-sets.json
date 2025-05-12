@@ -1221,5 +1221,40 @@
                 "ability": ["Sheer Force"]
             }
         ]
-    }
+    },
+    "clefable": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Raticate",
+              "weight": 35,
+              "moves": [
+                  ["Facade"],
+                  ["Protect"],
+                  ["Sucker Punch"],
+                  ["Covet"]
+              ],
+              "item": ["Criosfera"],
+              "nature": "Jolly",
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Guts"]
+          },
+          {
+            "species": "Raticate",
+            "weight": 30,
+            "moves": [
+                ["Wild Charge"],
+                ["Last Resort"],
+                ["Natural Gift"],
+                ["Substitute"]
+            ],
+            "item": ["Hondew Berry"],
+            "nature": "Jolly",
+            "evs": {"hp": 4, "atk": 252, "spe": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Hustle"]
+        }
+      ]
+  }
 }
