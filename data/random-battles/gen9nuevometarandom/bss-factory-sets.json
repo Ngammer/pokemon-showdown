@@ -1238,35 +1238,125 @@
       "weight": 10,
       "sets": [
           {
-              "species": "Raticate",
-              "weight": 35,
+              "species": "Clefable",
+              "weight": 50,
               "moves": [
-                  ["Facade"],
-                  ["Protect"],
-                  ["Sucker Punch"],
-                  ["Covet"]
+                  ["Cosmic Power"],
+                  ["Soft Boiled"],
+                  ["Charge Beam"],
+                  ["Stored Power"]
               ],
-              "item": ["Criosfera"],
-              "nature": "Jolly",
-              "evs": {"atk": 252, "spd": 4, "spe": 252},
+              "item": ["Leftovers", "Moon Stone", "Clear Amulet"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Guts"]
+              "ability": ["Magic Guard"]
           },
           {
-            "species": "Raticate",
-            "weight": 30,
+            "species": "Clefable",
+            "weight": 50,
             "moves": [
-                ["Wild Charge"],
-                ["Last Resort"],
-                ["Natural Gift"],
-                ["Substitute"]
+                ["Stealth Rock", "Protect"],
+                ["Soft Boiled", "Wish"],
+                ["Moonblast"],
+                ["Fire Blast"]
             ],
-            "item": ["Hondew Berry"],
-            "nature": "Jolly",
-            "evs": {"hp": 4, "atk": 252, "spe": 252},
+            "item": ["Leftovers", "Moon Stone"],
+            "nature": "Calm",
+            "evs": {"spa": 4, "hp": 252, "spd": 252},
             "teraType": ["Fairy", "Water"],
-            "ability": ["Hustle"]
+            "ability": ["Unaware"]
         }
       ]
-  }
+  },
+  "ninetales": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Ninetales",
+                "weight": 50,
+                "moves": [
+                    ["Nasty Plot", "Taunt"],
+                    ["Hex"],
+                    ["Solar Beam"],
+                    ["Nineflames", "Ember"]
+                ],
+                "item": ["Heat Rock"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Drought"]
+            },
+            {
+                "species": "Ninetales",
+                "weight": 50,
+                "moves": [
+                    ["Solar Beam"],
+                    ["Fire Spin"],
+                    ["Encore"],
+                    ["Spite"]
+                ],
+                "item": ["Binding Band"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Flash Fire"]
+            }
+        ]
+    },
+    "ninetales-alola": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Ninetales-Alola",
+                "weight": 50,
+                "moves": [
+                    ["Powder Snow", "Chilling Water"],
+                    ["Hex", "Blizzard"],
+                    ["Aurora Veil", "Taunt", "Encore"],
+                    ["Moonblast"]
+                ],
+                "item": ["Icy Rock"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Warning"]
+            },
+            {
+                "species": "Ninetales-Alola",
+                "weight": 25,
+                "moves": [
+                    ["Substitute"],
+                    ["Calm Mind", "Nasty Plot"],
+                    ["Nineshard"],
+                    ["Moonblast", "Hex"]
+                ],
+                "item": ["Leftovers", "Ice Stone", "Heavy-Duty Boots"],
+                "nature": "Timid",
+                "evs": {"hp": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Cloak"]
+            },
+            {
+                "species": "Ninetales-Alola",
+                "weight": 25,
+                "moves": [
+                    ["Powder Snow", "Chilling Water"],
+                    ["Freeze Dry"],
+                    ["Aurora Veil"],
+                    ["Moonblast"]
+                ],
+                "item": ["Light Clay"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Warning"]
+            }
+        ]
+    }
 }
