@@ -517,6 +517,7 @@ declare namespace RandomTeamsTypes {
 		wantsMega?: boolean;
 		wantsZ?: boolean;
 		wantsTotem?: boolean;
+		wantsFeudal?: boolean;
 		teraType?: string;
 	}
 	export interface RandomDraftFactorySet {

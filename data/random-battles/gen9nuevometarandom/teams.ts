@@ -40,6 +40,7 @@ interface BattleFactorySet {
 	wantsMega?: boolean;
 	wantsZ?: boolean;
 	wantsTotem?: boolean;
+	wantsFeudal?: boolean;
 	evs?: Partial<StatsTable>;
 	ivs?: Partial<StatsTable>;
 	shiny?: boolean;
@@ -56,6 +57,7 @@ interface BSSFactorySet {
 	wantsMega?: boolean;
 	wantsZ?: boolean;
 	wantsTotem?: boolean;
+	wantsFeudal?: boolean;
 	wantsTera?: boolean;
 	evs: number[];
 	ivs?: number[];
@@ -2473,6 +2475,11 @@ export class RandomNMTeams {
 				continue;
 			}
 
+			// limit to 1 dedicated Z move user per team
+			if (set.wantsFeudal && teamData.feudalCount) {
+				continue;
+			}
+
 			// reject disallowed items, specifically a second of any given choice item
 			const allowedItems: string[] = [];
 			for (const itemString of set.item) {
@@ -2553,6 +2560,7 @@ export class RandomNMTeams {
 			wantsMega: setData.set.wantsMega,
 			wantsZ: setData.set.wantsZ,
 			wantsTotem: setData.set.wantsTotem,
+			wantsFeudal: setData.set.wantsFeudal,
 		};
 	}
 
@@ -2587,6 +2595,7 @@ export class RandomNMTeams {
 			megaCount: 0,
 			zCount: 0,
 			totemCount: 0,
+			feudalCount: 0,
 			forceResult,
 			weaknesses: {},
 			resistances: {},
@@ -2723,6 +2732,11 @@ export class RandomNMTeams {
 				teamData.totemCount++;
 			}
 
+			if (set.wantsFeudal) {
+				if (!teamData.feudalCount) teamData.feudalCount = 0;
+				teamData.feudalCount++;
+			}
+
 			for (const move of set.moves) {
 				const moveId = toID(move);
 				if (movesLimited[moveId]) {
@@ -2800,6 +2814,7 @@ export class RandomNMTeams {
 		const maxMega = 1;
 		const maxZ = 1;
 		const maxTotem = 1;
+		const maxFeudal = 1;
 
 		// Build a pool of eligible sets, given the team partners
 		// Also keep track of sets with moves the team requires
@@ -2827,6 +2842,11 @@ export class RandomNMTeams {
 
 			// limit to 1 dedicated totem user per team
 			if (curSet.wantsTotem && teamData.totemCount && teamData.totemCount >= maxTotem) {
+				continue;
+			}
+
+			// limit to 1 dedicated totem user per team
+			if (curSet.wantsFeudal && teamData.feudalCount && teamData.feudalCount >= maxFeudal) {
 				continue;
 			}
 
@@ -2908,6 +2928,7 @@ export class RandomNMTeams {
 			wantsMega: setData.set.wantsMega,
 			wantsZ: setData.set.wantsZ,
 			wantsTotem: setData.set.wantsTotem,
+			wantsFeudal: setData.set.wantsFeudal,
 		};
 	}
 
@@ -3041,6 +3062,11 @@ export class RandomNMTeams {
 			if (set.wantsTotem) {
 				if (!teamData.totemCount) teamData.totemCount = 0;
 				teamData.totemCount++;
+			}
+
+			if (set.wantsFeudal) {
+				if (!teamData.feudalCount) teamData.feudalCount = 0;
+				teamData.feudalCount++;
 			}
 
 			const abilityState = this.dex.abilities.get(set.ability);
