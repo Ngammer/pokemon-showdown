@@ -1224,7 +1224,7 @@
       "weight": 10,
       "sets": [
           {
-              "species": "Raticate",
+              "species": "Clefable",
               "weight": 35,
               "moves": [
                   ["Facade"],
@@ -1239,7 +1239,7 @@
               "ability": ["Guts"]
           },
           {
-            "species": "Raticate",
+            "species": "Clefable",
             "weight": 30,
             "moves": [
                 ["Wild Charge"],
