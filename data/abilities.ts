@@ -6970,7 +6970,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTryMove(source, target, move) {
 			let type: string[] = [];
 			let rand = 0;
-			if (move.type === type[rand]) return;
 			if ((target.hasType('Normal') || target.hasType('Rock') || target.hasType('Ice') || target.hasType('Steel') ||
 				target.hasType('Dark')) && !(target.hasType('Ghost') || target.hasType('Flying') || target.hasType('Poison') ||
 					target.hasType('Bug') || target.hasType('Psychic') || target.hasType('Fairy'))) {
