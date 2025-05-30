@@ -1169,7 +1169,7 @@
             }
         ]
     },
-    "nidoking": {
+"nidoking": {
         "weight": 10,
         "sets": [
             {
@@ -1220,12 +1220,12 @@
             }
         ]
     },
-    "clefable": {
+"clefable": {
       "weight": 10,
       "sets": [
           {
               "species": "Clefable",
-              "weight": 35,
+              "weight": 50,
               "moves": [
                   ["Cosmic Power"],
                   ["Soft Boiled"],
@@ -1239,8 +1239,8 @@
               "ability": ["Magic Guard"]
           },
           {
-            "species": "Raticate",
-            "weight": 30,
+            "species": "Clefable",
+            "weight": 50,
             "moves": [
                 ["Stealth Rock", "Protect"],
                 ["Soft Boiled", "Wish"],
@@ -1255,7 +1255,7 @@
         }
       ]
   },
-  "ninetales": {
+"ninetales": {
         "weight": 10,
         "sets": [
             {
@@ -1292,7 +1292,7 @@
             }
         ]
     },
-    "ninetales-alola": {
+"ninetales-alola": {
         "weight": 10,
         "sets": [
             {
@@ -1344,5 +1344,125 @@
                 "ability": ["Snow Warning"]
             }
         ]
-    }
+    },
+"wigglytuff": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Wigglytuff",
+              "weight": 55,
+              "moves": [
+                  ["Alluring Voice"],
+                  ["Wish"],
+                  ["Protect"],
+                  ["Thunder Wave", "Stealth Rock"]
+              ],
+              "item": ["Leftovers", "Moon Stone"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Cute Charm", "Firsk"]
+          },
+          {
+            "species": "Wigglytuff",
+            "weight": 45,
+            "moves": [
+                ["Calm Mind"],
+                ["Stored Power"],
+                ["Draining Kiss"],
+                ["Fire Blast", "Flamethrower", "Tri Attack"]
+            ],
+            "item": ["Moon Stone"],
+            "nature": "Modest",
+            "evs": {"spa": 4, "hp": 252, "spd": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Unaware"]
+        }
+      ]
+  },
+  "golbat": {
+        "weight": 5,
+        "sets": [
+            {
+                "species": "Golbat",
+                "weight": 70,
+                "moves": [
+                    ["Acrobatics"],
+                    ["Poison Fang"],
+                    ["Leech Life", "Crunch"],
+                    ["Coil"]
+                ],
+                "item": ["Berserk Gene"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Inner Focus"]
+            },
+            {
+                "species": "Golbat",
+                "weight": 30,
+                "moves": [
+                    ["U-turn"],
+                    ["Roost"],
+                    ["Defog"],
+                    ["Poison Fang", "Dual Wingbeat"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Jolly",
+                "evs": {"hp": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Inner Focus", "Infiltrator"]
+            }
+        ]
+    },
+    "vileplume": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Vileplume",
+              "weight": 35,
+              "moves": [
+                  ["Leech Seed"],
+                  ["Substitute"],
+                  ["Toxic"],
+                  ["Giga Drain", "Acid Spray"]
+              ],
+              "item": ["Black Sludge"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Stench"]
+          },
+          {
+              "species": "Vileplume",
+              "weight": 35,
+              "moves": [
+                  ["Strength Sap"],
+                  ["Corrosive Gas"],
+                  ["Giga Drain"],
+                  ["Leech Seed", "Stun Spore"]
+              ],
+              "item": ["Rocky Helmet"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Effect Spore"]
+          },
+          {
+            "species": "Vileplume",
+            "weight": 30,
+            "moves": [
+                ["Growth"],
+                ["Giga Drain"],
+                ["Acid", "Sludge Wave"],
+                ["Flash", "Solar Beam", "Moonblast", "Hidden Power Ground"]
+            ],
+            "item": ["Leaf Stone", "Life Orb"],
+            "nature": "Modest",
+            "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Chlorophyll"]
+        }
+      ]
+  }
 }
