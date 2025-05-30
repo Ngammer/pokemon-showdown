@@ -6856,7 +6856,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Swords Dance') {
+			if (move.name === 'Swords Dance') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -6871,7 +6872,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Body Slam') {
+			if (move.name === 'Body Slam') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -6886,7 +6888,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Flamethrower') {
+			if (move.name === 'Flamethrower') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -6901,7 +6904,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Hydro Pump') {
+			if (move.name === 'Hydro Pump') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -6916,7 +6920,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Surf') {
+			if (move.name === 'Surf') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -6931,7 +6936,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Ice Beam') {
+			if (move.name === 'Ice Beam') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -6946,7 +6952,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Blizzard') {
+			if (move.name === 'Blizzard') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -6961,7 +6968,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Low Kick') {
+			if (move.name === 'Low Kick') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -6976,7 +6984,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Thunderbolt') {
+			if (move.name === 'Thunderbolt') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -6991,7 +7000,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Thunder') {
+			if (move.name === 'Thunder') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7006,7 +7016,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Earthquake') {
+			if (move.name === 'Earthquake') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7021,7 +7032,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Psychic') {
+			if (move.name === 'Psychic') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7036,7 +7048,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Agility') {
+			if (move.name === 'Agility') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7051,7 +7064,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Focus Energy') {
+			if (move.name === 'Focus Energy') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7066,7 +7080,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Metronome') {
+			if (move.name === 'Metronome') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7081,7 +7096,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Fire Blast') {
+			if (move.name === 'Fire Blast') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7096,7 +7112,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Waterfall') {
+			if (move.name === 'Waterfall') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7111,7 +7128,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Amnesia') {
+			if (move.name === 'Amnesia') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7126,7 +7144,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Leech Life') {
+			if (move.name === 'Leech Life') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7141,7 +7160,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Tri Attack') {
+			if (move.name === 'Tri Attack') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7156,7 +7176,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Substitute') {
+			if (move.name === 'Substitute') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7171,7 +7192,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Reversal') {
+			if (move.name === 'Reversal') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7186,7 +7208,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Sludge bomb') {
+			if (move.name === 'Sludge bomb') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7201,7 +7224,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Spikes') {
+			if (move.name === 'Spikes') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7216,7 +7240,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Outrage') {
+			if (move.name === 'Outrage') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7231,7 +7256,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Psyshock') {
+			if (move.name === 'Psyshock') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7246,7 +7272,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Endure') {
+			if (move.name === 'Endure') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7261,7 +7288,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Sleep Talk') {
+			if (move.name === 'Sleep Talk') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7276,7 +7304,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Megahorn') {
+			if (move.name === 'Megahorn') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7291,7 +7320,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Baton Pass') {
+			if (move.name === 'Baton Pass') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7306,7 +7336,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Encore') {
+			if (move.name === 'Encore') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7321,7 +7352,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Iron Tail') {
+			if (move.name === 'Iron Tail') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7336,7 +7368,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Crunch') {
+			if (move.name === 'Crunch') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7351,7 +7384,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Shadow Ball') {
+			if (move.name === 'Shadow Ball') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7366,7 +7400,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Future Sight') {
+			if (move.name === 'Future Sight') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7381,7 +7416,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Uproar') {
+			if (move.name === 'Uproar') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7396,7 +7432,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Heat Wave') {
+			if (move.name === 'Heat Wave') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7411,7 +7448,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Taunt') {
+			if (move.name === 'Taunt') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7425,8 +7463,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 10,
 		},
-		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Trick') {
+		onBeforeMove(source, target, move) {
+			if (move.name === 'Trick') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7441,7 +7480,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Superpower') {
+			if (move.name === 'Superpower') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7456,7 +7496,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Skill Swap') {
+			if (move.name === 'Skill Swap') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7471,7 +7512,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Blaze Kick') {
+			if (move.name === 'Blaze Kick') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7486,7 +7528,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Hyper Voice') {
+			if (move.name === 'Hyper Voice') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7501,7 +7544,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 130,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Overheat') {
+			if (move.name === 'Overheat') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7516,7 +7560,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Cosmic Power') {
+			if (move.name === 'Cosmic Power') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7531,7 +7576,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Muddy Water') {
+			if (move.name === 'Muddy Water') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7546,7 +7592,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Iron Defense') {
+			if (move.name === 'Iron Defense') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7561,7 +7608,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Dragon Claw') {
+			if (move.name === 'Dragon Claw') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7576,7 +7624,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Bulk Up') {
+			if (move.name === 'Bulk Up') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7591,7 +7640,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Calm Mind') {
+			if (move.name === 'Calm Mind') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7606,7 +7656,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Leaf Blade') {
+			if (move.name === 'Leaf Blade') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7621,7 +7672,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Dragon Dance') {
+			if (move.name === 'Dragon Dance') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7636,7 +7688,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Gyro Ball') {
+			if (move.name === 'Gyro Ball') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7651,7 +7704,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Close Combat') {
+			if (move.name === 'Close Combat') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7666,7 +7720,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Toxic Spikes') {
+			if (move.name === 'Toxic Spikes') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7681,7 +7736,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Flare Blitz') {
+			if (move.name === 'Flare Blitz') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7696,7 +7752,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Aura Sphere') {
+			if (move.name === 'Aura Sphere') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7711,7 +7768,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Poison Jab') {
+			if (move.name === 'Poison Jab') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7726,7 +7784,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Dark Pulse') {
+			if (move.name === 'Dark Pulse') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7741,7 +7800,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Seed Bomb') {
+			if (move.name === 'Seed Bomb') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7756,7 +7816,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'X-Scissor') {
+			if (move.name === 'X-Scissor') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7771,7 +7832,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Bug Buzz') {
+			if (move.name === 'Bug Buzz') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7786,7 +7848,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Dragon Pulse') {
+			if (move.name === 'Dragon Pulse') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7801,7 +7864,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Power Gem') {
+			if (move.name === 'Power Gem') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7816,7 +7880,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Focus Blast') {
+			if (move.name === 'Focus Blast') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7831,7 +7896,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Energy Ball') {
+			if (move.name === 'Energy Ball') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7846,7 +7912,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Brave Bird') {
+			if (move.name === 'Brave Bird') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7861,7 +7928,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Earth Power') {
+			if (move.name === 'Earth Power') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7876,7 +7944,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Nasty Plot') {
+			if (move.name === 'Nasty Plot') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -7891,7 +7960,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Zen Headbutt') {
+			if (move.name === 'Zen Headbutt') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7906,7 +7976,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Flash Cannon') {
+			if (move.name === 'Flash Cannon') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7921,7 +7992,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 130,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Leaf Storm') {
+			if (move.name === 'Leaf Storm') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -7936,7 +8008,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Power Whip') {
+			if (move.name === 'Power Whip') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7951,7 +8024,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 120,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Gunk Shot') {
+			if (move.name === 'Gunk Shot') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7966,7 +8040,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Iron Head') {
+			if (move.name === 'Iron Head') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7981,7 +8056,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Stone Edge') {
+			if (move.name === 'Stone Edge') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -7996,7 +8072,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Stealth Rock') {
+			if (move.name === 'Stealth Rock') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -8011,7 +8088,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Grass Knot') {
+			if (move.name === 'Grass Knot') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8026,7 +8104,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Sludge Wave') {
+			if (move.name === 'Sludge Wave') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8041,7 +8120,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Heavy Slam') {
+			if (move.name === 'Heavy Slam') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8056,7 +8136,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Electro Ball') {
+			if (move.name === 'Electro Ball') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -8071,7 +8152,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Foul Play') {
+			if (move.name === 'Foul Play') {
+				source.useItem();
 				this.boost({ def: 1 }, source, source);
 			}
 		},
@@ -8086,7 +8168,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 20,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Stored Power') {
+			if (move.name === 'Stored Power') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8101,7 +8184,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Ally Switch') {
+			if (move.name === 'Ally Switch') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -8116,7 +8200,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Scald') {
+			if (move.name === 'Scald') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8131,7 +8216,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Work Up') {
+			if (move.name === 'Work Up') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -8146,7 +8232,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Wild Charge') {
+			if (move.name === 'Wild Charge') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8161,7 +8248,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Drill Run') {
+			if (move.name === 'Drill Run') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8176,7 +8264,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Heat Crash') {
+			if (move.name === 'Heat Crash') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8191,7 +8280,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 110,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Hurricane') {
+			if (move.name === 'Hurricane') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8206,7 +8296,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Play Rough') {
+			if (move.name === 'Play Rough') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8221,7 +8312,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 10,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Venom Drench') {
+			if (move.name === 'Venom Drench') {
+				source.useItem();
 				this.boost({ spe: 1 }, source, source);
 			}
 		},
@@ -8236,7 +8328,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Dazzling Gleam') {
+			if (move.name === 'Dazzling Gleam') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8251,7 +8344,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Darkest Lariat') {
+			if (move.name === 'Darkest Lariat') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8266,7 +8360,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 95,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'High Horsepower') {
+			if (move.name === 'High Horsepower') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8281,7 +8376,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Throat Chop') {
+			if (move.name === 'Throat Chop') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8296,7 +8392,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 90,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Pollen Puff') {
+			if (move.name === 'Pollen Puff') {
+				source.useItem();
 				this.boost({ spa: 1 }, source, source);
 			}
 		},
@@ -8311,7 +8408,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Psychic Fangs') {
+			if (move.name === 'Psychic Fangs') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8326,7 +8424,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 85,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Liquidation') {
+			if (move.name === 'Liquidation') {
+				source.useItem();
 				this.boost({ atk: 1 }, source, source);
 			}
 		},
@@ -8341,7 +8440,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onAfterMove(source, target, move) {
-			if (source.useItem() && move.name === 'Body Press') {
+			if (move.name === 'Body Press') {
+				source.useItem();
 				this.boost({ def: 1 }, source, source);
 			}
 		},
