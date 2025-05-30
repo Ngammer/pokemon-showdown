@@ -565,7 +565,7 @@
           ],
           "item": ["Pidgeotite"],
           "nature": "Timid",
-          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "evs": {"spa": 252, "spd": 4, "spe": 252},
           "ivs": {"atk": 0},
           "teraType": ["Normal"],
           "wantsMega": true,
@@ -582,7 +582,7 @@
         ],
         "item": ["Pidgeotite"],
         "nature": "Timid",
-        "evs": {"atk": 252, "spd": 4, "spe": 252},
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
         "teraType": ["Normal"],
         "wantsMega": true,
         "ability": ["Tangled Feet", "Big Pecks"]
@@ -1464,5 +1464,259 @@
             "ability": ["Chlorophyll"]
         }
       ]
-  }
+  },
+    "parasect": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Parasect",
+            "weight": 100,
+            "moves": [
+                ["Parasitic Clamp"],
+                ["Knock Off"],
+                ["Leech Life"],
+                ["Spore", "Dig", "Brik Break"]
+            ],
+            "item": ["Life Orb", "Assault Vest", "Choice Band"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Damp"]
+        }
+      ]
+  },
+  "venomoth": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Venomoth",
+                "weight": 90,
+                "moves": [
+                    ["Giga Drain", "Hidden Power Ice", "Hidden Power Ground"],
+                    ["Quiver Dance"],
+                    ["Sludge Wave", "Acid Spray"],
+                    ["Bug Buzz", "String Shot"]
+                ],
+                "item": ["Heavy-Duty Boots", "Black Sludge"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Wonder Skin", "Tinted Lens"]
+            },
+            {
+                "species": "Venomoth",
+                "weight": 10,
+                "moves": [
+                    ["U-turn"],
+                    ["Defog"],
+                    ["Sludge Wave", "Mega Drain", "Bug Buzz"],
+                    ["Stun Spore", "Sleep Powder", "Toxic", "Toxic Spikes", "Roost"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Timid",
+                "evs": {"spe": 252, "spa": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Shield Dust"]
+            }
+        ]
+    },
+    "dugtrio": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Dugtrio",
+                "weight": 100,
+                "moves": [
+                    ["Stone Edge"],
+                    ["Earthquake"],
+                    ["Work Up", "Stealth Rock", "Sucker Punch"],
+                    ["Cut", "Pursuit", "Aerial Ace"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Focus Sash", "Groundium Z"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sand Force", "Arena Trap"]
+            }
+        ]
+    },
+    "dugtrioalola": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Dugtrio",
+                "weight": 100,
+                "moves": [
+                    ["Iron Head"],
+                    ["Earthquake"],
+                    ["Work Up", "Stealth Rock", "Sucker Punch", "Metal Claw"],
+                    ["Stone Edge", "Pursuit", "Aerial Ace", "Toxic"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Weakness Policy","Leftovers"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sand Force", "Tangling Hair"]
+            }
+        ]
+    },
+    "persian": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Persian",
+                "weight": 50,
+                "moves": [
+                    ["Slash"],
+                    ["U-turn", "Double Team"],
+                    ["Psych Up", "Fake Out", "Thunder Wave", "Metal Claw"],
+                    ["Play Rough", "Knock Off", "Taunt", "Bite", "Payback"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Technician"]
+            },
+            {
+                "species": "Persian",
+                "weight": 25,
+                "moves": [
+                    ["Slash"],
+                    ["Work Up"],
+                    ["Metal Claw", "Dig"],
+                    ["Play Rough", "Knock Off", "Bite", "Payback", "Covet", "Thief"]
+                ],
+                "item": ["Life Orb", "TR85"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Technician"]
+            },
+            {
+                "species": "Persian",
+                "weight": 25,
+                "moves": [
+                    ["Slash"],
+                    ["Fury Swipes"],
+                    ["Pay Day"],
+                    ["Play Rough", "Covet", "Flail", "Work Up"]
+                ],
+                "item": ["Loaded Dice"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Technician"]
+            }
+        ]
+    },
+    "persianalola": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Persian-Alola",
+                "weight": 65,
+                "moves": [
+                    ["Nasty Plot"],
+                    ["Thunderbolt", "Power Gem"],
+                    ["Burning Jealousy"],
+                    ["Dark Pulse"]
+                ],
+                "item": ["TR68", "Life Orb"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Warning"]
+            },
+            {
+                "species": "Persian-Alola",
+                "weight": 35,
+                "moves": [
+                    ["Parting Shot"],
+                    ["Encore", "Taunt", "Fake Out"],
+                    ["Dark Pulse"],
+                    ["Knock Off", "Foul Play"]
+                ],
+                "item": ["Darkinium Z"],
+                "nature": "Timid",
+                "evs": {"hp": 252, "def": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Cloak"]
+            }
+        ]
+    },
+    "golduck": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Golduck",
+        "weight": 70,
+        "moves": [
+            ["Ice Beam", "Clear Smog"],
+            ["Hydro Pump", "Chilling Water"],
+            ["Focus Blast", "Flip Turn", "Power Gem", "Mud Shot", "Vacuum Wave"],
+            ["Telekinesis", "Psyshock"]
+        ],
+        "item": ["Choice Scarf", "Heavy-Duty Boots"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Neuroforce", "Cloud Nine"]
+    },
+    {
+        "species": "Golduck",
+        "weight": 30,
+        "moves": [
+            ["Nasty Plot"],
+            ["Hydro Pump", "Surf"],
+            ["Telekinesis", "Psyshock"],
+            ["Focus Blast", "Power Gem", "Mud Shot", "Hidden Power Fire"]
+        ],
+        "item": ["Lure Ball"],
+        "nature": "Modest",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "ability": ["Swift Swim"]
+    }
+    ]
+},
+"primeape": {
+        "weight": 5,
+        "sets": [
+            {
+                "species": "Primeape",
+                "weight": 70,
+                "moves": [
+                    ["Bulk Up"],
+                    ["Drain Punch"],
+                    ["Rage Fist", "Power Trip"],
+                    ["Focus Energy", "Ice Punch", "Covet"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Jolly",
+                "evs": {"hp": 252, "atk": 4, "spd": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Anger Point"]
+            },
+            {
+                "species": "Primeape",
+                "weight": 30,
+                "moves": [
+                    ["U-turn"],
+                    ["Close Combat"],
+                    ["Taunt", "Covet", "Ice Punch"],
+                    ["Stealth Rock", "Beat Up", "Earthquake"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vital Spirit"]
+            }
+        ]
+    }
 }
