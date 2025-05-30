@@ -1635,7 +1635,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Snow Warning"]
+                "ability": ["Fur Coat"]
             },
             {
                 "species": "Persian-Alola",
@@ -1651,7 +1651,7 @@
                 "evs": {"hp": 252, "def": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Snow Cloak"]
+                "ability": ["Fur Coat"]
             }
         ]
     },
