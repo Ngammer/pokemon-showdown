@@ -1240,7 +1240,7 @@
           },
           {
             "species": "Clefable",
-            "weight": 50,
+            "weight": 30,
             "moves": [
                 ["Stealth Rock", "Protect"],
                 ["Soft Boiled", "Wish"],
