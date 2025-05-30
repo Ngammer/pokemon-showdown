@@ -794,12 +794,12 @@
       "sets": [
           {
               "species": "Arbok",
-              "weight": 15,
+              "weight": 30,
               "moves": [
                   ["Coil"],
-                  ["Earthquake"],
-                  ["Ice Fang"],
-                  ["Poison Sting"]
+                  ["Earthquake", "Crunch"],
+                  ["Ice Fang", "Fire Fang"],
+                  ["Poison Sting", "Poison Jab"]
               ],
               "item": ["Black Sludge"],
               "nature": "Jolly",
@@ -809,7 +809,7 @@
           },
           {
               "species": "Arbok",
-              "weight": 25,
+              "weight": 30,
               "moves": [
                   ["Toxic Spikes"],
                   ["Poison Tail"],
@@ -824,11 +824,11 @@
           },
           {
               "species": "Arbok",
-              "weight": 60,
+              "weight": 40,
               "moves": [
                   ["Haze"],
                   ["Glare", "Toxic"],
-                  ["Leech Life"],
+                  ["Leech Life", "Poison Jab"],
                   ["Knock Off"]
               ],
               "item": ["Black Sludge"],
