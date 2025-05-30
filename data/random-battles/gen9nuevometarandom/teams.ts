@@ -1258,6 +1258,11 @@ export class RandomNMTeams {
 			species.id !== 'yanmega' &&
 			this.dex.getEffectiveness('Rock', species) >= 2 && (!types.includes('Flying') || !isDoubles)
 		) return 'Heavy-Duty Boots';
+		// Agregando especificaciones luego de reworkear los items
+		if (counter.get('Bite') > 1 && ability === 'Strong Jaw') return 'Razor Fang';
+		if (ability === 'Swift Swim') return 'Lure Ball';
+		if (ability === 'Slush Rush') return 'Moon Ball';
+		if (moves.has('flamethrower')) return 'TR02';
 	}
 
 	/** Item generation specific to Random Doubles */

@@ -1725,5 +1725,25 @@
                 "ability": ["Vital Spirit"]
             }
         ]
+    },
+    "arcanine": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Arcanine",
+                "weight": 100,
+                "moves": [
+                    ["Fire Fang", "Sacred Fire", "Raging Fury", "Flare Blitz"],
+                    ["Burn Up", "Crunch", "Extreme Speed"],
+                    ["Psychic Fangs", "Close Combat", "Play Rough"],
+                    ["Wild Charge", "Thunder Fang"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Fire Stone","Razor Fang"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Intimidate", "Flash Fire", "Strong Jaw"]
+            }
+        ]
     }
 }
