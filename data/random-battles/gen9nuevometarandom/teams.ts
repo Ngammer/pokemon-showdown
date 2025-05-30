@@ -1263,6 +1263,9 @@ export class RandomNMTeams {
 		if (ability === 'Swift Swim') return 'Lure Ball';
 		if (ability === 'Slush Rush') return 'Moon Ball';
 		if (moves.has('flamethrower')) return 'TR02';
+		if (moves.has('flareblitz')) return 'TR55';
+		if (moves.has('workup')) return 'TR85';
+		if (moves.has('nastyplot')) return 'TR68';
 	}
 
 	/** Item generation specific to Random Doubles */

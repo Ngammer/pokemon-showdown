@@ -1745,5 +1745,133 @@
                 "ability": ["Intimidate", "Flash Fire", "Strong Jaw"]
             }
         ]
+    },
+    "arcaninehisui": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Arcanine-Hisui",
+                "weight": 100,
+                "moves": [
+                    ["Raging Fury", "Flare Blitz"],
+                    ["Covet", "Psychic Fangs", "Extreme Speed", "Close Combat"],
+                    ["Monolith", "Head Smash"],
+                    ["Wild Charge", "Thunder Fang"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Choice Scarf","Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Rock Head"]
+            },
+            {
+                "species": "Arcanine-Hisui",
+                "weight": 100,
+                "moves": [
+                    ["Raging Fury", "Flare Blitz"],
+                    ["Covet", "Psychic Fangs", "Extreme Speed", "Close Combat"],
+                    ["Monolith", "Head Smash"],
+                    ["Wild Charge", "Thunder Fang"]
+                ],
+                "item": ["Totem Gigante"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsTotem": true,
+                "ability": ["Rock Head"]
+            }
+        ]
+    },
+    "poliwrath": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Poliwrath",
+                "weight": 100,
+                "moves": [
+                    ["Surging Strikes"],
+                    ["Bulk Up", "Knock Off", "High Horsepower", "Earthquake"],
+                    ["Ice Ball", "Ice Punch"],
+                    ["Close Combat", "Drain Punch"]
+                ],
+                "item": ["Choice Band", "Lure Ball", "Leftovers", "Life Orb", "Choice Scarf"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Swift Swim"]
+            }
+        ]
+    },
+    "alakazam": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Alakazam",
+        "weight": 70,
+        "moves": [
+            ["Psyshock", "Telekinesis"],
+            ["Energy Ball", "Shadow Ball", "Swift"],
+            ["Dazzling Gleam", "Focus Blast", "Submission"],
+            ["Nasty Plot"]
+        ],
+        "item": ["Life Orb"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Magic Guard"]
+    },
+    {
+        "species": "Alakazam",
+        "weight": 30,
+        "moves": [
+            ["Nasty Plot", "Calm Mind"],
+            ["Recover", "Energy Ball", "Shadow Ball", "Swift"],
+            ["Telekinesis", "Psyshock"],
+            ["Focus Blast", "Dazzling Gleam", "Submission"]
+        ],
+        "item": ["Alakazite"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "wantsMega": true,
+        "ability": ["Magic Guard"]
     }
+    ]
+},
+"machamp": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Machamp",
+            "weight": 100,
+            "moves": [
+                ["Bulk Up", "Stone Edge", "Coaching"],
+                ["Bullet Punch", "Rolling Kick", "Knock Off"],
+                ["Drain Punch", "Dynamic Punch", "Cross Chop"],
+                ["Payback", "Thunder Punch", "Heavy Slam", "Cross Poison"]
+            ],
+            "item": ["Flame Orb", "Assault Vest", "Choice Band"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Guts", "No Guard"]
+        },
+        {
+            "species": "Machamp",
+            "weight": 100,
+            "moves": [
+                ["Rock Climb"],
+                ["Power-Up Punch", "Ice Punch", "Fire Punch"],
+                ["Drain Punch"],
+                ["Bullet Punch"]
+            ],
+            "item": ["Machampite"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Steadfast"]
+        }
+      ]
+  }
 }
