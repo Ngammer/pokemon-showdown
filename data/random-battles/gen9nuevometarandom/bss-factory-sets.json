@@ -1235,6 +1235,7 @@
               "item": ["Leftovers", "Moon Stone", "Clear Amulet"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Magic Guard"]
           },
@@ -1250,6 +1251,7 @@
             "item": ["Leftovers", "Moon Stone"],
             "nature": "Calm",
             "evs": {"spa": 4, "hp": 252, "spd": 252},
+            "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
             "ability": ["Unaware"]
         }
@@ -1360,6 +1362,7 @@
               "item": ["Leftovers", "Moon Stone"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Cute Charm", "Firsk"]
           },
@@ -1375,6 +1378,7 @@
             "item": ["Moon Stone"],
             "nature": "Modest",
             "evs": {"spa": 4, "hp": 252, "spd": 252},
+            "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
             "ability": ["Unaware"]
         }
@@ -1430,6 +1434,7 @@
               "item": ["Black Sludge"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Stench"]
           },
@@ -1445,6 +1450,7 @@
               "item": ["Rocky Helmet"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Effect Spore"]
           },
@@ -1460,6 +1466,7 @@
             "item": ["Leaf Stone", "Life Orb"],
             "nature": "Modest",
             "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
             "ability": ["Chlorophyll"]
         }
