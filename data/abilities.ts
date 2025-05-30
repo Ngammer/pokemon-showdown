@@ -6710,7 +6710,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['bullet']) {
-				this.debug('Heavy artillery boost');
+				this.debug('Heavy Artillery boost');
 				return this.chainModify(2);
 			}
 		},
@@ -6720,7 +6720,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Heavy artillery",
+		name: "Heavy Artillery",
 		rating: 3,
 		num: -134,
 	},

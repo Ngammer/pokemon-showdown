@@ -4865,7 +4865,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Octank",
 		types: ["Water", "Grass"],
 		baseStats: { hp: 80, atk: 110, def: 85, spa: 135, spd: 85, spe: 55 },
-		abilities: { 0: "Heavy artillery", H: "Rattled" },
+		abilities: { 0: "Heavy Artillery", H: "Rattled" },
 		heightm: 1.2,
 		weightkg: 35.3,
 		color: "Red",

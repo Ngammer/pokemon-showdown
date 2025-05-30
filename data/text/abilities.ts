@@ -2410,7 +2410,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		shortDesc: "Raises a random stat when hit by an attack.",
 	},
 	heavyartillery: {
-		name: "Heavy artillery",
+		name: "Heavy Artillery",
 		shortDesc: "2x power for projectile moves, 15% self HP loss after each attack.",
 	},
 	hardhead: {
