@@ -6222,7 +6222,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, punch: 1 },
 		self: {
 			boosts: {
-				atk: -2,
+				atk: -1,
 			},
 		},
 		secondary: null,

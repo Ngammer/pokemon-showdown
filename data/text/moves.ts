@@ -2264,8 +2264,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	focuspunch: {
 		name: "Focus Punch",
-		desc: "Lowers the user's Attack by 2 stages.",
-		shortDesc: "Lowers the user's Atk by 2.",
+		desc: "Lowers the user's Attack by 1 stages.",
+		shortDesc: "Lowers the user's Atk by 1.",
 		gen4: {
 			desc: "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move, but it still loses PP.",
 		},
