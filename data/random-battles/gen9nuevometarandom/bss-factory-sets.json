@@ -1482,7 +1482,7 @@
                 ["Parasitic Clamp"],
                 ["Knock Off"],
                 ["Leech Life"],
-                ["Spore", "Dig", "Brik Break"]
+                ["Spore", "Dig", "Brick Break"]
             ],
             "item": ["Life Orb", "Assault Vest", "Choice Band"],
             "nature": "Adamant",
