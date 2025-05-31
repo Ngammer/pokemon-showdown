@@ -1846,12 +1846,27 @@
             "species": "Machamp",
             "weight": 100,
             "moves": [
-                ["Bulk Up", "Stone Edge", "Coaching"],
+                ["Stone Edge"],
                 ["Bullet Punch", "Rolling Kick", "Knock Off"],
-                ["Drain Punch", "Dynamic Punch", "Cross Chop"],
+                ["Dynamic Punch", "Cross Chop"],
                 ["Payback", "Thunder Punch", "Heavy Slam", "Cross Poison"]
             ],
-            "item": ["Flame Orb", "Assault Vest", "Choice Band"],
+            "item": ["Assault Vest", "Choice Band"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Guts", "No Guard"]
+        },
+        {
+            "species": "Machamp",
+            "weight": 100,
+            "moves": [
+                ["Bulk Up", "Coaching"],
+                ["Bullet Punch", "Rolling Kick", "Knock Off"],
+                ["Drain Punch"],
+                ["Payback", "Thunder Punch", "Heavy Slam", "Cross Poison"]
+            ],
+            "item": ["Flame Orb"],
             "nature": "Adamant",
             "evs": {"hp": 248, "atk": 252, "spd": 8},
             "teraType": ["Fairy", "Water"],
