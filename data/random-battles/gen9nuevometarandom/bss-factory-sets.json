@@ -1377,7 +1377,7 @@
             ],
             "item": ["Moon Stone"],
             "nature": "Modest",
-            "evs": {"spa": 4, "hp": 252, "spd": 252},
+            "evs": {"spd": 4, "hp": 252, "spa": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
             "ability": ["Competitive"]
@@ -1873,5 +1873,224 @@
             "ability": ["Steadfast"]
         }
       ]
-  }
+  },
+  "victreebel": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Victreebel",
+                "weight": 100,
+                "moves": [
+                    ["Leech Life", "Knock Off", "Sucker Punch", "Thief"],
+                    ["Swords Dance"],
+                    ["Power Whip", "Seed Bomb", "Vine Whip", "Razor Leaf"],
+                    ["Poison Jab"]
+                ],
+                "item": ["Safari Ball"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Chlorophyll"]
+            }
+        ]
+    },
+    "tentacruel": {
+        "weight": 5,
+        "sets": [
+            {
+                "species": "Tentacruel",
+                "weight": 50,
+                "moves": [
+                    ["Venoshock"],
+                    ["Toxic Spikes"],
+                    ["Brine", "Scald"],
+                    ["Mega Drain", "Giga Drain", "Whirlpool"]
+                ],
+                "item": ["Black Sludge"],
+                "nature": "Calm",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Clear Body", "Liquid Ooze", "Rain Dish"]
+            },
+            {
+                "species": "Tentacruel",
+                "weight": 50,
+                "moves": [
+                    ["Toxic Spikes", "Toxic"],
+                    ["Mortal Spin", "Rapid Spin"],
+                    ["Scald", "Brine"],
+                    ["Knock Off", "Flip Turn", "Haze"]
+                ],
+                "item": ["Black Sludge"],
+                "nature": "Timid",
+                "evs": {"hp": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Inner Focus", "Infiltrator"]
+            }
+        ]
+    },
+    "golem": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Poliwrath",
+                "weight": 100,
+                "moves": [
+                    ["Protect", "Rock Pholish"],
+                    ["Dig", "Earthquake", "Magnitude"],
+                    ["Rollout", "Rock Throw", "Smack Down"],
+                    ["Thunder Punch", "Fire Punch", "Sucker Punch"]
+                ],
+                "item": ["Weakness Policy", "Power Herb"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Speed Boost", "Sturdy"]
+            }
+        ]
+    },
+    "golemalola": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Golem-Alola",
+        "weight": 70,
+        "moves": [
+            ["Self-Destruct", "Hyper Beam", "Round"],
+            ["Galvanized Rock"],
+            ["Flamethrower", "Hidden Power Ice", "Submission"],
+            ["Volt Switch"]
+        ],
+        "item": ["Choice Scarf", "Choice Specs", "Life Orb"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Galvanize"]
+    },
+    {
+        "species": "Golem-Alola",
+        "weight": 70,
+        "moves": [
+            ["Galvanized Rock"],
+            ["Rock Pholish"],
+            ["Flamethrower", "Hidden Power Ice", "Thunder Shock"],
+            ["Thunderbolt"]
+        ],
+        "item": ["Weakness Policy"],
+        "nature": "Modest",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Sturdy"]
+    }
+    ]
+},
+"rapidash": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Rapidash",
+                "weight": 100,
+                "moves": [
+                    ["Flare Blitz"],
+                    ["Play Rough"],
+                    ["Drill Run", "High Horsepower", "Swords Dance", "Curse"],
+                    ["Wild Charge"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Run Away"]
+            }
+        ]
+    },
+"rapidashgalar": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Rapidash-Galar",
+                "weight": 100,
+                "moves": [
+                    ["Scorching Sands", "Mystical Fire"],
+                    ["Thunderbolt"],
+                    ["Dazzling Gleam"],
+                    ["Psychic"]
+                ],
+                "item": ["Choice Specs", "Life Orb", "Heavy-Duty Boots"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Run Away", "Pastel Veil", "Anticipation"]
+            }
+        ]
+    },
+    "slowbro": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Slowbro",
+                "weight": 25,
+                "moves": [
+                    ["Teleport", "Thunder Wave", "Toxic", "Yawn"],
+                    ["Scald", "Brine", "Chilling Water"],
+                    ["Slack Off"],
+                    ["Future Sight", "Body Press", "Incinerate", "Psywave"]
+                ],
+                "item": ["Leftovers", "Rocky Helmet"],
+                "nature": "Bold",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Regenerator"]
+            },
+            {
+                "species": "Slowbro",
+                "weight": 25,
+                "moves": [
+                    ["Trick Room"],
+                    ["Chilling Water", "Scald", "Brine"],
+                    ["Teleport"],
+                    ["Future Sight", "Psywave", "Incinerate"]
+                ],
+                "item": ["Dimencionador"],
+                "nature": "Relaxed",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Regenerator"]
+            },
+            {
+                "species": "Slowbro",
+                "weight": 35,
+                "moves": [
+                    ["Calm Mind", "Trick Room", "Yawn", "Toxic", "Thunder Wave"],
+                    ["Iron Defense", "Teleport", "Double Team", "Flamethrower", "Future Sight"],
+                    ["Body Press", "Scald"],
+                    ["Slack Off"]
+                ],
+                "item": ["Slowbronite"],
+                "nature": "Calm",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
+                "ability": ["Oblivious", "Own Tempo"]
+            },
+            {
+                "species": "Slowbro",
+                "weight": 10,
+                "moves": [
+                    ["Calm Mind"],
+                    ["Iron Defense"],
+                    ["Stored Power"],
+                    ["Slack Off"]
+                ],
+                "item": ["Slowbronite"],
+                "nature": "Calm",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
+                "ability": ["Oblivious", "Own Tempo"]
+            }
+        ]
+    }
 }

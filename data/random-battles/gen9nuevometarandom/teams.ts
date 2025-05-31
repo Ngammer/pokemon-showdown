@@ -116,7 +116,7 @@ const NO_STAB = [
 	'dragontail', 'doomdesire', 'electroweb', 'eruption', 'explosion', 'fakeout', 'feint', 'flamecharge', 'flipturn', 'futuresight',
 	'grassyglide', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch', 'meteorbeam', 'mortalspin', 'nuzzle', 'pluck', 'pursuit',
 	'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skydrop', 'snarl', 'strugglebug', 'suckerpunch', 'uturn',
-	'vacuumwave', 'voltswitch', 'watershuriken', 'waterspout',
+	'vacuumwave', 'voltswitch', 'watershuriken', 'waterspout', 'rollingkick', 'poisontail'
 ];
 // Hazard-setting moves
 const HAZARDS = [
@@ -1243,7 +1243,7 @@ export class RandomNMTeams {
 			return (moves.has('closecombat') || moves.has('leafstorm')) ? 'White Herb' : 'Sitrus Berry';
 		}
 		if (moves.has('shellsmash') && ability !== 'Weak Armor') return 'White Herb';
-		if (moves.has('meteorbeam') || (moves.has('electroshot') && !teamDetails.rain)) return 'Power Herb';
+		if (moves.has('meteorbeam') || (moves.has('electroshot') && !teamDetails.rain) || moves.has('dive') || moves.has('dig') || moves.has('fly') || moves.has('skyattack') || moves.has('frenzyplant') || moves.has('blastburn')) return 'Power Herb';
 		if (moves.has('acrobatics') && ability !== 'Protosynthesis') return '';
 		if (moves.has('auroraveil') || moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
 		if (ability === 'Gluttony') return `${this.sample(['Aguav', 'Figy', 'Iapapa', 'Mago', 'Wiki'])} Berry`;
@@ -1262,6 +1262,7 @@ export class RandomNMTeams {
 		if (counter.get('Bite') > 1 && ability === 'Strong Jaw') return 'Razor Fang';
 		if (ability === 'Swift Swim') return 'Lure Ball';
 		if (ability === 'Slush Rush') return 'Moon Ball';
+		if (ability === 'Chlorophyll') return 'Safari Ball';
 		if (moves.has('flamethrower')) return 'TR02';
 		if (moves.has('flareblitz')) return 'TR55';
 		if (moves.has('workup')) return 'TR85';
