@@ -1936,7 +1936,7 @@
                 "species": "Poliwrath",
                 "weight": 100,
                 "moves": [
-                    ["Protect", "Rock Pholish"],
+                    ["Protect", "Rock Polish"],
                     ["Dig", "Earthquake", "Magnitude"],
                     ["Rollout", "Rock Throw", "Smack Down"],
                     ["Thunder Punch", "Fire Punch", "Sucker Punch"]
@@ -1973,7 +1973,7 @@
         "weight": 70,
         "moves": [
             ["Galvanized Rock"],
-            ["Rock Pholish"],
+            ["Rock Polish"],
             ["Flamethrower", "Hidden Power Ice", "Thunder Shock"],
             ["Thunderbolt"]
         ],
