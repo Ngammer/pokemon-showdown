@@ -160,6 +160,7 @@ function getSets(species: string | Species, format: string | Format = 'gen9rando
 	const isDoubles = format.gameType === 'doubles';
 	let folderName = format.mod;
 	if (format.team === 'randomBaby') folderName += 'baby';
+	if (format.team === 'randomBSSFactory') folderName += 'nuevometarandom';
 	if (species.isNonstandard === 'CAP') folderName += 'cap';
 	const setsFile = JSON.parse(
 		FS(`data/random-battles/${folderName}/${isDoubles ? 'doubles-' : ''}sets.json`)
@@ -466,6 +467,8 @@ function CAP1v1Sets(species: string | Species) {
 
 export const commands: Chat.ChatCommands = {
 	randbats: 'randombattles',
+	nmrand: 'randombattles',
+	nuevometarandombattle: 'randombattles',
 	randomdoublesbattle: 'randombattles',
 	randdubs: 'randombattles',
 	babyrandombattle: 'randombattles',
@@ -478,10 +481,12 @@ export const commands: Chat.ChatCommands = {
 		let isDoubles = cmd === 'randomdoublesbattle' || cmd === 'randdubs';
 		let isBaby = cmd === 'babyrandombattle' || cmd === 'babyrands';
 		let isNoDMax = cmd.includes('nodmax');
+		let isNM = cmd === 'nmrand' || cmd === 'nuevometarandombattle';
 		if (battle) {
 			if (battle.format.includes('nodmax')) isNoDMax = true;
 			if (battle.format.includes('doubles') || battle.gameType === 'freeforall') isDoubles = true;
 			if (battle.format.includes('baby')) isBaby = true;
+			if (battle.format.includes('nuevo')) isNM = true;
 		}
 
 		const args = target.split(',');
@@ -505,7 +510,8 @@ export const commands: Chat.ChatCommands = {
 		const babyModifier = isBaby ? 'baby' : '';
 		const doublesModifier = isDoubles ? 'doubles' : '';
 		const noDMaxModifier = isNoDMax ? 'nodmax' : '';
-		const formatName = `gen${dex.gen}${extraFormatModifier}${babyModifier}random${doublesModifier}battle${noDMaxModifier}`;
+		const nMModifier = isNM ? 'nuevometa' : '';
+		const formatName = `gen${dex.gen}${extraFormatModifier}${babyModifier}${nMModifier}random${doublesModifier}battle${noDMaxModifier}`;
 		const format = dex.formats.get(formatName);
 
 		const movesets = [];

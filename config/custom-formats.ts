@@ -14,7 +14,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: ['Baton Pass', 'Uber'],
 	},
 	{
-		name: "[Gen 9] Nuevo Meta Random",
+		name: "[Gen 9] Nuevo Meta Random Battle",
 		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
 		mod: 'gen9',
 		team: 'randomBSSFactory',
