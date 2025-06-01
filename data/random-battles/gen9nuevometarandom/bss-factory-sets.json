@@ -2252,12 +2252,12 @@
                   ["Haze"],
                   ["Knock Off", "Fake Out"]
               ],
-              "item": ["Leftovers", "Moon Stone", "Clear Amulet"],
+              "item": ["Leftovers"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Magic Guard"]
+              "ability": ["Hydration"]
           }
       ]
   },
