@@ -2141,12 +2141,12 @@
                   ["Flash Cannon"],
                   ["Volt Switch"]
               ],
-              "item": ["Galarica Cuff"],
+              "item": ["Zoom Lens"],
               "nature": "Modest",
               "evs": {"hp": 252, "spd": 4, "spa": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Quick Draw"]
+              "ability": ["Analytic"]
           }
       ]
   },
