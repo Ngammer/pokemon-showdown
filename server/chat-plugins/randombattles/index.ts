@@ -624,7 +624,7 @@ export const commands: Chat.ChatCommands = {
 			}
 			let mod = 'gen9';
 			if (args[1] && toID(args[1]) in Dex.dexes && Dex.dexes[toID(args[1])].gen >= 7) mod = toID(args[1]);
-			const bssSets = battleFactorySets(species, null, mod, true);
+			const bssSets = battleFactorySets(species, null, mod, false, true);
 			if (!bssSets) return this.parse(`/help battlefactory`);
 			return this.sendReplyBox(bssSets);
 		} else {
