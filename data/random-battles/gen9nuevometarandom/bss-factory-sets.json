@@ -2907,5 +2907,273 @@
                 "ability": ["Inner Focus"]
             }
         ]
-    }
+    },
+    "lickitung": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Lickitung",
+              "weight": 50,
+              "moves": [
+                  ["Wish"],
+                  ["Protect"],
+                  ["Knock Off", "Heal Bell", "Toxic", "Whirlpool"],
+                  ["Seismic Toss"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Careful",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Unaware"]
+          },
+          {
+              "species": "Lickitung",
+              "weight": 50,
+              "moves": [
+                  ["Wish"],
+                  ["Protect"],
+                  ["Knock Off", "Heal Bell", "Toxic", "Whirlpool"],
+                  ["Body Press"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Unaware"]
+          }
+      ]
+  },
+  "weezing": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Weezing",
+              "weight": 100,
+              "moves": [
+                  ["Toxic Spikes", "Will-O-Wisp"],
+                  ["Temper Flare", "Haze", "Grudge", "Incinerate", "Gyro Ball"],
+                  ["Gunk Shot"],
+                  ["Pain Split"]
+              ],
+              "item": ["Black Sludge"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Neutralizing Gas", "Levitate", "Stench"]
+          }
+      ]
+  },
+  "weezinggalar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Weezing-Galar",
+              "weight": 25,
+              "moves": [
+                  ["Toxic Spikes", "Will-O-Wisp"],
+                  ["Incinerate"],
+                  ["Strange Steam"],
+                  ["Pain Split", "Haze", "Defog"]
+              ],
+              "item": ["Black Sludge", "Heavy-Duty Boots"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Neutralizing Gas", "Levitate"]
+          },
+          {
+              "species": "Weezing-Galar",
+              "weight": 25,
+              "moves": [
+                  ["Toxic Spikes", "Will-O-Wisp"],
+                  ["Incinerate"],
+                  ["Strange Steam"],
+                  ["Pain Split", "Haze", "Defog"]
+              ],
+              "item": ["Black Sludge", "Heavy-Duty Boots"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Neutralizing Gas", "Levitate"]
+          },
+          {
+              "species": "Weezing-Galar",
+              "weight": 25,
+              "moves": [
+                  ["Toxic Spikes", "Will-O-Wisp"],
+                  ["Incinerate", "Haze", "Defog"],
+                  ["Strange Steam"],
+                  ["Pain Split"]
+              ],
+              "item": ["Misty Surge"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Misty Surge"]
+          },
+          {
+              "species": "Weezing-Galar",
+              "weight": 25,
+              "moves": [
+                  ["Toxic Spikes", "Will-O-Wisp"],
+                  ["Incinerate", "Haze", "Defog"],
+                  ["Strange Steam"],
+                  ["Pain Split"]
+              ],
+              "item": ["Misty Surge"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Misty Surge"]
+          }
+      ]
+  },
+  "rhydon": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Rhydon",
+            "weight": 100,
+            "moves": [
+                ["Body Press"],
+                ["Heavy Slam", "Bide", "Earthquake"],
+                ["Dragon Tail"],
+                ["Stealth Rock"]
+            ],
+            "item": ["Eviolite"],
+            "nature": "Adamant",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Stamina"]
+        }
+      ]
+  },
+  "chansey": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Chansey",
+            "weight": 100,
+            "moves": [
+                ["Soft-Boiled", "Life Dew"],
+                ["Thunder Wave", "Heal Bell", "Toxic", "Aromatherapy"],
+                ["Seismic Toss"],
+                ["Stealth Rock"]
+            ],
+            "item": ["Eviolite"],
+            "nature": "Bold",
+            "evs": {"hp": 252, "def": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Natural Cure"]
+        },
+        {
+            "species": "Chansey",
+            "weight": 100,
+            "moves": [
+                ["Wish"],
+                ["Protect"],
+                ["Seismic Toss"],
+                ["Stealth Rock", "THunder Wave", "Toxic", "Heal Bell"]
+            ],
+            "item": ["Eviolite"],
+            "nature": "Bold",
+            "evs": {"hp": 252, "def": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Natural Cure"]
+        }
+      ]
+  },
+  "tangela": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Tangela",
+              "weight": 100,
+              "moves": [
+                  ["Giga Drain", "Infestation"],
+                  ["Substitute"],
+                  ["Knock Off", "Toxic", "Stun Spore"],
+                  ["Leech Seed", "Ingrain"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Unaware"]
+          }
+      ]
+  },
+  "kangaskhan": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Kangaskhan",
+            "weight": 25,
+            "moves": [
+                ["Crunch", "Covet", "Beat Up", "Aerial Ace"],
+                ["Hammer Arm", "Earthquake"],
+                ["Mega Kick"],
+                ["Curse"]
+            ],
+            "item": ["Dream Ball"],
+            "nature": "Adamant",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Early Bird"]
+        },
+        {
+            "species": "Kangaskhan",
+            "weight": 25,
+            "moves": [
+                ["Fake Out"],
+                ["Crunch", "Covet", "Beat Up", "Aerial Ace"],
+                ["Drain Punch", "Earthquake"],
+                ["Double-Edge"]
+            ],
+            "item": ["Life Orb", "Normal Gem"],
+            "nature": "Jolly",
+            "evs": {"spe": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Scrappy"]
+        },
+        {
+            "species": "Kangaskhan",
+            "weight": 25,
+            "moves": [
+                ["Covet"],
+                ["Drain Punch", "Earthquake"],
+                ["Double-Edge", "Natural Gift"],
+                ["Beat Up", "Crunch", "Sucker Punch"]
+            ],
+            "item": ["Berserk Gene"],
+            "nature": "Jolly",
+            "evs": {"spe": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Inner Focus"]
+        },
+        {
+            "species": "Kangaskhan",
+            "weight": 25,
+            "moves": [
+                ["Fake Out"],
+                ["Power-Up Punch", "Drain Punch", "Stomp", "Headbutt"],
+                ["Return", "Double-Edge"],
+                ["Sucker Punch", "Beat Up", "Crunch"]
+            ],
+            "item": ["Kangaskhanite"],
+            "nature": "Jolly",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Scrappy"]
+        }
+      ]
+  }
 }

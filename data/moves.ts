@@ -10656,7 +10656,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Life Dew",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, bypasssub: 1 },
 		heal: [1, 2],
@@ -20241,7 +20241,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Throat Chop",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, },
 		condition: {
 			duration: 2,
 			onStart(target) {
