@@ -2659,7 +2659,7 @@
                   ["Mega Drain", "Giga Drain", "Absorb"],
                   ["Telekinesis", "Psyshock", "Extrasensory"],
                   ["Calm Mind", "Growth"],
-                  ["Stored Power"]
+                  ["Ancient Power", "Hidden Power Ice", "Flash", "Hidden Power Fire"]
               ],
               "item": ["Safari Ball"],
               "nature": "Timid",
