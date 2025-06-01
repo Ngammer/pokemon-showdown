@@ -2821,10 +2821,6 @@ export class RandomNMTeams {
 			mistyseed: "misty",
 		};
 
-		const terrainAbilityRequire: { [k: string]: string } = {
-			powerofalchemy: "electric",
-		};
-
 		const maxWantsTera = 2;
 		const maxMega = 1;
 		const maxZ = 1;
