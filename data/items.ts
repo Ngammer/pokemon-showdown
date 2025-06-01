@@ -1694,13 +1694,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				this.damage(source.baseMaxhp / 12, source, target);
 			}
 		},
-		onSourceDamagingHit(damage, target, source, move) {
-			if ((source.baseMaxhp / 2 > source.hp)) {
-				this.heal(source.baseMaxhp / 5, source);
-				source.eatItem();
+		onUpdate(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				pokemon.eatItem();
 			}
 		},
-		onEat() { },
+		onTryEatItem(item, pokemon) {
+			if (!this.runEvent('TryHeal', pokemon, null, this.effect, pokemon.baseMaxhp / 4)) return false;
+		},
+		onEat(pokemon) {
+			this.heal(pokemon.baseMaxhp / 8);
+		},
 		num: 182,
 		gen: 3,
 

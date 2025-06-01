@@ -2701,5 +2701,211 @@
             "ability": ["Harvest"]
         }
       ]
-  }
+  },
+  "exeggutoralola": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Exeggutor-Alola",
+                "weight": 40,
+                "moves": [
+                    ["Trick Room"],
+                    ["Dragon Hammer", "Outrage"],
+                    ["Wood Hammer", "Power Whip", "Seed Bomb"],
+                    ["Earthquake", "Knock Off", "Iron Head", "Rollout", "Iron Tail"]
+                ],
+                "item": ["Dimencionador"],
+                "nature": "Brave",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Frisk"]
+            },
+            {
+                "species": "Exeggutor-Alola",
+                "weight": 10,
+                "moves": [
+                    ["Trick Room"],
+                    ["Dragon Hammer"],
+                    ["Power Whip"],
+                    ["Stomping Tantrum"]
+                ],
+                "item": ["Dimencionador"],
+                "nature": "Brave",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Frisk"]
+            },
+            {
+                "species": "Exeggutor-Alola",
+                "weight": 25,
+                "moves": [
+                    ["Dragon Cheer"],
+                    ["Dragon Hammer", "Outrage"],
+                    ["Wood Hammer", "Power Whip", "Seed Bomb"],
+                    ["Earthquake", "Knock Off", "Iron Head", "Rollout", "Iron Tail", "Strength"]
+                ],
+                "item": ["Safari Ball"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Chlorophyll"]
+            },
+            {
+                "species": "Exeggutor-Alola",
+                "weight": 25,
+                "moves": [
+                    ["Dragon Hammer", "Outrage"],
+                    ["Knock Off", "Iron Head", "Iron Tail"],
+                    ["Wood Hammer", "Power Whip", "Seed Bomb"],
+                    ["Earthquake", "Strength"]
+                ],
+                "item": ["Choice Band", "Lure Ball", "Leftovers", "Life Orb", "Choice Scarf"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Frisk"]
+            }
+        ]
+    },
+    "marowak": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Marowak",
+                "weight": 75,
+                "moves": [
+                    ["Head Smash"],
+                    ["Wild Charge"],
+                    ["Bonemerang", "Power Whip", "Seed Bomb"],
+                    ["Swords Dance", "Knock Off", "Fire Punch"]
+                ],
+                "item": ["Thick Club"],
+                "nature": "Brave",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Rock Head"]
+            },
+            {
+                "species": "Marowak",
+                "weight": 25,
+                "moves": [
+                    ["Stealth Rock"],
+                    ["Knock Off"],
+                    ["Bonemerang"],
+                    ["Thunder Punch", "Fire Punch", "Smack Down"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Brave",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Battle Armor"]
+            }
+        ]
+    },
+    "marowakalola": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Marowak-Alola",
+                "weight": 50,
+                "moves": [
+                    ["Flare Blitz"],
+                    ["Wild Charge"],
+                    ["Poltergeist", "Shadow Bone", "Rage"],
+                    ["Swords Dance", "Knock Off", "Rock Climb", "Stone Edge", "Focus Punch", "Earthquake"]
+                ],
+                "item": ["Thick Club"],
+                "nature": "Brave",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Rock Head"]
+            },
+            {
+                "species": "Marowak-Alola",
+                "weight": 50,
+                "moves": [
+                    ["Flare Blitz"],
+                    ["Wild Charge", "Thunder Punch"],
+                    ["Poltergeist", "Shadow Bone", "Rage"],
+                    ["Knock Off", "Rock Climb", "Stone Edge", "Focus Punch", "Earthquake"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Brave",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsTotem": true,
+                "ability": ["Battle Armor"]
+            }
+        ]
+    },
+    "hitmonlee": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Hitmonlee",
+                "weight": 100,
+                "moves": [
+                    ["Close Combat"],
+                    ["Bulk Up"],
+                    ["Knock Off", "Stone Edge"],
+                    ["Covet", "Poison Jab"]
+                ],
+                "item": ["TR48"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Unburden"]
+            },
+            {
+                "species": "Hitmonlee",
+                "weight": 100,
+                "moves": [
+                    ["Close Combat"],
+                    ["Fake Out"],
+                    ["Knock Off", "Stone Edge", "Poison Jab", "Sucker Punch"],
+                    ["Rapid Spin"]
+                ],
+                "item": ["Assault Vest"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Limber"]
+            }
+        ]
+    },
+    "hitmonchan": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Hitmonchan",
+                "weight": 50,
+                "moves": [
+                    ["Bullet Punch"],
+                    ["Bulk Up"],
+                    ["Drain Punch"],
+                    ["Ice Punch", "Thunder Punch", "Fire Punch", "Throat Chop"]
+                ],
+                "item": ["Punching Glove"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Iron Fist"]
+            },
+            {
+                "species": "Hitmonchan",
+                "weight": 50,
+                "moves": [
+                    ["Close Combat"],
+                    ["Knock Off", "Pursuit", "Throat Chop"],
+                    ["Rapid Spin"],
+                    ["Thunder Punch", "Stone Edge", "Ice Punch"]
+                ],
+                "item": ["Berserk Gene"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Inner Focus"]
+            }
+        ]
+    }
 }
