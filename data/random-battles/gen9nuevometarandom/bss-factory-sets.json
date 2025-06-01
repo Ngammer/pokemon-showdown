@@ -2258,6 +2258,22 @@
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Hydration"]
+          },
+          {
+              "species": "Dewgong",
+              "weight": 50,
+              "moves": [
+                  ["Flip Turn"],
+                  ["Brine", "Chilling Water"],
+                  ["Haze"],
+                  ["Knock Off", "Fake Out"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Hydration"]
           }
       ]
   },
