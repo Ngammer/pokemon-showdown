@@ -16,7 +16,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Chlorophyll", "Overgrow"]
+                "ability": ["Chlorophyll"]
             },
             {
                 "species": "Venusaur",
@@ -3175,5 +3175,231 @@
             "ability": ["Scrappy"]
         }
       ]
-  }
+  },
+  "seadra": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Seadra",
+        "weight": 70,
+        "moves": [
+            ["Swift"],
+            ["Flip Turn"],
+            ["Ice Beam", "Dragon Pulse", "Flash Cannon", "Signal Beam"],
+            ["Water Gun", "Calm Mind"]
+        ],
+        "item": ["Dragon Scale"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Sniper"]
+    }
+    ]
+},
+"seaking": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Seaking",
+        "weight": 70,
+        "moves": [
+            ["Mud Sport"],
+            ["Mud Shot", "Swift"],
+            ["Ice Beam", "Signal Beam", "Hidden Power Fire"],
+            ["Surf", "Hydro Pump"]
+        ],
+        "item": ["Lure Ball"],
+        "nature": "Modest",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Swift Swim"]
+    },
+    {
+        "species": "Seaking",
+        "weight": 30,
+        "moves": [
+            ["Flip Turn"],
+            ["Mud Shot", "Swift"],
+            ["Ice Beam", "Signal Beam", "Hidden Power Fire"],
+            ["Surf", "Hydro Pump"]
+        ],
+        "item": ["Alakazite"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "ability": ["Lightning Rod"]
+    }
+    ]
+},
+"starmie": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Starmie",
+        "weight": 70,
+        "moves": [
+            ["Flip Turn"],
+            ["Telekinesis", "Psyshock"],
+            ["Ice Beam", "Dazzling Gleam", "Hidden Power Fire"],
+            ["Surf", "Hydro Pump"]
+        ],
+        "item": ["Water Stone", "Life Orb", "Choice Scarf", "Choice Specs", "Assault Vest"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Regenerator"]
+    },
+    {
+        "species": "Starmie",
+        "weight": 30,
+        "moves": [
+            ["Flip Turn"],
+            ["Thunder Wave", "Magic Coat"],
+            ["Rapid Spin"],
+            ["Scald", "Brine"]
+        ],
+        "item": ["Alakazite"],
+        "nature": "Timid",
+        "evs": {"hp": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "ability": ["Regenerator"]
+    }
+    ]
+},
+"mrmime": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Mr. Mime",
+              "weight": 50,
+              "moves": [
+                  ["Reflect"],
+                  ["Light Screen"],
+                  ["Trick Room"],
+                  ["Mystical Fire", "Focus Blast", "Psyshock", "Flash", "Zap Cannon"]
+              ],
+              "item": ["Dimencionador"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Screen Setter"]
+          }
+      ]
+  },
+  "mrmimegalar": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Starmie",
+        "weight": 70,
+        "moves": [
+            ["Reflect"],
+            ["Ice Beam", "Freeze-Dry"],
+            ["Psyshock", "Stored Power"],
+            ["Nasty Plot", "Dazzling Gleam", "Focus Blast", "Energy Ball"]
+        ],
+        "item": ["Eviolite"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Screen Cleaner"]
+    }
+    ]
+},
+"scyther": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Scyther",
+                "weight": 100,
+                "moves": [
+                    ["Pounce"],
+                    ["Trailblaze"],
+                    ["Swords Dance", "Roost"],
+                    ["Dual Wingbeat", "Wing Attack"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Technician"]
+            }
+        ]
+    },
+    "jynx": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Jynx",
+        "weight": 70,
+        "moves": [
+            ["Psyshock", "Telekinesis"],
+            ["Energy Ball", "Shadow Ball", "Bubble Beam", "Hyper Beam"],
+            ["Focus Blast", "Submission", "Draining Kiss"],
+            ["Ice beam", "Frost Breath"]
+        ],
+        "item": ["Life Orb", "Choice Specs"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Forewarm"]
+    },
+    {
+        "species": "Jynx",
+        "weight": 30,
+        "moves": [
+            ["Nasty Plot", "Calm Mind"],
+            ["Ice beam", "Frost Breath"],
+            ["Telekinesis", "Psyshock"],
+            ["Draining Kiss"]
+        ],
+        "item": ["Life Orb"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "ability": ["Psychic Surge"]
+    }
+    ]
+},
+"electabuzz": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Electabuzz",
+                "weight": 50,
+                "moves": [
+                    ["Trailblaze"],
+                    ["Bulk Up"],
+                    ["Supercell Slam", "Thunder Punch", "Wild Charge"],
+                    ["Knock Off", "Fire Punch", "Ice Punch", "Rock Climb"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vital Spirit"]
+            },
+            {
+                "species": "Electabuzz",
+                "weight": 50,
+                "moves": [
+                    ["Thunder Wave", "Toxic"],
+                    ["Knock Off"],
+                    ["Discharge", "Thunder Punch"],
+                    ["Volt Switch"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Jolly",
+                "evs": {"hp": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vital Spirit"]
+            }
+        ]
+    }
 }
