@@ -2829,12 +2829,12 @@
                     ["Poltergeist", "Shadow Bone", "Rage"],
                     ["Knock Off", "Rock Climb", "Stone Edge", "Focus Punch", "Earthquake"]
                 ],
-                "item": ["Leftovers"],
+                "item": ["Totem Gigante"],
                 "nature": "Brave",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "wantsTotem": true,
-                "ability": ["Battle Armor"]
+                "ability": ["Cursed Body"]
             }
         ]
     },
