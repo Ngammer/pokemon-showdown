@@ -1241,7 +1241,7 @@
           },
           {
             "species": "Clefable",
-            "weight": 30,
+            "weight": 50,
             "moves": [
                 ["Stealth Rock", "Protect"],
                 ["Soft Boiled", "Wish"],
@@ -1482,7 +1482,7 @@
                 ["Parasitic Clamp"],
                 ["Knock Off"],
                 ["Leech Life"],
-                ["Spore", "Dig", "Brick Break"]
+                ["Dig", "Brick Break"]
             ],
             "item": ["Life Orb", "Assault Vest", "Choice Band"],
             "nature": "Adamant",
@@ -1812,7 +1812,7 @@
             ["Psyshock", "Telekinesis"],
             ["Energy Ball", "Shadow Ball", "Swift"],
             ["Dazzling Gleam", "Focus Blast", "Submission"],
-            ["Nasty Plot"]
+            ["Nasty Plot", "Calm Mind"]
         ],
         "item": ["Life Orb"],
         "nature": "Timid",
@@ -2347,5 +2347,255 @@
             "ability": ["Poison Touch", "Power of Alchemy"]
         }
       ]
-  }
+  },
+  "cloyster": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Cloyster",
+                "weight": 75,
+                "moves": [
+                    ["Icicle Spear"],
+                    ["Clamp"],
+                    ["Rock Blast", "Pin Missile", "Spike Cannon"],
+                    ["Shell Smash"]
+                ],
+                "item": ["White Herb", "Focus Sash"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Skill Link"]
+            },
+            {
+                "species": "Cloyster",
+                "weight": 25,
+                "moves": [
+                    ["Toxic Spikes", "Spikes"],
+                    ["Brine", "Chilling Water", "Ice Spinner"],
+                    ["Rapid Spin"],
+                    ["Life Dew"]
+                ],
+                "item": ["Leftovers", "Rocky Helmet", "Heavy-Duty Boots"],
+                "nature": "Relaxed",
+                "evs": {"hp": 252, "spd": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Shell Armor", "Overcoat"]
+            }
+        ]
+    },
+    "gengar": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Gengar",
+        "weight": 25,
+        "moves": [
+            ["Dazzling Gleam", "Thunderbolt", "Focus Blast", "Mega Drain", "Hidden Power Ice"],
+            ["Sludge Wave", "Corrosive Gas"],
+            ["Shadow Ball"],
+            ["Nasty Plot"]
+        ],
+        "item": ["Life Orb"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Levitate"]
+    },
+    {
+        "species": "Gengar",
+        "weight": 25,
+        "moves": [
+            ["Dazzling Gleam", "Focus Blast"],
+            ["Sludge Wave", "Corrosive Gas"],
+            ["Shadow Ball"],
+            ["Destiny Bond", "Mega Drain", "Hidden Power Ice", "Thunderbolt"]
+        ],
+        "item": ["Life Orb", "Choice Scarf", "Choice Specs"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Levitate"]
+    },
+    {
+        "species": "Gengar",
+        "weight": 50,
+        "moves": [
+            ["Dazzling Gleam", "Thunderbolt", "Focus Blast", "Mega Drain", "Hidden Power Ice"],
+            ["Sludge Wave", "Corrosive Gas"],
+            ["Shadow Ball"],
+            ["Nasty Plot"]
+        ],
+        "item": ["Gengarite"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "wantsMega": true,
+        "ability": ["Levitate"]
+    }
+    ]
+},
+"hypno": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Hypno",
+              "weight": 100,
+              "moves": [
+                  ["Hypnosis", "Haze", "Thunder Wave"],
+                  ["Nasty Plot", "Dazzling Gleam"],
+                  ["Focus Blast"],
+                  ["Telekinesis"]
+              ],
+              "item": ["Leftovers", "Life Orb", "Eject Pack"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "spa": 252, "spd": 4},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Forewarm"]
+          }
+      ]
+  },
+  "kingler": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Kingler",
+                "weight": 25,
+                "moves": [
+                    ["Liquidation", "Crabhammer"],
+                    ["Knock Off"],
+                    ["Rock Slide", "Hone Claws", "Swords Dance"],
+                    ["Hammer Arm", "High Horsepower", "X-Scissor"]
+                ],
+                "item": ["Life Orb", "Leftovers"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sheer Force"]
+            },
+            {
+                "species": "Kingler",
+                "weight": 25,
+                "moves": [
+                    ["Liquidation", "Crabhammer"],
+                    ["Knock Off"],
+                    ["Rock Slide", "Curse"],
+                    ["Hammer Arm", "High Horsepower", "X-Scissor"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sheer Force"]
+            },
+            {
+                "species": "Kingler",
+                "weight": 25,
+                "moves": [
+                    ["Liquidation", "Crabhammer"],
+                    ["Knock Off"],
+                    ["Rock Slide", "Hone Claws", "Swords Dance"],
+                    ["Hammer Arm", "High Horsepower", "X-Scissor"]
+                ],
+                "item": ["Kinglerite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
+                "ability": ["Hyper Cutter"]
+            },
+            {
+                "species": "Kingler",
+                "weight": 25,
+                "moves": [
+                    ["Liquidation", "Crabhammer"],
+                    ["Knock Off"],
+                    ["Rock Slide", "Curse"],
+                    ["Hammer Arm", "High Horsepower", "X-Scissor"]
+                ],
+                "item": ["Kinglerite"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
+                "ability": ["Hyper Cutter"]
+            }
+        ]
+    },
+    "electrode": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Electrode",
+        "weight": 100,
+        "moves": [
+            ["Foul Play", "Thunder Wave", "Self-Destruct"],
+            ["Electro Ball"],
+            ["Burning Jealousy"],
+            ["Volt Switch"]
+        ],
+        "item": ["Life Orb", "Heavy Ball", "Heavy-Duty Boots"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Aftermath"]
+    }
+    ]
+},
+"electrodehisui": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Electrode-Hisui",
+        "weight": 50,
+        "moves": [
+            ["Giga Drain", "Energy Ball", "Mega Drain"],
+            ["Electro Ball"],
+            ["Chloroblast"],
+            ["Charge"]
+        ],
+        "item": ["Life Orb","Leaf Stone"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Aftermath"]
+    },
+    {
+        "species": "Electrode-Hisui",
+        "weight": 50,
+        "moves": [
+            ["Foul Play", "Thunder Wave", "Self-Destruct"],
+            ["Electro Ball"],
+            ["Chloroblast", "Mega Drain"],
+            ["Volt Switch"]
+        ],
+        "item": ["Life Orb", "Heavy Ball", "Heavy-Duty Boots"],
+        "nature": "Modest",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Aftermath"]
+    },
+    {
+        "species": "Electrode-Hisui",
+        "weight": 50,
+        "moves": [
+            ["Agility"],
+            ["Electro Ball"],
+            ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
+            ["Foul Play", "Burning Jealousy"]
+        ],
+        "item": ["TR80"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Aftermath"]
+    }
+    ]
+}
 }
