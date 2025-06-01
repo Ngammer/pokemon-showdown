@@ -1949,9 +1949,9 @@
         "sets": [
             {
                 "species": "Golem",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
-                    ["Protect", "Rock Polish"],
+                    ["Rock Polish"],
                     ["Dig", "Earthquake", "Magnitude"],
                     ["Rollout", "Rock Throw", "Smack Down"],
                     ["Thunder Punch", "Fire Punch", "Sucker Punch"]
@@ -1960,7 +1960,22 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Speed Boost", "Sturdy"]
+                "ability": ["Sturdy"]
+            },
+            {
+                "species": "Golem",
+                "weight": 50,
+                "moves": [
+                    ["Protect"],
+                    ["Dig", "Earthquake", "Magnitude"],
+                    ["Rollout", "Rock Throw", "Smack Down"],
+                    ["Thunder Punch", "Fire Punch", "Sucker Punch"]
+                ],
+                "item": ["Weakness Policy", "Power Herb"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Speed Boost"]
             }
         ]
     },
