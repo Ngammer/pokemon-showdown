@@ -1552,7 +1552,7 @@
         "weight": 10,
         "sets": [
             {
-                "species": "Dugtrio",
+                "species": "Dugtrio-Alola",
                 "weight": 100,
                 "moves": [
                     ["Iron Head"],
