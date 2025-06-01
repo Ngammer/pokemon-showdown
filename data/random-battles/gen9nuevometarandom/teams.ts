@@ -2878,6 +2878,11 @@ export class RandomNMTeams {
 				}
 			}
 
+			if (curSet.ability === 'powerofalchemy' && !teamData.terrain) {
+				reject = true; // reject any sets with a seed item possible and no terrain setter to activate it
+				break;
+			}
+
 			const curSetMoveVariants = [];
 			for (const move of curSet.moves) {
 				const variantIndex = this.random(move.length);
