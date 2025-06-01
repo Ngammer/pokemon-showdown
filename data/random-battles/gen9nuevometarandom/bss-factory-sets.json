@@ -1751,7 +1751,7 @@
         "sets": [
             {
                 "species": "Arcanine-Hisui",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
                     ["Raging Fury", "Flare Blitz"],
                     ["Covet", "Psychic Fangs", "Extreme Speed", "Close Combat"],
@@ -1766,7 +1766,7 @@
             },
             {
                 "species": "Arcanine-Hisui",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
                     ["Raging Fury", "Flare Blitz"],
                     ["Covet", "Psychic Fangs", "Extreme Speed", "Close Combat"],
