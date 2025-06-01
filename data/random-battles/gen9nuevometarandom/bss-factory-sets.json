@@ -2550,7 +2550,7 @@
         "sets": [
         {
         "species": "Electrode-Hisui",
-        "weight": 50,
+        "weight": 16,
         "moves": [
             ["Giga Drain", "Energy Ball", "Mega Drain"],
             ["Electro Ball"],
@@ -2566,7 +2566,7 @@
     },
     {
         "species": "Electrode-Hisui",
-        "weight": 50,
+        "weight": 17,
         "moves": [
             ["Foul Play", "Thunder Wave", "Self-Destruct"],
             ["Electro Ball"],
@@ -2582,7 +2582,7 @@
     },
     {
         "species": "Electrode-Hisui",
-        "weight": 50,
+        "weight": 17,
         "moves": [
             ["Agility"],
             ["Electro Ball"],
@@ -2595,7 +2595,111 @@
         "ivs": {"atk": 0},
         "teraType": ["Normal"],
         "ability": ["Aftermath"]
+    },
+    {
+        "species": "Electrode-Hisui",
+        "weight": 16,
+        "moves": [
+            ["Charge"],
+            ["Electro Ball", "Thunderbolt"],
+            ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
+            ["Foul Play", "Burning Jealousy", "Swift"]
+        ],
+        "item": ["Totem Gigante"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "wantsTotem": true,
+        "ability": ["Soundproof", "Static"]
+    },
+    {
+        "species": "Electrode-Hisui",
+        "weight": 17,
+        "moves": [
+            ["Volt Switch"],
+            ["Electro Ball"],
+            ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
+            ["Foul Play", "Burning Jealousy", "Swift"]
+        ],
+        "item": ["Totem Gigante"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "wantsTotem": true,
+        "ability": ["Soundproof", "Static"]
+    },
+    {
+        "species": "Electrode-Hisui",
+        "weight": 17,
+        "moves": [
+            ["Agility"],
+            ["Electro Ball"],
+            ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
+            ["Foul Play", "Burning Jealousy", "Swift"]
+        ],
+        "item": ["Totem Gigante"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "wantsTotem": true,
+        "ability": ["Soundproof", "Static"]
     }
     ]
-}
+},
+"exeggutor": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Exeggutor",
+              "weight": 50,
+              "moves": [
+                  ["Mega Drain", "Giga Drain", "Absorb"],
+                  ["Telekinesis", "Psyshock", "Extrasensory"],
+                  ["Calm Mind", "Growth"],
+                  ["Stored Power"]
+              ],
+              "item": ["Safari Ball"],
+              "nature": "Timid",
+              "evs": {"spd": 4, "spa": 252, "spe": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Chlorophyll"]
+          },
+          {
+            "species": "Exeggutor",
+            "weight": 25,
+            "moves": [
+                ["Leech Seed"],
+                ["Substitute"],
+                ["Calm Mind", "Flash", "Infestation"],
+                ["Mega Drain", "Giga Drain", "Absorb"]
+            ],
+            "item": ["Aguav Berry", "Hondew Berry", "Pamtre Berry", "Bluk Berry", "Cornn Berry", "Enigma Berry", "Magost Berry", "Nanab Berry", "Pomeg Berry", "Durin Berry"],
+            "nature": "Bold",
+            "evs": {"spa": 4, "hp": 252, "def": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Harvest"]
+        },
+        {
+            "species": "Exeggutor",
+            "weight": 25,
+            "moves": [
+                ["Leech Seed"],
+                ["Substitute"],
+                ["Calm Mind", "Flash", "Infestation"],
+                ["Mega Drain", "Giga Drain", "Absorb"]
+            ],
+            "item": ["Aguav Berry", "Hondew Berry", "Pamtre Berry", "Bluk Berry", "Cornn Berry", "Enigma Berry", "Magost Berry", "Nanab Berry", "Pomeg Berry", "Durin Berry"],
+            "nature": "Calm",
+            "evs": {"spa": 4, "hp": 252, "spd": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Harvest"]
+        }
+      ]
+  }
 }

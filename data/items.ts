@@ -1688,7 +1688,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 100,
 			type: "Water",
 		},
-		onEat: false,
+		onDamagingHitOrder: 2,
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				this.damage(source.baseMaxhp / 12, source, target);
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if ((source.baseMaxhp / 2 > source.hp)) {
+				this.heal(source.baseMaxhp / 5, source);
+				source.eatItem();
+			}
+		},
+		onEat() { },
 		num: 182,
 		gen: 3,
 
