@@ -1844,7 +1844,7 @@
       "sets": [
           {
             "species": "Machamp",
-            "weight": 100,
+            "weight": 25,
             "moves": [
                 ["Stone Edge"],
                 ["Bullet Punch", "Rolling Kick", "Knock Off"],
@@ -1859,7 +1859,7 @@
         },
         {
             "species": "Machamp",
-            "weight": 100,
+            "weight": 25,
             "moves": [
                 ["Bulk Up", "Coaching"],
                 ["Bullet Punch", "Rolling Kick", "Knock Off"],
@@ -1874,7 +1874,7 @@
         },
         {
             "species": "Machamp",
-            "weight": 100,
+            "weight": 50,
             "moves": [
                 ["Rock Climb"],
                 ["Power-Up Punch", "Ice Punch", "Fire Punch"],
@@ -2107,5 +2107,214 @@
                 "ability": ["Oblivious", "Own Tempo"]
             }
         ]
-    }
+    },
+    "slowbrogalar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Slowbro-Galar",
+              "weight": 100,
+              "moves": [
+                  ["Nasty Plot"],
+                  ["Protect"],
+                  ["Shell Side Arm"],
+                  ["Flamethrower", "Ice Beam", "Psyshock", "Surf"]
+              ],
+              "item": ["Galarica Cuff"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Quick Draw"]
+          }
+      ]
+  },
+  "magneton": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Magneton",
+              "weight": 100,
+              "moves": [
+                  ["Metal Sound"],
+                  ["Thunder"],
+                  ["Flash Cannon"],
+                  ["Volt Switch"]
+              ],
+              "item": ["Galarica Cuff"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Quick Draw"]
+          }
+      ]
+  },
+  "farfetchd": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "farfetch'd",
+              "weight": 100,
+              "moves": [
+                  ["Brave Bird"],
+                  ["U-turn"],
+                  ["Double-Edge"],
+                  ["Close Combat"]
+              ],
+              "item": ["Choice Scarf"],
+              "nature": "Jolly",
+              "evs": {"atk": 252, "spd": 4, "spe": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Lucky"]
+          }
+      ]
+  },
+  "farfetchdgalar": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Farfetch'd-Galar",
+            "weight": 100,
+            "moves": [
+                ["Roost"],
+                ["Knock Off", "Throat Chop"],
+                ["Close Combat", "Brick Break"],
+                ["Swords Dance", "Defog"]
+            ],
+            "item": ["Stick"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Scrappy"]
+        }
+      ]
+  },
+  "dodrio": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Dodrio",
+            "weight": 25,
+            "moves": [
+                ["Swords Dance"],
+                ["Brave Bird", "Tripeck", "Pluck"],
+                ["Double-Edge", "Natural Gift", "Body Slam"],
+                ["Drill Run", "Jump Kick", "Trailblaze", "Steel Wing", "Stomping Tantrum"]
+            ],
+            "item": ["Dream Ball"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Early Bird"]
+        },
+        {
+            "species": "Dodrio",
+            "weight": 25,
+            "moves": [
+                ["Bullet Seed"],
+                ["Fury Swipes", "Pin Missile"],
+                ["Tripeck"],
+                ["Swords Dance"]
+            ],
+            "item": ["Metronome"],
+            "nature": "Jolly",
+            "evs": {"spe": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Skill Link"]
+        },
+        {
+            "species": "Dodrio",
+            "weight": 25,
+            "moves": [
+                ["Swords Dance"],
+                ["Brave Bird", "Tripeck", "Pluck"],
+                ["Double-Edge", "Natural Gift", "Body Slam"],
+                ["Substitute"]
+            ],
+            "item": ["Leftovers", "Hondew Berry", "Kelpsy Berry"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Early Bird"]
+        }
+      ]
+  },
+  "dewgong": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Dewgong",
+              "weight": 50,
+              "moves": [
+                  ["Flip Turn"],
+                  ["Brine", "Chilling Water"],
+                  ["Haze"],
+                  ["Knock Off", "Fake Out"]
+              ],
+              "item": ["Leftovers", "Moon Stone", "Clear Amulet"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Magic Guard"]
+          }
+      ]
+  },
+  "muk": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Magneton",
+              "weight": 100,
+              "moves": [
+                  ["Metal Sound"],
+                  ["Thunder"],
+                  ["Flash Cannon"],
+                  ["Volt Switch"]
+              ],
+              "item": ["Galarica Cuff"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Quick Draw"]
+          }
+      ]
+  },
+  "mukalola": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Muk-Alola",
+            "weight": 100,
+            "moves": [
+                ["Curse"],
+                ["Shadow Sneak"],
+                ["Poison Jab", "Gunk Shot"],
+                ["Recycle"]
+            ],
+            "item": ["Aguav Berry"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Gluttony"]
+        },
+        {
+            "species": "Muk-Alola",
+            "weight": 100,
+            "moves": [
+                ["Poison Jab"],
+                ["Knock Off", "Embargo", "Pursuit", "Payback", "Assurance", "Thief"],
+                ["Shadow Sneak"],
+                ["Drain Punch", "Ice Punch", "Fire Punch"]
+            ],
+            "item": ["Black Sludge"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Poison Touch", "Power of Alchemy"]
+        }
+      ]
+  }
 }
