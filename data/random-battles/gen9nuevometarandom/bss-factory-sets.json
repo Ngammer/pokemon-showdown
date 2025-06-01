@@ -2659,7 +2659,7 @@
                   ["Mega Drain", "Giga Drain", "Absorb"],
                   ["Telekinesis", "Psyshock", "Extrasensory"],
                   ["Calm Mind", "Growth"],
-                  ["Stored Power"]
+                  ["Ancient Power", "Hidden Power Ice", "Flash", "Hidden Power Fire"]
               ],
               "item": ["Safari Ball"],
               "nature": "Timid",
@@ -2776,7 +2776,7 @@
                 "moves": [
                     ["Head Smash"],
                     ["Wild Charge"],
-                    ["Bonemerang", "Power Whip", "Seed Bomb"],
+                    ["Bonemerang"],
                     ["Swords Dance", "Knock Off", "Fire Punch"]
                 ],
                 "item": ["Thick Club"],
@@ -2829,12 +2829,12 @@
                     ["Poltergeist", "Shadow Bone", "Rage"],
                     ["Knock Off", "Rock Climb", "Stone Edge", "Focus Punch", "Earthquake"]
                 ],
-                "item": ["Leftovers"],
+                "item": ["Totem Gigante"],
                 "nature": "Brave",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "wantsTotem": true,
-                "ability": ["Battle Armor"]
+                "ability": ["Cursed Body"]
             }
         ]
     },
