@@ -2821,6 +2821,10 @@ export class RandomNMTeams {
 			mistyseed: "misty",
 		};
 
+		const terrainAbilityRequire: { [k: string]: string } = {
+			powerofalchemy: "electric",
+		};
+
 		const maxWantsTera = 2;
 		const maxMega = 1;
 		const maxZ = 1;
@@ -2876,6 +2880,11 @@ export class RandomNMTeams {
 					reject = true; // reject any sets with a seed item possible and no terrain setter to activate it
 					break;
 				}
+			}
+
+			if (curSet.ability === 'powerofalchemy' && !teamData.terrain) {
+				reject = true; // reject any sets with a seed item possible and no terrain setter to activate it
+				break;
 			}
 
 			const curSetMoveVariants = [];
