@@ -2799,6 +2799,21 @@ export class RandomNMTeams {
 		const id = toID(species.name);
 		const setList = this.randomBSSFactorySets[id].sets;
 
+		const tier = species.tier;
+
+		const tierScale: Partial<Record<Species['tier'], number>> = {
+			Uber: 76,
+			OU: 80,
+			UUBL: 81,
+			UU: 82,
+			RUBL: 83,
+			RU: 84,
+			NUBL: 85,
+			NU: 86,
+			PUBL: 87,
+			PU: 88, "(PU)": 88, NFE: 88,
+		};
+
 		const movesMax: { [k: string]: number } = {
 			batonpass: 1,
 			stealthrock: 1,
@@ -2934,7 +2949,7 @@ export class RandomNMTeams {
 			item: this.sampleIfArray(setData.set.item) || "",
 			ability: this.sampleIfArray(setData.set.ability),
 			shiny: this.randomChance(1, 1024),
-			level: 100,
+			level: tierScale[tier] || 100,
 			happiness: 255,
 			evs: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0, ...setData.set.evs },
 			ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31, ...setData.set.ivs },
