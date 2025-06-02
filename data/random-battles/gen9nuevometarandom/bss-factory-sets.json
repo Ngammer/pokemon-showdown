@@ -3276,7 +3276,7 @@
             ["Rapid Spin"],
             ["Scald", "Brine"]
         ],
-        "item": ["Alakazite"],
+        "item": ["Leftovers", "Heavy-Duty Boots"],
         "nature": "Timid",
         "evs": {"hp": 252, "spd": 4, "spe": 252},
         "teraType": ["Normal"],
