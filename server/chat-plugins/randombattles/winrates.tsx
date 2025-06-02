@@ -44,7 +44,7 @@ function getDefaultStats(): Stats {
 		formats: {
 			// all of these requested by rands staff. they don't anticipate it being changed much
 			// so i'm not spending the time to add commands to toggle this
-			gen9nuevometarandom: { mons: {} },
+			gen9nuevometarandombattle: { mons: {} },
 			gen9nuevometa: { mons: {} },
 			gen9randombattle: { mons: {} },
 			gen9randomdoublesbattle: { mons: {} },
@@ -174,7 +174,7 @@ async function collectStats(battle: RoomBattle, winner: ID, players: ID[]) {
 	const formatData = stats.formats[battle.format];
 	let eloFloor = stats.elo;
 	const format = Dex.formats.get(battle.format);
-	if (format.mod === 'gen2' || format.team === 'randomBaby') {
+	/* if (format.mod === 'gen2' || format.team === 'randomBaby') {
 		// ladders are inactive, so use a lower threshold
 		eloFloor = 1150;
 	} else if (format.mod !== `gen${Dex.gen}`) {
@@ -182,7 +182,7 @@ async function collectStats(battle: RoomBattle, winner: ID, players: ID[]) {
 	} else if (format.gameType === 'doubles') {
 		// may need to be raised again if ladder takes off further
 		eloFloor = 1400;
-	}
+	} */
 	if (!formatData || (format.mod !== 'gen9ssb' && battle.rated < eloFloor) || !winner) return;
 	checkRollover();
 	for (const p of battle.players) {
