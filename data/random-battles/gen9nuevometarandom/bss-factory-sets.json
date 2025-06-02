@@ -1579,7 +1579,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Tangling Hair"]
+                "ability": ["Tangling Hair", "Sand Force"]
             },
             {
                 "species": "Dugtrio-Alola",
@@ -1594,7 +1594,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Tangling Hair"]
+                "ability": ["Tangling Hair", "Sand Force"]
             }
         ]
     },
