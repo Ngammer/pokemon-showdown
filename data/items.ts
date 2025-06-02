@@ -2991,6 +2991,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 100,
 		},
+		onStart(pokemon) {
+			if (pokemon.hasAbility("Fossilization")) {
+				pokemon.useItem();
+			}
+		},
+		boosts: { accuracy: 1 },
 		num: 101,
 		gen: 3,
 
