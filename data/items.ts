@@ -4493,7 +4493,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.evoItem === 'Shiny Stone') {
+			if (pokemon.baseSpecies.evoItem === 'Moon Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
