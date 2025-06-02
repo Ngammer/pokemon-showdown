@@ -3055,7 +3055,7 @@
                   ["Strange Steam"],
                   ["Pain Split"]
               ],
-              "item": ["Misty Surge"],
+              "item": ["Terrain Extender", "Black Sludge"],
               "nature": "Relaxed",
               "evs": {"hp": 252, "spa": 4, "def": 252},
               "ivs": {"atk": 0},
