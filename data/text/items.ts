@@ -171,7 +171,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	blukberry: {
 		name: "Bluk Berry",
-		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will burn the target.",
+		shortDesc: "At 1/2 HP, recovers 20% HP and the next move will burn the target.",
 	},
 	blunderpolicy: {
 		name: "Blunder Policy",
@@ -280,7 +280,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	clawfossil: {
 		name: "Claw Fossil",
-		shortDesc: "Increases Attack when the ability Fossilization is active.",
+		shortDesc: "Increases Attack when the ability Mineralization is active.",
 	},
 	clearamulet: {
 		name: "Clear Amulet",
@@ -306,11 +306,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	cornnberry: {
 		name: "Cornn Berry",
-		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will badly poisoned the target.",
+		shortDesc: "At 1/2 HP, recovers 20% HP and the next move will badly poisoned the target.",
 	},
 	coverfossil: {
 		name: "Cover Fossil",
-		shortDesc: "With Fossilization, consumes to reduce damage taken by 30% until switched out.",
+		shortDesc: "With Mineralization, consumes to reduce damage taken by 30% until switched out.",
 	},
 	covertcloak: {
 		name: "Covert Cloak",
@@ -379,7 +379,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	domefossil: {
 		name: "Dome Fossil",
-		shortDesc: "With Fossilization, consumes to prevent status conditions until switched out.",
+		shortDesc: "With Mineralization, consumes to prevent status conditions until switched out.",
 	},
 	dousedrive: {
 		name: "Douse Drive",
@@ -627,19 +627,19 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fossilizedbird: {
 		name: "Fossilized Bird",
-		shortDesc: "Next move paralyzes with Fossilization.",
+		shortDesc: "Next move paralyzes with Mineralization.",
 	},
 	fossilizeddino: {
 		name: "Fossilized Dino",
-		shortDesc: "Next move freezes with Fossilization.",
+		shortDesc: "Next move freezes with Mineralization.",
 	},
 	fossilizeddrake: {
 		name: "Fossilized Drake",
-		shortDesc: "Next move flinch with Fossilization.",
+		shortDesc: "Next move flinch with Mineralization.",
 	},
 	fossilizedfish: {
 		name: "Fossilized Fish",
-		shortDesc: "Next move confuse with Fossilization.",
+		shortDesc: "Next move confuse with Mineralization.",
 	},
 	friendball: {
 		name: "Friend Ball",
@@ -794,7 +794,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	helixfossil: {
 		name: "Helix Fossil",
-		shortDesc: "Increases Accuracy when the ability Fossilization is active.",
+		shortDesc: "Can be revived into Omanyte.",
 	},
 	heracronite: {
 		name: "Heracronite",
@@ -877,7 +877,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	jawfossil: {
 		name: "Jaw Fossil",
-		shortDesc: "Holder gains the Focus Energy when the ability Fossilization is active",
+		shortDesc: "Can be revived into Tyrunt.",
 	},
 	kasibberry: {
 		name: "Kasib Berry",
@@ -1258,7 +1258,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	oldamber: {
 		name: "Old Amber",
-		shortDesc: "Increases Speed when the ability Fossilization is active.",
+		shortDesc: "Increases Speed when the ability Mineralization is active.",
 	},
 	oranberry: {
 		name: "Oran Berry",
@@ -1270,7 +1270,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	pamtreberry: {
 		name: "Pamtre Berry",
-		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will curse the target.",
+		shortDesc: "At 1/2 HP, recovers 20% HP and the next move will curse the target.",
 	},
 	parkball: {
 		name: "Park Ball",
@@ -1322,7 +1322,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	plumefossil: {
 		name: "Plume Fossil",
-		shortDesc: "Next move has +1 priority with Fossilization.",
+		shortDesc: "Next move has +1 priority with Mineralization.",
 	},
 	poisonbarb: {
 		name: "Poison Barb",
@@ -1352,7 +1352,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	pomegberry: {
 		name: "Pomeg Berry",
-		shortDesc: "At 1/2 HP, recovers 12.5% HP and the next move will freeze the target.",
+		shortDesc: "At 1/2 HP, recovers 20% HP and the next move will freeze the target.",
 	},
 	poweranklet: {
 		name: "Power Anklet",
@@ -1537,7 +1537,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rootfossil: {
 		name: "Root Fossil",
-		shortDesc: "Increases Special Defense when the ability Fossilization is active.",
+		shortDesc: "Increases Special Defense when the ability Mineralization is active.",
 	},
 	roseincense: {
 		name: "Rose Incense",
@@ -1579,7 +1579,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sailfossil: {
 		name: "Sail Fossil",
-		shortDesc: "Increases Special Attack when the ability Fossilization is active.",
+		shortDesc: "Increases Special Attack when the ability Mineralization is active.",
 	},
 	salacberry: {
 		name: "Salac Berry",
@@ -1665,7 +1665,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	skullfossil: {
 		name: "Skull Fossil",
-		shortDesc: "1.5x move power, -10% accuracy with Fossilization.",
+		shortDesc: "1.5x move power, -10% accuracy with Mineralization.",
 	},
 	skyplate: {
 		name: "Sky Plate",

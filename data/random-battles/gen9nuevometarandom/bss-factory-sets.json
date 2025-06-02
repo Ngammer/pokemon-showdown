@@ -1982,7 +1982,7 @@
                 "weight": 50,
                 "moves": [
                     ["Rock Polish"],
-                    ["Dig", "Earthquake", "Magnitude"],
+                    ["Dig"],
                     ["Rollout", "Rock Throw", "Smack Down"],
                     ["Thunder Punch", "Fire Punch", "Sucker Punch"]
                 ],
