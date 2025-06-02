@@ -1885,7 +1885,7 @@
             "nature": "Adamant",
             "evs": {"hp": 248, "atk": 252, "spd": 8},
             "teraType": ["Fairy", "Water"],
-            "ability": ["Guts", "No Guard"]
+            "ability": ["No Guard"]
         },
         {
             "species": "Machamp",
