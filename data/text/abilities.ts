@@ -2325,7 +2325,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon's moves have their power multiplied by 1.4 and the accuracy of its attacks is multiplied by 0.95.",
 		shortDesc: "This Pokemon's moves have 1.4x power and accuracy of its attacks is 0.95x.",
 	},
-	comealmas: {
+	souleater: {
 		name: "Soul Eater",
 		desc: "This Pokemon's moves have their power multiplied by 1+(X*0.05), where X is the total number of times any Pokemon has fainted when this Ability became active, and X cannot be greater than 10.",
 		shortDesc: "This Pokemon's moves have 5% more power for each fainted Pokemon, up to 10 Pokemon.",
@@ -2386,7 +2386,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		shortDesc: "Boosts contact and Steel-type moves by 15%. Contact moves have a 10% chance to flinch the target.",
 	},
 	tectoanchor: {
-		name: "Tecto Anclaje",
+		name: "Tecto Anchor",
 		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses.",
 	},
 	sage: {

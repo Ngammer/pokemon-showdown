@@ -76,7 +76,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	armorfossil: {
 		name: "Armor Fossil",
-		shortDesc: "Increases Defense when the ability Mineralization is active.",
+		shortDesc: "Increases Defense when the ability Fossilization is active.",
 	},
 	aspearberry: {
 		name: "Aspear Berry",
@@ -280,7 +280,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	clawfossil: {
 		name: "Claw Fossil",
-		shortDesc: "Increases Attack when the ability Mineralization is active.",
+		shortDesc: "Increases Attack when the ability Fossilization is active.",
 	},
 	clearamulet: {
 		name: "Clear Amulet",
@@ -310,7 +310,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	coverfossil: {
 		name: "Cover Fossil",
-		shortDesc: "With Mineralization, consumes to reduce damage taken by 30% until switched out.",
+		shortDesc: "With Fossilization, consumes to reduce damage taken by 30% until switched out.",
 	},
 	covertcloak: {
 		name: "Covert Cloak",
@@ -379,7 +379,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	domefossil: {
 		name: "Dome Fossil",
-		shortDesc: "With Mineralization, consumes to prevent status conditions until switched out.",
+		shortDesc: "With Fossilization, consumes to prevent status conditions until switched out.",
 	},
 	dousedrive: {
 		name: "Douse Drive",
@@ -627,19 +627,19 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	fossilizedbird: {
 		name: "Fossilized Bird",
-		shortDesc: "Next move paralyzes with Mineralization.",
+		shortDesc: "Next move paralyzes with Fossilization.",
 	},
 	fossilizeddino: {
 		name: "Fossilized Dino",
-		shortDesc: "Next move freezes with Mineralization.",
+		shortDesc: "Next move freezes with Fossilization.",
 	},
 	fossilizeddrake: {
 		name: "Fossilized Drake",
-		shortDesc: "Next move flinch with Mineralization.",
+		shortDesc: "Next move flinch with Fossilization.",
 	},
 	fossilizedfish: {
 		name: "Fossilized Fish",
-		shortDesc: "Next move confuse with Mineralization.",
+		shortDesc: "Next move confuse with Fossilization.",
 	},
 	friendball: {
 		name: "Friend Ball",
@@ -794,7 +794,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	helixfossil: {
 		name: "Helix Fossil",
-		shortDesc: "Can be revived into Omanyte.",
+		shortDesc: "Increases Accuracy when the ability Fossilization is active.",
 	},
 	heracronite: {
 		name: "Heracronite",
@@ -877,7 +877,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	jawfossil: {
 		name: "Jaw Fossil",
-		shortDesc: "Can be revived into Tyrunt.",
+		shortDesc: "Holder gains the Focus Energy when the ability Fossilization is active",
 	},
 	kasibberry: {
 		name: "Kasib Berry",
@@ -1258,7 +1258,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	oldamber: {
 		name: "Old Amber",
-		shortDesc: "Increases Speed when the ability Mineralization is active.",
+		shortDesc: "Increases Speed when the ability Fossilization is active.",
 	},
 	oranberry: {
 		name: "Oran Berry",
@@ -1322,7 +1322,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	plumefossil: {
 		name: "Plume Fossil",
-		shortDesc: "Next move has +1 priority with Mineralization.",
+		shortDesc: "Next move has +1 priority with Fossilization.",
 	},
 	poisonbarb: {
 		name: "Poison Barb",
@@ -1537,7 +1537,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rootfossil: {
 		name: "Root Fossil",
-		shortDesc: "Increases Special Defense when the ability Mineralization is active.",
+		shortDesc: "Increases Special Defense when the ability Fossilization is active.",
 	},
 	roseincense: {
 		name: "Rose Incense",
@@ -1579,7 +1579,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	sailfossil: {
 		name: "Sail Fossil",
-		shortDesc: "Increases Special Attack when the ability Mineralization is active.",
+		shortDesc: "Increases Special Attack when the ability Fossilization is active.",
 	},
 	salacberry: {
 		name: "Salac Berry",
@@ -1665,7 +1665,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	skullfossil: {
 		name: "Skull Fossil",
-		shortDesc: "1.5x move power, -10% accuracy with Mineralization.",
+		shortDesc: "1.5x move power, -10% accuracy with Fossilization.",
 	},
 	skyplate: {
 		name: "Sky Plate",
