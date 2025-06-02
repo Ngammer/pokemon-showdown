@@ -3065,8 +3065,8 @@
               "species": "Weezing-Galar",
               "weight": 25,
               "moves": [
-                  ["Toxic Spikes"],
-                  ["Incinerate", "Haze", "Defog"],
+                  ["Acid Spray", "Destiny Bond", "Taunt", "Double Team"],
+                  ["Incinerate", "Haze", "Defog", "Corrosive gas", "Clear Smog"],
                   ["Strange Steam"],
                   ["Pain Split"]
               ],
@@ -3081,8 +3081,8 @@
               "species": "Weezing-Galar",
               "weight": 25,
               "moves": [
-                  ["Toxic Spikes"],
-                  ["Incinerate", "Haze", "Defog"],
+                  ["Acid Spray", "Destiny Bond", "Taunt", "Double team"],
+                  ["Corrosive Gas", "Haze", "Defog", "Incinerate", "Clear Smog"],
                   ["Strange Steam"],
                   ["Pain Split"]
               ],
