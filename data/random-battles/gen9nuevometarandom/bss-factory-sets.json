@@ -3676,5 +3676,215 @@
                 "ability": ["Intimidate", "Moxie"]
             }
         ]
+    },
+    "lapras": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Lapras",
+              "weight": 25,
+              "moves": [
+                  ["Brine", "Chilling Water"],
+                  ["Haze", "Heal Bell", "Toxic", "Sing"],
+                  ["Freeze-Dry"],
+                  ["Life Dew"]
+              ],
+              "item": ["Leftovers", "Heavy-Duty Boots"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Hydration"]
+          },
+          {
+            "species": "Lapras",
+            "weight": 25,
+            "moves": [
+                ["Dragon Dance"],
+                ["Liquidation", "Aqua Tail", "Waterfall"],
+                ["Ice Shard"],
+                ["Earthquake", "Megahorn", "Iron Head"]
+            ],
+            "item": ["Leftovers", "Life Orb"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Water Absorb", "Hydration"]
+        },
+        {
+              "species": "Lapras",
+              "weight": 25,
+              "moves": [
+                  ["Brine", "Chilling Water"],
+                  ["Haze", "Heal Bell", "Toxic", "Sing"],
+                  ["Freeze-Dry"],
+                  ["Life Dew"]
+              ],
+              "item": ["Laprasite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "wantsMega": true,
+              "ability": ["Hydration"]
+          },
+          {
+              "species": "Lapras",
+              "weight": 25,
+              "moves": [
+                  ["Rest"],
+                  ["Haze", "Heal Bell", "Toxic", "Sing"],
+                  ["Snore"],
+                  ["Brine", "Chilling Water"]
+              ],
+              "item": ["Laprasite"],
+              "nature": "Modest",
+              "evs": {"hp": 248, "spd": 8, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "wantsMega": true,
+              "ability": ["Hydration"]
+          }
+      ]
+  },
+  "ditto": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Ditto",
+              "weight": 100,
+              "moves": [
+                  ["Transform"],
+                  ["Transform"],
+                  ["Transform"],
+                  ["Transform"]
+              ],
+              "item": ["Quick Powder"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "atk": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Imposter"]
+          }
+      ]
+  },
+  "vaporeon": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Vaporeon",
+              "weight": 100,
+              "moves": [
+                  ["Flip Turn"],
+                  ["Scald", "Chilling Water", "Hydro Pump", "Bouncy Bubble", "Brine"],
+                  ["Wish"],
+                  ["Protect"]
+              ],
+              "item": ["Leftovers", "Rocky Helmet", "Water Stone"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Hydration"]
+          }
+      ]
+  },
+  "jolteon": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Jolteon",
+              "weight": 100,
+              "moves": [
+                  ["Volt Switch"],
+                  ["Synchronoise", "Electro Ball"],
+                  ["Hidden Power Grass", "Hidden Power Ice"],
+                  ["Alluring Voice", "Shadow Ball", "Signal Beam", "Hyper Beam"]
+              ],
+              "item": ["Life Orb", "Thunder Stone"],
+              "nature": "Timid",
+              "evs": {"spa": 252, "spd": 4, "spe": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Watts"]
+          }
+      ]
+  },
+  "flareon": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Flareon",
+              "weight": 100,
+              "moves": [
+                  ["Heal Bell", "Double Team"],
+                  ["Sizzly Slide"],
+                  ["Wish"],
+                  ["Protect", "Detect"]
+              ],
+              "item": ["Leftovers", "Rocky Helmet", "Heavy-Duty Boots"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "atk": 4, "spd": 252},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Fur Coat"]
+          }
+      ]
+  },
+  "omastar": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Omastar",
+                "weight": 20,
+                "moves": [
+                    ["Shell Smash"],
+                    ["Surf", "Hydro Pump"],
+                    ["Ancient Power"],
+                    ["Ice Beam", "Earth Power", "Hidden Power Fire", "Submission"]
+                ],
+                "item": ["White Herb", "Focus Sash"],
+                "nature": "Modest",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Fossilization"]
+            }
+        ]
+    },
+    "kabutops": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Kabutops",
+                "weight": 50,
+                "moves": [
+                    ["Rollout", "Rock Slide", "Stone Edge"],
+                    ["Swords Dance"],
+                    ["Liquidation", "Aqua Tail", "Waterfall"],
+                    ["Leech Life", "Cross Poison", "Knock Off", "Aerial Ace"]
+                ],
+                "item": ["Lure Ball"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Swift Swim"]
+            },
+            {
+                "species": "Kabutops",
+                "weight": 50,
+                "moves": [
+                    ["Flip Turn"],
+                    ["Rollout", "Rock Slide", "Stone Edge"],
+                    ["Liquidation", "Waterfall", "Aqua tail"],
+                    ["Leech Life", "Cross Poison", "Knock Off", "Aerial Ace"]
+                ],
+                "item": ["Choice Band", "Life Orb"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Fossilization"]
+            }
+        ]
     }
 }
