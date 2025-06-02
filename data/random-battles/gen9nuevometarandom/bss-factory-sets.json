@@ -2217,9 +2217,9 @@
                   ["Volt Switch"]
               ],
               "item": ["Zoom Lens"],
-              "nature": "Modest",
+              "nature": "Quiet",
               "evs": {"hp": 252, "spd": 4, "spa": 252},
-              "ivs": {"atk": 0},
+              "ivs": {"atk": 0, "spe": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Analytic"]
           }
@@ -3354,7 +3354,7 @@
         "weight": 10,
         "sets": [
         {
-        "species": "Starmie",
+        "species": "Mr. Mime-Galar",
         "weight": 70,
         "moves": [
             ["Reflect"],
