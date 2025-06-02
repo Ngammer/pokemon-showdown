@@ -2722,7 +2722,7 @@
                 ["Calm Mind", "Flash", "Infestation"],
                 ["Mega Drain", "Giga Drain", "Absorb"]
             ],
-            "item": ["Aguav Berry", "Hondew Berry", "Pamtre Berry", "Bluk Berry", "Cornn Berry", "Enigma Berry", "Magost Berry", "Nanab Berry", "Pomeg Berry", "Durin Berry"],
+            "item": ["Sitrus Berry", "Hondew Berry", "Pamtre Berry", "Bluk Berry", "Cornn Berry", "Enigma Berry", "Magost Berry", "Nanab Berry", "Pomeg Berry", "Durin Berry"],
             "nature": "Bold",
             "evs": {"spa": 4, "hp": 252, "def": 252},
             "ivs": {"atk": 0},
