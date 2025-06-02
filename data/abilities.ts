@@ -3989,7 +3989,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		condition: {
 			onStart() {
-				this.effectState.turns = 0;
+				this.effectState.turns = 1;
 			},
 		},
 		flags: { },
