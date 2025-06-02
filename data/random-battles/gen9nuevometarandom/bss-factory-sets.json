@@ -1733,16 +1733,31 @@
                 "species": "Arcanine",
                 "weight": 100,
                 "moves": [
-                    ["Fire Fang", "Sacred Fire", "Raging Fury", "Flare Blitz"],
-                    ["Burn Up", "Crunch", "Extreme Speed"],
-                    ["Psychic Fangs", "Close Combat", "Play Rough"],
-                    ["Wild Charge", "Thunder Fang"]
+                    ["Sacred Fire", "Raging Fury", "Flare Blitz"],
+                    ["Burn Up", "Extreme Speed"],
+                    ["Close Combat", "Play Rough"],
+                    ["Wild Charge"]
                 ],
-                "item": ["Choice Band", "Life Orb", "Fire Stone","Razor Fang"],
+                "item": ["Choice Band", "Life Orb", "Fire Stone"],
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Intimidate", "Flash Fire", "Strong Jaw"]
+                "ability": ["Intimidate", "Flash Fire"]
+            },
+            {
+                "species": "Arcanine",
+                "weight": 100,
+                "moves": [
+                    ["Fire Fang"],
+                    ["Burn Up", "Crunch", "Extreme Speed"],
+                    ["Psychic Fangs"],
+                    ["Thunder Fang"]
+                ],
+                "item": ["Life Orb", "Razor Fang"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Strong Jaw"]
             }
         ]
     },
@@ -2296,20 +2311,20 @@
       "weight": 10,
       "sets": [
           {
-              "species": "Magneton",
+              "species": "Muk",
               "weight": 100,
               "moves": [
-                  ["Metal Sound"],
-                  ["Thunder"],
-                  ["Flash Cannon"],
-                  ["Volt Switch"]
+                  ["Venoshock"],
+                  ["Toxic Spikes"],
+                  ["Flamethrower", "Focus Blast", "Fire Blast"],
+                  ["Giga Drain", "Mega Drain"]
               ],
               "item": ["Galarica Cuff"],
               "nature": "Modest",
               "evs": {"hp": 252, "spd": 4, "spa": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Quick Draw"]
+              "ability": ["Stench"]
           }
       ]
   },
@@ -2843,7 +2858,7 @@
         "sets": [
             {
                 "species": "Hitmonlee",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
                     ["Close Combat"],
                     ["Bulk Up"],
@@ -2858,7 +2873,7 @@
             },
             {
                 "species": "Hitmonlee",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
                     ["Close Combat"],
                     ["Fake Out"],
@@ -3005,7 +3020,7 @@
               "species": "Weezing-Galar",
               "weight": 25,
               "moves": [
-                  ["Toxic Spikes", "Will-O-Wisp"],
+                  ["Toxic Spikes"],
                   ["Incinerate", "Haze", "Defog"],
                   ["Strange Steam"],
                   ["Pain Split"]
@@ -3399,6 +3414,266 @@
                 "evs": {"hp": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Vital Spirit"]
+            }
+        ]
+    },
+    "magmar": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Magmar",
+                "weight": 50,
+                "moves": [
+                    ["Ember", "Incinerate"],
+                    ["Clear Smog"],
+                    ["Double Team", "Taunt"],
+                    ["Knock Off", "Fire Punch", "Ice Punch", "Rock Climb"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Calm",
+                "evs": {"spd": 252, "def": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vital Spirit"]
+            },
+            {
+                "species": "Magmar",
+                "weight": 50,
+                "moves": [
+                    ["Psychic", "Hidden Power Ice", "Hidden Power Grass"],
+                    ["Scorching Sands"],
+                    ["Incinerate", "Fire Blast"],
+                    ["Focus Blast"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vital Spirit"]
+            }
+        ]
+    },
+    "pinsir": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Pinsir",
+                "weight": 25,
+                "moves": [
+                    ["Focus Energy"],
+                    ["X-Scissor"],
+                    ["Earthquake", "Stone Edge"],
+                    ["Rage", "Swords Dance"]
+                ],
+                "item": ["Shell Bell", "Leftovers"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Moxie"]
+            },
+            {
+                "species": "Pinsir",
+                "weight": 25,
+                "moves": [
+                    ["Megahorn", "Fury Cutter"],
+                    ["Close Combat", "Earthquake"],
+                    ["Stone Edge"],
+                    ["Knock Off"]
+                ],
+                "item": ["Choice Band", "Choice Scarf"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Mold Breaker"]
+            },
+            {
+                "species": "Pinsir",
+                "weight": 50,
+                "moves": [
+                    ["Swords Dance"],
+                    ["Quick Attack"],
+                    ["Stone Edge", "Megahorn", "Close Combat", "Earthquake"],
+                    ["Return", "Double-Edge", "Giga Impact"]
+                ],
+                "item": ["Pinsirite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Hyper Cutter"]
+            }
+        ]
+    },
+    "tauros": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Tauros",
+                "weight": 100,
+                "moves": [
+                    ["Earthquake", "Close Combat"],
+                    ["Double-Edge", "Giga Impact", "Retaliate"],
+                    ["Payback", "Throat Chop", "Pursuit", "Zen Headbutt"],
+                    ["Trailblaze", "Stone Edge", "Wild Charge"]
+                ],
+                "item": ["Assault Vest", "Life Orb"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Anger Point", "Sheer Force"]
+            }
+        ]
+    },
+    "taurospaldeaaqua": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Tauros-Paldea-Aqua",
+                "weight": 50,
+                "moves": [
+                    ["Double Kick", "Close Combat"],
+                    ["Aqua Jet"],
+                    ["Wave Crash", "Liquidation", "Raging Bull"],
+                    ["Lash Out", "Earthquake", "Wild Charge", "Rock Slide"]
+                ],
+                "item": ["Assault Vest", "Life Orb", "Leftovers", "Shell Bell"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Anger Point"]
+            },
+            {
+                "species": "Tauros-Paldea-Aqua",
+                "weight": 50,
+                "moves": [
+                    ["Double Kick", "Close Combat"],
+                    ["Aqua Jet"],
+                    ["Bulk Up"],
+                    ["Lash Out", "Earthquake", "Wild Charge", "Rock Slide", "Raging Bull"]
+                ],
+                "item": ["Salac Berry"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Cud Chew"]
+            }
+        ]
+    },
+    "taurospaldeablaze": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Tauros-Paldea-Blaze",
+                "weight": 50,
+                "moves": [
+                    ["Double Kick", "Close Combat"],
+                    ["Trailblaze"],
+                    ["Flare Blitz", "Temper Flare", "Raging Bull"],
+                    ["Lash Out", "Earthquake", "Wild Charge", "Rock Slide"]
+                ],
+                "item": ["Assault Vest", "Life Orb", "Leftovers", "Shell Bell"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Anger Point"]
+            },
+            {
+                "species": "Tauros-Paldea-Blaze",
+                "weight": 50,
+                "moves": [
+                    ["Double Kick", "Close Combat"],
+                    ["Trailblaze"],
+                    ["Bulk Up"],
+                    ["Lash Out", "Earthquake", "Wild Charge", "Rock Slide", "Raging Bull"]
+                ],
+                "item": ["Liechi Berry"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Cud Chew"]
+            }
+        ]
+    },
+    "taurospaldeacombat": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Tauros-Paldea-Combat",
+                "weight": 50,
+                "moves": [
+                    ["Double Kick", "Close Combat"],
+                    ["Trailblaze"],
+                    ["Wild Charge", "Rock Slide"],
+                    ["Lash Out", "Earthquake"]
+                ],
+                "item": ["Assault Vest", "Life Orb", "Leftovers", "Shell Bell"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Anger Point"]
+            },
+            {
+                "species": "Tauros-Paldea-Combat",
+                "weight": 50,
+                "moves": [
+                    ["Double Kick", "Close Combat"],
+                    ["Trailblaze"],
+                    ["Bulk Up"],
+                    ["Lash Out", "Earthquake", "Wild Charge", "Rock Slide"]
+                ],
+                "item": ["Liechi Berry"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Cud Chew"]
+            }
+        ]
+    },
+    "gyarados": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Gyarados",
+                "weight": 25,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Aqua Tail", "Waterfall"],
+                    ["Earthquake"],
+                    ["Bounce", "Power Whip", "Temper Flare"]
+                ],
+                "item": ["Leftovers", "Life Orb", "Heavy-Duty Boots"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Intimidate", "Moxie"]
+            },
+            {
+                "species": "Gyarados",
+                "weight": 25,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Aqua Tail", "Waterfall"],
+                    ["Earthquake"],
+                    ["Bounce"]
+                ],
+                "item": ["Flyinium Z"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Moxie"]
+            },
+            {
+                "species": "Gyarados",
+                "weight": 50,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Aqua Tail", "Waterfall"],
+                    ["Ice Fang", "Temper Flare", "Earthquake"],
+                    ["Crunch", "Payback", "Lash Out"]
+                ],
+                "item": ["Gyaradosite"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Intimidate", "Moxie"]
             }
         ]
     }
