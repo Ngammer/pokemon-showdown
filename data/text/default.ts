@@ -178,6 +178,7 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 	},
 	frz: {
 		start: "  [POKEMON] was frozen solid!",
+		startFromItem: "  [POKEMON] was frozen solid by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
@@ -186,6 +187,7 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 	},
 	par: {
 		start: "  [POKEMON] is paralyzed! It may be unable to move!",
+		startFromItem: "  [POKEMON] was paralyzed by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already paralyzed!",
 		end: "  [POKEMON] was cured of paralysis!",
 		endFromItem: "  [POKEMON]'s [ITEM] cured its paralysis!",
