@@ -2498,7 +2498,7 @@
               "evs": {"hp": 252, "spa": 252, "spd": 4},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Forewarm"]
+              "ability": ["Forewarn"]
           }
       ]
   },
@@ -3393,7 +3393,7 @@
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
         "teraType": ["Normal"],
-        "ability": ["Forewarm"]
+        "ability": ["Forewarn"]
     },
     {
         "species": "Jynx",
