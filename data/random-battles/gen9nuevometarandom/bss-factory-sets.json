@@ -1677,9 +1677,9 @@
         "species": "Golduck",
         "weight": 70,
         "moves": [
-            ["Ice Beam", "Clear Smog"],
-            ["Hydro Pump", "Chilling Water"],
-            ["Focus Blast", "Flip Turn", "Power Gem", "Mud Shot", "Vacuum Wave"],
+            ["Ice Beam"],
+            ["Hydro Pump"],
+            ["Focus Blast", "Flip Turn", "Power Gem", "Mud Shot"],
             ["Telekinesis", "Psyshock"]
         ],
         "item": ["Choice Scarf", "Heavy-Duty Boots"],
