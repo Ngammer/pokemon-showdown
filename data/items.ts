@@ -8979,10 +8979,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 10,
 		},
-		onModifyMove(move, pokemon) {
-			if (!this.queue.willMove(pokemon)) {
-				move.accuracy = true;
-				this.add('-message', `${pokemon.name}'s Zoom Lens Active`);
+		onModifyMove(move, pokemon, target) {
+			if (target) {
+				if (!this.queue.willMove(target)) {
+					move.accuracy = true;
+					this.add('-message', `${pokemon.name}'s Zoom Lens Active`);
+				}
 			}
 		},
 		num: 276,
