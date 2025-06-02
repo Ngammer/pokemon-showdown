@@ -6221,7 +6221,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		condition: {
 			onBasePowerPriority: 19,
 			onBasePower(basePower, attacker, defender, move) {
-				this.debug('Artificial intelligence boost');
+				this.debug('Artificial Intelligence boost');
 				return this.chainModify(1.5);
 			},
 			onSourceModifyAccuracyPriority: -1,

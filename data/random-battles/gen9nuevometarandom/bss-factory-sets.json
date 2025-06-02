@@ -3886,5 +3886,497 @@
                 "ability": ["Fossilization"]
             }
         ]
-    }
+    },
+    "aerodactyl": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Aerodactyl",
+                "weight": 25,
+                "moves": [
+                    ["Roost"],
+                    ["Stealth Rock"],
+                    ["Dual Wingbeat", "Sky Drop", "Sky Attack"],
+                    ["Stone Edge", "Rock Slide"]
+                ],
+                "item": ["Heavy-Duty Boots", "Cover Fossil"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Fossilization"]
+            },
+            {
+                "species": "Aerodactyl",
+                "weight": 25,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Rock Slide", "Stone Edge"],
+                    ["Dual Wingbeat", "Sky Drop", "Aerial Ace"],
+                    ["Earthquake", "Ice fang", "Fire fang", "Iron Head"]
+                ],
+                "item": ["Life Orb", "Claw Fossil"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Fossilization"]
+            },
+            {
+                "species": "Aerodactyl",
+                "weight": 25,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Rock Slide", "Stone Edge"],
+                    ["Dual Wingbeat", "Sky Drop", "Aerial Ace"],
+                    ["Crunch", "Ice fang", "Fire fang", "Iron Head", "Psychic Fangs"]
+                ],
+                "item": ["Aerodactylite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Fossilization"]
+            }
+        ]
+    },
+    "snorlax": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Snorlax",
+            "weight": 25,
+            "moves": [
+                ["Belly Drum"],
+                ["Last Resort"],
+                ["Trailblaze"],
+                ["Crunch", "Darkest Lariat", "Covet", "Snatch"]
+            ],
+            "item": ["Salac Berry"],
+            "nature": "Jolly",
+            "evs": {"spe": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Gluttony"]
+        },
+        {
+            "species": "Snorlax",
+            "weight": 25,
+            "moves": [
+                ["Rest"],
+                ["Sleep Talk"],
+                ["Curse"],
+                ["Crunch", "Return", "Hammer Arm"]
+            ],
+            "item": ["Leftovers"],
+            "nature": "Adamant",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Immunity"]
+        },
+        {
+            "species": "Snorlax",
+            "weight": 25,
+            "moves": [
+                ["Rest"],
+                ["Sleep Talk"],
+                ["Curse"],
+                ["Crunch", "Return", "Hammer Arm", "Seed Bomb"]
+            ],
+            "item": ["Snorlaxite"],
+            "nature": "Sassy",
+            "evs": {"hp": 252, "spd": 252, "atk": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Immunity"]
+        },
+        {
+            "species": "Snorlax",
+            "weight": 25,
+            "moves": [
+                ["Protect"],
+                ["Seed Bomb"],
+                ["Heavy Slam", "Covet", "Fire Punch", "High Horsepower"],
+                ["Body Slam", "Return", "Mega Kick"]
+            ],
+            "item": ["Snorlaxite"],
+            "nature": "Brave",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Immunity"]
+        }
+      ]
+  },
+  "articuno": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Articuno",
+              "weight": 50,
+              "moves": [
+                  ["Defog", "Heal Bell", "Haze"],
+                  ["U-turn"],
+                  ["Freeze-Dry"],
+                  ["Roost"]
+              ],
+              "item": ["Heavy-Duty Boots"],
+              "nature": "Calm",
+              "evs": {"hp": 248, "def": 8, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Snow Cloak"]
+          },
+          {
+            "species": "Articuno",
+            "weight": 50,
+            "moves": [
+                ["Aurora Veil"],
+                ["Blizzard", "Freeze-Dry"],
+                ["U-turn", "Haze", "Heal Bell", "Defog"],
+                ["Roost"]
+            ],
+            "item": ["Icy Rock", "Heavy-Duty Boots"],
+            "nature": "Calm",
+            "evs": {"spa": 8, "hp": 248, "spd": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Snow Warning"]
+        }
+      ]
+  },
+  "articunogalar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Articuno-Galar",
+              "weight": 50,
+              "moves": [
+                  ["Hurricane", "Air Slash", "Air Cutter"],
+                  ["U-turn"],
+                  ["Freezing Glare", "Psyshock"],
+                  ["Swift", "Shadow Ball"]
+              ],
+              "item": ["Heavy-Duty Boots", "Choice Scarf", "Life Orb"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Cold Mind"]
+          },
+          {
+            "species": "Articuno-Galar",
+            "weight": 50,
+            "moves": [
+                ["Calm Mind"],
+                ["Recover"],
+                ["Freezing Glare", "Psyshock"],
+                ["Gust", "Hurricane", "Air Cutter"]
+            ],
+            "item": ["Icy Rock", "Heavy-Duty Boots"],
+            "nature": "Bold",
+            "evs": {"spa": 8, "hp": 248, "def": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Cold Mind"]
+        }
+      ]
+  },
+  "zapdos": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Zapdos",
+              "weight": 50,
+              "moves": [
+                  ["Thunderbolt", "Hurricane"],
+                  ["Volt Switch", "U-turn"],
+                  ["Heat Wave"],
+                  ["Roost"]
+              ],
+              "item": ["Rocky Helmet", "Heavy-Duty Boots"],
+              "nature": "Modest",
+              "evs": {"hp": 248, "spd": 8, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Static"]
+          },
+          {
+            "species": "Zapdos",
+            "weight": 50,
+            "moves": [
+                ["Thunder"],
+                ["Hurricane"],
+                ["U-turn", "Volt Switch"],
+                ["Roost"]
+            ],
+            "item": ["Damp Rock", "Heavy-Duty Boots", "Choice Specs", "Choice Scarf"],
+            "nature": "Modest",
+            "evs": {"spe": 252, "spd": 4, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Drizzle"]
+        }
+      ]
+  },
+  "zapdosgalar": {
+  "weight": 10,
+  "sets": [
+      {
+          "species": "Zapdos Galar",
+          "weight": 50,
+          "moves": [
+              ["Substitute", "U-turn"],
+              ["Knock Off", "Blaze Kick", "Stomping Tantrum"],
+              ["Close Combat", "Thunderous Kick"],
+              ["Brave Bird", "Dual Wingbeat"]
+          ],
+          "item": ["Light Ball"],
+          "nature": "Jolly",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Watt Feather"]
+      },
+      {
+          "species": "Zapdos Galar",
+          "weight": 50,
+          "moves": [
+              ["U-turn"],
+              ["Knock Off", "Blaze Kick", "Stomping Tantrum"],
+              ["Close Combat"],
+              ["Brave Bird"]
+          ],
+          "item": ["Choice Scarf"],
+          "nature": "Jolly",
+          "evs": {"atk": 252, "spd": 4, "spe": 252},
+          "teraType": ["Fairy", "Poison"],
+          "ability": ["Defiant"]
+      }
+  ]
+},
+"moltres": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Moltres",
+              "weight": 50,
+              "moves": [
+                  ["Solar Beam"],
+                  ["U-turn"],
+                  ["Weather Ball", "Fire Blast"],
+                  ["Air Slash", "Razor Wind", "Air Cutter"]
+              ],
+              "item": ["Choice Scarf", "Heavy-Duty Boots", "Choice Specs"],
+              "nature": "Modest",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Drought"]
+          },
+          {
+            "species": "Moltres",
+            "weight": 50,
+            "moves": [
+                ["Ember", "Incinerate", "Burning Jealousy", "Overheat"],
+                ["Scorching Sands", "Hurricane"],
+                ["U-turn"],
+                ["Roost"]
+            ],
+            "item": ["Heavy-Duty Boots", "Leftovers"],
+            "nature": "Bold",
+            "evs": {"hp": 248, "spd": 8, "def": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Pressure", "Flame Body"]
+        }
+      ]
+  },
+  "moltresgalar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Moltres-Galar",
+              "weight": 50,
+              "moves": [
+                  ["Substitute"],
+                  ["Agility"],
+                  ["Fiery Wrath"],
+                  ["Air Slash", "Hurricane"]
+              ],
+              "item": ["Leftovers", "Shell Bell"],
+              "nature": "Modest",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sinister Flame"]
+          },
+          {
+              "species": "Moltres-Galar",
+              "weight": 50,
+              "moves": [
+                  ["U-turn"],
+                  ["Swift", "Hyper Beam", "Shadow Ball"],
+                  ["Fiery Wrath"],
+                  ["Air Slash", "Hurricane"]
+              ],
+              "item": ["Heavy-Duty Boots", "Choice Scarf", "Choice Specs"],
+              "nature": "Jolly",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sinister Flame"]
+          }
+      ]
+  },
+  "dragonite": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Dragonite",
+                "weight": 50,
+                "moves": [
+                    ["Extreme Speed"],
+                    ["Dragon Dance"],
+                    ["Roost", "Outrage", "Dragon Rush"],
+                    ["Dual Wingbeat", "Sky Drop"]
+                ],
+                "item": ["Choice Band", "Lure Ball", "Leftovers", "Life Orb", "Choice Scarf"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Multiscale"]
+            },
+            {
+                "species": "Dragonite",
+                "weight": 50,
+                "moves": [
+                    ["Extreme Speed"],
+                    ["Earthquake", "Horn Drill", "Iron Head", "Ice Spinner"],
+                    ["Outrage", "Dragon Rush"],
+                    ["Dual Wingbeat", "Sky Drop"]
+                ],
+                "item": ["Berserk Gene"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Inner Focus"]
+            }
+        ]
+    },
+    "mewtwo": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Mewtwo",
+              "weight": 50,
+              "moves": [
+                  ["Nasty Plot"],
+                  ["Aura Sphere", "Focus Blast", "Flamethrower", "Fire Blast"],
+                  ["Psystrike", "Telekinesis"],
+                  ["Recover"]
+              ],
+              "item": ["Life Orb", "Leftovers"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Artificial Intelligence"]
+          },
+          {
+            "species": "Mewtwo",
+            "weight": 25,
+            "moves": [
+                ["Bulk Up"],
+                ["Drain Punch"],
+                ["Zen Headbutt", "Psycho Cut"],
+                ["Knock Off", "Ice Punch"]
+            ],
+            "item": ["Mewtwonite X"],
+            "nature": "Modest",
+            "evs": {"spe": 252, "spd": 4, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
+            "ability": ["Artificial Intelligence"]
+        },
+        {
+            "species": "Mewtwo",
+            "weight": 25,
+            "moves": [
+                ["Nasty Plot"],
+                ["Aura Sphere", "Focus Blast", "Flamethrower", "Fire Blast"],
+                ["Psystrike", "Telekinesis"],
+                ["Recover"]
+            ],
+            "item": ["Mewtwonite Y"],
+            "nature": "Modest",
+            "evs": {"hp": 248, "spd": 8, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
+            "ability": ["Artificial Intelligence"]
+        }
+      ]
+  },
+  "mew": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Mew",
+              "weight": 25,
+              "moves": [
+                  ["Nasty Plot"],
+                  ["Fire Blast", "Hurricane"],
+                  ["Telekinesis", "Psyshock"],
+                  ["Blizzard", "Thunder"]
+              ],
+              "item": ["Life Orb", "Leftovers", "Shell Bell"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Ancient Intelligence"]
+          },
+          {
+            "species": "Mew",
+            "weight": 25,
+            "moves": [
+                ["Dragon Dance"],
+                ["Dynamic Punch"],
+                ["Zen Headbutt", "Psycho Cut", "Psychic Fangs"],
+                ["Stone Edge", "Gunk Shot", "Power Whip", "Triple Axel"]
+            ],
+            "item": ["Life Orb", "Leftovers", "Shell Bell"],
+            "nature": "Adamant",
+            "evs": {"spe": 252, "spd": 4, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Ancient Intelligence"]
+        },
+        {
+            "species": "Mew",
+            "weight": 25,
+            "moves": [
+                ["Roost", "Life Dew", "Recover"],
+                ["Stealth Rock", "Toxic Spikes", "Spikes"],
+                ["Psyshock", "Brine", "Chilling Water", "Scald", "Scorching Sands", "Spite", "Incinerate", "Corrosive Gas", "Foul Play"],
+                ["Defog", "Haze", "Heal Bell", "Roar", "Encore", "Taunt", "Tailwind", "Telepor", "Double Team", "U-turn", "Volt Switch", "Thunder Wave", "Will-O-Wisp"]
+            ],
+            "item": ["Mewtwonite Y"],
+            "nature": "Calm",
+            "evs": {"hp": 252, "spa": 4, "spd": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Artificial Intelligence"]
+        },
+        {
+            "species": "Mew",
+            "weight": 25,
+            "moves": [
+                ["Roost", "Life Dew", "Recover"],
+                ["Stealth Rock", "Toxic Spikes", "Spikes"],
+                ["Psyshock", "Brine", "Chilling Water", "Scald", "Scorching Sands", "Spite", "Incinerate", "Corrosive Gas", "Foul Play"],
+                ["Defog", "Haze", "Heal Bell", "Roar", "Encore", "Taunt", "Tailwind", "Telepor", "Double Team", "U-turn", "Volt Switch", "Thunder Wave", "Will-O-Wisp"]
+            ],
+            "item": ["Mewtwonite Y"],
+            "nature": "Bold",
+            "evs": {"hp": 252, "spa": 4, "def": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Artificial Intelligence"]
+        }
+      ]
+  }
 }

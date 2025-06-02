@@ -2312,8 +2312,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	sinisterflame: {
 		name: "Sinister Flame",
-		desc: "This Pokemon's Special Attack is raised by 2 stages if it attacks and knocks out another Pokemon with a Dark-type attack. This Pokemon's Dark-type moves have a 100% chance of burning. This effect comes after a move's inherent secondary effect chance.",
-		shortDesc: "This Pokemon's Special Attack is raised by 2 stages if it attacks and KOes another Pokemon with a Dark-type attack. This Pokemon's Dark-type moves have a 100% chance of burning.",
+		desc: "This Pokemon's Special Attack is raised by 1 stages if it attacks and knocks out another Pokemon with a Dark-type attack. This Pokemon's Dark-type moves have a 100% chance of burning. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's Special Attack is raised by 1 stages if it attacks and KOes another Pokemon with a Dark-type attack. This Pokemon's Dark-type moves have a 100% chance of burning.",
 	},
 	assertiveintelligence: {
 		name: "Assertive Intelligence",
@@ -2321,7 +2321,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		shortDesc: "This Pokemon ignores the Abilities, stat stages, immunities and protection of other Pokemon when doing damage.",
 	},
 	artificialintelligence: {
-		name: "Artificial intelligence",
+		name: "Artificial Intelligence",
 		desc: "This Pokemon's moves have their power multiplied by 1.4 and the accuracy of its attacks is multiplied by 0.95.",
 		shortDesc: "This Pokemon's moves have 1.4x power and accuracy of its attacks is 0.95x.",
 	},

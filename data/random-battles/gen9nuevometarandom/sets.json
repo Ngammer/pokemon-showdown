@@ -4927,7 +4927,7 @@
             {
                 "role": "Fast Special Sweeper",
                 "movepool": ["Recover", "Psystrike", "Calm Mind", "Aura Sphere"],
-                "abilities": ["Artificial intelligence"],
+                "abilities": ["Artificial Intelligence"],
                 "teraTypes": ["Water"],
                 "items": "Leftovers",
                 "nature": "timid",
@@ -4941,7 +4941,7 @@
             {
                 "role": "Fast Special Sweeper",
                 "movepool": ["Nasty Plot", "Aura Sphere", "Recover", "Psystrike"],
-                "abilities": ["Artificial intelligence"],
+                "abilities": ["Artificial Intelligence"],
                 "teraTypes": ["Water"],
                 "items": "Life Orb",
                 "nature": "timid",
@@ -4993,7 +4993,7 @@
             {
                 "role": "Fast Special Sweeper",
                 "movepool": ["Recover", "Psystrike", "Calm Mind", "Aura Sphere"],
-                "abilities": ["Artificial intelligence"],
+                "abilities": ["Artificial Intelligence"],
                 "teraTypes": ["Water"],
                 "items": "Mewtwonite Y",
                 "nature": "timid",
@@ -5007,7 +5007,7 @@
             {
                 "role": "Fast Special Sweeper",
                 "movepool": ["Nasty Plot", "Aura Sphere", "Recover", "Psystrike"],
-                "abilities": ["Artificial intelligence"],
+                "abilities": ["Artificial Intelligence"],
                 "teraTypes": ["Water"],
                 "items": "Mewtwonite Y",
                 "nature": "timid",

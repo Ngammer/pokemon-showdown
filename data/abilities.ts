@@ -6324,7 +6324,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	sinisterflame: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move' && effect.type === "Dark") {
-				this.boost({ spa: 2 }, source);
+				this.boost({ spa: 1 }, source);
 			}
 		},
 		onSourceDamagingHit(damage, target, source, move) {
@@ -6360,7 +6360,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	artificialintelligence: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			this.debug('Artificial intelligence boost');
+			this.debug('Artificial Intelligence boost');
 			return this.chainModify(1.4);
 		},
 		onSourceModifyAccuracyPriority: -1,
@@ -6370,7 +6370,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Artificial intelligence",
+		name: "Artificial Intelligence",
 		rating: 3,
 		num: -114,
 	},
