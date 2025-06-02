@@ -1568,18 +1568,33 @@
         "sets": [
             {
                 "species": "Dugtrio-Alola",
-                "weight": 100,
+                "weight": 50,
+                "moves": [
+                    ["Iron Head"],
+                    ["Earthquake", "Fissure", "Magnitude"],
+                    ["Sucker Punch"],
+                    ["Stone Edge", "Pursuit", "Aerial Ace"]
+                ],
+                "item": ["Choice Band","Life Orb", "Weakness Policy","Leftovers"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Tangling Hair"]
+            },
+            {
+                "species": "Dugtrio-Alola",
+                "weight": 50,
                 "moves": [
                     ["Iron Head"],
                     ["Earthquake"],
                     ["Work Up", "Stealth Rock", "Sucker Punch", "Metal Claw"],
                     ["Stone Edge", "Pursuit", "Aerial Ace", "Toxic"]
                 ],
-                "item": ["Choice Band", "Life Orb", "Weakness Policy","Leftovers"],
+                "item": ["Life Orb", "Weakness Policy","Leftovers"],
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Sand Force", "Tangling Hair"]
+                "ability": ["Tangling Hair"]
             }
         ]
     },
