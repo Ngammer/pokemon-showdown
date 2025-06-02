@@ -1540,7 +1540,22 @@
                     ["Work Up", "Stealth Rock", "Sucker Punch"],
                     ["Cut", "Pursuit", "Aerial Ace"]
                 ],
-                "item": ["Choice Band", "Life Orb", "Focus Sash", "Groundium Z"],
+                "item": ["Life Orb", "Focus Sash", "Groundium Z"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sand Force", "Arena Trap"]
+            },
+            {
+                "species": "Dugtrio",
+                "weight": 100,
+                "moves": [
+                    ["Stone Edge"],
+                    ["Earthquake"],
+                    ["Sucker Punch", "Pursuit", "Beat Up"],
+                    ["Cut", "Aerial Ace"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Focus Sash"],
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -2041,6 +2056,21 @@
                     ["Flare Blitz"],
                     ["Play Rough"],
                     ["Drill Run", "High Horsepower", "Swords Dance", "Curse"],
+                    ["Wild Charge"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Run Away"]
+            },
+            {
+                "species": "Rapidash",
+                "weight": 100,
+                "moves": [
+                    ["Flare Blitz"],
+                    ["Play Rough", "Bounce"],
+                    ["Drill Run", "High Horsepower"],
                     ["Wild Charge"]
                 ],
                 "item": ["Choice Band", "Life Orb", "Heavy-Duty Boots"],
