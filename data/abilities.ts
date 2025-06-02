@@ -4960,6 +4960,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 252,
 	},
 	stench: {
+		onResidualOrder: 10,
+		onResidualSubOrder: 5,
 		onResidual(pokemon) {
 			for (const foe of pokemon.adjacentFoes()) {
 				this.damage(foe.baseMaxhp / 16, foe, pokemon);
