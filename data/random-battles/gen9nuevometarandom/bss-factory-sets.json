@@ -2319,7 +2319,7 @@
                   ["Flamethrower", "Focus Blast", "Fire Blast"],
                   ["Giga Drain", "Mega Drain"]
               ],
-              "item": ["Galarica Cuff"],
+              "item": ["Black Sludge"],
               "nature": "Modest",
               "evs": {"hp": 252, "spd": 4, "spa": 252},
               "ivs": {"atk": 0},
