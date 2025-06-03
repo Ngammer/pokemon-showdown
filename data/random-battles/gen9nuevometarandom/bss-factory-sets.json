@@ -1997,11 +1997,11 @@
                 "weight": 50,
                 "moves": [
                     ["Rock Polish"],
-                    ["Dig"],
+                    ["Dig", "Earthquake", "Magnitude"],
                     ["Rollout", "Rock Throw", "Smack Down"],
                     ["Thunder Punch", "Fire Punch", "Sucker Punch"]
                 ],
-                "item": ["Weakness Policy", "Power Herb"],
+                "item": ["Weakness Policy"],
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -2012,11 +2012,11 @@
                 "weight": 50,
                 "moves": [
                     ["Protect"],
-                    ["Dig", "Earthquake", "Magnitude"],
+                    ["Dig"],
                     ["Rollout", "Rock Throw", "Smack Down"],
                     ["Thunder Punch", "Fire Punch", "Sucker Punch"]
                 ],
-                "item": ["Weakness Policy", "Power Herb"],
+                "item": ["Power Herb"],
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
