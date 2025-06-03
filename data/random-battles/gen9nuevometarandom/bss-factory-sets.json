@@ -4028,6 +4028,7 @@
             "nature": "Sassy",
             "evs": {"hp": 252, "spd": 252, "atk": 4},
             "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
             "ability": ["Immunity"]
         },
         {
@@ -4043,6 +4044,7 @@
             "nature": "Brave",
             "evs": {"hp": 252, "atk": 252, "spd": 4},
             "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
             "ability": ["Immunity"]
         }
       ]
