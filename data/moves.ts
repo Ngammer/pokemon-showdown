@@ -22857,4 +22857,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 	},
+	heroicpunch: {
+		num: 560,
+		accuracy: 95,
+		basePower: 90,
+		category: "Physical",
+		name: "Heroic Punch",
+		pp: 10,
+		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Water' || type === 'Flying') return 1;
+		},
+		priority: 0,
+		secondary: null,
+		target: "any",
+		type: "Bug",
+		zMove: { basePower: 170 },
+		contestType: "Tough",
+	},
 };
