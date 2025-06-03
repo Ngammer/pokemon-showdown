@@ -712,7 +712,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	illuminate: {
 		name: "Illuminate",
-		shortDesc: "This Pokemon's moves can't miss.",
+		shortDesc: "This Pokemon's moves have +10% accuracy.",
 		gen8: {
 			desc: "No competitive use.",
 			shortDesc: "No competitive use.",
