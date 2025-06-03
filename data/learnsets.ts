@@ -28363,6 +28363,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			snore: ["9T", "9M", "9T", "9T", "9T", "9T"],
 			solarbeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			spite: ["9M", "9T", "9E", "9M", "9T", "9E", "9T", "9E", "9T", "9E", "9E"],
+			splash: ["9E", "9E", "9E", "9M", "9E", "9E", "9E", "9E"],
 			strength: ["9M", "9M", "9M", "9M", "9M"],
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
