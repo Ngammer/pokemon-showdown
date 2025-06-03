@@ -3285,7 +3285,7 @@
             ["Ice Beam", "Signal Beam", "Hidden Power Fire"],
             ["Surf", "Hydro Pump"]
         ],
-        "item": ["Alakazite"],
+        "item": ["Leftovers", "Life Orb", "Choice Scarf", "Choice Specs"],
         "nature": "Timid",
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "teraType": ["Normal"],
@@ -3334,7 +3334,7 @@
       "sets": [
           {
               "species": "Mr. Mime",
-              "weight": 50,
+              "weight": 100,
               "moves": [
                   ["Reflect"],
                   ["Light Screen"],
