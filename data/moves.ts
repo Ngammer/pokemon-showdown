@@ -9887,7 +9887,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	inferno: {
 		num: 517,
-		accuracy: 70,
+		accuracy: 80,
 		basePower: 90,
 		category: "Special",
 		name: "Inferno",
@@ -10357,10 +10357,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	landswrath: {
 		num: 616,
-		accuracy: 110,
-		basePower: 100,
+		accuracy: 100,
+		basePower: 110,
 		category: "Physical",
-
 		name: "Land's Wrath",
 		pp: 10,
 		priority: 0,
@@ -18194,10 +18193,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	spiderweb: {
 		num: 169,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
 		name: "Spider Web",
 		pp: 10,
 		priority: 0,
@@ -22044,7 +22042,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	zapcannon: {
 		num: 192,
-		accuracy: 70,
+		accuracy: 80,
 		basePower: 90,
 		category: "Special",
 		name: "Zap Cannon",
