@@ -750,6 +750,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "10% chance to lower the target's Speed by 1.",
 		},
 	},
+	bubbleancientrite: {
+		name: "Bubble",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up.",
+		shortDesc: "Heals 50% max HP. Cures party of all status conditions.",
+	},
 	bubblebeam: {
 		name: "Bubble Beam",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
@@ -1144,6 +1149,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Cosmic Power",
 		desc: "Raises the user's Defense and Special Defense by 1 stage.",
 		shortDesc: "Raises the user's Defense and Sp. Def by 1.",
+	},
+	cottonball: {
+		name: "Cotton Ball",
+		desc: "Damage is calculated using the user's Speed stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Speed stat as Atk in damage calculation.",
+		gen5: {
+			desc: "The power of this move depends on (user's current Speed / target's current Speed), rounded down. Power is equal to 150 if the result is 4 or more, 120 if 3, 80 if 2, 60 if 1, 40 if less than 1. If the target's current Speed is 0, it is treated as 1 instead.",
+		},
 	},
 	cottonguard: {
 		name: "Cotton Guard",
@@ -3004,6 +3017,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Has a 10% chance to burn the target.",
 		shortDesc: "10% chance to burn the foe(s).",
 	},
+	heavycollision: {
+		name: "Heavy Collision",
+		desc: "If both the user and the target have not fainted, the target is forced to switch out and be replaced with a random unfainted ally. This effect fails if the target used Ingrain previously, has the Suction Cups Ability, or this move hit a substitute.",
+		shortDesc: "Forces the target to switch to a random ally.",
+	},
 	heavyslam: {
 		name: "Heavy Slam",
 		desc: "The power of this move depends on (user's weight / target's weight), rounded down. Power is equal to 120 if the result is 5 or more, 100 if 4, 80 if 3, 60 if 2, and 40 if 1 or less. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
@@ -3018,6 +3036,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "One adjacent ally's move power is 1.5x this turn.",
 
 		start: "  [SOURCE] is ready to help [POKEMON]!",
+	},
+	heroicpunch: {
+		name: "Heroic Punch",
+		desc: "This move's type effectiveness against Water and Flying and is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Super effective on Water and Flying.",
 	},
 	hex: {
 		name: "Hex",
@@ -5734,6 +5757,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Sharpen",
 		desc: "Raises the user's Attack by 3 stage.",
 		shortDesc: "Raises the user's Attack by 3.",
+	},
+	sharproot: {
+		name: "Sharp Root",
+		desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		shortDesc: "Hurts foes on switch-in. Factors Steel weakness.",
+		start: "  A pointed root comes out of the ground [TEAM]!",
+		end: "  The pointed root disappeared from ground [TEAM]!",
+		damage: "  Pointed root dug into [POKEMON]!",
 	},
 	shatteredpsyche: {
 		name: "Shattered Psyche",
