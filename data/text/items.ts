@@ -655,7 +655,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	galaricawreath: {
 		name: "Galarica Wreath",
-		shortDesc: "(Galarian Slowking only) Strange Medicine heals 25% HP on switch-in.",
+		shortDesc: "(Galarian Slowking only) Curious Medicine heals 25% HP on switch-in.",
 	},
 	galladite: {
 		name: "Galladite",

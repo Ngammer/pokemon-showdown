@@ -31848,6 +31848,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			coaching: ["9M"],
 			counter: ["9E"],
 			dig: ["9M"],
+			dynamicpunch: ["9M", "9T"],
 			doublehit: ["9E"],
 			endure: ["9M"],
 			facade: ["9M"],

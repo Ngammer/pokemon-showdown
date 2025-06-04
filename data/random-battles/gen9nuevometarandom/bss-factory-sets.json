@@ -3244,9 +3244,25 @@
         "weight": 70,
         "moves": [
             ["Swift"],
+            ["Water Gun"],
+            ["Ice Beam", "Dragon Pulse", "Flash Cannon", "Signal Beam"],
+            ["Calm Mind"]
+        ],
+        "item": ["Dragon Scale"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Sniper"]
+    },
+    {
+        "species": "Seadra",
+        "weight": 30,
+        "moves": [
+            ["Swift"],
             ["Flip Turn"],
             ["Ice Beam", "Dragon Pulse", "Flash Cannon", "Signal Beam"],
-            ["Water Gun", "Calm Mind"]
+            ["Water Gun"]
         ],
         "item": ["Dragon Scale"],
         "nature": "Timid",
