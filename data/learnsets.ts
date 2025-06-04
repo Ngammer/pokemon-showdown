@@ -14333,6 +14333,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gyroball: ["9M", "9M", "9L20", "9M", "9L20", "9M", "9M"],
 			harden: ["9L1", "9L1", "9M", "9L1", "9L1", "9L1", "9L19"],
 			headbutt: ["9M", "9T"],
+			heavycollision: ["9M"],
 			heavyslam: ["9M"],
 			hiddenpower: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			highhorsepower: ["9M"],

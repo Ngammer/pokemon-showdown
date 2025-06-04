@@ -691,6 +691,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Has a 100% chance to lower the target's Defense by 2 stage.",
 		shortDesc: "100% chance to lower the target's Defense by 2.",
 	},
+	braveancientrite: {
+		name: "Brave Ancient Rite",
+		desc: "Raises the user's Attack by 3 stages.",
+		shortDesc: "Raises the user's Atk by 3.",
+	},
 	bravebird: {
 		name: "Brave Bird",
 		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
