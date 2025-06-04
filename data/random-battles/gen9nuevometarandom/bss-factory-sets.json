@@ -43,7 +43,7 @@
                     ["Toxic", "Sleep Powder"],
                     ["Knock Off"]
                 ],
-                "item": ["Life Orb"],
+                "item": ["Black Sludge"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
