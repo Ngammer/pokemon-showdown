@@ -6653,7 +6653,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onAnyAccuracy(accuracy, target, source, move) {
-			if (move && (source === this.effectState.target) && move.type === 'Dark') {
+			if (move && move.type === 'Dark') {
 				return true;
 			}
 			return accuracy;
