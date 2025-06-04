@@ -16237,9 +16237,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
-				if (source?.hasAbility('persistent')) {
+				if (source?.hasAbility('persistent') || source?.hasItem('lightclay')) {
 					this.add('-activate', source, 'ability: Persistent', '[move] Safeguard');
-					return 7;
+					return 8;
 				}
 				return 5;
 			},
@@ -16258,7 +16258,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onTryAddVolatile(status, target, source, effect) {
 				if (!effect || !source) return;
 				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
-				if ((status.id === 'confusion' || status.id === 'yawn') && target !== source) {
+				if ((status.id === 'confusion' || status.id === 'yawn' || status.id === 'taunt' ||
+					status.id === 'curse' || status.id === 'brine' || status.id === 'saltcure' ||
+					status.id === 'attract' || status.id === 'embargo' || status.id === 'encore') && target !== source) {
 					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Safeguard');
 					return null;
 				}
