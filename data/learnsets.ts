@@ -25391,6 +25391,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			gigaimpact: ["9M", "9M", "9M", "9M", "9M"],
 			grassknot: ["9M", "9M", "9M", "9M", "9M"],
 			headbutt: ["9M", "9T"],
+			healbell: ["9T", "9T", "9T", "9T"],
 			helpinghand: ["9M", "9L17", "9T", "9L17", "9T", "9L17", "9T", "9L17", "9T", "9L17", "9L19"],
 			hiddenpower: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			honeclaws: ["9M", "9M"],
