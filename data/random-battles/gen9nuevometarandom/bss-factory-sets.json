@@ -2274,7 +2274,7 @@
             "moves": [
                 ["Swords Dance"],
                 ["Brave Bird", "Tripeck", "Pluck"],
-                ["Double-Edge", "Natural Gift", "Body Slam"],
+                ["Double-Edge", "Body Slam"],
                 ["Drill Run", "Jump Kick", "Trailblaze", "Steel Wing", "Stomping Tantrum"]
             ],
             "item": ["Dream Ball"],
@@ -2304,10 +2304,10 @@
             "moves": [
                 ["Swords Dance"],
                 ["Brave Bird", "Tripeck", "Pluck"],
-                ["Double-Edge", "Natural Gift", "Body Slam"],
+                ["Natural Gift"],
                 ["Substitute"]
             ],
-            "item": ["Leftovers", "Hondew Berry", "Kelpsy Berry"],
+            "item": ["Hondew Berry", "Kelpsy Berry"],
             "nature": "Adamant",
             "evs": {"hp": 248, "atk": 252, "spd": 8},
             "teraType": ["Fairy", "Water"],
@@ -3210,7 +3210,7 @@
             "moves": [
                 ["Covet"],
                 ["Drain Punch", "Earthquake"],
-                ["Double-Edge", "Natural Gift"],
+                ["Double-Edge"],
                 ["Beat Up", "Crunch", "Sucker Punch"]
             ],
             "item": ["Berserk Gene"],
