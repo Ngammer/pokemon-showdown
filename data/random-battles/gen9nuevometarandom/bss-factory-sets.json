@@ -1280,10 +1280,10 @@
                 "species": "Ninetales",
                 "weight": 50,
                 "moves": [
-                    ["Solar Beam"],
+                    ["Protect"],
                     ["Fire Spin"],
                     ["Encore"],
-                    ["Spite"]
+                    ["Spite", "Incinerate"]
                 ],
                 "item": ["Binding Band"],
                 "nature": "Timid",
