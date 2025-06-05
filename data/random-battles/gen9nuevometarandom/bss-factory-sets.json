@@ -3243,9 +3243,9 @@
         "species": "Seadra",
         "weight": 70,
         "moves": [
-            ["Swift"],
+            ["Mud Shot"],
             ["Water Gun"],
-            ["Ice Beam", "Dragon Pulse", "Flash Cannon", "Signal Beam"],
+            ["Ice Beam", "Sludge Bomb", "Signal Beam"],
             ["Calm Mind"]
         ],
         "item": ["Dragon Scale"],
