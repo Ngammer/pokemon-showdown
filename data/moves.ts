@@ -8160,7 +8160,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		secondary: null,
-		target: "self",
+		target: "normal",
 		type: "Ghost",
 		zMove: { effect: 'redirect' },
 		contestType: "Tough",
