@@ -35525,6 +35525,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			irontail: ["9M", "9T", "9M", "9T", "9T", "9M", "9M"],
 			laserfocus: ["9T"],
 			leer: ["9L1", "9L1", "9L1", "9M", "9L1", "9L1", "9L1", "9L1"],
+			lifedew: ["9M"],
 			liquidation: ["9M", "9M", "8S6"],
 			mimic: ["9T"],
 			mirrorcoat: ["9L60", "9S7", "9L60", "9L43", "9M", "9L43", "6S4", "9L43", "9L43", "9L61", "3S1"],

@@ -1533,7 +1533,7 @@
         "sets": [
             {
                 "species": "Dugtrio",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
                     ["Stone Edge"],
                     ["Earthquake"],
@@ -1548,7 +1548,7 @@
             },
             {
                 "species": "Dugtrio",
-                "weight": 100,
+                "weight": 50,
                 "moves": [
                     ["Stone Edge"],
                     ["Earthquake"],
@@ -3020,7 +3020,6 @@
               "item": ["Black Sludge"],
               "nature": "Relaxed",
               "evs": {"hp": 252, "spd": 4, "def": 252},
-              "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Neutralizing Gas", "Levitate", "Stench"]
           }
@@ -3055,7 +3054,7 @@
                   ["Pain Split", "Haze", "Defog"]
               ],
               "item": ["Black Sludge", "Heavy-Duty Boots"],
-              "nature": "Relaxed",
+              "nature": "Sassy",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
@@ -3120,7 +3119,7 @@
       "sets": [
           {
             "species": "Chansey",
-            "weight": 100,
+            "weight": 50,
             "moves": [
                 ["Soft-Boiled", "Life Dew"],
                 ["Thunder Wave", "Heal Bell", "Toxic", "Aromatherapy"],
@@ -3135,7 +3134,7 @@
         },
         {
             "species": "Chansey",
-            "weight": 100,
+            "weight": 50,
             "moves": [
                 ["Wish"],
                 ["Protect"],
@@ -4439,6 +4438,309 @@
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
             "ability": ["Artificial Intelligence"]
+        }
+      ]
+  },
+  "meganium": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Meganium",
+              "weight": 50,
+              "moves": [
+                  ["Leech Seed"],
+                  ["Mega Drain", "Giga Drain"],
+                  ["Draining Kiss"],
+                  ["Calm Mind"]
+              ],
+              "item": ["Big Root"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Triage"]
+          },
+          {
+            "species": "Meganium",
+            "weight": 50,
+            "moves": [
+                ["Reflect"],
+                ["Light Screen"],
+                ["Leech Seed"],
+                ["Mega Drain", "Giga Drain"]
+            ],
+            "item": ["Light Clay"],
+            "nature": "Calm",
+            "evs": {"spa": 4, "hp": 252, "spd": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Triage"]
+        }
+      ]
+  },
+  "typhlosion": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Typhlosion",
+        "weight": 50,
+        "moves": [
+            ["Eruption"],
+            ["Hidden Power Ice", "Hidden Power Grass"],
+            ["Earth Power"],
+            ["Flamethrower", "Fire Blast"]
+        ],
+        "item": ["Choice Scarf"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Blaze", "Sheer Force"]
+    },
+    {
+        "species": "Typhlosion",
+        "weight": 50,
+        "moves": [
+            ["Earth Power"],
+            ["Flamethrower", "Fire Blast"],
+            ["Hidden Power Ice", "Hidden Power Grass"],
+            ["Focus Blast", "Shadow Ball", "Submission", "Burn Up"]
+        ],
+        "item": ["Life Orb", "Choice Specs", "Heavy-Duty Boots"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "teraType": ["Normal"],
+        "ability": ["Sheer Force"]
+    }
+    ]
+},
+"typhlosionhisui": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Typhlosion-Hisui",
+              "weight": 80,
+              "moves": [
+                  ["Infernal Parade"],
+                  ["Incinerate", "Fire Blast", "Flamethrower"],
+                  ["Calm Mind"],
+                  ["Focus Blast"]
+              ],
+              "item": ["Leftovers", "Heavy-Duty Boots"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Cursed Body"]
+          },
+          {
+              "species": "Typhlosion-Hisui",
+              "weight": 20,
+              "moves": [
+                  ["Ember"],
+                  ["Hex"],
+                  ["Rest"],
+                  ["Sleep Talk"]
+              ],
+              "item": ["Rocky Helmet", "Heavy-Duty Boots", "Leftovers"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Cursed Body"]
+          }
+      ]
+  },
+  "feraligatr": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Feraligatr",
+                "weight": 50,
+                "moves": [
+                    ["Dragon Dance"],
+                    ["Bubble Fang"],
+                    ["Dragon Bite"],
+                    ["Crunch", "Ice Fang", "Psychic Fangs"]
+                ],
+                "item": ["Life Orb", "Razor Fang", "Leftovers"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Strong Jaw"]
+            },
+            {
+                "species": "Feraligatr",
+                "weight": 50,
+                "moves": [
+                    ["Ice Fang"],
+                    ["Bubble Fang"],
+                    ["Dragon Bite"],
+                    ["Crunch", "Psychic Fangs"]
+                ],
+                "item": ["Choice Band", "Choice Scarf"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Strong Jaw"]
+            }
+        ]
+    },
+    "furrip": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Furrip",
+                "weight": 25,
+                "moves": [
+                    ["Shadow Ball"],
+                    ["U-turn"],
+                    ["Hyper Beam", "Hyper Voice", "Round", "Uproar"],
+                    ["Flamethrower", "Focus Blast"]
+                ],
+                "item": ["Life Orb", "Wise Glasses"],
+                "nature": "Timid",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "ivs": {"atk": 0},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Soul Eater"]
+            },
+            {
+                "species": "Furrip",
+                "weight": 25,
+                "moves": [
+                    ["Last Respects"],
+                    ["U-turn"],
+                    ["Giga Impact", "Return", "Double-Edge"],
+                    ["Shadow Sneak", "Knock Off", "Focus Punch"]
+                ],
+                "item": ["Life Orb", "Muscle Band"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Soul Eater"]
+            },
+            {
+                "species": "Furrip",
+                "weight": 50,
+                "moves": [
+                    ["U-turn"],
+                    ["Last Respects"],
+                    ["Knock Off", "Giga Impact"],
+                    ["Flamethrower", "Focus Blast"]
+                ],
+                "item": ["Life Orb"],
+                "nature": "Hasty",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Soul Eater"]
+            }
+        ]
+    },
+    "furrum": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Furrum",
+              "weight": 50,
+              "moves": [
+                  ["Moonblast", "Light Of Ruin"],
+                  ["Wish"],
+                  ["Protect"],
+                  ["Knock Off", "Toxic"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Sassy",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0, "spe": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Frisk"]
+          },
+          {
+            "species": "Furrum",
+            "weight": 50,
+            "moves": [
+                ["Light Of Ruin", "Moonblast"],
+                ["Moonlight"],
+                ["Flamethrower"],
+                ["Round", "Uproar", "Hyper Beam"]
+            ],
+            "item": ["Wise Glasses"],
+            "nature": "Quiet",
+            "evs": {"spd": 4, "hp": 252, "spa": 252},
+            "ivs": {"atk": 0, "spe":0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Soul Liberator"]
+        }
+      ]
+  },
+  "furrful": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Furrful",
+                "weight": 40,
+                "moves": [
+                    ["U-turn"],
+                    ["Giga Impact"],
+                    ["Focus Punch"],
+                    ["Ice Punch", "Covet", "Knock Off", "Iron Tail"]
+                ],
+                "item": ["Life Orb", "Clear Amulet", "Normalium Z", "Fightinium Z"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Pure Soul"]
+            },
+            {
+                "species": "Furrful",
+                "weight": 40,
+                "moves": [
+                    ["Bulk Up"],
+                    ["Brick Break", "Strength"],
+                    ["Covet", "Ice Punch", "Knock Up"],
+                    ["Body Slam", "Return", "Frustration"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Pure Soul"]
+            },
+            {
+                "species": "Furrful",
+                "weight": 20,
+                "moves": [
+                    ["Dynamic Punch"],
+                    ["Iron Tail"],
+                    ["Giga Impact", "Pursuit", "Beat Up"],
+                    ["U-turn"]
+                ],
+                "item": ["Choice Band", "Choice Scarf"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Keen Eye"]
+            }
+        ]
+    },
+    "noctowl": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Noctowl",
+            "weight": 100,
+            "moves": [
+                ["Roost"],
+                ["Defog"],
+                ["Double Team"],
+                ["Night Shade"]
+            ],
+            "item": ["Eviolite"],
+            "nature": "Bold",
+            "evs": {"hp": 252, "def": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Natural Cure"]
         }
       ]
   }
