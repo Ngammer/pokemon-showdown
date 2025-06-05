@@ -2811,7 +2811,9 @@ export class RandomNMTeams {
 			NUBL: 85,
 			NU: 86,
 			PUBL: 87,
-			PU: 88, "(PU)": 88, NFE: 88, ZU: 88, ZUBL: 88,
+			PU: 88, "(PU)": 88,
+			ZUBL: 89,
+			NFE: 90, ZU: 90,
 		};
 
 		const movesMax: { [k: string]: number } = {
