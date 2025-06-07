@@ -4939,7 +4939,7 @@
               "species": "Lanturn",
               "weight": 50,
               "moves": [
-                  ["Thunderbolt"],
+                  ["Ice beam"],
                   ["Volt Switch", "Flip Turn"],
                   ["Hydro Pump", "Surf"],
                   ["Thunderbolt"]
