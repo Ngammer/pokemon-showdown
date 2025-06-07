@@ -5522,7 +5522,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	round: {
 		name: "Round",
-		shortDesc: "Each hit increases the power by 10.",
+		desc: "If there are other active Pokemon that chose this move for use this turn, those Pokemon take their turn immediately after the user, in Speed order, and this move's power is 120 for each other user.",
+		shortDesc: "Power doubles if others used Round this turn.",
 	},
 	ruination: {
 		name: "Ruination",
