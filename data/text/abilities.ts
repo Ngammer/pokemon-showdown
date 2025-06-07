@@ -272,7 +272,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	curiousmedicine: {
 		name: "Curious Medicine",
-		shortDesc: "On switch-in, this Pokemon's allies have their stat stages reset to 0. Non-volatile state condition cured when entering the field",
+		shortDesc: "On switch-in, this Pokemon's allies have their stat stages reset to 0 and non-volatile status conditions cured",
 	},
 	cursedbody: {
 		name: "Cursed Body",
