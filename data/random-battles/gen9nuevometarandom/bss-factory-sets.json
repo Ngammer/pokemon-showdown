@@ -4743,5 +4743,558 @@
             "ability": ["Natural Cure"]
         }
       ]
-  }
+  },
+  "noceadowl": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Noceadowl",
+              "weight": 45,
+              "moves": [
+                  ["Defog"],
+                  ["Spite"],
+                  ["Roost"],
+                  ["Toxic", "Haze", "Magic Coat"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Magic Guard"]
+          },
+          {
+              "species": "Noceadowl",
+              "weight": 10,
+              "moves": [
+                  ["Defog"],
+                  ["Spite", "Ominous Wind"],
+                  ["Roost"],
+                  ["Trick Room"]
+              ],
+              "item": ["Dimencionador"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Magic Guard"]
+          },
+          {
+            "species": "Noceadowl",
+            "weight": 45,
+            "moves": [
+                ["Hurricane", "Air Cutter"],
+                ["Ominous Wind"],
+                ["Calm Mind"],
+                ["Roost"]
+            ],
+            "item": ["Life Orb"],
+            "nature": "Bold",
+            "evs": {"spd": 4, "hp": 252, "def": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Magic Guard"]
+        }
+      ]
+  },
+  "ledstar": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Ledstar",
+                "weight": 25,
+                "moves": [
+                    ["Tailwind"],
+                    ["Heroic Punch"],
+                    ["First Impression"],
+                    ["Roost"]
+                ],
+                "item": ["Utility Umbrella"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Last Blow"]
+            },
+            {
+                "species": "Ledstar",
+                "weight": 25,
+                "moves": [
+                    ["Reflect"],
+                    ["Light Screen"],
+                    ["Roost"],
+                    ["Heroic Punch"]
+                ],
+                "item": ["Light Clay"],
+                "nature": "Jolly",
+                "evs": {"hp": 248, "spd": 8, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Last Blow"]
+            },
+            {
+                "species": "Ledstar",
+                "weight": 25,
+                "moves": [
+                    ["Swords Dance"],
+                    ["Roost"],
+                    ["Heroic Punch"],
+                    ["Drain Punch", "Ice Punch", "Knock Off"]
+                ],
+                "item": ["Power Herb"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Heroism"]
+            },
+            {
+                "species": "Ledstar",
+                "weight": 25,
+                "moves": [
+                    ["Knock Off", "Rollout", "Drain Punch"],
+                    ["Ice Punch"],
+                    ["U-turn"],
+                    ["Heroic Punch"]
+                ],
+                "item": ["Heavy-Duty Boots", "Leftovers", "Choice Band", "Choice Scarf"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Last Blow"]
+            }
+        ]
+    },
+    "ariados": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Ariados",
+                "weight": 100,
+                "moves": [
+                    ["Sticky Bomb"],
+                    ["Seed Bomb"],
+                    ["Toxic Thread", "Toxic Spikes"],
+                    ["Sucker Punch"]
+                ],
+                "item": ["Focus Sash"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sniper"]
+            }
+        ]
+    },
+    "crobat": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Crobat",
+                "weight": 33,
+                "moves": [
+                    ["Poison Fang"],
+                    ["Fire Fang", "Crunch"],
+                    ["U-turn"],
+                    ["Defog"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vampirism"]
+            },
+            {
+                "species": "Crobat",
+                "weight": 33,
+                "moves": [
+                    ["Poison Fang"],
+                    ["Fire Fang"],
+                    ["Crunch"],
+                    ["Coil"]
+                ],
+                "item": ["Black Sludge", "Life Orb"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vampirism"]
+            },
+            {
+                "species": "Crobat",
+                "weight": 33,
+                "moves": [
+                    ["Poison Fang"],
+                    ["Fire Fang"],
+                    ["Crunch"],
+                    ["U-Turn"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Heavy-Duty Boots"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Vampirism"]
+            }
+        ]
+    },
+    "lanturn": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Lanturn",
+              "weight": 50,
+              "moves": [
+                  ["Thunderbolt"],
+                  ["Volt Switch", "Flip Turn"],
+                  ["Hydro Pump", "Surf"],
+                  ["Thunderbolt"]
+              ],
+              "item": ["Choice Specs", "Leftovers", "Assault Vest"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Water Absorb", "Volt Absorb"]
+          }
+      ]
+  },
+  "pichuspikyeared": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Pichu-Spiky-Eared",
+              "weight": 50,
+              "moves": [
+                  ["Nasty Plot"],
+                  ["Hidden Power Ice", "Grass Knot"],
+                  ["Thunderbolt"],
+                  ["Surf"]
+              ],
+              "item": ["Focus Sash"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Galvanized Hair"]
+          },
+          {
+              "species": "Pichu-Spiky-Eared",
+              "weight": 50,
+              "moves": [
+                  ["Volt Switch"],
+                  ["Hidden Power Ice", "Grass Knot"],
+                  ["Thunderbolt", "Electro Ball"],
+                  ["Surf"]
+              ],
+              "item": ["Choice Specs", "Choice Scarf"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Galvanized Hair"]
+          }
+      ]
+  },
+  "togetic": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Togetic",
+              "weight": 25,
+              "moves": [
+                  ["Wish"],
+                  ["Protect"],
+                  ["Defog"],
+                  ["Dazzling Gleam", "Flamethrower"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Joyful"]
+          },
+          {
+              "species": "Togetic",
+              "weight": 25,
+              "moves": [
+                  ["Wish"],
+                  ["Protect"],
+                  ["Defog"],
+                  ["Dazzling Gleam", "Flamethrower"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Joyful"]
+          },
+          {
+              "species": "Togetic",
+              "weight": 25,
+              "moves": [
+                  ["Roost"],
+                  ["Defog"],
+                  ["Incinerate", "Heal Bell", "Toxic", "Encore", "Thunder Wave"],
+                  ["Dazzling Gleam"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Joyful"]
+          },
+          {
+              "species": "Togetic",
+              "weight": 25,
+              "moves": [
+                  ["Roost"],
+                  ["Defog"],
+                  ["Incinerate", "Heal Bell", "Toxic", "Encore", "Thunder Wave"],
+                  ["Dazzling Gleam"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Joyful"]
+          }
+      ]
+  },
+  "xatu": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Xatu",
+              "weight": 25,
+              "moves": [
+                  ["Calm Mind"],
+                  ["Stored Power"],
+                  ["Roost"],
+                  ["Focus Blast"]
+              ],
+              "item": ["Dream Ball"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "spa": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Early Bird"]
+          },
+          {
+              "species": "Xatu",
+              "weight": 25,
+              "moves": [
+                  ["Calm Mind"],
+                  ["Stored Power"],
+                  ["Roost"],
+                  ["Focus Blast", "Heat Wave"]
+              ],
+              "item": ["Dream Ball"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spa": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Early Bird"]
+          },
+          {
+            "species": "Xatu",
+            "weight": 50,
+            "moves": [
+                ["U-turn"],
+                ["Future Sight", "Psyshock"],
+                ["Focus Blast", "Heat Wave"],
+                ["Cyclon Sphere"]
+            ],
+            "item": ["Leftovers"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "hp": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Magic Bounce"]
+        }
+      ]
+  },
+  "flaaffy": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Wigglytuff",
+            "weight": 100,
+            "moves": [
+                ["Charge"],
+                ["Hidden Power Ice", "Hidden Power Grass"],
+                ["Heal Bell"],
+                ["Discharge", "Thunderbolt"]
+            ],
+            "item": ["Eviolite"],
+            "nature": "Modest",
+            "evs": {"spd": 4, "hp": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Fluffy"]
+        }
+      ]
+  },
+  "ampharos": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Ampharos",
+            "weight": 50,
+            "moves": [
+                ["Reflect"],
+                ["Light Screen"],
+                ["Volt Switch"],
+                ["Discharge"]
+            ],
+            "item": ["Leftovers"],
+            "nature": "Modest",
+            "evs": {"spd": 4, "hp": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Screen Setter"]
+        },
+        {
+            "species": "Ampharos",
+            "weight": 50,
+            "moves": [
+                ["Charge"],
+                ["Hidden Power Ice", "Hidden Power Grass"],
+                ["Dragon Pulse"],
+                ["Thunderbolt"]
+            ],
+            "item": ["Ampharosite"],
+            "nature": "Modest",
+            "evs": {"spd": 4, "hp": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
+            "ability": ["Plus"]
+        }
+      ]
+  },
+  "bellosom": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Bellosom",
+              "weight": 100,
+              "moves": [
+                  ["Quiver Dance"],
+                  ["Mega Drain", "Giga Drain"],
+                  ["Moonblast"],
+                  ["Earth Power"]
+              ],
+              "item": ["Focus Sash", "Leftovers"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Dancer"]
+          }
+      ]
+  },
+  "marill": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Marill",
+                "weight": 25,
+                "moves": [
+                    ["Aqua Jet"],
+                    ["Ice Punch"],
+                    ["Liquidation", "Aqua Tail"],
+                    ["Play Rough"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Huge Power"]
+            }
+        ]
+    },
+    "azumarill": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Azumarill",
+                "weight": 33,
+                "moves": [
+                    ["Aqua Jet"],
+                    ["Ice Punch"],
+                    ["Liquidation", "Aqua Tail"],
+                    ["Play Rough"]
+                ],
+                "item": ["Choice Band", "Life Orb"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Huge Power"]
+            },
+            {
+                "species": "Azumarill",
+                "weight": 25,
+                "moves": [
+                    ["Whirlpool"],
+                    ["Toxic", "Aqua Ring"],
+                    ["Protect"],
+                    ["Perish Song"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Adamant",
+                "evs": {"def": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sap Sipper"]
+            }
+        ]
+    },
+    "sudowoodo": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Sudowoodo",
+                "weight": 50,
+                "moves": [
+                    ["Rock Polish"],
+                    ["Head Smash"],
+                    ["Wood Hammer"],
+                    ["Wild Charge"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Rock Head"]
+            },
+            {
+                "species": "Sudowoodo",
+                "weight": 25,
+                "moves": [
+                    ["Iron Defense", "Defense Curl"],
+                    ["Stone Edge", "Rock Slide"],
+                    ["Body Press"],
+                    ["Stealth Rock"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Careful",
+                "evs": {"atk": 8, "spd": 252, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Rock Head"]
+            },
+            {
+                "species": "Sudowoodo",
+                "weight": 25,
+                "moves": [
+                    ["Iron Defense", "Defense Curl"],
+                    ["Stone Edge", "Rock Slide"],
+                    ["Body Press"],
+                    ["Stealth Rock"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Impish",
+                "evs": {"atk": 8, "def": 252, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Rock Head"]
+            }
+        ]
+    }
 }
