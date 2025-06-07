@@ -148,7 +148,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "50% more power in fossil pokemon",
 	},
 	antclay: {
-		name: "Icy Wind",
+		name: "Antclay",
 		desc: "Has a 100% chance to lower the target Speed by 1 stage.",
 		shortDesc: "100% chance to lower the Speed by 1.",
 	},
@@ -1028,7 +1028,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Damage is multiplied by 1.3333 if this move is super effective against the target.",
 		shortDesc: "Deals 1.3333x damage with supereffective hits.",
 	},
-	
+
 	combattorque: {
 		name: "Combat Torque",
 		desc: "Has a 30% chance to paralyze the target.",
