@@ -1072,7 +1072,7 @@
         "weight": 35,
         "moves": [
             ["Swords Dance"],
-            ["Rapid Spin"],
+            ["X-Scissor", "Covet", "Aerial Ace"],
             ["Smack Down"],
             ["Earthquake"]
         ],
