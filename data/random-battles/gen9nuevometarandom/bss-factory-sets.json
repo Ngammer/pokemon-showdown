@@ -3543,7 +3543,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Mold Breaker"]
+                "ability": ["Mold Breaker", "Moxie"]
             },
             {
                 "species": "Pinsir",
