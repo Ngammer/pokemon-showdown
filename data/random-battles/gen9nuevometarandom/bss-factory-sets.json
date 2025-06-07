@@ -4740,7 +4740,7 @@
             "nature": "Bold",
             "evs": {"hp": 252, "def": 252, "spd": 4},
             "teraType": ["Fairy", "Water"],
-            "ability": ["Natural Cure"]
+            "ability": ["Insomnia"]
         }
       ]
   },
