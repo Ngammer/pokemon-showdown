@@ -4839,7 +4839,7 @@
                     ["Heroic Punch"],
                     ["Drain Punch", "Ice Punch", "Knock Off"]
                 ],
-                "item": ["Power Herb"],
+                "item": ["Leftovers", "Life Orb", "Shell Bell"],
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
