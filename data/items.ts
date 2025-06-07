@@ -1727,7 +1727,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return this.chainModify([8192, 4096]);
 			}
 		},
-		itemUser: ['Honchkrow', 'Mismagius', 'Chandelure', 'Aegislash'],
+		itemUser: ['Honchkrow', 'Mismagius', 'Chandelure', 'Aegislash', "Noceadowl"],
 		num: 108,
 		gen: 4,
 	},
@@ -3518,7 +3518,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return this.chainModify([8192, 4096]);
 			}
 		},
-		itemUser: ['Vileplume', 'Victreebel', 'Electrode-Hisui', 'Exeggutor', 'Exeggutor-Alola', 'Leafeon', 'Shiftry', 'Simisage'],
+		itemUser: ['Vileplume', 'Victreebel', 'Electrode-Hisui', 'Exeggutor', 'Exeggutor-Alola', 'Leafeon', 'Shiftry', 'Simisage', "Octank"],
 		num: 85,
 		gen: 1,
 	},
@@ -6118,7 +6118,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return this.chainModify([8192, 4096]);
 			}
 		},
-		itemUser: ['Togekiss', 'Roserade', 'Cinccino', 'Florges'],
+		itemUser: ['Togekiss', 'Roserade', 'Cinccino', 'Florges', 'Arteagle', 'Furrum'],
 		num: 107,
 		gen: 4,
 	},
@@ -6639,7 +6639,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 30,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.evoItem === 'Shiny Stone') {
+			if (pokemon.baseSpecies.evoItem === 'Sun Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
@@ -6830,7 +6830,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return this.chainModify([8192, 4096]);
 			}
 		},
-		itemUser: ['Reichu', 'Reaichu-Alola', 'Magnezone', 'Jolteon', 'Probopass', 'Eelektross', 'Vikavolt', 'Bellibolt'],
+		itemUser: ['Reichu', 'Reaichu-Alola', 'Magnezone', 'Jolteon', 'Probopass', 'Eelektross', 'Vikavolt', 'Bellibolt', "Ledstar"],
 		num: 83,
 		gen: 1,
 	},
@@ -9406,8 +9406,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 
 	},
-	piedraantigua: {
-		name: "Piedra Antigua",
+	ancientrock: {
+		name: "Ancient Rock",
 		spritenum: 743,
 		onTakeItem(item, pokemon, source) {
 			return false;
@@ -9422,35 +9422,35 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			};
 			const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
 			this.effectState.bestStats = sortedStats.slice(0, 2).map(s => s[0]); // Store top 2 stats
-			this.debug(`Piedra Antigua boosts: ${this.effectState.bestStats.join(', ')}`);
+			this.debug(`Ancient Rock boosts: ${this.effectState.bestStats.join(', ')}`);
 		},
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
 			if (!this.effectState.bestStats?.includes('atk')) return;
-			this.debug('Piedra Antigua atk boost');
+			this.debug('Ancient Rock atk boost');
 			return this.chainModify(1.5);
 		},
 		onModifyDefPriority: 6,
 		onModifyDef(def, pokemon) {
 			if (!this.effectState.bestStats?.includes('def')) return;
-			this.debug('Piedra Antigua def boost');
+			this.debug('Ancient Rock def boost');
 			return this.chainModify(1.5);
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
 			if (!this.effectState.bestStats?.includes('spa')) return;
-			this.debug('Piedra Antigua spa boost');
+			this.debug('Ancient Rock spa boost');
 			return this.chainModify(1.5);
 		},
 		onModifySpDPriority: 6,
 		onModifySpD(spd, pokemon) {
 			if (!this.effectState.bestStats?.includes('spd')) return;
-			this.debug('Piedra Antigua spd boost');
+			this.debug('Ancient Rock spd boost');
 			return this.chainModify(1.5);
 		},
 		onModifySpe(spe, pokemon) {
 			if (!this.effectState.bestStats?.includes('spe')) return;
-			this.debug('Piedra Antigua spe boost');
+			this.debug('Ancient Rock spe boost');
 			return this.chainModify(1.5);
 		},
 		itemUser: ["Quagsire-Feudal", "Slowking-Feudal", "Wungsparce-Feudal", "Granbull-Feudal", "Qwilfish-Feudal", "Ursaring-Feudal", "Mantine-Feudal", "Kingdra-Feudal", "Donphan-Feudal", "Celebi-Feudal"],

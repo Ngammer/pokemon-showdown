@@ -27869,6 +27869,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			harden: ["9E", "9E", "9E", "9E", "9E"],
 			headbutt: ["9E", "9E", "9M", "9E", "9E", "9T", "9E"],
 			headsmash: ["9L48", "9L48", "9L54"],
+			heavycollision: ["9L40"],
 			helpinghand: ["9M", "9M", "9T", "9T", "9T", "9T"],
 			hiddenpower: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			highhorsepower: ["9M"],

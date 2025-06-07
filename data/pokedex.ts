@@ -3637,7 +3637,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 32.5,
 		color: "Brown",
 		prevo: "Furret",
-		evoLevel: 15,
+		evoType: "other",
+		evoCondition: "Faint in a city",
 		eggGroups: ["Field"],
 	},
 	furrum: {
@@ -3650,7 +3651,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 32.5,
 		color: "Brown",
 		prevo: "Furret",
-		evoLevel: 15,
+		evoType: "useItem",
+		evoItem: "Shiny Stone",
 		eggGroups: ["Field"],
 	},
 	furrful: {
@@ -3663,7 +3665,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 32.5,
 		color: "Brown",
 		prevo: "Furret",
-		evoLevel: 15,
+		evoType: "other",
+		evoCondition: "Deal the final blow to three enemy Pokémon with a Furret as your partner.",
 		eggGroups: ["Field"],
 	},
 	hoothoot: {
@@ -3702,7 +3705,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 40.8,
 		color: "Brown",
 		prevo: "Noctowl",
-		evoLevel: 20,
+		evoType: "useItem",
+		evoItem: "Dusk Stone",
 		eggGroups: ["Flying"],
 	},
 	ledyba: {
@@ -3741,6 +3745,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 30.6,
 		color: "Red",
 		prevo: "Ledian",
+		evoType: "useItem",
 		evoItem: "Thunder Stone",
 		eggGroups: ["Bug"],
 	},
@@ -4056,7 +4061,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		prevo: "Sudowoodo",
 		evoType: "levelMove",
-		evoMove: "Mimic",
+		evoMove: "Heavy Collision",
 		eggGroups: ["Mineral"],
 	},
 	politoed: {
@@ -4232,7 +4237,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 76,
 		color: "Blue",
 		eggGroups: ["Water 1", "Field"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Quagsire",
 	},
 	espeon: {
@@ -4305,7 +4310,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 105.4,
 		color: "Blue",
 		eggGroups: ["Monster", "Water 1"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Slowking",
 	},
 	slowkinggalar: {
@@ -4424,6 +4429,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 14,
 		color: "Yellow",
 		prevo: "Dunsparce",
+		evoType: "levelMove",
+		evoMove: "Air Slash",
 		eggGroups: ["Field"],
 	},
 	wungsparcefeudal: {
@@ -4438,7 +4445,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 14,
 		color: "Yellow",
 		eggGroups: ["Field"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Wungsparce",
 	},
 	gligar: {
@@ -4525,7 +4532,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 74.3,
 		color: "Purple",
 		eggGroups: ["Field", "Fairy"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Granbull",
 	},
 	qwilfish: {
@@ -4553,7 +4560,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 45,
 		color: "Gray",
 		eggGroups: ["Water 2"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Qwilfish",
 	},
 	qwilfishhisui: {
@@ -4706,7 +4713,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 300,
 		color: "Brown",
 		eggGroups: ["Field"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Ursaring",
 	},
 	slugma: {
@@ -4930,7 +4937,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 660,
 		color: "Purple",
 		eggGroups: ["Water 1"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Mantine",
 		canHatch: true,
 	},
@@ -5014,7 +5021,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 202,
 		color: "Blue",
 		eggGroups: ["Water 1", "Dragon"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Kingra",
 	},
 	phanpy: {
@@ -5056,7 +5063,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 80,
 		color: "Gray",
 		eggGroups: ["Field"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Donphan",
 	},
 	porygon2: {
@@ -5097,6 +5104,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 98.2,
 		color: "Brown",
 		prevo: "Stantler",
+		evoLevel: 30,
 		eggGroups: ["Field"],
 	},
 	smeargle: {
@@ -5119,6 +5127,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.2,
 		weightkg: 56,
 		color: "Pink",
+		prevo: "Smeargle",
+		evoType: "useItem",
+		evoItem: "Shiny Stone",
 		eggGroups: ["Field"],
 	},
 	tyrogue: {
@@ -5367,7 +5378,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Undiscovered"],
 		tags: ["Mythical"],
-		requiredItem: "Piedra Antigua",
+		requiredItem: "Ancient Rock",
 		changesFrom: "Celebi",
 	},
 	treecko: {

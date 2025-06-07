@@ -56,6 +56,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Has a 100% chance to lower the target's Special Defense by 2 stages.",
 		shortDesc: "Lower the target's Sp. Def by 2. Hits Steel type.",
 	},
+	acrobaticancientrite: {
+		name: "Acrobatic Ancient Rite",
+		shortDesc: "Heals 50% max HP. Sets Tailwind in the field.",
+	},
 	acrobatics: {
 		name: "Acrobatics",
 		shortDesc: "Power doubles if the user has no held item.",
@@ -142,6 +146,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Ancient Power",
 		desc: "50% more power in fossil pokemon.",
 		shortDesc: "50% more power in fossil pokemon",
+	},
+	antclay: {
+		name: "Icy Wind",
+		desc: "Has a 100% chance to lower the target Speed by 1 stage.",
+		shortDesc: "100% chance to lower the Speed by 1.",
 	},
 	appleacid: {
 		name: "Apple Acid",
@@ -351,8 +360,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	barbbarrage: {
 		name: "Barb Barrage",
-		desc: "Each hit increases the power by 15 to a maximun of 150.",
-		shortDesc: "Each hit increases the power by 15.",
+		desc: "Each hit increases the power by 30 to a maximun of 150.",
+		shortDesc: "Each hit increases the power by 30.",
 	},
 	barrage: {
 		name: "Barrage",
@@ -769,6 +778,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "33% chance to lower the target's Speed by 1.",
 		},
 	},
+	bubblefang: {
+		name: "Bubble Fang",
+		desc: "Has a 20% chance to lower the target's Speed by 1 stage and a 10% chance to make it flinch.",
+		shortDesc: "20% -1 Spe. 10% chance to flinch.",
+	},
 	bugbite: {
 		name: "Bug Bite",
 		desc: "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
@@ -1014,11 +1028,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Damage is multiplied by 1.3333 if this move is super effective against the target.",
 		shortDesc: "Deals 1.3333x damage with supereffective hits.",
 	},
-	bubblefang: {
-		name: "Bubble Fang",
-		desc: "Has a 20% chance to lower the target's Speed by 1 stage and a 10% chance to make it flinch.",
-		shortDesc: "20% -1 Spe. 10% chance to flinch.",
-	},
+	
 	combattorque: {
 		name: "Combat Torque",
 		desc: "Has a 30% chance to paralyze the target.",
@@ -1281,6 +1291,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Cut",
 		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
 		shortDesc: "Destroys screens, unless the target is immune.",
+	},
+	cyclonsphere: {
+		name: "Cyclon Sphere",
+		desc: "Lowers the target evasiveness by 1 stages.",
+		shortDesc: "Lowers the foe evasiveness by 1.",
 	},
 	darkestlariat: {
 		name: "Darkest Lariat",
@@ -1724,8 +1739,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	echoedvoice: {
 		name: "Echoed Voice",
-		desc: "For every consecutive turn that this move is used by at least one Pokemon, this move's power is multiplied by the number of turns to pass, but not more than 5.",
-		shortDesc: "Power increases when used on consecutive turns.",
+		shortDesc: "Each hit increases the power by 30.",
 	},
 	eerieimpulse: {
 		name: "Eerie Impulse",
@@ -2395,8 +2409,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	furycutter: {
 		name: "Fury Cutter",
-		desc: "Each hit increases the power by 15 to a maximun of 150.",
-		shortDesc: "Each hit increases the power by 15.",
+		desc: "Each hit increases the power by 30 to a maximun of 150.",
+		shortDesc: "Each hit increases the power by 30.",
 	},
 	furyswipes: {
 		name: "Fury Swipes",
@@ -4312,6 +4326,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Mist Ball",
 		desc: "Has a 50% chance to lower the target's Special Attack by 1 stage.",
 		shortDesc: "50% chance to lower the target's Sp. Atk by 1.",
+	},
+	mistycalancientrite: {
+		name: "Mistycal Ancient Rite",
+		desc: "Raises the user's Special Attack, Attack, and Speed by 1 stage.",
+		shortDesc: "Raises the user's Sp. Atk, Atk, Speed by 1.",
 	},
 	mistyexplosion: {
 		name: "Misty Explosion",

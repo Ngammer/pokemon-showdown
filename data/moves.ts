@@ -1074,11 +1074,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		condition: {
 			onStart() {
-				this.effectState.increase = 10;
+				this.effectState.increase = 30;
 			},
 			onRestart() {
 				if (this.effectState.increase < 80) {
-					this.effectState.increase += 15;
+					this.effectState.increase += 30;
 				}
 			},
 		},
@@ -4540,7 +4540,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	dynamicpunch: {
 		num: 223,
-		accuracy: 70,
+		accuracy: 80,
 		basePower: 100,
 		category: "Physical",
 		name: "Dynamic Punch",
@@ -4607,11 +4607,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		condition: {
 			onStart() {
-				this.effectState.increase = 10;
+				this.effectState.increase = 30;
 			},
 			onRestart() {
 				if (this.effectState.increase < 530) {
-					this.effectState.increase += 10;
+					this.effectState.increase += 30;
 				}
 			},
 		},
@@ -6533,11 +6533,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		condition: {
 			onStart() {
-				this.effectState.increase = 15;
+				this.effectState.increase = 30;
 			},
 			onRestart() {
 				if (this.effectState.increase < 80) {
-					this.effectState.increase += 15;
+					this.effectState.increase += 30;
 				}
 			},
 		},
@@ -15318,6 +15318,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rain Dance",
 		pp: 5,
 		priority: 0,
+		boosts: {
+			atk: 1,
+			spa: 1,
+		},
 		flags: { metronome: 1, dance: 1 },
 		weather: 'RainDance',
 		secondary: null,
@@ -16360,6 +16364,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sandstorm",
 		pp: 10,
 		priority: 0,
+		boosts: {
+			atk: 1,
+			spa: 1,
+		},
 		flags: { metronome: 1, wind: 1 },
 		weather: 'Sandstorm',
 		secondary: null,
@@ -17889,6 +17897,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Snowscape",
 		pp: 10,
 		priority: 0,
+		boosts: {
+			atk: 1,
+			spa: 1,
+		},
 		flags: {},
 		weather: 'snowscape',
 		secondary: null,
@@ -19215,6 +19227,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sunny Day",
 		pp: 5,
 		priority: 0,
+		boosts: {
+			atk: 1,
+			spa: 1,
+		},
 		flags: { metronome: 1 },
 		weather: 'sunnyday',
 		secondary: null,

@@ -70,6 +70,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Ampharosite",
 		shortDesc: "If held by an Ampharos, this item allows it to Mega Evolve in battle.",
 	},
+	ancientrock: {
+		name: "Ancient Rock",
+		shortDesc: "Convert certain Pokémon into an ancient form.",
+	},
 	apicotberry: {
 		name: "Apicot Berry",
 		shortDesc: "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
@@ -864,7 +868,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Iron Ball",
 		shortDesc: "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.",
 		gen4: {
-			shortDesc: "Holder's Speed is halved and it becomes grounded. Increases the power of projectile moves by 25%.",
+			shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
 		},
 	},
 	ironplate: {
