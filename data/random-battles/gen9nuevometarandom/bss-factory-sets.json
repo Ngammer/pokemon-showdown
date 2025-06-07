@@ -1076,11 +1076,11 @@
             ["Smack Down"],
             ["Earthquake"]
         ],
-        "item": ["Rocky Helmet", "Leftovers"],
+        "item": ["Nest ball"],
         "nature": "Jolly",
         "evs": {"atk": 252, "spd": 4, "spe": 252},
         "teraType": ["Fairy", "Poison"],
-        "ability": ["Sand Veil"]
+        "ability": ["Sand Rush"]
     },
     {
       "species": "Sandslash",
