@@ -4057,7 +4057,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseStats: { hp: 137, atk: 112, def: 154, spa: 44, spd: 93, spe: 10 },
 		abilities: { 0: "Filter", 1: "Heavy Hand", H: "Tectoanchor" },
 		heightm: 1.2,
-		weightkg: 38,
+		weightkg: 450,
 		color: "Brown",
 		prevo: "Sudowoodo",
 		evoType: "levelMove",
