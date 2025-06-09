@@ -5661,7 +5661,7 @@
             "weight": 100,
             "moves": [
                 ["Calm Mind"],
-                ["Telekinesis", "Psyshock"],
+                ["Telekinesis", "Psyshock", "Glitzy Glow"],
                 ["Draining Kiss"],
                 ["Power Gem"]
             ],
@@ -6947,6 +6947,430 @@
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "wantsFeudal": true,
                 "ability": ["Sage"]
+            }
+        ]
+    },
+    "skarmory": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Skarmory",
+              "weight": 50,
+              "moves": [
+                  ["Iron Defense"],
+                  ["Roost"],
+                  ["Body Press"],
+                  ["Iron head", "Stealth Rock"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Careful",
+              "evs": {"hp": 252, "spe": 24, "spd": 232},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Light Metal"]
+          },
+          {
+              "species": "Skarmory",
+              "weight": 50,
+              "moves": [
+                  ["Roost"],
+                  ["Stealth Rock"],
+                  ["Defog"],
+                  ["Brave Bird", "Iron Head"]
+              ],
+              "item": ["Rocky Helmet"],
+              "nature": "Impish",
+              "evs": {"hp": 248, "spd": 24, "def": 236},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Iron Barbs"]
+          }
+      ]
+  },
+  "houndoom": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Houndoom",
+        "weight": 50,
+        "moves": [
+            ["Sunny day"],
+            ["Solar beam"],
+            ["Fire Blast", "Weather Ball", "Flamethrower"],
+            ["Dark Pulse"]
+        ],
+        "item": ["Heat Rock"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Solar Power"]
+    },
+    {
+        "species": "Houndoom",
+        "weight": 50,
+        "moves": [
+            ["Nasty Plot"],
+            ["Hidden Power Grass"],
+            ["Fire Blast", "Flamethrower"],
+            ["Dark Pulse"]
+        ],
+        "item": ["Houndooominite"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "wantsMega": true,
+        "ability": ["Flash Fire"]
+    }
+    ]
+},
+"kingdra": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Kingdra",
+            "weight": 25,
+            "moves": [
+                ["Rain Dance"],
+                ["Hurricane"],
+                ["Dragon Pulse"],
+                ["Hydro Pump", "Surf"]
+            ],
+            "item": ["Damp Rock", "Life Orb"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Swift Swim"]
+        },
+        {
+            "species": "Kingdra",
+            "weight": 25,
+            "moves": [
+                ["Flip Turn"],
+                ["Focus Blast", "Sludge Bomb"],
+                ["Draco Meteor"],
+                ["Water Gun"]
+            ],
+            "item": ["Choice Scarf"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Sniper"]
+        },
+        {
+            "species": "Kingdra",
+            "weight": 50,
+            "moves": [
+                ["Dragon Dance"],
+                ["Scale Shot"],
+                ["Spike Cannon"],
+                ["Liquidation", "Wave Crash"]
+            ],
+            "item": ["Loaded Dice"],
+            "nature": "Adamant",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Sniper"]
+        }
+      ]
+  },
+  "kingdrafeudal": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Kingdra-Feudal",
+            "weight": 50,
+            "moves": [
+                ["Delusion Ancient Rite", "Flash Cannon"],
+                ["Clangorous Soul"],
+                ["Clanging Scales"],
+                ["Hydro Pump", "Surf"]
+            ],
+            "item": ["Ancient Rock"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Sage"]
+        },
+        {
+            "species": "Kingdra-Feudal",
+            "weight": 50,
+            "moves": [
+                ["Delusion Ancient Rite", "Iron Head"],
+                ["Clangorous Soul"],
+                ["Dragon Rush"],
+                ["Liquidation", "Wave Crash"]
+            ],
+            "item": ["Ancient Rock"],
+            "nature": "Adamant",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Sage"]
+        }
+      ]
+  },
+  "donphan": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Donphan",
+                "weight": 50,
+                "moves": [
+                    ["Rock Polish"],
+                    ["Dig", "Earthquake", "Magnitude"],
+                    ["Rollout", "Stone Edge", "Smack Down"],
+                    ["Ice Shard"]
+                ],
+                "item": ["Weakness Policy"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sturdy"]
+            },
+            {
+                "species": "Donphan",
+                "weight": 50,
+                "moves": [
+                    ["Protect"],
+                    ["Dig"],
+                    ["Rollout", "Stone Edge", "Smack Down"],
+                    ["Ice Spinner", "Heat Crash"]
+                ],
+                "item": ["Power Herb"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Speed Boost"]
+            }
+        ]
+    },
+    "porygon2": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Porygon2",
+              "weight": 25,
+              "moves": [
+                  ["Recover"],
+                  ["Teleport"],
+                  ["Ice Beam", "Tri Attack"],
+                  ["Toxic", "Thunder Wave"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Trace", "Download"]
+          },
+          {
+              "species": "Porygon2",
+              "weight": 25,
+              "moves": [
+                  ["Recover"],
+                  ["Teleport"],
+                  ["Ice Beam", "Tri Attack"],
+                  ["Toxic", "Thunder Wave"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Trace", "Download"]
+          },
+          {
+              "species": "Porygon2",
+              "weight": 25,
+              "moves": [
+                  ["Recover"],
+                  ["Charge"],
+                  ["Ice Beam", "Thunderbolt", "Psyshock"],
+                  ["Tri Attack"]
+              ],
+              "item": ["Oval Stone"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "def": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Trace", "Download"]
+          },
+          {
+              "species": "Porygon2",
+              "weight": 25,
+              "moves": [
+                  ["Recover"],
+                  ["Sharpen"],
+                  ["Return", "Double-Edge"],
+                  ["Zen Headbutt", "Thief"]
+              ],
+              "item": ["Oval Stone"],
+              "nature": "Adamant",
+              "evs": {"hp": 252, "spd": 4, "atk": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Trace", "Download"]
+          }
+      ]
+  },
+  "stantler": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Stantler",
+                "weight": 100,
+                "moves": [
+                    ["Double-Edge", "Return", "Retaliate"],
+                    ["Zen Headbutt"],
+                    ["Sucker Punch"],
+                    ["Earthquake"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sap Sipper", "Frisk"]
+            }
+        ]
+    },
+    "clammdeer": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Clammdeer",
+                "weight": 100,
+                "moves": [
+                    ["Head Charge", "Headbutt"],
+                    ["Zen Headbutt"],
+                    ["Megahorn"],
+                    ["Antclay"]
+                ],
+                "item": ["Choice Scarf", "Choice Band"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Hardhead"]
+            }
+        ]
+    },
+    "arteagle": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Arteagle",
+            "weight": 20,
+            "moves": [
+                ["Wish"],
+                ["Protect", "Detect", "Spiky Shield", "Burning Bulwark", "King's Shield"],
+                ["Baddy Bad"],
+                ["Glitzy Glow"]
+            ],
+            "item": ["Light Clay"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "spe": 252, "hp": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Conjurator"]
+        },
+        {
+            "species": "Arteagle",
+            "weight": 20,
+            "moves": [
+                ["Celebrate"],
+                ["Moonblast", "Light Of Ruin", "Sparkly Swirl", "Misty Explosion"],
+                ["Mega Drain", "Oblivion WIng", "Giga Drain", "Galvanized Rock", "Freezy Frost", "Electro Drift", "Parabolic Charge"],
+                ["Earth Power"]
+            ],
+            "item": ["Normalium Z"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Conjurator"]
+        },
+        {
+            "species": "Arteagle",
+            "weight": 20,
+            "moves": [
+                ["Stone Axe"],
+                ["Sticky Bomb"],
+                ["Ceaseless Edge"],
+                ["Refined Ink Pump", "U-turn", "Flip Turn"]
+            ],
+            "item": ["Assault Vest"],
+            "nature": "Jolly",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Conjurator"]
+        },
+        {
+            "species": "Arteagle",
+            "weight": 20,
+            "moves": [
+                ["Stone Axe"],
+                ["Sticky Bomb"],
+                ["Ceaseless Edge"],
+                ["Spore", "Parting Shot", "U-turn", "Flip Turn"]
+            ],
+            "item": ["Focus Sash"],
+            "nature": "Jolly",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Conjurator"]
+        },
+        {
+            "species": "Arteagle",
+            "weight": 20,
+            "moves": [
+                ["Celebrate"],
+                ["Play Rough"],
+                ["Thousand Arrows", "Precipice Blades", "Land's Wrath", "Headlong Rush", "Bonemerang"],
+                ["Diamond Storm", "Mountain Gale", "Bolt Strike"]
+            ],
+            "item": ["Normalium Z"],
+            "nature": "Jolly",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Conjurator"]
+        }
+      ]
+  },
+  "hitmontop": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Hitmontop",
+                "weight": 50,
+                "moves": [
+                    ["Fake Out"],
+                    ["Close Combat"],
+                    ["Pursuit", "Sucker Punch", "Triple Axel"],
+                    ["Bullet Punch"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Triumphal Entry"]
+            },
+            {
+                "species": "Hitmontop",
+                "weight": 50,
+                "moves": [
+                    ["Fake Out"],
+                    ["Close Combat"],
+                    ["Rolling Kick", "Rapid Spin"],
+                    ["Bullet Punch"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 8, "hp": 248},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Intimidate"]
             }
         ]
     }
