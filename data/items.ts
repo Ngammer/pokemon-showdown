@@ -9457,8 +9457,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -107,
 		gen: 8,
 	},
-	criosfera: {
-		name: "Criosfera",
+	cryorb: {
+		name: "Cryorb",
 		spritenum: 219,
 		fling: {
 			basePower: 30,

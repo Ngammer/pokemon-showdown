@@ -618,7 +618,7 @@
                   ["Sucker Punch"],
                   ["Covet"]
               ],
-              "item": ["Criosfera"],
+              "item": ["Cryorb"],
               "nature": "Jolly",
               "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fairy", "Water"],
@@ -5582,7 +5582,7 @@
     "sets": [
         {
             "species": "Quagsire",
-            "weight": 25,
+            "weight": 50,
             "moves": [
                 ["Toxic", "Haze", "Spikes", "Yawn"],
                 ["Earthquake"],
@@ -5598,7 +5598,7 @@
         },
         {
             "species": "Quagsire",
-            "weight": 25,
+            "weight": 50,
             "moves": [
                 ["Liquidation", "Aqua Tail"],
                 ["Earthquake"],
@@ -5611,10 +5611,15 @@
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
             "ability": ["Unaware"]
-        },
+        }
+    ]
+},
+"quagsirefeudal": {
+    "weight": 10,
+    "sets": [
         {
             "species": "Quagsire-Feudal",
-            "weight": 25,
+            "weight": 50,
             "moves": [
                 ["Toxic", "Haze", "Spikes", "Yawn"],
                 ["Earthquake"],
@@ -5626,11 +5631,12 @@
             "evs": {"spd": 4, "hp": 252, "def": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
             "ability": ["Sage"]
         },
         {
             "species": "Quagsire-feudal",
-            "weight": 25,
+            "weight": 50,
             "moves": [
                 ["Liquidation", "Aqua Tail"],
                 ["Earthquake"],
@@ -5642,6 +5648,7 @@
             "evs": {"spd": 4, "hp": 252, "def": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
             "ability": ["Sage"]
         }
     ]
@@ -5745,14 +5752,14 @@
       "sets": [
           {
               "species": "Slowking",
-              "weight": 25,
+              "weight": 50,
               "moves": [
                   ["Future Sight", "Psyshock"],
                   ["Hydro Pump", "Brine", "Chilling Water", "Scald"],
                   ["Ice Beam"],
                   ["Flamethrower"]
               ],
-              "item": ["Heavy-Duty Boots"],
+              "item": ["Assault Vest"],
               "nature": "Modest",
               "evs": {"hp": 252, "spd": 4, "spa": 252},
               "ivs": {"atk": 0},
@@ -5761,11 +5768,11 @@
           },
           {
               "species": "Slowking",
-              "weight": 25,
+              "weight": 50,
               "moves": [
                   ["Future Sight", "Psyshock"],
                   ["Scald", "Brine", "Chilling Water"],
-                  ["Teleport"],
+                  ["Teleport", "Chilly Reception"],
                   ["Slack Off"]
               ],
               "item": ["Leftovers"],
@@ -5774,10 +5781,15 @@
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Regenerator"]
-          },
+          }
+      ]
+  },
+  "slowkingfeudal": {
+      "weight": 10,
+      "sets": [
           {
               "species": "Slowking-Feudal",
-              "weight": 50,
+              "weight": 100,
               "moves": [
                   ["Future Sight", "Psyshock"],
                   ["Scald", "Brine", "Chilling Water"],
@@ -5789,8 +5801,1153 @@
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
+              "wantsFeudal": true,
               "ability": ["Sage"]
           }
       ]
-  }
+  },
+  "slowkinggalar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Slowking-Galar",
+              "weight": 50,
+              "moves": [
+                  ["Future Sight", "Psyshock", "Eerie Spell"],
+                  ["Sludge Bomb", "Acid Spray", "Acid"],
+                  ["Ice Beam", "Hydro Pump"],
+                  ["Flamethrower"]
+              ],
+              "item": ["Assault Vest"],
+              "nature": "Modest",
+              "evs": {"hp": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          },
+          {
+              "species": "Slowking-Galar",
+              "weight": 25,
+              "moves": [
+                  ["Chilly Reception"],
+                  ["Acid", "Acid Spray", "Sludge Bomb"],
+                  ["Flamethrower"],
+                  ["Slack Off"]
+              ],
+              "item": ["galarica Wreath"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          },
+          {
+              "species": "Slowking-Galar",
+              "weight": 25,
+              "moves": [
+                  ["Chilly Reception"],
+                  ["Acid", "Acid Spray", "Sludge Bomb"],
+                  ["Flamethrower"],
+                  ["Slack Off"]
+              ],
+              "item": ["galarica Wreath"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          }
+      ]
+  },
+    "misdreavus": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Misdreavus",
+              "weight": 50,
+              "moves": [
+                  ["Heal bell", "Destiny Bond", "Magic Coat"],
+                  ["Pain Split"],
+                  ["Hex"],
+                  ["Will-O-Wisp", "Toxic", "Thunder Wave"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Levitate"]
+          },
+          {
+              "species": "Misdreavus",
+              "weight": 50,
+              "moves": [
+                  ["Heal bell", "Destiny Bond", "Magic Coat"],
+                  ["Pain Split"],
+                  ["Hex"],
+                  ["Will-O-Wisp", "Toxic", "Thunder Wave"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Levitate"]
+          }
+      ]
+  },
+  "unown": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Unown",
+        "weight": 100,
+        "moves": [
+            ["Hidden Power Psychic"],
+            ["Hidden Block"],
+            ["Hidden Increase"],
+            ["Hidden Reintegration"]
+        ],
+        "item": ["Life Orb", "Expert Belt"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Sacred Letters"]
+    }
+    ]
+},
+"wobbuffet": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Wobbuffet",
+              "weight": 50,
+              "moves": [
+                  ["Destiny Bond"],
+                  ["Mirrior Coat"],
+                  ["Counter"],
+                  ["Encore"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Levitate"]
+          },
+          {
+              "species": "Wobbuffet",
+              "weight": 50,
+              "moves": [
+                  ["Destiny Bond"],
+                  ["Mirrior Coat"],
+                  ["Counter"],
+                  ["Encore"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Levitate"]
+          }
+      ]
+  },
+  "girafarig": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Girafarig",
+        "weight": 100,
+        "moves": [
+            ["Psyshock", "Telekinesis", "Twin Beam"],
+            ["Hyper Voice"],
+            ["Calm Mind"],
+            ["Hidden Power Fighting", "Dazzling Gleam"]
+        ],
+        "item": ["Life Orb", "Expert Belt"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Early Bird", "Sap Sipper"]
+    }
+    ]
+},
+"forretress": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Forretress",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Toxic Spikes", "Spikes"],
+                  ["Volt Switch"],
+                  ["Gyro Ball"]
+              ],
+              "item": ["Rocky Helmet", "Leftovers"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sturdy", "Bulletproof"]
+          },
+          {
+              "species": "Forretress",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Toxic Spikes", "Spikes"],
+                  ["Volt Switch"],
+                  ["Gyro Ball"]
+              ],
+              "item": ["Rocky Helmet", "Leftovers"],
+              "nature": "Sassy",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sturdy", "Bulletproof"]
+          },
+          {
+              "species": "Forretress",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Iron Defense"],
+                  ["Body Press"],
+                  ["Rapid Spin", "Thunder Wave"]
+              ],
+              "item": ["Rocky Helmet", "Leftovers", "Heavy-Duty Boots"],
+              "nature": "Careful",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sturdy", "Bulletproof"]
+          }
+      ]
+  },
+  "wungsparce": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Wungsparce",
+            "weight": 50,
+            "moves": [
+                ["Feather Dance"],
+                ["Air Slash"],
+                ["Hyper Voice"],
+                ["Fire Blast", "Flamethrower", "Earth Power", "Roost"]
+            ],
+            "item": ["Heavy-Duty Boots"],
+            "nature": "Modest",
+            "evs": {"spd": 8, "hp": 248, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Adaptability"]
+        },
+        {
+            "species": "Wungsparce",
+            "weight": 50,
+            "moves": [
+                ["Coil"],
+                ["Dual Wingbeat"],
+                ["Hyper Drill"],
+                ["Earthquake", "Roost"]
+            ],
+            "item": ["Heavy-Duty Boots"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Adaptability"]
+        }
+      ]
+  },
+  "wungsparcefeudal": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Wungsparce-Feudal",
+            "weight": 50,
+            "moves": [
+                ["Feather Dance"],
+                ["Air Slash"],
+                ["Dragon Breath"],
+                ["Fire Blast", "Flamethrower", "Earth Power", "Roost"]
+            ],
+            "item": ["Ancient Rock"],
+            "nature": "Modest",
+            "evs": {"spd": 8, "hp": 248, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
+            "ability": ["Sage"]
+        },
+        {
+            "species": "Wungsparce-Feudal",
+            "weight": 50,
+            "moves": [
+                ["Mystical Ancient Rite"],
+                ["Dragon Ascent"],
+                ["Dragon Rush"],
+                ["Earthquake", "Roost"]
+            ],
+            "item": ["Ancient Rock"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
+            "ability": ["Sage"]
+        }
+      ]
+  },
+  "gligar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Gligar",
+              "weight": 50,
+              "moves": [
+                  ["Roost"],
+                  ["Earthquake"],
+                  ["Knock Off", "Toxic"],
+                  ["Stealth Rock"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Careful",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sand Veil"]
+          },
+          {
+              "species": "Gligar",
+              "weight": 50,
+              "moves": [
+                  ["Roost"],
+                  ["Earthquake"],
+                  ["Knock Off", "Toxic"],
+                  ["Stealth Rock"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sand Veil"]
+          }
+      ]
+  },
+"Steelix": {
+    "weight": 10,
+    "sets": [
+        {
+            "species": "Steelix",
+            "weight": 50,
+            "moves": [
+                ["Iron Defense"],
+                ["Stealth Rock"],
+                ["Heavy Collision"],
+                ["Body Press"]
+            ],
+            "item": ["Leftovers"],
+            "nature": "Careful",
+            "evs": {"hp": 252, "spd": 252, "def": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Provocateur"]
+        },
+        {
+            "species": "Steelix",
+            "weight": 50,
+            "moves": [
+                ["Iron Defense"],
+                ["Earthquake"],
+                ["Iron Tail"],
+                ["Ice Fang"]
+            ],
+            "item": ["Steelixite"],
+            "nature": "Impish",
+            "evs": {"hp": 252, "def": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Provocateur"]
+        }
+    ]
+},
+"granbull": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Granbull",
+            "weight": 100,
+            "moves": [
+                ["Extreme Speed"],
+                ["Sucker Punch"],
+                ["Earthquake"],
+                ["Ice Punch"]
+            ],
+            "item": ["Choice Band", "Muscle Band", "Life Orb"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Pixilate"]
+        }
+      ]
+  },
+  "granbullfeudal": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Granbull-feudal",
+            "weight": 100,
+            "moves": [
+                ["Brave Ancient Rite"],
+                ["Mach Punch"],
+                ["Play Rough"],
+                ["Drain Punch"]
+            ],
+            "item": ["Ancient Rock"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Sage"]
+        }
+      ]
+  },
+  "qwilfish": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Qwilfish",
+                "weight": 50,
+                "moves": [
+                    ["Swords Dance"],
+                    ["Gunk Shot", "Poison Jab", "Barb Barrage"],
+                    ["Liquidation", "Waterfall", "Aqua Tail"],
+                    ["Crunch", "Payback", "Throat Chop"]
+                ],
+                "item": ["Lure Ball"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Swift Swim"]
+            },
+            {
+                "species": "Qwilfish",
+                "weight": 50,
+                "moves": [
+                    ["Toxic Spikes"],
+                    ["Destiny Bond", "Haze", "Taunt"],
+                    ["Liquidation", "Waterfall", "Aqua Tail", "Gunk Shot", "Poison Jab", "Barb Barrage"],
+                    ["Flip Trun"]
+                ],
+                "item": ["Black Sludge"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Intimidate"]
+            }
+        ]
+    },
+    "qwilfishhisui": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Qwilfish-Hisui",
+              "weight": 50,
+              "moves": [
+                  ["Spikes"],
+                  ["Crunch", "Gunk Shot", "Barb Barrage", "Throat Chop"],
+                  ["Haze", "Destiny Bond"],
+                  ["Brine", "Chilling Water"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Careful",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Toxic Debris"]
+          },
+          {
+              "species": "Gligar",
+              "weight": 50,
+              "moves": [
+                  ["Roost"],
+                  ["Earthquake"],
+                  ["Knock Off", "Toxic"],
+                  ["Stealth Rock"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Impish",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sand Veil"]
+          }
+      ]
+  },
+  "Scizor": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Scizor",
+            "weight": 25,
+            "moves": [
+                ["Swords Dance"],
+                ["Bullet Punch"],
+                ["Dual Wingbeat", "Pounce", "Sand Tomb"],
+                ["Roost"]
+            ],
+            "item": ["Shell Bell", "Leftovers"],
+            "nature": "Adamant",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Technician"]
+        },
+        {
+            "species": "Scizor",
+            "weight": 25,
+            "moves": [
+                ["Swords Dance"],
+                ["Iron Head"],
+                ["Dual Wingbeat", "Pounce", "Sand Tomb"],
+                ["Roost"]
+            ],
+            "item": ["Life Orb"],
+            "nature": "Adamant",
+            "evs": {"hp": 252, "atk": 252, "spd": 4},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Light Metal"]
+        },
+        {
+            "species": "Scizor",
+            "weight": 25,
+            "moves": [
+                ["Swords Dance"],
+                ["Bullet Punch"],
+                ["Dual Wingbeat", "Pounce", "Sand Tomb"],
+                ["Roost"]
+            ],
+            "item": ["Scizorite"],
+            "nature": "Adamant",
+            "evs": {"hp": 248, "atk": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
+            "ability": ["Technician"]
+        },
+        {
+            "species": "Scizor",
+            "weight": 25,
+            "moves": [
+                ["Swords Dance"],
+                ["Bullet Punch"],
+                ["Dual Wingbeat", "Pounce", "Sand Tomb"],
+                ["Roost"]
+            ],
+            "item": ["Scizorite"],
+            "nature": "Impish",
+            "evs": {"hp": 248, "def": 252, "spd": 8},
+            "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
+            "ability": ["Technician"]
+        }
+      ]
+  },
+  "shuckle": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Shuckle",
+              "weight": 50,
+              "moves": [
+                  ["Infestation", "Sleep Talk"],
+                  ["Stealth Rock"],
+                  ["Discreet Tangle"],
+                  ["Rest"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Sassy",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sturdy", "Contrary"]
+          },
+          {
+              "species": "Shuckle",
+              "weight": 50,
+              "moves": [
+                  ["Infestation", "Sleep Talk"],
+                  ["Stealth Rock"],
+                  ["Discreet Tangle"],
+                  ["Rest"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Relaxed",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Sturdy", "Contrary"]
+          }
+      ]
+  },
+  "heracross": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Heracross",
+                "weight": 25,
+                "moves": [
+                    ["Close Combat"],
+                    ["Megahorn", "Bug Bite"],
+                    ["Protect"],
+                    ["Stone Edge", "Rock Slide"]
+                ],
+                "item": ["Cryorb"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Guts"]
+            },
+            {
+                "species": "Heracross",
+                "weight": 25,
+                "moves": [
+                    ["Close Combat"],
+                    ["Megahorn", "Bug Bite"],
+                    ["Knock Off"],
+                    ["Stone Edge", "Rock Slide"]
+                ],
+                "item": ["Choice Band", "Life Orb", "Choice Scarf"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Moxie"]
+            },
+            {
+                "species": "Heracross",
+                "weight": 25,
+                "moves": [
+                    ["Arm Thrust"],
+                    ["Rock Blast", "Pin Missile"],
+                    ["Trailblaze"],
+                    ["Swords Dance"]
+                ],
+                "item": ["Heracronite"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Moxie"]
+            }
+        ]
+    },
+    "sneasel": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Sneasel",
+                "weight": 100,
+                "moves": [
+                    ["Fake Out", "Swords Dance"],
+                    ["Psycho Cut"],
+                    ["Knock Off", "Beat Up", "Throat Chop"],
+                    ["Icicle Crash", "Triple Axel"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Keen Eye"]
+            }
+        ]
+    },
+    "sneaselhisui": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Sneasel-Hisui",
+                "weight": 100,
+                "moves": [
+                    ["Fake Out", "Swords Dance"],
+                    ["Night Slash", "Throat"],
+                    ["Gunk Shot"],
+                    ["Dynamic Punch", "Close Combat"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Keen Eye"]
+            }
+        ]
+    },
+    "ursaring": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Ursaring",
+            "weight": 100,
+            "moves": [
+                ["Bulk Up"],
+                ["Earthquake"],
+                ["Double-Edge", "Mega Kick"],
+                ["Crunch"]
+            ],
+            "item": ["Choice Band", "Muscle Band", "Life Orb"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Tough Claws"]
+        }
+      ]
+  },
+  "ursaringfeudal": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Ursaring-Feudal",
+            "weight": 100,
+            "moves": [
+                ["Honey Ancient Rite"],
+                ["Heal Order"],
+                ["Attack Order"],
+                ["Mega Kick", "Earthquake"]
+            ],
+            "item": ["Ancient Rock"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Sage"]
+        }
+      ]
+  },
+  "magcargo": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Magcargo",
+              "weight": 25,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Lava Plume"],
+                  ["Recover"],
+                  ["Clear Smog", "Fire Spin"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Magma Armor"]
+          },
+          {
+              "species": "Magcargo",
+              "weight": 25,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Lava Plume"],
+                  ["Recover"],
+                  ["Clear Smog", "Fire Spin"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Magma Armor"]
+          },
+          {
+              "species": "Magcargo",
+              "weight": 50,
+              "moves": [
+                  ["Shell Smash"],
+                  ["Flamethrower", "Fire Blast"],
+                  ["Hidden Power Grass", "Earth Power"],
+                  ["Power Gem"]
+              ],
+              "item": ["Oval Stone"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spd": 4, "spa": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Weak Armor"]
+          }
+      ]
+  },
+  "slastma": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "slastma",
+        "weight": 100,
+        "moves": [
+            ["Shell Smash"],
+            ["Hidden Power Grass"],
+            ["Power Gem", "Earth Power"],
+            ["Fire Blast", "Flamethrower"]
+        ],
+        "item": ["Focus Sash", "White Herb"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Unstable Shell"]
+    }
+    ]
+},
+"piloswine": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Piloswine",
+                "weight": 50,
+                "moves": [
+                    ["Ice Shard"],
+                    ["Icicle Crash"],
+                    ["Stone Edge", "Rock Slide", "Snowscape"],
+                    ["Earthquake"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Cloak"]
+            },
+            {
+                "species": "Piloswine",
+                "weight": 50,
+                "moves": [
+                    ["Stealth Rock"],
+                    ["Roar"],
+                    ["Toxic", "Haze"],
+                    ["Earthquake"]
+                ],
+                "item": ["Eviolite"],
+                "nature": "Impish",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Snow Cloak"]
+            }
+        ]
+    },
+    "corsola": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Corsola",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Recover", "Life Dew"],
+                  ["Brine", "Chilling Water"],
+                  ["Toxic"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          },
+          {
+              "species": "Corsola",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Recover", "Life Dew"],
+                  ["Brine", "Chilling Water"],
+                  ["Toxic"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          }
+      ]
+  },
+  "corsolagalar": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Corsola-Galar",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock", "Haze"],
+                  ["Strength Sap"],
+                  ["Brine", "Hex"],
+                  ["Will-O-Wisp"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          },
+          {
+              "species": "Corsola-Galar",
+              "weight": 50,
+              "moves": [
+                  ["Stealth Rock", "Haze"],
+                  ["Strength Sap"],
+                  ["Brine", "Hex"],
+                  ["Will-O-Wisp"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          }
+      ]
+  },
+  "crowthsola": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Crowthsola",
+              "weight": 25,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Recover", "Life Dew"],
+                  ["Brine", "Chilling Water"],
+                  ["Toxic"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          },
+          {
+              "species": "Crowthsola",
+              "weight": 25,
+              "moves": [
+                  ["Stealth Rock"],
+                  ["Recover", "Life Dew"],
+                  ["Brine", "Chilling Water"],
+                  ["Toxic"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Regenerator"]
+          },
+          {
+              "species": "Crowthsola",
+              "weight": 25,
+              "moves": [
+                  ["Ingrain", "Aqua Ring"],
+                  ["Power Gem", "Toxic", "Meteor Beam"],
+                  ["Brine"],
+                  ["Protect"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 4, "spd": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Blessed Body"]
+          },
+          {
+              "species": "Crowthsola",
+              "weight": 25,
+              "moves": [
+                  ["Ingrain", "Aqua Ring"],
+                  ["Power Gem", "Toxic", "Meteor Beam"],
+                  ["Brine"],
+                  ["Protect"]
+              ],
+              "item": ["Eviolite"],
+              "nature": "Bold",
+              "evs": {"hp": 252, "spd": 4, "def": 252},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Blessed Body"]
+          }
+      ]
+  },
+  "octillery": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Octillery",
+                "weight": 100,
+                "moves": [
+                    ["Protect"],
+                    ["Water Gun"],
+                    ["Mud Shot"],
+                    ["Acid Spray", "Sludge Bomb"]
+                ],
+                "item": ["Oval Stone"],
+                "nature": "Modest",
+                "evs": {"spa": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sniper", "Moody"]
+            }
+        ]
+    },
+    "octank": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Octank",
+                "weight": 50,
+                "moves": [
+                    ["Energy Ball"],
+                    ["Hydro Cannon"],
+                    ["Refined Ink Bomb"],
+                    ["Swift", "Mud Shot"]
+                ],
+                "item": ["Iron Ball"],
+                "nature": "Modest",
+                "evs": {"spa": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Heavy Artillery"]
+            },
+            {
+                "species": "Octank",
+                "weight": 50,
+                "moves": [
+                    ["Energy Ball"],
+                    ["Hydro Cannon"],
+                    ["Mud Shot"],
+                    ["Swift"]
+                ],
+                "item": ["Choice Scarf"],
+                "nature": "Jolly",
+                "evs": {"spa": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Heavy Artillery"]
+            }
+        ]
+    },
+    "delibird": {
+      "weight": 10,
+      "sets": [
+          {
+            "species": "Delibird",
+            "weight": 50,
+            "moves": [
+                ["Feather Dance"],
+                ["Air Slash", "Air Cutter"],
+                ["Freeze-Dry"],
+                ["Hidden Power Ground"]
+            ],
+            "item": ["Life Orb", "Heavy-Duty Boots"],
+            "nature": "Timid",
+            "evs": {"spd": 4, "spe": 252, "spa": 252},
+            "ivs": {"atk": 0},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Joyful"]
+        },
+        {
+            "species": "Delibird",
+            "weight": 25,
+            "moves": [
+                ["Present"],
+                ["Fake Out"],
+                ["Rapid Spin"],
+                ["Focus Punch", "Brave Bird"]
+            ],
+            "item": ["Heavy-Duty Boots"],
+            "nature": "Jolly",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Vital Spirit"]
+        },
+        {
+            "species": "Delibird",
+            "weight": 25,
+            "moves": [
+                ["Present"],
+                ["Fake Out"],
+                ["Brave Bird"],
+                ["Focus Punch"]
+            ],
+            "item": ["Life Orb", "Heavy-Duty Boots"],
+            "nature": "Jolly",
+            "evs": {"spd": 4, "spe": 252, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Hustle"]
+        }
+      ]
+  },
+  "mantine": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Mantine",
+                "weight": 50,
+                "moves": [
+                    ["Defog"],
+                    ["Roost"],
+                    ["Scald", "Brine"],
+                    ["Haze"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Bold",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Water Veil"]
+            },
+            {
+                "species": "Mantine",
+                "weight": 50,
+                "moves": [
+                    ["Defog"],
+                    ["Roost"],
+                    ["Scald", "Brine"],
+                    ["Haze"]
+                ],
+                "item": ["Heavy-Duty Boots"],
+                "nature": "Calm",
+                "evs": {"hp": 252, "atk": 4, "spd": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Water Veil"]
+            }
+        ]
+    },
+    "mantinefeudal": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Mantine-Feudal",
+                "weight": 50,
+                "moves": [
+                    ["Defog"],
+                    ["Acrobatic Ancient Rite"],
+                    ["Scald", "Brine", "Cyclone Sphere"],
+                    ["Haze"]
+                ],
+                "item": ["Ancient Rock"],
+                "nature": "Bold",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsFeudal": true,
+                "ability": ["Sage"]
+            },
+            {
+                "species": "Mantine-Feudal",
+                "weight": 50,
+                "moves": [
+                    ["Defog"],
+                    ["Acrobatic Ancient Rite"],
+                    ["Scald", "Brine", "Cyclone Sphere"],
+                    ["Haze"]
+                ],
+                "item": ["Ancient Rock"],
+                "nature": "Calm",
+                "evs": {"hp": 252, "atk": 4, "spd": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsFeudal": true,
+                "ability": ["Sage"]
+            }
+        ]
+    }
 }

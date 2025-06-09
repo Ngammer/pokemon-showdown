@@ -2468,8 +2468,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Dimencionador",
 		shortDesc: "Holder's use of Trick Room, Wonder Room, Magic Room, or Gravity lasts 8 turns instead of 5.",
 	},
-	criosfera: {
-		name: "Criosfera",
+	cryorb: {
+		name: "Cryorb",
 		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",
 	},
 };
