@@ -1835,7 +1835,7 @@
                 "weight": 100,
                 "moves": [
                     ["Surging Strikes"],
-                    ["Bulk Up", "Knock Off", "High Horsepower", "Earthquake"],
+                    ["Knock Off", "High Horsepower", "Earthquake"],
                     ["Ice Ball", "Ice Punch"],
                     ["Close Combat", "Drain Punch"]
                 ],
@@ -7373,5 +7373,286 @@
                 "ability": ["Intimidate"]
             }
         ]
+    },
+    "miltank": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Miltank",
+                "weight": 100,
+                "moves": [
+                    ["Stealth Rock"],
+                    ["Milk Drink"],
+                    ["Heal Bell", "Toxic", "Defense Curl"],
+                    ["Body Press"]
+                ],
+                "item": ["Rocky Helmet", "Leftovers"],
+                "nature": "Impish",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Regenerator"]
+            }
+        ]
+    },
+    "blissey": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Blissey",
+                "weight": 50,
+                "moves": [
+                    ["Stealth Rock"],
+                    ["Seismic Toss"],
+                    ["Thunder Wave", "Toxic", "Heal Bell"],
+                    ["Soft-Boiled", "Life Dew"]
+                ],
+                "item": ["Leftovers", "Heavy-Duty Boots"],
+                "nature": "Impish",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Natural Cure"]
+            },
+            {
+                "species": "Blissey",
+                "weight": 50,
+                "moves": [
+                    ["Stealth Rock"],
+                    ["Fire Blast", "Ice Beam", "Tri Attack"],
+                    ["Protect"],
+                    ["Wish"]
+                ],
+                "item": ["Leftovers", "Heavy-Duty Boots"],
+                "nature": "Impish",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Natural Cure"]
+            }
+        ]
+    },
+    "raikou": {
+        "weight": 10,
+        "sets": [
+        {
+        "species": "Raikou",
+        "weight": 100,
+        "moves": [
+            ["Substitute"],
+            ["Charge"],
+            ["Thunderbolt", "Zap Cannon"],
+            ["Hidden Power Ice", "Hidden Power Grass", "Aura Sphere"]
+        ],
+        "item": ["Leftovers"],
+        "nature": "Timid",
+        "evs": {"spa": 252, "spd": 4, "spe": 252},
+        "ivs": {"atk": 0},
+        "teraType": ["Normal"],
+        "ability": ["Emerging Volt"]
     }
+    ]
+},
+"entei": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Entei",
+                "weight": 100,
+                "moves": [
+                    ["Sacred Fire", "Flare Blitz"],
+                    ["Extreme Speed"],
+                    ["Trailblaze"],
+                    ["Stomping Tantrum", "Stone Edge", "Strength"]
+                ],
+                "item": ["Heavy-Duty Boots", "Choice Scarf", "Choice Band", "Life Orb"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Volcano Aura"]
+            }
+        ]
+    },
+    "suicune": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Suicune",
+                "weight": 100,
+                "moves": [
+                    ["Substitute"],
+                    ["Life Dew"],
+                    ["Calm Mind"],
+                    ["Scald", "Brine", "Hydro Pump"]
+                ],
+                "item": ["Rocky Helmet", "Leftovers"],
+                "nature": "Impish",
+                "evs": {"hp": 252, "atk": 4, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Clean Water"]
+            }
+        ]
+    },
+    "tyranitar": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Tyranitar",
+                "weight": 25,
+                "moves": [
+                    ["Stone Edge", "Rock Slide"],
+                    ["Dragon Dance"],
+                    ["Crunch", "Throat Chop"],
+                    ["Ice Punch", "Fire Punch"]
+                ],
+                "item": ["Clear Amulet", "Shell Bell", "Leftovers", "Life Orb", "Expert Belt"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sand Stream"]
+            },
+            {
+                "species": "Tyranitar",
+                "weight": 25,
+                "moves": [
+                    ["Stealth Rock"],
+                    ["Dragon Tail"],
+                    ["Crunch", "Throat Chop"],
+                    ["Stone Edge"]
+                ],
+                "item": ["Leftovers"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "hp": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sand Stream"]
+            },
+            {
+                "species": "Tyranitar",
+                "weight": 50,
+                "moves": [
+                    ["Stone Edge", "Rock Slide"],
+                    ["Dragon Dance"],
+                    ["Crunch", "Throat Chop"],
+                    ["Ice Punch", "Fire Punch"]
+                ],
+                "item": ["Tyranitarite"],
+                "nature": "Adamant",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
+                "ability": ["Sand Stream"]
+            }
+        ]
+    },
+    "lugia": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Lugia",
+                "weight": 100,
+                "moves": [
+                    ["Aeroblast"],
+                    ["Roost"],
+                    ["Calm Mind"],
+                    ["Psyshock", "Telekinesis"]
+                ],
+                "item": ["Heavy-Duty Boots", "Weakness Policy"],
+                "nature": "Bold",
+                "evs": {"hp": 248, "spa": 8, "def": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Multiscale"]
+            }
+        ]
+    },
+    "ho-oh": {
+      "weight": 10,
+      "sets": [
+        {
+            "species": "Ho-Oh",
+            "weight": 50,
+            "moves": [
+                ["Defog"],
+                ["Sacred Fire"],
+                ["Brave Bird", "Sky Attack"],
+                ["Roost"]
+            ],
+            "item": ["Heavy-Duty Boots"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Regenerator"]
+        },
+        {
+            "species": "Ho-Oh",
+            "weight": 50,
+            "moves": [
+                ["Earthquake"],
+                ["Sacred Fire"],
+                ["Brave Bird", "Dual Wingbeat"],
+                ["Roost"]
+            ],
+            "item": ["Heavy-Duty Boots"],
+            "nature": "Adamant",
+            "evs": {"spd": 8, "hp": 248, "atk": 252},
+            "teraType": ["Fairy", "Water"],
+            "ability": ["Rainbow Feather"]
+        }
+      ]
+  },
+  "celebi": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Celebi",
+              "weight": 50,
+              "moves": [
+                  ["Leech Seed"],
+                  ["Substitute"],
+                  ["Giga Drain"],
+                  ["Psychic", "Calm Mind"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Calm",
+              "evs": {"hp": 252, "def": 36, "spd": 220},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Forest Guardian"]
+          },
+          {
+              "species": "Celebi",
+              "weight": 50,
+              "moves": [
+                  ["Future Sight", "Telekinesis"],
+                  ["Giga Drain", "Leaf Storm"],
+                  ["Stealth Rock"],
+                  ["U-turn"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spa": 252, "spd": 4},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "ability": ["Forest Guardian"]
+          }
+      ]
+  },
+  "celebifeudal": {
+      "weight": 10,
+      "sets": [
+          {
+              "species": "Celebi-Feudal",
+              "weight": 100,
+              "moves": [
+                  ["Transcendental Ancient Rite"],
+                  ["Giga Drain", "Mega Drain"],
+                  ["Stored Power"],
+                  ["Leech Seed", "Ancient Power", "Nasty Plot"]
+              ],
+              "item": ["Leftovers"],
+              "nature": "Timid",
+              "evs": {"spe": 252, "spa": 252, "spd": 4},
+              "ivs": {"atk": 0},
+              "teraType": ["Fairy", "Water"],
+              "wantsFeudal": true,
+              "ability": ["Forest Guardian"]
+          }
+      ]
+  }
 }
