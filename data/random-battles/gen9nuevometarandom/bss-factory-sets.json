@@ -4725,7 +4725,7 @@
                     ["Bulk Up"],
                     ["Brick Break", "Strength"],
                     ["Covet", "Ice Punch", "Knock Up"],
-                    ["Body Slam", "Return", "Frustration"]
+                    ["Body Slam", "Return"]
                 ],
                 "item": ["Leftovers"],
                 "nature": "Jolly",

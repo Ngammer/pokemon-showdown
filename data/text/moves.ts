@@ -1169,9 +1169,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Cotton Ball",
 		desc: "Damage is calculated using the user's Speed stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
 		shortDesc: "Uses user's Speed stat as Atk in damage calculation.",
-		gen5: {
-			desc: "The power of this move depends on (user's current Speed / target's current Speed), rounded down. Power is equal to 150 if the result is 4 or more, 120 if 3, 80 if 2, 60 if 1, 40 if less than 1. If the target's current Speed is 0, it is treated as 1 instead.",
-		},
 	},
 	cottonguard: {
 		name: "Cotton Guard",
@@ -1361,6 +1358,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "-1 evasion; clears target side's hazards/screens.",
 		},
 	},
+	delusionancientrite: {
+		name: "Delusion Ancient Rite",
+		shortDesc: "Place a Substitute; Critical ratio: +2.",
+	},
 	destinybond: {
 		name: "Destiny Bond",
 		desc: "Until the user's next move, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well, unless the attack was Doom Desire or Future Sight. Fails if the user used this move successfully as its last move, disregarding moves used through the Dancer Ability.",
@@ -1473,6 +1474,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Disarming Voice",
 		desc: "Has a 100% chance to infatuated the target.",
 		shortDesc: "100% chance to infatuated the target.",
+	},
+	discreettangle: {
+		name: "Discreet Tangle",
+		shortDesc: "Use the highest defense in damage calculation.",
 	},
 	discharge: {
 		name: "Discharge",
@@ -2453,6 +2458,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		start: "  [POKEMON] foresaw an attack!",
 		activate: "  [TARGET] took the Future Sight attack!",
 	},
+	galvanizedrock: {
+		name: "Galvanized Rock",
+		desc: "Has a 30% chance to paralyze the target.",
+		shortDesc: "30% chance to paralyze the target.",
+	},
 	gastroacid: {
 		name: "Gastro Acid",
 		desc: "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero, this move fails, and receiving the effect through Baton Pass ends the effect immediately.",
@@ -3066,6 +3076,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Power doubles if the target has a non-volatile status condition.",
 		shortDesc: "Power doubles if the target has a status ailment.",
 	},
+	hiddenblock: {
+		name: "Hidden Block",
+		shortDesc: "Protects from damaging attacks. Contact: nullify target ability.",
+	},
+	hiddenincrease: {
+		name: "Hidden Increase",
+		shortDesc: "Take the opponent's two highest stats. Raises those stats by 2 in the user.",
+	},
 	hiddenpower: {
 		name: "Hidden Power",
 		desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
@@ -3074,6 +3092,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "This move's type and power depend on the user's individual values (IVs). Power varies between 30 and 70, and type can be any but Normal.",
 			shortDesc: "Varies in power and type based on the user's IVs.",
 		},
+	},
+	hiddenreintegration: {
+		name: "Hidden Reintegration",
+		shortDesc: "Heals 50% max HP. Stats below 0, back to 0.",
 	},
 	hiddenpowerbug: {
 		name: "Hidden Power Bug",
@@ -3164,6 +3186,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Hone Claws",
 		desc: "Raises the user's Attack and accuracy by 1 stage.",
 		shortDesc: "Raises the user's Attack and accuracy by 1.",
+	},
+	honeyancientrite: {
+		name: "Honey Ancient Rite",
+		desc: "Raises the user's Attack, Defense and Special Defense by 1 stage.",
+		shortDesc: "Raises the user's atk, def, spd by 1.",
 	},
 	hornattack: {
 		name: "Horn Attack",
@@ -4033,6 +4060,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Meditate",
 		desc: "Raises the user's Attack, Special Defense by 1 stage.",
 		shortDesc: "Raises the user's Atk, Spd by 1.",
+	},
+	meditationancientrite: {
+		name: "Meditation Ancient Rite",
+		desc: "Raises the user's Attack, Special Defense by 1 stage.",
+		shortDesc: "Raises the user's Atk, Spd by 1. Heals user 25% of its max HP.",
 	},
 	mefirst: {
 		name: "Me First",
@@ -5205,7 +5237,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	raindance: {
 		name: "Rain Dance",
 		desc: "For 5 turns, the weather becomes Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect. Lasts for 8 turns if the user is holding Damp Rock. Fails if the current weather is Rain Dance.",
-		shortDesc: "For 5 turns, heavy rain powers Water moves.",
+		shortDesc: "For 5 turns, heavy rain powers Water moves. Spa, Atk: +1",
 		gen3: {
 			desc: "For 5 turns, the weather becomes Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect. Fails if the current weather is Rain Dance.",
 		},
@@ -5286,6 +5318,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		},
 
 		addItem: "  [POKEMON] found one [ITEM]!",
+	},
+	refinedinkbomb: {
+		name: "Refined Ink Bomb",
+		desc: "Lowers the target's all stats  by 1 stages.",
+		shortDesc: "Lowers the target's all stats by 1.",
 	},
 	reflect: {
 		name: "Reflect",
@@ -5418,11 +5455,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	roaroftime: {
 		name: "Roar of Time",
 		shortDesc: "Has 1/2 recoil. Nullifies the object of the target",
-	},
-	galvanizedrock: {
-		name: "Galvanized Rock",
-		desc: "Has a 30% chance to paralyze the target.",
-		shortDesc: "30% chance to paralyze the target.",
 	},
 	rockblast: {
 		name: "Rock Blast",
@@ -5594,7 +5626,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	sandstorm: {
 		name: "Sandstorm",
 		desc: "For 5 turns, the weather becomes Sandstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Ground, Rock, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Sand Rush, or Sand Veil Abilities. During the effect, the Special Defense of Rock-type Pokemon is multiplied by 1.5 when taking damage from a special attack. Lasts for 8 turns if the user is holding Smooth Rock. Fails if the current weather is Sandstorm.",
-		shortDesc: "For 5 turns, a sandstorm rages. Rock: 1.5x SpD.",
+		shortDesc: "For 5 turns, a sandstorm rages. Rock: 1.5x SpD. Spa, Atk: +1",
 		gen4: {
 			desc: "For 5 turns, the weather becomes Sandstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Ground, Rock, or Steel type, or have the Magic Guard or Sand Veil Abilities. During the effect, the Special Defense of Rock-type Pokemon is multiplied by 1.5 when taking damage from a special attack. Lasts for 8 turns if the user is holding Smooth Rock. Fails if the current weather is Sandstorm.",
 		},
@@ -6142,7 +6174,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	snowscape: {
 		name: "Snowscape",
 		desc: "For 5 turns, the weather becomes Snow. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
-		shortDesc: "For 5 turns, snow falls. Ice: 1.5x Def.",
+		shortDesc: "For 5 turns, snow falls. Ice: 1.5x Def. Spa, Atk: +1",
 	},
 	soak: {
 		name: "Soak",
@@ -6648,7 +6680,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	sunnyday: {
 		name: "Sunny Day",
 		desc: "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.5 during the effect. Lasts for 8 turns if the user is holding Heat Rock. Fails if the current weather is Sunny Day.",
-		shortDesc: "For 5 turns, intense sunlight powers Fire moves.",
+		shortDesc: "For 5 turns, intense sunlight powers Fire moves. Spa, Atk: +1",
 		gen3: {
 			desc: "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.5 during the effect. Fails if the current weather is Sunny Day.",
 		},
@@ -7172,6 +7204,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Trailblaze",
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
+	transcendentalancientrite: {
+		name: "Transcendental Ancient Rite",
+		shortDesc: "Heals party status conditions; for each status condition healed: spe, def and spd +1. Target becomes weak to grass moves.",
+		start: "  [POKEMON] became weaker to grass!",
 	},
 	transform: {
 		name: "Transform",
