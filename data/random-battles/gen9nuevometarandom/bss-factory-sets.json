@@ -9,9 +9,9 @@
                     ["Mega Drain", "Giga Drain"],
                     ["Earth Power", "Weather Ball"],
                     ["Sludge Bomb"],
-                    ["Growth"]
+                    ["Growth", "Sunny Day"]
                 ],
-                "item": ["Life Orb"],
+                "item": ["Life Orb", "Black Sludge"],
                 "nature": "Modest",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
@@ -214,7 +214,7 @@
                     ["Air Slash", "Hurricane"],
                     ["Scorching Sands", "Submission"]
                 ],
-                "item": ["TR02"],
+                "item": ["Normalium Z"],
                 "nature": "Timid",
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
@@ -228,9 +228,9 @@
                     ["Flare Blitz"],
                     ["Earthquake", "Thunder Punch"],
                     ["Dual Wingbeat"],
-                    ["Dragon Dance"]
+                    ["Celebrate"]
                 ],
-                "item": ["TR55"],
+                "item": ["Normalium Z"],
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -518,7 +518,7 @@
                   ["Brave Bird"],
                   ["Double-Edge"]
               ],
-              "item": ["Silk Scarf"],
+              "item": ["Silk Scarf", "Metronome"],
               "nature": "Jolly",
               "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Normal"],
@@ -559,7 +559,7 @@
           "weight": 20,
           "moves": [
               ["Feather Dance"],
-              ["Ominous Wind"],
+              ["Ominous Wind", "Uproar"],
               ["Heat Wave"],
               ["Hurricane"]
           ],
@@ -578,7 +578,7 @@
             ["U-turn"],
             ["Heat Wave"],
             ["Hurricane"],
-            ["Defog"]
+            ["Uproar"]
         ],
         "item": ["Pidgeotite"],
         "nature": "Timid",
@@ -629,7 +629,7 @@
             "weight": 30,
             "moves": [
                 ["Wild Charge"],
-                ["Last Resort"],
+                ["Last Resort", "Return"],
                 ["Natural Gift"],
                 ["Substitute"]
             ],
@@ -1054,7 +1054,7 @@
   "sets": [
       {
           "species": "Sandslash",
-          "weight": 35,
+          "weight": 25,
           "moves": [
               ["Stealth Rock"],
               ["Rapid Spin"],
@@ -1069,7 +1069,7 @@
       },
       {
         "species": "Sandslash",
-        "weight": 35,
+        "weight": 25,
         "moves": [
             ["Swords Dance"],
             ["X-Scissor", "Covet", "Aerial Ace"],
@@ -1083,8 +1083,23 @@
         "ability": ["Sand Rush"]
     },
     {
+        "species": "Sandslash",
+        "weight": 25,
+        "moves": [
+            ["Sandstorm"],
+            ["X-Scissor", "Covet", "Aerial Ace"],
+            ["Smack Down"],
+            ["Earthquake"]
+        ],
+        "item": ["Smooth Rock"],
+        "nature": "Jolly",
+        "evs": {"atk": 252, "spd": 4, "spe": 252},
+        "teraType": ["Fairy", "Poison"],
+        "ability": ["Sand Rush"]
+    },
+    {
       "species": "Sandslash",
-      "weight": 30,
+      "weight": 25,
       "moves": [
           ["Spikes"],
           ["Stealth Rock"],
@@ -1121,8 +1136,8 @@
         "species": "Sandslash-Alola",
         "weight": 30,
         "moves": [
-            ["Chilly Reception"],
-            ["Stealth Rock"],
+            ["Snowscape"],
+            ["Earthquake"],
             ["Iron Head"],
             ["Icicle Crash"]
         ],
