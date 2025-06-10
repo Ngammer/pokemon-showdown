@@ -219,6 +219,7 @@
                 "evs": {"spa": 252, "spd": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Blaze"]
             },
             {
@@ -234,6 +235,7 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Blaze"]
             },
             {
@@ -1559,6 +1561,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Sand Force", "Arena Trap"]
             },
             {
@@ -1696,6 +1699,7 @@
                 "evs": {"hp": 252, "def": 4, "spe": 252},
                 "ivs": {"atk": 0},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Fur Coat"]
             }
         ]
@@ -1945,6 +1949,7 @@
             "nature": "Adamant",
             "evs": {"hp": 248, "atk": 252, "spd": 8},
             "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
             "ability": ["Steadfast"]
         }
       ]
@@ -3246,6 +3251,7 @@
             "nature": "Jolly",
             "evs": {"hp": 252, "atk": 252, "spd": 4},
             "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
             "ability": ["Scrappy"]
         }
       ]
@@ -3573,6 +3579,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Hyper Cutter"]
             }
         ]
@@ -3733,6 +3740,7 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Moxie"]
             },
             {
@@ -3748,6 +3756,7 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Intimidate", "Moxie"]
             }
         ]
@@ -4008,6 +4017,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Fossilization"]
             }
         ]
@@ -4705,6 +4715,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Pure Soul"]
             },
             {
@@ -5139,6 +5150,7 @@
               "evs": {"hp": 252, "spa": 4, "spd": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
+              "wantsTotem": true,
               "ability": ["Magic Bounce"]
           },
           {
@@ -5155,6 +5167,7 @@
               "evs": {"hp": 252, "spa": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
+              "wantsTotem": true,
               "ability": ["Magic Bounce"]
           },
           {
@@ -5171,6 +5184,7 @@
             "evs": {"spd": 4, "hp": 252, "spa": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
+            "wantsTotem": true,
             "ability": ["Magic Bounce"]
         }
       ]
@@ -5306,6 +5320,7 @@
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsZ": true,
                 "ability": ["Huge Power"]
             },
             {
@@ -5567,7 +5582,7 @@
             "evs": {"spd": 4, "hp": 252, "def": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
-            "ability": ["Unaware"]
+            "ability": ["Unaware", "Water Absorb"]
         }
     ]
 },
@@ -5609,7 +5624,7 @@
             "evs": {"spd": 4, "hp": 252, "def": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
-            "ability": ["Unaware"]
+            "ability": ["Unaware", "Water Absorb"]
         },
         {
             "species": "Quagsire",
@@ -5849,12 +5864,12 @@
                   ["Flamethrower"],
                   ["Slack Off"]
               ],
-              "item": ["galarica Wreath"],
+              "item": ["Galarica Wreath"],
               "nature": "Bold",
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Regenerator"]
+              "ability": ["Curious Medicine"]
           },
           {
               "species": "Slowking-Galar",
@@ -5865,12 +5880,12 @@
                   ["Flamethrower"],
                   ["Slack Off"]
               ],
-              "item": ["galarica Wreath"],
+              "item": ["Galarica Wreath"],
               "nature": "Calm",
               "evs": {"hp": 252, "def": 4, "spd": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Regenerator"]
+              "ability": ["Curious Medicine"]
           }
       ]
   },
@@ -5949,7 +5964,7 @@
               "evs": {"hp": 252, "def": 4, "spd": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Levitate"]
+              "ability": ["Provocateur"]
           },
           {
               "species": "Wobbuffet",
@@ -5965,7 +5980,7 @@
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Levitate"]
+              "ability": ["Provocateur"]
           }
       ]
   },
@@ -6185,6 +6200,7 @@
             "nature": "Impish",
             "evs": {"hp": 252, "def": 252, "spd": 4},
             "teraType": ["Fairy", "Water"],
+            "wantsMega": true,
             "ability": ["Provocateur"]
         }
     ]
@@ -6225,6 +6241,7 @@
             "nature": "Adamant",
             "evs": {"spd": 8, "hp": 248, "atk": 252},
             "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
             "ability": ["Sage"]
         }
       ]
@@ -6451,6 +6468,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsMega": true,
                 "ability": ["Moxie"]
             }
         ]
@@ -6531,6 +6549,7 @@
             "nature": "Adamant",
             "evs": {"spd": 8, "hp": 248, "atk": 252},
             "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
             "ability": ["Sage"]
         }
       ]
@@ -6568,7 +6587,7 @@
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Magma Armor"]
+              "ability": ["Magma Armor", "Flame Body"]
           },
           {
               "species": "Magcargo",
@@ -6698,7 +6717,7 @@
               "evs": {"hp": 252, "def": 4, "spd": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Regenerator"]
+              "ability": ["Cursed Body"]
           },
           {
               "species": "Corsola-Galar",
@@ -6714,7 +6733,7 @@
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Regenerator"]
+              "ability": ["Cursed Body"]
           }
       ]
   },
@@ -6909,7 +6928,7 @@
                 "nature": "Bold",
                 "evs": {"hp": 252, "atk": 4, "def": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Water Veil"]
+                "ability": ["Water Veil", "Water Absorb"]
             },
             {
                 "species": "Mantine",
@@ -6924,7 +6943,7 @@
                 "nature": "Calm",
                 "evs": {"hp": 252, "atk": 4, "spd": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
-                "ability": ["Water Veil"]
+                "ability": ["Water Veil", "Water Absorb"]
             }
         ]
     },
@@ -7109,6 +7128,7 @@
             "evs": {"spd": 4, "spe": 252, "spa": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
             "ability": ["Sage"]
         },
         {
@@ -7124,6 +7144,7 @@
             "nature": "Adamant",
             "evs": {"spd": 4, "spe": 252, "atk": 252},
             "teraType": ["Fairy", "Water"],
+            "wantsFeudal": true,
             "ability": ["Sage"]
         }
       ]
@@ -7305,6 +7326,7 @@
             "evs": {"spd": 4, "spe": 252, "spa": 252},
             "ivs": {"atk": 0},
             "teraType": ["Fairy", "Water"],
+            "wantsZ": true,
             "ability": ["Conjurator"]
         },
         {
@@ -7350,6 +7372,7 @@
             "nature": "Jolly",
             "evs": {"spd": 4, "spe": 252, "atk": 252},
             "teraType": ["Fairy", "Water"],
+            "wantsZ": true,
             "ability": ["Conjurator"]
         }
       ]
@@ -7660,13 +7683,13 @@
                   ["Stored Power"],
                   ["Leech Seed", "Ancient Power", "Nasty Plot"]
               ],
-              "item": ["Leftovers"],
+              "item": ["Ancient Rock"],
               "nature": "Timid",
               "evs": {"spe": 252, "spa": 252, "spd": 4},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "wantsFeudal": true,
-              "ability": ["Forest Guardian"]
+              "ability": ["Forest Sage"]
           }
       ]
   }
