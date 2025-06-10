@@ -53,10 +53,10 @@
                 "species": "Venusaur",
                 "weight": 15,
                 "moves": [
-                    ["Mega Drain", "Giga Drain"],
+                    ["Mega Drain", "Giga Drain", "Solar Beam"],
                     ["Earth Power"],
                     ["Sludge Bomb"],
-                    ["Work Up"]
+                    ["Sunny Day"]
                 ],
                 "item": ["Venusaurite"],
                 "nature": "Timid",
@@ -127,7 +127,7 @@
                 "moves": [
                     ["Flip Turn"],
                     ["Life Dew"],
-                    ["Scald", "Chilling Water"],
+                    ["Scald", "Chilling Water", "Brine"],
                     ["Rapid Spin"]
                 ],
                 "item": ["Heavy-Duty Boots"],
@@ -6154,7 +6154,7 @@
           }
       ]
   },
-"Steelix": {
+"steelix": {
     "weight": 10,
     "sets": [
         {
@@ -6301,7 +6301,7 @@
           }
       ]
   },
-  "Scizor": {
+  "scizor": {
       "weight": 10,
       "sets": [
           {
@@ -7576,7 +7576,7 @@
             }
         ]
     },
-    "ho-oh": {
+    "hooh": {
       "weight": 10,
       "sets": [
         {
