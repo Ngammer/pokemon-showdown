@@ -3457,6 +3457,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		tags: ["Mythical"],
 		eggGroups: ["Undiscovered"],
 	},
+	// gen 2
 	chikorita: {
 		num: 152,
 		name: "Chikorita",
@@ -5381,6 +5382,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Ancient Rock",
 		changesFrom: "Celebi",
 	},
+	// gen 3
 	treecko: {
 		num: 252,
 		name: "Treecko",
