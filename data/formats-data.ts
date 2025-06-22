@@ -1555,7 +1555,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	mamoswine: {
 		tier: "Illegal",
 		doublesTier: "(DUU)",
-		natDexTier: "UU",
+		natDexTier: "RUBL",
 	},
 	corsola: {
 		tier: "NU",
@@ -1856,7 +1856,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	pelipper: {
 		tier: "Illegal",
 		doublesTier: "DOU",
-		natDexTier: "UU",
+		natDexTier: "RU",
 	},
 	ralts: {
 		tier: "Illegal",
@@ -5470,7 +5470,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	roaringmoon: {
 		tier: "Illegal",
 		doublesTier: "DBL",
-		natDexTier: "OU",
+		natDexTier: "Uber",
 	},
 	irontreads: {
 		tier: "Illegal",

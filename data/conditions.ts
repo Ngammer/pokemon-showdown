@@ -93,6 +93,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			} else {
 				this.add('-status', target, 'frz');
 			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
+			}
 		},
 		// Damage reduction is handled directly in the sim/battle.js damage function
 		onResidualOrder: 10,

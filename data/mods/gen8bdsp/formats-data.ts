@@ -101,7 +101,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	sandslash: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	nidoranf: {
@@ -172,7 +172,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	bellossom: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DOU",
 	},
 	paras: {
@@ -231,7 +231,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	poliwrath: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	politoed: {
@@ -242,7 +242,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	kadabra: {
-		tier: "NFE",
+		tier: "NU",
 	},
 	alakazam: {
 		tier: "OU",
@@ -265,7 +265,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	victreebel: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	tentacool: {
@@ -425,14 +425,14 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	weezing: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	rhyhorn: {
 		tier: "LC",
 	},
 	rhydon: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "NFE",
 	},
 	rhyperior: {
@@ -457,7 +457,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	kangaskhan: {
-		tier: "PUBL",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	horsea: {
@@ -546,7 +546,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	ditto: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	eevee: {
@@ -557,7 +557,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	jolteon: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	flareon: {
@@ -573,18 +573,18 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	leafeon: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	glaceon: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	porygon: {
 		tier: "LC",
 	},
 	porygon2: {
-		tier: "NFE",
+		tier: "NU",
 	},
 	porygonz: {
 		tier: "UU",
@@ -860,7 +860,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	sneasel: {
-		tier: "PUBL",
+		tier: "NU",
 		doublesTier: "NFE",
 	},
 	weavile: {
@@ -936,7 +936,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	smeargle: {
-		tier: "PUBL",
+		tier: "NU",
 		doublesTier: "DUber",
 	},
 	miltank: {
@@ -1045,7 +1045,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	ludicolo: {
-		tier: "PUBL",
+		tier: "NU",
 		doublesTier: "DOU",
 	},
 	seedot: {
@@ -1055,7 +1055,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	shiftry: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	taillow: {
@@ -1239,7 +1239,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	torkoal: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "DOU",
 	},
 	spoink: {
@@ -1297,7 +1297,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	whiscash: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	corphish: {
@@ -1404,7 +1404,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	gorebyss: {
-		tier: "PUBL",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	relicanth: {
@@ -1620,7 +1620,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	drifblim: {
-		tier: "NU",
+		tier: "PU",
 		doublesTier: "DUU",
 	},
 	buneary: {
@@ -1712,7 +1712,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	abomasnow: {
-		tier: "PUBL",
+		tier: "NU",
 		doublesTier: "DOU",
 	},
 	rotom: {
