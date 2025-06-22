@@ -6281,12 +6281,32 @@
             }
         ]
     },
+    "qwilfishfeudal": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Qwilfish-Feudal",
+                "weight": 100,
+                "moves": [
+                    ["Mortal Spin"],
+                    ["FLip Turn"],
+                    ["Liquidation", "Waterfall", "Aqua Tail"],
+                    ["Spiky Ancient Rite"]
+                ],
+                "item": ["Ancient Rock"],
+                "nature": "Jolly",
+                "evs": {"atk": 252, "spd": 4, "spe": 252},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sage"]
+            }
+        ]
+    },
     "qwilfishhisui": {
       "weight": 10,
       "sets": [
           {
               "species": "Qwilfish-Hisui",
-              "weight": 50,
+              "weight": 100,
               "moves": [
                   ["Spikes"],
                   ["Crunch", "Gunk Shot", "Barb Barrage", "Throat Chop"],
@@ -6299,22 +6319,6 @@
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
               "ability": ["Toxic Debris"]
-          },
-          {
-              "species": "Gligar",
-              "weight": 50,
-              "moves": [
-                  ["Roost"],
-                  ["Earthquake"],
-                  ["Knock Off", "Toxic"],
-                  ["Stealth Rock"]
-              ],
-              "item": ["Eviolite"],
-              "nature": "Impish",
-              "evs": {"hp": 252, "spd": 4, "def": 252},
-              "ivs": {"atk": 0},
-              "teraType": ["Fairy", "Water"],
-              "ability": ["Sand Veil"]
           }
       ]
   },
@@ -7181,6 +7185,26 @@
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
                 "ability": ["Speed Boost"]
+            }
+        ]
+    },
+    "donphanfeudal": {
+        "weight": 10,
+        "sets": [
+            {
+                "species": "Donphan-Feudal",
+                "weight": 100,
+                "moves": [
+                    ["Rapid Spin"],
+                    ["Earthquake", "Magnitude"],
+                    ["Zen Headbutt", "Psyshield Bash"],
+                    ["Meditation Ancient Rite"]
+                ],
+                "item": ["Ancient Rock"],
+                "nature": "Adamant",
+                "evs": {"atk": 204, "hp": 248, "spe": 56},
+                "teraType": ["Fairy", "Fire", "Flying"],
+                "ability": ["Sage"]
             }
         ]
     },
