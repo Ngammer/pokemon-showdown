@@ -6297,6 +6297,7 @@
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsFeudal": true,
                 "ability": ["Sage"]
             }
         ]
@@ -7204,6 +7205,7 @@
                 "nature": "Adamant",
                 "evs": {"atk": 204, "hp": 248, "spe": 56},
                 "teraType": ["Fairy", "Fire", "Flying"],
+                "wantsFeudal": true,
                 "ability": ["Sage"]
             }
         ]
