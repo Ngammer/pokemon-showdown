@@ -3186,7 +3186,7 @@
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
               "teraType": ["Fairy", "Water"],
-              "ability": ["Unaware"]
+              "ability": ["Regenerator", "Leaf Guard"]
           }
       ]
   },
