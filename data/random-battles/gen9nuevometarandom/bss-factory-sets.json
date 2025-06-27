@@ -5577,7 +5577,7 @@
                 ["Recover"],
                 ["Stealth Rock"]
             ],
-            "item": ["Leftovers", "Damp Rock"],
+            "item": ["Eviolite"],
             "nature": "Impish",
             "evs": {"spd": 4, "hp": 252, "def": 252},
             "ivs": {"atk": 0},
