@@ -2839,7 +2839,7 @@
                     ["Wood Hammer", "Power Whip", "Seed Bomb"],
                     ["Earthquake", "Strength"]
                 ],
-                "item": ["Choice Band", "Lure Ball", "Leftovers", "Life Orb", "Choice Scarf"],
+                "item": ["Choice Band","Leftovers", "Life Orb"],
                 "nature": "Adamant",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
