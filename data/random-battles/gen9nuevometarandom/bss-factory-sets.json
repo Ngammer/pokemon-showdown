@@ -4963,7 +4963,7 @@
       "sets": [
           {
               "species": "Lanturn",
-              "weight": 50,
+              "weight": 100,
               "moves": [
                   ["Ice beam"],
                   ["Volt Switch", "Flip Turn"],
@@ -5509,7 +5509,7 @@
             "species": "Sunflora",
             "weight": 100,
             "moves": [
-                ["Synthesis"],
+                ["Synthesis", "Sunny Day"],
                 ["Earth Power"],
                 ["Mega Drain", "Giga Drain"],
                 ["Hidden Power Ice", "Hidden Power Fire"]
@@ -5556,7 +5556,7 @@
                 ["Giga Drain"],
                 ["Air Slash", "Air Cutter"]
             ],
-            "item": ["Leftovers"],
+            "item": ["Oval Stone"],
             "nature": "Timid",
             "evs": {"spd": 4, "spe": 252, "spa": 252},
             "ivs": {"atk": 0},
@@ -6530,7 +6530,7 @@
                 ["Double-Edge", "Mega Kick"],
                 ["Crunch"]
             ],
-            "item": ["Choice Band", "Muscle Band", "Life Orb"],
+            "item": ["Oval Stone"],
             "nature": "Adamant",
             "evs": {"spd": 8, "hp": 248, "atk": 252},
             "teraType": ["Fairy", "Water"],
@@ -7054,7 +7054,7 @@
             ["Fire Blast", "Flamethrower"],
             ["Dark Pulse"]
         ],
-        "item": ["Houndooominite"],
+        "item": ["Houndoominite"],
         "nature": "Timid",
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
