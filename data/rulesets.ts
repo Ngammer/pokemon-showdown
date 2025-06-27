@@ -977,7 +977,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			return problems;
 		},
 	},
-	/* evasionclause: {
+	evasionclause: {
 		effectType: 'ValidatorRule',
 		name: 'Evasion Clause',
 		desc: "Bans abilities, items, and moves that boost Evasion",
@@ -985,7 +985,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		onBegin() {
 			this.add('rule', 'Evasion Clause: Evasion abilities, items, and moves are banned');
 		},
-	}, */
+	},
 	evasionabilitiesclause: {
 		effectType: 'ValidatorRule',
 		name: 'Evasion Abilities Clause',
