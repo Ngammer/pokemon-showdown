@@ -5996,7 +5996,7 @@
             ["Calm Mind"],
             ["Hidden Power Fighting", "Dazzling Gleam"]
         ],
-        "item": ["Life Orb", "Expert Belt"],
+        "item": ["Oval Stone"],
         "nature": "Timid",
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
