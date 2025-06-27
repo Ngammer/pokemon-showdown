@@ -5598,7 +5598,7 @@
                 ["Toxic Spikes"],
                 ["Stealth Rock"]
             ],
-            "item": ["Leftovers", "Damp Rock"],
+            "item": ["Eviolite"],
             "nature": "Calm",
             "evs": {"hp": 252, "spa": 4, "spd": 252},
             "ivs": {"atk": 0},
