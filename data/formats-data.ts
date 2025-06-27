@@ -1279,6 +1279,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	xatutotemgrief: {
+
+	},
+	xatutotemwrath: {
+
+	},
 	mareep: {
 		tier: "LC",
 	},
