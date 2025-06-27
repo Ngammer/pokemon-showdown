@@ -3939,6 +3939,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Flying"],
 		requiredItem: "Totem Gigante",
+		battleOnly: "Xatu",
 	},
 	xatutotemgrief: {
 		num: 178,
