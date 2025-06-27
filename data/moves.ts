@@ -14503,7 +14503,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onAfterMoveSecondarySelf(pokemon, target, move) {
 			if (move.willChangeForme) {
 				const meloettaForme = pokemon.species.id === 'delibirdholiday' ? '' : '-Holiday';
-				pokemon.formeChange('Delibird' + meloettaForme, this.effect, false, '0', '[msg]');
+				pokemon.formeChange('Delibird' + meloettaForme, this.effect, true, '0', '[msg]');
 			}
 		},
 		secondary: null,
