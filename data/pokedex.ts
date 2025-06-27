@@ -3924,9 +3924,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 25,
 		eggGroups: ["Flying"],
 		otherFormes: ["Xatu-Totem-Joy", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
-		formeOrder: ["Xatu", "Xatu-Totem", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
+		formeOrder: ["Xatu", "Xatu-Totem-Joy", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
 	},
-	xatutotem: {
+	xatutotemjoy: {
 		num: 178,
 		name: "Xatu-Totem-Joy",
 		baseSpecies: "Xatu",
