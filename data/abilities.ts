@@ -4,7 +4,7 @@ Ratings and how they work:
 
 -1: Detrimental
 	  An ability that severely harms the user.
-	ex. Defeatist, Slow Start
+	ex. Defeatist, Slow Startu
 
  0: Useless
 	  An ability with no overall benefit in a singles battle.
