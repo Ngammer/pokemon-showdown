@@ -9381,9 +9381,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 758,
 		pseudoMegaStone: true,
 		onSwitchIn(pokemon) {
-			if (pokemon.baseSpecies.otherFormes) {
+			if (pokemon.baseSpecies.otherFormes && !(pokemon.species.name === "Xatu")) {
 				const base = pokemon.species.name;
 				pokemon.formeChange(base + '-Totem', this.effect, true);
+			} else if (pokemon.baseSpecies.otherFormes && pokemon.species.name === "Xatu") {
+				const base = pokemon.species.name;
+				pokemon.formeChange(base + '-Totem-Joy', this.effect, true);
 			}
 		},
 		onTakeItem(item, source) {
