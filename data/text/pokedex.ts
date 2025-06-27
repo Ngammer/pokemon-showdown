@@ -785,6 +785,15 @@ export const PokedexText: { [id: IDEntry]: PokedexText } = {
 	xatu: {
 		name: "Xatu",
 	},
+	xatutotemjoy: {
+		name: "Xatu-Totem-Joy",
+	},
+	xatutotemgrief: {
+		name: "Xatu-Totem-Grief",
+	},
+	xatutotemwrath: {
+		name: "Xatu-Totem-Wrath",
+	},
 	mareep: {
 		name: "Mareep",
 	},
