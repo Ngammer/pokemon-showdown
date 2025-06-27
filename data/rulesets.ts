@@ -95,7 +95,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		desc: "The standard ruleset for all National Dex tiers",
 		ruleset: [
 			'Standard AG', 'NatDex Mod',
-			'Species Clause', 'Nickname Clause', 'Sleep Clause Mod',
+			'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Clause', 'Sleep Clause Mod',
 		],
 	},
 	natdexmod: {
