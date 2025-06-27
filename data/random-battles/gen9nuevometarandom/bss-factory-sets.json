@@ -6754,7 +6754,7 @@
                   ["Brine", "Chilling Water"],
                   ["Toxic"]
               ],
-              "item": ["Eviolite"],
+              "item": ["Leftovers"],
               "nature": "Calm",
               "evs": {"hp": 252, "def": 4, "spd": 252},
               "ivs": {"atk": 0},
@@ -6770,7 +6770,7 @@
                   ["Brine", "Chilling Water"],
                   ["Toxic"]
               ],
-              "item": ["Eviolite"],
+              "item": ["Leftovers"],
               "nature": "Bold",
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
@@ -6786,7 +6786,7 @@
                   ["Brine"],
                   ["Protect"]
               ],
-              "item": ["Eviolite"],
+              "item": ["Leftovers"],
               "nature": "Calm",
               "evs": {"hp": 252, "def": 4, "spd": 252},
               "ivs": {"atk": 0},
@@ -6802,7 +6802,7 @@
                   ["Brine"],
                   ["Protect"]
               ],
-              "item": ["Eviolite"],
+              "item": ["Leftovers"],
               "nature": "Bold",
               "evs": {"hp": 252, "spd": 4, "def": 252},
               "ivs": {"atk": 0},
