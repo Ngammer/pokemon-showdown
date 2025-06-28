@@ -5676,6 +5676,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyMove(move, pokemon, target) {
 			if (target && !target.runImmunity(move.type)) {
 				move.ignoreImmunity = true;
+				pokemon.useItem();
 			}
 		},
 		num: 543,
