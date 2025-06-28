@@ -25,7 +25,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		ruleset: ['Little Cup', 'Standard NatDex', '!Evasion Clause', '!OHKO Clause'],
 		banlist: [
-			'Scyther', 'Splash', 'Oval Stone',
+			'Scyther', 'Splash', 'Oval Stone', 'Baton Pass',
 		],
 	},
 
