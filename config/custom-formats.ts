@@ -20,6 +20,14 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		team: 'randomBSSFactory',
 		ruleset: ['Standard NatDex', 'PotD', 'Illusion Level Mod', 'Nuevo Meta Pokedex', 'Terastal Clause', 'Item Clause = 1'],
 	},
+	{
+		name: "[Gen 9] Nuevo Meta LC",
+		mod: 'gen9',
+		ruleset: ['Little Cup', 'Standard'],
+		banlist: [
+			'Scyther', 'Splash', 'Oval Stone'
+		],
+	},
 
 ];
 
