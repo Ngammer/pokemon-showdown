@@ -23,9 +23,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] Nuevo Meta LC",
 		mod: 'gen9',
-		ruleset: ['Little Cup', 'Standard'],
+		ruleset: ['Little Cup', 'Standard NatDex', '!Evasion Clause', '!OHKO Clause'],
 		banlist: [
-			'Scyther', 'Splash', 'Oval Stone'
+			'Scyther', 'Splash', 'Oval Stone',
 		],
 	},
 
