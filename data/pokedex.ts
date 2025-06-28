@@ -2715,7 +2715,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 118,
 		name: "Goldeen",
 		types: ["Water"],
-		baseStats: { hp: 45, atk: 67, def: 60, spa: 35, spd: 50, spe: 63 },
+		baseStats: { hp: 45, atk: 35, def: 60, spa: 67, spd: 50, spe: 63 },
 		abilities: { 0: "Swift Swim", 1: "Water Veil", H: "Lightning Rod" },
 		heightm: 0.6,
 		weightkg: 15,
