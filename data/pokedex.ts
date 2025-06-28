@@ -5150,6 +5150,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.2,
 		weightkg: 58,
 		color: "White",
+		evos: ["Arteagle"],
 		eggGroups: ["Field"],
 	},
 	arteagle: {
