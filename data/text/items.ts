@@ -432,7 +432,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	dreamball: {
 		name: "Dream Ball",
-		shortDesc: "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep.",
+		shortDesc: "Activates the Early Bird Ability upon entering the field.",
 		gen7: {
 			shortDesc: "Activates the Early Bird Ability upon entering the field.",
 		},
