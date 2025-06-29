@@ -1203,7 +1203,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onEnd(pokemon) {
-			if (pokemon.getItem().name === 'Chrish Ball') {
+			if (pokemon.getItem().name === 'Dream Ball') {
 				pokemon.useItem();
 			}
 		},
