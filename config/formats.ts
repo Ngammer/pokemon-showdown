@@ -110,7 +110,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Little Cup', 'Standard'],
 		banlist: [
 			'Aipom', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Mantyke', 'Mime Jr.', 'Misdreavus',
-			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Wynaut', 'Yanma', 'Splash', 'Oval Stone', 'Baton Pass',
+			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Vulpix', 'Wynaut', 'Yanma', 'Splash', 'Oval Stone', 'Baton Pass',
 		],
 	},
 	{
@@ -2533,10 +2533,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		ruleset: ['Standard NatDex', 'Little Cup'],
 		banlist: [
-			'Aipom', 'Basculin-White-Striped', 'Clamperl', 'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Dunsparce', 'Duraludon', 'Flittle', 'Girafarig',
-			'Gligar', 'Meditite', 'Misdreavus', 'Murkrow', 'Porygon', 'Qwilfish-Hisui', 'Rufflet', 'Scraggy', 'Scyther', 'Sneasel', 'Sneasel-Hisui',
-			'Stantler', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'Woobat', 'Yanma', 'Zigzagoon-Base', 'Chlorophyll', 'Moody', 'Eevium Z', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Dragon Rage', 'Sonic Boom', 'Sticky Web',
+			'Aipom', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Mantyke', 'Mime Jr.', 'Misdreavus',
+			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Vulpix', 'Wynaut', 'Yanma', 'Splash', 'Oval Stone', 'Baton Pass',
 		],
 	},
 	{
