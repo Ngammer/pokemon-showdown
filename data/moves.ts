@@ -10444,7 +10444,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onTry(source) {
-			if (source.hp >= source.baseMaxhp) return false; // Last Resort fails unless the user knows at least 2 moves
+			if (source.hp <= (source.baseMaxhp / 2)) return false; // Last Resort fails unless the user knows at least 2 moves
 		},
 		secondary: null,
 		target: "normal",
