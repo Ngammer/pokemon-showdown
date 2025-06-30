@@ -302,7 +302,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	vulpixalola: {
-		tier: "NFE",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	ninetales: {
