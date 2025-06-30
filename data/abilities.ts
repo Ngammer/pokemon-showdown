@@ -6917,12 +6917,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	hierarchicalhead: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
-			if (target.hp >= target.maxhp / 1.5) {
+			if (target.species.forme === 'Totem-Serious') {
 				mod *= 0.50;
 			};
 			return this.chainModify(mod);
 		},
 		onResidual(target) {
+			if ((target.hp > target.maxhp / 1.5)){
+				target.formeChange('Xatu-Totem-Serious', this.effect, false);
+			}
 			if ((target.hp <= target.maxhp / 1.5) && (target.hp > target.maxhp / 3)) {
 				target.formeChange('Xatu-Totem-Grief', this.effect, false);
 			}
@@ -6931,7 +6934,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onTryBoost(boost, target, source, effect) {
-			if (target.species.forme === 'Xatu-Totem-Grief') {
+			if (target.species.forme === 'Totem-Grief') {
 				if (source && target === source) return;
 				let showMsg = false;
 				let i: BoostID;
@@ -6948,7 +6951,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (attacker.species.forme === 'Xatu-Totem-Wrath') {
+			if (attacker.species.forme === 'Totem-Wrath') {
 				this.debug('Hierarchical Head boost');
 				return this.chainModify(1.33);
 			}
