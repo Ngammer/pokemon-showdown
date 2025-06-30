@@ -299,10 +299,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	vulpix: {
 		tier: "NFE",
 		doublesTier: "NFE",
-		natDexTier: "LC",
+		natDexTier: "NFE",
 	},
 	vulpixalola: {
 		tier: "NFE",
+		natDexTier: "LC",
 	},
 	ninetales: {
 		tier: "RU",
