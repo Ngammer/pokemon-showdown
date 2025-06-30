@@ -9384,10 +9384,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onSwitchIn(pokemon) {
 			if (pokemon.baseSpecies.otherFormes && !(pokemon.species.name === "Xatu")) {
 				const base = pokemon.species.name;
-				pokemon.formeChange(base + '-Totem', this.effect, true);
+				pokemon.formeChange(base + '-Totem', this.effect, true, '0');
 			} else if (pokemon.baseSpecies.otherFormes && pokemon.species.name === "Xatu") {
 				const base = pokemon.species.name;
-				pokemon.formeChange(base + '-Totem-Serious', this.effect, true);
+				pokemon.formeChange(base + '-Totem-Serious', this.effect, true, '0');
 			}
 		},
 		onTakeItem(item, source) {
