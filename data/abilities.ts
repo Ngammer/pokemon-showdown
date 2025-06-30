@@ -6775,8 +6775,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	emergingvolt: {
 		onModifyPriority(priority, pokemon, target, move) {
-			if (((pokemon.baseMaxhp / 2) < pokemon.hp) && move.type === 'Electric') {
-				move.pranksterBoosted = true;
+			if (((pokemon.baseMaxhp / 2) > pokemon.hp) && move.type === 'Electric') {
 				return priority + 1;
 			}
 		},
