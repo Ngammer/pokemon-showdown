@@ -910,8 +910,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	smoochum: {
-		tier: "LC",
-		natDexTier: "LC",
+		tier: "NFE",
+		natDexTier: "NFE",
 	},
 	jynx: {
 		tier: "UU",
