@@ -72,11 +72,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ancientrock: {
 		name: "Ancient Rock",
-		shortDesc: "Convert certain Pokémon into an ancient form.",
+		shortDesc: "Convert certain Pokémon into an ancient form. Highest stat +20%",
 	},
 	apicotberry: {
 		name: "Apicot Berry",
-		shortDesc: "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
+		shortDesc: "Raises holder's Sp. Def by 1 stage when at 1/2 max HP or less. Single use.",
 	},
 	armorfossil: {
 		name: "Armor Fossil",
@@ -372,7 +372,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	destinyknot: {
 		name: "Destiny Knot",
 		desc: "Immune to destiny moves and infatuation. Destiny moves: Future Sight, Foresight, Destiny Bond, Doom Desire",
-		shortDesc: "Immune to destiny moves and infatuation..",
+		shortDesc: "Immune to destiny moves and infatuation.",
 	},
 	diancite: {
 		name: "Diancite",
@@ -443,7 +443,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	durinberry: {
 		name: "Durin Berry",
-		shortDesc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+		shortDesc: "If attacker makes contact losses 1/12 of max HP. Heals 12.5%.",
 	},
 	duskball: {
 		name: "Dusk Ball",
@@ -799,7 +799,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	helixfossil: {
 		name: "Helix Fossil",
-		shortDesc: "Can be revived into Omanyte.",
+		shortDesc: "Increases Accurrary when the ability Mineralization is active.",
 	},
 	heracronite: {
 		name: "Heracronite",
@@ -867,7 +867,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ironball: {
 		name: "Iron Ball",
-		shortDesc: "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.",
+		shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
 		gen4: {
 			shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
 		},
@@ -882,7 +882,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	jawfossil: {
 		name: "Jaw Fossil",
-		shortDesc: "Can be revived into Tyrunt.",
+		shortDesc: "Increases Critical ratio +2 when the ability Mineralization is active.",
 	},
 	kasibberry: {
 		name: "Kasib Berry",
@@ -1057,7 +1057,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	magmarizer: {
 		name: "Magmarizer",
-		shortDesc: "(Magmortar only) Activates No Guard and gains Flash Fire.",
+		shortDesc: "When Magmortar uses an Fire move, activates Ignomotor and gains Flash Fire Effect.",
 	},
 	magnet: {
 		name: "Magnet",
@@ -1440,7 +1440,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	quickball: {
 		name: "Quick Ball",
-		shortDesc: "Activates the Motordrive, Ignomotor Ability upon entering the field.",
+		shortDesc: "Activates the Motordrive and Ignomotor Ability upon entering the field.",
 	},
 	quickclaw: {
 		name: "Quick Claw",
@@ -1469,7 +1469,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	razorclaw: {
 		name: "Razor Claw",
-		desc: "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
+		desc: "Holder's critical hit ratio is raised by 2 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
 		shortDesc: "Raises critical hit ratio by 2 stages.",
 	},
 	razorfang: {
@@ -1604,11 +1604,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	scopelens: {
 		name: "Scope Lens",
-		shortDesc: "Holder's critical hit ratio is raised by 1 stage.",
+		shortDesc: "Moves with high critical ratio, are always critical hit.",
 	},
 	seaincense: {
 		name: "Sea Incense",
-		shortDesc: "Holder's Water-type attacks have 1.2x power.",
+		shortDesc: "The next Water-type move hits with double power, but the user loses Speed.",
 		gen3: {
 			shortDesc: "The next Water-type move hits with double power, but the user loses Speed.",
 		},
@@ -1626,7 +1626,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	shedshell: {
 		name: "Shed Shell",
-		shortDesc: "Additionally, cures status conditions every 5 turns.",
+		shortDesc: "Cures status conditions every 5 turns.",
 	},
 	shellbell: {
 		name: "Shell Bell",
@@ -1942,7 +1942,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	tr23: {
 		name: "TR23",
-		shortDesc: "Raises Attack by 1 stage if Spikes is used. Consumed after activation.",
+		shortDesc: "Raises Speed by 1 stage if Spikes is used. Consumed after activation.",
 	},
 	tr24: {
 		name: "TR24",
@@ -2379,7 +2379,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 
 	berserkgene: {
 		name: "Berserk Gene",
-		shortDesc: "(Gen 2) On switch-in, raises holder's Attack by 2 and confuses it. Single use.",
+		shortDesc: "On switch-in, raises holder's Attack by 2 and confuses it. Single use.",
 	},
 	berry: {
 		name: "Berry",

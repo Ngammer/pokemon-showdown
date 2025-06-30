@@ -1382,7 +1382,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.evoItem === 'Shiny Stone') {
+			if (pokemon.baseSpecies.evoItem === 'Dawn Stone') {
 				const bestStat = pokemon.getBestStat(true, true);
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
@@ -6145,7 +6145,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 80,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (source.baseSpecies.evoItem === 'Sun Stone' && move.type === 'Fairy') {
+			if (source.baseSpecies.evoItem === 'Shiny Stone' && move.type === 'Fairy') {
 				return this.chainModify([8192, 4096]);
 			}
 		},
