@@ -26,7 +26,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Little Cup', 'Standard NatDex', '!Evasion Clause', '!OHKO Clause', 'Terastal Clause', 'Nuevo Meta Pokedex'],
 		banlist: [
 			'Aipom', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Mantyke', 'Mime Jr.', 'Misdreavus',
-			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Vulpix', 'Wynaut', 'Yanma', 'Splash', 'Oval Stone', 'Baton Pass',
+			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Smoochum', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Vulpix-Base', 'Wynaut', 'Yanma', 'Splash', 'Oval Stone', 'Baton Pass',
 		],
 	},
 
