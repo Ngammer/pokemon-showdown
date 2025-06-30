@@ -3923,14 +3923,14 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Natu",
 		evoLevel: 25,
 		eggGroups: ["Flying"],
-		otherFormes: ["Xatu-Totem-Joy", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
-		formeOrder: ["Xatu", "Xatu-Totem-Joy", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
+		otherFormes: ["Xatu-Totem-Serious", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
+		formeOrder: ["Xatu", "Xatu-Totem-Serious", "Xatu-Totem-Grief", "Xatu-Totem-Wrath"],
 	},
-	xatutotemjoy: {
+	xatutotemserious: {
 		num: 178,
-		name: "Xatu-Totem-Joy",
+		name: "Xatu-Totem-Serious",
 		baseSpecies: "Xatu",
-		baseForme: "Totem-Joy",
+		forme: "Totem-Serious",
 		types: ["Psychic", "Rock"],
 		baseStats: { hp: 105, atk: 65, def: 95, spa: 125, spd: 95, spe: 55 },
 		abilities: { 0: "Hierarchical Head" },
@@ -3939,7 +3939,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Flying"],
 		requiredItem: "Totem Gigante",
-		battleOnly: "Xatu",
 	},
 	xatutotemgrief: {
 		num: 178,
@@ -3954,7 +3953,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Flying"],
 		requiredItem: "Totem Gigante",
-		battleOnly: "Xatu-Totem-Joy",
+		requiredAbility: "Hierarchical Head",
 	},
 	xatutotemwrath: {
 		num: 178,
@@ -3969,7 +3968,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Flying"],
 		requiredItem: "Totem Gigante",
-		battleOnly: "Xatu-Totem-Joy",
+		requiredAbility: "Hierarchical Head",
 	},
 	mareep: {
 		num: 179,

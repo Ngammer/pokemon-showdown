@@ -1276,7 +1276,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "RU",
 		natDexTier: "RU",
 	},
-	xatutotemjoy: {
+	xatutotemserious: {
 		tier: "UU",
 		natDexTier: "RU",
 	},

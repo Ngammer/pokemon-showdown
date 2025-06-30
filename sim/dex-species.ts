@@ -320,7 +320,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.maleOnlyHidden = !!data.maleOnlyHidden;
 		this.maxHP = data.maxHP || undefined;
 		this.isMega = !!(this.forme && ['Mega', 'Mega-X', 'Mega-Y'].includes(this.forme)) || undefined;
-		this.isTotem = !!(this.forme && ['Alola-Totem', 'Totem', 'Hisui-Totem', 'Totem-Joy',
+		this.isTotem = !!(this.forme && ['Alola-Totem', 'Totem', 'Hisui-Totem', 'Totem-Serious',
 			'Totem-Grief', 'Totem-Wrath'].includes(this.forme)) || undefined;
 		this.canGigantamax = data.canGigantamax || undefined;
 		this.gmaxUnreleased = !!data.gmaxUnreleased;
