@@ -344,8 +344,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		ruleset: ['Standard OMs', 'Not Fully Evolved', 'Sleep Moves Clause', 'Terastal Clause'],
 		banlist: [
-			'Aipom', 'Azurill', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Mantyke', 'Mime Jr.', 'Misdreavus',
-			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Wynaut', 'Yanma', 'Oval Stone', 'Baton Pass'
+			'Aipom', 'Azurill', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Magneton', 'Mantyke', 'Mime Jr.', 
+			'Misdreavus', 'Mr. Mime-Galar', 'Munchlax', 'Murkrow', 'Piloswine', 'Porygon2', 'Primeape', 'Qwilfish-Hisui', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Togetic', 
+			'Ursaring', 'Wynaut', 'Yanma', 'Oval Stone', 'Baton Pass'
 		],
 	},
 
