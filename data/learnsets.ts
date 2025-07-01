@@ -27080,7 +27080,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			{generation: 7, level: 21},
 		],
 	},
-	xatutotemjoy: {
+	xatutotemserious: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			aircutter: ["9T"],
