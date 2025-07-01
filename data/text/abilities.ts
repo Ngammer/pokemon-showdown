@@ -32,8 +32,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	analytic: {
 		name: "Analytic",
-		desc: "If the pokemon is the last to move, the move it uses will never misses and will have 50% more power.",
-		shortDesc: "If the pokemon is the last to move, the move it uses will never misses and will have 50% more power.",
+		desc: "If the pokemon is the last to move, the move it uses will have 50% more power.",
+		shortDesc: "If the pokemon is the last to move, the move it uses will have 50% more power.",
 	},
 	angerpoint: {
 		name: "Anger Point",
