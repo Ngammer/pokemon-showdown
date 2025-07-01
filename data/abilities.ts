@@ -6923,7 +6923,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return this.chainModify(mod);
 		},
 		onResidual(target) {
-			if ((target.hp > target.maxhp / 1.5)){
+			if ((target.hp > target.maxhp / 1.5)) {
 				target.formeChange('Xatu-Totem-Serious', this.effect, false);
 			}
 			if ((target.hp <= target.maxhp / 1.5) && (target.hp > target.maxhp / 3)) {
