@@ -467,8 +467,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	abra: {
-		tier: "LC",
-		natDexTier: "LC",
+		tier: "NFE",
+		natDexTier: "NFE",
 	},
 	kadabra: {
 		tier: "NU",
