@@ -27,7 +27,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		ruleset: ['Not Fully Evolved', 'Standard NatDex', 'Terastal Clause', 'Nuevo Meta Pokedex', '!Evasion Clause', '!OHKO Clause'],
 		banlist: [
-			'Baton Pass',
+			'Aipom', 'Azurill', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Mantyke', 'Mime Jr.', 'Misdreavus',
+			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Wynaut', 'Yanma', 'Oval Stone', 'Baton Pass'
 		],
 	},
 	{
