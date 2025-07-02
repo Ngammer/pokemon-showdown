@@ -1959,8 +1959,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	facade: {
 		name: "Facade",
-		desc: "Power doubles if the user is burned, paralyzed, or poisoned. The physical damage halving effect from the user's burn is ignored.",
-		shortDesc: "Power doubles if user is burn/poison/paralyzed.",
+		desc: "Power doubles if the user is burned, paralyzed, poisoned or frozen. The physical damage halving effect from the user's burn is ignored.",
+		shortDesc: "Power doubles if user is burn/poison/paralyzed/freeze.",
 		gen5: {
 			desc: "Power doubles if the user is burned, paralyzed, or poisoned.",
 		},
