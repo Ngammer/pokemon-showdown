@@ -17100,7 +17100,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			for (const target of pokemon.foes()) {
 				for (const moveSlot of target.moveSlots) {
 					const move = this.dex.moves.get(moveSlot.move);
-					this.add('-move', move, 'is revealed by Signal Beam')
+					this.add('-message', move, 'is revealed by Signal Beam')
 				}
 				return
 			}
