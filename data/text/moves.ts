@@ -3602,8 +3602,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	lashout: {
 		name: "Lash Out",
-		desc: "Power doubles if the user had a stat stage lowered this turn. Power doubles if user is burn/poison/paralyzed.",
-		shortDesc: "2x power if the user had a stat lowered or user is burn/poison/paralyzed.",
+		desc: "Power doubles if the user had a stat stage lowered this turn. Power doubles if user is burn/poison/paralyzed/Freeze.",
+		shortDesc: "2x power if the user had a stat lowered or user is brn/psn/par/frz.",
 	},
 	lastresort: {
 		name: "Last Resort",
@@ -3688,8 +3688,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	lick: {
 		name: "Lick",
-		desc: "Has a 30% chance to curse the target.",
-		shortDesc: "30% chance to curse the target.",
+		desc: "Has a 100% chance to curse the target.",
+		shortDesc: "100% chance to curse the target.",
 	},
 	lifedew: {
 		name: "Life Dew",
