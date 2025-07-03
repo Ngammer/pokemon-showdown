@@ -17097,13 +17097,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 80,
 		category: "Special",
 		onTryHit(pokemon) {
-			for (const target of pokemon.foes()) {
-				for (const moveSlot of target.moveSlots) {
+				for (const moveSlot of pokemon.moveSlots) {
 					const move = this.dex.moves.get(moveSlot.move);
 					this.add('-message', move, '-message', 'is revealed by Signal Beam')
 				}
 				return
-			}
 		},
 		name: "Signal Beam",
 		pp: 15,
