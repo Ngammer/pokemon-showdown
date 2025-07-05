@@ -1422,7 +1422,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 		},
 		onStart(pokemon) {
-			if (pokemon.getItem().name === 'Chrish Ball') {
+			if (pokemon.getItem().name === 'Cherish Ball') {
 				pokemon.addVolatile('flashfire');
 				pokemon.useItem();
 			}

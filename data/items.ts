@@ -922,7 +922,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 16,
 		gen: 4,
 		isPokeball: true,
-		isNonstandard: "Unobtainable",
 	},
 	chestoberry: {
 		name: "Chesto Berry",
@@ -4791,7 +4790,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 500,
 		gen: 4,
 		isPokeball: true,
-		isNonstandard: "Unobtainable",
 	},
 	passhoberry: {
 		name: "Passho Berry",
@@ -6645,7 +6643,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 1785,
 		gen: 8,
 		isPokeball: true,
-		isNonstandard: "Unobtainable",
 	},
 	strawberrysweet: {
 		name: "Strawberry Sweet",
