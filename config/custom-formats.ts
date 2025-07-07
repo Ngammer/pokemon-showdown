@@ -42,6 +42,12 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Heat Rock', 'Oval Stone', 'Baton Pass', 'Splash',
 		],
 	},
+	{
+		name: "[Gen 9] Nuevo Meta AG",
+		mod: 'gen9',
+		searchShow: false,
+		ruleset: ['Standard AG', 'NatDex Mod', 'Terastal Clause', 'Nuevo Meta Pokedex', '!Evasion Clause', '!OHKO Clause'],
+	},
 
 ];
 
