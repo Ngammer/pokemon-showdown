@@ -46,7 +46,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] Nuevo Meta AG",
 		mod: 'gen9',
 		searchShow: false,
-		ruleset: ['Standard AG', 'NatDex Mod', 'Terastal Clause', 'Nuevo Meta Pokedex', '!Evasion Clause', '!OHKO Clause'],
+		ruleset: ['Standard AG', 'NatDex Mod', 'Terastal Clause', 'Nuevo Meta Pokedex'],
 	},
 
 ];
