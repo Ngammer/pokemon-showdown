@@ -21,6 +21,42 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: ['Baton Pass', 'Uber'],
 	},
 	{
+		name: "[Gen 9] Nuevo Meta Ubers",
+		mod: 'gen9',
+		ruleset: ['Standard NatDex', 'Nuevo Meta Pokedex', '!Evasion Clause', '!OHKO Clause'],
+		banlist: ['AG'],
+	},
+	{
+		name: "[Gen 9] Nuevo Meta UU",
+		mod: 'gen9',
+		ruleset: ['[Gen 9] Nuevo Meta'],
+		banlist: ['OU', 'UUBL'],
+	},
+	{
+		name: "[Gen 9] Nuevo Meta RU",
+		mod: 'gen9',
+		ruleset: ['[Gen 9] Nuevo Meta UU'],
+		banlist: ['UU', 'RUBL'],
+	},
+	{
+		name: "[Gen 9] Nuevo Meta NU",
+		mod: 'gen9',
+		ruleset: ['[Gen 9] Nuevo Meta RU'],
+		banlist: ['RU', 'NUBL'],
+	},
+	{
+		name: "[Gen 9] Nuevo Meta PU",
+		mod: 'gen9',
+		ruleset: ['[Gen 9] Nuevo Meta NU'],
+		banlist: ['NU', 'PUBL'],
+	},
+	{
+		name: "[Gen 9] Nuevo Meta ZU",
+		mod: 'gen9',
+		ruleset: ['[Gen 9] Nuevo Meta PU'],
+		banlist: ['PU', 'ZUBL'],
+	},
+	{
 		name: "[Gen 9] Nuevo Meta NFE",
 		desc: `Only Pok&eacute;mon that can evolve are allowed.`,
 		mod: 'gen9',

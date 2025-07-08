@@ -85,7 +85,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	beedrill: {
-		tier: "ZUBL",
+		tier: "ZU",
 		natDexTier: "RU",
 	},
 	beedrillmega: {
@@ -846,7 +846,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	seadra: {
-		tier: "ZUBL",
+		tier: "ZU",
 	},
 	kingdra: {
 		tier: "UU",
