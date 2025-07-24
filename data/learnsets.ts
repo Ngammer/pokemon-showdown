@@ -6211,7 +6211,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	zubat: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9M", "9L1"],
 			acrobatics: ["9M", "9M", "9M", "9L30", "9M", "9L30"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			agility: ["9M"],
@@ -6302,7 +6302,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	golbat: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9M", "9L1"],
 			acrobatics: ["9M", "9M", "9M", "9L33", "9M", "9L33"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			agility: ["9M"],
@@ -6395,7 +6395,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	crobat: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1"],
 			acrobatics: ["9M", "9M", "9M", "9L33", "9M", "9L33"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			agility: ["9M"],
@@ -6485,7 +6485,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	oddish: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1", "9M", "9L1", "9M", "9L1", "9L1", "9L1", "9L1", "3S1"],
 			acid: ["9L4", "9L4", "9M", "9L9", "9M", "9L9", "9L9", "9L9", "9L23", "9M"],
 			acidspray: ["9M"],
 			afteryou: ["9E", "9E", "9T", "9E", "9T", "9E", "9T", "9E"],
@@ -6561,6 +6561,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			worryseed: ["9T", "9T", "9T", "9T"],
 		},
 		eventData: [
+			{generation: 3, level: 26, gender: "M", nature: "Quirky", ivs: {hp: 23, atk: 24, def: 20, spa: 21, spd: 9, spe: 16}, moves: ["poisonpowder", "stunspore", "sleeppowder", "acid"], pokeball: "pokeball"},
+			{generation: 3, level: 5, shiny: 1, moves: ["absorb", "leechseed"], pokeball: "pokeball"},
 		],
 		encounters: [
 			{generation: 1, level: 12},
@@ -6568,7 +6570,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	gloom: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1", "9M", "9L1", "9M", "9L1", "9L1", "9L1", "9L1"],
 			acid: ["9L1", "9L1", "9M", "9L1", "9M", "9L1", "9L1", "9L1", "9L24", "9M"],
 			acidspray: ["9M"],
 			afteryou: ["9T", "9T", "9T"],
@@ -6642,6 +6644,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			worryseed: ["9T", "9T", "9T", "9T"],
 		},
 		eventData: [
+			{generation: 3, level: 50, moves: ["sleeppowder", "acid", "moonlight", "petaldance"], pokeball: "pokeball"},
 		],
 		encounters: [
 			{generation: 2, level: 14},
@@ -6651,7 +6654,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	vileplume: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1", "9M", "9M", "9L1"],
 			acid: ["9L1", "9L1", "9M", "9M"],
 			acidspray: ["9M"],
 			afteryou: ["9T", "9T", "9T"],
@@ -6734,7 +6737,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	bellossom: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1", "9M", "9L1"],
 			acid: ["9L1", "9L1"],
 			acidspray: ["9M"],
 			afteryou: ["9T", "9T", "9T"],
@@ -6818,7 +6821,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	paras: {
 		learnset: {
-			absorb: ["9L11"],
+			absorb: ["9M", "9L11"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			afteryou: ["9T", "9T", "9T"],
 			agility: ["9E", "9E", "9E", "9E"],
@@ -6907,14 +6910,15 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			xscissor: ["9M", "9M", "9L54", "9M", "9L54", "9M", "9L54", "9M", "9L43"],
 		},
 		eventData: [
-				],
+			{generation: 3, level: 28, abilities: ["effectspore"], moves: ["refresh", "spore", "slash", "falseswipe"]},
+		],
 		encounters: [
 			{generation: 1, level: 8},
 		],
 	},
 	parasect: {
 		learnset: {
-			absorb: ["9M"],
+			absorb: ["9M", "9L1"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			afteryou: ["9T", "9T", "9T"],
 			aromatherapy: ["9L51", "9L51", "9L51", "9L47", "9L59"],
@@ -15157,7 +15161,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	exeggcute: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1"],
 			ancientpower: ["9E", "9E", "9E", "9M", "9E", "9E", "9T", "9E", "9E"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			barrage: ["9M", "9L1", "9M", "9L1", "9L1", "5D", "9L1", "9L1"],
@@ -15249,6 +15253,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 		eventData: [
+			{generation: 3, level: 5, shiny: 1, moves: ["sweetscent", "wish"], pokeball: "pokeball"},
 		],
 		encounters: [
 			{generation: 1, level: 20},
@@ -15256,7 +15261,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	exeggutor: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L1"],
 			ancientpower: ["9T", "9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			barrage: ["9M", "9L1", "9M", "9L1", "9L1", "9L1", "9L1"],
@@ -15359,6 +15364,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["9M", "9M", "9T", "9T", "9T", "9T"],
 		},
 		eventData: [
+			{generation: 3, level: 46, moves: ["refresh", "psychic", "hypnosis", "ancientpower"]},
 		],
 	},
 	exeggutoralola: {
@@ -15465,6 +15471,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zenheadbutt: ["9M", "9M", "9T"],
 		},
 		eventData: [
+			{generation: 7, level: 50, gender: "M", nature: "Modest", isHidden: true, moves: ["powerswap", "celebrate", "leafstorm", "dracometeor"], pokeball: "cherishball"},
 		],
 	},
 	cubone: {
@@ -17503,7 +17510,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	tangela: {
 		learnset: {
-			absorb: ["9L1","9L10"],
+			absorb: ["9L1", "9M", "9L10", "9M", "9L10", "9L8", "9L8", "9L10"],
 			amnesia: ["9M", "9M", "9E", "9M", "9E", "9E", "9E", "9E"],
 			ancientpower: ["9L24", "9L38", "9L38", "9L36", "9T", "9L33"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -17585,6 +17592,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wringout: ["9L46", "9L46", "9L49", "9L50"],
 		},
 		eventData: [
+			{generation: 3, level: 30, abilities: ["chlorophyll"], moves: ["morningsun", "solarbeam", "sunnyday", "ingrain"]},
 		],
 		encounters: [
 			{generation: 1, level: 13},
@@ -17592,7 +17600,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	tangrowth: {
 		learnset: {
-			absorb: ["9L1"],
+			absorb: ["9L1", "9L10", "9L10", "9L8", "9L8"],
 			aerialace: ["9M", "9M", "9M", "9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9L24", "9L40", "9L40", "9L36", "9T", "9L33", "4S0"],
@@ -22055,7 +22063,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	kabuto: {
 		learnset: {
-			absorb: ["9M"],
+			absorb: ["9L1", "9M", "9L6", "9M", "9L6", "9L6", "5D", "9L6", "9L13"],
 			aerialace: ["9M", "9M"],
 			ancientpower: ["9L30", "9L46", "9M", "9L46", "9L46", "9T", "9L46", "9L55"],
 			aquajet: ["9L15", "9M", "9L31", "9L31", "9L31", "9L31"],
@@ -22148,7 +22156,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	kabutops: {
 		learnset: {
-			absorb: ["9M"],
+			absorb: ["9L1", "9M", "9L1", "9M", "9L1", "9L1", "9L1", "9L1"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			ancientpower: ["9L30", "9L54", "9M", "9L54", "9L54", "9T", "9L54", "9L65"],
 			aquajet: ["9L15", "9M", "9L31", "9L31", "9L31", "9L31"],

@@ -355,7 +355,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	paras: {
-		tier: "LC",
+		tier: "Illegal",
 		natDexTier: "LC",
 	},
 	parasect: {
