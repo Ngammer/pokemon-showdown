@@ -43,7 +43,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	wartortle: {
-		tier: "NFE",
+		tier: "ZU",
 	},
 	blastoise: {
 		tier: "RU",
@@ -342,7 +342,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	gloom: {
-		tier: "NFE",
+		tier: "ZU",
 	},
 	vileplume: {
 		tier: "NU",
@@ -366,7 +366,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	venomoth: {
-		tier: "ZU",
+		tier: "ZUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -543,11 +543,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	ponyta: {
-		tier: "ZU",
+		tier: "NFE",
 		natDexTier: "LC",
 	},
 	ponytagalar: {
-		tier: "ZU",
+		tier: "NFE",
 		natDexTier: "LC",
 	},
 	rapidash: {
@@ -712,10 +712,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	voltorb: {
-		tier: "LC",
+		tier: "ZU",
 	},
 	voltorbhisui: {
-		tier: "NFE",
+		tier: "ZUBL",
 		doublesTier: "LC",
 		natDexTier: "LC",
 	},
@@ -910,7 +910,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	smoochum: {
-		tier: "NFE",
+		tier: "ZUBL",
 		natDexTier: "NFE",
 	},
 	jynx: {
@@ -1162,7 +1162,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	bayleef: {
-		tier: "NFE",
+		tier: "ZU",
 	},
 	meganium: {
 		tier: "OU",
@@ -1200,7 +1200,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	furret: {
-		tier: "NFE",
+		tier: "ZU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -1241,7 +1241,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	spinarak: {
-		tier: "LC",
+		tier: "ZU",
 	},
 	ariados: {
 		tier: "PUBL",
@@ -1329,7 +1329,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	skiploom: {
-		tier: "NFE",
+		tier: "ZU",
 	},
 	jumpluff: {
 		tier: "UU",
