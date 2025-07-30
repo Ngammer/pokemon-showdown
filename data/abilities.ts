@@ -1002,7 +1002,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onStart(pokemon) {
-			if (pokemon.getItem().name === 'Competi Ball') {
+			if (pokemon.getItem().name === 'Sport Ball') {
 				this.boost({ atk: 2 }, pokemon);
 				pokemon.useItem();
 			}
