@@ -366,7 +366,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	venomoth: {
-		tier: "ZU",
+		tier: "ZUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -715,7 +715,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "ZU",
 	},
 	voltorbhisui: {
-		tier: "ZU",
+		tier: "ZUBL",
 		doublesTier: "LC",
 		natDexTier: "LC",
 	},
@@ -910,7 +910,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	smoochum: {
-		tier: "ZU",
+		tier: "ZUBL",
 		natDexTier: "NFE",
 	},
 	jynx: {
