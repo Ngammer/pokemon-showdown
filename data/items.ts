@@ -6672,7 +6672,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				this.boost({ [bestStat]: 1 }, pokemon);
 			}
 		},
-		itemUser: ['Bellosom', 'Sunflora', 'Sunfulwer', 'Whimsicott', 'Liligant', 'Liligant-Hisui', 'Heliolisk'],
+		itemUser: ['Bellossom', 'Sunflora', 'Sunfulwer', 'Whimsicott', 'Liligant', 'Liligant-Hisui', 'Heliolisk'],
 		num: 80,
 		gen: 2,
 	},

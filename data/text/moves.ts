@@ -3215,7 +3215,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	howl: {
 		name: "Howl",
-		desc: "Raises the Attack of the user and all allies 1 stage.",
+		desc: "Raises the user's and ally's Atk by 1. Heals 25% max HP.",
 		shortDesc: "Raises the user's and ally's Atk by 1. Heals 25% max HP.",
 		gen7: {
 			desc: "Raises the user's Attack by 1 stage.",
