@@ -978,6 +978,9 @@ export default class TeamGenerator {
 		case 'eviolite':
 			return species.nfe || species.id === 'dipplin' ? 100 : 0;
 
+		case 'ovalstone':
+			return species.nfe || species.id === 'dipplin' ? 100 : 0;
+
 		// status
 		case 'flameorb':
 			if (species.types.includes('Fire')) return 0;
