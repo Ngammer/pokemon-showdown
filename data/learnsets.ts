@@ -72372,6 +72372,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			{generation: 9, level: 5, abilities: ["flowerveil"], moves: ["vinewhip", "fairywind", "wish", "celebrate"], pokeball: "cherishball"},
 		],
 	},
+	floette: {
 		learnset: {
 			afteryou: ["9T", "9T"],
 			alluringvoice: ["9M"],
