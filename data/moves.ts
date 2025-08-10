@@ -3793,7 +3793,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					(pokemon === this.activePokemon && this.activeMove && !this.activeMove.isExternal)
 				) {
 					this.effectState.duration!--;
-					this.effectState.duration!--;
 				}
 				if (!pokemon.lastMove) {
 					this.debug(`Pokemon hasn't moved yet`);
