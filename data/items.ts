@@ -9461,37 +9461,37 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				spe: pokemon.getStat('spe', true, true),
 			};
 			const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
-			this.effectState.bestStats = sortedStats.slice(0, 2).map(s => s[0]); // Store top 2 stats
+			this.effectState.bestStats = sortedStats.slice(0, 1).map(s => s[0]);
 			this.debug(`Ancient Rock boosts: ${this.effectState.bestStats.join(', ')}`);
 		},
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
 			if (!this.effectState.bestStats?.includes('atk')) return;
 			this.debug('Ancient Rock atk boost');
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		onModifyDefPriority: 6,
 		onModifyDef(def, pokemon) {
 			if (!this.effectState.bestStats?.includes('def')) return;
 			this.debug('Ancient Rock def boost');
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
 			if (!this.effectState.bestStats?.includes('spa')) return;
 			this.debug('Ancient Rock spa boost');
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		onModifySpDPriority: 6,
 		onModifySpD(spd, pokemon) {
 			if (!this.effectState.bestStats?.includes('spd')) return;
 			this.debug('Ancient Rock spd boost');
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		onModifySpe(spe, pokemon) {
 			if (!this.effectState.bestStats?.includes('spe')) return;
 			this.debug('Ancient Rock spe boost');
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		itemUser: ["Quagsire-Feudal", "Slowking-Feudal", "Wungsparce-Feudal", "Granbull-Feudal", "Qwilfish-Feudal", "Ursaring-Feudal", "Mantine-Feudal", "Kingdra-Feudal", "Donphan-Feudal", "Celebi-Feudal"],
 		num: -107,
