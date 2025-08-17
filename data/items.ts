@@ -5144,7 +5144,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifySpe(spe) {
 			return this.chainModify(0.5);
 		},
-		onModifySpA(spa) {
+		onModifyAtk(atk) {
 			return this.chainModify(1.25);
 		},
 		num: 290,
@@ -5160,7 +5160,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifySpe(spe) {
 			return this.chainModify(0.5);
 		},
-		onModifyAtk(atk) {
+		onModifySpA(spa) {
 			return this.chainModify(1.25);
 		},
 		num: 289,
