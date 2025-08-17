@@ -6251,16 +6251,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onStart(pokemon) {
 			if (pokemon.hasAbility("Fossilization")) {
+				pokemon.addVolatile('skullfossil');
 				pokemon.useItem();
 			}
 		},
 		onEnd(pokemon) {
-			pokemon.removeVolatile('coverfossil');
+			pokemon.removeVolatile('skullfossil');
 		},
 		condition: {
 			onBasePowerPriority: 19,
 			onBasePower(basePower, attacker, defender, move) {
-				this.debug('Artificial Intelligence boost');
+				this.debug('Skull Fossil boost');
 				return this.chainModify(1.5);
 			},
 			onSourceModifyAccuracyPriority: -1,
