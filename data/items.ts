@@ -1413,7 +1413,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return this.chainModify(2);
 			}
 		},
-		itemUser: ["Clamperl"],
+		itemUser: ["Gorebyss"],
 		num: 227,
 		gen: 3,
 
@@ -1430,7 +1430,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return this.chainModify(2);
 			}
 		},
-		itemUser: ["Clamperl"],
+		itemUser: ["Huntail"],
 		num: 226,
 		gen: 3,
 
@@ -6699,13 +6699,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		isBerry: true,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.name === 'Flapple') {
+			if (pokemon.baseSpecies.name === 'Appletun') {
 				const r = this.random(2);
 				if (r === 1) {
 					this.boost({ spd: 1 }, pokemon);
 				} else {
 					this.boost({ def: 1 }, pokemon);
-					pokemon.useItem();
 				}
 			}
 		},
@@ -6723,11 +6722,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.name === 'Flapple') {
 				this.boost({ atk: 2 }, pokemon);
-				pokemon.useItem();
+				pokemon.eatItem();
 			}
 			if (pokemon.baseSpecies.name === 'Appletun') {
 				this.boost({ def: 2, spd: 2 }, pokemon);
-				pokemon.useItem();
+				pokemon.eatItem();
 			}
 		},
 		itemUser: ['Appletun', 'Flapple'],
@@ -6798,7 +6797,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.name === 'Flapple') {
 				this.boost({ spe: 1 }, pokemon);
-				pokemon.useItem();
 			}
 		},
 		itemUser: ['Flapple'],
