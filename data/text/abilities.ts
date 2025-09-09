@@ -2404,7 +2404,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	sage: {
 		name: "Sage",
-		shortDesc: "Works like Unaware. Cannot be confused, taunted, or tormented.",
+		shortDesc: "This Pokemon ignores other Pokemon's stat stages when taking or doing damage. Cannot be confused, taunted, or tormented.",
 	},
 	envelopingdarkness: {
 		name: "Enveloping Darkness",
