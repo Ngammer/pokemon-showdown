@@ -6564,7 +6564,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	heavyhand: {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.flags['contact']) {
+			if (move.flags['contact'] || move.type === 'Steel') {
 				return this.chainModify(1.15);
 			}
 		},
