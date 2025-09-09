@@ -6249,7 +6249,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
 			if (move.flags['sound']) {
-				if (this.randomChance(5, 10)) {
+				if (this.randomChance(3, 10)) {
 					target.trySetStatus('frz', source);
 				}
 			}

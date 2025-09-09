@@ -2269,7 +2269,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	// Nuevo Meta
 	scaleshield: {
 		name: "Scale Shield",
-		desc: "Puede envenenar, paralizar y dormir al contacto (33% de posibilidad para cada alteración de estado). Convierte el movimiento Viento Plata en Viento Escama.",
+		desc: "Puede envenenar, paralizar y dormir al contacto (11% de posibilidad para cada alteración de estado). Convierte el movimiento Viento Plata en Viento Escama.",
 		shortDesc: "50% chance of poison/paralysis/sleep on others dealing damage",
 	},
 	stoneknuckles: {
@@ -2449,7 +2449,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cleanwater: {
 		name: "Clean Water",
-		shortDesc: "Water moves are super effective against Poison. Immune to Poison, cannot be poisoned. Resists Poison type.",
+		shortDesc: "Water moves are super effective against Poison. Cannot be poisoned. Poison power against it is halved.",
 	},
 	marine: {
 		name: "Marine",
@@ -2481,7 +2481,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	ignomotor: {
 		name: "Ignomotor",
-		shortDesc: "Raises Speed when hit by a Fire-type attack.",
+		shortDesc: "Raises Speed when hit by a Fire-type attack; Fire immunity.",
 	},
 	brutalkick: {
 		name: "Brutal Kick",
