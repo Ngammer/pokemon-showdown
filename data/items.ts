@@ -324,6 +324,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'frz') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 153,
@@ -911,6 +912,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'par') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 149,
@@ -939,6 +941,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'slp') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 150,
@@ -4855,6 +4858,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'psn' || pokemon.status === 'tox') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 151,
@@ -4875,6 +4879,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onEat(pokemon) {
 			pokemon.removeVolatile('confusion');
+			this.heal(pokemon.baseMaxhp / 4);
 		},
 		num: 156,
 		gen: 3,
@@ -5506,6 +5511,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'brn') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 152,
