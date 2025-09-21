@@ -2204,7 +2204,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-
 		name: "Camouflage",
 		pp: 20,
 		priority: 0,
@@ -2822,7 +2821,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	confusion: {
 		num: 93,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Special",
 		name: "Confusion",
 		pp: 25,
