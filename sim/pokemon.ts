@@ -1209,12 +1209,14 @@ export class Pokemon {
 
 	copyVolatileFrom(pokemon: Pokemon, switchCause?: string | boolean) {
 		this.clearVolatile();
-		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') this.boosts = pokemon.boosts;
+		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') this.heal(1/4); 
 		if (switchCause === 'doubleteam') this.setBoost({ spe: 1 });
 		for (const i in pokemon.volatiles) {
 			if (switchCause === 'shedtail' && i !== 'substitute') continue;
+
 			if (this.battle.dex.conditions.getByID(i as ID).noCopy) continue;
-			// shallow clones
+			// shallow clonesç
+/*
 			this.volatiles[i] = this.battle.initEffectState({ ...pokemon.volatiles[i], target: this });
 			if (this.volatiles[i].linkedPokemon) {
 				delete pokemon.volatiles[i].linkedPokemon;
@@ -1224,6 +1226,7 @@ export class Pokemon {
 					linkedPokeLinks[linkedPokeLinks.indexOf(pokemon)] = this;
 				}
 			}
+*/
 		}
 		pokemon.clearVolatile();
 		for (const i in this.volatiles) {

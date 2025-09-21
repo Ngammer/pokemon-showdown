@@ -157,6 +157,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const randomStat = this.sample(stats);
 				const boost: SparseBoostsTable = {};
 				boost[randomStat] = 2;
+				boost[randomStat] = 2;
 				this.boost(boost);
 			} else {
 				return false;
@@ -171,7 +172,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	aerialace: {
 		num: 332,
 		accuracy: true,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Aerial Ace",
 		pp: 20,
@@ -204,7 +205,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "After You",
 		pp: 15,
-		priority: 0,
+		priority: 1,
 		flags: { bypasssub: 1, allyanim: 1 },
 		onHit(target) {
 			if (this.activePerHalf === 1) return false; // fails in singles
@@ -520,14 +521,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	aquatail: {
 		num: 401,
-		accuracy: 100,
-		basePower: 90,
+		accuracy: 90,
+		basePower: 100,
 		category: "Physical",
 		name: "Aqua Tail",
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, tail: 1 },
-		secondary: null,
+		secondary: {
+			chance: 30,
+			boosts: {
+				spe: -1,
+			},
+		},
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
@@ -627,30 +633,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-
+		//basePowerCallback(pokemon, target, move) {
+		//	return 50 + 25 * pokemon.side.totalFainted;
+		//},
 		name: "Assist",
 		pp: 20,
 		priority: 0,
 		flags: { failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
-		onHit(target) {
-			const moves = [];
-			for (const pokemon of target.side.pokemon) {
-				if (pokemon === target) continue;
-				for (const moveSlot of pokemon.moveSlots) {
-					const moveid = moveSlot.id;
-					const move = this.dex.moves.get(moveid);
-					if (move.flags['noassist'] || move.isZ || move.isMax) {
-						continue;
-					}
-					moves.push(moveid);
-				}
-			}
-			let randomMove = '';
-			if (moves.length) randomMove = this.sample(moves);
-			if (!randomMove) {
-				return false;
-			}
-			this.actions.useMove(randomMove, target);
+		onTry(pokemon, target, move) {
+			const result = pokemon.side.pokemonLeft * pokemon.baseMaxhp/8;
+			this.heal(result)
 		},
 		callsMove: true,
 		secondary: null,
@@ -772,6 +764,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onTryImmunity(target, source) {
 			return (target.gender === 'M' && source.gender === 'F') || (target.gender === 'F' && source.gender === 'M');
 		},
+		boosts: {
+			spd: -1,
+			def: -1,
+		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -821,19 +817,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	aurorabeam: {
 		num: 62,
-		accuracy: 100,
-		basePower: 60,
+		accuracy: 85,
+		basePower: 110,
 		category: "Special",
 		name: "Aurora Beam",
 		pp: 20,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, beam: 1 },
-		secondary: {
-			chance: 100,
-			boosts: {
-				atk: -1,
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
@@ -944,7 +935,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	axekick: {
 		num: 853,
-		accuracy: 90,
+		accuracy: 95,
 		basePower: 120,
 		category: "Physical",
 		name: "Axe Kick",
@@ -956,7 +947,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
 		},
 		secondary: {
-			chance: 30,
+			chance: 50,
 			volatileStatus: 'confusion',
 		},
 		target: "normal",
@@ -972,7 +963,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		boosts: {
-			atk: -1,
+			atk: -2,
 		},
 		secondary: null,
 		target: "normal",
