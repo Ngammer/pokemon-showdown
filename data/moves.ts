@@ -2791,10 +2791,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Confide",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: { reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		boosts: {
-			spa: -2,
+			spa: -1,
+			atk: -1,
 		},
 		secondary: null,
 		target: "normal",
