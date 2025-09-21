@@ -1173,9 +1173,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	beatup: {
 		num: 251,
 		accuracy: 100,
-		basePower: 110,
+		basePower: 100,
 		basePowerCallback(pokemon, target, move) {
-			return 110 - 15 * pokemon.side.totalFainted;
+			return 100 - 5 * pokemon.side.totalFainted;
 		},
 		category: "Physical",
 		name: "Beat Up",
@@ -1263,31 +1263,24 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	bestow: {
 		num: 516,
 		accuracy: true,
-		basePower: 90,
-		category: "Special",
+		basePower: 0,
+		category: "Status",
+
 		name: "Bestow",
 		pp: 15,
 		priority: 0,
 		flags: { mirror: 1, bypasssub: 1, allyanim: 1, noassist: 1, failcopycat: 1 },
-		onTryHit(target, source, move) {
-			if (source.isAlly(target)) {
-				move.basePower = 0;
-				move.infiltrates = true;
-			}
-		},
-		onTryMove(source, target, move) {
-			if (source.isAlly(target) && source.volatiles['healblock']) {
-				this.attrLastMove('[still]');
-				this.add('cant', source, 'move: Heal Block', move);
+		onHit(target, source, move) {
+			if (target.item) {
 				return false;
 			}
-		},
-		onHit(target, source, move) {
-			if (source.isAlly(target)) {
-				if (!this.heal(Math.floor(target.baseMaxhp * 0.5))) {
-					return this.NOT_FAIL;
-				}
+			const myItem = source.takeItem();
+			if (!myItem) return false;
+			if (!this.singleEvent('TakeItem', myItem, source.itemState, target, source, move, myItem) || !target.setItem(myItem)) {
+				source.item = myItem.id;
+				return false;
 			}
+			this.add('-item', target, myItem.name, '[from] move: Bestow', `[of] ${source}`);
 		},
 		secondary: null,
 		target: "normal",
@@ -1654,7 +1647,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	boneclub: {
 		num: 125,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 80,
 		category: "Physical",
 
 		name: "Bone Club",
@@ -1793,17 +1786,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
-		secondaries: [
-			{
-				chance: 100,
-				boosts: {
-					atk: -1,
-				},
-			}, {
-				chance: 30,
-				volatileStatus: 'flinch',
+		secondary: {
+			chance: 100,
+			boosts: {
+				atk: -1,
 			},
-		],
+		},
 		target: "allAdjacentFoes",
 		type: "Dragon",
 	},
@@ -1826,7 +1814,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	brickbreak: {
 		num: 280,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 75,
 		category: "Physical",
 		name: "Brick Break",
 		pp: 15,
@@ -1882,17 +1870,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		secondaries: [
-			{
-				chance: 100,
-				boosts: {
-					atk: -1,
-				},
-			}, {
-				chance: 30,
-				volatileStatus: 'confusion',
+		secondary: {
+			chance: 100,
+			boosts: {
+				atk: -1,
 			},
-		],
+		},
 		target: "allAdjacent",
 		type: "Dark",
 		contestType: "Tough",
@@ -1920,7 +1903,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	bubblebeam: {
 		num: 61,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 70,
 		category: "Special",
 		name: "Bubble Beam",
 		pp: 20,
@@ -1944,7 +1927,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Bug Bite",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1, },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onHit(target, source, move) {
 			const item = target.getItem();
 			if (source.hp && item.isBerry && target.takeItem(source)) {
@@ -2008,12 +1991,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1 },
-		onTryHit(pokemon) {
-			// will shatter screens through sub, before you hit
-			pokemon.side.removeSideCondition('spikes');
-			pokemon.side.removeSideCondition('toxicspikes');
-			pokemon.side.removeSideCondition('stealthrock');
-		},
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -2244,7 +2221,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		boosts: {
 			spa: -6,
-			atk: -6,
 		},
 		secondary: null,
 		target: "allAdjacentFoes",
@@ -2375,7 +2351,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	chargebeam: {
 		num: 451,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 40,
 		category: "Special",
 		name: "Charge Beam",
 		pp: 10,
@@ -2400,10 +2376,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Charm",
 		pp: 20,
-		priority: 1,
+		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		boosts: {
-			spa: -2,
+			atk: -2,
 		},
 		secondary: null,
 		target: "normal",
