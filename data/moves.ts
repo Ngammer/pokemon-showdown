@@ -448,7 +448,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	aquacutter: {
 		num: 895,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Physical",
 		name: "Aqua Cutter",
 		pp: 20,
@@ -1263,11 +1263,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	bestow: {
 		num: 516,
-		accuracy: true,
+		accuracy: 100,
 		basePower: 90,
 		category: "Special",
 		name: "Bestow",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: { mirror: 1, bypasssub: 1, allyanim: 1, noassist: 1, failcopycat: 1 },
 		onTryHit(target, source, move) {
@@ -1945,7 +1945,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Bug Bite",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1, },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
 		onHit(target, source, move) {
 			const item = target.getItem();
 			if (source.hp && item.isBerry && target.takeItem(source)) {
