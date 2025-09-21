@@ -1209,7 +1209,7 @@ export class Pokemon {
 
 	copyVolatileFrom(pokemon: Pokemon, switchCause?: string | boolean) {
 		this.clearVolatile();
-		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') this.heal(1/4); 
+		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') pokemon.heal(1/4);
 		if (switchCause === 'doubleteam') this.setBoost({ spe: 1 });
 		for (const i in pokemon.volatiles) {
 			if (switchCause === 'shedtail' && i !== 'substitute') continue;
