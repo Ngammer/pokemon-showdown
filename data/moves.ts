@@ -155,9 +155,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			if (stats.length) {
 				const randomStat = this.sample(stats);
+				const randomStat2 = this.sample(stats);
 				const boost: SparseBoostsTable = {};
 				boost[randomStat] = 1;
-				boost[randomStat] = 1;
+				boost[randomStat2] = 1;
 				this.boost(boost);
 			} else {
 				return false;
@@ -633,16 +634,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		//basePowerCallback(pokemon, target, move) {
+		// basePowerCallback(pokemon, target, move) {
 		//	return 50 + 25 * pokemon.side.totalFainted;
-		//},
+		// },
 		name: "Assist",
 		pp: 20,
 		priority: 0,
 		flags: { failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
 		onTry(pokemon, target, move) {
-			const result = pokemon.side.pokemonLeft * pokemon.baseMaxhp/8;
-			this.heal(result)
+			const result = pokemon.side.pokemonLeft * pokemon.baseMaxhp / 8;
+			this.heal(result);
 		},
 		callsMove: true,
 		secondary: null,
@@ -755,7 +756,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onBeforeMovePriority: 2,
 			onBeforeMove(pokemon, target, move) {
 				this.add('-activate', pokemon, 'move: Attract', '[of] ' + this.effectState.source);
-				move.basePower *= 0.8;
+				move.basePower *= 0.5;
 			},
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'Attract', '[silent]');
@@ -17054,7 +17055,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		 onTryHit(pokemon) {
+		onTryHit(pokemon) {
 			for (const moveSlot of pokemon.moveSlots) {
 				const move = this.dex.moves.get(moveSlot.move);
 				this.add('-message', move, '-message', 'is revealed by Signal Beam');
