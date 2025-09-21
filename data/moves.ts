@@ -156,8 +156,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (stats.length) {
 				const randomStat = this.sample(stats);
 				const boost: SparseBoostsTable = {};
-				boost[randomStat] = 2;
-				boost[randomStat] = 2;
+				boost[randomStat] = 1;
+				boost[randomStat] = 1;
 				this.boost(boost);
 			} else {
 				return false;
