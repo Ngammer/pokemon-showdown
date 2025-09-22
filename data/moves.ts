@@ -2244,9 +2244,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
-					move.accuracy = 0;
+					this.add('-activate', target, 'move: Camouflage'); // cambiar a fallo
 					target.removeVolatile('camouflage');
 				}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				return this.NOT_FAIL;
 			},
 		},
 		secondary: null,
@@ -2797,7 +2805,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			return 0;
 		},
-		/*basePowerCallback(pokemon, target, move) {
+		/* basePowerCallback(pokemon, target, move) {
 			if (target.getStat('def', true, true) < target.getStat('def', false, true) ||
 				target.getStat('spd', true, true) < target.getStat('spd', false, true) ||
 				target.getStat('atk', true, true) < target.getStat('atk', false, true) || target.getStat('spa', true, true) < target.getStat('spa', false, true) ||
@@ -2899,10 +2907,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				chance: 100,
 				self: {
 					boosts: {
-					spe: -2,
+						spe: -2,
 					},
 				},
-				
+
 			},
 		],
 		target: "normal",
@@ -2943,10 +2951,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 100,
 			self: {
 				boosts: {
-				spa: +2
+					spa: +2,
 				},
 			},
-			
+
 		},
 		target: "self",
 		type: "Normal",
@@ -2969,11 +2977,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: {
 			chance: 100,
-			self:{
+			self: {
 				boosts: {
 					spd: +1,
 					spa: +1,
-				}
+				},
 			},
 		},
 		target: "normal",
