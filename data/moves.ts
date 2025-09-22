@@ -1269,7 +1269,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Bestow",
 		pp: 10,
 		priority: 0,
-		flags: { mirror: 1, bypasssub: 1, allyanim: 1, noassist: 1, failcopycat: 1 },
+		flags: { protect: 1, mirror: 1, bypasssub: 1, allyanim: 1, noassist: 1, failcopycat: 1 },
 		onTryHit(target, source, move) {
 			if (source.isAlly(target)) {
 				move.basePower = 0;
@@ -2207,21 +2207,33 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Camouflage",
 		pp: 20,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
-		onHit(target) {
-			let newType = 'Normal';
-			if (this.field.isTerrain('electricterrain')) {
-				newType = 'Electric';
-			} else if (this.field.isTerrain('grassyterrain')) {
-				newType = 'Grass';
-			} else if (this.field.isTerrain('mistyterrain')) {
-				newType = 'Fairy';
-			} else if (this.field.isTerrain('psychicterrain')) {
-				newType = 'Psychic';
-			}
-
-			if (target.getTypes().join() === newType || !target.setType(newType)) return false;
-			this.add('-start', target, 'typechange', newType);
+		flags: { noassist: 1, failcopycat: 1, cantusetwice: 1 },
+		boosts: { spe: 1 },
+		stallingMove: true,
+		volatileStatus: 'camouflage',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Camouflage');
+			},
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				if (move.category === 'Status') {
+					return;
+				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					move.accuracy = 0;
+					target.removeVolatile('camouflage');
+				}
+			},
 		},
 		secondary: null,
 		target: "self",
