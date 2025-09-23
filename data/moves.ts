@@ -1545,7 +1545,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onTrapPokemon(pokemon) {
 				pokemon.tryTrap();
 			},
-			onAfterHit(pokemon, target, move) {
+			onAfterMoveSecondarySelf(pokemon, target, move) {
 				const stats = {
 					atk: pokemon.getStat('atk', true, true),
 					def: pokemon.getStat('def', true, true),
@@ -1560,6 +1560,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if ((!target || target.fainted || target.hp <= 0) && (pokemon.volatiles['block'])) {
 					this.boost({ [bestStat]: 1, [best2Stat]: 1, [best3Stat]: 1 }, pokemon, pokemon, move);
 					this.heal(pokemon.maxhp / 4);
+					pokemon.removeVolatile('block');
 				}
 			},
 		},
