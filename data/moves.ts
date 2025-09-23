@@ -1524,14 +1524,45 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Block",
-		pp: 5,
+		pp: 1,
 		priority: 0,
 		flags: { reflectable: 1, mirror: 1, metronome: 1 },
+		volatileStatus: 'block',
+		/*
 		onHit(target, source, move) {
 			return target.addVolatile('trapped', source, move, 'trapper');
 		},
+		*/
+		onTry(source, target, move) {
+			if (source.volatiles['block'] && target.volatiles['block']) return false;
+			if (source.volatiles['trapped'] && target.volatiles['block']) {
+				delete move.volatileStatus;
+			}
+		},
+		condition: {
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'move: Block');
+			},
+			onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+			},
+			onHit(pokemon, target, move){
+				const stats = {
+				atk: pokemon.getStat('atk', true, true),
+				def: pokemon.getStat('def', true, true),
+				spa: pokemon.getStat('spa', true, true),
+				spd: pokemon.getStat('spd', true, true),
+				spe: pokemon.getStat('spe', true, true),
+				};
+				const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
+				const bestStat = sortedStats[0][0];
+				const best2Stat = sortedStats[1][0];
+				const best3Stat = sortedStats[2][0];
+				if ((!target || target.fainted || target.hp <= 0) && (pokemon.volatiles['block'])) this.boost({ [bestStat]: 1, [best2Stat]: 1, [best3Stat]: 1 }, pokemon, pokemon, move), this.heal(pokemon.maxhp/4);
+			}
+		},
 		secondary: null,
-		target: "normal",
+		target: "all",
 		type: "Normal",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
@@ -2907,14 +2938,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				chance: 100,
 				self: {
 					boosts: {
-						spe: -2,
+						atk: +1,
 					},
 				},
 
 			},
 		],
 		target: "normal",
-		type: "Normal",
+		type: "Dragon",
 		contestType: "Tough",
 	},
 	continentalcrush: {
