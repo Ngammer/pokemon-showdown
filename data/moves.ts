@@ -2045,7 +2045,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1 },
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'gmaxsteelsurge', 'sharproot'];
+				const sideConditions = ['spikes', 'toxicspikes', 'iondeluge'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Bulldoze', `[of] ${pokemon}`);
@@ -2055,10 +2055,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onAfterSubDamage(damage, target, pokemon, move) {
 			if (!move.hasSheerForce) {
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'gmaxsteelsurge', 'sharproot'];
+				const sideConditions = ['spikes', 'toxicspikes', 'iondeluge'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Bulldoze', `[of] ${pokemon}`);
+						this.add('-sideend', target.side, this.dex.conditions.get(condition).name, '[from] move: Bulldoze', `[of] ${pokemon}`);
 					}
 				}
 			}
@@ -10114,7 +10115,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Ion Deluge",
 		pp: 25,
-		priority: 1,
+		priority: 0,
 		flags: { metronome: 1, light: 1 },
 		volatileStatus: 'iondeluge',
 		condition: {
@@ -10125,7 +10126,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onResidualOrder: 5,
 			onResidualSubOrder: 1,
 			onResidual(target) {
-				if (!target.hasType('Ground') || !target.hasType('Electric')) this.damage(target.baseMaxhp / 8, target);
+				if (!target.hasType('Ground') || !target.hasType('Electric')) {
+					this.damage(target.baseMaxhp / 8, target);
+				}
 			},
 			onSideResidualOrder: 26,
 			onSideResidualSubOrder: 11,
