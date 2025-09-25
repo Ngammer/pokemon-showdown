@@ -10110,33 +10110,32 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	iondeluge: {
 		num: 569,
-		accuracy: 95,
+		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Ion Deluge",
-		pp: 25,
+		pp: 5,
 		priority: 0,
-		flags: { metronome: 1, light: 1 },
-		volatileStatus: 'iondeluge',
+		flags: { reflectable: 1, nonsky: 1, metronome: 1, mustpressure: 1, light: 1 },
+		sideCondition: 'iondeluge',
 		condition: {
-			duration: 4,
-			onSideStart(targetSide) {
-				this.add('-sidestart', targetSide, 'Ion Deluge');
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: Ion Deluge');
 			},
-			onResidualOrder: 5,
-			onResidualSubOrder: 1,
-			onResidual(target) {
-				if (!target.hasType('Ground') || !target.hasType('Electric')) {
-					this.damage(target.baseMaxhp / 8, target);
+			onSwitchIn(pokemon) {
+				if (pokemon.hasType('Electric')) {
+					this.add('-sideend', pokemon.side, 'move: Ion Deluge', `[of] ${pokemon}`);
+					pokemon.side.removeSideCondition('iondeluge');
+				} else if (pokemon.hasType('Ground') || pokemon.hasType('Electric') ||
+					pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) {
+					return;
 				}
-			},
-			onSideResidualOrder: 26,
-			onSideResidualSubOrder: 11,
-			onSideEnd(targetSide) {
-				this.add('-sideend', targetSide, 'Ion Deluge');
+				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('iondeluge')), -6, 6);
+				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
 			},
 		},
-		target: "normal",
+		target: "foeSide",
 		type: "Electric",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Beautiful",
