@@ -2267,7 +2267,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			pokemon.addVolatile('stall');
 		},
 		condition: {
-			duration: 1,
 			onStart(target) {
 				this.add('-singleturn', target, 'Protect');
 			},
@@ -2290,6 +2289,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					}
 				}
 				return this.NOT_FAIL;
+			},
+			onBeforeMovePriority: -1,
+			onBeforeMove(pokemon, target, move) {
+				if (move.id === 'camouflage') return;
+				pokemon.removeVolatile('camouflage');
+			},
+			onMoveAborted(pokemon, target, move) {
+				pokemon.removeVolatile('camouflage');
 			},
 		},
 		secondary: null,
