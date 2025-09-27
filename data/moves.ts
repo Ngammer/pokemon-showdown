@@ -4092,9 +4092,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {},
 		onHit(target, source, move) {
 			// type copy
-			if (source.species && (source.species.num === 493 || source.species.num === 773)) return false;
-			if (source.terastallized) return false;
+			if ((source.species && (source.species.num === 493 || source.species.num === 773)) ||
+				(target.species && (target.species.num === 493 || target.species.num === 773))) return false;
+			if (source.terastallized || target.terastallized) return false;
 			const oldApparentType = source.apparentType;
+			const oldApparentType2 = target.apparentType;
+			let oldBaseTypes = source.getTypes(true).filter(type => type !== '???');
 			let newBaseTypes = target.getTypes(true).filter(type => type !== '???');
 			if (!newBaseTypes.length) {
 				if (target.addedType) {
@@ -4103,11 +4106,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					return false;
 				}
 			}
+			if (!oldBaseTypes.length) {
+				if (source.addedType) {
+					oldBaseTypes = ['Normal'];
+				} else {
+					return false;
+				}
+			}
 			this.add('-start', source, 'typechange', '[from] move: Doodle', `[of] ${target}`);
+			this.add('-start', target, 'typechange', '[from] move: Doodle', `[of] ${target}`);
 			source.setType(newBaseTypes);
 			source.addedType = target.addedType;
+			target.setType(oldBaseTypes);
+			target.addedType = source.addedType;
 			source.knownType = target.isAlly(source) && target.knownType;
+			target.knownType = source.isAlly(target) && source.knownType;
 			if (!source.knownType) source.apparentType = oldApparentType;
+			if (!target.knownType) target.apparentType = oldApparentType2;
 
 			// boost copy
 			let i: BoostID;
