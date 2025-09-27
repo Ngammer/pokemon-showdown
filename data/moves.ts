@@ -3382,7 +3382,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		critRatio: 2,
-		secondary: null,
 		target: "normal",
 		type: "Poison",
 		contestType: "Cool",
@@ -4092,6 +4091,44 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {},
 		onHit(target, source, move) {
+			// type copy
+			if (source.species && (source.species.num === 493 || source.species.num === 773)) return false;
+			if (source.terastallized) return false;
+			const oldApparentType = source.apparentType;
+			let newBaseTypes = target.getTypes(true).filter(type => type !== '???');
+			if (!newBaseTypes.length) {
+				if (target.addedType) {
+					newBaseTypes = ['Normal'];
+				} else {
+					return false;
+				}
+			}
+			this.add('-start', source, 'typechange', '[from] move: Doodle', `[of] ${target}`);
+			source.setType(newBaseTypes);
+			source.addedType = target.addedType;
+			source.knownType = target.isAlly(source) && target.knownType;
+			if (!source.knownType) source.apparentType = oldApparentType;
+
+			// boost copy
+			let i: BoostID;
+			for (i in target.boosts) {
+				source.boosts[i] = target.boosts[i];
+			}
+
+			const volatilesToCopy = ['dragoncheer', 'focusenergy', 'gmaxchistrike', 'laserfocus'];
+			// we need to remove all crit stage volatiles first; otherwise copying e.g. dragoncheer onto a mon with focusenergy
+			// will crash the server (since addVolatile fails due to overlap, leaving the source mon with no hasDragonType to set)
+			for (const volatile of volatilesToCopy) source.removeVolatile(volatile);
+			for (const volatile of volatilesToCopy) {
+				if (target.volatiles[volatile]) {
+					source.addVolatile(volatile);
+					if (volatile === 'gmaxchistrike') source.volatiles[volatile].layers = target.volatiles[volatile].layers;
+					if (volatile === 'dragoncheer') source.volatiles[volatile].hasDragonType = target.volatiles[volatile].hasDragonType;
+				}
+			}
+			this.add('-copyboost', source, target, '[from] move: Doodle');
+
+			// ability copy
 			let success: boolean | null = false;
 			if (!target.getAbility().flags['failroleplay']) {
 				for (const pokemon of source.alliesAndSelf()) {
