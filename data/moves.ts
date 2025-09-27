@@ -2267,8 +2267,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			pokemon.addVolatile('stall');
 		},
 		condition: {
+			duration: 1,
 			onStart(target) {
-				this.add('-singleturn', target, 'Protect');
+				this.add('-singleturn', target, 'Camouflage');
 			},
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
@@ -2278,7 +2279,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
-					this.add('-activate', target, 'move: Protect'); // cambiar a fallo
+					this.add('-activate', target, 'move: Camouflage'); // cambiar a fallo
 					target.removeVolatile('camouflage');
 				}
 				const lockedmove = source.getVolatile('lockedmove');
@@ -2289,14 +2290,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					}
 				}
 				return this.NOT_FAIL;
-			},
-			onBeforeMovePriority: -1,
-			onBeforeMove(pokemon, target, move) {
-				if (move.id === 'camouflage') return;
-				pokemon.removeVolatile('camouflage');
-			},
-			onMoveAborted(pokemon, target, move) {
-				pokemon.removeVolatile('camouflage');
 			},
 		},
 		secondary: null,
