@@ -4968,14 +4968,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return typeMod + 1;
 			},
 		},
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spa: 2,
-				},
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Electric",
 		zMove: { boost: { spa: 1 } },
