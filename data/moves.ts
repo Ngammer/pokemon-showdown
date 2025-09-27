@@ -4090,6 +4090,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {},
+		onTryHit(target, source) {
+			const targetAbility = target.getAbility();
+			const sourceAbility = source.getAbility();
+			if (sourceAbility.flags['failskillswap'] || targetAbility.flags['failskillswap'] || target.volatiles['dynamax']) {
+				return false;
+			}
+			const sourceCanBeSet = this.runEvent('SetAbility', source, source, this.effect, targetAbility);
+			if (!sourceCanBeSet) return sourceCanBeSet;
+			const targetCanBeSet = this.runEvent('SetAbility', target, source, this.effect, sourceAbility);
+			if (!targetCanBeSet) return targetCanBeSet;
+		},
 		onHit(target, source, move) {
 			// type exchange
 			if ((source.species && (source.species.num === 493 || source.species.num === 773)) ||
@@ -4169,25 +4180,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.add('-copyboost', target, source, '[from] move: Doodle');
 
 			// ability copy
-			let success: boolean | null = false;
-			if (!target.getAbility().flags['failroleplay'] || !source.getAbility().flags['failroleplay']) {
-				for (const pokemon of source.alliesAndSelf()) {
-					if (pokemon.ability === target.ability || pokemon.getAbility().flags['cantsuppress']) continue;
-					const oldAbility = pokemon.setAbility(target.ability, null, move);
-					if (oldAbility) {
-						success = true;
-					} else if (!success && oldAbility === null) {
-						success = null;
-					}
-				}
+			const targetAbility = target.getAbility();
+			const sourceAbility = source.getAbility();
+			if (target.isAlly(source)) {
+				this.add('-activate', source, 'move: Doodle', '', '', `[of] ${target}`);
+				this.add('-activate', source, 'move: Doodle', '', '', `[of] ${target}`);
+			} else {
+				this.add('-activate', source, 'move: Doodle', targetAbility, sourceAbility, `[of] ${target}`);
+				this.add('-activate', source, 'move: Doodle', targetAbility, sourceAbility, `[of] ${target}`);
 			}
-			if (!success) {
-				if (success === false) {
-					this.add('-fail', source);
-				}
-				this.attrLastMove('[still]');
-				return this.NOT_FAIL;
-			}
+			this.singleEvent('End', sourceAbility, source.abilityState, source);
+			this.singleEvent('End', targetAbility, target.abilityState, target);
+			source.ability = targetAbility.id;
+			target.ability = sourceAbility.id;
+			source.abilityState = this.initEffectState({ id: this.toID(source.ability), target: source });
+			target.abilityState = this.initEffectState({ id: this.toID(target.ability), target });
+			source.abilityState = this.initEffectState({ id: this.toID(source.ability), target: source });
+			target.abilityState = this.initEffectState({ id: this.toID(target.ability), target });
+			source.volatileStaleness = undefined;
+			if (!target.isAlly(source)) target.volatileStaleness = 'external';
+			this.singleEvent('Start', targetAbility, source.abilityState, source);
+			this.singleEvent('Start', sourceAbility, target.abilityState, target);
 		},
 		secondary: null,
 		target: "adjacentFoe",
