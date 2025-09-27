@@ -640,7 +640,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Assist",
 		pp: 20,
 		priority: 0,
-		flags: { failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
+		flags: { failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1, heal: 1 },
 		onTry(pokemon, target, move) {
 			const result = pokemon.side.pokemonLeft * pokemon.baseMaxhp / 8;
 			this.heal(result);
@@ -1119,7 +1119,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Baton Pass",
 		pp: 40,
 		priority: 0,
-		flags: { metronome: 1 },
+		flags: { metronome: 1, heal: 1 },
 		onHit(target) {
 			if (!this.canSwitch(target.side) || target.volatiles['commanded']) {
 				this.attrLastMove('[still]');
@@ -4946,31 +4946,36 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	electrify: {
 		num: 582,
-		accuracy: true,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Electrify",
-		pp: 20,
+		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		volatileStatus: 'electrify',
-		onTryHit(target) {
-			if (!this.queue.willMove(target) && target.activeTurns) return false;
-		},
 		condition: {
-			duration: 1,
-			onStart(target) {
-				this.add('-singleturn', target, 'move: Electrify');
+			onStart(pokemon) {
+				if (pokemon.terastallized) return false;
+				this.add('-start', pokemon, 'Electrify');
 			},
-			onModifyTypePriority: -2,
-			onModifyType(move) {
-				if (move.id !== 'struggle') {
-					this.debug('Electrify making move type electric');
-					move.type = 'Electric';
-				}
+			onNegateImmunity: false,
+			onEffectivenessPriority: -2,
+			onEffectiveness(typeMod, target, type, move) {
+				if (move.type !== 'Electric') return;
+				if (!target) return;
+				if (type !== target.getTypes()[0]) return;
+				return typeMod + 1;
 			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 2,
+				},
+			},
+		},
 		target: "normal",
 		type: "Electric",
 		zMove: { boost: { spa: 1 } },
