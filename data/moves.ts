@@ -4091,7 +4091,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {},
 		onHit(target, source, move) {
-			// type copy
+			// type exchange
 			if ((source.species && (source.species.num === 493 || source.species.num === 773)) ||
 				(target.species && (target.species.num === 493 || target.species.num === 773))) return false;
 			if (source.terastallized || target.terastallized) return false;
@@ -4124,11 +4124,35 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!source.knownType) source.apparentType = oldApparentType;
 			if (!target.knownType) target.apparentType = oldApparentType2;
 
-			// boost copy
+			// boost exchange
 			let i: BoostID;
+			let j: BoostID;
+			const newBoosts: BoostsTable = {
+				atk: 0,
+				def: 0,
+				spa: 0,
+				spd: 0,
+				spe: 0,
+				accuracy: 0,
+				evasion: 0,
+			};
+			const oldBoosts: BoostsTable = {
+				atk: 0,
+				def: 0,
+				spa: 0,
+				spd: 0,
+				spe: 0,
+				accuracy: 0,
+				evasion: 0,
+			};
 			for (i in target.boosts) {
-				source.boosts[i] = target.boosts[i];
+				newBoosts[i] = target.boosts[i];
 			}
+			for (j in source.boosts) {
+				oldBoosts[j] = source.boosts[j];
+			}
+			source.boosts = newBoosts;
+			target.boosts = oldBoosts;
 
 			const volatilesToCopy = ['dragoncheer', 'focusenergy', 'gmaxchistrike', 'laserfocus'];
 			// we need to remove all crit stage volatiles first; otherwise copying e.g. dragoncheer onto a mon with focusenergy
@@ -4142,10 +4166,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 			}
 			this.add('-copyboost', source, target, '[from] move: Doodle');
+			this.add('-copyboost', target, source, '[from] move: Doodle');
 
 			// ability copy
 			let success: boolean | null = false;
-			if (!target.getAbility().flags['failroleplay']) {
+			if (!target.getAbility().flags['failroleplay'] || !source.getAbility().flags['failroleplay']) {
 				for (const pokemon of source.alliesAndSelf()) {
 					if (pokemon.ability === target.ability || pokemon.getAbility().flags['cantsuppress']) continue;
 					const oldAbility = pokemon.setAbility(target.ability, null, move);
