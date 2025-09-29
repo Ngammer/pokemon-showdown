@@ -5216,6 +5216,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onDamagePriority: -10,
 			onDamage(damage, target, source, effect) {
+				if (effect?.effectType === 'Move') {
+					const bestStat = target.getBestStat(false, true);
+					this.boost({ [bestStat]: 1 }, target);
+				}
 				if (effect?.effectType === 'Move' && damage >= target.hp) {
 					this.add('-activate', target, 'move: Endure');
 					return target.hp - 1;
