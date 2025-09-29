@@ -1579,9 +1579,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of pokemon.foes()) {
 				if (target.item) {
 					this.add('-item', target, target.getItem().name, '[from] ability: Frisk', `[of] ${pokemon}`);
-					target.addVolatile("embargo");
+					target.addVolatile("frisk");
 				}
 			}
+		},
+		condition: {
+			duration: 8,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Embargo');
+				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			},
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Embargo');
+			},
 		},
 		flags: { },
 		name: "Frisk",
