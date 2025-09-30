@@ -6148,7 +6148,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	fling: {
 		num: 374,
 		accuracy: 100,
-		basePower: 0,
+		basePower: 80,
 		category: "Physical",
 		name: "Fling",
 		pp: 10,
@@ -6159,8 +6159,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const item = source.getItem();
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
-			move.basePower = item.fling.basePower;
-			this.debug(`BP: ${move.basePower}`);
 			if (item.isBerry) {
 				if (source.hasAbility('cudchew')) {
 					this.singleEvent('EatItem', source.getAbility(), source.abilityState, source, source, move, item);
@@ -6183,6 +6181,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 			}
 			source.addVolatile('fling');
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) < pokemon.getStat('spa', false, true)) move.category = 'Special';
 		},
 		condition: {
 			onUpdate(pokemon) {
