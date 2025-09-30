@@ -5545,17 +5545,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	falseswipe: {
 		num: 206,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 60,
 		category: "Physical",
 		name: "False Swipe",
 		pp: 40,
 		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		onDamagePriority: -20,
-		onDamage(damage, target, source, effect) {
-			if (damage >= target.hp) return target.hp - 1;
-		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -5844,7 +5840,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 20,
 			status: 'brn',
 		},
 		target: "normal",
