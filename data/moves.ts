@@ -5800,7 +5800,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	firepledge: {
 		num: 519,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Fire Pledge",
 		pp: 10,
@@ -6045,15 +6045,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 60,
 		category: "Special",
-
 		name: "Flash",
 		pp: 20,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, light: 1 },
-		boosts: {
-			spa: -1,
+		stallingMove: true,
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
 		},
-		secondary: null,
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
 		target: "normal",
 		type: "Electric",
 		zMove: { boost: { evasion: 1 } },
