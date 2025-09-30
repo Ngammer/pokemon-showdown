@@ -6086,19 +6086,42 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	flatter: {
 		num: 260,
-		accuracy: 100,
+		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Flatter",
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
-		volatileStatus: 'confusion',
-		boosts: {
-			spa: 1,
+		pseudoWeather: 'flatter',
+		condition: {
+			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasItem('shedshell')) {
+					return 8;
+				}
+				return 5;
+			},
+			onTryHitPriority: 4,
+			onTryHit(target, source, effect) {
+				if (effect && (effect.priority <= 0.1 || effect.target === 'self')) {
+					return;
+				}
+				if (target.isSemiInvulnerable() || target.isAlly(source)) return;
+				this.add('-activate', target, 'move: Flatter	');
+				return null;
+			},
+			onFieldStart(target, source) {
+				this.add('-fieldstart', 'move: Flatter');
+			},
+			onFieldResidualOrder: 27,
+			onFieldResidualSubOrder: 7,
+			onFieldEnd() {
+				this.add('-fieldend', 'move: Flatter');
+			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "all",
 		type: "Dark",
 		zMove: { boost: { spd: 1 } },
 		contestType: "Clever",
