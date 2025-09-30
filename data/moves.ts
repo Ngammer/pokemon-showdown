@@ -6047,7 +6047,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Special",
 		name: "Flash",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: { protect: 1, mirror: 1, metronome: 1, light: 1 },
 		stallingMove: true,
 		secondary: {
