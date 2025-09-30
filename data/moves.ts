@@ -6092,7 +6092,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flatter",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { nonsky: 1, metronome: 1 },
 		pseudoWeather: 'flatter',
 		condition: {
 			duration: 5,
@@ -6153,7 +6153,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Fling",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, noparentalbond: 1 },
+		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, noparentalbond: 1, bullet: 1 },
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
