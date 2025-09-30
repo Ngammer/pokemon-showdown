@@ -2271,6 +2271,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 147,
 		fling: {
 			basePower: 30,
+			volatileStatus: 'magnetrise',
 		},
 		onModifyWeight(weighthg) {
 			return this.trunc(weighthg / 2);
