@@ -4941,7 +4941,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Electrify",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		volatileStatus: 'electrify',
 		condition: {
 			onStart(pokemon) {
@@ -5944,9 +5944,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	flameburst: {
 		num: 481,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 90,
 		category: "Special",
-
 		name: "Flame Burst",
 		pp: 15,
 		priority: 0,
@@ -6203,7 +6202,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	flipturn: {
 		num: 812,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 		name: "Flip Turn",
 		pp: 20,
@@ -6513,9 +6512,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	foresight: {
 		num: 193,
 		accuracy: true,
-		basePower: 120,
+		basePower: 130,
 		category: "Special",
-
 		name: "Foresight",
 		pp: 40,
 		priority: 0,
@@ -6550,17 +6548,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	forestscurse: {
 		num: 571,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Forest's Curse",
-		pp: 20,
-		priority: 1,
+		pp: 5,
+		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
-		onHit(target) {
-			if (target.hasType('Grass')) return false;
-			if (!target.addType('Grass')) return false;
-			this.add('-start', target, 'typeadd', 'Grass', '[from] move: Forest\'s Curse');
+		volatileStatus: 'forestscurse',
+		condition: {
+			onStart(pokemon) {
+				if (pokemon.terastallized) return false;
+				this.add('-start', pokemon, 'Forest\'s Curse');
+			},
+			onNegateImmunity: false,
+			onEffectivenessPriority: -2,
+			onEffectiveness(typeMod, target, type, move) {
+				if (move.type !== 'Grass') return;
+				if (!target) return;
+				if (type !== target.getTypes()[0]) return;
+				return typeMod + 1;
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -22869,6 +22877,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.terastallized) return false;
 				this.add('-start', pokemon, 'Transcendental Ancient Rite');
 			},
+			onNegateImmunity: false,
 			onEffectivenessPriority: -2,
 			onEffectiveness(typeMod, target, type, move) {
 				if (move.type !== 'Grass') return;
