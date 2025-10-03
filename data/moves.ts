@@ -16455,7 +16455,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
 				if ((status.id === 'confusion' || status.id === 'yawn' || status.id === 'taunt' ||
 					status.id === 'curse' || status.id === 'brine' || status.id === 'saltcure' ||
-					status.id === 'attract' || status.id === 'embargo' || status.id === 'encore') && target !== source) {
+					status.id === 'attract' || status.id === 'frisk' || status.id === 'encore') && target !== source) {
 					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Safeguard');
 					return null;
 				}

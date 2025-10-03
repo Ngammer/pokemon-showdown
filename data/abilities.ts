@@ -1586,12 +1586,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		condition: {
 			duration: 8,
 			onStart(pokemon) {
-				this.add('-start', pokemon, 'Embargo');
+				this.add('-start', pokemon, 'Frisk');
 				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
 			},
 			onResidualOrder: 21,
 			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Embargo');
+				this.add('-end', pokemon, 'Frisk');
 			},
 		},
 		flags: { },
