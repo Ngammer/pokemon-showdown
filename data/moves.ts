@@ -6165,6 +6165,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
+			if (item.fling.basePower > 80) {
+				move.basePower = item.fling.basePower;
+			}
 			if (item.isBerry) {
 				if (source.hasAbility('cudchew')) {
 					this.singleEvent('EatItem', source.getAbility(), source.abilityState, source, source, move, item);
