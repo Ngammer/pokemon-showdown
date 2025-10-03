@@ -8380,7 +8380,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	grudge: {
 		num: 288,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 85,
 		category: "Physical",
 		name: "Grudge",
 		pp: 5,
@@ -8445,25 +8445,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	guardsplit: {
 		num: 470,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
 		name: "Guard Split",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, allyanim: 1, metronome: 1 },
-		onHit(target, source) {
-			const newdef = Math.floor((target.storedStats.def + source.storedStats.def) / 2);
-			target.storedStats.def = newdef;
-			source.storedStats.def = newdef;
-			const newspd = Math.floor((target.storedStats.spd + source.storedStats.spd) / 2);
-			target.storedStats.spd = newspd;
-			source.storedStats.spd = newspd;
-			this.add('-activate', source, 'move: Guard Split', `[of] ${target}`);
-		},
-		secondary: null,
+		flags: { contact: 1, mirror: 1, metronome: 1 },
 		target: "normal",
 		type: "Psychic",
+		secondary: null,
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
 	},
