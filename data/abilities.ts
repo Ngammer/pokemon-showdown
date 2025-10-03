@@ -4988,7 +4988,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTakeItem(item, pokemon, source) {
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
 			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
-			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff' || this.activeMove.id === 'embargo') {
 				this.add('-activate', pokemon, 'ability: Sticky Hold');
 				return false;
 			}
