@@ -6155,6 +6155,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
+			if (item.name === 'Shiny Stone' && source.hasType('Fairy')) {
+				move.basePower = 120;
+			}
 			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
 			if (!item.fling) return false;
 			if (item.isBerry) {
