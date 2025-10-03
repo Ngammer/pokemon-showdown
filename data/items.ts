@@ -1382,6 +1382,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 92,
 		fling: {
 			basePower: 80,
+			volatileStatus: 'confusion',
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Dawn Stone') {
@@ -1723,6 +1724,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 116,
 		fling: {
 			basePower: 80,
+			volatileStatus: 'curse',
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Dusk Stone' && move.type === 'Ghost') {
@@ -2189,6 +2191,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 142,
 		fling: {
 			basePower: 30,
+			status: 'brn',
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Fire Stone' && move.type === 'Fire') {
@@ -2933,6 +2936,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 187,
 		fling: {
 			basePower: 100,
+			volatileStatus: 'flinch',
 		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
@@ -3537,6 +3541,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 241,
 		fling: {
 			basePower: 30,
+			volatileStatus: 'leechseed',
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Leaf Stone' && move.type === 'Grass') {
@@ -4519,6 +4524,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 295,
 		fling: {
 			basePower: 30,
+			volatileStatus: 'attract',
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Moon Stone') {
@@ -6677,6 +6683,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 480,
 		fling: {
 			basePower: 30,
+			effect(target, source, move) {
+				this.field.setWeather('sunnyday');
+			},
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Sun Stone') {
@@ -6862,6 +6871,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 492,
 		fling: {
 			basePower: 30,
+			status: 'par',
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Thunder Stone' && move.type === 'Electric') {
@@ -8713,6 +8723,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 529,
 		fling: {
 			basePower: 30,
+			effect(target, source, move) {
+				this.field.setWeather('raindance');
+			},
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Water Stone' && move.type === 'Water') {

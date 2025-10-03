@@ -23085,7 +23085,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		noPPBoosts: true,
 		priority: 0,
 		flags: {
-			contact: 1, protect: 1,
+			protect: 1,
 			failencore: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1,
 		},
 		target: "allAdjacent",
