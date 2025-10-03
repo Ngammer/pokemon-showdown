@@ -3012,6 +3012,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
 		onHit(pokemon) {
+			pokemon.addVolatile('copycat');
 			let move: Move | ActiveMove | null = this.lastMove;
 			if (!move) return;
 
@@ -3022,6 +3023,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.actions.useMove(move.id, pokemon);
 		},
 		callsMove: true,
+		condition: {
+			duration: 1,
+			onBasePower(basePower, pokemon, target, move) {
+				return this.chainModify(1.25);
+			},
+			onSourceModifyAccuracy(accuracy) {
+				if (typeof accuracy !== 'number') return;
+				return this.chainModify(1.25);
+			},
+		},
 		secondary: null,
 		target: "self",
 		type: "Normal",
