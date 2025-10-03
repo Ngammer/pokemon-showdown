@@ -2256,41 +2256,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Camouflage",
 		pp: 20,
 		priority: 0,
-		flags: { noassist: 1, failcopycat: 1, cantusetwice: 1 },
-		boosts: { spe: 1 },
+		flags: { noassist: 1, failcopycat: 1 },
 		stallingMove: true,
-		volatileStatus: 'camouflage',
 		onPrepareHit(pokemon) {
 			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
 		},
 		onHit(pokemon) {
 			pokemon.addVolatile('stall');
+			this.boost({ spe: 1 }, pokemon, pokemon);
+			pokemon.addVolatile('camouflage');
 		},
 		condition: {
 			duration: 1,
-			onStart(target) {
-				this.add('-singleturn', target, 'Camouflage');
-			},
-			onTryHitPriority: 3,
-			onTryHit(target, source, move) {
-				if (move.category === 'Status') {
-					return;
-				}
-				if (move.smartTarget) {
-					move.smartTarget = false;
-				} else {
-					this.add('-activate', target, 'move: Camouflage'); // cambiar a fallo
-					target.removeVolatile('camouflage');
-				}
-				const lockedmove = source.getVolatile('lockedmove');
-				if (lockedmove) {
-					// Outrage counter is reset
-					if (source.volatiles['lockedmove'].duration === 2) {
-						delete source.volatiles['lockedmove'];
-					}
-				}
-				return this.NOT_FAIL;
-			},
+			onInvulnerability: false,
 		},
 		secondary: null,
 		target: "self",

@@ -2122,7 +2122,7 @@ export class Pokemon {
 
 	isSemiInvulnerable() {
 		return (this.volatiles['fly'] || this.volatiles['bounce'] || this.volatiles['dive'] || this.volatiles['dig'] ||
-			this.volatiles['phantomforce'] || this.volatiles['shadowforce'] || this.isSkyDropped());
+			this.volatiles['phantomforce'] || this.volatiles['shadowforce'] || this.volatiles['camouflage'] || this.isSkyDropped());
 	}
 
 	isSkyDropped() {
