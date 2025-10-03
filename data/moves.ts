@@ -7092,8 +7092,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	glaciate: {
 		num: 549,
-		accuracy: 95,
-		basePower: 85,
+		accuracy: 90,
+		basePower: 90,
 		category: "Special",
 		name: "Glaciate",
 		pp: 10,
@@ -7103,6 +7103,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 100,
 			boosts: {
 				spe: -1,
+			},
+			onHit(target, source) {
+				const result = this.random(2);
+				if (result === 0) {
+					target.trySetStatus('frz', source);
+				}
 			},
 		},
 		target: "allAdjacentFoes",
@@ -8082,7 +8088,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	grasspledge: {
 		num: 520,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Grass Pledge",
 		pp: 10,
@@ -8201,7 +8207,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-fieldend', 'move: Grassy Terrain');
 			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					atk: +1,
+				},
+			},
+		},
 		target: "all",
 		type: "Grass",
 		zMove: { boost: { def: 1 } },
@@ -8313,7 +8326,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-fieldend', 'move: Gravity');
 			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: +1,
+				},
+			},
+		},
 		target: "all",
 		type: "Psychic",
 		zMove: { boost: { spa: 1 } },
