@@ -6882,23 +6882,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	gastroacid: {
 		num: 380,
-		accuracy: 100,
-		basePower: 80,
+		accuracy: 85,
+		basePower: 110,
 		category: "Special",
 		name: "Gastro Acid",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		volatileStatus: 'gastroacid',
-		onTryHit(target) {
-			if (target.getAbility().flags['cantsuppress']) {
-				return false;
-			}
-			if (target.hasItem('Ability Shield')) {
-				this.add('-block', target, 'item: Ability Shield');
-				return null;
-			}
-		},
+		// condition es necesaria para otros movimientos
 		condition: {
 			// Ability suppression implemented in Pokemon.ignoringAbility() within sim/pokemon.ts
 			onStart(pokemon) {
