@@ -5503,18 +5503,28 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	faketears: {
 		num: 313,
-		accuracy: 100,
+		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Fake Tears",
 		pp: 20,
 		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
-		boosts: {
-			spd: -2,
+		volatileStatus: 'faketears',
+		condition: {
+			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasItem('shedshell')) {
+					return 8;
+				}
+				return 5;
+			},
+			onSourceModifyDamage(damage, source, target, move) {
+				return this.chainModify(0.7);
+			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Dark",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Cute",
