@@ -6569,7 +6569,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['contact'] || move.type === 'Steel') {
+				if (move.flags['contact'] && move.type === 'Steel') {
+				return this.chainModify(1.30);
+			} else {
 				return this.chainModify(1.15);
+			}
+				
 			}
 		},
 		onSourceDamagingHit(damage, target, source, move) {

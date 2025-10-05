@@ -3622,7 +3622,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	lazyancientrite: {
 		name: "Lazy Ancient Rite",
-		desc: "Causes the target's Ability to become Insomnia. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Truant, Zen Mode, or Zero to Hero. Reduces all target stats",
+		desc: "Causes the target's Ability to become Truant. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Truant, Zen Mode, or Zero to Hero. Reduces all target stats",
 		shortDesc: "The target's Ability becomes Truant. Can't be selected next turn. Spa: +1",
 	},
 	leafage: {
