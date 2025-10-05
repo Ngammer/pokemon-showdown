@@ -5249,24 +5249,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Entrainment",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { metronome: 1, snatch: 1, allyanim: 1 },
 		onTryHit(target, source) {
-			if (target === source || target.volatiles['dynamax']) return false;
-			if (
-				target.ability === source.ability ||
-				target.getAbility().flags['cantsuppress'] || target.ability === 'truant' ||
-				source.getAbility().flags['noentrain']
-			) {
-				return false;
+			if (target.side.foe.faintedLastTurn && target.hp > target.maxhp / 1.333) {
+				this.add('-activate', target, 'move: Entrainment');
+				this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, target, source);
 			}
 		},
-		onHit(target, source) {
-			const oldAbility = target.setAbility(source.ability, source);
-			if (!oldAbility) return oldAbility as false | null;
-			if (!target.isAlly(source)) target.volatileStaleness = 'external';
-		},
 		secondary: null,
-		target: "normal",
+		target: "adjacentAllyOrSelf",
 		type: "Normal",
 		zMove: { boost: { spd: 1 } },
 		contestType: "Cute",
@@ -6156,17 +6147,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onPrepareHit(target, source, move) {
 			if (source.ignoringItem(true)) return false;
 			const item = source.getItem();
+			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
+			if (!item.fling) return false;
+			if (item.fling.basePower > 80) {
+				move.basePower = item.fling.basePower;
+			}
 			if (item.name === 'Shiny Stone' && source.hasType('Fairy')) {
 				move.basePower = 120;
 			}
 			if (item.name === 'Oval Stone') {
 				move.basePower = 48;
 				move.multihit = 2;
-			}
-			if (!this.singleEvent('TakeItem', item, source.itemState, source, source, move, item)) return false;
-			if (!item.fling) return false;
-			if (item.fling.basePower > 80) {
-				move.basePower = item.fling.basePower;
 			}
 			if (item.isBerry) {
 				if (source.hasAbility('cudchew')) {
@@ -8466,24 +8457,33 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Guard Swap",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		onHit(target, source) {
 			const targetBoosts: SparseBoostsTable = {};
-			const sourceBoosts: SparseBoostsTable = {};
 
-			const defSpd: BoostID[] = ['def', 'spd'];
-			for (const stat of defSpd) {
-				targetBoosts[stat] = target.boosts[stat];
-				sourceBoosts[stat] = source.boosts[stat];
+			const stats: BoostID[] = ['atk', 'spa', 'def', 'spd'];
+			for (const stat of stats) {
+				if (stat === 'atk') {
+					targetBoosts['def'] = target.boosts[stat];
+				} else if (stat === 'spa') {
+					targetBoosts['spd'] = target.boosts[stat];
+				} else if (stat === 'def') {
+					targetBoosts['atk'] = target.boosts[stat];
+				} else {
+					targetBoosts['spa'] = target.boosts[stat];
+				}
 			}
 
-			source.setBoost(targetBoosts);
-			target.setBoost(sourceBoosts);
+			target.setBoost(targetBoosts);
 
-			this.add('-swapboost', source, target, 'def, spd', '[from] move: Guard Swap');
+			this.add('-invertboost', target, '[from] move: Guard Swap');
+		},
+		boosts: {
+			def: 1,
+			spd: 1,
 		},
 		secondary: null,
-		target: "normal",
+		target: "adjacentAllyOrSelf",
 		type: "Psychic",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
