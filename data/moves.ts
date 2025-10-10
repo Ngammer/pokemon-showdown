@@ -10280,7 +10280,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hasType('Electric')) {
 					this.add('-sideend', pokemon.side, 'move: Ion Deluge', `[of] ${pokemon}`);
 					pokemon.side.removeSideCondition('iondeluge');
-				} else if (pokemon.hasType('Ground') || pokemon.hasType('Electric') ||
+				}
+				if (pokemon.hasType('Ground') || pokemon.hasType('Electric') ||
 					pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) {
 					return;
 				}
