@@ -8569,41 +8569,29 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	hail: {
 		num: 258,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 95,
+		basePower: 65,
+		category: "Special",
 		name: "Hail",
 		pp: 10,
 		priority: 0,
-		flags: { reflectable: 1, nonsky: 1, metronome: 1, mustpressure: 1 },
-		sideCondition: 'hail',
-		condition: {
-			// this is a side condition
-			onSideStart(side) {
-				this.add('-sidestart', side, 'Hail');
-				this.effectState.layers = 1;
-			},
-			onSideRestart(side) {
-				if (this.effectState.layers >= 5) return false;
-				this.add('-sidestart', side, 'Hail');
-				this.effectState.layers++;
-			},
-			onSwitchIn(pokemon) {
-				if (pokemon.hasType('Ice')) {
-					this.add('-sideend', pokemon.side, 'move: Hail', `[of] ${pokemon}`);
-					pokemon.side.removeSideCondition('hail');
-				} else if (pokemon.hasType('Ice') || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) {
-					return;
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onAfterHit(target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('hail');
 				}
-				const damageAmounts = [0, 1, 2, 3, 4, 5];
-				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 20);
-				const result = this.random(100);
-				if (result <= 5 * damageAmounts[this.effectState.layers]) {
-					pokemon.trySetStatus('frz', pokemon.side.foe.active[0]);
-				}
-			},
+			}
 		},
-		target: "foeSide",
+		onAfterSubDamage(damage, target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('hail');
+				}
+			}
+		},
+		secondary: {}, // Sheer Force-boosted
+		target: "normal",
 		type: "Ice",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Beautiful",

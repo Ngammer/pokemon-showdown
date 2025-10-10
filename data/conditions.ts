@@ -643,32 +643,29 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	hail: {
 		name: 'Hail',
-		effectType: 'Weather',
-		duration: 5,
-		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
-				return 8;
+		onSideStart(side) {
+			this.add('-sidestart', side, 'Hail');
+			this.effectState.layers = 1;
+		},
+		onSideRestart(side) {
+			if (this.effectState.layers >= 5) return false;
+			this.add('-sidestart', side, 'Hail');
+			this.effectState.layers++;
+		},
+		onSwitchIn(pokemon) {
+			if (pokemon.hasType('Ice')) {
+				this.add('-sideend', pokemon.side, 'move: Hail', `[of] ${pokemon}`);
+				pokemon.side.removeSideCondition('hail');
 			}
-			return 5;
-		},
-		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, `[of] ${source}`);
-			} else {
-				this.add('-weather', 'Hail');
+			if (pokemon.hasType('Ice') || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) {
+				return;
 			}
-		},
-		onFieldResidualOrder: 1,
-		onFieldResidual() {
-			this.add('-weather', 'Hail', '[upkeep]');
-			if (this.field.isWeather('hail')) this.eachEvent('Weather');
-		},
-		onWeather(target) {
-			this.damage(target.baseMaxhp / 16);
-		},
-		onFieldEnd() {
-			this.add('-weather', 'none');
+			const damageAmounts = [0, 1, 2, 3, 4, 5];
+			this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 20);
+			const result = this.random(100);
+			if (result <= 5 * damageAmounts[this.effectState.layers]) {
+				pokemon.trySetStatus('frz', pokemon.side.foe.active[0]);
+			}
 		},
 	},
 	snowscape: {
