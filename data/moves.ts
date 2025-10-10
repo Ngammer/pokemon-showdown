@@ -8658,6 +8658,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { snatch: 1, metronome: 1 },
 		boosts: {
 			def: 1,
+			atk: 1,
 		},
 		volatileStatus: 'harden',
 		condition: {
@@ -8821,10 +8822,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
-
 		name: "Heal Block",
 		pp: 15,
-		priority: 0,
+		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'healblock',
 		condition: {
@@ -8987,7 +8987,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 30,
+			chance: 50,
 			volatileStatus: 'attract',
 		},
 		target: "normal",
@@ -8996,13 +8996,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	heartswap: {
 		num: 391,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
 		name: "Heart Swap",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
+		onTryHit(target, source, move) {
+			if (source.isAlly(target)) {
+				move.basePower = 0;
+				move.infiltrates = true;
+			}
+		},
 		onHit(target, source) {
 			const targetBoosts: SparseBoostsTable = {};
 			const sourceBoosts: SparseBoostsTable = {};
@@ -9488,18 +9494,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	holdback: {
 		num: 610,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 60,
 		category: "Physical",
-		isNonstandard: "Unobtainable",
 		name: "Hold Back",
 		pp: 40,
 		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		onDamagePriority: -20,
-		onDamage(damage, target, source, effect) {
-			if (damage >= target.hp) return target.hp - 1;
-		},
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -9556,8 +9557,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	hornattack: {
 		num: 30,
-		accuracy: 100,
-		basePower: 70,
+		accuracy: 90,
+		basePower: 100,
 		category: "Physical",
 		name: "Horn Attack",
 		pp: 25,
@@ -9678,7 +9679,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	hydropump: {
 		num: 56,
-		accuracy: 80,
+		accuracy: 85,
 		basePower: 110,
 		category: "Special",
 		name: "Hydro Pump",
