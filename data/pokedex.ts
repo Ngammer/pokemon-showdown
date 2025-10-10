@@ -4263,7 +4263,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Quagsire-Feudal",
 		baseSpecies: "Quagsire",
 		forme: "Feudal",
-		types: ["Water", "Ground"],
+		types: ["Ground", "Water"],
 		baseStats: { hp: 115, atk: 95, def: 95, spa: 75, spd: 75, spe: 35 },
 		abilities: { 0: "Sage" },
 		heightm: 1.4,
