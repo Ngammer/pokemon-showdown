@@ -10254,6 +10254,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				targetLoc: target.lastMoveTargetLoc!,
 			})[0] as MoveAction);
 		},
+		heal: [1, 4],
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
