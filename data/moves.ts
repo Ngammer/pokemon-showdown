@@ -9966,7 +9966,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 20,
 			status: 'frz',
 		},
 		target: "normal",
@@ -10065,9 +10065,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	imprison: {
 		num: 286,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
 		name: "Imprison",
 		pp: 10,
 		priority: 0,
@@ -10147,7 +10147,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	inferno: {
 		num: 517,
 		accuracy: 80,
-		basePower: 90,
+		basePower: 100,
 		category: "Special",
 		name: "Inferno",
 		pp: 5,
