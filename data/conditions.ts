@@ -643,6 +643,13 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	hail: {
 		name: 'Hail',
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source?.effectiveWeather() === 'snowscape') {
+				return 8;
+			}
+			return 5;
+		},
 		onSideStart(side) {
 			this.add('-sidestart', side, 'Hail');
 			this.effectState.layers = 1;
