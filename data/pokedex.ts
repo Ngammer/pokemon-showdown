@@ -492,7 +492,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 105,
 		color: "Black",
 		eggGroups: ["Field"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 	},
 	spearow: {
 		num: 21,
@@ -1517,7 +1517,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 504,
 		color: "Brown",
 		eggGroups: ["Field"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 	},
 	poliwag: {
 		num: 60,
@@ -2408,7 +2408,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 142,
 		color: "Red",
 		eggGroups: ["Mineral"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 	},
 	exeggcute: {
 		num: 102,
@@ -2513,7 +2513,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 98,
 		color: "Purple",
 		eggGroups: ["Monster"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 	},
 	hitmonlee: {
 		num: 106,
@@ -3938,7 +3938,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 15,
 		color: "Green",
 		eggGroups: ["Flying"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 	},
 	xatutotemgrief: {
 		num: 178,
@@ -3952,7 +3952,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 15,
 		color: "Green",
 		eggGroups: ["Flying"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 		requiredAbility: "Hierarchical Head",
 	},
 	xatutotemwrath: {
@@ -3967,7 +3967,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 15,
 		color: "Green",
 		eggGroups: ["Flying"],
-		requiredItem: "Totem Gigante",
+		requiredItem: "Giant Totem",
 		requiredAbility: "Hierarchical Head",
 	},
 	mareep: {

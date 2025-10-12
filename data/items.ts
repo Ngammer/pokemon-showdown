@@ -9397,8 +9397,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 
 	},
-	totemgigante: {
-		name: "Totem Gigante",
+	gianttotem: {
+		name: "Giant Totem",
 		spritenum: 758,
 		pseudoMegaStone: true,
 		onSwitchIn(pokemon) {
