@@ -10816,7 +10816,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Leech Life",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, heal: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, heal: 1, metronome: 1, bite: 1 },
 		drain: [1, 2],
 		secondary: null,
 		target: "normal",
@@ -22765,7 +22765,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: { reflectable: 1, nonsky: 1, mustpressure: 1, dance: 1, nosketch: 1 },
-		onAfterMove(target, source, move) {
+		onHit(target, source, move) {
 			if (!move.hasSheerForce && source.hp) {
 				for (const side of target.side.foeSidesWithConditions()) {
 					side.addSideCondition('spikes');
