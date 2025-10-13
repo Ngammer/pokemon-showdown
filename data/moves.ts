@@ -10866,7 +10866,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Leer",
 		pp: 30,
-		priority: 0,
+		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		boosts: {
 			def: -2,
@@ -11123,7 +11123,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	lowsweep: {
 		num: 490,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		category: "Physical",
 		name: "Low Sweep",
 		pp: 20,
@@ -11142,14 +11142,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	luckychant: {
 		num: 381,
 		accuracy: true,
-		basePower: 0,
-		category: "Status",
-
+		basePower: 70,
+		category: "Special",
 		name: "Lucky Chant",
 		pp: 30,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
-		sideCondition: 'luckychant',
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onHit(target, source, move) {
+			source.side.addSideCondition('luckychant');
+		},
 		condition: {
 			duration: 5,
 			onSideStart(side) {
@@ -11163,8 +11164,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		secondary: null,
-		target: "allySide",
-		type: "Normal",
+		target: "normal",
+		type: "Fairy",
 		zMove: { boost: { evasion: 1 } },
 		contestType: "Cute",
 	},
