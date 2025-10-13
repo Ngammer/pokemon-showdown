@@ -10501,9 +10501,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	kinesis: {
 		num: 134,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-
+		basePower: 60,
+		category: "Special",
 		name: "Kinesis",
 		pp: 15,
 		priority: 0,
