@@ -21548,7 +21548,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	vitalthrow: {
 		num: 233,
 		accuracy: true,
-		basePower: 80,
+		basePower: 100,
 		category: "Physical",
 
 		name: "Vital Throw",
@@ -21596,7 +21596,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	wakeupslap: {
 		num: 358,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		basePowerCallback(pokemon, target, move) {
 			if (target.status === 'slp' || target.hasAbility('comatose')) {
 				this.debug('BP doubled on sleeping target');
@@ -21995,13 +21995,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	wildcharge: {
 		num: 528,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 120,
 		category: "Physical",
 		name: "Wild Charge",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [1, 4],
+		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
 		type: "Electric",
