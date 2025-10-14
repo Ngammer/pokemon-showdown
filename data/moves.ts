@@ -900,7 +900,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onHit(pokemon) {
 			if (pokemon.weighthg > 1) {
-				pokemon.weighthg = Math.max(1, pokemon.weighthg - 1000);
+				pokemon.weighthg = Math.max(1, pokemon.weighthg - 10000);
 				this.add('-start', pokemon, 'Autotomize');
 			}
 		},
@@ -12675,7 +12675,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Psychic",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Clever",
 	},
@@ -12711,7 +12711,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		boosts: {
-			evasion: 2,
+			spe: 4,
 		},
 		secondary: null,
 		target: "self",
@@ -12846,31 +12846,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { snatch: 1, metronome: 1 },
 		sideCondition: 'mist',
 		condition: {
-			duration: 8,
-			onTryBoost(boost, target, source, effect) {
-				if (effect.effectType === 'Move' && effect.infiltrates && !target.isAlly(source)) return;
-				if (source && target !== source) {
-					let showMsg = false;
-					let i: BoostID;
-					for (i in boost) {
-						if (boost[i]! < 0) {
-							delete boost[i];
-							showMsg = true;
-						}
-					}
-					if (showMsg && !(effect as ActiveMove).secondaries) {
-						this.add('-activate', target, 'move: Mist');
-					}
-				}
-			},
-			onSideStart(side) {
-				this.add('-sidestart', side, 'Mist');
-			},
-			onSideResidualOrder: 26,
-			onSideResidualSubOrder: 4,
-			onSideEnd(side) {
-				this.add('-sideend', side, 'Mist');
-			},
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source?.hasItem('terrainextender')) {
+				return 8;
+			}
+			return 5;
+		},
+		onTryHitPriority: 4,
+		onTryHit(target, source, move) {
+			if (!(move.category === "Status")) {
+				return;
+			} else{
+				this.add('-immune', target)
+				return false;
+			}
+		    },
 		},
 		secondary: null,
 		target: "allySide",
@@ -12969,7 +12960,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-fieldend', 'Misty Terrain');
 			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					def: 1,
+					spd: 1,
+				},
+			},
+		},
 		target: "all",
 		type: "Fairy",
 		zMove: { boost: { spd: 1 } },
@@ -13151,20 +13150,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	mudbomb: {
 		num: 426,
-		accuracy: 100,
-		basePower: 60,
+		accuracy: 85,
+		basePower: 110,
 		category: "Special",
-
 		name: "Mud Bomb",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
-		secondary: {
-			chance: 100,
-			boosts: {
-				atk: -1,
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Ground",
 		contestType: "Cute",
@@ -13199,7 +13192,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				atk: -2,
 			},
 		},
-		target: "normal",
+		target: "allAdjacentFoes",
 		type: "Ground",
 		contestType: "Cute",
 	},
@@ -13258,19 +13251,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	muddywater: {
 		num: 330,
-		accuracy: 90,
+		accuracy: 95,
 		basePower: 90,
 		category: "Special",
 		name: "Muddy Water",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1 },
-		secondary: {
-			chance: 30,
-			boosts: {
-				atk: -1,
-			},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Steel' || type === 'Electric') return 1;
 		},
+		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Water",
 		contestType: "Tough",
@@ -13449,7 +13440,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	needlearm: {
 		num: 302,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 80,
 		category: "Physical",
 
 		name: "Needle Arm",
@@ -13736,10 +13727,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	octazooka: {
 		num: 190,
-		accuracy: 100,
-		basePower: 70,
+		accuracy: 80,
+		basePower: 110,
 		category: "Special",
-
 		name: "Octazooka",
 		pp: 10,
 		priority: 0,
@@ -13932,7 +13922,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	overdrive: {
 		num: 786,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Overdrive",
 		pp: 10,
@@ -14883,14 +14873,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
 				if (!move.flags['protect']) {
-					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
 					return;
 				}
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
 					this.add('-activate', target, 'move: Protect');
+					
 				}
 				const lockedmove = source.getVolatile('lockedmove');
 				if (lockedmove) {
@@ -20024,7 +20013,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, tail: 1 },
 		boosts: {
-			def: -1,
+			def: -2,
 		},
 		secondary: null,
 		target: "allAdjacentFoes",
