@@ -11415,10 +11415,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return typeMod + 1;
 			},
 		},
-		boosts: {
-			spa: 1,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+				}
+			}
 		},
-		secondary: null,
 		target: "normal",
 		type: "Psychic",
 	},
@@ -11431,9 +11435,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { mirror: 1, metronome: 1 },
-		onHit(pokemon) {
-			this.boost({spa: 1}, pokemon)
-		},
 		sideCondition: 'magicroom',
 		condition: {
 			duration: 5,
@@ -11458,7 +11459,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+				}
+			}
+		},
 		target: "foeSide",
 		type: "Psychic",
 		zMove: { boost: { spd: 1 } },
