@@ -11252,9 +11252,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	lunge: {
 		num: 679,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 0,
 		category: "Physical",
 		name: "Lunge",
+		basePowerCallback(pokemon) {
+			const pokemonWeight = pokemon.getWeight();
+			let bp;
+			if (pokemonWeight >= 300) {
+				bp = 300;
+			}
+			else {
+				bp = pokemonWeight;
+			}
+			this.debug(`BP: ${bp}`);
+			return bp;
+		},
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
@@ -11303,19 +11315,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	magicalleaf: {
 		num: 345,
-		accuracy: true,
-		basePower: 60,
+		accuracy: 95,
+		basePower: 90,
 		category: "Special",
 		name: "Magical Leaf",
-		pp: 20,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		secondary: {
-			chance: 100,
-			boosts: {
-				spa: -1,
-			},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Poison' || type === 'Fighting') return 1;
 		},
+		secondary: null,
 		target: "normal",
 		type: "Grass",
 		contestType: "Beautiful",
