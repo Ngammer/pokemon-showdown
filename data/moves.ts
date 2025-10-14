@@ -12582,8 +12582,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1,
 		},
 		onHit(target, source) {
-			const stats: BoostID[] = [];
-			let stat: BoostID;
+			
 			const move = target.lastMove;
 			if (source.transformed || !move || move.flags['failmimic'] || source.moves.includes(move.id)) {
 				return false;
@@ -12602,7 +12601,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				virtual: true,
 			};
 			this.add('-start', source, 'Mimic', move.name);
-
+		},
+		onAfterMove(source, target, move) {
+			const stats: BoostID[] = [];
+			let stat: BoostID;
 			for (stat in source.boosts) {
 				if (source.boosts[stat] < 6) {
 					stats.push(stat);
