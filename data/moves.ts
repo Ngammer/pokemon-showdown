@@ -4961,6 +4961,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return typeMod + 1;
 			},
 		},
+		boosts: {
+			spa: 1,
+		},
 		secondary: null,
 		target: "normal",
 		type: "Electric",
@@ -11412,6 +11415,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return typeMod + 1;
 			},
 		},
+		boosts: {
+			spa: 1,
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -11425,8 +11431,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { mirror: 1, metronome: 1 },
-		boosts: {
-			spa: 1,
+		onHit(pokemon) {
+			this.boost({spa: 1}, pokemon)
 		},
 		sideCondition: 'magicroom',
 		condition: {
@@ -11557,22 +11563,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-end', target, 'Magnet Rise');
 			},
 		},
-		onHit(target, source, move) {
+		onHit(field, source, move) {
 			let success = false;
-			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({ evasion: -1 });
 			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb',
 				'gmaxsteelsurge', 'sharproot', 'iondeluge', 'hail'];
 			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
 			for (const targetCondition of removeTarget) {
-				if (target.side.removeSideCondition(targetCondition)) {
+				if (field.side.removeSideCondition(targetCondition)) {
 					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Defog', `[of] ${source}`);
+					this.add('-sideend', field.side, this.dex.conditions.get(targetCondition).name, '[from] move: Magnet Rise', `[of] ${source}`);
 					success = true;
 				}
 			}
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', `[of] ${source}`);
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Magnet Rise', `[of] ${source}`);
 					success = true;
 				}
 			}
@@ -12340,20 +12345,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		onAfterMove(pokemon, target, move) {
-			if (move.mindBlownRecoil && !move.multihit) {
-				const hpBeforeRecoil = pokemon.hp;
-				this.damage(Math.round(pokemon.maxhp / 6), pokemon, pokemon, this.dex.conditions.get('Memento'), true);
-				if (pokemon.hp <= pokemon.maxhp / 6 && hpBeforeRecoil > pokemon.maxhp / 6) {
-					this.runEvent('EmergencyExit', pokemon, pokemon);
-				}
-			}
+		onHit(target, pokemon) {
+			this.directDamage(pokemon.maxhp / 5);
 		},
 		boosts: {
 			atk: -2,
 			spa: -2,
 		},
 		secondary: null,
+		selfSwitch: true,
 		target: "normal",
 		type: "Dark",
 		zMove: { effect: 'healreplacement' },
@@ -12574,6 +12574,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1,
 		},
 		onHit(target, source) {
+			const stats: BoostID[] = [];
+			let stat: BoostID;
 			const move = target.lastMove;
 			if (source.transformed || !move || move.flags['failmimic'] || source.moves.includes(move.id)) {
 				return false;
@@ -12581,7 +12583,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (move.isZ || move.isMax) return false;
 			const mimicIndex = source.moves.indexOf('mimic');
 			if (mimicIndex < 0) return false;
-
 			source.moveSlots[mimicIndex] = {
 				move: move.name,
 				id: move.id,
@@ -12593,21 +12594,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				virtual: true,
 			};
 			this.add('-start', source, 'Mimic', move.name);
-		},
-		onAfterHit(pokemon) {
-			const stats: BoostID[] = [];
-			let stat: BoostID;
-			for (stat in pokemon.boosts) {
-				if (pokemon.boosts[stat] < 6) {
+			
+			for (stat in source.boosts) {
+				if (source.boosts[stat] < 6) {
 					stats.push(stat);
 				}
 			}
 			if (stats.length) {
 				const randomStat = this.sample(stats);
-				const randomStat2 = this.sample(stats);
 				const boost: SparseBoostsTable = {};
 				boost[randomStat] = 1;
-				boost[randomStat2] = 1;
 				this.boost(boost);
 			} else {
 				return false;
