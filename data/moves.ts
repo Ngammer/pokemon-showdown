@@ -21503,9 +21503,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	venomdrench: {
 		num: 599,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-
+		basePower: 60,
+		category: "Special",
 		name: "Venom Drench",
 		pp: 20,
 		priority: 0,
