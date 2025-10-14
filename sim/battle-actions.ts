@@ -621,6 +621,8 @@ export class BattleActions {
 				hitResults[i] = false;
 			} else if (this.battle.gen >= 8 && move.id === 'toxic' && pokemon.hasType('Poison')) {
 				hitResults[i] = true;
+			} else if (this.battle.gen >= 8 && move.id === 'willowisp' && pokemon.hasType('Fire')) {
+				hitResults[i] = true;
 			} else {
 				hitResults[i] = this.battle.runEvent('Invulnerability', target, pokemon, move);
 			}
@@ -724,6 +726,7 @@ export class BattleActions {
 			}
 			if (
 				move.alwaysHit || (move.id === 'toxic' && this.battle.gen >= 8 && pokemon.hasType('Poison')) ||
+				(move.id === 'willowisp' && this.battle.gen >= 8 && pokemon.hasType('Fire')) ||
 				(move.target === 'self' && move.category === 'Status' && !target.isSemiInvulnerable())
 			) {
 				accuracy = true; // bypasses ohko accuracy modifiers

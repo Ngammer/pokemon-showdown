@@ -22008,7 +22008,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	willowisp: {
 		num: 261,
-		accuracy: 85,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Will-O-Wisp",
@@ -22100,7 +22100,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wonder Room",
 		pp: 10,
 		priority: 0,
-		flags: { mirror: 1, metronome: 1 },
+		flags: { mirror: 1, metronome: 1, heal: 1 },
+		heal: [1, 4],
 		pseudoWeather: 'wonderroom',
 		condition: {
 			duration: 5,
@@ -22308,7 +22309,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	zapcannon: {
 		num: 192,
 		accuracy: 80,
-		basePower: 90,
+		basePower: 100,
 		category: "Special",
 		name: "Zap Cannon",
 		pp: 5,
