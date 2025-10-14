@@ -12582,7 +12582,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1,
 		},
 		onHit(target, source) {
-			
 			const move = target.lastMove;
 			if (source.transformed || !move || move.flags['failmimic'] || source.moves.includes(move.id)) {
 				return false;
@@ -12846,22 +12845,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { snatch: 1, metronome: 1 },
 		sideCondition: 'mist',
 		condition: {
-		duration: 5,
-		durationCallback(source, effect) {
-			if (source?.hasItem('terrainextender')) {
-				return 8;
-			}
-			return 5;
-		},
-		onTryHitPriority: 4,
-		onTryHit(target, source, move) {
-			if (!(move.category === "Status")) {
-				return;
-			} else{
-				this.add('-immune', target)
-				return false;
-			}
-		    },
+			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasItem('terrainextender')) {
+					return 8;
+				}
+				return 5;
+			},
+			onTryHitPriority: 4,
+			onTryHit(target, source, move) {
+				if (!(move.category === "Status")) {
+					return;
+				} else {
+					this.add('-immune', target);
+					return false;
+				}
+			},
 		},
 		secondary: null,
 		target: "allySide",
@@ -14873,13 +14872,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
 				if (!move.flags['protect']) {
+					/* if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true; */
 					return;
 				}
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
 					this.add('-activate', target, 'move: Protect');
-					
 				}
 				const lockedmove = source.getVolatile('lockedmove');
 				if (lockedmove) {
