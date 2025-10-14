@@ -8419,7 +8419,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const hp75 = Math.floor(target.getUndynamaxedHP() * 3 / 4);
 			if (
 				target.volatiles['protect'] || target.volatiles['banefulbunker'] || target.volatiles['kingsshield'] ||
-				target.volatiles['spikyshield'] || target.side.getSideCondition('matblock')
+				target.volatiles['spikyshield'] || target.side.getSideCondition('matblock') || target.volatiles['withdraw'] ||
+				target.volatiles['flowershield']
 			) {
 				this.add('-zbroken', target);
 				return this.clampIntRange(Math.ceil(hp75 / 4 - 0.5), 1);
@@ -8479,8 +8480,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 
 			target.setBoost(targetBoosts);
-
-			this.add('-invertboost', target, '[from] move: Guard Swap');
 		},
 		boosts: {
 			def: 1,
@@ -11260,8 +11259,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let bp;
 			if (pokemonWeight >= 300) {
 				bp = 300;
-			}
-			else {
+			} else {
 				bp = pokemonWeight;
 			}
 			this.debug(`BP: ${bp}`);
@@ -21605,7 +21603,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	vitalthrow: {
 		num: 233,
 		accuracy: true,
-		basePower: 80,
+		basePower: 100,
 		category: "Physical",
 
 		name: "Vital Throw",
@@ -21653,7 +21651,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	wakeupslap: {
 		num: 358,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		basePowerCallback(pokemon, target, move) {
 			if (target.status === 'slp' || target.hasAbility('comatose')) {
 				this.debug('BP doubled on sleeping target');
@@ -22052,13 +22050,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	wildcharge: {
 		num: 528,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 120,
 		category: "Physical",
 		name: "Wild Charge",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [1, 4],
+		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
 		type: "Electric",
@@ -22066,7 +22064,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	willowisp: {
 		num: 261,
-		accuracy: 85,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Will-O-Wisp",
@@ -22138,11 +22136,51 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Withdraw",
-		pp: 40,
+		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
-		boosts: {
-			def: 1,
+		flags: { noassist: 1, failcopycat: 1, failinstruct: 1 },
+		stallingMove: true,
+		volatileStatus: 'withdraw',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Protect');
+			},
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				if (!move.flags['protect'] || move.category === 'Status') {
+					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
+				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
+				}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				if (this.checkMoveMakesContact(move, source, target)) {
+					this.boost({ def: 1 }, target, target, this.dex.getActiveMove("Withdraw"));
+				}
+				return this.NOT_FAIL;
+			},
+			onHit(target, source, move) {
+				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
+					this.boost({ def: 1 }, target, target, this.dex.getActiveMove("Withdraw"));
+				}
+			},
 		},
 		secondary: null,
 		target: "self",
@@ -22158,7 +22196,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wonder Room",
 		pp: 10,
 		priority: 0,
-		flags: { mirror: 1, metronome: 1 },
+		flags: { mirror: 1, metronome: 1, heal: 1 },
+		heal: [1, 4],
 		pseudoWeather: 'wonderroom',
 		condition: {
 			duration: 5,
@@ -22366,7 +22405,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	zapcannon: {
 		num: 192,
 		accuracy: 80,
-		basePower: 90,
+		basePower: 100,
 		category: "Special",
 		name: "Zap Cannon",
 		pp: 5,
