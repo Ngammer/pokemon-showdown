@@ -4961,10 +4961,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return typeMod + 1;
 			},
 		},
-		boosts: {
-			spa: 1,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
 		},
-		secondary: null,
 		target: "normal",
 		type: "Electric",
 		zMove: { boost: { spa: 1 } },
@@ -6578,7 +6582,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return typeMod + 1;
 			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
 		target: "normal",
 		type: "Grass",
 		zMove: { boost: { atk: 1, def: 1, spa: 1, spd: 1, spe: 1 } },
@@ -21102,25 +21113,33 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
-
 		name: "Trick-or-Treat",
 		pp: 20,
 		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
-		onHit(target) {
-			if (target.hasType('Ghost')) return false;
-			if (!target.addType('Ghost')) return false;
-			this.add('-start', target, 'typeadd', 'Ghost', '[from] move: Trick-or-Treat');
-
-			if (target.side.active.length === 2 && target.position === 1) {
-				// Curse Glitch
-				const action = this.queue.willMove(target);
-				if (action && action.move.id === 'curse') {
-					action.targetLoc = -1;
-				}
-			}
+		volatileStatus: 'trickortreat',
+		condition: {
+			onStart(pokemon) {
+				if (pokemon.terastallized) return false;
+				this.add('-start', pokemon, 'Trick-or-Treat');
+			},
+			onNegateImmunity: false,
+			onEffectivenessPriority: -2,
+			onEffectiveness(typeMod, target, type, move) {
+				if (move.type !== 'Ghost') return;
+				if (!target) return;
+				if (type !== target.getTypes()[0]) return;
+				return typeMod + 1;
+			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
 		target: "normal",
 		type: "Ghost",
 		zMove: { boost: { atk: 1, def: 1, spa: 1, spd: 1, spe: 1 } },
