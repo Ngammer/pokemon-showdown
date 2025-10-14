@@ -12346,7 +12346,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onHit(target, pokemon) {
-			this.directDamage(pokemon.maxhp / 5);
+			this.directDamage(pokemon.maxhp / 5, pokemon);
 		},
 		boosts: {
 			atk: -2,
@@ -12594,7 +12594,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				virtual: true,
 			};
 			this.add('-start', source, 'Mimic', move.name);
-			
+
 			for (stat in source.boosts) {
 				if (source.boosts[stat] < 6) {
 					stats.push(stat);
