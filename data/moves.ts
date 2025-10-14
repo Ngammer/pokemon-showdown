@@ -11258,8 +11258,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let bp;
 			if (pokemonWeight >= 300) {
 				bp = 300;
-			}
-			else {
+			} else {
 				bp = pokemonWeight;
 			}
 			this.debug(`BP: ${bp}`);
