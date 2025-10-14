@@ -11251,7 +11251,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	lunge: {
 		num: 679,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 0,
 		category: "Physical",
 		name: "Lunge",
@@ -11270,12 +11270,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		secondary: {
-			chance: 100,
-			boosts: {
-				atk: -1,
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Bug",
 		contestType: "Cute",
@@ -11397,16 +11392,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	magicpowder: {
 		num: 750,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Magic Powder",
-		pp: 20,
+		pp: 5,
 		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1, powder: 1 },
-		onHit(target) {
-			if (target.getTypes().join() === 'Psychic' || !target.setType('Psychic')) return false;
-			this.add('-start', target, 'typechange', 'Psychic');
+		volatileStatus: 'magicpowder',
+		condition: {
+			onStart(pokemon) {
+				if (pokemon.terastallized) return false;
+				this.add('-start', pokemon, 'Magic Powder');
+			},
+			onNegateImmunity: false,
+			onEffectivenessPriority: -2,
+			onEffectiveness(typeMod, target, type, move) {
+				if (move.type !== 'Psychic') return;
+				if (!target) return;
+				if (type !== target.getTypes()[0]) return;
+				return typeMod + 1;
+			},
 		},
 		secondary: null,
 		target: "normal",
@@ -11421,6 +11427,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { mirror: 1, metronome: 1 },
+		boosts: {
+			spa: 1,
+		},
 		sideCondition: 'magicroom',
 		condition: {
 			duration: 5,
@@ -11506,7 +11515,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!targets.length && !targets2.length) return false;
 			for (const target of targets) {
 				if (target.hasAbility(['plus', 'minus']))
-					this.boost({ atk: 1, spa: 1 }, target, source, move, false, true);
+					this.boost({ atk: 1, spa: 1, spe: 1, }, target, source, move, false, true);
 			}
 			for (const target2 of targets2) {
 				if (target2.hasType("Steel") || target2.hasType("Electric"))
@@ -11549,6 +11558,28 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onEnd(target) {
 				this.add('-end', target, 'Magnet Rise');
 			},
+		},
+		onHit(target, source, move) {
+			let success = false;
+			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({ evasion: -1 });
+			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb',
+				'gmaxsteelsurge', 'sharproot', 'iondeluge', 'hail'];
+			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
+			for (const targetCondition of removeTarget) {
+				if (target.side.removeSideCondition(targetCondition)) {
+					if (!removeAll.includes(targetCondition)) continue;
+					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Defog', `[of] ${source}`);
+					success = true;
+				}
+			}
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', `[of] ${source}`);
+					success = true;
+				}
+			}
+			this.field.clearTerrain();
+			return success;
 		},
 		secondary: null,
 		target: "self",
@@ -12159,18 +12190,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	meanlook: {
 		num: 212,
 		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		basePower: 80,
+		category: "Special",
 		name: "Mean Look",
-		pp: 5,
+		pp: 10,
 		priority: 0,
-		flags: { reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { mirror: 1, metronome: 1, bypasssub: 1,  },
 		onHit(target, source, move) {
 			return target.addVolatile('trapped', source, move, 'trapper');
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Dark",
 		zMove: { boost: { spd: 1 } },
 		contestType: "Beautiful",
 	},
@@ -12311,11 +12342,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onAfterMove(pokemon, target, move) {
+			if (move.mindBlownRecoil && !move.multihit) {
+				const hpBeforeRecoil = pokemon.hp;
+				this.damage(Math.round(pokemon.maxhp / 6), pokemon, pokemon, this.dex.conditions.get('Memento'), true);
+				if (pokemon.hp <= pokemon.maxhp / 6 && hpBeforeRecoil > pokemon.maxhp / 6) {
+					this.runEvent('EmergencyExit', pokemon, pokemon);
+				}
+			}
+		},
 		boosts: {
 			atk: -2,
 			spa: -2,
 		},
-		selfdestruct: "ifHit",
 		secondary: null,
 		target: "normal",
 		type: "Dark",
@@ -12373,7 +12412,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	metalclaw: {
 		num: 232,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Physical",
 		name: "Metal Claw",
 		pp: 35,
@@ -12393,16 +12432,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	metalsound: {
 		num: 319,
-		accuracy: 90,
-		basePower: 0,
-		category: "Status",
+		accuracy: 85,
+		basePower: 110,
+		category: "Special",
 		name: "Metal Sound",
-		pp: 40,
+		pp: 5,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
-		boosts: {
-			spd: -3,
-		},
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Steel",
@@ -12559,6 +12595,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				virtual: true,
 			};
 			this.add('-start', source, 'Mimic', move.name);
+		},
+		onAfterHit(pokemon) {
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			for (stat in pokemon.boosts) {
+				if (pokemon.boosts[stat] < 6) {
+					stats.push(stat);
+				}
+			}
+			if (stats.length) {
+				const randomStat = this.sample(stats);
+				const randomStat2 = this.sample(stats);
+				const boost: SparseBoostsTable = {};
+				boost[randomStat] = 1;
+				boost[randomStat2] = 1;
+				this.boost(boost);
+			} else {
+				return false;
+			}
 		},
 		secondary: null,
 		target: "normal",
@@ -14680,7 +14735,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	poweruppunch: {
 		num: 612,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Physical",
 		name: "Power-Up Punch",
 		pp: 20,
