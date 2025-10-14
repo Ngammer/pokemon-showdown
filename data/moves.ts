@@ -11513,7 +11513,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!targets.length && !targets2.length) return false;
 			for (const target of targets) {
 				if (target.hasAbility(['plus', 'minus']))
-					this.boost({ atk: 1, spa: 1, spe: 1, }, target, source, move, false, true);
+					this.boost({ atk: 1, spa: 1, spe: 1 }, target, source, move, false, true);
 			}
 			for (const target2 of targets2) {
 				if (target2.hasType("Steel") || target2.hasType("Electric"))
@@ -12193,7 +12193,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Mean Look",
 		pp: 10,
 		priority: 0,
-		flags: { mirror: 1, metronome: 1, bypasssub: 1,  },
+		flags: { mirror: 1, metronome: 1, bypasssub: 1 },
 		onHit(target, source, move) {
 			return target.addVolatile('trapped', source, move, 'trapper');
 		},
@@ -22137,7 +22137,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Withdraw",
 		pp: 10,
-		priority: 0,
+		priority: 4,
 		flags: { noassist: 1, failcopycat: 1, failinstruct: 1 },
 		stallingMove: true,
 		volatileStatus: 'withdraw',
