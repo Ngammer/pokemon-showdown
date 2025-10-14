@@ -22871,8 +22871,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { reflectable: 1, nonsky: 1, mustpressure: 1, dance: 1, nosketch: 1 },
 		onHit(target, source, move) {
-			if (!move.hasSheerForce && source.hp) {
-				for (const side of target.side.foeSidesWithConditions()) {
+			if (source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
 					side.addSideCondition('spikes');
 					side.addSideCondition('spikes');
 					side.addSideCondition('toxicspikes');
