@@ -11420,8 +11420,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			self: {
 				boosts: {
 					spa: 1,
-				}
-			}
+				},
+			},
 		},
 		target: "normal",
 		type: "Psychic",
@@ -11464,8 +11464,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			self: {
 				boosts: {
 					spa: 1,
-				}
-			}
+				},
+			},
 		},
 		target: "foeSide",
 		type: "Psychic",
