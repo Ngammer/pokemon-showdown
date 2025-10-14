@@ -8479,8 +8479,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 
 			target.setBoost(targetBoosts);
-
-			this.add('-invertboost', target, '[from] move: Guard Swap');
 		},
 		boosts: {
 			def: 1,
