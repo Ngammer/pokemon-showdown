@@ -20168,34 +20168,37 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	tarshot: {
 		num: 749,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Tar Shot",
-		pp: 15,
+		pp: 5,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		volatileStatus: 'tarshot',
 		condition: {
 			onStart(pokemon) {
 				if (pokemon.terastallized) return false;
 				this.add('-start', pokemon, 'Tar Shot');
 			},
+			onNegateImmunity: false,
 			onEffectivenessPriority: -2,
 			onEffectiveness(typeMod, target, type, move) {
-				if (move.type !== 'Fire') return;
+				if (move.type !== 'Rock') return;
 				if (!target) return;
 				if (type !== target.getTypes()[0]) return;
 				return typeMod + 1;
 			},
-			onSourceModifyDamage(damage, source, target, move) {
-				return this.chainModify(1.5);
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+					atk: 1,
+				},
 			},
 		},
-		boosts: {
-			spe: -1,
-		},
-		secondary: null,
 		target: "normal",
 		type: "Rock",
 	},
