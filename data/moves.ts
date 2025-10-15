@@ -14296,8 +14296,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				return 3;
 			},
-			onTryHitPriority: 4,
-			onTryHit(target, source, move) {
+			onBeforeMovePriority: 5,
+			onBeforeMove(target, source, move) {
 				for (const moveSlot of target.moveSlots) {
 					const move = this.dex.moves.get(moveSlot.id);
 					if (move.category === 'Status' && move.id !== 'mefirst') {
