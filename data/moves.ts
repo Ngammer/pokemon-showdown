@@ -14293,11 +14293,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onResidualOrder: 15,
 			onEnd() {
 				this.add('-end', 'move: Play Nice');
-
-
 			},
 			onDisableMove(target) {
-
 				for (const moveSlot of target.moveSlots) {
 					const move = this.dex.moves.get(moveSlot.id);
 					if (move.category === 'Status' && move.id !== 'mefirst') {
