@@ -20251,14 +20251,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Tearful Look",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: { reflectable: 1, mirror: 1, metronome: 1 },
 		boosts: {
 			atk: -1,
 			spa: -1,
 		},
+		onHit(target, source, move) {
+			if (source.hp < (source.maxhp / 2)) {
+				this.boost({ atk: -1, spa: -1 }, target, source);
+			}
+		},
 		secondary: null,
-		target: "normal",
+		target: "adjacentFoe",
 		type: "Normal",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
@@ -20322,15 +20327,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	teeterdance: {
 		num: 298,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		basePower: 120,
+		category: "Special",
 		name: "Teeter Dance",
-		pp: 20,
+		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, dance: 1, metronome: 1 },
-		volatileStatus: 'confusion',
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, failinstruct: 1,
+			head: 1, tail: 1, dance: 1, kick: 1, punch: 1 },
+		self: {
+			volatileStatus: 'lockedmove',
+		},
 		secondary: null,
-		target: "allAdjacent",
+		target: "randomNormal",
 		type: "Normal",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Cute",
