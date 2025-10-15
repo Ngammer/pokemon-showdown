@@ -14273,7 +14273,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					success = true;
 				}
 			}
-			source.addVolatile('playnice')
+			source.addVolatile('playnice');
 			this.field.clearTerrain();
 			return success;
 		},
@@ -21078,6 +21078,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { allyanim: 1, failencore: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
 		onHit(target, pokemon) {
 			if (!pokemon.transformInto(target)) {
+				return false;
+			}
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			for (stat in pokemon.boosts) {
+				if (pokemon.boosts[stat] < 6) {
+					stats.push(stat);
+				}
+			}
+			if (stats.length) {
+				const randomStat = this.sample(stats);
+				const randomStat2 = this.sample(stats);
+				const boost: SparseBoostsTable = {};
+				boost[randomStat] = 1;
+				boost[randomStat2] = 1;
+				this.boost(boost);
+			} else {
 				return false;
 			}
 		},
