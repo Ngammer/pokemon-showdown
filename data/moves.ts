@@ -21104,32 +21104,32 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		multihit: 3,
 		onEffectiveness(typeMod, target, type, move) {
 			if (move.hit === 1) {
-				if (type === 'Dragon') return 1;
-				if (type === 'Water') return 1;
-				if (type === 'Fire') return 1;
-				if (type === 'Rock') return 1;
+				if (type === 'Dragon') return -1;
+				if (type === 'Water') return -1;
+				if (type === 'Fire') return -1;
+				if (type === 'Rock') return -1;
 				if (type === 'Bug') return 1;
 				if (type === 'Grass') return 1;
 				if (type === 'Rock') return 1;
 				if (type === 'steel') return 1;
 			}
 			if (move.hit === 2) {
-				if (type === 'Fire') return 1;
-				if (type === 'Rock') return 1;
-				if (type === 'Bug') return 1;
-				if (type === 'Grass') return 1;
-				if (type === 'Rock') return 1;
-				if (type === 'steel') return 1;
+				if (type === 'Flying') return 1;
+				if (type === 'Water') return 1;
+				if (type === 'Electric') return -1;
+				if (type === 'Grass') return -1;
+				if (type === 'Dragon') return -1;
+				if (type === 'Ground') return -3;
 			}
 			if (move.hit === 3) {
 				if (type === 'Dragon') return 1;
-				if (type === 'Water') return 1;
-				if (type === 'Fire') return 1;
-				if (type === 'Rock') return 1;
-				if (type === 'Bug') return 1;
+				if (type === 'Flying') return 1;
+				if (type === 'Ground') return 1;
 				if (type === 'Grass') return 1;
-				if (type === 'Rock') return 1;
-				if (type === 'steel') return 1;
+				if (type === 'Water') return -1;
+				if (type === 'Ice') return -1;
+				if (type === 'Steel') return -1;
+				if (type === 'Fire') return -1;
 			}
 		},
 		secondary: {
