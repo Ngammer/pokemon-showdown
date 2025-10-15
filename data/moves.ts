@@ -14696,7 +14696,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onAfterHit(source, target, move) {
-			source.clearBoosts;
+			source.clearBoosts();
 		},
 		secondary: null,
 		target: "normal",
@@ -15267,7 +15267,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onAfterHit(source, target, move) {
-			source.clearBoosts;
+			source.clearBoosts();
 		},
 		secondary: null,
 		target: "normal",
@@ -15291,7 +15291,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			));
 			for (const target of targets) {
 				this.heal(Math.ceil(target.baseMaxhp * 0.5), target);
-				if(target.status === 'psn'){
+				if(target.status === 'psn' || target.status === 'tox'){
 					target.cureStatus();
 				}
 			}
