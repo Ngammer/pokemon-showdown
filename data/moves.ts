@@ -14290,23 +14290,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				this.add('-start', pokemon, 'move: Play Nice');
 			},
-			onResidualOrder: 15,
-			onEnd() {
-				this.add('-end', 'move: Play Nice');
+			durationCallback(source, effect) {
+				if (source?.hasItem('terrainextender')) {
+					return 5;
+				}
+				return 3;
 			},
-			onDisableMove(target) {
+			onTryHitPriority: 4,
+			onTryHit(target, source, move) {
 				for (const moveSlot of target.moveSlots) {
 					const move = this.dex.moves.get(moveSlot.id);
 					if (move.category === 'Status' && move.id !== 'mefirst') {
 						target.disableMove(moveSlot.id);
 					}
 				}
-			},
-			onBeforeMovePriority: 5,
-			onBeforeMove(attacker, defender, move) {
-				if (!move.isZ && !move.isMax && move.category === 'Status' && move.id !== 'mefirst') {
-					this.add('cant', attacker, 'move: Taunt', move);
-					return false;
+				for (const moveSlot of source.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.id);
+					if (move.category === 'Status' && move.id !== 'mefirst') {
+						source.disableMove(moveSlot.id);
+					}
 				}
 			},
 		},
