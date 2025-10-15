@@ -20070,7 +20070,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	tailwhip: {
 		num: 39,
-		accuracy: 100,
+		accuracy: 95,
 		basePower: 0,
 		category: "Status",
 		name: "Tail Whip",
@@ -20079,6 +20079,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, tail: 1 },
 		boosts: {
 			def: -2,
+		},
+		onHit(target, source, move) {
+			source.addVolatile('followme');
 		},
 		secondary: null,
 		target: "allAdjacentFoes",
