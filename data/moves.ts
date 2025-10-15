@@ -21103,9 +21103,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		multihit: 3,
 		onModifyType(move, pokemon, target) {
-			if (move.hit === 1) {
-				move.type = 'Fire';
-			}
+			move.type = 'Fire';
 			if (move.hit === 2) {
 				move.type = 'Electric';
 			}
