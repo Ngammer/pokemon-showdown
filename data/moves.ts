@@ -21030,7 +21030,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	toxicthread: {
 		num: 672,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Physical",
 		name: "Toxic Thread",
 		pp: 20,
