@@ -14255,6 +14255,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: { reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1, sound: 1 },
+
 		onHit(target, source, move) {
 			let success = false;
 			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb',
@@ -14272,6 +14273,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					success = true;
 				}
 			}
+			source.addVolatile('playnice')
 			this.field.clearTerrain();
 			return success;
 		},
@@ -14284,20 +14286,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					this.effectState.duration!++;
 				}
 				this.add('-start', target, 'move: Play Nice');
-				if (pokemon.activeTurns && !this.queue.willMove(pokemon)) {
-					this.effectState.duration!++;
-					this.effectState.duration!++;
-				}
-				this.add('-start', pokemon, 'move: Play Nice');
 			},
 			onResidualOrder: 15,
 			onEnd() {
 				this.add('-end', 'move: Play Nice');
-
-
 			},
 			onDisableMove(target) {
-
 				for (const moveSlot of target.moveSlots) {
 					const move = this.dex.moves.get(moveSlot.id);
 					if (move.category === 'Status' && move.id !== 'mefirst') {
