@@ -20938,9 +20938,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	torment: {
 		num: 259,
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		accuracy: 95,
+		basePower: 80,
+		category: "Special",
 		name: "Torment",
 		pp: 15,
 		priority: 0,
