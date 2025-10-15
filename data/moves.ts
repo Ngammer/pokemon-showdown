@@ -15252,7 +15252,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	punishment: {
 		num: 386,
 		accuracy: 100,
-		basePower: 0,
+		basePower: 40,
 		basePowerCallback(pokemon, target, move) {
 			const bp = move.basePower + 40 * pokemon.positiveBoosts();
 			this.debug(`BP: ${bp}`);
@@ -15291,7 +15291,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			));
 			for (const target of targets) {
 				this.heal(Math.ceil(target.baseMaxhp * 0.5), target);
-				if(target.status === 'psn'){
+				if(target.status === 'psn' || target.status === 'tox'){
 					target.cureStatus();
 				}
 			}
