@@ -900,7 +900,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onHit(pokemon) {
 			if (pokemon.weighthg > 1) {
-				pokemon.weighthg = Math.max(1, pokemon.weighthg - 10000);
+				pokemon.weighthg = Math.max(1, pokemon.weighthg - 1000);
 				this.add('-start', pokemon, 'Autotomize');
 			}
 		},
@@ -12699,6 +12699,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { snatch: 1, metronome: 1 },
 		volatileStatus: 'minimize',
+		onHit(pokemon) {
+			if (pokemon.weighthg > 1) {
+				pokemon.weighthg = Math.max(1, pokemon.weighthg - 10000);
+				this.add('-start', pokemon, 'Autotomize');
+			}
+		},
 		condition: {
 			noCopy: true,
 			onRestart: () => null,
