@@ -12677,13 +12677,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			source.addVolatile('lockon', target);
 			this.add('-activate', source, 'move: Mind Reader', `[of] ${target}`);
 		},
-		self: {
+		secondary: {
+			chance: 100,
 			boosts: {
 				spd: -1,
 				def: -1,
 			},
 		},
-		secondary: null,
 		target: "normal",
 		type: "Psychic",
 		zMove: { boost: { spa: 1 } },
@@ -14256,11 +14256,63 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: { reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1, sound: 1 },
-		boosts: {
-			atk: -2,
+		onHit(target, source, move) {
+			let success = false;
+			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb',
+				'gmaxsteelsurge', 'sharproot', 'iondeluge', 'hail', 'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist'];
+			for (const targetCondition of removeAll) {
+				if (target.side.removeSideCondition(targetCondition)) {
+					if (!removeAll.includes(targetCondition)) continue;
+					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Play Nice', `[of] ${source}`);
+					success = true;
+				}
+			}
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Play Nice', `[of] ${source}`);
+					success = true;
+				}
+			}
+			this.field.clearTerrain();
+			return success;
+		},
+		volatileStatus: 'playnice',
+		condition: {
+			duration: 3,
+			onStart(target, pokemon) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration!++;
+					this.effectState.duration!++;
+				}
+				this.add('-start', target, 'move: Play Nice');
+				if (pokemon.activeTurns && !this.queue.willMove(pokemon)) {
+					this.effectState.duration!++;
+					this.effectState.duration!++;
+				}
+				this.add('-start', pokemon, 'move: Play Nice');
+			},
+			onResidualOrder: 15,
+			onEnd() {
+				this.add('-end', 'move: Play Nice');
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.id);
+					if (move.category === 'Status' && move.id !== 'mefirst') {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+			onBeforeMovePriority: 5,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && !move.isMax && move.category === 'Status' && move.id !== 'mefirst') {
+					this.add('cant', attacker, 'move: Taunt', move);
+					return false;
+				}
+			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "all",
 		type: "Normal",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
