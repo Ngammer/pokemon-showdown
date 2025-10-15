@@ -20133,8 +20133,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	takedown: {
 		num: 36,
-		accuracy: 100,
-		basePower: 90,
+		accuracy: 90,
+		basePower: 130,
 		category: "Physical",
 		name: "Take Down",
 		pp: 20,
