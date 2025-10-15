@@ -21100,22 +21100,30 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		multihit: 3,
-		onModifyType(move, pokemon, target) {
-			move.type = 'Fire';
+		onEffectiveness(typeMod, target, type, move) {
+			if (move.hit === 1) {
+				if (type === 'Dragon') return 1;
+				if (type === 'Water') return 1;
+				if (type === 'Fire') return 1;
+				if (type === 'Rock') return 1;
+				if (type === 'Bug') return 1;
+				if (type === 'Grass') return 1;
+				if (type === 'Rock') return 1;
+				if (type === 'steel') return 1;
+			}
 			if (move.hit === 2) {
-				move.type = 'Electric';
+				if (type === 'Water') return 1;
 			}
 			if (move.hit === 3) {
-				move.type = 'Ice';
+				if (type === 'Water') return 1;
 			}
 		},
 		secondary: {
 			chance: 10,
-			onHit(target, source) {
-				const result = this.random(3);
-				if (result === 0) {
+			onHit(target, source, move) {
+				if (move.hit === 1) {
 					target.trySetStatus('brn', source);
-				} else if (result === 1) {
+				} else if (move.hit === 2) {
 					target.trySetStatus('par', source);
 				} else {
 					target.trySetStatus('frz', source);
