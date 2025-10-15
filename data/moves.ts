@@ -12364,8 +12364,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		onHit(target, pokemon) {
-			this.directDamage(pokemon.maxhp / 5, pokemon);
+		onHit(target, source) {
+			this.directDamage(source.maxhp / 5, source);
 		},
 		boosts: {
 			atk: -2,
@@ -14119,8 +14119,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	petalblizzard: {
 		num: 572,
-		accuracy: 100,
-		basePower: 95,
+		accuracy: 95,
+		basePower: 100,
 		category: "Physical",
 		name: "Petal Blizzard",
 		pp: 15,
@@ -14316,7 +14316,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	playrough: {
 		num: 583,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 90,
 		category: "Physical",
 		name: "Play Rough",
 		pp: 10,
@@ -14421,7 +14421,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 35,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, powder: 1 },
-		status: 'psn',
+		status: 'tox',
 		secondary: null,
 		target: "normal",
 		type: "Poison",
@@ -14554,12 +14554,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	pound: {
 		num: 1,
 		accuracy: 100,
-		basePower: 20,
+		basePower: 30,
 		category: "Physical",
 		name: "Pound",
 		pp: 35,
 		priority: 1,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, },
 		onTryHit(pokemon) {
 			// will shatter screens through sub, before you hit
 			pokemon.side.removeSideCondition('reflect');
@@ -14644,54 +14644,34 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { snatch: 1 },
-		volatileStatus: 'powershift',
-		condition: {
-			onStart(pokemon) {
-				this.add('-start', pokemon, 'Power Shift');
-				const newatk = pokemon.storedStats.def;
-				const newdef = pokemon.storedStats.atk;
-				pokemon.storedStats.atk = newatk;
-				pokemon.storedStats.def = newdef;
-			},
-			onCopy(pokemon) {
-				const newatk = pokemon.storedStats.def;
-				const newdef = pokemon.storedStats.atk;
-				pokemon.storedStats.atk = newatk;
-				pokemon.storedStats.def = newdef;
-			},
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Power Shift');
-				const newatk = pokemon.storedStats.def;
-				const newdef = pokemon.storedStats.atk;
-				pokemon.storedStats.atk = newatk;
-				pokemon.storedStats.def = newdef;
-			},
-			onRestart(pokemon) {
-				pokemon.removeVolatile('Power Shift');
-			},
+		onHit(target) {
+			let success = false;
+			let i: BoostID;
+			for (i in target.boosts) {
+				if (target.boosts[i] < 0) {
+					target.boosts[i] = -target.boosts[i];
+					success = true;
+				} else{
+					continue;
+				}
+			}
+			if (!success) return false;
+			this.add('-invertboost', target, '[from] move: Power Shift');
 		},
 		secondary: null,
 		target: "self",
-		type: "Normal",
+		type: "Psychic",
 	},
 	powersplit: {
 		num: 471,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
 		name: "Power Split",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, allyanim: 1, metronome: 1 },
-		onHit(target, source) {
-			const newatk = Math.floor((target.storedStats.atk + source.storedStats.atk) / 2);
-			target.storedStats.atk = newatk;
-			source.storedStats.atk = newatk;
-			const newspa = Math.floor((target.storedStats.spa + source.storedStats.spa) / 2);
-			target.storedStats.spa = newspa;
-			source.storedStats.spa = newspa;
-			this.add('-activate', source, 'move: Power Split', `[of] ${target}`);
-		},
+		overrideDefensiveStat: 'spd',
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -14700,27 +14680,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	powerswap: {
 		num: 384,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 95,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			const bp = move.basePower + 40 * pokemon.positiveBoosts();
+			this.debug(`BP: ${bp}`);
+			return bp;
+		},
+		category: "Special",
 		name: "Power Swap",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, bypasssub: 1, allyanim: 1, metronome: 1 },
-		onHit(target, source) {
-			const targetBoosts: SparseBoostsTable = {};
-			const sourceBoosts: SparseBoostsTable = {};
-
-			const atkSpa: BoostID[] = ['atk', 'spa'];
-			for (const stat of atkSpa) {
-				targetBoosts[stat] = target.boosts[stat];
-				sourceBoosts[stat] = source.boosts[stat];
-			}
-
-			source.setBoost(targetBoosts);
-			target.setBoost(sourceBoosts);
-
-			this.add('-swapboost', source, target, 'atk, spa', '[from] move: Power Swap');
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
+		onAfterHit(source, target, move) {
+			source.clearBoosts
 		},
 		secondary: null,
 		target: "normal",
@@ -14730,41 +14706,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	powertrick: {
 		num: 379,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
+		accuracy: 100,
+		basePower: 95,
+		category: "Special",
 		name: "Power Trick",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
-		volatileStatus: 'powertrick',
-		condition: {
-			onStart(pokemon) {
-				this.add('-start', pokemon, 'Power Trick');
-				const newatk = pokemon.storedStats.def;
-				const newdef = pokemon.storedStats.atk;
-				pokemon.storedStats.atk = newatk;
-				pokemon.storedStats.def = newdef;
-			},
-			onCopy(pokemon) {
-				const newatk = pokemon.storedStats.def;
-				const newdef = pokemon.storedStats.atk;
-				pokemon.storedStats.atk = newatk;
-				pokemon.storedStats.def = newdef;
-			},
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Power Trick');
-				const newatk = pokemon.storedStats.def;
-				const newdef = pokemon.storedStats.atk;
-				pokemon.storedStats.atk = newatk;
-				pokemon.storedStats.def = newdef;
-			},
-			onRestart(pokemon) {
-				pokemon.removeVolatile('Power Trick');
-			},
-		},
+		flags: { protect: 1, snatch: 1, metronome: 1 },
+		overrideOffensivePokemon: 'target',
 		secondary: null,
-		target: "self",
+		target: "normal",
 		type: "Psychic",
 		zMove: { boost: { atk: 1 } },
 		contestType: "Clever",
@@ -14965,7 +14916,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	psybeam: {
 		num: 60,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 80,
 		category: "Special",
 		name: "Psybeam",
 		pp: 20,
@@ -15026,6 +14977,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			this.add('-copyboost', source, target, '[from] move: Psych Up');
 		},
+		heal: [1, 3],
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -15074,7 +15026,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	psychicnoise: {
 		num: 917,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Special",
 		name: "Psychic Noise",
 		pp: 10,
@@ -15142,7 +15094,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-fieldend', 'move: Psychic Terrain');
 			},
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
 		target: "all",
 		type: "Psychic",
 		zMove: { boost: { spa: 1 } },
@@ -15170,7 +15129,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	psychocut: {
 		num: 427,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Psycho Cut",
 		pp: 20,
@@ -15184,10 +15143,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	psychoshift: {
 		num: 375,
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-
+		accuracy: 95,
+		basePower: 90,
+		category: "Special",
 		name: "Psycho Shift",
 		pp: 10,
 		priority: 0,
@@ -15295,17 +15253,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		num: 386,
 		accuracy: 100,
 		basePower: 0,
-		basePowerCallback(pokemon, target) {
-			let power = 60 + 20 * target.positiveBoosts();
-			if (power > 200) power = 200;
-			this.debug(`BP: ${power}`);
-			return power;
+		basePowerCallback(pokemon, target, move) {
+			const bp = move.basePower + 40 * pokemon.positiveBoosts();
+			this.debug(`BP: ${bp}`);
+			return bp;
 		},
 		category: "Physical",
 		name: "Punishment",
 		pp: 5,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
+		onAfterHit(source, target, move) {
+			source.clearBoosts
+		},
 		secondary: null,
 		target: "normal",
 		type: "Dark",
@@ -15327,8 +15290,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				(!target.volatiles['maxguard'] || this.runEvent('TryHit', target, source, move))
 			));
 			for (const target of targets) {
-				this.heal(Math.ceil(target.baseMaxhp * 0.33), target);
-				target.cureStatus();
+				this.heal(Math.ceil(target.baseMaxhp * 0.5), target);
+				if(target.status === 'psn'){
+					target.cureStatus();
+				}
 			}
 		},
 		secondary: null,
@@ -15430,11 +15395,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	quash: {
 		num: 511,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		basePower: 60,
+		category: "Special",
 		name: "Quash",
 		pp: 15,
-		priority: 5,
+		priority: -1,
 		flags: { protect: 1, mirror: 1 },
 		onHit(target) {
 			const action = this.queue.willMove(target);
@@ -15471,7 +15436,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	quickattack: {
 		num: 98,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Physical",
 		name: "Quick Attack",
 		pp: 30,
@@ -15553,7 +15518,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	rage: {
 		num: 99,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 
 		name: "Rage",
@@ -15776,7 +15741,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	razorshell: {
 		num: 534,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Razor Shell",
 		pp: 10,
@@ -15838,6 +15803,26 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			pokemon.lastItem = '';
 			this.add('-item', pokemon, this.dex.items.get(item), '[from] move: Recycle');
 			pokemon.setItem(item, source, move);
+		},
+		onAfterMove(source, target, move) {
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			if(this.randomChance(1,5)){
+				for (stat in source.boosts) {
+					if (source.boosts[stat] < 6) {
+						stats.push(stat);
+					}
+				}
+				if (stats.length) {
+					const randomStat = this.sample(stats);
+					const boost: SparseBoostsTable = {};
+					boost[randomStat] = 1;
+					this.boost(boost);
+				} else {
+					return false;
+				}
+			}
+			
 		},
 		secondary: null,
 		target: "self",
@@ -15925,7 +15910,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-
 		name: "Refresh",
 		pp: 20,
 		priority: 0,
@@ -15934,6 +15918,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (['', 'slp', 'frz'].includes(pokemon.status)) return false;
 			pokemon.cureStatus();
 		},
+		heal: [1, 3],
 		secondary: null,
 		target: "self",
 		type: "Normal",
@@ -16276,7 +16261,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	rocksmash: {
 		num: 249,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Physical",
 		name: "Rock Smash",
 		pp: 15,
@@ -16295,7 +16280,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	rockthrow: {
 		num: 88,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 60,
 		category: "Physical",
 		name: "Rock Throw",
 		pp: 15,
