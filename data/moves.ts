@@ -14273,7 +14273,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					success = true;
 				}
 			}
-			source.addVolatile('playnice')
+			source.addVolatile('playnice');
 			this.field.clearTerrain();
 			return success;
 		},
@@ -20055,7 +20055,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	tailwhip: {
 		num: 39,
-		accuracy: 100,
+		accuracy: 95,
 		basePower: 0,
 		category: "Status",
 		name: "Tail Whip",
@@ -20064,6 +20064,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, tail: 1 },
 		boosts: {
 			def: -2,
+		},
+		onHit(target, source, move) {
+			source.addVolatile('followme');
 		},
 		secondary: null,
 		target: "allAdjacentFoes",
@@ -20118,8 +20121,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	takedown: {
 		num: 36,
-		accuracy: 100,
-		basePower: 90,
+		accuracy: 90,
+		basePower: 130,
 		category: "Physical",
 		name: "Take Down",
 		pp: 20,
@@ -20153,34 +20156,37 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	tarshot: {
 		num: 749,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 0,
 		category: "Status",
 		name: "Tar Shot",
-		pp: 15,
+		pp: 5,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		volatileStatus: 'tarshot',
 		condition: {
 			onStart(pokemon) {
 				if (pokemon.terastallized) return false;
 				this.add('-start', pokemon, 'Tar Shot');
 			},
+			onNegateImmunity: false,
 			onEffectivenessPriority: -2,
 			onEffectiveness(typeMod, target, type, move) {
-				if (move.type !== 'Fire') return;
+				if (move.type !== 'Rock') return;
 				if (!target) return;
 				if (type !== target.getTypes()[0]) return;
 				return typeMod + 1;
 			},
-			onSourceModifyDamage(damage, source, target, move) {
-				return this.chainModify(1.5);
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+					atk: 1,
+				},
 			},
 		},
-		boosts: {
-			spe: -1,
-		},
-		secondary: null,
 		target: "normal",
 		type: "Rock",
 	},
@@ -20236,14 +20242,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Tearful Look",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: { reflectable: 1, mirror: 1, metronome: 1 },
 		boosts: {
 			atk: -1,
 			spa: -1,
 		},
+		onHit(target, source, move) {
+			if (source.hp < (source.maxhp / 2)) {
+				this.boost({ atk: -1, spa: -1 }, target, source);
+			}
+		},
 		secondary: null,
-		target: "normal",
+		target: "adjacentFoe",
 		type: "Normal",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
@@ -20307,15 +20318,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	teeterdance: {
 		num: 298,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		basePower: 120,
+		category: "Special",
 		name: "Teeter Dance",
-		pp: 20,
+		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, dance: 1, metronome: 1 },
-		volatileStatus: 'confusion',
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, failinstruct: 1,
+			head: 1, tail: 1, dance: 1, kick: 1, punch: 1 },
+		self: {
+			volatileStatus: 'lockedmove',
+		},
 		secondary: null,
-		target: "allAdjacent",
+		target: "randomNormal",
 		type: "Normal",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Cute",
@@ -20560,23 +20574,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!pokemon.volatiles['thousandwaves'] || move.hit === 1) {
 				pokemon.addVolatile('thousandwaves');
 			}
-			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['thousandwaves'].increase, 1, 130);
+			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['thousandwaves'].increase, 1, 150);
 			this.debug(`BP: ${bp}`);
 			return bp;
 		},
 		category: "Physical",
-
 		name: "Thousand Waves",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nonsky: 1 },
 		condition: {
 			onStart() {
-				this.effectState.increase = 15;
+				this.effectState.increase = 40;
 			},
 			onRestart() {
 				if (this.effectState.increase < 60) {
-					this.effectState.increase += 15;
+					this.effectState.increase += 40;
 				}
 			},
 		},
@@ -20699,11 +20712,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	thundercage: {
 		num: 819,
-		accuracy: 90,
-		basePower: 80,
+		accuracy: 80,
+		basePower: 100,
 		category: "Special",
 		name: "Thunder Cage",
-		pp: 15,
+		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		volatileStatus: 'partiallytrapped',
@@ -20782,7 +20795,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 20,
 			status: 'par',
 		},
 		target: "normal",
@@ -20826,8 +20839,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	tickle: {
 		num: 321,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		basePower: 80,
+		category: "Physical",
 		name: "Tickle",
 		pp: 20,
 		priority: 0,
@@ -20838,7 +20851,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Fairy",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
 	},
@@ -20881,7 +20894,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Topsy-Turvy",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		onHit(target) {
 			let success = false;
@@ -20923,9 +20936,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	torment: {
 		num: 259,
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		accuracy: 95,
+		basePower: 80,
+		category: "Special",
 		name: "Torment",
 		pp: 15,
 		priority: 0,
@@ -21015,7 +21028,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	toxicthread: {
 		num: 672,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Physical",
 		name: "Toxic Thread",
 		pp: 20,
@@ -21063,6 +21076,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { allyanim: 1, failencore: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
 		onHit(target, pokemon) {
 			if (!pokemon.transformInto(target)) {
+				return false;
+			}
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			for (stat in pokemon.boosts) {
+				if (pokemon.boosts[stat] < 6) {
+					stats.push(stat);
+				}
+			}
+			if (stats.length) {
+				const randomStat = this.sample(stats);
+				const randomStat2 = this.sample(stats);
+				const boost: SparseBoostsTable = {};
+				boost[randomStat] = 1;
+				boost[randomStat2] = 1;
+				this.boost(boost);
+			} else {
 				return false;
 			}
 		},
