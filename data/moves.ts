@@ -20896,7 +20896,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Status",
 		name: "Topsy-Turvy",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
 		onHit(target) {
 			let success = false;
