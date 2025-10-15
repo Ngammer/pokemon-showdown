@@ -20575,23 +20575,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!pokemon.volatiles['thousandwaves'] || move.hit === 1) {
 				pokemon.addVolatile('thousandwaves');
 			}
-			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['thousandwaves'].increase, 1, 130);
+			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['thousandwaves'].increase, 1, 150);
 			this.debug(`BP: ${bp}`);
 			return bp;
 		},
 		category: "Physical",
-
 		name: "Thousand Waves",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nonsky: 1 },
 		condition: {
 			onStart() {
-				this.effectState.increase = 15;
+				this.effectState.increase = 40;
 			},
 			onRestart() {
 				if (this.effectState.increase < 60) {
-					this.effectState.increase += 15;
+					this.effectState.increase += 40;
 				}
 			},
 		},
