@@ -14559,7 +14559,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Pound",
 		pp: 35,
 		priority: 1,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1 },
 		onTryHit(pokemon) {
 			// will shatter screens through sub, before you hit
 			pokemon.side.removeSideCondition('reflect');
@@ -14651,7 +14651,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (target.boosts[i] < 0) {
 					target.boosts[i] = -target.boosts[i];
 					success = true;
-				} else{
+				} else {
 					continue;
 				}
 			}
@@ -14696,7 +14696,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onAfterHit(source, target, move) {
-			source.clearBoosts
+			source.clearBoosts;
 		},
 		secondary: null,
 		target: "normal",
@@ -15267,7 +15267,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onAfterHit(source, target, move) {
-			source.clearBoosts
+			source.clearBoosts;
 		},
 		secondary: null,
 		target: "normal",
@@ -15291,7 +15291,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			));
 			for (const target of targets) {
 				this.heal(Math.ceil(target.baseMaxhp * 0.5), target);
-				if(target.status === 'psn'){
+				if (target.status === 'psn') {
 					target.cureStatus();
 				}
 			}
@@ -15807,7 +15807,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onAfterMove(source, target, move) {
 			const stats: BoostID[] = [];
 			let stat: BoostID;
-			if(this.randomChance(1,5)){
+			if (this.randomChance(1, 5)) {
 				for (stat in source.boosts) {
 					if (source.boosts[stat] < 6) {
 						stats.push(stat);
@@ -15822,7 +15822,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					return false;
 				}
 			}
-			
 		},
 		secondary: null,
 		target: "self",
