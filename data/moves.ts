@@ -16344,9 +16344,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onHit(target, source) {
 			const oldAbility = source.setAbility(target.ability, target);
+			target.addVolatile('gastroacid');
 			if (!oldAbility) return oldAbility as false | null;
 		},
-		secondary: null,
+		secondary: {
+			self: {
+				boosts: {
+					atk: 1,
+					spa: 1,
+				},
+			},
+		},
 		target: "normal",
 		type: "Psychic",
 		zMove: { boost: { spe: 1 } },
