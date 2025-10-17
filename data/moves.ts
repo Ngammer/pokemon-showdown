@@ -16470,7 +16470,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-
 		name: "Rototiller",
 		pp: 10,
 		priority: 0,
@@ -16486,8 +16485,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			));
 			if (!targets.length && !targets2.length) return false;
 			for (const target of targets) {
-				if (target.hasType("Grass"))
+				if (target.hasType("Grass")) {
 					this.boost({ atk: 2, spa: 2 }, target, source, move, false, true);
+					target.cureStatus();
+				}
 			}
 			for (const target2 of targets2) {
 				if (!target2.hasType("Grass"))
