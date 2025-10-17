@@ -15291,7 +15291,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			));
 			for (const target of targets) {
 				this.heal(Math.ceil(target.baseMaxhp * 0.5), target);
-				if(target.status === 'psn' || target.status === 'tox'){
+				if (target.status === 'psn' || target.status === 'tox') {
 					target.cureStatus();
 				}
 			}
