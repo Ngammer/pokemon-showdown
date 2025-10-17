@@ -23076,7 +23076,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 			},
 			onModifyCritRatio(critRatio) {
-				return critRatio + 2;
+				return critRatio + 3;
 			},
 		},
 		secondary: null,
