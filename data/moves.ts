@@ -6184,9 +6184,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				move.onHit = item.fling.effect;
 			} else {
 				if (!move.secondaries) move.secondaries = [];
-				if (item.fling.status) {
+				if (item.fling.status && item.fling.chance) {
+					move.secondaries.push({ status: item.fling.status }, { chance: item.fling.chance });
+				} else if (item.fling.volatileStatus && item.fling.chance) {
+					move.secondaries.push({ volatileStatus: item.fling.volatileStatus }, { chance: item.fling.chance });
+				}
+				if (item.fling.status && !item.fling.chance) {
 					move.secondaries.push({ status: item.fling.status });
-				} else if (item.fling.volatileStatus) {
+				} else if (item.fling.volatileStatus && !item.fling.chance) {
 					move.secondaries.push({ volatileStatus: item.fling.volatileStatus });
 				}
 			}
@@ -17634,7 +17639,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			if (target.getAbility().flags['cantsuppress'] || target.ability === 'simple' || target.ability === 'truant') {
 				return false;
-			
 			}
 		},
 		onHit(target, source) {
@@ -17710,15 +17714,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1,
 		},
 		onHit(target) {
-				if (!target.hp) return;
-				let move: Move | ActiveMove | null = target.lastMove;
-				if (!move || move.isZ) return;
-				if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
-				const movePP = move.pp
-				const ppDeducted = target.deductPP(move.id, movePP);
-				if (!ppDeducted) return;
-				this.add('-activate', target, 'move: Eerie Spell', move.name, ppDeducted);
-			},
+			if (!target.hp) return;
+			let move: Move | ActiveMove | null = target.lastMove;
+			if (!move || move.isZ) return;
+			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
+			const movePP = move.pp;
+			const ppDeducted = target.deductPP(move.id, movePP);
+			if (!ppDeducted) return;
+			this.add('-activate', target, 'move: Eerie Spell', move.name, ppDeducted);
+		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
