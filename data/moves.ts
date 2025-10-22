@@ -19367,13 +19367,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 80,
 		category: "Special",
 		name: "String Shot",
-		pp: 40,
+		pp: 10,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
 		boosts: {
 			spe: -1,
 		},
-		critRatio: 2,
+		onHit(target, source, move) {
+			target.addVolatile('trapped', source, move, 'trapper');
+		},
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Bug",
