@@ -18768,19 +18768,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 0,
 		basePowerCallback(pokemon) {
-			if (!pokemon.volatiles['stockpile']?.layers) return false;
-			return pokemon.volatiles['stockpile'].layers * 100;
+			if (!pokemon.volatiles['stockpile']?.layers) return 40;
+			return 40 + pokemon.volatiles['stockpile'].layers * 20;
 		},
 		category: "Special",
 		name: "Spit Up",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, metronome: 1 },
-		onTry(source) {
-			return !!source.volatiles['stockpile'];
+		onModifyType(move, pokemon) {
+			const types = pokemon.getTypes();
+			let type = types[0];
+			if (type === 'Bird') type = '???';
+			if (type === '???' && types[1]) type = types[1];
+			move.type = type;
 		},
 		onAfterMove(pokemon) {
-			pokemon.removeVolatile('stockpile');
+			pokemon.volatiles['stockpile'].layers -= 1;
 		},
 		secondary: null,
 		target: "normal",
