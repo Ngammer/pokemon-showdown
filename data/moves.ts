@@ -17719,7 +17719,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let move: Move | ActiveMove | null = target.lastMove;
 			if (!move || move.isZ) return;
 			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
-			const movePP = move.pp*1.6;
+			const movePP = move.pp * 1.6;
 			const ppDeducted = target.deductPP(move.id, movePP);
 			if (!ppDeducted) return;
 			this.add('-activate', target, 'move: Eerie Spell', move.name, ppDeducted);
