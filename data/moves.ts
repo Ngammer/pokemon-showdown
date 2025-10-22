@@ -19406,16 +19406,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	strugglebug: {
 		num: 522,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 80,
 		category: "Special",
 		name: "Struggle Bug",
-		pp: 20,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
 				spa: -1,
+			},
+		},
+		volatileStatus: 'strugglebug',
+		condition: {
+			onBeforeMove(pokemon, target, move) {
+				move.basePower *= 0.75;
+			},
+			onAfterMove(source, target, move) {
+				source.removeVolatile('strugglebug');
 			},
 		},
 		target: "allAdjacentFoes",
@@ -19447,7 +19456,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	stunspore: {
 		num: 78,
-		accuracy: 75,
+		accuracy: 80,
 		basePower: 0,
 		category: "Status",
 		name: "Stun Spore",
