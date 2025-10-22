@@ -1383,6 +1383,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 80,
 			volatileStatus: 'confusion',
+			chance: 50,
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Dawn Stone') {
@@ -1725,6 +1726,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 80,
 			volatileStatus: 'curse',
+			chance: 25,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Dusk Stone' && move.type === 'Ghost') {
@@ -2192,6 +2194,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 30,
 			status: 'brn',
+			chance: 25,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Fire Stone' && move.type === 'Fire') {
@@ -2936,7 +2939,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 187,
 		fling: {
 			basePower: 100,
-			volatileStatus: 'flinch',
+			effect(target, source, move) {
+				this.field.setWeather('sandstorm');
+			},
+			chance: 20,
 		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
@@ -3139,6 +3145,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 693,
 		fling: {
 			basePower: 30,
+			effect(target, source, move) {
+				this.field.setWeather('snowscape');
+			},
+			chance: 20,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Ice Stone' && move.type === 'Ice') {
@@ -3542,6 +3552,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 30,
 			volatileStatus: 'leechseed',
+			chance: 20,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Leaf Stone' && move.type === 'Grass') {
@@ -4525,6 +4536,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 30,
 			volatileStatus: 'attract',
+			chance: 50,
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Moon Stone') {
@@ -6686,6 +6698,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			effect(target, source, move) {
 				this.field.setWeather('sunnyday');
 			},
+			chance: 50,
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Sun Stone') {
@@ -6872,6 +6885,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 30,
 			status: 'par',
+			chance: 25,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Thunder Stone' && move.type === 'Electric') {
@@ -8726,6 +8740,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			effect(target, source, move) {
 				this.field.setWeather('raindance');
 			},
+			chance: 20,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Water Stone' && move.type === 'Water') {
