@@ -19748,19 +19748,75 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	swagger: {
 		num: 207,
-		accuracy: 85,
+		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Swagger",
 		pp: 15,
-		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
-		volatileStatus: 'confusion',
-		boosts: {
-			atk: 2,
+		priority: 2,
+		flags: { noassist: 1, failcopycat: 1 },
+		volatileStatus: 'swagger',
+		onTry(source) {
+			return this.activePerHalf > 1;
+		},
+		condition: {
+			duration: 1,
+			onStart(target, source, effect) {
+				if (effect?.id === 'zpower') {
+					this.add('-singleturn', target, 'move: Swagger', '[zeffect]');
+				} else {
+					this.add('-singleturn', target, 'move: Swagger');
+				}
+			},
+			onFoeRedirectTargetPriority: 1,
+			onFoeRedirectTarget(target, source, source2, move) {
+				if (!this.effectState.target.isSkyDropped() && this.validTarget(this.effectState.target, source, move.target)) {
+					if (move.smartTarget) move.smartTarget = false;
+					this.debug("Swagger redirected target of move");
+					return this.effectState.target;
+				}
+			},
+			onTryHit(target, source, move) {
+				if (this.checkMoveMakesContact(move, source, target)) {
+					const stats: BoostID[] = [];
+					let stat: BoostID;
+					for (stat in target.boosts) {
+						if (target.boosts[stat] < 6) {
+							stats.push(stat);
+						}
+					}
+					if (stats.length) {
+						const randomStat = this.sample(stats);
+						const boost: SparseBoostsTable = {};
+						boost[randomStat] = 1;
+						this.boost(boost, target);
+					} else {
+						return false;
+					}
+				}
+			},
+			onHit(target, source, move) {
+				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
+					const stats: BoostID[] = [];
+					let stat: BoostID;
+					for (stat in target.boosts) {
+						if (target.boosts[stat] < 6) {
+							stats.push(stat);
+						}
+					}
+					if (stats.length) {
+						const randomStat = this.sample(stats);
+						const boost: SparseBoostsTable = {};
+						boost[randomStat] = 1;
+						this.boost(boost, target);
+					} else {
+						return false;
+					}
+				}
+			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Normal",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Cute",
