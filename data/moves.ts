@@ -19071,14 +19071,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	steelwing: {
 		num: 211,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		name: "Steel Wing",
 		pp: 25,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, wing: 1 },
 		secondary: {
-			chance: 10,
+			chance: 30,
 			self: {
 				boosts: {
 					def: 1,
