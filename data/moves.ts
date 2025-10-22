@@ -17636,6 +17636,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (source.isAlly(target)) {
 				move.basePower = 0;
 				move.infiltrates = true;
+				move.ignoreImmunity = true;
 			}
 			if (target.getAbility().flags['cantsuppress'] || target.ability === 'simple' || target.ability === 'truant') {
 				return false;
@@ -17718,7 +17719,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let move: Move | ActiveMove | null = target.lastMove;
 			if (!move || move.isZ) return;
 			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
-			const movePP = move.pp;
+			const movePP = move.pp*1.6;
 			const ppDeducted = target.deductPP(move.id, movePP);
 			if (!ppDeducted) return;
 			this.add('-activate', target, 'move: Eerie Spell', move.name, ppDeducted);
@@ -18157,6 +18158,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, bullet: 1 },
+		sideCondition: 'smokescreen',
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
