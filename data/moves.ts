@@ -18813,19 +18813,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 0,
 		basePowerCallback(pokemon) {
-			if (!pokemon.volatiles['stockpile']?.layers) return false;
-			return pokemon.volatiles['stockpile'].layers * 100;
+			if (!pokemon.volatiles['stockpile']?.layers) return 40;
+			return 40 + pokemon.volatiles['stockpile'].layers * 20;
 		},
 		category: "Special",
 		name: "Spit Up",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, metronome: 1 },
-		onTry(source) {
-			return !!source.volatiles['stockpile'];
+		onModifyType(move, pokemon) {
+			const types = pokemon.getTypes();
+			let type = types[0];
+			if (type === 'Bird') type = '???';
+			if (type === '???' && types[1]) type = types[1];
+			move.type = type;
 		},
 		onAfterMove(pokemon) {
-			pokemon.removeVolatile('stockpile');
+			pokemon.volatiles['stockpile'].layers -= 1;
 		},
 		secondary: null,
 		target: "normal",
@@ -19116,14 +19120,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	steelwing: {
 		num: 211,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		name: "Steel Wing",
 		pp: 25,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, wing: 1 },
 		secondary: {
-			chance: 10,
+			chance: 30,
 			self: {
 				boosts: {
 					def: 1,
@@ -19240,12 +19244,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	stomp: {
 		num: 23,
-		accuracy: 100,
-		basePower: 70,
+		accuracy: 95,
+		basePower: 85,
 		category: "Physical",
 		name: "Stomp",
 		pp: 20,
 		priority: 0,
+		critRatio: 2,
 		flags: { contact: 1, protect: 1, mirror: 1, nonsky: 1, metronome: 1, kick: 1 },
 		secondary: {
 			chance: 30,
@@ -19342,7 +19347,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	stormthrow: {
 		num: 480,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 
 		name: "Storm Throw",
@@ -19357,7 +19362,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	strangesteam: {
 		num: 790,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 90,
 		category: "Special",
 		name: "Strange Steam",
@@ -19365,7 +19370,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		secondary: {
-			chance: 20,
+			chance: 30,
 			volatileStatus: 'confusion',
 		},
 		target: "normal",
@@ -19412,13 +19417,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 80,
 		category: "Special",
 		name: "String Shot",
-		pp: 40,
+		pp: 10,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
 		boosts: {
 			spe: -1,
 		},
-		critRatio: 2,
+		onHit(target, source, move) {
+			target.addVolatile('trapped', source, move, 'trapper');
+		},
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Bug",
@@ -19451,16 +19458,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	strugglebug: {
 		num: 522,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 80,
 		category: "Special",
 		name: "Struggle Bug",
-		pp: 20,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
 				spa: -1,
+			},
+		},
+		volatileStatus: 'strugglebug',
+		condition: {
+			onBeforeMove(pokemon, target, move) {
+				move.basePower *= 0.75;
+			},
+			onAfterMove(source, target, move) {
+				source.removeVolatile('strugglebug');
 			},
 		},
 		target: "allAdjacentFoes",
@@ -19492,7 +19508,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	stunspore: {
 		num: 78,
-		accuracy: 75,
+		accuracy: 80,
 		basePower: 0,
 		category: "Status",
 		name: "Stun Spore",
@@ -19731,12 +19747,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	supersonic: {
 		num: 48,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		basePower: 80,
+		category: "Special",
 		name: "Supersonic",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		volatileStatus: 'confusion',
 		secondary: null,
 		target: "normal",
@@ -19793,19 +19809,75 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	swagger: {
 		num: 207,
-		accuracy: 85,
+		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Swagger",
 		pp: 15,
-		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
-		volatileStatus: 'confusion',
-		boosts: {
-			atk: 2,
+		priority: 2,
+		flags: { noassist: 1, failcopycat: 1 },
+		volatileStatus: 'swagger',
+		onTry(source) {
+			return this.activePerHalf > 1;
+		},
+		condition: {
+			duration: 1,
+			onStart(target, source, effect) {
+				if (effect?.id === 'zpower') {
+					this.add('-singleturn', target, 'move: Swagger', '[zeffect]');
+				} else {
+					this.add('-singleturn', target, 'move: Swagger');
+				}
+			},
+			onFoeRedirectTargetPriority: 1,
+			onFoeRedirectTarget(target, source, source2, move) {
+				if (!this.effectState.target.isSkyDropped() && this.validTarget(this.effectState.target, source, move.target)) {
+					if (move.smartTarget) move.smartTarget = false;
+					this.debug("Swagger redirected target of move");
+					return this.effectState.target;
+				}
+			},
+			onTryHit(target, source, move) {
+				if (this.checkMoveMakesContact(move, source, target)) {
+					const stats: BoostID[] = [];
+					let stat: BoostID;
+					for (stat in target.boosts) {
+						if (target.boosts[stat] < 6) {
+							stats.push(stat);
+						}
+					}
+					if (stats.length) {
+						const randomStat = this.sample(stats);
+						const boost: SparseBoostsTable = {};
+						boost[randomStat] = 1;
+						this.boost(boost, target);
+					} else {
+						return false;
+					}
+				}
+			},
+			onHit(target, source, move) {
+				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
+					const stats: BoostID[] = [];
+					let stat: BoostID;
+					for (stat in target.boosts) {
+						if (target.boosts[stat] < 6) {
+							stats.push(stat);
+						}
+					}
+					if (stats.length) {
+						const randomStat = this.sample(stats);
+						const boost: SparseBoostsTable = {};
+						boost[randomStat] = 1;
+						this.boost(boost, target);
+					} else {
+						return false;
+					}
+				}
+			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Normal",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Cute",
@@ -19855,19 +19927,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	sweetscent: {
 		num: 230,
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
+		accuracy: 95,
+		basePower: 70,
+		category: "Special",
 		name: "Sweet Scent",
-		pp: 20,
+		pp: 10,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, wind: 1 },
 		boosts: {
-			evasion: -3,
+			evasion: -1,
+			spe: -1,
 		},
 		secondary: null,
 		target: "allAdjacentFoes",
-		type: "Normal",
+		type: "Grass",
 		zMove: { boost: { accuracy: 1 } },
 		contestType: "Cute",
 	},
