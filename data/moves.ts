@@ -19312,7 +19312,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	strangesteam: {
 		num: 790,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 90,
 		category: "Special",
 		name: "Strange Steam",
@@ -19320,7 +19320,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		secondary: {
-			chance: 20,
+			chance: 30,
 			volatileStatus: 'confusion',
 		},
 		target: "normal",
