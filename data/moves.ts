@@ -19195,12 +19195,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	stomp: {
 		num: 23,
-		accuracy: 100,
-		basePower: 70,
+		accuracy: 95,
+		basePower: 85,
 		category: "Physical",
 		name: "Stomp",
 		pp: 20,
 		priority: 0,
+		critRatio: 2,
 		flags: { contact: 1, protect: 1, mirror: 1, nonsky: 1, metronome: 1, kick: 1 },
 		secondary: {
 			chance: 30,
@@ -19297,7 +19298,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	stormthrow: {
 		num: 480,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 
 		name: "Storm Throw",
