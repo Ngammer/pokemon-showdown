@@ -155,12 +155,31 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			const min = sourceEffect?.id === 'axekick' ? 3 : 2;
 			this.effectState.time = this.random(min, 6);
+			this.effectState.counter = 1;
 		},
 		onEnd(target) {
 			this.add('-end', target, 'confusion');
 		},
 		onModifyMove(move, pokemon, target) {
 			move.recoil = [50, 100];
+		},
+		onBeforeMovePriority: 1,
+		onBeforeMove(pokemon) {
+			pokemon.volatiles['confusion'].time--;
+			if (!pokemon.volatiles['confusion'].time) {
+				pokemon.removeVolatile('confusion');
+				return;
+			}
+			pokemon.statusState.counter += 1;
+			if (pokemon.statusState.counter >= 4) {
+				this.activeTarget = pokemon;
+				const damage = this.actions.getConfusionDamage(pokemon, 40);
+				if (typeof damage !== 'number') throw new Error("Confusion damage not dealt");
+				const activeMove = { id: this.toID('confused'), effectType: 'Move', type: '???' };
+				this.damage(damage, pokemon, pokemon, activeMove as ActiveMove);
+				pokemon.statusState.counter = 1;
+				return false;
+			}
 		},
 	},
 	flinch: {
