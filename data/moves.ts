@@ -17721,7 +17721,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let move: Move | ActiveMove | null = target.lastMove;
 			if (!move || move.isZ) return;
 			if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
-			const movePP = move.pp*1.6;
+			const movePP = move.pp * 1.6;
 			const ppDeducted = target.deductPP(move.id, movePP);
 			if (!ppDeducted) return;
 			this.add('-activate', target, 'move: Eerie Spell', move.name, ppDeducted);
@@ -18051,7 +18051,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, bullet: 1 },
 		onTryHit(source, pokemon, move) {
-			if (pokemon.hasType('Flying') || pokemon.hasAbility('Levitate') || pokemon.volatiles['fly'] || pokemon.volatiles['bounce'] || pokemon.volatiles['magnetrise']) {
+			if (pokemon.hasType('Flying') || pokemon.hasAbility('Levitate') || pokemon.volatiles['fly'] ||
+				pokemon.volatiles['bounce'] || pokemon.volatiles['magnetrise']) {
 				return move.basePower * 2;
 			}
 			return;
@@ -19477,6 +19478,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			boosts: {
 				spa: -1,
 			},
+		},
+		onHit(target, source, move) {
+			target.addVolatile('strugglebug');
 		},
 		volatileStatus: 'strugglebug',
 		condition: {
