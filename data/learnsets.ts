@@ -31,6 +31,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	bulbasaur: {
 		learnset: {
+			absorb: ["9M"],
 			acidspray: ["9M"],
 			amnesia: ["9M", "9E", "9E", "9E", "9E"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -135,6 +136,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	ivysaur: {
 		learnset: {
+			absorb: ["9M"],
 			acidspray: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -220,6 +222,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	venusaur: {
 		learnset: {
+			absorb: ["9M"],
 			acidspray: ["9M"],
 			amnesia: ["9M", "9M", "9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -1072,6 +1075,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	butterfree: {
 		learnset: {
+			absorb: ["9M"],
 			acrobatics: ["9M", "9M", "9M", "9M"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			aircutter: ["5D", "9T"],
@@ -11651,7 +11655,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	slowpokegalar: {
 		learnset: {
-			acid: ["9L6", "9L6"],
 			amnesia: ["9M", "9L27", "9M", "9L27"],
 			attract: ["9M"],
 			avalanche: ["9M"],
@@ -13244,6 +13247,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	grimer: {
 		learnset: {
+			acid: ["9M"],
 			acidarmor: ["9L43", "9M", "9L43", "9M", "9L40", "9L39", "9L39", "9L34"],
 			acidspray: ["9M", "9E", "9E", "9E", "9E"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -13347,6 +13351,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	grimeralola: {
 		learnset: {
+			acid: ["9M"],
 			acidarmor: ["9L43", "9M", "9L43"],
 			acidspray: ["9M", "9L15", "9L15"],
 			assurance: ["9E", "9E"],
@@ -13452,6 +13457,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	muk: {
 		learnset: {
+			acid: ["9M"],
 			acidarmor: ["9L46", "9M", "9L46", "9M", "9L43", "9L42", "9L44", "9L34"],
 			acidspray: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -13567,6 +13573,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	mukalola: {
 		learnset: {
+			acid: ["9M"],
 			acidarmor: ["9L46", "9M", "9L46"],
 			acidspray: ["9M", "9L15", "9L15"],
 			attract: ["9M"],
@@ -24111,6 +24118,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	chikorita: {
 		learnset: {
+			absorb: ["9M"],
 			ancientpower: ["9E", "9E", "9M", "9E", "9E", "9T", "9E", "9E", "3S1"],
 			aromatherapy: ["9L42", "9E", "9L42", "9E", "9L42", "9E", "9L42", "9E"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -24197,6 +24205,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	bayleef: {
 		learnset: {
+			absorb: ["9M"],
 			ancientpower: ["9T"],
 			aromatherapy: ["9L50", "9L50", "9L50", "9L50"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -24275,6 +24284,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	meganium: {
 		learnset: {
+			absorb: ["9M"],
 			ancientpower: ["9T"],
 			aromatherapy: ["9L60", "9L60", "9L60", "9L60"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -28761,6 +28771,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	yanma: {
 		learnset: {
+			absorb: ["9M"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			aircutter: ["9M", "9L14", "9T"],
 			airslash: ["9M", "9L54", "9L54", "9L54", "9L54", "9L54"],
@@ -33693,6 +33704,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	octank: {
 		learnset: {
+			absorb: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			aurorabeam: ["9L16", "9L1", "9M", "9L1", "9L1", "9L1", "9L22"],
@@ -36199,6 +36211,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	celebi: {
 		learnset: {
+			absorb: ["9M"],
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			allyswitch: ["9M", "9T"],
 			ancientpower: ["9L30", "9L28", "9M", "7S7", "9L28", "9L28", "9T", "9L28", "9L20", "3S1", "3S3"],
