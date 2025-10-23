@@ -171,7 +171,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				return;
 			}
 			pokemon.statusState.counter += 1;
-			if (pokemon.statusState.counter >= 4) {
+			if (pokemon.statusState.counter >= 3) {
 				this.activeTarget = pokemon;
 				const damage = this.actions.getConfusionDamage(pokemon, 40);
 				if (typeof damage !== 'number') throw new Error("Confusion damage not dealt");
