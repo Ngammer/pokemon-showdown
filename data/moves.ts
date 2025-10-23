@@ -17636,7 +17636,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (source.isAlly(target)) {
 				move.basePower = 0;
 				move.infiltrates = true;
-				move.ignoreImmunity = {'Normal': true};
+				move.ignoreImmunity = { 'Normal': true };
 			}
 			if (target.getAbility().flags['cantsuppress'] || target.ability === 'simple' || target.ability === 'truant') {
 				return false;
