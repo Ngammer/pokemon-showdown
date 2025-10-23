@@ -17632,13 +17632,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1, beam: 1 },
-		onEffectiveness(typeMod, target, type) {
-			if (target?.isAlly) return 0;
-		},
 		onTryHit(target, source, move) {
 			if (source.isAlly(target)) {
 				move.basePower = 0;
 				move.infiltrates = true;
+				move.ignoreImmunity = { 'Normal': true };
 			}
 			if (target.getAbility().flags['cantsuppress'] || target.ability === 'simple' || target.ability === 'truant') {
 				return false;
