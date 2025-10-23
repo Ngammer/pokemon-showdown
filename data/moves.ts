@@ -6185,9 +6185,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			} else {
 				if (!move.secondaries) move.secondaries = [];
 				if (item.fling.status && item.fling.chance) {
-					move.secondaries.push({ status: item.fling.status }, { chance: item.fling.chance });
+					move.secondaries.push({ status: item.fling.status, chance: item.fling.chance });
 				} else if (item.fling.volatileStatus && item.fling.chance) {
-					move.secondaries.push({ volatileStatus: item.fling.volatileStatus }, { chance: item.fling.chance });
+					move.secondaries.push({ volatileStatus: item.fling.volatileStatus, chance: item.fling.chance });
 				}
 				if (item.fling.status && !item.fling.chance) {
 					move.secondaries.push({ status: item.fling.status });
