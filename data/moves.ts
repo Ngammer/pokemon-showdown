@@ -18049,7 +18049,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, bullet: 1 },
 		onTryHit(source, pokemon, move) {
-			if (pokemon.hasType('Flying') || pokemon.hasAbility('Levitate') || pokemon.volatiles['fly'] || pokemon.volatiles['bounce'] || pokemon.volatiles['magnetrise']) {
+			if (pokemon.hasType('Flying') || pokemon.hasAbility('Levitate') || pokemon.volatiles['fly'] ||
+				pokemon.volatiles['bounce'] || pokemon.volatiles['magnetrise']) {
 				return move.basePower * 2;
 			}
 			return;
@@ -19475,6 +19476,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			boosts: {
 				spa: -1,
 			},
+		},
+		onHit(target, source, move) {
+			target.addVolatile('strugglebug');
 		},
 		volatileStatus: 'strugglebug',
 		condition: {
