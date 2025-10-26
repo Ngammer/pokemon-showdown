@@ -2322,7 +2322,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Kingler",
 		forme: "Mega",
 		types: ["Water"],
-		baseStats: { hp: 65, atk: 161, def: 120, spa: 40, spd: 100, spe: 89 },
+		baseStats: { hp: 65, atk: 181, def: 120, spa: 40, spd: 70, spe: 99 },
 		abilities: { 0: "Frubble" },
 		heightm: 1.9,
 		weightkg: 100,
