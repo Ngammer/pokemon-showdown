@@ -31041,7 +31041,6 @@ sunfulwer: {
 			trailblaze: ["9M"],
 		},
 		eventData: [
-			{generation: 3, level: 22, abilities: ["oblivious"], moves: ["9M"]},
 		],
 	},
 	piloswine: {
@@ -34244,7 +34243,7 @@ donphan: {
 			mudslap: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
-			naturePower: ["9M"],
+			naturepower: ["9M"],
 			nightmare: ["9M"],
 			perishsong: ["9M"],
 			pollenpuff: ["9M"],
