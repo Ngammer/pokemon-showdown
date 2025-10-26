@@ -2535,7 +2535,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Hitmonchan",
 		types: ["Fighting"],
 		gender: "M",
-		baseStats: { hp: 60, atk: 105, def: 84, spa: 35, spd: 110, spe: 76 },
+		baseStats: { hp: 70, atk: 105, def: 84, spa: 35, spd: 110, spe: 66 },
 		abilities: { 0: "Keen Eye", 1: "Iron Fist", H: "Inner Focus" },
 		heightm: 1.4,
 		weightkg: 50.2,
