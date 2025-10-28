@@ -31,6 +31,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 bulbasaur: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			acidspray: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M"],
@@ -40,20 +41,18 @@ bulbasaur: {
 			bodyslam: ["9M"],
 			bulletseed: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
-			charm: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			defensecurl: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
+			doublekick: ["9M"], //Añadido
 			echoedvoice: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			flash: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frenzyplant: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
@@ -76,6 +75,7 @@ bulbasaur: {
 			magicalleaf: ["9M"],
 			megadrain: ["9M"],
 			mimic: ["9M"],
+			mudshot: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
@@ -86,7 +86,6 @@ bulbasaur: {
 			protect: ["9M"],
 			rage: ["9M"],
 			razorleaf: ["9M"],
-			razorwind: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -102,10 +101,12 @@ bulbasaur: {
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			stockpile: ["9M"], //Añadido
 			strength: ["9M"],
 			stringshot: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swordsdance: ["9M"],
@@ -120,10 +121,16 @@ bulbasaur: {
 			weatherball: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
+			//celebrate //Removido
+			//charm //Removido
+			//defensecurl //Removido
+			//doubleteam //Removido
+			//razorwind //Removido
 		},
 	},
 ivysaur: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			acidspray: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M"],
@@ -136,15 +143,15 @@ ivysaur: {
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			defensecurl: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
+			doublekick: ["9M"], //Añadido
 			echoedvoice: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			flash: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			gigadrain: ["9M"],
@@ -164,6 +171,7 @@ ivysaur: {
 			magicalleaf: ["9M"],
 			megadrain: ["9M"],
 			mimic: ["9M"],
+			mudshot: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
@@ -187,10 +195,13 @@ ivysaur: {
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			stockpile: ["9M"], //Añadido
 			strength: ["9M"],
 			stringshot: ["9M"],
+			stunspore: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swordsdance: ["9M"],
@@ -205,12 +216,17 @@ ivysaur: {
 			weatherball: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
+			//defensecurl //Removido
+			//doubleteam //Removido
 		},
 	},
 venusaur: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			acidspray: ["9M"],
 			amnesia: ["9M"],
+			ancientpower: ["9M"], //Añadido
+			aromatherapy: ["9M"], //Añadido
 			attract: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
@@ -223,9 +239,8 @@ venusaur: {
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			defensecurl: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
+			doublekick: ["9M"], //Añadido
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
@@ -234,6 +249,9 @@ venusaur: {
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			flash: ["9M"],
+			floralhealing: ["9M"], //Añadido
+			flowershield: ["9M"], //Añadido
+			focusenergy: ["9M"], //Añadido
 			frenzyplant: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
@@ -245,17 +263,21 @@ venusaur: {
 			grassyterrain: ["9M"],
 			growl: ["9M"],
 			growth: ["9M"],
+			gunkshot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			knockoff: ["9M"],
 			leafstorm: ["9M"],
+			leaftornado: ["9M"], //Añadido
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
 			magicalleaf: ["9M"],
 			megadrain: ["9M"],
 			mimic: ["9M"],
+			mudbomb: ["9M"], //Añadido
+			mudshot: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
@@ -264,6 +286,8 @@ venusaur: {
 			petaldance: ["9M"],
 			poisonjab: ["9M"],
 			poisonpowder: ["9M"],
+			poisonsting: ["9M"], //Añadido
+			powder: ["9M"], //Añadido
 			powerwhip: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
@@ -272,7 +296,6 @@ venusaur: {
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
-			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
@@ -284,11 +307,15 @@ venusaur: {
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
 			stringshot: ["9M"],
+			stunspore: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swordsdance: ["9M"],
@@ -304,16 +331,17 @@ venusaur: {
 			weatherball: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
+			//defensecurl //Removido
+			//doubleteam //Removido
+			//rockclimb //Removido
 		},
 	},
 charmander: {
 		learnset: {
-			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			aircutter: ["9M"],
 			ancientpower: ["9M"],
 			attract: ["9M"],
-			beatup: ["9M"],
 			bellydrum: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
@@ -323,13 +351,11 @@ charmander: {
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -357,6 +383,7 @@ charmander: {
 			flareblitz: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
@@ -418,11 +445,14 @@ charmander: {
 			willowisp: ["9M"],
 			wingattack: ["9M"],
 			workup: ["9M"],
+			//acrobatics //Removido
+			//beatup //Removido
+			//celebrate //Removido
+			//defensecurl //Removido
 		},
 	},
 charmeleon: {
 		learnset: {
-			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			attract: ["9M"],
 			beatup: ["9M"],
@@ -436,7 +466,6 @@ charmeleon: {
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -463,6 +492,7 @@ charmeleon: {
 			flareblitz: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
@@ -505,11 +535,13 @@ charmeleon: {
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smokescreen: ["9M"],
+			snarl: ["9M"], //Añadido
 			snore: ["9M"],
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
@@ -521,6 +553,8 @@ charmeleon: {
 			weatherball: ["9M"],
 			willowisp: ["9M"],
 			workup: ["9M"],
+			//acrobatics //Removido
+			//defensecurl //Removido
 		},
 	},
 charizard: {
@@ -542,11 +576,11 @@ charizard: {
 			bulldoze: ["9M"],
 			captivate: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			counter: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			defensecurl: ["9M"],
 			defog: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -571,7 +605,6 @@ charizard: {
 			firepledge: ["9M"],
 			firepunch: ["9M"],
 			firespin: ["9M"],
-			fissure: ["9M"],
 			flameburst: ["9M"],
 			flamecharge: ["9M"],
 			flamethrower: ["9M"],
@@ -579,18 +612,19 @@ charizard: {
 			fling: ["9M"],
 			fly: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			gust: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatcrash: ["9M"],
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
-			holdhands: ["9M"],
 			honeclaws: ["9M"],
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
@@ -611,6 +645,7 @@ charizard: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
+			ragingfury: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -633,6 +668,7 @@ charizard: {
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smokescreen: ["9M"],
+			snarl: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			steelwing: ["9M"],
@@ -640,6 +676,8 @@ charizard: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
@@ -654,10 +692,14 @@ charizard: {
 			willowisp: ["9M"],
 			wingattack: ["9M"],
 			workup: ["9M"],
+			//defensecurl //Removido
+			//fissure //Removido
+			//holdhands //Removido
 		},
 	},
 squirtle: {
 		learnset: {
+			ancientpower: ["9M"], //Añadido
 			aquajet: ["9M"],
 			aquaring: ["9M"],
 			aquatail: ["9M"],
@@ -665,25 +707,22 @@ squirtle: {
 			aurasphere: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			block: ["9M"],
 			bodyslam: ["9M"],
+			bounce: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
-			confusion: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
 			dragonpulse: ["9M"],
 			dynamicpunch: ["9M"],
 			endure: ["9M"],
@@ -693,6 +732,7 @@ squirtle: {
 			flail: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			followme: ["9M"],
 			foresight: ["9M"],
@@ -745,6 +785,7 @@ squirtle: {
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			steelroller: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -767,17 +808,22 @@ squirtle: {
 			workup: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//celebrate //Removido
+			//confusion //Removido
+			//doubleteam //Removido
 		},
 	},
 wartortle: {
 		learnset: {
+			ancientpower: ["9M"], //Añadido
 			aquatail: ["9M"],
 			attract: ["9M"],
 			aurasphere: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
+			bounce: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			brine: ["9M"],
 			bubble: ["9M"],
@@ -791,7 +837,6 @@ wartortle: {
 			dig: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
 			dragonpulse: ["9M"],
 			dynamicpunch: ["9M"],
 			endure: ["9M"],
@@ -799,6 +844,7 @@ wartortle: {
 			falseswipe: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gyroball: ["9M"],
@@ -843,6 +889,7 @@ wartortle: {
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			steelroller: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -863,20 +910,25 @@ wartortle: {
 			withdraw: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//doubleteam //Removido
 		},
 	},
 blastoise: {
 		learnset: {
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			ancientpower: ["9M"], //Añadido
 			aquajet: ["9M"],
 			aquatail: ["9M"],
 			attract: ["9M"],
 			aurasphere: ["9M"],
+			aurorabeam: ["9M"], //Añadido
 			avalanche: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
+			bounce: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			brine: ["9M"],
 			bubble: ["9M"],
@@ -886,27 +938,28 @@ blastoise: {
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
-			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
 			dragonpulse: ["9M"],
-			dragontail: ["9M"],
 			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			facade: ["9M"],
 			fakeout: ["9M"],
 			falseswipe: ["9M"],
-			fissure: ["9M"],
+			fireblast: ["9M"], //Añadido
 			flashcannon: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
+			floatyfall: ["9M"], //Añadido
+			fly: ["9M"], //Añadido
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
@@ -914,6 +967,7 @@ blastoise: {
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
+			heavyslam: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hydrocannon: ["9M"],
@@ -926,8 +980,11 @@ blastoise: {
 			irondefense: ["9M"],
 			irontail: ["9M"],
 			liquidation: ["9M"],
+			lockon: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			metalburst: ["9M"], //Añadido
+			metalsound: ["9M"], //Añadido
 			mimic: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
@@ -943,7 +1000,6 @@ blastoise: {
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
-			rockclimb: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
@@ -957,8 +1013,11 @@ blastoise: {
 			signalbeam: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
+			sludgebomb: ["9M"], //Añadido
 			smackdown: ["9M"],
 			snore: ["9M"],
+			steelbeam: ["9M"], //Añadido
+			steelroller: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -970,6 +1029,8 @@ blastoise: {
 			terablast: ["9M"],
 			terrainpulse: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
+			vacuumwave: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpledge: ["9M"],
@@ -981,55 +1042,93 @@ blastoise: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//crunch //Removido
+			//doubleteam //Removido
+			//dragontail //Removido
+			//fissure //Removido
+			//rockclimb //Removido
 		},
 	},
 caterpie: {
 		learnset: {
 			bugbite: ["9M"],
+			disable: ["9M"], //Añadido
 			electroweb: ["9M"],
+			foresight: ["9M"], //Añadido
+			gigadrain: ["9M"], //Añadido
+			grassknot: ["9M"], //Añadido
+			naturepower: ["9M"], //Añadido
+			poisonpowder: ["9M"], //Añadido
+			powder: ["9M"], //Añadido
+			psybeam: ["9M"], //Añadido
+			ragepowder: ["9M"], //Añadido
+			silverwind: ["9M"], //Añadido
 			snore: ["9M"],
 			stringshot: ["9M"],
+			stunspore: ["9M"], //Añadido
 			tackle: ["9M"],
+			tearfullook: ["9M"], //Añadido
+			terrainpulse: ["9M"], //Añadido
 		},
 	},
 metapod: {
 		learnset: {
 			bugbite: ["9M"],
+			bugbuzz: ["9M"], //Añadido
+			disable: ["9M"], //Añadido
 			electroweb: ["9M"],
+			endure: ["9M"], //Añadido
+			foresight: ["9M"], //Añadido
+			gigadrain: ["9M"], //Añadido
+			grassknot: ["9M"], //Añadido
 			harden: ["9M"],
 			irondefense: ["9M"],
+			naturepower: ["9M"], //Añadido
+			poisonpowder: ["9M"], //Añadido
+			powder: ["9M"], //Añadido
+			psybeam: ["9M"], //Añadido
+			ragepowder: ["9M"], //Añadido
+			silverwind: ["9M"], //Añadido
 			stringshot: ["9M"],
+			stunspore: ["9M"], //Añadido
+			tearfullook: ["9M"], //Añadido
+			terrainpulse: ["9M"], //Añadido
 		},
 	},
 butterfree: {
 		learnset: {
-			acrobatics: ["9M"],
+			absorb: ["9M"], //Añadido
 			aerialace: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
 			bugbite: ["9M"],
-			bugbuzz: ["9M"],
-			captivate: ["9M"],
+			bugbuzz: ["9M"], //Añadido
+			charm: ["9M"], //Añadido
 			confide: ["9M"],
 			confusion: ["9M"],
 			curse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			defog: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			electroweb: ["9M"],
-			endure: ["9M"],
+			encore: ["9M"], //Añadido
+			endure: ["9M"], //Añadido
 			energyball: ["9M"],
 			facade: ["9M"],
+			fairywind: ["9M"], //Añadido
 			flash: ["9M"],
+			focusblast: ["9M"], //Añadido
+			foresight: ["9M"], //Añadido
 			frustration: ["9M"],
-			gigadrain: ["9M"],
-			gigaimpact: ["9M"],
+			gigadrain: ["9M"], //Añadido
+			grassknot: ["9M"], //Añadido
 			gust: ["9M"],
 			harden: ["9M"],
 			headbutt: ["9M"],
@@ -1038,22 +1137,28 @@ butterfree: {
 			hyperbeam: ["9M"],
 			infestation: ["9M"],
 			irondefense: ["9M"],
+			lightscreen: ["9M"], //Añadido
+			magicalleaf: ["9M"], //Añadido
 			megadrain: ["9M"],
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
 			morningsun: ["9M"],
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
 			nightmare: ["9M"],
 			ominouswind: ["9M"],
-			poisonpowder: ["9M"],
+			poisonpowder: ["9M"], //Añadido
 			pollenpuff: ["9M"],
+			powder: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
-			psybeam: ["9M"],
+			psybeam: ["9M"], //Añadido
 			psychic: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			psychup: ["9M"],
 			psywave: ["9M"],
 			quiverdance: ["9M"],
-			rage: ["9M"],
-			ragepowder: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			raindance: ["9M"],
 			razorwind: ["9M"],
 			reflect: ["9M"],
@@ -1065,47 +1170,76 @@ butterfree: {
 			secretpower: ["9M"],
 			shadowball: ["9M"],
 			signalbeam: ["9M"],
-			silverwind: ["9M"],
+			silverwind: ["9M"], //Añadido
 			skillswap: ["9M"],
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			storedpower: ["9M"], //Añadido
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
-			stunspore: ["9M"],
+			stunspore: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			supersonic: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tackle: ["9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			teleport: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
-			uturn: ["9M"],
+			twinbeam: ["9M"], //Añadido
 			venoshock: ["9M"],
 			whirlwind: ["9M"],
+			//acrobatics //Removido
+			//batonpass //Removido
+			//bide //Removido
+			//captivate //Removido
+			//doubleteam //Removido
+			//gigaimpact //Removido
+			//rage //Removido
+			//twister //Removido
+			//uturn //Removido
 		},
 	},
 weedle: {
 		learnset: {
 			bugbite: ["9M"],
+			drillrun: ["9M"], //Añadido
 			electroweb: ["9M"],
+			furyattack: ["9M"], //Añadido
+			gigadrain: ["9M"], //Añadido
+			irontail: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
 			poisonsting: ["9M"],
+			pursuit: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
 			stringshot: ["9M"],
 		},
 	},
 kakuna: {
 		learnset: {
 			bugbite: ["9M"],
+			bugbuzz: ["9M"], //Añadido
+			drillrun: ["9M"], //Añadido
 			electroweb: ["9M"],
+			endure: ["9M"], //Añadido
+			furyattack: ["9M"], //Añadido
+			gigadrain: ["9M"], //Añadido
 			harden: ["9M"],
 			irondefense: ["9M"],
+			irontail: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
+			pursuit: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
 			stringshot: ["9M"],
 		},
 	},
@@ -1117,68 +1251,69 @@ beedrill: {
 			aircutter: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
+			beatup: ["9M"], //Añadido
 			brickbreak: ["9M"],
-			brutalswing: ["9M"],
 			bugbite: ["9M"],
-			captivate: ["9M"],
+			bugbuzz: ["9M"], //Añadido
 			confide: ["9M"],
 			crosspoison: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			defog: ["9M"],
+			dig: ["9M"], //Añadido
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
-			drillrun: ["9M"],
+			drillrun: ["9M"], //Añadido
 			electroweb: ["9M"],
 			endeavor: ["9M"],
-			endure: ["9M"],
+			endure: ["9M"], //Añadido
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			fellstinger: ["9M"],
-			flash: ["9M"],
+			firstimpression: ["9M"], //Añadido
+			fly: ["9M"], //Añadido
 			focusenergy: ["9M"],
 			frustration: ["9M"],
-			furyattack: ["9M"],
+			furyattack: ["9M"], //Añadido
 			furycutter: ["9M"],
-			gigadrain: ["9M"],
+			gigadrain: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
-			hyperbeam: ["9M"],
 			infestation: ["9M"],
+			irontail: ["9M"], //Añadido
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
-			megadrain: ["9M"],
+			lunge: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
-			ominouswind: ["9M"],
 			outrage: ["9M"],
 			payback: ["9M"],
 			peck: ["9M"],
 			pinmissile: ["9M"],
 			poisonjab: ["9M"],
+			pounce: ["9M"], //Añadido
 			protect: ["9M"],
-			pursuit: ["9M"],
-			rage: ["9M"],
-			reflect: ["9M"],
+			pursuit: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
-			rocksmash: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
 			secretpower: ["9M"],
-			silverwind: ["9M"],
+			sharpen: ["9M"], //Añadido
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			spikecannon: ["9M"],
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
@@ -1194,19 +1329,30 @@ beedrill: {
 			uturn: ["9M"],
 			venoshock: ["9M"],
 			xscissor: ["9M"],
+			//batonpass //Removido
+			//bide //Removido
+			//brutalswing //Removido
+			//captivate //Removido
+			//flash //Removido
+			//hyperbeam //Removido
+			//megadrain //Removido
+			//ominouswind //Removido
+			//reflect //Removido
+			//rocksmash //Removido
+			//silverwind //Removido
 		},
 	},
 pidgey: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			attract: ["9M"],
-			bide: ["9M"],
 			bravebird: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
@@ -1262,18 +1408,21 @@ pidgey: {
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			workup: ["9M"],
+			//bide //Removido
+			//captivate //Removido
 		},
 	},
 pidgeotto: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
@@ -1327,18 +1476,20 @@ pidgeotto: {
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			workup: ["9M"],
+			//captivate //Removido
 		},
 	},
 pidgeot: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
@@ -1358,6 +1509,7 @@ pidgeot: {
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			laserfocus: ["9M"],
+			lastresort: ["9M"], //Añadido
 			mimic: ["9M"],
 			mirrormove: ["9M"],
 			mudslap: ["9M"],
@@ -1382,6 +1534,7 @@ pidgeot: {
 			steelwing: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
@@ -1389,6 +1542,7 @@ pidgeot: {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			toxic: ["9M"],
 			twister: ["9M"],
 			uproar: ["9M"],
@@ -1396,19 +1550,19 @@ pidgeot: {
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			workup: ["9M"],
+			//captivate //Removido
 		},
 	},
 rattata: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
+			agility: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			assurance: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			bubblebeam: ["9M"],
-			captivate: ["9M"],
-			chargebeam: ["9M"],
+			chipaway: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -1418,6 +1572,7 @@ rattata: {
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
@@ -1432,6 +1587,7 @@ rattata: {
 			hiddenpower: ["9M"],
 			hyperfang: ["9M"],
 			icebeam: ["9M"],
+			icefang: ["9M"], //Añadido
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
@@ -1440,11 +1596,14 @@ rattata: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			pluck: ["9M"],
+			poisonfang: ["9M"], //Añadido
+			populationbomb: ["9M"], //Añadido
 			protect: ["9M"],
 			pursuit: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			recycle: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
@@ -1454,8 +1613,7 @@ rattata: {
 			round: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -1472,35 +1630,46 @@ rattata: {
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			watergun: ["9M"],
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//blizzard //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//chargebeam //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//thunderwave //Removido
+			//uproar //Removido
 		},
 	},
 rattataalola: {
 		learnset: {
+			agility: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			assurance: ["9M"],
-			attract: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
+			chipaway: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
 			crunch: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			embargo: ["9M"],
 			endeavor: ["9M"],
 			facade: ["9M"],
+			feintattack: ["9M"], //Añadido
 			finalgambit: ["9M"],
 			focusenergy: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			furyswipes: ["9M"],
 			grassknot: ["9M"],
@@ -1508,20 +1677,26 @@ rattataalola: {
 			hiddenpower: ["9M"],
 			hyperfang: ["9M"],
 			icebeam: ["9M"],
+			icefang: ["9M"], //Añadido
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
 			mefirst: ["9M"],
+			poisonfang: ["9M"], //Añadido
+			populationbomb: ["9M"], //Añadido
 			protect: ["9M"],
 			pursuit: ["9M"],
 			quash: ["9M"],
 			quickattack: ["9M"],
 			raindance: ["9M"],
+			recycle: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			revenge: ["9M"],
 			reversal: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			round: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
@@ -1547,19 +1722,21 @@ rattataalola: {
 			uproar: ["9M"],
 			uturn: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//blizzard //Removido
 		},
 	},
 raticate: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
+			agility: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			assurance: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			bubblebeam: ["9M"],
-			captivate: ["9M"],
-			chargebeam: ["9M"],
+			brickbreak: ["9M"], //Añadido
+			chipaway: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -1569,6 +1746,7 @@ raticate: {
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
@@ -1583,6 +1761,7 @@ raticate: {
 			hyperbeam: ["9M"],
 			hyperfang: ["9M"],
 			icebeam: ["9M"],
+			icefang: ["9M"], //Añadido
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
@@ -1590,11 +1769,14 @@ raticate: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			pluck: ["9M"],
+			poisonfang: ["9M"], //Añadido
+			populationbomb: ["9M"], //Añadido
 			protect: ["9M"],
 			pursuit: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			recycle: ["9M"], //Añadido
 			refresh: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -1604,8 +1786,7 @@ raticate: {
 			round: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -1626,28 +1807,41 @@ raticate: {
 			throatchop: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderwave: ["9M"],
+			thunderfang: ["9M"], //Añadido
+			thunderwave: ["9M"], //Añadido
 			toxic: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			watergun: ["9M"],
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//blizzard //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//chargebeam //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//uproar //Removido
 		},
 	},
 raticatealola: {
 		learnset: {
+			agility: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			assurance: ["9M"],
-			attract: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
+			brickbreak: ["9M"], //Añadido
 			bulkup: ["9M"],
+			bulletseed: ["9M"], //Añadido
+			chipaway: ["9M"], //Añadido
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
 			crunch: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -1659,6 +1853,7 @@ raticatealola: {
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			grudge: ["9M"], //Añadido
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
@@ -1667,7 +1862,9 @@ raticatealola: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			lastresort: ["9M"],
+			moonlight: ["9M"], //Añadido
 			powertrip: ["9M"],
 			protect: ["9M"],
 			punishment: ["9M"],
@@ -1678,18 +1875,19 @@ raticatealola: {
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
+			rollout: ["9M"], //Añadido
 			round: ["9M"],
 			scaryface: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
-			sludgewave: ["9M"],
 			snarl: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
+			stuffcheeks: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
@@ -1701,12 +1899,17 @@ raticatealola: {
 			taunt: ["9M"],
 			thief: ["9M"],
 			throatchop: ["9M"],
-			torment: ["9M"],
+			thunderfang: ["9M"], //Añadido
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			venoshock: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//blizzard //Removido
+			//shockwave //Removido
+			//sludgewave //Removido
+			//uproar //Removido
 		},
 	},
 raticatealolatotem: {
@@ -1780,16 +1983,17 @@ raticatealolatotem: {
 	},
 spearow: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
+			airslash: ["9M"], //Añadido
 			assurance: ["9M"],
 			astonish: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
@@ -1807,11 +2011,13 @@ spearow: {
 			focusenergy: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
+			furycutter: ["9M"], //Añadido
 			growl: ["9M"],
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			leer: ["9M"],
+			metalclaw: ["9M"], //Añadido
 			mimic: ["9M"],
 			mirrormove: ["9M"],
 			mudslap: ["9M"],
@@ -1829,7 +2035,9 @@ spearow: {
 			return: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
@@ -1843,24 +2051,28 @@ spearow: {
 			takedown: ["9M"],
 			thief: ["9M"],
 			toxic: ["9M"],
-			triattack: ["9M"],
-			twister: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			whirlwind: ["9M"],
 			workup: ["9M"],
+			//batonpass //Removido
+			//captivate //Removido
+			//triattack //Removido
+			//twister //Removido
+			//uproar //Removido
 		},
 	},
 fearow: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
+			airslash: ["9M"], //Añadido
 			assurance: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
@@ -1876,7 +2088,8 @@ fearow: {
 			focusenergy: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
-			gigaimpact: ["9M"],
+			furycutter: ["9M"], //Añadido
+			gigaimpact: ["9M"], //Añadido
 			growl: ["9M"],
 			headbutt: ["9M"],
 			heatwave: ["9M"],
@@ -1884,6 +2097,7 @@ fearow: {
 			hyperbeam: ["9M"],
 			laserfocus: ["9M"],
 			leer: ["9M"],
+			metalclaw: ["9M"], //Añadido
 			mimic: ["9M"],
 			mirrormove: ["9M"],
 			mudslap: ["9M"],
@@ -1898,9 +2112,12 @@ fearow: {
 			raindance: ["9M"],
 			razorwind: ["9M"],
 			rest: ["9M"],
+			retaliate: ["9M"], //Añadido
 			return: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
@@ -1913,32 +2130,41 @@ fearow: {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			throatchop: ["9M"],
 			toxic: ["9M"],
-			triattack: ["9M"],
-			twister: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			whirlwind: ["9M"],
 			workup: ["9M"],
+			//captivate //Removido
+			//triattack //Removido
+			//twister //Removido
+			//uproar //Removido
 		},
 	},
 fearill: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
+			airslash: ["9M"], //Añadido
 			assurance: ["9M"],
 			attract: ["9M"],
 			beakdrill: ["9M"],
 			beatup: ["9M"],
 			bide: ["9M"],
 			bravebird: ["9M"],
-			captivate: ["9M"],
+			ceaselessedge: ["9M"], //Añadido
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
+			darkpulse: ["9M"], //Añadido
 			defog: ["9M"],
+			destinybond: ["9M"], //Añadido
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillpeck: ["9M"],
@@ -1947,28 +2173,39 @@ fearill: {
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
+			feint: ["9M"], //Añadido
 			fly: ["9M"],
 			focusenergy: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
-			gigaimpact: ["9M"],
+			furycutter: ["9M"], //Añadido
+			gigaimpact: ["9M"], //Añadido
 			growl: ["9M"],
+			grudge: ["9M"], //Añadido
+			gunkshot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
+			honeclaws: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			laserfocus: ["9M"],
 			leer: ["9M"],
+			lockon: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
+			metalclaw: ["9M"], //Añadido
 			mimic: ["9M"],
 			mirrormove: ["9M"],
+			moonlight: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nightslash: ["9M"], //Añadido
 			ominouswind: ["9M"],
 			outrage: ["9M"],
 			peck: ["9M"],
 			pinmissile: ["9M"],
 			pluck: ["9M"],
+			powertrip: ["9M"], //Añadido
 			protect: ["9M"],
 			pursuit: ["9M"],
 			quickattack: ["9M"],
@@ -1976,69 +2213,84 @@ fearill: {
 			raindance: ["9M"],
 			razorwind: ["9M"],
 			rest: ["9M"],
+			retaliate: ["9M"], //Añadido
 			return: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			rockthrow: ["9M"],
 			rockwrecker: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			shadowclaw: ["9M"],
+			sharpen: ["9M"], //Añadido
 			skyattack: ["9M"],
+			skydrop: ["9M"], //Añadido
 			sleeptalk: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snarl: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
-			spikecannon: ["9M"],
+			spikes: ["9M"], //Añadido
 			steelwing: ["9M"],
 			stompingtantrum: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			superpower: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			switcheero: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			throatchop: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
-			triattack: ["9M"],
-			twister: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			whirlwind: ["9M"],
 			workup: ["9M"],
+			//captivate //Removido
+			//spikecannon //Removido
+			//triattack //Removido
+			//twister //Removido
+			//uproar //Removido
 		},
 	},
 ekans: {
 		learnset: {
 			acid: ["9M"],
 			acidspray: ["9M"],
+			agility: ["9M"], //Añadido
 			aquatail: ["9M"],
-			attract: ["9M"],
-			beatup: ["9M"],
 			belch: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			brutalswing: ["9M"],
-			bulldoze: ["9M"],
-			captivate: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
-			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
+			destinybond: ["9M"], //Añadido
 			dig: ["9M"],
 			disable: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dragondance: ["9M"], //Añadido
 			earthquake: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			firefang: ["9M"],
 			fissure: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			gastroacid: ["9M"],
 			gigadrain: ["9M"],
@@ -2069,9 +2321,9 @@ ekans: {
 			pursuit: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
-			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
 			scaleshot: ["9M"],
@@ -2085,8 +2337,6 @@ ekans: {
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
-			sludgewave: ["9M"],
-			snarl: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
@@ -2108,14 +2358,23 @@ ekans: {
 			trailblaze: ["9M"],
 			venoshock: ["9M"],
 			wrap: ["9M"],
+			//attract //Removido
+			//beatup //Removido
+			//bulldoze //Removido
+			//captivate //Removido
+			//darkpulse //Removido
+			//rockslide //Removido
+			//sludgewave //Removido
+			//snarl //Removido
 		},
 	},
 arbok: {
 		learnset: {
 			acid: ["9M"],
 			acidspray: ["9M"],
+			agility: ["9M"], //Añadido
 			aquatail: ["9M"],
-			attract: ["9M"],
+			astonish: ["9M"], //Añadido
 			belch: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
@@ -2123,38 +2382,39 @@ arbok: {
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brutalswing: ["9M"],
-			bulldoze: ["9M"],
-			captivate: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
-			darkpulse: ["9M"],
-			defensecurl: ["9M"],
+			defensecurl: ["9M"], //Añadido
+			destinybond: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dragondance: ["9M"], //Añadido
 			dragontail: ["9M"],
 			earthquake: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			firefang: ["9M"],
 			fissure: ["9M"],
+			focusenergy: ["9M"], //Añadido
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			gastroacid: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
 			glare: ["9M"],
 			gunkshot: ["9M"],
-			gyroball: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
-			hyperbeam: ["9M"],
 			icefang: ["9M"],
 			infestation: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			lashout: ["9M"],
 			leechlife: ["9M"],
 			leer: ["9M"],
@@ -2174,10 +2434,10 @@ arbok: {
 			psychicfangs: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			refresh: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
@@ -2192,8 +2452,6 @@ arbok: {
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
-			sludgewave: ["9M"],
-			snarl: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
@@ -2210,22 +2468,30 @@ arbok: {
 			terablast: ["9M"],
 			thief: ["9M"],
 			throatchop: ["9M"],
-			thunderfang: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			trailblaze: ["9M"],
 			venoshock: ["9M"],
 			wrap: ["9M"],
+			//attract //Removido
+			//bulldoze //Removido
+			//captivate //Removido
+			//darkpulse //Removido
+			//gyroball //Removido
+			//hyperbeam //Removido
+			//rockslide //Removido
+			//sludgewave //Removido
+			//snarl //Removido
+			//thunderfang //Removido
 		},
 	},
 pichu: {
 		learnset: {
+			agility: ["9M"], //Añadido
 			attract: ["9M"],
 			bestow: ["9M"],
-			bide: ["9M"],
 			bodyslam: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
@@ -2233,12 +2499,12 @@ pichu: {
 			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
-			defensecurl: ["9M"],
 			detect: ["9M"],
 			disarmingvoice: ["9M"],
 			doubleedge: ["9M"],
 			doubleslap: ["9M"],
 			doubleteam: ["9M"],
+			drainingkiss: ["9M"], //Añadido
 			echoedvoice: ["9M"],
 			electricterrain: ["9M"],
 			electroball: ["9M"],
@@ -2268,6 +2534,7 @@ pichu: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nuzzle: ["9M"],
+			pikapapow: ["9M"], //Añadido
 			playnice: ["9M"],
 			playrough: ["9M"],
 			present: ["9M"],
@@ -2279,20 +2546,22 @@ pichu: {
 			reversal: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			splash: ["9M"], //Añadido
 			substitute: ["9M"],
+			superfang: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			swift: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			teeterdance: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -2302,19 +2571,23 @@ pichu: {
 			tickle: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			voltswitch: ["9M"],
 			volttackle: ["9M"],
 			wildcharge: ["9M"],
 			wish: ["9M"],
 			zapcannon: ["9M"],
+			//bide //Removido
+			//captivate //Removido
+			//defensecurl //Removido
+			//teeterdance //Removido
+			//uproar //Removido
 		},
 	},
 pichuspikyeared: {
 		learnset: {
+			agility: ["9M"], //Añadido
 			attract: ["9M"],
 			bestow: ["9M"],
-			bide: ["9M"],
 			bodyslam: ["9M"],
 			captivate: ["9M"],
 			charge: ["9M"],
@@ -2324,15 +2597,19 @@ pichuspikyeared: {
 			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			detect: ["9M"],
+			dicharge: ["9M"], //Añadido
 			disarmingvoice: ["9M"],
 			doubleedge: ["9M"],
 			doubleslap: ["9M"],
 			doubleteam: ["9M"],
 			echoedvoice: ["9M"],
+			eerieimpulse: ["9M"], //Añadido
 			electricterrain: ["9M"],
 			electroball: ["9M"],
+			electroshot: ["9M"], //Añadido
 			electroweb: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
@@ -2359,6 +2636,7 @@ pichuspikyeared: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nuzzle: ["9M"],
+			pikapapow: ["9M"], //Añadido
 			playnice: ["9M"],
 			playrough: ["9M"],
 			present: ["9M"],
@@ -2399,20 +2677,19 @@ pichuspikyeared: {
 			wildcharge: ["9M"],
 			wish: ["9M"],
 			zapcannon: ["9M"],
+			//bide //Removido
 		},
 	},
 pikachu: {
 		learnset: {
-			agility: ["9M"],
+			aerialace: ["9M"], //Añadido
+			agility: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			attract: ["9M"],
 			bestow: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			calmmind: ["9M"],
-			captivate: ["9M"],
-			celebrate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
@@ -2420,7 +2697,6 @@ pikachu: {
 			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
-			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			disarmingvoice: ["9M"],
@@ -2428,7 +2704,7 @@ pikachu: {
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
-			drainingkiss: ["9M"],
+			drainingkiss: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
 			eerieimpulse: ["9M"],
@@ -2446,7 +2722,6 @@ pikachu: {
 			flash: ["9M"],
 			fling: ["9M"],
 			fly: ["9M"],
-			focuspunch: ["9M"],
 			frustration: ["9M"],
 			grassknot: ["9M"],
 			growl: ["9M"],
@@ -2470,6 +2745,7 @@ pikachu: {
 			naturalgift: ["9M"],
 			nuzzle: ["9M"],
 			payday: ["9M"],
+			pikapapow: ["9M"], //Añadido
 			playnice: ["9M"],
 			playrough: ["9M"],
 			present: ["9M"],
@@ -2486,6 +2762,7 @@ pikachu: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shockwave: ["9M"],
@@ -2496,17 +2773,17 @@ pikachu: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spark: ["9M"],
+			splash: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
+			superfang: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
-			sweetscent: ["9M"],
 			swift: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			teeterdance: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
@@ -2517,13 +2794,20 @@ pikachu: {
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			upperhand: ["9M"],
-			uproar: ["9M"],
 			voltswitch: ["9M"],
 			volttackle: ["9M"],
 			wildcharge: ["9M"],
 			wish: ["9M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
+			//calmmind //Removido
+			//captivate //Removido
+			//celebrate //Removido
+			//defensecurl //Removido
+			//focuspunch //Removido
+			//sweetscent //Removido
+			//teeterdance //Removido
+			//uproar //Removido
 		},
 	},
 pikachucosplay: {
@@ -2586,43 +2870,180 @@ pikachucosplay: {
 	},
 pikachurockstar: {
 		learnset: {
+			beatup: ["9M"], //Añadido
+			boomburst: ["9M"], //Añadido
+			brutalswing: ["9M"], //Añadido
+			burningjealousy: ["9M"], //Añadido
+			captivate: ["9M"], //Añadido
+			coaching: ["9M"], //Añadido
+			darkpulse: ["9M"], //Añadido
+			drainingkiss: ["9M"], //Añadido
+			entertainment: ["9M"], //Añadido
+			feintattack: ["9M"], //Añadido
+			fireblast: ["9M"], //Añadido
+			firepunch: ["9M"], //Añadido
+			focusblast: ["9M"], //Añadido
+			foulplay: ["9M"], //Añadido
+			grudge: ["9M"], //Añadido
+			hex: ["9M"], //Añadido
+			hypervoice: ["9M"], //Añadido
+			incinerate: ["9M"], //Añadido
+			lashout: ["9M"], //Añadido
+			memento: ["9M"], //Añadido
 			meteormash: ["9M"],
+			nastyplot: ["9M"], //Añadido
+			obstruct: ["9M"], //Añadido
 			overdrive: ["9M"],
+			partingshot: ["9M"], //Añadido
+			payback: ["9M"], //Añadido
+			perishsong: ["9M"], //Añadido
+			poisonjab: ["9M"], //Añadido
+			powertrip: ["9M"], //Añadido
+			psychicnoise: ["9M"], //Añadido
 			pursuit: ["9M"],
+			quash: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
+			shadowball: ["9M"], //Añadido
 			snarl: ["9M"],
+			snatch: ["9M"], //Añadido
+			sonicboom: ["9M"], //Añadido
+			steelroller: ["9M"], //Añadido
 			suckerpunch: ["9M"],
+			supersonic: ["9M"], //Añadido
+			teeterdance: ["9M"], //Añadido
+			throatchop: ["9M"], //Añadido
+			torment: ["9M"], //Añadido
+			uproar: ["9M"], //Añadido
 		},
 	},
 pikachubelle: {
 		learnset: {
+			captivate: ["9M"], //Añadido
+			chillingwater: ["9M"], //Añadido
+			chillyreception: ["9M"], //Añadido
+			dazzlinggleam: ["9M"], //Añadido
+			drainingkiss: ["9M"], //Añadido
+			entertainment: ["9M"], //Añadido
+			foulplay: ["9M"], //Añadido
+			freezyfrost: ["9M"], //Añadido
+			healbell: ["9M"], //Añadido
+			healingwish: ["9M"], //Añadido
+			healpulse: ["9M"], //Añadido
+			icebeam: ["9M"], //Añadido
+			icefang: ["9M"], //Añadido
+			icepunch: ["9M"], //Añadido
 			iceshard: ["9M"],
-			iciclecrash: ["9M"],
+			icespinner: ["9M"], //Añadido
+			iciclecrash: ["9M"], //Añadido
 			icywind: ["9M"],
-			thundercage: ["9M"],
+			mist: ["9M"], //Añadido
+			tearfullook: ["9M"], //Añadido
+			tripleaxel: ["9M"], //Añadido
 			zingzap: ["9M"],
+			//thundercage //Removido
 		},
 	},
 pikachupopstar: {
 		learnset: {
 			babydolleyes: ["9M"],
+			burningjealousy: ["9M"], //Añadido
+			calmmind: ["9M"], //Añadido
+			captivate: ["9M"], //Añadido
+			coaching: ["9M"], //Añadido
+			confusion: ["9M"], //Añadido
+			craftyshield: ["9M"], //Añadido
+			dazzlinggleam: ["9M"], //Añadido
 			drainingkiss: ["9M"],
+			entertainment: ["9M"], //Añadido
+			focusblast: ["9M"], //Añadido
+			foulplay: ["9M"], //Añadido
+			healingwish: ["9M"], //Añadido
+			hypervoice: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
 			overdrive: ["9M"],
+			perishsong: ["9M"], //Añadido
+			psychicnoise: ["9M"], //Añadido
+			shadowball: ["9M"], //Añadido
+			sonicboom: ["9M"], //Añadido
+			tearfullook: ["9M"], //Añadido
+			uproar: ["9M"], //Añadido
 		},
 	},
 pikachuphd: {
 		learnset: {
+			allyswitch: ["9M"], //Añadido
+			amnesia: ["9M"], //Añadido
+			burningjealousy: ["9M"], //Añadido
+			buzzybuzz: ["9M"], //Añadido
+			calmmind: ["9M"], //Añadido
+			captivate: ["9M"], //Añadido
+			confusion: ["9M"], //Añadido
+			darkpulse: ["9M"], //Añadido
+			disable: ["9M"], //Añadido
+			drainingkiss: ["9M"], //Añadido
 			electricterrain: ["9M"],
+			energyball: ["9M"], //Añadido
+			expandingforce: ["9M"], //Añadido
+			extrasensory: ["9M"], //Añadido
+			fireblast: ["9M"], //Añadido
+			flashcannon: ["9M"], //Añadido
+			focusblast: ["9M"], //Añadido
+			foresight: ["9M"], //Añadido
+			futuresight: ["9M"], //Añadido
+			healblock: ["9M"], //Añadido
+			hypnosis: ["9M"], //Añadido
+			instruct: ["9M"], //Añadido
+			iondeluge: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
+			magneticflux: ["9M"], //Añadido
+			meditate: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
+			memento: ["9M"], //Añadido
+			miracleeye: ["9M"], //Añadido
+			nastyplot: ["9M"], //Añadido
+			naturepower: ["9M"], //Añadido
+			powershift: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
+			psybeam: ["9M"], //Añadido
 			psychicnoise: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			psyshock: ["9M"],
+			shadowball: ["9M"], //Añadido
+			smokescreen: ["9M"], //Añadido
+			storedpower: ["9M"], //Añadido
 			zenheadbutt: ["9M"],
 			zingzap: ["9M"],
 		},
 	},
 pikachulibre: {
 		learnset: {
+			bounce: ["9M"], //Añadido
+			bulkup: ["9M"], //Añadido
+			burningjealousy: ["9M"], //Añadido
+			captivate: ["9M"], //Añadido
+			closecombat: ["9M"], //Añadido
+			coaching: ["9M"], //Añadido
+			counter: ["9M"], //Añadido
+			darkestlariat: ["9M"], //Añadido
+			dizzypunch: ["9M"], //Añadido
+			drainingkiss: ["9M"], //Añadido
+			drainpunch: ["9M"], //Añadido
+			dynamicpunch: ["9M"], //Añadido
+			entertainment: ["9M"], //Añadido
+			firepunch: ["9M"], //Añadido
 			flyingpress: ["9M"],
+			gigaimpact: ["9M"], //Añadido
+			highhorsepower: ["9M"], //Añadido
+			lowsweep: ["9M"], //Añadido
 			machpunch: ["9M"],
+			megapunch: ["9M"], //Añadido
 			plasmafists: ["9M"],
+			poweruppunch: ["9M"], //Añadido
+			quickguard: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
+			rockclimb: ["9M"], //Añadido
+			submission: ["9M"], //Añadido
+			upperhand: ["9M"], //Añadido
 		},
 	},
 pikachuoriginal: {
@@ -3396,16 +3817,15 @@ pikachuworld: {
 	},
 raichu: {
 		learnset: {
-			aerialace: ["9M"],
-			agility: ["9M"],
+			aerialace: ["9M"], //Añadido
+			agility: ["9M"], //Añadido
 			alluringvoice: ["9M"],
+			aquatail: ["9M"], //Añadido
 			attract: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			calmmind: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
@@ -3414,20 +3834,18 @@ raichu: {
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
-			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			disarmingvoice: ["9M"],
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			drainingkiss: ["9M"],
+			drainingkiss: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
 			eerieimpulse: ["9M"],
 			electricterrain: ["9M"],
 			electroball: ["9M"],
-			electroshot: ["9M"],
 			electroweb: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
@@ -3438,7 +3856,6 @@ raichu: {
 			faketears: ["9M"],
 			feint: ["9M"],
 			flash: ["9M"],
-			flashcannon: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
@@ -3465,6 +3882,7 @@ raichu: {
 			naturalgift: ["9M"],
 			nuzzle: ["9M"],
 			payday: ["9M"],
+			pikapapow: ["9M"], //Añadido
 			playnice: ["9M"],
 			playrough: ["9M"],
 			protect: ["9M"],
@@ -3480,6 +3898,7 @@ raichu: {
 			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
+			sandattack: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shockwave: ["9M"],
@@ -3489,10 +3908,12 @@ raichu: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spark: ["9M"],
-			speedswap: ["9M"],
+			splash: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
+			supercellslam: ["9M"], //Añadido
+			superfang: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
@@ -3509,19 +3930,29 @@ raichu: {
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			upperhand: ["9M"],
-			uproar: ["9M"],
+			uturn: ["9M"], //Añadido
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
 			zingzap: ["9M"],
+			//calmmind //Removido
+			//captivate //Removido
+			//defensecurl //Removido
+			//electroshot //Removido
+			//flashcannon //Removido
+			//speedswap //Removido
+			//uproar //Removido
 		},
 	},
 raichualola: {
 		learnset: {
-			agility: ["9M"],
+			aerialace: ["9M"], //Añadido
+			agility: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			allyswitch: ["9M"],
+			aquatail: ["9M"], //Añadido
 			attract: ["9M"],
+			barrier: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			calmmind: ["9M"],
@@ -3529,11 +3960,14 @@ raichualola: {
 			chargebeam: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			covet: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
 			discharge: ["9M"],
 			doubleteam: ["9M"],
-			drainingkiss: ["9M"],
+			drainingkiss: ["9M"], //Añadido
 			echoedvoice: ["9M"],
 			eerieimpulse: ["9M"],
 			electricterrain: ["9M"],
@@ -3542,17 +3976,21 @@ raichualola: {
 			encore: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
+			entertainment: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
 			faketears: ["9M"],
 			feint: ["9M"],
 			fling: ["9M"],
+			floatyfall: ["9M"], //Añadido
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
+			glitzyglow: ["9M"], //Añadido
 			grassknot: ["9M"],
 			growl: ["9M"],
 			headbutt: ["9M"],
@@ -3562,22 +4000,29 @@ raichualola: {
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
-			lightscreen: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			magiccoat: ["9M"],
 			magicroom: ["9M"],
 			magnetrise: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			nastyplot: ["9M"],
+			naturepower: ["9M"], //Añadido
 			nuzzle: ["9M"],
 			payday: ["9M"],
+			pikapapow: ["9M"], //Añadido
 			playnice: ["9M"],
 			playrough: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
+			psybeam: ["9M"], //Añadido
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
 			psychicterrain: ["9M"],
+			psychup: ["9M"], //Añadido
 			psyshock: ["9M"],
+			psywave: ["9M"], //Añadido
 			quickattack: ["9M"],
 			raindance: ["9M"],
 			recycle: ["9M"],
@@ -3588,6 +4033,7 @@ raichualola: {
 			risingvoltage: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
+			sandattack: ["9M"], //Añadido
 			seismictoss: ["9M"],
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
@@ -3597,17 +4043,21 @@ raichualola: {
 			snore: ["9M"],
 			spark: ["9M"],
 			speedswap: ["9M"],
+			splash: ["9M"], //Añadido
 			storedpower: ["9M"],
 			substitute: ["9M"],
+			superfang: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			swift: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -3616,23 +4066,22 @@ raichualola: {
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			upperhand: ["9M"],
-			uproar: ["9M"],
+			trickroom: ["9M"], //Añadido
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
+			//upperhand //Removido
+			//uproar //Removido
 		},
 	},
 sandshrew: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
-			amnesia: ["9M"],
-			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -3675,6 +4124,8 @@ sandshrew: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
+			odorsleuth: ["9M"], //Añadido
+			payback: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			poisonsting: ["9M"],
 			protect: ["9M"],
@@ -3683,6 +4134,7 @@ sandshrew: {
 			rest: ["9M"],
 			return: ["9M"],
 			rockclimb: ["9M"],
+			rockpolish: ["9M"], //Añadido
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
@@ -3723,16 +4175,18 @@ sandshrew: {
 			toxic: ["9M"],
 			workup: ["9M"],
 			xscissor: ["9M"],
+			//amnesia //Removido
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 sandshrewalola: {
 		learnset: {
 			aerialace: ["9M"],
-			amnesia: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			auroraveil: ["9M"],
 			avalanche: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
@@ -3762,6 +4216,7 @@ sandshrewalola: {
 			furyswipes: ["9M"],
 			gyroball: ["9M"],
 			hail: ["9M"],
+			hardpress: ["9M"], //Añadido
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
@@ -3783,6 +4238,7 @@ sandshrewalola: {
 			mirrorcoat: ["9M"],
 			mist: ["9M"],
 			nightslash: ["9M"],
+			payback: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			powdersnow: ["9M"],
 			protect: ["9M"],
@@ -3790,6 +4246,7 @@ sandshrewalola: {
 			rest: ["9M"],
 			return: ["9M"],
 			rockslide: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
@@ -3818,19 +4275,19 @@ sandshrewalola: {
 			tripleaxel: ["9M"],
 			workup: ["9M"],
 			xscissor: ["9M"],
+			//amnesia //Removido
+			//attract //Removido
 		},
 	},
 sandslash: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
-			amnesia: ["9M"],
-			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -3852,29 +4309,29 @@ sandslash: {
 			falseswipe: ["9M"],
 			fissure: ["9M"],
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
-			gunkshot: ["9M"],
 			gyroball: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			honeclaws: ["9M"],
-			hyperbeam: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			leechlife: ["9M"],
 			lowkick: ["9M"],
+			lunge: ["9M"], //Añadido
 			magnitude: ["9M"],
 			metalclaw: ["9M"],
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			odorsleuth: ["9M"], //Añadido
+			payback: ["9M"], //Añadido
 			pinmissile: ["9M"],
 			poisonjab: ["9M"],
 			poisonsting: ["9M"],
@@ -3884,9 +4341,11 @@ sandslash: {
 			rest: ["9M"],
 			return: ["9M"],
 			rockclimb: ["9M"],
+			rockpolish: ["9M"], //Añadido
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
+			rockwreaker: ["9M"], //Añadido
 			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
@@ -3903,8 +4362,10 @@ sandslash: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			spikecannon: ["9M"], //Añadido
 			spikes: ["9M"],
 			stealthrock: ["9M"],
+			steamroller: ["9M"], //Añadido
 			steelroller: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -3921,19 +4382,26 @@ sandslash: {
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
+			twineddle: ["9M"], //Añadido
+			uturn: ["9M"], //Añadido
 			workup: ["9M"],
 			xscissor: ["9M"],
+			//amnesia //Removido
+			//attract //Removido
+			//captivate //Removido
+			//focusblast //Removido
+			//gunkshot //Removido
+			//hyperbeam //Removido
 		},
 	},
 sandslashalola: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
-			amnesia: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			auroraveil: ["9M"],
 			avalanche: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
@@ -3949,6 +4417,7 @@ sandslashalola: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillrun: ["9M"],
+			dynamicpunch: ["9M"], //Añadido
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
@@ -3956,18 +4425,17 @@ sandslashalola: {
 			falseswipe: ["9M"],
 			flashcannon: ["9M"],
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frostbreath: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
+			glaciallance: ["9M"], //Añadido
 			gyroball: ["9M"],
 			hail: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
-			hyperbeam: ["9M"],
 			iceball: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
@@ -3982,6 +4450,7 @@ sandslashalola: {
 			knockoff: ["9M"],
 			leechlife: ["9M"],
 			lowkick: ["9M"],
+			lunge: ["9M"], //Añadido
 			metalburst: ["9M"],
 			metalclaw: ["9M"],
 			mist: ["9M"],
@@ -3990,6 +4459,7 @@ sandslashalola: {
 			powdersnow: ["9M"],
 			protect: ["9M"],
 			rapidspin: ["9M"],
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rockslide: ["9M"],
@@ -4000,16 +4470,18 @@ sandslashalola: {
 			scratch: ["9M"],
 			seismictoss: ["9M"],
 			shadowclaw: ["9M"],
+			sharpen: ["9M"], //Añadido
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
 			spikes: ["9M"],
-			stealthrock: ["9M"],
+			spinout: ["9M"], //Añadido
 			steelbeam: ["9M"],
 			steelroller: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supercellslam: ["9M"], //Añadido
 			superfang: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
@@ -4020,13 +4492,18 @@ sandslashalola: {
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			tripleaxel: ["9M"],
+			uturn: ["9M"], //Añadido
 			workup: ["9M"],
 			xscissor: ["9M"],
+			//amnesia //Removido
+			//attract //Removido
+			//focusblast //Removido
+			//hyperbeam //Removido
+			//stealthrock //Removido
 		},
 	},
 nidoranf: {
 		learnset: {
-			aerialace: ["9M"],
 			attract: ["9M"],
 			beatup: ["9M"],
 			bide: ["9M"],
@@ -4086,6 +4563,7 @@ nidoranf: {
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -4105,18 +4583,17 @@ nidoranf: {
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			waterpulse: ["9M"],
+			//aerialace //Removido
 		},
 	},
 nidorina: {
 		learnset: {
-			aerialace: ["9M"],
 			attract: ["9M"],
 			beatup: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			bubblebeam: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
@@ -4130,6 +4607,7 @@ nidorina: {
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
+			drillrun: ["9M"], //Añadido
 			earthpower: ["9M"],
 			echoedvoice: ["9M"],
 			endure: ["9M"],
@@ -4186,11 +4664,13 @@ nidorina: {
 			venoshock: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
+			//aerialace //Removido
+			//bubblebeam //Removido
 		},
 	},
 nidoqueen: {
 		learnset: {
-			aerialace: ["9M"],
+			acidarmor: ["9M"], //Añadido
 			aquatail: ["9M"],
 			attract: ["9M"],
 			avalanche: ["9M"],
@@ -4201,9 +4681,9 @@ nidoqueen: {
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
 			captivate: ["9M"],
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
@@ -4217,9 +4697,10 @@ nidoqueen: {
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
+			dragonclaw: ["9M"], //Añadido
 			dragonpulse: ["9M"],
 			dragontail: ["9M"],
-			drillrun: ["9M"],
+			drillrun: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
@@ -4236,13 +4717,12 @@ nidoqueen: {
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			gunkshot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
-			hex: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			honeclaws: ["9M"],
@@ -4250,12 +4730,13 @@ nidoqueen: {
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
-			icywind: ["9M"],
 			incinerate: ["9M"],
 			irontail: ["9M"],
+			megahorn: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			mimic: ["9M"],
+			mudbomb: ["9M"], //Añadido
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
@@ -4290,6 +4771,7 @@ nidoqueen: {
 			shoreup: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			smackdown: ["9M"],
@@ -4315,7 +4797,6 @@ nidoqueen: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			uproar: ["9M"],
@@ -4324,6 +4805,12 @@ nidoqueen: {
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//aerialace //Removido
+			//bubblebeam //Removido
+			//furycutter //Removido
+			//hex //Removido
+			//icywind //Removido
+			//torment //Removido
 		},
 	},
 nidoranm: {
@@ -4337,7 +4824,6 @@ nidoranm: {
 			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
-			confusion: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -4382,6 +4868,7 @@ nidoranm: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
@@ -4408,6 +4895,7 @@ nidoranm: {
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			waterpulse: ["9M"],
+			//confusion //Removido
 		},
 	},
 nidorino: {
@@ -4418,7 +4906,6 @@ nidorino: {
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			bubblebeam: ["9M"],
 			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -4488,6 +4975,7 @@ nidorino: {
 			venoshock: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
+			//bubblebeam //Removido
 		},
 	},
 nidoking: {
@@ -4502,12 +4990,13 @@ nidoking: {
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
 			captivate: ["9M"],
+			chargebeam: ["9M"], //Añadido
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
@@ -4516,10 +5005,12 @@ nidoking: {
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
+			dragonclaw: ["9M"], //Añadido
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
 			dragontail: ["9M"],
 			drillrun: ["9M"],
+			dualchop: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
@@ -4537,11 +5028,10 @@ nidoking: {
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
-			furycutter: ["9M"],
 			gigaimpact: ["9M"],
+			gunkshot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
-			hex: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			honeclaws: ["9M"],
@@ -4550,14 +5040,16 @@ nidoking: {
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
-			icywind: ["9M"],
 			incinerate: ["9M"],
 			irontail: ["9M"],
+			lashout: ["9M"], //Añadido
 			leer: ["9M"],
+			lunge: ["9M"], //Añadido
 			megahorn: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			mimic: ["9M"],
+			mudbomb: ["9M"], //Añadido
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
@@ -4591,12 +5083,14 @@ nidoking: {
 			shockwave: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			smackdown: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
-			stealthrock: ["9M"],
+			spikecannon: ["9M"], //Añadido
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -4618,15 +5112,21 @@ nidoking: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
+			triattack: ["9M"], //Añadido
 			uproar: ["9M"],
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//bubblebeam //Removido
+			//furycutter //Removido
+			//hex //Removido
+			//icywind //Removido
+			//stealthrock //Removido
+			//torment //Removido
 		},
 	},
 cleffa: {
@@ -4644,7 +5144,6 @@ cleffa: {
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -4689,8 +5188,10 @@ cleffa: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			present: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -4703,7 +5204,6 @@ cleffa: {
 			rest: ["9M"],
 			return: ["9M"],
 			roleplay: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
@@ -4723,19 +5223,24 @@ cleffa: {
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			swift: ["9M"],
+			tailwhip: ["9M"], //Añadido
+			tearfullook: ["9M"], //Añadido
 			telekinesis: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thunderwave: ["9M"],
 			tickle: ["9M"],
 			toxic: ["9M"],
 			trick: ["9M"],
-			uproar: ["9M"],
 			waterpulse: ["9M"],
 			wish: ["9M"],
 			wonderroom: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//counter //Removido
+			//rollout //Removido
+			//uproar //Removido
 		},
 	},
 clefairy: {
@@ -4745,14 +5250,11 @@ clefairy: {
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
 			bestow: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
@@ -4761,7 +5263,6 @@ clefairy: {
 			confide: ["9M"],
 			copycat: ["9M"],
 			cosmicpower: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -4776,7 +5277,6 @@ clefairy: {
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
-			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
@@ -4829,8 +5329,10 @@ clefairy: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -4847,7 +5349,6 @@ clefairy: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
@@ -4859,12 +5360,10 @@ clefairy: {
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
 			softboiled: ["9M"],
 			solarbeam: ["9M"],
 			splash: ["9M"],
-			spotlight: ["9M"],
 			stealthrock: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
@@ -4874,19 +5373,20 @@ clefairy: {
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			swift: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
-			uproar: ["9M"],
 			wakeupslap: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -4894,6 +5394,16 @@ clefairy: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//brickbreak //Removido
+			//bubblebeam //Removido
+			//counter //Removido
+			//dynamicpunch //Removido
+			//rollout //Removido
+			//snatch //Removido
+			//spotlight //Removido
+			//thunderpunch //Removido
+			//uproar //Removido
 		},
 	},
 clefable: {
@@ -4903,13 +5413,10 @@ clefable: {
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
@@ -4918,7 +5425,6 @@ clefable: {
 			confide: ["9M"],
 			copycat: ["9M"],
 			cosmicpower: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -4933,7 +5439,6 @@ clefable: {
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
-			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
@@ -4950,7 +5455,6 @@ clefable: {
 			followme: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
 			growl: ["9M"],
@@ -4968,7 +5472,6 @@ clefable: {
 			incinerate: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
-			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			lifedew: ["9M"],
 			lightscreen: ["9M"],
@@ -4990,8 +5493,10 @@ clefable: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -5008,7 +5513,6 @@ clefable: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
@@ -5020,12 +5524,10 @@ clefable: {
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
 			softboiled: ["9M"],
 			solarbeam: ["9M"],
 			splash: ["9M"],
-			spotlight: ["9M"],
 			stealthrock: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
@@ -5035,25 +5537,39 @@ clefable: {
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			swift: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
-			uproar: ["9M"],
+			trickroom: ["9M"], //Añadido
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			wonderroom: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//brickbreak //Removido
+			//bubblebeam //Removido
+			//counter //Removido
+			//dynamicpunch //Removido
+			//gigaimpact //Removido
+			//laserfocus //Removido
+			//rollout //Removido
+			//snatch //Removido
+			//spotlight //Removido
+			//thunderpunch //Removido
+			//uproar //Removido
 		},
 	},
 vulpix: {
@@ -5061,14 +5577,13 @@ vulpix: {
 			agility: ["9M"],
 			attract: ["9M"],
 			babydolleyes: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
 			bodyslam: ["9M"],
 			burningjealousy: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			covet: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -5077,19 +5592,20 @@ vulpix: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			ember: ["9M"],
-			encore: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			extrasensory: ["9M"],
 			facade: ["9M"],
 			feintattack: ["9M"],
 			fireblast: ["9M"],
+			firefang: ["9M"], //Añadido
 			firespin: ["9M"],
 			flail: ["9M"],
 			flameburst: ["9M"],
 			flamecharge: ["9M"],
 			flamethrower: ["9M"],
 			flareblitz: ["9M"],
+			foresight: ["9M"], //Añadido
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			grudge: ["9M"],
@@ -5110,11 +5626,13 @@ vulpix: {
 			mysticalfire: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
 			ominouswind: ["9M"],
 			overheat: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
 			powerswap: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
 			quickattack: ["9M"],
@@ -5135,35 +5653,38 @@ vulpix: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
-			tailslap: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			tidyup: ["9M"], //Añadido
 			toxic: ["9M"],
 			weatherball: ["9M"],
 			willowisp: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//bide //Removido
+			//encore //Removido
+			//tailslap //Removido
 		},
 	},
 vulpixalola: {
 		learnset: {
 			agility: ["9M"],
-			aquatail: ["9M"],
 			attract: ["9M"],
 			aurorabeam: ["9M"],
 			auroraveil: ["9M"],
 			babydolleyes: ["9M"],
-			batonpass: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			covet: ["9M"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -5180,6 +5701,8 @@ vulpixalola: {
 			faketears: ["9M"],
 			feintattack: ["9M"],
 			flail: ["9M"],
+			flatter: ["9M"], //Añadido
+			foresight: ["9M"], //Añadido
 			foulplay: ["9M"],
 			freezedry: ["9M"],
 			frostbreath: ["9M"],
@@ -5188,12 +5711,14 @@ vulpixalola: {
 			hail: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			healingwish: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			howl: ["9M"],
 			hypnosis: ["9M"],
 			icebeam: ["9M"],
+			icefang: ["9M"], //Añadido
 			iceshard: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
@@ -5203,11 +5728,14 @@ vulpixalola: {
 			mistyterrain: ["9M"],
 			moonblast: ["9M"],
 			nastyplot: ["9M"],
+			naturepower: ["9M"], //Añadido
+			ominouswind: ["9M"], //Añadido
 			painsplit: ["9M"],
 			payback: ["9M"],
 			playrough: ["9M"],
 			powdersnow: ["9M"],
 			powerswap: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
 			raindance: ["9M"],
@@ -5227,23 +5755,27 @@ vulpixalola: {
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
 			tailslap: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			tidyup: ["9M"], //Añadido
 			toxic: ["9M"],
 			weatherball: ["9M"],
 			zenheadbutt: ["9M"],
+			//aquatail //Removido
+			//batonpass //Removido
+			//celebrate //Removido
 		},
 	},
 ninetales: {
 		learnset: {
 			agility: ["9M"],
+			alluringvoice: ["9M"], //Añadido
 			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
 			bodyslam: ["9M"],
 			burningjealousy: ["9M"],
 			calmmind: ["9M"],
@@ -5251,28 +5783,32 @@ ninetales: {
 			charm: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			covet: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			dig: ["9M"],
 			disable: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			ember: ["9M"],
-			encore: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			extrasensory: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
 			fireblast: ["9M"],
+			firefang: ["9M"], //Añadido
 			firespin: ["9M"],
 			flamecharge: ["9M"],
 			flamethrower: ["9M"],
 			flareblitz: ["9M"],
+			foresight: ["9M"], //Añadido
 			foulplay: ["9M"],
 			frustration: ["9M"],
+			futuresight: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			grudge: ["9M"],
 			headbutt: ["9M"],
@@ -5288,23 +5824,29 @@ ninetales: {
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lightscreen: ["9M"],
+			magiccoat: ["9M"], //Añadido
 			mimic: ["9M"],
 			mysticalfire: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
 			nightshade: ["9M"],
+			nigthmare: ["9M"], //Añadido
 			nineflames: ["9M"],
 			ominouswind: ["9M"],
 			overheat: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
 			powerswap: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
+			psychicnoise: ["9M"], //Añadido
 			psychup: ["9M"],
 			psyshock: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
 			reflect: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
@@ -5324,29 +5866,32 @@ ninetales: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
-			tailslap: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
+			tidyup: ["9M"], //Añadido
 			toxic: ["9M"],
 			trick: ["9M"],
 			weatherball: ["9M"],
 			willowisp: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//bide //Removido
+			//encore //Removido
+			//tailslap //Removido
 		},
 	},
 ninetalesalola: {
 		learnset: {
 			agility: ["9M"],
-			aquatail: ["9M"],
+			alluringvoice: ["9M"], //Añadido
 			attract: ["9M"],
 			aurorabeam: ["9M"],
 			auroraveil: ["9M"],
-			avalanche: ["9M"],
-			batonpass: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			calmmind: ["9M"],
@@ -5354,6 +5899,7 @@ ninetalesalola: {
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			covet: ["9M"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -5373,6 +5919,7 @@ ninetalesalola: {
 			freezedry: ["9M"],
 			frostbreath: ["9M"],
 			frustration: ["9M"],
+			futuresight: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			grudge: ["9M"],
 			hail: ["9M"],
@@ -5390,9 +5937,13 @@ ninetalesalola: {
 			imprison: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
+			lightscreen: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
 			mist: ["9M"],
+			mistyexplosion: ["9M"], //Añadido
 			mistyterrain: ["9M"],
 			nastyplot: ["9M"],
+			nigthmare: ["9M"], //Añadido
 			nineshard: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
@@ -5400,10 +5951,12 @@ ninetalesalola: {
 			powdersnow: ["9M"],
 			powerswap: ["9M"],
 			protect: ["9M"],
+			psychicnoise: ["9M"], //Añadido
 			psychup: ["9M"],
 			psyshock: ["9M"],
 			raindance: ["9M"],
 			reflect: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
@@ -5414,35 +5967,39 @@ ninetalesalola: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			solarbeam: ["9M"],
 			spite: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
-			tailslap: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
-			tripleaxel: ["9M"],
+			trick: ["9M"], //Añadido
 			weatherball: ["9M"],
 			wonderroom: ["9M"],
 			zenheadbutt: ["9M"],
+			//aquatail //Removido
+			//avalanche //Removido
+			//batonpass //Removido
+			//solarbeam //Removido
+			//tailslap //Removido
+			//tripleaxel //Removido
 		},
 	},
 igglybuff: {
 		learnset: {
 			alluringvoice: ["9M"],
 			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -5466,6 +6023,7 @@ igglybuff: {
 			flamethrower: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
@@ -5479,6 +6037,7 @@ igglybuff: {
 			incinerate: ["9M"],
 			lastresort: ["9M"],
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magiccoat: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
@@ -5491,18 +6050,18 @@ igglybuff: {
 			perishsong: ["9M"],
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			present: ["9M"],
 			protect: ["9M"],
+			psybeam: ["9M"], //Añadido
 			psychic: ["9M"],
 			psychup: ["9M"],
-			punishment: ["9M"],
 			raindance: ["9M"],
 			recycle: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			roleplay: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			screech: ["9M"],
@@ -5513,40 +6072,44 @@ igglybuff: {
 			sing: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thunderwave: ["9M"],
 			tickle: ["9M"],
 			toxic: ["9M"],
-			trailblaze: ["9M"],
 			uproar: ["9M"],
 			waterpulse: ["9M"],
 			wildcharge: ["9M"],
 			wish: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//counter //Removido
+			//punishment //Removido
+			//rollout //Removido
+			//solarbeam //Removido
+			//trailblaze //Removido
 		},
 	},
 jigglypuff: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
-			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
@@ -5554,7 +6117,6 @@ jigglypuff: {
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -5584,6 +6146,7 @@ jigglypuff: {
 			flash: ["9M"],
 			fling: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
@@ -5598,9 +6161,9 @@ jigglypuff: {
 			icespinner: ["9M"],
 			icywind: ["9M"],
 			incinerate: ["9M"],
-			knockoff: ["9M"],
 			lastresort: ["9M"],
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
 			megakick: ["9M"],
@@ -5617,8 +6180,10 @@ jigglypuff: {
 			playnice: ["9M"],
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			psybeam: ["9M"], //Añadido
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
 			psychup: ["9M"],
@@ -5632,7 +6197,6 @@ jigglypuff: {
 			retaliate: ["9M"],
 			return: ["9M"],
 			roleplay: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
@@ -5646,12 +6210,9 @@ jigglypuff: {
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spitup: ["9M"],
-			stealthrock: ["9M"],
-			steelroller: ["9M"],
 			stockpile: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
@@ -5664,16 +6225,15 @@ jigglypuff: {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-			telekinesis: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
-			trailblaze: ["9M"],
 			triattack: ["9M"],
 			uproar: ["9M"],
 			wakeupslap: ["9M"],
@@ -5683,22 +6243,34 @@ jigglypuff: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//bodypress //Removido
+			//brickbreak //Removido
+			//bubblebeam //Removido
+			//counter //Removido
+			//knockoff //Removido
+			//rollout //Removido
+			//snatch //Removido
+			//solarbeam //Removido
+			//stealthrock //Removido
+			//steelroller //Removido
+			//telekinesis //Removido
+			//thunderpunch //Removido
+			//trailblaze //Removido
 		},
 	},
 wigglytuff: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
-			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
@@ -5706,7 +6278,6 @@ wigglytuff: {
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -5738,8 +6309,8 @@ wigglytuff: {
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
 			gyroball: ["9M"],
@@ -5758,6 +6329,7 @@ wigglytuff: {
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
 			magicroom: ["9M"],
@@ -5775,8 +6347,10 @@ wigglytuff: {
 			painsplit: ["9M"],
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			psybeam: ["9M"], //Añadido
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
 			psychup: ["9M"],
@@ -5790,7 +6364,6 @@ wigglytuff: {
 			retaliate: ["9M"],
 			return: ["9M"],
 			roleplay: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
@@ -5804,12 +6377,9 @@ wigglytuff: {
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spitup: ["9M"],
-			stealthrock: ["9M"],
-			steelroller: ["9M"],
 			stockpile: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
@@ -5822,16 +6392,15 @@ wigglytuff: {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-			telekinesis: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
-			trailblaze: ["9M"],
 			triattack: ["9M"],
 			uproar: ["9M"],
 			watergun: ["9M"],
@@ -5840,6 +6409,20 @@ wigglytuff: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//bodypress //Removido
+			//brickbreak //Removido
+			//bubblebeam //Removido
+			//counter //Removido
+			//gigaimpact //Removido
+			//rollout //Removido
+			//snatch //Removido
+			//solarbeam //Removido
+			//stealthrock //Removido
+			//steelroller //Removido
+			//telekinesis //Removido
+			//thunderpunch //Removido
+			//trailblaze //Removido
 		},
 	},
 zubat: {
@@ -5852,11 +6435,8 @@ zubat: {
 			airslash: ["9M"],
 			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
-			bide: ["9M"],
 			bite: ["9M"],
 			bravebird: ["9M"],
-			captivate: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
@@ -5871,6 +6451,7 @@ zubat: {
 			facade: ["9M"],
 			feintattack: ["9M"],
 			fly: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gust: ["9M"],
@@ -5878,6 +6459,7 @@ zubat: {
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
+			hyperfang: ["9M"], //Añadido
 			hypnosis: ["9M"],
 			leechlife: ["9M"],
 			meanlook: ["9M"],
@@ -5889,6 +6471,7 @@ zubat: {
 			payback: ["9M"],
 			pluck: ["9M"],
 			poisonfang: ["9M"],
+			poisonsting: ["9M"], //Añadido
 			protect: ["9M"],
 			pursuit: ["9M"],
 			quickattack: ["9M"],
@@ -5906,8 +6489,10 @@ zubat: {
 			sludgebomb: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			steelwing: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			superfang: ["9M"],
 			supersonic: ["9M"],
@@ -5919,7 +6504,6 @@ zubat: {
 			thief: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
 			venomdrench: ["9M"],
@@ -5927,6 +6511,10 @@ zubat: {
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//captivate //Removido
+			//twister //Removido
 		},
 	},
 golbat: {
@@ -5939,11 +6527,8 @@ golbat: {
 			airslash: ["9M"],
 			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
-			bide: ["9M"],
 			bite: ["9M"],
 			bravebird: ["9M"],
-			captivate: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
@@ -5957,6 +6542,7 @@ golbat: {
 			endure: ["9M"],
 			facade: ["9M"],
 			fly: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
@@ -5965,6 +6551,7 @@ golbat: {
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
+			hyperfang: ["9M"], //Añadido
 			leechlife: ["9M"],
 			meanlook: ["9M"],
 			megadrain: ["9M"],
@@ -5975,6 +6562,7 @@ golbat: {
 			payback: ["9M"],
 			pluck: ["9M"],
 			poisonfang: ["9M"],
+			poisonsting: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			quickguard: ["9M"],
@@ -5992,8 +6580,10 @@ golbat: {
 			sludgebomb: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			steelwing: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			superfang: ["9M"],
 			supersonic: ["9M"],
@@ -6005,7 +6595,6 @@ golbat: {
 			thief: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
 			venomdrench: ["9M"],
@@ -6013,6 +6602,10 @@ golbat: {
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//captivate //Removido
+			//twister //Removido
 		},
 	},
 crobat: {
@@ -6028,7 +6621,6 @@ crobat: {
 			attract: ["9M"],
 			bite: ["9M"],
 			bravebird: ["9M"],
-			captivate: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
@@ -6045,6 +6637,7 @@ crobat: {
 			facade: ["9M"],
 			firefang: ["9M"],
 			fly: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
@@ -6054,7 +6647,8 @@ crobat: {
 			hiddenpower: ["9M"],
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
-			hyperfang: ["9M"],
+			hyperfang: ["9M"], //Añadido
+			laserfocus: ["9M"], //Añadido
 			leechlife: ["9M"],
 			meanlook: ["9M"],
 			mimic: ["9M"],
@@ -6064,6 +6658,7 @@ crobat: {
 			payback: ["9M"],
 			pluck: ["9M"],
 			poisonfang: ["9M"],
+			poisonsting: ["9M"], //Añadido
 			protect: ["9M"],
 			quickguard: ["9M"],
 			raindance: ["9M"],
@@ -6079,8 +6674,10 @@ crobat: {
 			sludgebomb: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			steelwing: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			superfang: ["9M"],
 			supersonic: ["9M"],
@@ -6091,7 +6688,6 @@ crobat: {
 			thief: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
 			venomdrench: ["9M"],
@@ -6099,6 +6695,8 @@ crobat: {
 			wingattack: ["9M"],
 			xscissor: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//twister //Removido
 		},
 	},
 oddish: {
@@ -6106,27 +6704,25 @@ oddish: {
 			absorb: ["9M"],
 			acid: ["9M"],
 			acidspray: ["9M"],
-			afteryou: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			dazzlinggleam: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
+			faketears: ["9M"], //Añadido
 			flail: ["9M"],
-			flash: ["9M"],
 			frustration: ["9M"],
 			gastroacid: ["9M"],
 			gigadrain: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growth: ["9M"],
@@ -6143,12 +6739,16 @@ oddish: {
 			mimic: ["9M"],
 			moonblast: ["9M"],
 			moonlight: ["9M"],
+			mudshot: ["9M"], //Añadido
+			mudslap: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			petaldance: ["9M"],
 			poisonpowder: ["9M"],
+			powder: ["9M"], //Añadido
 			protect: ["9M"],
 			rage: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			razorleaf: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -6158,6 +6758,7 @@ oddish: {
 			seedbomb: ["9M"],
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
@@ -6172,11 +6773,17 @@ oddish: {
 			takedown: ["9M"],
 			teeterdance: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			tickle: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			venoshock: ["9M"],
 			worryseed: ["9M"],
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//dazzlinggleam //Removido
+			//flash //Removido
 		},
 	},
 gloom: {
@@ -6184,28 +6791,27 @@ gloom: {
 			absorb: ["9M"],
 			acid: ["9M"],
 			acidspray: ["9M"],
-			afteryou: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			dazzlinggleam: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
+			faketears: ["9M"], //Añadido
 			flash: ["9M"],
 			fling: ["9M"],
 			frustration: ["9M"],
 			gastroacid: ["9M"],
 			gigadrain: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growth: ["9M"],
@@ -6220,14 +6826,18 @@ gloom: {
 			mimic: ["9M"],
 			moonblast: ["9M"],
 			moonlight: ["9M"],
+			mudshot: ["9M"], //Añadido
+			mudslap: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			petalblizzard: ["9M"],
 			petaldance: ["9M"],
 			poisonpowder: ["9M"],
 			pollenpuff: ["9M"],
+			powder: ["9M"], //Añadido
 			protect: ["9M"],
 			rage: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			razorleaf: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -6237,6 +6847,7 @@ gloom: {
 			seedbomb: ["9M"],
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
@@ -6249,10 +6860,15 @@ gloom: {
 			synthesis: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			venoshock: ["9M"],
 			worryseed: ["9M"],
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//dazzlinggleam //Removido
 		},
 	},
 vileplume: {
@@ -6260,32 +6876,33 @@ vileplume: {
 			absorb: ["9M"],
 			acid: ["9M"],
 			acidspray: ["9M"],
-			afteryou: ["9M"],
 			aromatherapy: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			corrosivegas: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			dazzlinggleam: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
+			faketears: ["9M"], //Añadido
+			flamethrower: ["9M"], //Añadido
 			flash: ["9M"],
 			fling: ["9M"],
+			floralhealing: ["9M"], //Añadido
+			flowershield: ["9M"], //Añadido
 			frustration: ["9M"],
 			gastroacid: ["9M"],
 			gigadrain: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growth: ["9M"],
@@ -6300,28 +6917,36 @@ vileplume: {
 			mimic: ["9M"],
 			moonblast: ["9M"],
 			moonlight: ["9M"],
+			mudshot: ["9M"], //Añadido
+			mudslap: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			petalblizzard: ["9M"],
 			petaldance: ["9M"],
 			poisonpowder: ["9M"],
 			pollenpuff: ["9M"],
+			powder: ["9M"], //Añadido
 			protect: ["9M"],
 			rage: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rototiller: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			silverwind: ["9M"], //Añadido
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smog: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
-			solarblade: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stunspore: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -6331,11 +6956,18 @@ vileplume: {
 			synthesis: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			venoshock: ["9M"],
 			weatherball: ["9M"],
 			worryseed: ["9M"],
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//dazzlinggleam //Removido
+			//gigaimpact //Removido
+			//solarblade //Removido
 		},
 	},
 bellossom: {
@@ -6353,6 +6985,7 @@ bellossom: {
 			curse: ["9M"],
 			cut: ["9M"],
 			dazzlinggleam: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
@@ -6362,6 +6995,7 @@ bellossom: {
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
+			faketears: ["9M"], //Añadido
 			flash: ["9M"],
 			fling: ["9M"],
 			frustration: ["9M"],
@@ -6369,11 +7003,14 @@ bellossom: {
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growth: ["9M"],
+			healpulse: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			holdhands: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			infestation: ["9M"],
 			laserfocus: ["9M"],
@@ -6384,6 +7021,8 @@ bellossom: {
 			mimic: ["9M"],
 			moonblast: ["9M"],
 			moonlight: ["9M"],
+			mudshot: ["9M"], //Añadido
+			mudslap: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			petalblizzard: ["9M"],
@@ -6391,20 +7030,23 @@ bellossom: {
 			playrough: ["9M"],
 			poisonpowder: ["9M"],
 			pollenpuff: ["9M"],
+			powder: ["9M"], //Añadido
 			protect: ["9M"],
 			quiverdance: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			silverwind: ["9M"], //Añadido
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
-			solarblade: ["9M"],
 			stunspore: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -6413,6 +7055,7 @@ bellossom: {
 			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9M"],
@@ -6420,24 +7063,22 @@ bellossom: {
 			venoshock: ["9M"],
 			weatherball: ["9M"],
 			worryseed: ["9M"],
+			//solarblade //Removido
 		},
 	},
 paras: {
 		learnset: {
 			absorb: ["9M"],
-			aerialace: ["9M"],
-			afteryou: ["9M"],
 			agility: ["9M"],
 			aromatherapy: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bugbite: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
+			crabhammer: ["9M"], //Añadido
 			crosspoison: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -6456,6 +7097,7 @@ paras: {
 			furyswipes: ["9M"],
 			gigadrain: ["9M"],
 			grassknot: ["9M"],
+			grassyglide: ["9M"], //Añadido
 			grassyterrain: ["9M"],
 			growth: ["9M"],
 			headbutt: ["9M"],
@@ -6491,9 +7133,9 @@ paras: {
 			slash: ["9M"],
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
-			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
 			spore: ["9M"],
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
@@ -6507,19 +7149,23 @@ paras: {
 			takedown: ["9M"],
 			thief: ["9M"],
 			toxic: ["9M"],
+			toxicspikes: ["9M"], //Añadido
 			venoshock: ["9M"],
 			wideguard: ["9M"],
 			worryseed: ["9M"],
 			xscissor: ["9M"],
+			//aerialace //Removido
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//sludgebomb //Removido
 		},
 	},
 parasect: {
 		learnset: {
 			absorb: ["9M"],
-			aerialace: ["9M"],
-			afteryou: ["9M"],
 			aromatherapy: ["9M"],
-			attract: ["9M"],
+			assurance: ["9M"], //Añadido
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -6528,6 +7174,7 @@ parasect: {
 			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
+			crabhammer: ["9M"], //Añadido
 			crosspoison: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -6545,11 +7192,11 @@ parasect: {
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			grassyglide: ["9M"], //Añadido
 			growth: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
-			hyperbeam: ["9M"],
 			knockoff: ["9M"],
 			leechlife: ["9M"],
 			leechseed: ["9M"],
@@ -6576,9 +7223,9 @@ parasect: {
 			slash: ["9M"],
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
-			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
 			spore: ["9M"],
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
@@ -6593,21 +7240,24 @@ parasect: {
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
+			toxicspikes: ["9M"], //Añadido
 			venoshock: ["9M"],
 			worryseed: ["9M"],
 			xscissor: ["9M"],
+			//aerialace //Removido
+			//afteryou //Removido
+			//attract //Removido
+			//hyperbeam //Removido
+			//sludgebomb //Removido
 		},
 	},
 venonat: {
 		learnset: {
 			acidspray: ["9M"],
 			agility: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
@@ -6626,6 +7276,7 @@ venonat: {
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			infestation: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			leechlife: ["9M"],
 			lunge: ["9M"],
 			megadrain: ["9M"],
@@ -6633,6 +7284,7 @@ venonat: {
 			morningsun: ["9M"],
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
+			nigthmare: ["9M"], //Añadido
 			poisonfang: ["9M"],
 			poisonpowder: ["9M"],
 			pounce: ["9M"],
@@ -6640,6 +7292,7 @@ venonat: {
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			psywave: ["9M"],
 			rage: ["9M"],
 			ragepowder: ["9M"],
@@ -6655,6 +7308,7 @@ venonat: {
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			stringshot: ["9M"],
@@ -6670,26 +7324,26 @@ venonat: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			venoshock: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
 		},
 	},
 venomoth: {
 		learnset: {
 			acidspray: ["9M"],
-			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
@@ -6699,6 +7353,7 @@ venomoth: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
+			dualwingbeat: ["9M"], //Añadido
 			endeavor: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
@@ -6707,26 +7362,31 @@ venomoth: {
 			foresight: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
-			gigaimpact: ["9M"],
 			gust: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			infestation: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			leechlife: ["9M"],
 			lunge: ["9M"],
 			megadrain: ["9M"],
 			mimic: ["9M"],
+			moonblast: ["9M"], //Añadido
+			moonlight: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
+			nigthmare: ["9M"], //Añadido
 			ominouswind: ["9M"],
 			poisonfang: ["9M"],
 			poisonpowder: ["9M"],
 			pounce: ["9M"],
+			powder: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			psywave: ["9M"],
 			quiverdance: ["9M"],
 			rage: ["9M"],
@@ -6739,6 +7399,7 @@ venomoth: {
 			round: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
+			shadowball: ["9M"], //Añadido
 			signalbeam: ["9M"],
 			silverwind: ["9M"],
 			skillswap: ["9M"],
@@ -6747,6 +7408,7 @@ venomoth: {
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			stringshot: ["9M"],
@@ -6761,32 +7423,31 @@ venomoth: {
 			tackle: ["9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-			teleport: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
-			twister: ["9M"],
-			uturn: ["9M"],
 			venoshock: ["9M"],
 			whirlwind: ["9M"],
 			zenheadbutt: ["9M"],
+			//acrobatics //Removido
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//gigaimpact //Removido
+			//teleport //Removido
+			//twister //Removido
+			//uturn //Removido
 		},
 	},
 diglett: {
 		learnset: {
-			aerialace: ["9M"],
 			agility: ["9M"],
 			allyswitch: ["9M"],
 			ancientpower: ["9M"],
-			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
-			beatup: ["9M"],
-			bide: ["9M"],
-			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
@@ -6818,6 +7479,7 @@ diglett: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			protect: ["9M"],
 			pursuit: ["9M"],
 			rage: ["9M"],
@@ -6832,7 +7494,6 @@ diglett: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
-			scorchingsands: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
@@ -6855,24 +7516,30 @@ diglett: {
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
-			uproar: ["9M"],
 			workup: ["9M"],
+			//aerialace //Removido
+			//assurance //Removido
+			//attract //Removido
+			//beatup //Removido
+			//bide //Removido
+			//bodyslam //Removido
+			//captivate //Removido
+			//scorchingsands //Removido
+			//uproar //Removido
 		},
 	},
 diglettalola: {
 		learnset: {
-			aerialace: ["9M"],
 			agility: ["9M"],
 			allyswitch: ["9M"],
 			ancientpower: ["9M"],
 			assurance: ["9M"],
 			astonish: ["9M"],
 			attract: ["9M"],
-			beatup: ["9M"],
-			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
@@ -6939,21 +7606,18 @@ diglettalola: {
 			toxic: ["9M"],
 			uproar: ["9M"],
 			workup: ["9M"],
+			//aerialace //Removido
+			//beatup //Removido
+			//bodyslam //Removido
 		},
 	},
 dugtrio: {
 		learnset: {
-			aerialace: ["9M"],
 			agility: ["9M"],
 			allyswitch: ["9M"],
-			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			beatup: ["9M"],
-			bide: ["9M"],
-			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
@@ -6978,7 +7642,6 @@ dugtrio: {
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			honeclaws: ["9M"],
-			hyperbeam: ["9M"],
 			magnitude: ["9M"],
 			mimic: ["9M"],
 			mudbomb: ["9M"],
@@ -6986,6 +7649,7 @@ dugtrio: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			protect: ["9M"],
 			rage: ["9M"],
 			rest: ["9M"],
@@ -7001,7 +7665,6 @@ dugtrio: {
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			scorchingsands: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
@@ -7009,7 +7672,6 @@ dugtrio: {
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
-			sludgewave: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
 			stealthrock: ["9M"],
@@ -7026,23 +7688,29 @@ dugtrio: {
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
-			uproar: ["9M"],
 			workup: ["9M"],
+			//aerialace //Removido
+			//assurance //Removido
+			//attract //Removido
+			//bide //Removido
+			//bodyslam //Removido
+			//captivate //Removido
+			//hyperbeam //Removido
+			//scorchingsands //Removido
+			//sludgewave //Removido
+			//uproar //Removido
 		},
 	},
 dugtrioalola: {
 		learnset: {
-			aerialace: ["9M"],
 			agility: ["9M"],
 			allyswitch: ["9M"],
-			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			beatup: ["9M"],
-			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -7064,7 +7732,6 @@ dugtrioalola: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
-			hyperbeam: ["9M"],
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			magnitude: ["9M"],
@@ -7080,6 +7747,7 @@ dugtrioalola: {
 			reversal: ["9M"],
 			rockblast: ["9M"],
 			rockslide: ["9M"],
+			rockthrow: ["9M"], //Añadido
 			rocktomb: ["9M"],
 			rototiller: ["9M"],
 			round: ["9M"],
@@ -7087,18 +7755,15 @@ dugtrioalola: {
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			scorchingsands: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
 			shadowclaw: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
-			sludgewave: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
 			stealthrock: ["9M"],
-			steelbeam: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			substitute: ["9M"],
@@ -7112,8 +7777,16 @@ dugtrioalola: {
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
-			uproar: ["9M"],
 			workup: ["9M"],
+			//aerialace //Removido
+			//assurance //Removido
+			//attract //Removido
+			//bodyslam //Removido
+			//hyperbeam //Removido
+			//scorchingsands //Removido
+			//sludgewave //Removido
+			//steelbeam //Removido
+			//uproar //Removido
 		},
 	},
 meowth: {
@@ -7124,22 +7797,19 @@ meowth: {
 			assist: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
-			bide: ["9M"],
+			bestow: ["9M"], //Añadido
 			bite: ["9M"],
 			bodyslam: ["9M"],
-			bubblebeam: ["9M"],
-			captivate: ["9M"],
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
-			chillingwater: ["9M"],
 			confide: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			darkpulse: ["9M"],
-			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			echoedvoice: ["9M"],
@@ -7168,6 +7838,7 @@ meowth: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			lashout: ["9M"],
 			lastresort: ["9M"],
 			metalclaw: ["9M"],
@@ -7196,10 +7867,8 @@ meowth: {
 			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			sing: ["9M"],
 			skullbash: ["9M"],
 			slash: ["9M"],
@@ -7221,6 +7890,7 @@ meowth: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
+			tidyup: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -7230,6 +7900,14 @@ meowth: {
 			waterpulse: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//bide //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//chillingwater //Removido
+			//darkpulse //Removido
+			//defensecurl //Removido
+			//seedbomb //Removido
+			//shockwave //Removido
 		},
 	},
 meowthalola: {
@@ -7240,18 +7918,20 @@ meowthalola: {
 			assist: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
+			bestow: ["9M"], //Añadido
 			bite: ["9M"],
 			bodyslam: ["9M"],
-			captivate: ["9M"],
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
-			chillingwater: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			detect: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			echoedvoice: ["9M"],
@@ -7292,6 +7972,7 @@ meowthalola: {
 			psychup: ["9M"],
 			punishment: ["9M"],
 			quash: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -7321,13 +8002,17 @@ meowthalola: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
+			tidyup: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			uproar: ["9M"],
 			uturn: ["9M"],
 			waterpulse: ["9M"],
 			workup: ["9M"],
+			//captivate //Removido
+			//chillingwater //Removido
 		},
 	},
 meowthgalar: {
@@ -7336,8 +8021,10 @@ meowthgalar: {
 			amnesia: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
+			bestow: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			covet: ["9M"],
 			crunch: ["9M"],
@@ -7385,12 +8072,14 @@ meowthgalar: {
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
+			sharpen: ["9M"], //Añadido
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
 			stealthrock: ["9M"],
 			steelbeam: ["9M"],
+			stoneedge: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
@@ -7417,26 +8106,26 @@ persian: {
 			amnesia: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
-			bide: ["9M"],
+			bestow: ["9M"], //Añadido
 			bite: ["9M"],
 			bodyslam: ["9M"],
-			bubblebeam: ["9M"],
-			captivate: ["9M"],
+			calmmind: ["9M"], //Añadido
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
-			chillingwater: ["9M"],
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			covet: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			darkpulse: ["9M"],
-			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			echoedvoice: ["9M"],
-			embargo: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
@@ -7462,8 +8151,10 @@ persian: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			lashout: ["9M"],
 			lastresort: ["9M"],
+			magiccoat: ["9M"], //Añadido
 			metalclaw: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
@@ -7478,6 +8169,7 @@ persian: {
 			powergem: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
+			psywave: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
@@ -7488,10 +8180,8 @@ persian: {
 			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			skittersmack: ["9M"],
 			skullbash: ["9M"],
 			slash: ["9M"],
@@ -7505,6 +8195,7 @@ persian: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			switcheroo: ["9M"],
+			tailslap: ["9M"], //Añadido
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
@@ -7513,6 +8204,7 @@ persian: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
+			tidyup: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -7522,6 +8214,15 @@ persian: {
 			waterpulse: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//bide //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//chillingwater //Removido
+			//darkpulse //Removido
+			//defensecurl //Removido
+			//embargo //Removido
+			//seedbomb //Removido
+			//shockwave //Removido
 		},
 	},
 persianalola: {
@@ -7532,19 +8233,24 @@ persianalola: {
 			assurance: ["9M"],
 			attract: ["9M"],
 			beatup: ["9M"],
+			bestow: ["9M"], //Añadido
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			burningjealousy: ["9M"],
-			captivate: ["9M"],
+			calmmind: ["9M"], //Añadido
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
-			chillingwater: ["9M"],
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			detect: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			echoedvoice: ["9M"],
@@ -7559,11 +8265,11 @@ persianalola: {
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			furyswipes: ["9M"],
-			gigaimpact: ["9M"],
 			growl: ["9M"],
 			gunkshot: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
@@ -7573,9 +8279,12 @@ persianalola: {
 			knockoff: ["9M"],
 			lashout: ["9M"],
 			lastresort: ["9M"],
+			magiccoat: ["9M"], //Añadido
 			metalclaw: ["9M"],
 			nastyplot: ["9M"],
+			nightdaze: ["9M"], //Añadido
 			nightslash: ["9M"],
+			nigthmare: ["9M"], //Añadido
 			payback: ["9M"],
 			payday: ["9M"],
 			playrough: ["9M"],
@@ -7588,17 +8297,15 @@ persianalola: {
 			retaliate: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
+			roleplay: ["9M"], //Añadido
 			round: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
-			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			skittersmack: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
-			smackdown: ["9M"],
 			snarl: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
@@ -7615,7 +8322,7 @@ persianalola: {
 			throatchop: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderwave: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -7623,6 +8330,12 @@ persianalola: {
 			uturn: ["9M"],
 			waterpulse: ["9M"],
 			workup: ["9M"],
+			//captivate //Removido
+			//chillingwater //Removido
+			//gigaimpact //Removido
+			//seedbomb //Removido
+			//shockwave //Removido
+			//smackdown //Removido
 		},
 	},
 perrserker: {
@@ -7634,6 +8347,7 @@ perrserker: {
 			batonpass: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			closecombat: ["9M"],
@@ -7681,15 +8395,12 @@ perrserker: {
 			round: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
-			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
-			stealthrock: ["9M"],
-			steelbeam: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
@@ -7707,29 +8418,26 @@ perrserker: {
 			uturn: ["9M"],
 			workup: ["9M"],
 			xscissor: ["9M"],
+			//seedbomb //Removido
+			//stealthrock //Removido
+			//steelbeam //Removido
 		},
 	},
 psyduck: {
 		learnset: {
 			aerialace: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
-			bide: ["9M"],
 			blizzard: ["9M"],
-			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brine: ["9M"],
 			bubblebeam: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
-			clearsmog: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
-			counter: ["9M"],
-			crosschop: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
 			disable: ["9M"],
@@ -7747,8 +8455,8 @@ psyduck: {
 			focuspunch: ["9M"],
 			foresight: ["9M"],
 			frustration: ["9M"],
-			furyswipes: ["9M"],
 			futuresight: ["9M"],
+			grassknot: ["9M"], //Añadido
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -7770,6 +8478,7 @@ psyduck: {
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
+			mist: ["9M"], //Añadido
 			mudbomb: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
@@ -7777,7 +8486,9 @@ psyduck: {
 			mudsport: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
 			payday: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -7831,30 +8542,37 @@ psyduck: {
 			worryseed: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//bodyslam //Removido
+			//captivate //Removido
+			//clearsmog //Removido
+			//counter //Removido
+			//crosschop //Removido
+			//furyswipes //Removido
 		},
 	},
 golduck: {
 		learnset: {
 			aerialace: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
 			aquajet: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
-			bide: ["9M"],
+			aurorabeam: ["9M"], //Añadido
+			barrier: ["9M"], //Añadido
 			blizzard: ["9M"],
-			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brine: ["9M"],
 			bubblebeam: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			dig: ["9M"],
 			disable: ["9M"],
 			dive: ["9M"],
@@ -7864,18 +8582,22 @@ golduck: {
 			encore: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
+			expandingforce: ["9M"], //Añadido
 			facade: ["9M"],
+			fireblast: ["9M"], //Añadido
 			flash: ["9M"],
+			flashcannon: ["9M"], //Añadido
 			fling: ["9M"],
 			flipturn: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
-			grassknot: ["9M"],
+			grassknot: ["9M"], //Añadido
+			gravity: ["9M"], //Añadido
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -7894,30 +8616,41 @@ golduck: {
 			liquidation: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
+			magiccoat: ["9M"], //Añadido
 			mefirst: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
+			mist: ["9M"], //Añadido
 			muddywater: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
 			payday: ["9M"],
 			powergem: ["9M"],
+			powershift: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
+			psychocut: ["9M"], //Añadido
 			psychup: ["9M"],
 			psyshock: ["9M"],
+			psywave: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
+			razorwind: ["9M"], //Añadido
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
-			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
 			round: ["9M"],
@@ -7926,13 +8659,16 @@ golduck: {
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			shadowball: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			snowscape: ["9M"], //Añadido
 			soak: ["9M"],
+			storedpower: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -7944,9 +8680,12 @@ golduck: {
 			taunt: ["9M"],
 			telekinesis: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			trickroom: ["9M"], //Añadido
 			vacuumwave: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
@@ -7957,6 +8696,13 @@ golduck: {
 			worryseed: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//bodyslam //Removido
+			//captivate //Removido
+			//counter //Removido
+			//furycutter //Removido
+			//rockclimb //Removido
 		},
 	},
 mankey: {
@@ -7964,14 +8710,13 @@ mankey: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
+			batonpass: ["9M"], //Añadido
 			beatup: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -7986,11 +8731,11 @@ mankey: {
 			drainpunch: ["9M"],
 			dualchop: ["9M"],
 			dynamicpunch: ["9M"],
-			earthquake: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			fakeout: ["9M"], //Añadido
 			finalgambit: ["9M"],
 			firepunch: ["9M"],
 			fling: ["9M"],
@@ -8025,6 +8770,7 @@ mankey: {
 			payback: ["9M"],
 			payday: ["9M"],
 			poisonjab: ["9M"],
+			pounce: ["9M"], //Añadido
 			powertrip: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
@@ -8043,6 +8789,7 @@ mankey: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			roleplay: ["9M"],
+			rollingkick: ["9M"], //Añadido
 			round: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
@@ -8062,6 +8809,7 @@ mankey: {
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
@@ -8079,6 +8827,9 @@ mankey: {
 			uturn: ["9M"],
 			vacuumwave: ["9M"],
 			workup: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//earthquake //Removido
 		},
 	},
 primeape: {
@@ -8086,32 +8837,33 @@ primeape: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
+			batonpass: ["9M"], //Añadido
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
 			crosschop: ["9M"],
 			curse: ["9M"],
+			darkestlariat: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dualchop: ["9M"],
 			dynamicpunch: ["9M"],
-			earthquake: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			fakeout: ["9M"], //Añadido
 			finalgambit: ["9M"],
 			firepunch: ["9M"],
 			fling: ["9M"],
@@ -8121,12 +8873,12 @@ primeape: {
 			frustration: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
-			hyperbeam: ["9M"],
 			icepunch: ["9M"],
 			irontail: ["9M"],
 			karatechop: ["9M"],
@@ -8134,6 +8886,7 @@ primeape: {
 			leer: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
+			machpunch: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
@@ -8145,6 +8898,7 @@ primeape: {
 			payback: ["9M"],
 			payday: ["9M"],
 			poisonjab: ["9M"],
+			pounce: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
@@ -8162,30 +8916,30 @@ primeape: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			roleplay: ["9M"],
+			rollingkick: ["9M"], //Añadido
 			round: ["9M"],
 			scaryface: ["9M"],
-			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			seismictoss: ["9M"],
-			shadowclaw: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
-			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
@@ -8198,12 +8952,20 @@ primeape: {
 			uturn: ["9M"],
 			vacuumwave: ["9M"],
 			workup: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//earthquake //Removido
+			//hyperbeam //Removido
+			//scratch //Removido
+			//shadowclaw //Removido
+			//stealthrock //Removido
 		},
 	},
 annihilape: {
 		learnset: {
 			acrobatics: ["9M"],
 			assurance: ["9M"],
+			batonpass: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
@@ -8213,7 +8975,9 @@ annihilape: {
 			counter: ["9M"],
 			crosschop: ["9M"],
 			curse: ["9M"],
+			darkestlariat: ["9M"], //Añadido
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			drainpunch: ["9M"],
 			earthquake: ["9M"],
@@ -8221,6 +8985,7 @@ annihilape: {
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			fakeout: ["9M"], //Añadido
 			finalgambit: ["9M"],
 			firepunch: ["9M"],
 			fling: ["9M"],
@@ -8229,6 +8994,7 @@ annihilape: {
 			focuspunch: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			helpinghand: ["9M"],
 			hyperbeam: ["9M"],
@@ -8237,12 +9003,14 @@ annihilape: {
 			leer: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
+			machpunch: ["9M"], //Añadido
 			metronome: ["9M"],
 			nightshade: ["9M"],
 			outrage: ["9M"],
 			overheat: ["9M"],
 			phantomforce: ["9M"],
 			poisonjab: ["9M"],
+			pounce: ["9M"], //Añadido
 			protect: ["9M"],
 			ragefist: ["9M"],
 			raindance: ["9M"],
@@ -8250,6 +9018,7 @@ annihilape: {
 			reversal: ["9M"],
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
+			rollingkick: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
@@ -8265,11 +9034,13 @@ annihilape: {
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
@@ -8295,6 +9066,7 @@ growlithe: {
 			charm: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			covet: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
@@ -8315,6 +9087,7 @@ growlithe: {
 			flamethrower: ["9M"],
 			flamewheel: ["9M"],
 			flareblitz: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			headbutt: ["9M"],
 			heatwave: ["9M"],
@@ -8331,9 +9104,12 @@ growlithe: {
 			odorsleuth: ["9M"],
 			outrage: ["9M"],
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			pursuit: ["9M"], //Añadido
+			quickattack: ["9M"], //Añadido
 			rage: ["9M"],
 			ragingfury: ["9M"],
 			reflect: ["9M"],
@@ -8360,11 +9136,11 @@ growlithe: {
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
-			thrash: ["9M"],
 			thunderfang: ["9M"],
 			toxic: ["9M"],
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
+			//thrash //Removido
 		},
 	},
 growlithehisui: {
@@ -8372,7 +9148,9 @@ growlithehisui: {
 			agility: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
+			captivate: ["9M"], //Añadido
 			closecombat: ["9M"],
+			counter: ["9M"], //Añadido
 			covet: ["9M"],
 			crunch: ["9M"],
 			dig: ["9M"],
@@ -8388,23 +9166,29 @@ growlithehisui: {
 			flamethrower: ["9M"],
 			flamewheel: ["9M"],
 			flareblitz: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			headsmash: ["9M"],
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
 			howl: ["9M"],
 			leer: ["9M"],
 			morningsun: ["9M"],
+			mudslap: ["9M"], //Añadido
+			odorsleuth: ["9M"], //Añadido
 			outrage: ["9M"],
 			overheat: ["9M"],
 			powergem: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			pursuit: ["9M"], //Añadido
+			quickattack: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			reversal: ["9M"],
 			roar: ["9M"],
 			rockblast: ["9M"],
 			rockslide: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			rocktomb: ["9M"],
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
@@ -8429,6 +9213,7 @@ arcanine: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
+			ancientpower: ["9M"], //Añadido
 			attract: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
@@ -8439,6 +9224,7 @@ arcanine: {
 			charm: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			covet: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
@@ -8448,7 +9234,9 @@ arcanine: {
 			dragonbreath: ["9M"],
 			dragonpulse: ["9M"],
 			dragonrage: ["9M"],
+			dragontail: ["9M"], //Añadido
 			ember: ["9M"],
+			endeavor: ["9M"], //Añadido
 			endure: ["9M"],
 			extremespeed: ["9M"],
 			facade: ["9M"],
@@ -8459,6 +9247,7 @@ arcanine: {
 			flamethrower: ["9M"],
 			flamewheel: ["9M"],
 			flareblitz: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			headbutt: ["9M"],
@@ -8480,9 +9269,12 @@ arcanine: {
 			odorsleuth: ["9M"],
 			outrage: ["9M"],
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			pursuit: ["9M"], //Añadido
+			quickattack: ["9M"], //Añadido
 			rage: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -8490,10 +9282,9 @@ arcanine: {
 			return: ["9M"],
 			reversal: ["9M"],
 			roar: ["9M"],
-			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
-			sacredfire: ["9M"],
+			sacredfire: ["9M"], //Añadido
 			safeguard: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
@@ -8510,7 +9301,6 @@ arcanine: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-			teleport: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
@@ -8518,21 +9308,31 @@ arcanine: {
 			toxic: ["9M"],
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
+			//rockclimb //Removido
+			//teleport //Removido
 		},
 	},
 arcaninehisui: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
+			ancientpower: ["9M"], //Añadido
 			bite: ["9M"],
+			block: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
+			burningbulwark: ["9M"], //Añadido
+			burnup: ["9M"], //Añadido
+			captivate: ["9M"], //Añadido
 			closecombat: ["9M"],
+			counter: ["9M"], //Añadido
 			crunch: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			dragonpulse: ["9M"],
+			dragontail: ["9M"], //Añadido
 			ember: ["9M"],
+			endeavor: ["9M"], //Añadido
 			endure: ["9M"],
 			extremespeed: ["9M"],
 			facade: ["9M"],
@@ -8553,20 +9353,24 @@ arcaninehisui: {
 			ironhead: ["9M"],
 			leer: ["9M"],
 			monolith: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			outrage: ["9M"],
 			overheat: ["9M"],
 			powergem: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			quickguard: ["9M"], //Añadido
 			ragingfury: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
 			reversal: ["9M"],
 			roar: ["9M"],
 			rockblast: ["9M"],
+			rockclimb: ["9M"], //Añadido
 			rockslide: ["9M"],
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
+			sacredfire: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
@@ -8659,17 +9463,18 @@ arcaninehisuitotem: {
 poliwag: {
 		learnset: {
 			amnesia: ["9M"],
-			attract: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
+			aquaring: ["9M"], //Añadido
 			bellydrum: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
@@ -8693,7 +9498,9 @@ poliwag: {
 			hypnosis: ["9M"],
 			iceball: ["9M"],
 			icebeam: ["9M"],
+			icespinner: ["9M"], //Añadido
 			icywind: ["9M"],
+			lifedew: ["9M"], //Añadido
 			liquidation: ["9M"],
 			lowkick: ["9M"],
 			mimic: ["9M"],
@@ -8710,6 +9517,7 @@ poliwag: {
 			psywave: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			refresh: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -8723,7 +9531,6 @@ poliwag: {
 			substitute: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
-			sweetkiss: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -8736,12 +9543,18 @@ poliwag: {
 			watersport: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//bulldoze //Removido
+			//captivate //Removido
+			//sweetkiss //Removido
 		},
 	},
 poliwhirl: {
 		learnset: {
 			amnesia: ["9M"],
-			attract: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
+			aquaring: ["9M"], //Añadido
 			bellydrum: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
@@ -8750,10 +9563,10 @@ poliwhirl: {
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
+			counter: ["9M"], //Añadido
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			detect: ["9M"],
@@ -8771,6 +9584,7 @@ poliwhirl: {
 			fissure: ["9M"],
 			fling: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			hail: ["9M"],
 			haze: ["9M"],
@@ -8781,7 +9595,9 @@ poliwhirl: {
 			hypnosis: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
+			icespinner: ["9M"], //Añadido
 			icywind: ["9M"],
+			lifedew: ["9M"], //Añadido
 			liquidation: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
@@ -8802,6 +9618,7 @@ poliwhirl: {
 			psywave: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rocksmash: ["9M"],
@@ -8829,12 +9646,19 @@ poliwhirl: {
 			watersport: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 poliwrath: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
 			amnesia: ["9M"],
-			attract: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
+			aquaring: ["9M"], //Añadido
+			armthrust: ["9M"], //Añadido
+			avalanche: ["9M"], //Añadido
 			batonpass: ["9M"],
 			bellydrum: ["9M"],
 			bide: ["9M"],
@@ -8845,19 +9669,21 @@ poliwrath: {
 			bubblebeam: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
+			chipaway: ["9M"], //Añadido
 			circlethrow: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
+			counter: ["9M"], //Añadido
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
 			darkestlariat: ["9M"],
 			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			dive: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleslap: ["9M"],
 			doubleteam: ["9M"],
@@ -8874,9 +9700,12 @@ poliwrath: {
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
+			forcepalm: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			hail: ["9M"],
+			hammerarm: ["9M"], //Añadido
 			haze: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
@@ -8887,8 +9716,11 @@ poliwrath: {
 			hypnosis: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
+			icespinner: ["9M"], //Añadido
 			icywind: ["9M"],
+			karatechop: ["9M"], //Añadido
 			knockoff: ["9M"],
+			lifedew: ["9M"], //Añadido
 			liquidation: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
@@ -8902,6 +9734,7 @@ poliwrath: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			ourtrage: ["9M"], //Añadido
 			payback: ["9M"],
 			poisonjab: ["9M"],
 			pound: ["9M"],
@@ -8912,8 +9745,10 @@ poliwrath: {
 			psywave: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
+			revenge: ["9M"], //Añadido
 			reversal: ["9M"],
 			rockclimb: ["9M"],
 			rockslide: ["9M"],
@@ -8925,9 +9760,11 @@ poliwrath: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			skullbash: ["9M"],
+			skyuppercut: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			strength: ["9M"],
+			stromthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -8939,33 +9776,40 @@ poliwrath: {
 			taunt: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			upperhand: ["9M"],
-			vacuumwave: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//vacuumwave //Removido
 		},
 	},
 politoed: {
 		learnset: {
 			amnesia: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
+			aquaring: ["9M"], //Añadido
 			attract: ["9M"],
 			bellydrum: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
+			bouncybubble: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
+			counter: ["9M"], //Añadido
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			detect: ["9M"],
@@ -8985,6 +9829,7 @@ politoed: {
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			hail: ["9M"],
@@ -8998,8 +9843,9 @@ politoed: {
 			hypnosis: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
+			icespinner: ["9M"], //Añadido
 			icywind: ["9M"],
-			lifedew: ["9M"],
+			lifedew: ["9M"], //Añadido
 			liquidation: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
@@ -9019,6 +9865,7 @@ politoed: {
 			psychic: ["9M"],
 			psychup: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rocksmash: ["9M"],
@@ -9029,6 +9876,8 @@ politoed: {
 			seismictoss: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			sparkingarea: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"],
@@ -9037,6 +9886,7 @@ politoed: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			uproar: ["9M"],
 			waterfall: ["9M"],
@@ -9044,19 +9894,20 @@ politoed: {
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//captivate //Removido
 		},
 	},
 abra: {
 		learnset: {
+			agility: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			attract: ["9M"],
 			barrier: ["9M"],
-			bide: ["9M"],
-			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			confusion: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -9079,6 +9930,7 @@ abra: {
 			frustration: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
+			grudge: ["9M"], //Añadido
 			guardsplit: ["9M"],
 			guardswap: ["9M"],
 			headbutt: ["9M"],
@@ -9095,6 +9947,7 @@ abra: {
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
+			powershift: ["9M"], //Añadido
 			powerswap: ["9M"],
 			powertrick: ["9M"],
 			protect: ["9M"],
@@ -9116,14 +9969,12 @@ abra: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
-			speedswap: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -9134,9 +9985,6 @@ abra: {
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			thief: ["9M"],
-			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -9144,18 +9992,25 @@ abra: {
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//bide //Removido
+			//bodyslam //Removido
+			//shockwave //Removido
+			//speedswap //Removido
+			//thunderpunch //Removido
+			//thunderwave //Removido
+			//torment //Removido
 		},
 	},
 kadabra: {
 		learnset: {
+			agility: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			attract: ["9M"],
-			bide: ["9M"],
-			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			confusion: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -9182,6 +10037,7 @@ kadabra: {
 			futuresight: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
+			grudge: ["9M"], //Añadido
 			guardswap: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
@@ -9200,6 +10056,7 @@ kadabra: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
+			powershift: ["9M"], //Añadido
 			powerswap: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -9222,14 +10079,12 @@ kadabra: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
-			speedswap: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -9240,9 +10095,6 @@ kadabra: {
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			thief: ["9M"],
-			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -9250,19 +10102,26 @@ kadabra: {
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//bide //Removido
+			//bodyslam //Removido
+			//shockwave //Removido
+			//speedswap //Removido
+			//thunderpunch //Removido
+			//thunderwave //Removido
+			//torment //Removido
 		},
 	},
 alakazam: {
 		learnset: {
+			agility: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			attract: ["9M"],
 			barrier: ["9M"],
-			bide: ["9M"],
-			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			confusion: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -9288,15 +10147,16 @@ alakazam: {
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
+			grudge: ["9M"], //Añadido
 			guardswap: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			icepunch: ["9M"],
 			imprison: ["9M"],
+			instruct: ["9M"], //Añadido
 			irontail: ["9M"],
 			kinesis: ["9M"],
 			knockoff: ["9M"],
@@ -9306,13 +10166,16 @@ alakazam: {
 			magicroom: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			metalsound: ["9M"], //Añadido
 			metronome: ["9M"],
 			mimic: ["9M"],
 			miracleeye: ["9M"],
+			mysticalfire: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
+			powershift: ["9M"], //Añadido
 			powerswap: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -9335,14 +10198,12 @@ alakazam: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snatch: ["9M"],
 			snore: ["9M"],
-			speedswap: ["9M"],
 			storedpower: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -9354,9 +10215,6 @@ alakazam: {
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			thief: ["9M"],
-			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -9364,6 +10222,14 @@ alakazam: {
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//bide //Removido
+			//bodyslam //Removido
+			//gigaimpact //Removido
+			//shockwave //Removido
+			//speedswap //Removido
+			//thunderpunch //Removido
+			//thunderwave //Removido
+			//torment //Removido
 		},
 	},
 machop: {
@@ -9388,13 +10254,11 @@ machop: {
 			doubleteam: ["9M"],
 			dualchop: ["9M"],
 			dynamicpunch: ["9M"],
-			earthquake: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firepunch: ["9M"],
-			fissure: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
@@ -9403,7 +10267,6 @@ machop: {
 			foresight: ["9M"],
 			frustration: ["9M"],
 			headbutt: ["9M"],
-			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			icepunch: ["9M"],
@@ -9423,9 +10286,10 @@ machop: {
 			naturalgift: ["9M"],
 			payback: ["9M"],
 			poisonjab: ["9M"],
-			powertrick: ["9M"],
+			powershift: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			punishment: ["9M"], //Añadido
 			quickguard: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
@@ -9450,6 +10314,7 @@ machop: {
 			smellingsalts: ["9M"],
 			snore: ["9M"],
 			strength: ["9M"],
+			stromthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -9457,18 +10322,24 @@ machop: {
 			swagger: ["9M"],
 			takedown: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			thunderpunch: ["9M"],
-			tickle: ["9M"],
 			toxic: ["9M"],
 			vacuumwave: ["9M"],
 			vitalthrow: ["9M"],
 			wakeupslap: ["9M"],
 			workup: ["9M"],
+			//earthquake //Removido
+			//fissure //Removido
+			//heavyslam //Removido
+			//powertrick //Removido
+			//tickle //Removido
 		},
 	},
 machoke: {
 		learnset: {
 			attract: ["9M"],
+			batonpass: ["9M"], //Añadido
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -9484,6 +10355,7 @@ machoke: {
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dualchop: ["9M"],
 			dynamicpunch: ["9M"],
@@ -9493,7 +10365,6 @@ machoke: {
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firepunch: ["9M"],
-			fissure: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
@@ -9501,6 +10372,7 @@ machoke: {
 			focuspunch: ["9M"],
 			foresight: ["9M"],
 			frustration: ["9M"],
+			hammerarm: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
@@ -9521,8 +10393,10 @@ machoke: {
 			naturalgift: ["9M"],
 			payback: ["9M"],
 			poisonjab: ["9M"],
+			powershift: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			punishment: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
@@ -9545,6 +10419,7 @@ machoke: {
 			snore: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
+			stromthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -9552,19 +10427,25 @@ machoke: {
 			swagger: ["9M"],
 			takedown: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
 			vacuumwave: ["9M"],
 			vitalthrow: ["9M"],
 			wakeupslap: ["9M"],
 			workup: ["9M"],
+			//fissure //Removido
 		},
 	},
 machamp: {
 		learnset: {
+			armthrust: ["9M"], //Añadido
 			assurance: ["9M"],
 			attract: ["9M"],
+			avalanche: ["9M"], //Añadido
+			batonpass: ["9M"], //Añadido
 			bide: ["9M"],
+			block: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
@@ -9575,12 +10456,13 @@ machamp: {
 			confide: ["9M"],
 			counter: ["9M"],
 			crosschop: ["9M"],
-			crosspoison: ["9M"],
 			curse: ["9M"],
 			darkestlariat: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dualchop: ["9M"],
@@ -9600,12 +10482,12 @@ machamp: {
 			foresight: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
+			hammerarm: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
-			hyperbeam: ["9M"],
 			icepunch: ["9M"],
 			incinerate: ["9M"],
 			karatechop: ["9M"],
@@ -9622,8 +10504,10 @@ machamp: {
 			naturalgift: ["9M"],
 			payback: ["9M"],
 			poisonjab: ["9M"],
+			powershift: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			punishment: ["9M"], //Añadido
 			quickguard: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
@@ -9636,7 +10520,9 @@ machamp: {
 			rockclimb: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
+			rockthrow: ["9M"], //Añadido
 			rocktomb: ["9M"],
+			rockwreaker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			round: ["9M"],
 			scaryface: ["9M"],
@@ -9646,9 +10532,11 @@ machamp: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			stealthrock: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
+			stromthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -9656,26 +10544,27 @@ machamp: {
 			swagger: ["9M"],
 			takedown: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			throatchop: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
+			upperhand: ["9M"], //Añadido
 			vacuumwave: ["9M"],
 			vitalthrow: ["9M"],
 			wakeupslap: ["9M"],
 			wideguard: ["9M"],
 			workup: ["9M"],
+			//crosspoison //Removido
+			//hyperbeam //Removido
 		},
 	},
 bellsprout: {
 		learnset: {
 			acid: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
-			bide: ["9M"],
 			bind: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
@@ -9686,7 +10575,6 @@ bellsprout: {
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
-			flash: ["9M"],
 			frustration: ["9M"],
 			gastroacid: ["9M"],
 			gigadrain: ["9M"],
@@ -9727,10 +10615,11 @@ bellsprout: {
 			sludgewave: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
+			stockpile: ["9M"], //Añadido
 			strengthsap: ["9M"],
 			stunspore: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
@@ -9749,19 +10638,21 @@ bellsprout: {
 			worryseed: ["9M"],
 			wrap: ["9M"],
 			wringout: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//captivate //Removido
+			//flash //Removido
+			//suckerpunch //Removido
 		},
 	},
 weepinbell: {
 		learnset: {
 			acid: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
-			bide: ["9M"],
 			bind: ["9M"],
 			bodyslam: ["9M"],
 			bugbite: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -9811,11 +10702,13 @@ weepinbell: {
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smog: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
+			stockpile: ["9M"], //Añadido
 			stunspore: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
@@ -9833,19 +10726,21 @@ weepinbell: {
 			worryseed: ["9M"],
 			wrap: ["9M"],
 			wringout: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 victreebel: {
 		learnset: {
 			acid: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bodyslam: ["9M"],
 			bugbite: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
@@ -9880,6 +10775,7 @@ victreebel: {
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
+			poisonfang: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			poisonpowder: ["9M"],
 			pounce: ["9M"],
@@ -9887,9 +10783,11 @@ victreebel: {
 			protect: ["9M"],
 			rage: ["9M"],
 			razorleaf: ["9M"],
+			recycle: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rototiller: ["9M"], //Añadido
 			round: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
@@ -9898,13 +10796,14 @@ victreebel: {
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smog: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
 			spitup: ["9M"],
-			stockpile: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stunspore: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swallow: ["9M"],
@@ -9922,6 +10821,9 @@ victreebel: {
 			weatherball: ["9M"],
 			worryseed: ["9M"],
 			wrap: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 tentacool: {
@@ -9931,34 +10833,34 @@ tentacool: {
 			acidspray: ["9M"],
 			acupressure: ["9M"],
 			aquaring: ["9M"],
-			attract: ["9M"],
-			aurorabeam: ["9M"],
 			barrier: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
-			blizzard: ["9M"],
 			brine: ["9M"],
 			brutalswing: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			constrict: ["9M"],
 			crosspoison: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			flashcannon: ["9M"], //Añadido
 			flipturn: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gunkshot: ["9M"],
+			gyroball: ["9M"], //Añadido
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -9966,9 +10868,11 @@ tentacool: {
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
 			icebeam: ["9M"],
+			icespinner: ["9M"], //Añadido
 			icywind: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			liquidation: ["9M"],
 			magiccoat: ["9M"],
 			megadrain: ["9M"],
@@ -9976,6 +10880,7 @@ tentacool: {
 			mirrorcoat: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			payback: ["9M"],
 			poisonjab: ["9M"],
@@ -9997,6 +10902,7 @@ tentacool: {
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			substitute: ["9M"],
 			supersonic: ["9M"],
@@ -10007,8 +10913,9 @@ tentacool: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
-			throatchop: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			tickle: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			venoshock: ["9M"],
@@ -10018,6 +10925,11 @@ tentacool: {
 			whirlpool: ["9M"],
 			wrap: ["9M"],
 			wringout: ["9M"],
+			//attract //Removido
+			//aurorabeam //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//throatchop //Removido
 		},
 	},
 tentacruel: {
@@ -10025,34 +10937,38 @@ tentacruel: {
 			acid: ["9M"],
 			acidarmor: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
 			barrier: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
-			blizzard: ["9M"],
+			bodyslam: ["9M"], //Añadido
 			brine: ["9M"],
 			brutalswing: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
+			calmmind: ["9M"], //Añadido
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			constrict: ["9M"],
 			corrosivegas: ["9M"],
 			crosspoison: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			flashcannon: ["9M"], //Añadido
 			flipturn: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
+			gyroball: ["9M"], //Añadido
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -10061,23 +10977,29 @@ tentacruel: {
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
+			icespinner: ["9M"], //Añadido
 			icywind: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			liquidation: ["9M"],
 			magiccoat: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megadrain: ["9M"],
 			mimic: ["9M"],
 			mirrorcoat: ["9M"],
 			mortalspin: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			payback: ["9M"],
+			poisongas: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			poisonsting: ["9M"],
 			pounce: ["9M"],
 			protect: ["9M"],
+			psywave: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			reflect: ["9M"],
@@ -10090,11 +11012,13 @@ tentacruel: {
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
+			simplebeam: ["9M"], //Añadido
 			skittersmack: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			substitute: ["9M"],
 			supersonic: ["9M"],
@@ -10105,9 +11029,11 @@ tentacruel: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
-			throatchop: ["9M"],
+			thunderwave: ["9M"], //Añadido
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
+			trick: ["9M"], //Añadido
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			waterfall: ["9M"],
@@ -10117,19 +11043,22 @@ tentacruel: {
 			whirlpool: ["9M"],
 			wrap: ["9M"],
 			wringout: ["9M"],
+			//attract //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//throatchop //Removido
 		},
 	},
 geodude: {
 		learnset: {
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			autotomize: ["9M"],
 			bide: ["9M"],
 			block: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			brutalswing: ["9M"], //Añadido
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -10171,6 +11100,7 @@ geodude: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rockblast: ["9M"],
@@ -10187,7 +11117,6 @@ geodude: {
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
-			selfdestruct: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
@@ -10207,11 +11136,14 @@ geodude: {
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
 			wideguard: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//selfdestruct //Removido
 		},
 	},
 geodudealola: {
 		learnset: {
-			attract: ["9M"],
+			ancientpower: ["9M"], //Añadido
 			autotomize: ["9M"],
 			bide: ["9M"],
 			block: ["9M"],
@@ -10247,6 +11179,7 @@ geodudealola: {
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			iondeluge: ["9M"], //Añadido
 			irondefense: ["9M"],
 			magnetrise: ["9M"],
 			meteorbeam: ["9M"],
@@ -10271,6 +11204,7 @@ geodudealola: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spark: ["9M"],
 			stealthrock: ["9M"],
 			stoneedge: ["9M"],
@@ -10292,25 +11226,27 @@ geodudealola: {
 			wideguard: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
 		},
 	},
 graveler: {
 		learnset: {
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			brutalswing: ["9M"], //Añadido
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
@@ -10322,8 +11258,8 @@ graveler: {
 			firepunch: ["9M"],
 			fissure: ["9M"],
 			flamethrower: ["9M"],
+			flamewheel: ["9M"], //Añadido
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gyroball: ["9M"],
@@ -10348,6 +11284,7 @@ graveler: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rockblast: ["9M"],
@@ -10364,11 +11301,11 @@ graveler: {
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
-			selfdestruct: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
 			stealthrock: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -10383,12 +11320,16 @@ graveler: {
 			terablast: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//focusblast //Removido
+			//selfdestruct //Removido
 		},
 	},
 graveleralola: {
 		learnset: {
 			allyswitch: ["9M"],
-			attract: ["9M"],
+			ancientpower: ["9M"], //Añadido
 			bide: ["9M"],
 			block: ["9M"],
 			bodyslam: ["9M"],
@@ -10403,6 +11344,7 @@ graveleralola: {
 			dig: ["9M"],
 			discharge: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
@@ -10469,25 +11411,27 @@ graveleralola: {
 			toxic: ["9M"],
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
+			//attract //Removido
 		},
 	},
 golem: {
 		learnset: {
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			brutalswing: ["9M"], //Añadido
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
@@ -10499,8 +11443,8 @@ golem: {
 			firepunch: ["9M"],
 			fissure: ["9M"],
 			flamethrower: ["9M"],
+			flamewheel: ["9M"], //Añadido
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
@@ -10512,7 +11456,6 @@ golem: {
 			heavyslam: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
-			hyperbeam: ["9M"],
 			incinerate: ["9M"],
 			irondefense: ["9M"],
 			ironhead: ["9M"],
@@ -10529,6 +11472,7 @@ golem: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
@@ -10546,12 +11490,12 @@ golem: {
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
-			selfdestruct: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
 			stealthrock: ["9M"],
 			steamroller: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -10566,12 +11510,17 @@ golem: {
 			terablast: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//focusblast //Removido
+			//hyperbeam //Removido
+			//selfdestruct //Removido
 		},
 	},
 golemalola: {
 		learnset: {
 			allyswitch: ["9M"],
-			attract: ["9M"],
+			ancientpower: ["9M"], //Añadido
 			bide: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
@@ -10587,6 +11536,7 @@ golemalola: {
 			dig: ["9M"],
 			discharge: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
@@ -10613,6 +11563,7 @@ golemalola: {
 			hyperbeam: ["9M"],
 			irondefense: ["9M"],
 			ironhead: ["9M"],
+			magneticflux: ["9M"], //Añadido
 			magnetrise: ["9M"],
 			megapunch: ["9M"],
 			meteorbeam: ["9M"],
@@ -10620,7 +11571,9 @@ golemalola: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturepower: ["9M"],
+			paraboliccharge: ["9M"], //Añadido
 			protect: ["9M"],
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
@@ -10639,14 +11592,13 @@ golemalola: {
 			smackdown: ["9M"],
 			snore: ["9M"],
 			spark: ["9M"],
+			spotlight: ["9M"], //Añadido
 			stealthrock: ["9M"],
-			steamroller: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			supercellslam: ["9M"],
-			superpower: ["9M"],
 			swagger: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
@@ -10659,19 +11611,25 @@ golemalola: {
 			toxic: ["9M"],
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
+			//attract //Removido
+			//steamroller //Removido
+			//superpower //Removido
 		},
 	},
 ponyta: {
 		learnset: {
 			agility: ["9M"],
 			allyswitch: ["9M"],
+			assist: ["9M"], //Añadido
 			attract: ["9M"],
-			bide: ["9M"],
+			babydolleyes: ["9M"], //Añadido
+			blazekick: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			captivate: ["9M"],
+			burnup: ["9M"], //Añadido
 			charm: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
@@ -10689,6 +11647,7 @@ ponyta: {
 			frustration: ["9M"],
 			growl: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -10703,6 +11662,7 @@ ponyta: {
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"],
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
@@ -10710,7 +11670,9 @@ ponyta: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			secretpower: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
@@ -10730,52 +11692,82 @@ ponyta: {
 			toxic: ["9M"],
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
+			//bide //Removido
+			//captivate //Removido
 		},
 	},
 ponytagalar: {
 		learnset: {
 			agility: ["9M"],
 			allyswitch: ["9M"],
+			assist: ["9M"], //Añadido
 			attract: ["9M"],
+			aurorabeam: ["9M"], //Añadido
+			babydolleyes: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			calmmind: ["9M"],
+			calmmind: ["9M"], //Añadido
 			charm: ["9M"],
 			confusion: ["9M"],
+			counter: ["9M"], //Añadido
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
+			drainingkiss: ["9M"], //Añadido
 			endure: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fairywind: ["9M"],
+			faketears: ["9M"], //Añadido
 			futuresight: ["9M"],
+			grassknot: ["9M"], //Añadido
 			growl: ["9M"],
+			healblock: ["9M"], //Añadido
 			healingwish: ["9M"],
 			healpulse: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			highhorsepower: ["9M"],
 			horndrill: ["9M"],
+			hypervoice: ["9M"], //Añadido
 			hypnosis: ["9M"],
+			icebeam: ["9M"], //Añadido
 			imprison: ["9M"],
 			irontail: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			lowkick: ["9M"],
+			mefirst: ["9M"], //Añadido
 			morningsun: ["9M"],
 			mysticalfire: ["9M"],
+			naturepower: ["9M"], //Añadido
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
+			psychicnoise: ["9M"], //Añadido
+			psychoshift: ["9M"], //Añadido
+			psyshiedbash: ["9M"], //Añadido
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
+			shockwave: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			solarbeam: ["9M"], //Añadido
+			speedswap: ["9M"], //Añadido
 			stomp: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
+			sweetscent: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailglow: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
+			teleport: ["9M"], //Añadido
+			terrainpulse: ["9M"], //Añadido
 			thrash: ["9M"],
 			thunderbolt: ["9M"],
 			wildcharge: ["9M"],
@@ -10786,14 +11778,17 @@ rapidash: {
 		learnset: {
 			agility: ["9M"],
 			allyswitch: ["9M"],
+			assist: ["9M"], //Añadido
 			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			batonpass: ["9M"],
-			bide: ["9M"],
+			blazekick: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			captivate: ["9M"],
+			burnup: ["9M"], //Añadido
 			charm: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
@@ -10802,6 +11797,7 @@ rapidash: {
 			echoedvoice: ["9M"],
 			ember: ["9M"],
 			endure: ["9M"],
+			extremespeed: ["9M"], //Añadido
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firespin: ["9M"],
@@ -10814,6 +11810,7 @@ rapidash: {
 			gigaimpact: ["9M"],
 			growl: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -10823,30 +11820,39 @@ rapidash: {
 			incinerate: ["9M"],
 			inferno: ["9M"],
 			irontail: ["9M"],
+			jumpkick: ["9M"], //Añadido
 			lowkick: ["9M"],
+			lunge: ["9M"], //Añadido
+			magicaltorque: ["9M"], //Añadido
 			megahorn: ["9M"],
 			mimic: ["9M"],
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"],
 			overheat: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
-			poisonjab: ["9M"],
 			protect: ["9M"],
+			psychic: ["9M"], //Añadido
 			quickattack: ["9M"],
 			rage: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			round: ["9M"],
+			sacredfire: ["9M"], //Añadido
+			sandattack: ["9M"], //Añadido
 			scorchingsands: ["9M"],
 			secretpower: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			solarblade: ["9M"],
+			spark: ["9M"], //Añadido
 			stomp: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -10861,51 +11867,77 @@ rapidash: {
 			toxic: ["9M"],
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
+			//bide //Removido
+			//captivate //Removido
+			//poisonjab //Removido
 		},
 	},
 rapidashgalar: {
 		learnset: {
 			agility: ["9M"],
 			allyswitch: ["9M"],
+			assist: ["9M"], //Añadido
 			attract: ["9M"],
+			aurasphere: ["9M"], //Añadido
+			aurorabeam: ["9M"], //Añadido
+			babydolleyes: ["9M"], //Añadido
 			batonpass: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			calmmind: ["9M"],
+			calmmind: ["9M"], //Añadido
 			charm: ["9M"],
 			confusion: ["9M"],
+			counter: ["9M"], //Añadido
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
+			drainingkiss: ["9M"], //Añadido
+			dreameater: ["9M"], //Añadido
 			drillrun: ["9M"],
 			endure: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fairywind: ["9M"],
+			fireblast: ["9M"], //Añadido
+			fleurcannon: ["9M"], //Añadido
+			focusblast: ["9M"], //Añadido
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
+			gravity: ["9M"], //Añadido
 			growl: ["9M"],
 			healingwish: ["9M"],
 			healpulse: ["9M"],
+			heatswap: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			hyperbeam: ["9M"],
 			imprison: ["9M"],
 			irontail: ["9M"],
 			lowkick: ["9M"],
+			luminacrash: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
 			magicroom: ["9M"],
 			megahorn: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
+			mistyexplosion: ["9M"], //Añadido
 			mistyterrain: ["9M"],
 			mysticalfire: ["9M"],
+			nigthmare: ["9M"], //Añadido
 			payday: ["9M"],
 			playrough: ["9M"],
+			powergem: ["9M"], //Añadido
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psychicterrain: ["9M"],
 			psychocut: ["9M"],
 			quickattack: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
+			roleplay: ["9M"], //Añadido
 			round: ["9M"],
 			scorchingsands: ["9M"],
+			simplebeam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
@@ -10917,8 +11949,10 @@ rapidashgalar: {
 			tackle: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
+			telekinesis: ["9M"], //Añadido
 			throatchop: ["9M"],
 			thunderbolt: ["9M"],
+			triattack: ["9M"], //Añadido
 			trickroom: ["9M"],
 			wildcharge: ["9M"],
 			wonderroom: ["9M"],
@@ -10930,19 +11964,14 @@ slowpoke: {
 			afteryou: ["9M"],
 			amnesia: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
-			avalanche: ["9M"],
+			barrier: ["9M"], //Añadido
 			belch: ["9M"],
 			bellydrum: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
-			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
@@ -10976,7 +12005,6 @@ slowpoke: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"],
-			incinerate: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
@@ -10989,6 +12017,7 @@ slowpoke: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			payday: ["9M"],
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -11014,7 +12043,7 @@ slowpoke: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			stomp: ["9M"],
+			stockpile: ["9M"], //Añadido
 			storedpower: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -11023,13 +12052,12 @@ slowpoke: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
-			triattack: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
 			waterfall: ["9M"],
@@ -11041,20 +12069,27 @@ slowpoke: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//avalanche //Removido
+			//block //Removido
+			//brine //Removido
+			//bulldoze //Removido
+			//captivate //Removido
+			//incinerate //Removido
+			//stomp //Removido
+			//thunderwave //Removido
+			//triattack //Removido
 		},
 	},
 slowpokegalar: {
 		learnset: {
-			acid: ["9M"],
 			amnesia: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
+			barrier: ["9M"], //Añadido
 			belch: ["9M"],
 			bellydrum: ["9M"],
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
-			brine: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			chillingwater: ["9M"],
@@ -11086,6 +12121,8 @@ slowpokegalar: {
 			liquidation: ["9M"],
 			mudshot: ["9M"],
 			payday: ["9M"],
+			powershift: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -11093,6 +12130,7 @@ slowpokegalar: {
 			psychup: ["9M"],
 			psyshock: ["9M"],
 			raindance: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
@@ -11103,6 +12141,7 @@ slowpokegalar: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stomp: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
@@ -11110,9 +12149,10 @@ slowpokegalar: {
 			surf: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
-			thunderwave: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			triattack: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -11123,31 +12163,27 @@ slowpokegalar: {
 			wonderroom: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//acid //Removido
+			//attract //Removido
+			//block //Removido
+			//brine //Removido
 		},
 	},
 slowbro: {
 		learnset: {
-			aerialace: ["9M"],
 			afteryou: ["9M"],
 			amnesia: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
-			avalanche: ["9M"],
+			barrier: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
-			brickbreak: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
-			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
 			disable: ["9M"],
@@ -11156,9 +12192,10 @@ slowbro: {
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
-			dynamicpunch: ["9M"],
+			drillrun: ["9M"], //Añadido
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
+			encore: ["9M"], //Añadido
 			endure: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
@@ -11171,7 +12208,6 @@ slowbro: {
 			focuspunch: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
@@ -11204,6 +12240,7 @@ slowbro: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			payday: ["9M"],
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -11219,7 +12256,6 @@ slowbro: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rocksmash: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			scald: ["9M"],
@@ -11233,7 +12269,7 @@ slowbro: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			stomp: ["9M"],
+			stockpile: ["9M"], //Añadido
 			storedpower: ["9M"],
 			strength: ["9M"],
 			submission: ["9M"],
@@ -11243,13 +12279,12 @@ slowbro: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
-			triattack: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
 			waterfall: ["9M"],
@@ -11262,6 +12297,21 @@ slowbro: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//aerialace //Removido
+			//attract //Removido
+			//avalanche //Removido
+			//block //Removido
+			//brickbreak //Removido
+			//brine //Removido
+			//bulldoze //Removido
+			//captivate //Removido
+			//counter //Removido
+			//dynamicpunch //Removido
+			//furycutter //Removido
+			//rocksmash //Removido
+			//stomp //Removido
+			//thunderwave //Removido
+			//triattack //Removido
 		},
 	},
 slowbrogalar: {
@@ -11269,14 +12319,11 @@ slowbrogalar: {
 			acid: ["9M"],
 			acidspray: ["9M"],
 			amnesia: ["9M"],
-			attract: ["9M"],
-			avalanche: ["9M"],
+			barrier: ["9M"], //Añadido
 			blizzard: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			brine: ["9M"],
-			brutalswing: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			chillingwater: ["9M"],
@@ -11287,7 +12334,9 @@ slowbrogalar: {
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			drainpunch: ["9M"],
+			drillrun: ["9M"], //Añadido
 			earthquake: ["9M"],
+			encore: ["9M"], //Añadido
 			endure: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
@@ -11295,6 +12344,7 @@ slowbrogalar: {
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
+			focuspunch: ["9M"], //Añadido
 			foulplay: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
@@ -11310,7 +12360,6 @@ slowbrogalar: {
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
-			icefang: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"],
@@ -11323,6 +12372,7 @@ slowbrogalar: {
 			metronome: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
+			mudslap: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			payday: ["9M"],
 			poisonjab: ["9M"],
@@ -11347,11 +12397,13 @@ slowbrogalar: {
 			skillswap: ["9M"],
 			slackoff: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			spikecannon: ["9M"], //Añadido
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -11360,11 +12412,11 @@ slowbrogalar: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			venoshock: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
@@ -11375,6 +12427,12 @@ slowbrogalar: {
 			wonderroom: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//avalanche //Removido
+			//brine //Removido
+			//brutalswing //Removido
+			//icefang //Removido
+			//thunderwave //Removido
 		},
 	},
 slowking: {
@@ -11382,50 +12440,48 @@ slowking: {
 			afteryou: ["9M"],
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
+			aquaring: ["9M"], //Añadido
 			aquatail: ["9M"],
-			attract: ["9M"],
-			avalanche: ["9M"],
+			barrier: ["9M"], //Añadido
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brine: ["9M"],
-			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			chillyreception: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
 			disable: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			dragontail: ["9M"],
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
-			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
+			encore: ["9M"], //Añadido
+			endeavor: ["9M"], //Añadido
 			endure: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
-			firepunch: ["9M"],
 			flamethrower: ["9M"],
 			flash: ["9M"],
+			flashcannon: ["9M"], //Añadido
+			flatter: ["9M"], //Añadido
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
+			foresight: ["9M"], //Añadido
 			foulplay: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			gravity: ["9M"], //Añadido
 			growl: ["9M"],
 			hail: ["9M"],
 			headbutt: ["9M"],
@@ -11434,17 +12490,17 @@ slowking: {
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
+			hypnosis: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"],
-			incinerate: ["9M"],
 			irondefense: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
-			magiccoat: ["9M"],
+			magiccoat: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
@@ -11457,6 +12513,9 @@ slowking: {
 			nightmare: ["9M"],
 			payday: ["9M"],
 			powergem: ["9M"],
+			powershift: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -11473,8 +12532,7 @@ slowking: {
 			rest: ["9M"],
 			return: ["9M"],
 			rockslide: ["9M"],
-			rocksmash: ["9M"],
-			rocktomb: ["9M"],
+			roleplay: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			scald: ["9M"],
@@ -11487,6 +12545,7 @@ slowking: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			stockpile: ["9M"], //Añadido
 			storedpower: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -11495,11 +12554,10 @@ slowking: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			telekinesis: ["9M"],
 			terablast: ["9M"],
-			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -11514,6 +12572,21 @@ slowking: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//avalanche //Removido
+			//block //Removido
+			//bulldoze //Removido
+			//captivate //Removido
+			//counter //Removido
+			//dragontail //Removido
+			//dynamicpunch //Removido
+			//firepunch //Removido
+			//furycutter //Removido
+			//incinerate //Removido
+			//rocksmash //Removido
+			//rocktomb //Removido
+			//thunderpunch //Removido
+			//thunderwave //Removido
 		},
 	},
 slowkingfeudal: {
@@ -11522,7 +12595,6 @@ slowkingfeudal: {
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			blizzard: ["9M"],
 			block: ["9M"],
@@ -11543,10 +12615,8 @@ slowkingfeudal: {
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			dragontail: ["9M"],
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
-			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
 			endure: ["9M"],
@@ -11554,7 +12624,6 @@ slowkingfeudal: {
 			extrasensory: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
-			firepunch: ["9M"],
 			flamethrower: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
@@ -11578,7 +12647,7 @@ slowkingfeudal: {
 			icepunch: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"],
-			incinerate: ["9M"],
+			instruct: ["9M"], //Añadido
 			irondefense: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
@@ -11623,13 +12692,18 @@ slowkingfeudal: {
 			scald: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			selfdestruct: ["9M"], //Añadido
 			shadowball: ["9M"],
+			sheercold: ["9M"], //Añadido
 			signalbeam: ["9M"],
+			simplebeam: ["9M"], //Añadido
 			skillswap: ["9M"],
 			slackoff: ["9M"],
 			sleeptalk: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			snowscape: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			storedpower: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -11657,6 +12731,11 @@ slowkingfeudal: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//dragontail //Removido
+			//dynamicpunch //Removido
+			//firepunch //Removido
+			//incinerate //Removido
 		},
 	},
 slowkinggalar: {
@@ -11664,36 +12743,42 @@ slowkinggalar: {
 			acid: ["9M"],
 			acidspray: ["9M"],
 			amnesia: ["9M"],
-			attract: ["9M"],
-			avalanche: ["9M"],
+			barrier: ["9M"], //Añadido
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			brine: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			chillingwater: ["9M"],
 			chillyreception: ["9M"],
+			clearsmog: ["9M"], //Añadido
 			confusion: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
 			disable: ["9M"],
 			dive: ["9M"],
 			drainpunch: ["9M"],
+			dreameater: ["9M"], //Añadido
 			earthquake: ["9M"],
 			eeriespell: ["9M"],
+			encore: ["9M"], //Añadido
+			endeavor: ["9M"], //Añadido
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
-			firepunch: ["9M"],
 			flamethrower: ["9M"],
+			flashcannon: ["9M"], //Añadido
+			flatter: ["9M"], //Añadido
 			fling: ["9M"],
 			focusblast: ["9M"],
+			foresight: ["9M"], //Añadido
 			foulplay: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			gravity: ["9M"], //Añadido
 			growl: ["9M"],
 			gunkshot: ["9M"],
 			hail: ["9M"],
@@ -11704,6 +12789,7 @@ slowkinggalar: {
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
+			hypnosis: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
@@ -11712,16 +12798,19 @@ slowkinggalar: {
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
-			lowsweep: ["9M"],
+			magiccoat: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
+			mudslap: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			payday: ["9M"],
 			poisonjab: ["9M"],
+			poisonpowder: ["9M"], //Añadido
 			powergem: ["9M"],
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -11732,6 +12821,7 @@ slowkinggalar: {
 			raindance: ["9M"],
 			razorshell: ["9M"],
 			rest: ["9M"],
+			roleplay: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			scald: ["9M"],
@@ -11740,6 +12830,7 @@ slowkinggalar: {
 			skillswap: ["9M"],
 			slackoff: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			snarl: ["9M"],
@@ -11756,8 +12847,7 @@ slowkinggalar: {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
-			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			triattack: ["9M"],
@@ -11772,11 +12862,19 @@ slowkinggalar: {
 			wonderroom: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//avalanche //Removido
+			//brine //Removido
+			//firepunch //Removido
+			//lowsweep //Removido
+			//thunderpunch //Removido
+			//thunderwave //Removido
 		},
 	},
 magnemite: {
 		learnset: {
-			bide: ["9M"],
+			autotomize: ["9M"], //Añadido
+			barrier: ["9M"], //Añadido
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
@@ -11812,6 +12910,7 @@ magnemite: {
 			mimic: ["9M"],
 			mirrorshot: ["9M"],
 			naturalgift: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
 			rage: ["9M"],
@@ -11850,10 +12949,14 @@ magnemite: {
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//bide //Removido
 		},
 	},
 magneton: {
 		learnset: {
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			autotomize: ["9M"], //Añadido
+			barrier: ["9M"], //Añadido
 			bide: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
@@ -11873,7 +12976,6 @@ magneton: {
 			flash: ["9M"],
 			flashcannon: ["9M"],
 			frustration: ["9M"],
-			gigaimpact: ["9M"],
 			gravity: ["9M"],
 			gyroball: ["9M"],
 			headbutt: ["9M"],
@@ -11892,6 +12994,7 @@ magneton: {
 			mimic: ["9M"],
 			mirrorshot: ["9M"],
 			naturalgift: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
 			rage: ["9M"],
@@ -11925,6 +13028,7 @@ magneton: {
 			terablast: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
+			thundercage: ["9M"], //Añadido
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
@@ -11932,12 +13036,15 @@ magneton: {
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//gigaimpact //Removido
 		},
 	},
 magnezone: {
 		learnset: {
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			allyswitch: ["9M"],
-			barrier: ["9M"],
+			autotomize: ["9M"], //Añadido
+			barrier: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			charge: ["9M"],
@@ -11977,6 +13084,7 @@ magnezone: {
 			mirrorcoat: ["9M"],
 			mirrorshot: ["9M"],
 			naturalgift: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
 			raindance: ["9M"],
@@ -12010,6 +13118,7 @@ magnezone: {
 			terablast: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
+			thundercage: ["9M"], //Añadido
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
@@ -12026,13 +13135,9 @@ farfetchd: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
 			bodyslam: ["9M"],
 			bravebird: ["9M"],
 			brutalswing: ["9M"],
-			captivate: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
 			covet: ["9M"],
@@ -12041,9 +13146,11 @@ farfetchd: {
 			defog: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
+			drillpeck: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
-			endure: ["9M"],
+			encore: ["9M"], //Añadido
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			featherdance: ["9M"],
@@ -12053,7 +13160,6 @@ farfetchd: {
 			flail: ["9M"],
 			fly: ["9M"],
 			focusenergy: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
 			furycutter: ["9M"],
@@ -12067,7 +13173,6 @@ farfetchd: {
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			leafblade: ["9M"],
-			leer: ["9M"],
 			mimic: ["9M"],
 			mirrormove: ["9M"],
 			mudslap: ["9M"],
@@ -12077,19 +13182,20 @@ farfetchd: {
 			peck: ["9M"],
 			pluck: ["9M"],
 			poisonjab: ["9M"],
+			pounce: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
 			razorleaf: ["9M"],
 			razorwind: ["9M"],
-			reflect: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
 			revenge: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sacredsword: ["9M"], //Añadido
 			sandattack: ["9M"],
 			secretpower: ["9M"],
 			simplebeam: ["9M"],
@@ -12111,13 +13217,21 @@ farfetchd: {
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			trumpcard: ["9M"],
-			twister: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			whirlwind: ["9M"],
 			wish: ["9M"],
 			workup: ["9M"],
 			yawn: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//bide //Removido
+			//captivate //Removido
+			//endure //Removido
+			//foresight //Removido
+			//leer //Removido
+			//reflect //Removido
+			//twister //Removido
+			//uproar //Removido
 		},
 	},
 farfetchdgalar: {
@@ -12128,16 +13242,19 @@ farfetchdgalar: {
 			bravebird: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
+			bulkup: ["9M"], //Añadido
 			closecombat: ["9M"],
+			coaching: ["9M"], //Añadido
 			counter: ["9M"],
-			covet: ["9M"],
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			falseswipe: ["9M"], //Añadido
 			feint: ["9M"],
 			finalgambit: ["9M"],
 			flail: ["9M"],
@@ -12153,12 +13270,14 @@ farfetchdgalar: {
 			protect: ["9M"],
 			quickattack: ["9M"],
 			quickguard: ["9M"],
+			rage: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			revenge: ["9M"],
 			rocksmash: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sacredsword: ["9M"], //Añadido
 			sandattack: ["9M"],
 			simplebeam: ["9M"],
 			skyattack: ["9M"],
@@ -12173,6 +13292,7 @@ farfetchdgalar: {
 			swordsdance: ["9M"],
 			throatchop: ["9M"],
 			workup: ["9M"],
+			//covet //Removido
 		},
 	},
 sirfetchd: {
@@ -12232,17 +13352,18 @@ doduo: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
+			beatup: ["9M"], //Añadido
 			bodyslam: ["9M"],
+			bounce: ["9M"], //Añadido
 			bravebird: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
+			dig: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublehit: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drillpeck: ["9M"],
 			echoedvoice: ["9M"],
@@ -12255,6 +13376,7 @@ doduo: {
 			fly: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
+			furycutter: ["9M"], //Añadido
 			growl: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -12281,6 +13403,7 @@ doduo: {
 			return: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			secretpower: ["9M"],
 			skullbash: ["9M"],
 			skyattack: ["9M"],
@@ -12304,6 +13427,10 @@ doduo: {
 			uproar: ["9M"],
 			whirlwind: ["9M"],
 			workup: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//bide //Removido
+			//captivate //Removido
 		},
 	},
 dodrio: {
@@ -12313,17 +13440,18 @@ dodrio: {
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
+			beatup: ["9M"], //Añadido
 			bodyslam: ["9M"],
+			bounce: ["9M"], //Añadido
 			bravebird: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
+			dig: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublehit: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drillpeck: ["9M"],
 			drillrun: ["9M"],
@@ -12335,16 +13463,17 @@ dodrio: {
 			fly: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
+			furycutter: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			growl: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
-			hyperbeam: ["9M"],
 			jumpkick: ["9M"],
 			knockoff: ["9M"],
 			lowkick: ["9M"],
 			lunge: ["9M"],
+			megakick: ["9M"], //Añadido
 			mimic: ["9M"],
 			mirrormove: ["9M"],
 			mudslap: ["9M"],
@@ -12362,8 +13491,10 @@ dodrio: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			skullbash: ["9M"],
@@ -12385,14 +13516,20 @@ dodrio: {
 			thief: ["9M"],
 			thrash: ["9M"],
 			throatchop: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			triattack: ["9M"],
 			tripeck: ["9M"],
 			uproar: ["9M"],
+			uturn: ["9M"], //Añadido
 			whirlwind: ["9M"],
 			workup: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//bide //Removido
+			//captivate //Removido
+			//hyperbeam //Removido
+			//torment //Removido
 		},
 	},
 seel: {
@@ -12401,15 +13538,13 @@ seel: {
 			aquaring: ["9M"],
 			aquatail: ["9M"],
 			attract: ["9M"],
-			aurorabeam: ["9M"],
-			avalanche: ["9M"],
+			aurorabeam: ["9M"], //Añadido
 			belch: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brine: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -12427,6 +13562,7 @@ seel: {
 			fakeout: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			growl: ["9M"],
 			hail: ["9M"],
@@ -12443,16 +13579,22 @@ seel: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lick: ["9M"],
+			liquidation: ["9M"], //Añadido
 			megahorn: ["9M"],
 			mimic: ["9M"],
 			muddywater: ["9M"],
+			mudshot: ["9M"], //Añadido
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			payday: ["9M"],
 			peck: ["9M"],
 			perishsong: ["9M"],
+			playnice: ["9M"], //Añadido
 			protect: ["9M"],
+			psychup: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			round: ["9M"],
@@ -12460,6 +13602,7 @@ seel: {
 			secretpower: ["9M"],
 			signalbeam: ["9M"],
 			skullbash: ["9M"],
+			slackoff: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
@@ -12469,13 +13612,16 @@ seel: {
 			stockpile: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
+			superfang: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			swallow: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			toxic: ["9M"],
+			trick: ["9M"], //Añadido
 			tripleaxel: ["9M"],
 			uproar: ["9M"],
 			waterfall: ["9M"],
@@ -12484,6 +13630,8 @@ seel: {
 			watersport: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//avalanche //Removido
+			//captivate //Removido
 		},
 	},
 dewgong: {
@@ -12493,14 +13641,14 @@ dewgong: {
 			aquaring: ["9M"],
 			aquatail: ["9M"],
 			attract: ["9M"],
-			aurorabeam: ["9M"],
+			aurorabeam: ["9M"], //Añadido
 			avalanche: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brine: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -12511,12 +13659,13 @@ dewgong: {
 			drillrun: ["9M"],
 			echoedvoice: ["9M"],
 			encore: ["9M"],
-			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
+			foulplay: ["9M"], //Añadido
+			freezedry: ["9M"], //Añadido
 			frostbreath: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
@@ -12536,36 +13685,50 @@ dewgong: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
-			liquidation: ["9M"],
+			liquidation: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
 			megahorn: ["9M"],
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
 			muddywater: ["9M"],
+			mudshot: ["9M"], //Añadido
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
+			psychicnoise: ["9M"], //Añadido
+			psychup: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
+			roleplay: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			sheercold: ["9M"],
 			signalbeam: ["9M"],
 			skullbash: ["9M"],
+			slackoff: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
+			superfang: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			toxic: ["9M"],
+			trick: ["9M"], //Añadido
 			tripleaxel: ["9M"],
 			uproar: ["9M"],
 			waterfall: ["9M"],
@@ -12573,20 +13736,23 @@ dewgong: {
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//captivate //Removido
+			//endeavor //Removido
 		},
 	},
 grimer: {
 		learnset: {
+			acid: ["9M"], //Añadido
 			acidarmor: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
+			darkpulse: ["9M"], //Añadido
 			dig: ["9M"],
 			disable: ["9M"],
 			doubleteam: ["9M"],
@@ -12600,6 +13766,7 @@ grimer: {
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigadrain: ["9M"],
 			gunkshot: ["9M"],
 			harden: ["9M"],
@@ -12650,6 +13817,7 @@ grimer: {
 			sludge: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smog: ["9M"], //Añadido
 			snore: ["9M"],
 			spitup: ["9M"],
 			stockpile: ["9M"],
@@ -12670,14 +13838,16 @@ grimer: {
 			venoshock: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 grimeralola: {
 		learnset: {
+			acid: ["9M"], //Añadido
 			acidarmor: ["9M"],
 			acidspray: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
@@ -12685,6 +13855,7 @@ grimeralola: {
 			brutalswing: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -12717,6 +13888,7 @@ grimeralola: {
 			knockoff: ["9M"],
 			meanlook: ["9M"],
 			megadrain: ["9M"],
+			megapunch: ["9M"], //Añadido
 			memento: ["9M"],
 			metronome: ["9M"],
 			minimize: ["9M"],
@@ -12751,12 +13923,14 @@ grimeralola: {
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			snarl: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
 			spite: ["9M"],
 			spitup: ["9M"],
 			stockpile: ["9M"],
 			stoneedge: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swallow: ["9M"],
@@ -12772,23 +13946,24 @@ grimeralola: {
 			toxic: ["9M"],
 			venoshock: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
 		},
 	},
 muk: {
 		learnset: {
+			acid: ["9M"], //Añadido
 			acidarmor: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bide: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
-			darkpulse: ["9M"],
+			darkpulse: ["9M"], //Añadido
 			dig: ["9M"],
 			disable: ["9M"],
 			doubleteam: ["9M"],
@@ -12804,6 +13979,7 @@ muk: {
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
@@ -12826,7 +14002,6 @@ muk: {
 			metronome: ["9M"],
 			mimic: ["9M"],
 			minimize: ["9M"],
-			moonblast: ["9M"],
 			mudbomb: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
@@ -12857,8 +14032,10 @@ muk: {
 			sludge: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smog: ["9M"], //Añadido
 			snore: ["9M"],
 			spite: ["9M"],
+			stickyweb: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -12867,31 +14044,35 @@ muk: {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
-			torment: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//block //Removido
+			//moonblast //Removido
 		},
 	},
 mukalola: {
 		learnset: {
+			acid: ["9M"], //Añadido
 			acidarmor: ["9M"],
 			acidspray: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bite: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -12927,11 +14108,11 @@ mukalola: {
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			lashout: ["9M"],
+			leer: ["9M"], //Añadido
 			megadrain: ["9M"],
 			memento: ["9M"],
 			metronome: ["9M"],
 			minimize: ["9M"],
-			moonblast: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			painsplit: ["9M"],
@@ -12941,20 +14122,24 @@ mukalola: {
 			poisonjab: ["9M"],
 			pound: ["9M"],
 			protect: ["9M"],
+			punishment: ["9M"], //Añadido
 			quash: ["9M"],
 			raindance: ["9M"],
 			recycle: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rockpolish: ["9M"],
+			rockpolish: ["9M"], //Añadido
 			rockslide: ["9M"],
+			rocksmash: ["9M"], //Añadido
 			rocktomb: ["9M"],
 			round: ["9M"],
 			sandstorm: ["9M"],
+			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
 			screech: ["9M"],
-			selfdestruct: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
+			shadowpunch: ["9M"], //Añadido
 			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
@@ -12962,6 +14147,7 @@ mukalola: {
 			snarl: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
+			stickyweb: ["9M"], //Añadido
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -12971,28 +14157,27 @@ mukalola: {
 			taunt: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
-			torment: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//block //Removido
+			//moonblast //Removido
+			//selfdestruct //Removido
 		},
 	},
 shellder: {
 		learnset: {
-			aquaring: ["9M"],
-			attract: ["9M"],
-			aurorabeam: ["9M"],
-			avalanche: ["9M"],
 			barrier: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			clamp: ["9M"],
 			confide: ["9M"],
@@ -13015,7 +14200,6 @@ shellder: {
 			iciclespear: ["9M"],
 			icywind: ["9M"],
 			irondefense: ["9M"],
-			leer: ["9M"],
 			lifedew: ["9M"],
 			liquidation: ["9M"],
 			mimic: ["9M"],
@@ -13035,7 +14219,6 @@ shellder: {
 			round: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			shellsmash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -13048,10 +14231,8 @@ shellder: {
 			swift: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
-			teleport: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
-			toxicspikes: ["9M"],
 			triattack: ["9M"],
 			twineedle: ["9M"],
 			waterfall: ["9M"],
@@ -13059,20 +14240,27 @@ shellder: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			withdraw: ["9M"],
+			//aquaring //Removido
+			//attract //Removido
+			//aurorabeam //Removido
+			//avalanche //Removido
+			//brine //Removido
+			//captivate //Removido
+			//leer //Removido
+			//selfdestruct //Removido
+			//teleport //Removido
+			//toxicspikes //Removido
 		},
 	},
 cloyster: {
 		learnset: {
-			attract: ["9M"],
+			aquacutter: ["9M"], //Añadido
 			aurorabeam: ["9M"],
-			avalanche: ["9M"],
 			barrier: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			clamp: ["9M"],
 			confide: ["9M"],
@@ -13087,6 +14275,7 @@ cloyster: {
 			frostbreath: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
+			gyroball: ["9M"], //Añadido
 			hail: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
@@ -13103,6 +14292,7 @@ cloyster: {
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
+			megahorn: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			naturalgift: ["9M"],
@@ -13121,7 +14311,6 @@ cloyster: {
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			shellsmash: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
@@ -13138,11 +14327,9 @@ cloyster: {
 			swift: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
-			teleport: ["9M"],
 			terablast: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
-			toxicspikes: ["9M"],
 			triattack: ["9M"],
 			twineedle: ["9M"],
 			waterfall: ["9M"],
@@ -13151,6 +14338,13 @@ cloyster: {
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
 			withdraw: ["9M"],
+			//attract //Removido
+			//avalanche //Removido
+			//brine //Removido
+			//captivate //Removido
+			//selfdestruct //Removido
+			//teleport //Removido
+			//toxicspikes //Removido
 		},
 	},
 gastly: {
@@ -13158,12 +14352,11 @@ gastly: {
 			acidspray: ["9M"],
 			allyswitch: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			copycat: ["9M"], //Añadido
 			corrosivegas: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -13177,7 +14370,6 @@ gastly: {
 			energyball: ["9M"],
 			explosion: ["9M"],
 			facade: ["9M"],
-			firepunch: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
@@ -13188,14 +14380,16 @@ gastly: {
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			hypnosis: ["9M"],
-			icepunch: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
+			leer: ["9M"], //Añadido
 			lick: ["9M"],
 			meanlook: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megadrain: ["9M"],
+			memento: ["9M"], //Añadido
 			mimic: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
@@ -13208,6 +14402,7 @@ gastly: {
 			poisongas: ["9M"],
 			poisonjab: ["9M"],
 			poltergeist: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychup: ["9M"],
@@ -13241,7 +14436,6 @@ gastly: {
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
 			trick: ["9M"],
@@ -13251,17 +14445,21 @@ gastly: {
 			willowisp: ["9M"],
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//firepunch //Removido
+			//icepunch //Removido
+			//thunderpunch //Removido
 		},
 	},
 haunter: {
 		learnset: {
 			acidspray: ["9M"],
 			allyswitch: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			copycat: ["9M"], //Añadido
 			corrosivegas: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -13269,6 +14467,7 @@ haunter: {
 			destinybond: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
+			dynamicpunch: ["9M"], //Añadido
 			embargo: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
@@ -13292,9 +14491,12 @@ haunter: {
 			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
+			leer: ["9M"], //Añadido
 			lick: ["9M"],
 			meanlook: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megadrain: ["9M"],
+			memento: ["9M"], //Añadido
 			metronome: ["9M"],
 			mimic: ["9M"],
 			nastyplot: ["9M"],
@@ -13308,6 +14510,7 @@ haunter: {
 			poisongas: ["9M"],
 			poisonjab: ["9M"],
 			poltergeist: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychup: ["9M"],
@@ -13353,6 +14556,8 @@ haunter: {
 			willowisp: ["9M"],
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 gengar: {
@@ -13360,15 +14565,13 @@ gengar: {
 			acidspray: ["9M"],
 			allyswitch: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			copycat: ["9M"], //Añadido
 			corrosivegas: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -13378,7 +14581,7 @@ gengar: {
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
-			dynamicpunch: ["9M"],
+			dynamicpunch: ["9M"], //Añadido
 			embargo: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
@@ -13388,11 +14591,9 @@ gengar: {
 			firepunch: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
-			focuspunch: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
-			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -13406,11 +14607,12 @@ gengar: {
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
+			leer: ["9M"], //Añadido
 			lick: ["9M"],
 			meanlook: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megadrain: ["9M"],
-			megakick: ["9M"],
-			megapunch: ["9M"],
+			memento: ["9M"], //Añadido
 			metronome: ["9M"],
 			mimic: ["9M"],
 			nastyplot: ["9M"],
@@ -13425,6 +14627,8 @@ gengar: {
 			poisongas: ["9M"],
 			poisonjab: ["9M"],
 			poltergeist: ["9M"],
+			powershift: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
@@ -13436,7 +14640,6 @@ gengar: {
 			reflecttype: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rocksmash: ["9M"],
 			roleplay: ["9M"],
 			round: ["9M"],
 			scaryface: ["9M"],
@@ -13481,22 +14684,28 @@ gengar: {
 			willowisp: ["9M"],
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//counter //Removido
+			//focuspunch //Removido
+			//gigaimpact //Removido
+			//megakick //Removido
+			//megapunch //Removido
+			//rocksmash //Removido
 		},
 	},
 onix: {
 		learnset: {
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
-			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
@@ -13516,6 +14725,7 @@ onix: {
 			flail: ["9M"],
 			flashcannon: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
 			gyroball: ["9M"],
 			harden: ["9M"],
 			headbutt: ["9M"],
@@ -13535,6 +14745,7 @@ onix: {
 			protect: ["9M"],
 			psychup: ["9M"],
 			rage: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
@@ -13546,19 +14757,17 @@ onix: {
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
 			rollout: ["9M"],
-			rototiller: ["9M"],
 			round: ["9M"],
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			scorchingsands: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			skullbash: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
@@ -13570,17 +14779,22 @@ onix: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			wideguard: ["9M"],
+			//attract //Removido
+			//block //Removido
+			//captivate //Removido
+			//rototiller //Removido
+			//scorchingsands //Removido
+			//selfdestruct //Removido
+			//torment //Removido
+			//twister //Removido
 		},
 	},
 steelix: {
 		learnset: {
 			ancientpower: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			autotomize: ["9M"],
 			bind: ["9M"],
 			block: ["9M"],
@@ -13589,12 +14803,11 @@ steelix: {
 			breakingswipe: ["9M"],
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			darkpulse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -13606,12 +14819,14 @@ steelix: {
 			drillrun: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
+			electricterrain: ["9M"], //Añadido
 			endure: ["9M"],
 			explosion: ["9M"],
 			facade: ["9M"],
 			firefang: ["9M"],
 			flashcannon: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gyroball: ["9M"],
 			harden: ["9M"],
@@ -13620,12 +14835,14 @@ steelix: {
 			heavyslam: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			horndrill: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			icefang: ["9M"],
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			magnetrise: ["9M"],
+			metalburst: ["9M"], //Añadido
 			meteorbeam: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
@@ -13637,6 +14854,7 @@ steelix: {
 			psychicfangs: ["9M"],
 			psychup: ["9M"],
 			rage: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
@@ -13652,16 +14870,14 @@ steelix: {
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			scorchingsands: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			stealthrock: ["9M"],
-			steelbeam: ["9M"],
 			steelroller: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -13672,26 +14888,28 @@ steelix: {
 			tackle: ["9M"],
 			taunt: ["9M"],
 			thunderfang: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//darkpulse //Removido
+			//scorchingsands //Removido
+			//selfdestruct //Removido
+			//steelbeam //Removido
+			//torment //Removido
+			//twister //Removido
 		},
 	},
 drowzee: {
 		learnset: {
 			allyswitch: ["9M"],
 			assist: ["9M"],
-			attract: ["9M"],
 			barrier: ["9M"],
 			bellydrum: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
-			brickbreak: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
 			disable: ["9M"],
@@ -13735,12 +14953,14 @@ drowzee: {
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
+			mudshot: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
 			poisongas: ["9M"],
 			pound: ["9M"],
+			powershift: ["9M"], //Añadido
 			powersplit: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
@@ -13775,6 +14995,7 @@ drowzee: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			synchronoise: ["9M"],
 			takedown: ["9M"],
@@ -13795,24 +15016,22 @@ drowzee: {
 			wish: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//brickbreak //Removido
+			//captivate //Removido
+			//counter //Removido
 		},
 	},
 hypno: {
 		learnset: {
 			allyswitch: ["9M"],
-			attract: ["9M"],
 			barrier: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
-			bodypress: ["9M"],
 			bodyslam: ["9M"],
-			brickbreak: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
 			disable: ["9M"],
@@ -13846,6 +15065,7 @@ hypno: {
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
 			imprison: ["9M"],
+			instruct: ["9M"], //Añadido
 			knockoff: ["9M"],
 			lightscreen: ["9M"],
 			lowkick: ["9M"],
@@ -13857,12 +15077,15 @@ hypno: {
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
+			mindreader: ["9M"], //Añadido
+			mudshot: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
 			poisongas: ["9M"],
 			pound: ["9M"],
+			powershift: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -13896,6 +15119,7 @@ hypno: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			switcheroo: ["9M"],
 			synchronoise: ["9M"],
@@ -13913,28 +15137,35 @@ hypno: {
 			triattack: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			twinbeam: ["9M"], //Añadido
 			wakeupslap: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//bodypress //Removido
+			//brickbreak //Removido
+			//captivate //Removido
+			//counter //Removido
 		},
 	},
 krabby: {
 		learnset: {
 			agility: ["9M"],
-			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
+			aquacutter: ["9M"], //Añadido
+			assurance: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
+			bulldoze: ["9M"], //Añadido
 			chipaway: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			crabhammer: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -13947,6 +15178,7 @@ krabby: {
 			falseswipe: ["9M"],
 			flail: ["9M"],
 			fling: ["9M"],
+			focuspunch: ["9M"], //Añadido
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			guillotine: ["9M"],
@@ -13961,8 +15193,10 @@ krabby: {
 			icywind: ["9M"],
 			irondefense: ["9M"],
 			knockoff: ["9M"],
+			lastresort: ["9M"], //Añadido
 			leer: ["9M"],
 			liquidation: ["9M"],
+			megapunch: ["9M"], //Añadido
 			metalclaw: ["9M"],
 			mimic: ["9M"],
 			mudshot: ["9M"],
@@ -13982,45 +15216,55 @@ krabby: {
 			round: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
+			shellsmash: ["9M"], //Añadido
 			slam: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
-			stomp: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			superpower: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
+			teeterdance: ["9M"], //Añadido
 			thief: ["9M"],
-			tickle: ["9M"],
+			thrash: ["9M"], //Añadido
 			toxic: ["9M"],
+			trick: ["9M"], //Añadido
 			visegrip: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			xscissor: ["9M"],
+			//allyswitch //Removido
+			//attract //Removido
+			//brine //Removido
+			//captivate //Removido
+			//stomp //Removido
+			//tickle //Removido
 		},
 	},
 kingler: {
 		learnset: {
 			agility: ["9M"],
-			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
+			aquacutter: ["9M"], //Añadido
+			assurance: ["9M"], //Añadido
+			avalanche: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			brine: ["9M"],
-			brutalswing: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
+			bulldoze: ["9M"], //Añadido
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			crabhammer: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -14033,6 +15277,7 @@ kingler: {
 			falseswipe: ["9M"],
 			flail: ["9M"],
 			fling: ["9M"],
+			focuspunch: ["9M"], //Añadido
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			gigaimpact: ["9M"],
@@ -14045,13 +15290,15 @@ kingler: {
 			highhorsepower: ["9M"],
 			honeclaws: ["9M"],
 			hydropump: ["9M"],
-			hyperbeam: ["9M"],
 			icebeam: ["9M"],
+			icehammer: ["9M"], //Añadido
 			icywind: ["9M"],
 			irondefense: ["9M"],
 			knockoff: ["9M"],
+			lastresort: ["9M"], //Añadido
 			leer: ["9M"],
 			liquidation: ["9M"],
+			megapunch: ["9M"], //Añadido
 			metalclaw: ["9M"],
 			mimic: ["9M"],
 			mudshot: ["9M"],
@@ -14068,29 +15315,44 @@ kingler: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
+			rockwreaker: ["9M"], //Añadido
 			round: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
+			shellsmash: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
-			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			superpower: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
+			teeterdance: ["9M"], //Añadido
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
+			throatchop: ["9M"], //Añadido
 			toxic: ["9M"],
+			trick: ["9M"], //Añadido
+			upperhand: ["9M"], //Añadido
 			visegrip: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			wideguard: ["9M"],
 			xscissor: ["9M"],
+			//allyswitch //Removido
+			//attract //Removido
+			//brine //Removido
+			//brutalswing //Removido
+			//captivate //Removido
+			//hyperbeam //Removido
+			//stomp //Removido
 		},
 	},
 voltorb: {
@@ -14101,6 +15363,7 @@ voltorb: {
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -14128,6 +15391,7 @@ voltorb: {
 			protect: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			recycle: ["9M"],
 			reflect: ["9M"],
 			refresh: ["9M"],
@@ -14146,6 +15410,7 @@ voltorb: {
 			spark: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
@@ -14158,6 +15423,7 @@ voltorb: {
 			thunderbolt: ["9M"],
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
+			topsyturvy: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			voltswitch: ["9M"],
@@ -14168,9 +15434,11 @@ voltorb: {
 voltorbhisui: {
 		learnset: {
 			agility: ["9M"],
+			ancientpower: ["9M"], //Añadido
 			bulletseed: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			electricterrain: ["9M"],
@@ -14186,10 +15454,13 @@ voltorbhisui: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			gyroball: ["9M"],
+			heatbutt: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
+			megadrain: ["9M"], //Añadido
 			protect: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			recycle: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -14219,12 +15490,14 @@ voltorbhisui: {
 electrode: {
 		learnset: {
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			bide: ["9M"],
 			burningjealousy: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -14252,9 +15525,11 @@ electrode: {
 			mimic: ["9M"],
 			mirrorcoat: ["9M"],
 			naturalgift: ["9M"],
+			overheat: ["9M"], //Añadido
 			protect: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -14274,35 +15549,41 @@ electrode: {
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			supercellslam: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
+			topsyturvy: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//telekinesis //Removido
 		},
 	},
 electrodehisui: {
 		learnset: {
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			ancientpower: ["9M"], //Añadido
 			bulletseed: ["9M"],
 			burningjealousy: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			chloroblast: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			electricterrain: ["9M"],
@@ -14341,6 +15622,7 @@ electrodehisui: {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -14408,13 +15690,10 @@ exeggcute: {
 		learnset: {
 			absorb: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			barrage: ["9M"],
 			bestow: ["9M"],
 			bide: ["9M"],
-			block: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
 			curse: ["9M"],
@@ -14435,6 +15714,7 @@ exeggcute: {
 			grassyterrain: ["9M"],
 			gravity: ["9M"],
 			headbutt: ["9M"],
+			healpulse: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hypnosis: ["9M"],
@@ -14496,24 +15776,26 @@ exeggcute: {
 			wish: ["9M"],
 			worryseed: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//block //Removido
+			//captivate //Removido
 		},
 	},
 exeggutor: {
 		learnset: {
 			absorb: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			barrage: ["9M"],
 			bide: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			bulletseed: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -14536,6 +15818,7 @@ exeggutor: {
 			gravity: ["9M"],
 			growth: ["9M"],
 			headbutt: ["9M"],
+			healpulse: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
@@ -14578,6 +15861,7 @@ exeggutor: {
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			storedpower: ["9M"],
@@ -14597,18 +15881,20 @@ exeggutor: {
 			toxic: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			twinbeam: ["9M"], //Añadido
 			uproar: ["9M"],
 			woodhammer: ["9M"],
 			worryseed: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//block //Removido
+			//captivate //Removido
 		},
 	},
 exeggutoralola: {
 		learnset: {
 			absorb: ["9M"],
-			attract: ["9M"],
 			barrage: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
@@ -14616,10 +15902,11 @@ exeggutoralola: {
 			bulldoze: ["9M"],
 			bulletseed: ["9M"],
 			calmmind: ["9M"],
-			celebrate: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dracometeor: ["9M"],
@@ -14645,6 +15932,7 @@ exeggutoralola: {
 			gravity: ["9M"],
 			growth: ["9M"],
 			headbutt: ["9M"],
+			healpulse: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
@@ -14671,6 +15959,7 @@ exeggutoralola: {
 			psychicterrain: ["9M"],
 			psychup: ["9M"],
 			psyshock: ["9M"],
+			razorleaf: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -14682,6 +15971,8 @@ exeggutoralola: {
 			sludgebomb: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			storedpower: ["9M"],
 			stunspore: ["9M"],
@@ -14705,25 +15996,24 @@ exeggutoralola: {
 			woodhammer: ["9M"],
 			worryseed: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//block //Removido
+			//celebrate //Removido
 		},
 	},
 cubone: {
 		learnset: {
-			aerialace: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
+			assist: ["9M"], //Añadido
 			bellydrum: ["9M"],
 			bide: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			boneclub: ["9M"],
 			bonemerang: ["9M"],
 			bonerush: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -14731,7 +16021,6 @@ cubone: {
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
-			doublekick: ["9M"],
 			doubleteam: ["9M"],
 			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
@@ -14741,21 +16030,19 @@ cubone: {
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
-			fireblast: ["9M"],
 			firepunch: ["9M"],
 			fissure: ["9M"],
-			flamethrower: ["9M"],
 			fling: ["9M"],
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			growl: ["9M"],
+			grudge: ["9M"], //Añadido
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			incinerate: ["9M"],
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
@@ -14779,8 +16066,8 @@ cubone: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sacredsword: ["9M"], //Añadido
 			sandstorm: ["9M"],
-			scorchingsands: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
@@ -14794,34 +16081,42 @@ cubone: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
 			thrash: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
 			watergun: ["9M"],
+			//aerialace //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//doublekick //Removido
+			//fireblast //Removido
+			//flamethrower //Removido
+			//incinerate //Removido
+			//scorchingsands //Removido
 		},
 	},
 marowak: {
 		learnset: {
-			aerialace: ["9M"],
-			attract: ["9M"],
+			assist: ["9M"], //Añadido
 			bide: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			boneclub: ["9M"],
 			bonemerang: ["9M"],
 			bonerush: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -14837,25 +16132,22 @@ marowak: {
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
-			fireblast: ["9M"],
 			firepunch: ["9M"],
 			fissure: ["9M"],
-			flamethrower: ["9M"],
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			grudge: ["9M"], //Añadido
 			headbutt: ["9M"],
 			headsmash: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			incinerate: ["9M"],
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
@@ -14880,8 +16172,8 @@ marowak: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sacredsword: ["9M"], //Añadido
 			sandstorm: ["9M"],
-			scorchingsands: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
@@ -14897,27 +16189,39 @@ marowak: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supercellslam: ["9M"], //Añadido
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
 			thrash: ["9M"],
-			throatchop: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
 			watergun: ["9M"],
 			wildcharge: ["9M"],
+			//aerialace //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//fireblast //Removido
+			//flamethrower //Removido
+			//focusblast //Removido
+			//incinerate //Removido
+			//scorchingsands //Removido
 		},
 	},
 marowakalola: {
 		learnset: {
-			aerialace: ["9M"],
-			allyswitch: ["9M"],
-			attract: ["9M"],
-			blizzard: ["9M"],
+			assist: ["9M"], //Añadido
+			assurance: ["9M"], //Añadido
+			astonish: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			boneclub: ["9M"],
 			bonemerang: ["9M"],
@@ -14928,7 +16232,9 @@ marowakalola: {
 			burningjealousy: ["9M"],
 			confide: ["9M"],
 			darkpulse: ["9M"],
+			destinybond: ["9M"], //Añadido
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -14939,6 +16245,7 @@ marowakalola: {
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
+			feintattack: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firepunch: ["9M"],
 			firespin: ["9M"],
@@ -14947,13 +16254,14 @@ marowakalola: {
 			flamewheel: ["9M"],
 			flareblitz: ["9M"],
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			grudge: ["9M"], //Añadido
 			headbutt: ["9M"],
+			headsmash: ["9M"], //Añadido
 			heatwave: ["9M"],
 			hex: ["9M"],
 			hiddenpower: ["9M"],
@@ -14961,28 +16269,38 @@ marowakalola: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"],
+			inferno: ["9M"], //Añadido
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
+			lashout: ["9M"], //Añadido
+			lastrespect: ["9M"], //Añadido
 			leer: ["9M"],
 			lowkick: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			memento: ["9M"], //Añadido
+			moonlight: ["9M"], //Añadido
 			mudslap: ["9M"],
+			nightshade: ["9M"], //Añadido
 			outrage: ["9M"],
+			overheat: ["9M"], //Añadido
 			painsplit: ["9M"],
+			phantomforce: ["9M"], //Añadido
 			poltergeist: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sacredsword: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scorchingsands: ["9M"],
 			screech: ["9M"],
@@ -14992,26 +16310,35 @@ marowakalola: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			spite: ["9M"],
 			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			tailwhip: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
 			thrash: ["9M"],
-			throatchop: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
-			uproar: ["9M"],
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
+			//aerialace //Removido
+			//allyswitch //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//focusblast //Removido
+			//uproar //Removido
 		},
 	},
 marowakalolatotem: {
@@ -15114,30 +16441,29 @@ tyrogue: {
 			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			earthquake: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
 			feint: ["9M"],
 			focusenergy: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
-			highjumpkick: ["9M"],
+			holdback: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
 			machpunch: ["9M"],
-			megakick: ["9M"],
 			megapunch: ["9M"],
 			mimic: ["9M"],
-			mindreader: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
+			psychup: ["9M"], //Añadido
 			pursuit: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rapidspin: ["9M"],
 			rest: ["9M"],
@@ -15162,15 +16488,22 @@ tyrogue: {
 			thief: ["9M"],
 			toxic: ["9M"],
 			upperhand: ["9M"],
-			uproar: ["9M"],
 			vacuumwave: ["9M"],
 			workup: ["9M"],
+			//earthquake //Removido
+			//foresight //Removido
+			//highjumpkick //Removido
+			//megakick //Removido
+			//mindreader //Removido
+			//uproar //Removido
 		},
 	},
 hitmonlee: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
+			aerialace: ["9M"], //Añadido
+			agility: ["9M"], //Añadido
 			attract: ["9M"],
-			aurasphere: ["9M"],
 			axekick: ["9M"],
 			batonpass: ["9M"],
 			bide: ["9M"],
@@ -15192,7 +16525,6 @@ hitmonlee: {
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
 			dynamicpunch: ["9M"],
-			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
@@ -15202,19 +16534,20 @@ hitmonlee: {
 			focusblast: ["9M"],
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highjumpkick: ["9M"],
+			holdback: ["9M"], //Añadido
 			jumpkick: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
 			lunge: ["9M"],
+			matblock: ["9M"], //Añadido
 			meditate: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
@@ -15224,9 +16557,11 @@ hitmonlee: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			poisonjab: ["9M"],
+			powershift: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
-			rage: ["9M"],
+			psychup: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			refresh: ["9M"],
 			rest: ["9M"],
@@ -15247,6 +16582,7 @@ hitmonlee: {
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -15265,18 +16601,24 @@ hitmonlee: {
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
+			triplekick: ["9M"], //Añadido
 			upperhand: ["9M"],
-			uproar: ["9M"],
 			vacuumwave: ["9M"],
 			wideguard: ["9M"],
 			workup: ["9M"],
+			//aurasphere //Removido
+			//earthquake //Removido
+			//foresight //Removido
+			//uproar //Removido
 		},
 	},
 hitmonchan: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
 			agility: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+			assurance: ["9M"], //Añadido
 			attract: ["9M"],
-			aurasphere: ["9M"],
 			batonpass: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
@@ -15298,7 +16640,6 @@ hitmonchan: {
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dynamicpunch: ["9M"],
-			earthquake: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
@@ -15315,6 +16656,8 @@ hitmonchan: {
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			highhorsepower: ["9M"], //Añadido
+			holdback: ["9M"], //Añadido
 			icepunch: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
@@ -15322,7 +16665,6 @@ hitmonchan: {
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
 			machpunch: ["9M"],
-			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
@@ -15330,11 +16672,13 @@ hitmonchan: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			poisonjab: ["9M"],
+			powershift: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			psychup: ["9M"], //Añadido
 			pursuit: ["9M"],
 			quickguard: ["9M"],
-			rage: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -15372,17 +16716,22 @@ hitmonchan: {
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			upperhand: ["9M"],
-			uproar: ["9M"],
 			vacuumwave: ["9M"],
 			workup: ["9M"],
+			//aurasphere //Removido
+			//earthquake //Removido
+			//megakick //Removido
+			//uproar //Removido
 		},
 	},
 hitmontop: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
+			assurance: ["9M"], //Añadido
 			attract: ["9M"],
 			batonpass: ["9M"],
+			bodypress: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
@@ -15391,6 +16740,7 @@ hitmontop: {
 			captivate: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9M"],
+			combattorque: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -15398,6 +16748,7 @@ hitmontop: {
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drillrun: ["9M"],
 			earthquake: ["9M"],
@@ -15414,19 +16765,25 @@ hitmontop: {
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			holdback: ["9M"], //Añadido
 			icespinner: ["9M"],
+			irontail: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
+			megahorn: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
+			psychup: ["9M"], //Añadido
 			pursuit: ["9M"],
 			quickattack: ["9M"],
 			quickguard: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rapidspin: ["9M"],
 			rest: ["9M"],
@@ -15444,6 +16801,7 @@ hitmontop: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			sleeptalk: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -15459,12 +16817,12 @@ hitmontop: {
 			toxic: ["9M"],
 			tripleaxel: ["9M"],
 			triplekick: ["9M"],
-			twister: ["9M"],
 			upperhand: ["9M"],
-			uproar: ["9M"],
 			vacuumwave: ["9M"],
 			wideguard: ["9M"],
 			workup: ["9M"],
+			//twister //Removido
+			//uproar //Removido
 		},
 	},
 lickitung: {
@@ -15484,15 +16842,11 @@ lickitung: {
 			brutalswing: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
-			chipaway: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
-			disable: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragontail: ["9M"],
@@ -15503,18 +16857,16 @@ lickitung: {
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firepunch: ["9M"],
-			fissure: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigaimpact: ["9M"],
-			hammerarm: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
-			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
@@ -15528,7 +16880,6 @@ lickitung: {
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			mimic: ["9M"],
-			muddywater: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
@@ -15542,7 +16893,6 @@ lickitung: {
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
-			rockclimb: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
@@ -15559,8 +16909,7 @@ lickitung: {
 			sleeptalk: ["9M"],
 			smellingsalts: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
-			steelroller: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
@@ -15570,14 +16919,13 @@ lickitung: {
 			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swordsdance: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
-			terrainpulse: ["9M"],
 			thief: ["9M"],
-			thrash: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			toxic: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -15587,6 +16935,20 @@ lickitung: {
 			wrap: ["9M"],
 			wringout: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//chipaway //Removido
+			//counter //Removido
+			//disable //Removido
+			//fissure //Removido
+			//hammerarm //Removido
+			//hydropump //Removido
+			//muddywater //Removido
+			//rockclimb //Removido
+			//solarbeam //Removido
+			//steelroller //Removido
+			//terrainpulse //Removido
+			//thrash //Removido
+			//thunderpunch //Removido
 		},
 	},
 lickilicky: {
@@ -15603,7 +16965,6 @@ lickilicky: {
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			cut: ["9M"],
@@ -15624,6 +16985,7 @@ lickilicky: {
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gyroball: ["9M"],
 			headbutt: ["9M"],
@@ -15670,6 +17032,7 @@ lickilicky: {
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			steelroller: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
@@ -15678,7 +17041,9 @@ lickilicky: {
 			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swordsdance: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			terrainpulse: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
@@ -15691,22 +17056,23 @@ lickilicky: {
 			wrap: ["9M"],
 			wringout: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
 		},
 	},
 koffing: {
 		learnset: {
 			acidspray: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			corrosivegas: ["9M"],
+			crunch: ["9M"], //Añadido
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			destinybond: ["9M"],
 			doubleteam: ["9M"],
 			endure: ["9M"],
@@ -15716,6 +17082,7 @@ koffing: {
 			flamethrower: ["9M"],
 			flash: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			grudge: ["9M"],
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
@@ -15729,6 +17096,7 @@ koffing: {
 			naturalgift: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
+			poisonfang: ["9M"], //Añadido
 			poisongas: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -15742,9 +17110,8 @@ koffing: {
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
+			slackoff: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludge: ["9M"],
 			sludgebomb: ["9M"],
@@ -15757,6 +17124,7 @@ koffing: {
 			stockpile: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superfang: ["9M"], //Añadido
 			swagger: ["9M"],
 			swallow: ["9M"],
 			tackle: ["9M"],
@@ -15769,27 +17137,32 @@ koffing: {
 			torment: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
-			uproar: ["9M"],
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			willowisp: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//selfdestruct //Removido
+			//shockwave //Removido
+			//uproar //Removido
 		},
 	},
 weezing: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			corrosivegas: ["9M"],
+			crunch: ["9M"], //Añadido
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			destinybond: ["9M"],
 			doublehit: ["9M"],
 			doubleteam: ["9M"],
@@ -15800,6 +17173,7 @@ weezing: {
 			flamethrower: ["9M"],
 			flash: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
@@ -15815,6 +17189,7 @@ weezing: {
 			naturalgift: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
+			poisonfang: ["9M"], //Añadido
 			poisongas: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -15827,9 +17202,8 @@ weezing: {
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
+			slackoff: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludge: ["9M"],
 			sludgebomb: ["9M"],
@@ -15840,6 +17214,7 @@ weezing: {
 			spite: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superfang: ["9M"], //Añadido
 			swagger: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
@@ -15852,62 +17227,81 @@ weezing: {
 			torment: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
-			uproar: ["9M"],
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			willowisp: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//selfdestruct //Removido
+			//shockwave //Removido
+			//uproar //Removido
 		},
 	},
 weezinggalar: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			aromatherapy: ["9M"],
 			aromaticmist: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
 			belch: ["9M"],
 			bodyslam: ["9M"],
 			brutalswing: ["9M"],
 			clearsmog: ["9M"],
 			corrosivegas: ["9M"],
+			crunch: ["9M"], //Añadido
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
 			destinybond: ["9M"],
 			doubleedge: ["9M"],
 			doublehit: ["9M"],
 			endure: ["9M"],
 			explosion: ["9M"],
+			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
 			fairywind: ["9M"],
 			fireblast: ["9M"],
 			flamethrower: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
 			haze: ["9M"],
+			healbell: ["9M"], //Añadido
+			healpulse: ["9M"], //Añadido
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			memento: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
 			mistyexplosion: ["9M"],
 			mistyterrain: ["9M"],
+			nastyplot: ["9M"], //Añadido
 			overheat: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
+			perishsong: ["9M"], //Añadido
 			playrough: ["9M"],
+			poisonfang: ["9M"], //Añadido
 			poisongas: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
+			psychicfangs: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			round: ["9M"],
 			scaryface: ["9M"],
+			scorchingsands: ["9M"], //Añadido
 			screech: ["9M"],
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
+			silverwind: ["9M"], //Añadido
+			slackoff: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludge: ["9M"],
 			sludgebomb: ["9M"],
@@ -15919,6 +17313,8 @@ weezinggalar: {
 			strangesteam: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superfang: ["9M"], //Añadido
+			sweetscent: ["9M"], //Añadido
 			tackle: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
@@ -15928,24 +17324,22 @@ weezinggalar: {
 			thunderbolt: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
-			uproar: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			willowisp: ["9M"],
 			wonderroom: ["9M"],
+			//attract //Removido
+			//uproar //Removido
 		},
 	},
 rhyhorn: {
 		learnset: {
 			ancientpower: ["9M"],
-			aquatail: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
-			blizzard: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -15956,7 +17350,6 @@ rhyhorn: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonpulse: ["9M"],
-			dragonrush: ["9M"],
 			drillrun: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
@@ -15971,17 +17364,19 @@ rhyhorn: {
 			furyattack: ["9M"],
 			guardsplit: ["9M"],
 			headbutt: ["9M"],
+			headlongrush: ["9M"], //Añadido
 			heavyslam: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			honeclaws: ["9M"], //Añadido
 			hornattack: ["9M"],
 			horndrill: ["9M"],
 			icebeam: ["9M"],
 			icefang: ["9M"],
-			icywind: ["9M"],
-			incinerate: ["9M"],
 			irontail: ["9M"],
+			lashout: ["9M"], //Añadido
 			leer: ["9M"],
+			lunge: ["9M"], //Añadido
 			magnitude: ["9M"],
 			megahorn: ["9M"],
 			metalburst: ["9M"],
@@ -15989,10 +17384,12 @@ rhyhorn: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			payback: ["9M"],
 			poisonjab: ["9M"],
 			protect: ["9M"],
 			pursuit: ["9M"],
+			quickattack: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
@@ -16022,6 +17419,7 @@ rhyhorn: {
 			snore: ["9M"],
 			spite: ["9M"],
 			stealthrock: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -16044,25 +17442,28 @@ rhyhorn: {
 			toxic: ["9M"],
 			uproar: ["9M"],
 			zapcannon: ["9M"],
+			//aquatail //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//dragonrush //Removido
+			//icywind //Removido
+			//incinerate //Removido
 		},
 	},
 rhydon: {
 		learnset: {
 			ancientpower: ["9M"],
-			aquatail: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			bide: ["9M"],
-			blizzard: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			bubblebeam: ["9M"],
+			bulkup: ["9M"], //Añadido
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -16070,6 +17471,7 @@ rhydon: {
 			curse: ["9M"],
 			cut: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonpulse: ["9M"],
@@ -16087,7 +17489,6 @@ rhydon: {
 			fissure: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furyattack: ["9M"],
@@ -16095,15 +17496,15 @@ rhydon: {
 			gigaimpact: ["9M"],
 			hammerarm: ["9M"],
 			headbutt: ["9M"],
+			headlongrush: ["9M"], //Añadido
 			heatcrash: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			honeclaws: ["9M"], //Añadido
 			hornattack: ["9M"],
 			horndrill: ["9M"],
-			hydropump: ["9M"],
-			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icefang: ["9M"],
 			icepunch: ["9M"],
@@ -16111,7 +17512,9 @@ rhydon: {
 			incinerate: ["9M"],
 			irondefense: ["9M"],
 			irontail: ["9M"],
+			lashout: ["9M"], //Añadido
 			leer: ["9M"],
+			lunge: ["9M"], //Añadido
 			megahorn: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
@@ -16120,12 +17523,14 @@ rhydon: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			outrage: ["9M"],
 			payback: ["9M"],
 			payday: ["9M"],
 			poisonjab: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			quickattack: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
@@ -16156,6 +17561,7 @@ rhydon: {
 			snore: ["9M"],
 			spite: ["9M"],
 			stealthrock: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -16182,29 +17588,35 @@ rhydon: {
 			watergun: ["9M"],
 			whirlpool: ["9M"],
 			zapcannon: ["9M"],
+			//aquatail //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//bubblebeam //Removido
+			//captivate //Removido
+			//focusblast //Removido
+			//hydropump //Removido
+			//hyperbeam //Removido
 		},
 	},
 rhyperior: {
 		learnset: {
 			ancientpower: ["9M"],
-			aquatail: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
-			blizzard: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
+			bulkup: ["9M"], //Añadido
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonpulse: ["9M"],
@@ -16229,11 +17641,13 @@ rhyperior: {
 			gigaimpact: ["9M"],
 			hammerarm: ["9M"],
 			headbutt: ["9M"],
+			headlongrush: ["9M"], //Añadido
 			heatcrash: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			honeclaws: ["9M"], //Añadido
 			hornattack: ["9M"],
 			horndrill: ["9M"],
 			hydropump: ["9M"],
@@ -16246,6 +17660,8 @@ rhyperior: {
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
+			lashout: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
 			megahorn: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
@@ -16254,12 +17670,14 @@ rhyperior: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			outrage: ["9M"],
 			payback: ["9M"],
 			payday: ["9M"],
 			poisonjab: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			quickattack: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -16276,9 +17694,7 @@ rhyperior: {
 			round: ["9M"],
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
-			scorchingsands: ["9M"],
 			secretpower: ["9M"],
-			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -16286,6 +17702,7 @@ rhyperior: {
 			snore: ["9M"],
 			spite: ["9M"],
 			stealthrock: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -16308,8 +17725,14 @@ rhyperior: {
 			thunderfang: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
-			uproar: ["9M"],
 			whirlpool: ["9M"],
+			//aquatail //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//scorchingsands //Removido
+			//shadowclaw //Removido
+			//uproar //Removido
 		},
 	},
 happiny: {
@@ -16320,7 +17743,6 @@ happiny: {
 			charm: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			defensecurl: ["9M"],
 			disarmingvoice: ["9M"],
@@ -16335,6 +17757,7 @@ happiny: {
 			flamethrower: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			grassknot: ["9M"],
 			gravity: ["9M"],
@@ -16363,17 +17786,13 @@ happiny: {
 			refresh: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			snowscape: ["9M"],
-			solarbeam: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -16382,15 +17801,22 @@ happiny: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunderwave: ["9M"],
+			tidyup: ["9M"], //Añadido
 			toxic: ["9M"],
 			uproar: ["9M"],
 			waterpulse: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//counter //Removido
+			//rollout //Removido
+			//shockwave //Removido
+			//snowscape //Removido
+			//solarbeam //Removido
 		},
 	},
 chansey: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			aromatherapy: ["9M"],
 			attract: ["9M"],
@@ -16398,18 +17824,14 @@ chansey: {
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -16420,7 +17842,6 @@ chansey: {
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dreameater: ["9M"],
-			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
 			eggbomb: ["9M"],
@@ -16431,7 +17852,6 @@ chansey: {
 			fireblast: ["9M"],
 			firepunch: ["9M"],
 			flamethrower: ["9M"],
-			flash: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
@@ -16456,10 +17876,7 @@ chansey: {
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
-			lifedew: ["9M"],
 			lightscreen: ["9M"],
-			megakick: ["9M"],
-			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
 			minimize: ["9M"],
@@ -16482,26 +17899,19 @@ chansey: {
 			retaliate: ["9M"],
 			return: ["9M"],
 			rockclimb: ["9M"],
-			rockslide: ["9M"],
-			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			sing: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
-			snowscape: ["9M"],
 			softboiled: ["9M"],
-			solarbeam: ["9M"],
 			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
 			storedpower: ["9M"],
@@ -16515,17 +17925,13 @@ chansey: {
 			swift: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			telekinesis: ["9M"],
-			teleport: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
-			trailblaze: ["9M"],
-			triattack: ["9M"],
 			uproar: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -16534,19 +17940,40 @@ chansey: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//brickbreak //Removido
+			//bubblebeam //Removido
+			//celebrate //Removido
+			//counter //Removido
+			//dynamicpunch //Removido
+			//flash //Removido
+			//lifedew //Removido
+			//megakick //Removido
+			//megapunch //Removido
+			//rockslide //Removido
+			//rocksmash //Removido
+			//rollout //Removido
+			//shockwave //Removido
+			//snatch //Removido
+			//snowscape //Removido
+			//solarbeam //Removido
+			//telekinesis //Removido
+			//teleport //Removido
+			//thunderpunch //Removido
+			//trailblaze //Removido
+			//triattack //Removido
 		},
 	},
 blissey: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			allyswitch: ["9M"],
 			attract: ["9M"],
 			avalanche: ["9M"],
+			batonpass: ["9M"], //Añadido
 			bestow: ["9M"],
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
-			brickbreak: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
@@ -16555,7 +17982,6 @@ blissey: {
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -16626,23 +18052,19 @@ blissey: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			sing: ["9M"],
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
-			snowscape: ["9M"],
 			softboiled: ["9M"],
-			solarbeam: ["9M"],
 			stealthrock: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
@@ -16653,16 +18075,13 @@ blissey: {
 			swift: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			telekinesis: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
-			trailblaze: ["9M"],
-			triattack: ["9M"],
 			trick: ["9M"],
 			uproar: ["9M"],
 			waterpulse: ["9M"],
@@ -16670,6 +18089,18 @@ blissey: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//block //Removido
+			//brickbreak //Removido
+			//counter //Removido
+			//rollout //Removido
+			//shockwave //Removido
+			//snatch //Removido
+			//snowscape //Removido
+			//solarbeam //Removido
+			//telekinesis //Removido
+			//thunderpunch //Removido
+			//trailblaze //Removido
+			//triattack //Removido
 		},
 	},
 tangela: {
@@ -16677,25 +18108,23 @@ tangela: {
 			absorb: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bodyslam: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
+			camouflage: ["9M"], //Añadido
 			confide: ["9M"],
-			confusion: ["9M"],
 			constrict: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			endeavor: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
+			explosion: ["9M"], //Añadido
 			facade: ["9M"],
 			flail: ["9M"],
-			flash: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
@@ -16718,7 +18147,6 @@ tangela: {
 			naturepower: ["9M"],
 			painsplit: ["9M"],
 			poisonpowder: ["9M"],
-			powerswap: ["9M"],
 			powerwhip: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
@@ -16727,11 +18155,9 @@ tangela: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rocksmash: ["9M"],
 			round: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
-			shockwave: ["9M"],
 			skullbash: ["9M"],
 			slam: ["9M"],
 			sleeppowder: ["9M"],
@@ -16754,6 +18180,14 @@ tangela: {
 			wakeupslap: ["9M"],
 			worryseed: ["9M"],
 			wringout: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//confusion //Removido
+			//endeavor //Removido
+			//flash //Removido
+			//powerswap //Removido
+			//rocksmash //Removido
+			//shockwave //Removido
 		},
 	},
 tangrowth: {
@@ -16770,15 +18204,18 @@ tangrowth: {
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
 			bulletseed: ["9M"],
+			camouflage: ["9M"], //Añadido
 			captivate: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			cut: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
+			explosion: ["9M"], //Añadido
 			facade: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
@@ -16853,10 +18290,9 @@ kangaskhan: {
 			beatup: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			bubblebeam: ["9M"],
+			bulkup: ["9M"], //Añadido
 			bulldoze: ["9M"],
 			captivate: ["9M"],
 			chipaway: ["9M"],
@@ -16865,6 +18301,7 @@ kangaskhan: {
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
+			crosschop: ["9M"], //Añadido
 			crunch: ["9M"],
 			crushclaw: ["9M"],
 			curse: ["9M"],
@@ -16878,21 +18315,21 @@ kangaskhan: {
 			drainpunch: ["9M"],
 			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
+			eggbomb: ["9M"], //Añadido
+			encore: ["9M"], //Añadido
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
 			fireblast: ["9M"],
 			firepunch: ["9M"],
-			fissure: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
-			focusblast: ["9M"],
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			growl: ["9M"],
 			hail: ["9M"],
@@ -16900,12 +18337,11 @@ kangaskhan: {
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
-			hydropump: ["9M"],
+			honeclaws: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			incinerate: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
 			leer: ["9M"],
@@ -16916,6 +18352,7 @@ kangaskhan: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			outrage: ["9M"],
+			populationbomb: ["9M"], //Añadido
 			pound: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
@@ -16933,16 +18370,15 @@ kangaskhan: {
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			sing: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
 			spite: ["9M"],
 			stomp: ["9M"],
 			strength: ["9M"],
@@ -16954,13 +18390,15 @@ kangaskhan: {
 			swagger: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			terrainpulse: ["9M"],
 			thief: ["9M"],
+			thrash: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trumpcard: ["9M"],
+			upperhand: ["9M"], //Añadido
 			uproar: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -16969,25 +18407,31 @@ kangaskhan: {
 			workup: ["9M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
+			//blizzard //Removido
+			//bubblebeam //Removido
+			//fissure //Removido
+			//focusblast //Removido
+			//foresight //Removido
+			//hydropump //Removido
+			//incinerate //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
+			//terrainpulse //Removido
 		},
 	},
 horsea: {
 		learnset: {
 			agility: ["9M"],
-			attract: ["9M"],
-			aurorabeam: ["9M"],
-			bide: ["9M"],
+			aquajet: ["9M"], //Añadido
 			blizzard: ["9M"],
 			bounce: ["9M"],
-			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
-			chillingwater: ["9M"],
+			bulletseed: ["9M"], //Añadido
+			chillingwater: ["9M"], //Añadido
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
-			disable: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -16995,7 +18439,6 @@ horsea: {
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
 			dragonrage: ["9M"],
-			endure: ["9M"],
 			facade: ["9M"],
 			flail: ["9M"],
 			flashcannon: ["9M"],
@@ -17008,6 +18451,7 @@ horsea: {
 			hydropump: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
+			irontail: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			liquidation: ["9M"],
@@ -17045,32 +18489,36 @@ horsea: {
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//aurorabeam //Removido
+			//bide //Removido
+			//brine //Removido
+			//captivate //Removido
+			//disable //Removido
+			//endure //Removido
 		},
 	},
 seadra: {
 		learnset: {
 			acidspray: ["9M"],
 			agility: ["9M"],
-			attract: ["9M"],
+			aquajet: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bounce: ["9M"],
-			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
-			chillingwater: ["9M"],
+			bulletseed: ["9M"], //Añadido
+			chillingwater: ["9M"], //Añadido
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
-			disable: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonbreath: ["9M"],
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
-			endure: ["9M"],
 			facade: ["9M"],
 			flashcannon: ["9M"],
 			flipturn: ["9M"],
@@ -17084,6 +18532,7 @@ seadra: {
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
+			irontail: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			liquidation: ["9M"],
@@ -17109,7 +18558,6 @@ seadra: {
 			sludgebomb: ["9M"],
 			smokescreen: ["9M"],
 			snore: ["9M"],
-			snowscape: ["9M"],
 			spikecannon: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"],
@@ -17119,18 +18567,26 @@ seadra: {
 			terablast: ["9M"],
 			toxic: ["9M"],
 			twister: ["9M"],
+			venoshock: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//brine //Removido
+			//captivate //Removido
+			//disable //Removido
+			//endure //Removido
+			//snowscape //Removido
 		},
 	},
 kingdra: {
 		learnset: {
 			acidspray: ["9M"],
 			agility: ["9M"],
-			attract: ["9M"],
+			aquajet: ["9M"], //Añadido
+			aquatail: ["9M"], //Añadido
 			barrage: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
@@ -17139,8 +18595,8 @@ kingdra: {
 			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
-			chillingwater: ["9M"],
+			bulletseed: ["9M"], //Añadido
+			chillingwater: ["9M"], //Añadido
 			confide: ["9M"],
 			curse: ["9M"],
 			dive: ["9M"],
@@ -17153,6 +18609,7 @@ kingdra: {
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
+			flamethrower: ["9M"], //Añadido
 			flashcannon: ["9M"],
 			flipturn: ["9M"],
 			focusblast: ["9M"],
@@ -17169,6 +18626,7 @@ kingdra: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			ironhead: ["9M"],
+			irontail: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			liquidation: ["9M"],
@@ -17191,9 +18649,9 @@ kingdra: {
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			smackdown: ["9M"], //Añadido
 			smokescreen: ["9M"],
 			snore: ["9M"],
-			snowscape: ["9M"],
 			spikecannon: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"],
@@ -17203,6 +18661,7 @@ kingdra: {
 			terablast: ["9M"],
 			toxic: ["9M"],
 			twister: ["9M"],
+			venoshock: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -17210,12 +18669,16 @@ kingdra: {
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
 			yawn: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//snowscape //Removido
 		},
 	},
 kingdrafeudal: {
 		learnset: {
 			acidspray: ["9M"],
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			attract: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
@@ -17238,6 +18701,7 @@ kingdrafeudal: {
 			dragonbreath: ["9M"],
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
+			dragonrage: ["9M"], //Añadido
 			dragonrush: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
@@ -17278,11 +18742,14 @@ kingdrafeudal: {
 			secretpower: ["9M"],
 			shadowball: ["9M"],
 			signalbeam: ["9M"],
+			simplebeam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			sludgewave: ["9M"], //Añadido
 			smokescreen: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			sparkingarea: ["9M"], //Añadido
 			spikecannon: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"],
@@ -17305,15 +18772,14 @@ goldeen: {
 		learnset: {
 			acupressure: ["9M"],
 			agility: ["9M"],
+			amnesia: ["9M"], //Añadido
 			aquaring: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
-			bodyslam: ["9M"],
 			bounce: ["9M"],
+			bubble: ["9M"], //Añadido
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			dive: ["9M"],
@@ -17348,6 +18814,7 @@ goldeen: {
 			poisonjab: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
+			psychocut: ["9M"], //Añadido
 			quickattack: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
@@ -17364,34 +18831,37 @@ goldeen: {
 			snore: ["9M"],
 			soak: ["9M"],
 			substitute: ["9M"],
-			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			throatchop: ["9M"],
 			toxic: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			watersport: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//bodyslam //Removido
+			//captivate //Removido
+			//supersonic //Removido
+			//throatchop //Removido
 		},
 	},
 seaking: {
 		learnset: {
 			agility: ["9M"],
+			amnesia: ["9M"], //Añadido
 			aquaring: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
+			bubble: ["9M"], //Añadido
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			dive: ["9M"],
@@ -17405,7 +18875,6 @@ seaking: {
 			frustration: ["9M"],
 			furyattack: ["9M"],
 			furycutter: ["9M"],
-			gigaimpact: ["9M"],
 			hail: ["9M"],
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
@@ -17426,6 +18895,7 @@ seaking: {
 			poisonjab: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
+			psychocut: ["9M"], //Añadido
 			quickattack: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
@@ -17442,28 +18912,34 @@ seaking: {
 			snore: ["9M"],
 			soak: ["9M"],
 			substitute: ["9M"],
-			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
-			throatchop: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			toxic: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			watersport: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//gigaimpact //Removido
+			//supersonic //Removido
+			//throatchop //Removido
 		},
 	},
 staryu: {
 		learnset: {
-			attract: ["9M"],
+			aerialace: ["9M"], //Añadido
+			amnesia: ["9M"], //Añadido
+			ancientpower: ["9M"], //Añadido
+			aquaring: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
 			camouflage: ["9M"],
 			confide: ["9M"],
@@ -17471,6 +18947,7 @@ staryu: {
 			cosmicpower: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -17489,6 +18966,7 @@ staryu: {
 			hydropump: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
+			lifedew: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			magiccoat: ["9M"],
 			mimic: ["9M"],
@@ -17519,12 +18997,14 @@ staryu: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			substitute: ["9M"],
+			supersonic: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
 			teleport: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
@@ -17536,23 +19016,28 @@ staryu: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//brine //Removido
 		},
 	},
 starmie: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
 			allyswitch: ["9M"],
-			attract: ["9M"],
-			avalanche: ["9M"],
+			amnesia: ["9M"], //Añadido
+			ancientpower: ["9M"], //Añadido
+			aquaring: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
 			cosmicpower: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -17563,6 +19048,7 @@ starmie: {
 			flash: ["9M"],
 			flashcannon: ["9M"],
 			flipturn: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
@@ -17576,6 +19062,7 @@ starmie: {
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
+			lifedew: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			magiccoat: ["9M"],
 			meteorbeam: ["9M"],
@@ -17585,10 +19072,11 @@ starmie: {
 			nightmare: ["9M"],
 			painsplit: ["9M"],
 			powergem: ["9M"],
+			powersplit: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
-			psychocut: ["9M"],
 			psychup: ["9M"],
 			psyshock: ["9M"],
 			psywave: ["9M"],
@@ -17605,13 +19093,16 @@ starmie: {
 			round: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
+			shockwave: ["9M"], //Añadido
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spotlight: ["9M"],
+			storedpower: ["9M"], //Añadido
 			substitute: ["9M"],
+			supersonic: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
@@ -17619,6 +19110,7 @@ starmie: {
 			takedown: ["9M"],
 			telekinesis: ["9M"],
 			teleport: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
@@ -17633,6 +19125,10 @@ starmie: {
 			whirlpool: ["9M"],
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//avalanche //Removido
+			//brine //Removido
+			//psychocut //Removido
 		},
 	},
 mimejr: {
@@ -17731,16 +19227,15 @@ mimejr: {
 	},
 mrmime: {
 		learnset: {
-			aerialace: ["9M"],
+			afteryou: ["9M"], //Añadido
 			allyswitch: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
 			attract: ["9M"],
 			barrier: ["9M"],
 			batonpass: ["9M"],
 			bide: ["9M"],
-			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
@@ -17749,22 +19244,26 @@ mrmime: {
 			copycat: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
 			doubleedge: ["9M"],
-			doubleslap: ["9M"],
+			doubleslap: ["9M"], //Añadido
 			doubleteam: ["9M"],
-			drainpunch: ["9M"],
+			drainingkiss: ["9M"], //Añadido
 			dreameater: ["9M"],
 			dynamicpunch: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
+			entertainment: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
 			firepunch: ["9M"],
 			flash: ["9M"],
+			flashcannon: ["9M"], //Añadido
+			flatter: ["9M"], //Añadido
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
@@ -17772,27 +19271,29 @@ mrmime: {
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			guardswap: ["9M"],
+			happyhour: ["9M"], //Añadido
 			headbutt: ["9M"],
+			healbell: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			holdhands: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
 			infestation: ["9M"],
-			irondefense: ["9M"],
+			knockoff: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
 			magicroom: ["9M"],
-			meditate: ["9M"],
-			megakick: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
 			mistyterrain: ["9M"],
 			mudslap: ["9M"],
 			mysticalfire: ["9M"],
@@ -17800,9 +19301,12 @@ mrmime: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			payback: ["9M"],
+			playnice: ["9M"], //Añadido
 			pound: ["9M"],
-			powersplit: ["9M"],
+			powershift: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			powerswap: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -17824,7 +19328,6 @@ mrmime: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
@@ -17838,8 +19341,10 @@ mrmime: {
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			takedown: ["9M"],
 			taunt: ["9M"],
+			teatime: ["9M"], //Añadido
 			teeterdance: ["9M"],
 			telekinesis: ["9M"],
 			teleport: ["9M"],
@@ -17853,46 +19358,63 @@ mrmime: {
 			toxic: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
-			uproar: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			wakeupslap: ["9M"],
 			wideguard: ["9M"],
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//aerialace //Removido
+			//bodyslam //Removido
+			//captivate //Removido
+			//drainpunch //Removido
+			//gigaimpact //Removido
+			//irondefense //Removido
+			//meditate //Removido
+			//megakick //Removido
+			//shockwave //Removido
+			//uproar //Removido
 		},
 	},
 mrmimegalar: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			attract: ["9M"],
-			avalanche: ["9M"],
 			batonpass: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			calmmind: ["9M"],
 			charm: ["9M"],
+			chillingwater: ["9M"], //Añadido
 			confuseray: ["9M"],
 			confusion: ["9M"],
 			copycat: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			dazzlinggleam: ["9M"],
 			doublekick: ["9M"],
+			doubleslap: ["9M"], //Añadido
+			drainingkiss: ["9M"], //Añadido
 			drainpunch: ["9M"],
 			encore: ["9M"],
-			endure: ["9M"],
 			energyball: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
+			flatter: ["9M"], //Añadido
 			fling: ["9M"],
 			focusblast: ["9M"],
 			foulplay: ["9M"],
 			freezedry: ["9M"],
+			frostbreath: ["9M"], //Añadido
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			guardswap: ["9M"],
 			hail: ["9M"],
+			happyhour: ["9M"], //Añadido
+			healbell: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
@@ -17901,20 +19423,22 @@ mrmimegalar: {
 			iceshard: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
-			irondefense: ["9M"],
 			lightscreen: ["9M"],
 			magicroom: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megakick: ["9M"],
-			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
 			mirrorcoat: ["9M"],
 			mistyterrain: ["9M"],
 			nastyplot: ["9M"],
 			payback: ["9M"],
+			playnice: ["9M"], //Añadido
 			pound: ["9M"],
-			powersplit: ["9M"],
+			powershift: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			powerswap: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -17930,16 +19454,18 @@ mrmimegalar: {
 			safeguard: ["9M"],
 			screech: ["9M"],
 			shadowball: ["9M"],
+			sheercold: ["9M"], //Añadido
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
 			stompingtantrum: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			taunt: ["9M"],
+			teatime: ["9M"], //Añadido
 			teeterdance: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
@@ -17949,9 +19475,15 @@ mrmimegalar: {
 			trick: ["9M"],
 			trickroom: ["9M"],
 			tripleaxel: ["9M"],
-			uproar: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			wonderroom: ["9M"],
 			zenheadbutt: ["9M"],
+			//avalanche //Removido
+			//endure //Removido
+			//irondefense //Removido
+			//megapunch //Removido
+			//solarbeam //Removido
+			//uproar //Removido
 		},
 	},
 mrrime: {
@@ -18055,18 +19587,17 @@ scyther: {
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
+			astonish: ["9M"], //Añadido
 			bide: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			crosspoison: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			defog: ["9M"],
@@ -18079,7 +19610,9 @@ scyther: {
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			feint: ["9M"],
-			focusenergy: ["9M"],
+			firstimpression: ["9M"], //Añadido
+			fly: ["9M"], //Añadido
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			gigaimpact: ["9M"],
@@ -18091,7 +19624,7 @@ scyther: {
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
-			lunge: ["9M"],
+			lunge: ["9M"], //Añadido
 			mimic: ["9M"],
 			morningsun: ["9M"],
 			naturalgift: ["9M"],
@@ -18115,12 +19648,13 @@ scyther: {
 			safeguard: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
-			silverwind: ["9M"],
+			sharpen: ["9M"], //Añadido
 			skittersmack: ["9M"],
 			skullbash: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			solarblade: ["9M"], //Añadido
 			steelwing: ["9M"],
 			strugglebug: ["9M"],
 			substitute: ["9M"],
@@ -18138,6 +19672,10 @@ scyther: {
 			vacuumwave: ["9M"],
 			wingattack: ["9M"],
 			xscissor: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//silverwind //Removido
 		},
 	},
 scizor: {
@@ -18148,18 +19686,20 @@ scizor: {
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
+			astonish: ["9M"], //Añadido
+			autotomize: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
 			bulletpunch: ["9M"],
-			captivate: ["9M"],
 			closecombat: ["9M"],
+			cometpunch: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
+			crabhammer: ["9M"], //Añadido
 			crosspoison: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			defog: ["9M"],
@@ -18168,16 +19708,20 @@ scizor: {
 			doublehit: ["9M"],
 			doubleteam: ["9M"],
 			dualwingbeat: ["9M"],
+			dynamicpunch: ["9M"], //Añadido
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			feint: ["9M"],
+			firstimpression: ["9M"], //Añadido
 			flashcannon: ["9M"],
 			fling: ["9M"],
-			focusenergy: ["9M"],
+			fly: ["9M"], //Añadido
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			gigaimpact: ["9M"],
+			guillotine: ["9M"], //Añadido
 			hardpress: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
@@ -18189,8 +19733,8 @@ scizor: {
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
-			lunge: ["9M"],
-			metalclaw: ["9M"],
+			lunge: ["9M"], //Añadido
+			metalclaw: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
@@ -18213,12 +19757,12 @@ scizor: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
-			silverwind: ["9M"],
+			sharpen: ["9M"], //Añadido
 			skittersmack: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			steelbeam: ["9M"],
+			solarblade: ["9M"], //Añadido
 			steelwing: ["9M"],
 			strength: ["9M"],
 			strugglebug: ["9M"],
@@ -18232,13 +19776,20 @@ scizor: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			thunderpunch: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			upperhand: ["9M"], //Añadido
 			uturn: ["9M"],
 			vacuumwave: ["9M"],
-			venoshock: ["9M"],
 			wingattack: ["9M"],
 			xscissor: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//silverwind //Removido
+			//steelbeam //Removido
+			//venoshock //Removido
 		},
 	},
 kleavor: {
@@ -18248,11 +19799,13 @@ kleavor: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			astonish: ["9M"], //Añadido
 			batonpass: ["9M"],
 			brickbreak: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
 			closecombat: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublehit: ["9M"],
 			doubleteam: ["9M"],
@@ -18260,14 +19813,16 @@ kleavor: {
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
-			focusenergy: ["9M"],
+			firstimpression: ["9M"], //Añadido
+			fly: ["9M"], //Añadido
+			focusenergy: ["9M"], //Añadido
 			furycutter: ["9M"],
 			gigaimpact: ["9M"],
 			helpinghand: ["9M"],
 			hyperbeam: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
-			lunge: ["9M"],
+			lunge: ["9M"], //Añadido
 			pounce: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
@@ -18279,10 +19834,12 @@ kleavor: {
 			rocktomb: ["9M"],
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
+			sharpen: ["9M"], //Añadido
 			skittersmack: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			solarblade: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			stoneaxe: ["9M"],
 			stoneedge: ["9M"],
@@ -18305,18 +19862,17 @@ smoochum: {
 		learnset: {
 			attract: ["9M"],
 			auroraveil: ["9M"],
-			avalanche: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			blizzard: ["9M"],
-			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			confusion: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
@@ -18328,7 +19884,6 @@ smoochum: {
 			facade: ["9M"],
 			fakeout: ["9M"],
 			faketears: ["9M"],
-			flash: ["9M"],
 			fling: ["9M"],
 			frostbreath: ["9M"],
 			frustration: ["9M"],
@@ -18348,7 +19903,6 @@ smoochum: {
 			magicroom: ["9M"],
 			meanlook: ["9M"],
 			meditate: ["9M"],
-			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
@@ -18359,10 +19913,13 @@ smoochum: {
 			nightmare: ["9M"],
 			payback: ["9M"],
 			perishsong: ["9M"],
+			playnice: ["9M"], //Añadido
+			playrough: ["9M"], //Añadido
 			pound: ["9M"],
 			powdersnow: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
+			psychicnoise: ["9M"], //Añadido
 			psychup: ["9M"],
 			psyshock: ["9M"],
 			raindance: ["9M"],
@@ -18380,12 +19937,15 @@ smoochum: {
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
 			sweetscent: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -18395,33 +19955,38 @@ smoochum: {
 			wish: ["9M"],
 			wonderroom: ["9M"],
 			zenheadbutt: ["9M"],
+			//avalanche //Removido
+			//bodyslam //Removido
+			//counter //Removido
+			//flash //Removido
+			//megakick //Removido
 		},
 	},
 jynx: {
 		learnset: {
+			alluringvoice: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			attract: ["9M"],
 			auroraveil: ["9M"],
-			avalanche: ["9M"],
+			babydolleyes: ["9M"], //Añadido
 			bide: ["9M"],
 			blizzard: ["9M"],
-			bodyslam: ["9M"],
-			brickbreak: ["9M"],
 			bubblebeam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
+			chillyreception: ["9M"], //Añadido
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			confusion: ["9M"],
 			copycat: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
-			doubleslap: ["9M"],
+			doubleslap: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
-			drainpunch: ["9M"],
 			dreameater: ["9M"],
 			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
@@ -18431,14 +19996,14 @@ jynx: {
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
-			flash: ["9M"],
+			flatter: ["9M"], //Añadido
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
 			frostbreath: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			hail: ["9M"],
 			headbutt: ["9M"],
@@ -18453,12 +20018,11 @@ jynx: {
 			iciclespear: ["9M"],
 			icywind: ["9M"],
 			lick: ["9M"],
-			lightscreen: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			lovelykiss: ["9M"],
 			magiccoat: ["9M"],
 			magicroom: ["9M"],
 			meanlook: ["9M"],
-			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
@@ -18468,16 +20032,17 @@ jynx: {
 			nightmare: ["9M"],
 			payback: ["9M"],
 			perishsong: ["9M"],
+			playnice: ["9M"], //Añadido
+			playrough: ["9M"], //Añadido
 			pound: ["9M"],
 			powdersnow: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
+			psychicnoise: ["9M"], //Añadido
 			psychicterrain: ["9M"],
-			psychocut: ["9M"],
 			psychup: ["9M"],
 			psyshock: ["9M"],
-			psywave: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
 			recycle: ["9M"],
@@ -18490,12 +20055,14 @@ jynx: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
+			sheercold: ["9M"], //Añadido
 			signalbeam: ["9M"],
 			sing: ["9M"],
 			skillswap: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			storedpower: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -18504,15 +20071,19 @@ jynx: {
 			sweetscent: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			tearfullook: ["9M"], //Añadido
+			teeterdance: ["9M"], //Añadido
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
+			tickle: ["9M"], //Añadido
+			tidyup: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
-			tripleaxel: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			uproar: ["9M"],
 			wakeupslap: ["9M"],
 			watergun: ["9M"],
@@ -18520,6 +20091,17 @@ jynx: {
 			wonderroom: ["9M"],
 			wringout: ["9M"],
 			zenheadbutt: ["9M"],
+			//avalanche //Removido
+			//bodyslam //Removido
+			//brickbreak //Removido
+			//counter //Removido
+			//drainpunch //Removido
+			//flash //Removido
+			//gigaimpact //Removido
+			//megakick //Removido
+			//psychocut //Removido
+			//psywave //Removido
+			//tripleaxel //Removido
 		},
 	},
 elekid: {
@@ -18574,6 +20156,7 @@ elekid: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playrough: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
@@ -18591,6 +20174,7 @@ elekid: {
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			substitute: ["9M"],
 			supercellslam: ["9M"],
 			swagger: ["9M"],
@@ -18604,6 +20188,7 @@ elekid: {
 			thunderpunch: ["9M"],
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M"],
@@ -18631,6 +20216,7 @@ electabuzz: {
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			drainpunch: ["9M"], //Añadido
 			dualchop: ["9M"],
 			dynamicpunch: ["9M"],
 			eerieimpulse: ["9M"],
@@ -18666,10 +20252,10 @@ electabuzz: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playrough: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
-			psywave: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
@@ -18688,6 +20274,7 @@ electabuzz: {
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -18696,20 +20283,24 @@ electabuzz: {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-			teleport: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
+			thunderfang: ["9M"], //Añadido
 			thunderpunch: ["9M"],
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M"],
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//psywave //Removido
+			//teleport //Removido
 		},
 	},
 electivire: {
@@ -18730,6 +20321,7 @@ electivire: {
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			drainpunch: ["9M"], //Añadido
 			dualchop: ["9M"],
 			earthquake: ["9M"],
 			eerieimpulse: ["9M"],
@@ -18765,6 +20357,7 @@ electivire: {
 			metronome: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playrough: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
@@ -18785,6 +20378,7 @@ electivire: {
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -18795,11 +20389,14 @@ electivire: {
 			taunt: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
+			thunderfang: ["9M"], //Añadido
 			thunderpunch: ["9M"],
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -18813,7 +20410,6 @@ magby: {
 		learnset: {
 			acidspray: ["9M"],
 			attract: ["9M"],
-			barrier: ["9M"],
 			belch: ["9M"],
 			bellydrum: ["9M"],
 			bodyslam: ["9M"],
@@ -18825,7 +20421,6 @@ magby: {
 			confuseray: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
-			crosschop: ["9M"],
 			curse: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
@@ -18866,6 +20461,7 @@ magby: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			overheat: ["9M"],
+			playrough: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			powerswap: ["9M"],
 			poweruppunch: ["9M"],
@@ -18883,6 +20479,7 @@ magby: {
 			smog: ["9M"],
 			smokescreen: ["9M"],
 			snore: ["9M"],
+			stockpile: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
@@ -18891,9 +20488,12 @@ magby: {
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			uproar: ["9M"],
 			willowisp: ["9M"],
+			//barrier //Removido
+			//crosschop //Removido
 		},
 	},
 magmar: {
@@ -18910,7 +20510,6 @@ magmar: {
 			confuseray: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
-			crosschop: ["9M"],
 			curse: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
@@ -18956,12 +20555,12 @@ magmar: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			overheat: ["9M"],
+			playrough: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			powerswap: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
-			psywave: ["9M"],
 			rage: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -18974,11 +20573,13 @@ magmar: {
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			shadowball: ["9M"], //Añadido
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			smog: ["9M"],
 			smokescreen: ["9M"],
 			snore: ["9M"],
+			stockpile: ["9M"], //Añadido
 			strength: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
@@ -18986,14 +20587,17 @@ magmar: {
 			swagger: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-			teleport: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			uproar: ["9M"],
 			willowisp: ["9M"],
+			//crosschop //Removido
+			//psywave //Removido
+			//teleport //Removido
 		},
 	},
 magmortar: {
@@ -19053,6 +20657,7 @@ magmortar: {
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"],
 			overheat: ["9M"],
+			playrough: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			powerswap: ["9M"],
 			poweruppunch: ["9M"],
@@ -19070,11 +20675,13 @@ magmortar: {
 			scorchingsands: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
+			shadowball: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smog: ["9M"],
 			smokescreen: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -19087,6 +20694,7 @@ magmortar: {
 			thief: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
@@ -19096,25 +20704,26 @@ magmortar: {
 	},
 pinsir: {
 		learnset: {
-			attract: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
+			bite: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			bugbite: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doublehit: ["9M"],
 			doubleteam: ["9M"],
-			earthquake: ["9M"],
+			drillrun: ["9M"], //Añadido
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
@@ -19135,14 +20744,20 @@ pinsir: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			hornattack: ["9M"], //Añadido
+			horndrill: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			irondefense: ["9M"],
 			knockoff: ["9M"],
+			lashout: ["9M"], //Añadido
+			lunge: ["9M"], //Añadido
 			mefirst: ["9M"],
 			megahorn: ["9M"],
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			outrage: ["9M"],
+			pinmissile: ["9M"], //Añadido
+			poisonjab: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
@@ -19161,9 +20776,9 @@ pinsir: {
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
-			stealthrock: ["9M"],
-			stoneedge: ["9M"],
+			spikes: ["9M"], //Añadido
 			stormthrow: ["9M"],
 			strength: ["9M"],
 			stringshot: ["9M"],
@@ -19178,18 +20793,25 @@ pinsir: {
 			thief: ["9M"],
 			thrash: ["9M"],
 			throatchop: ["9M"],
+			thunderpunch: ["9M"], //Añadido
 			toxic: ["9M"],
+			twineddle: ["9M"], //Añadido
 			visegrip: ["9M"],
 			vitalthrow: ["9M"],
 			xscissor: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//earthquake //Removido
+			//stealthrock //Removido
+			//stoneedge //Removido
 		},
 	},
 tauros: {
 		learnset: {
 			assurance: ["9M"],
 			attract: ["9M"],
+			beatup: ["9M"], //Añadido
 			bide: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			captivate: ["9M"],
@@ -19199,12 +20821,12 @@ tauros: {
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			drillrun: ["9M"], //Añadido
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
-			fissure: ["9M"],
 			flamethrower: ["9M"],
 			focusenergy: ["9M"],
 			frustration: ["9M"],
@@ -19218,7 +20840,6 @@ tauros: {
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			incinerate: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			lashout: ["9M"],
@@ -19229,7 +20850,8 @@ tauros: {
 			outrage: ["9M"],
 			payback: ["9M"],
 			protect: ["9M"],
-			pursuit: ["9M"],
+			pursuit: ["9M"], //Añadido
+			quickattack: ["9M"], //Añadido
 			rage: ["9M"],
 			ragingbull: ["9M"],
 			raindance: ["9M"],
@@ -19245,23 +20867,23 @@ tauros: {
 			rocktomb: ["9M"],
 			roleplay: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
 			spite: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			tackle: ["9M"],
@@ -19275,18 +20897,25 @@ tauros: {
 			thunderbolt: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//fissure //Removido
+			//incinerate //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
+			//uproar //Removido
 		},
 	},
 taurospaldeacombat: {
 		learnset: {
 			assurance: ["9M"],
+			beatup: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulkup: ["9M"],
@@ -19307,6 +20936,7 @@ taurospaldeacombat: {
 			hyperbeam: ["9M"],
 			ironhead: ["9M"],
 			lashout: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			outrage: ["9M"],
 			protect: ["9M"],
 			ragingbull: ["9M"],
@@ -19340,10 +20970,14 @@ taurospaldeacombat: {
 	},
 taurospaldeablaze: {
 		learnset: {
+			beatup: ["9M"], //Añadido
+			blazekick: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
+			burningbulwark: ["9M"], //Añadido
+			captivate: ["9M"], //Añadido
 			closecombat: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
@@ -19369,6 +21003,7 @@ taurospaldeablaze: {
 			overheat: ["9M"],
 			protect: ["9M"],
 			ragingbull: ["9M"],
+			ragingfury: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			reversal: ["9M"],
@@ -19400,6 +21035,7 @@ taurospaldeablaze: {
 taurospaldeaaqua: {
 		learnset: {
 			aquajet: ["9M"],
+			beatup: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulkup: ["9M"],
@@ -19457,19 +21093,26 @@ taurospaldeaaqua: {
 	},
 magikarp: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
+			amnesia: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
 			bounce: ["9M"],
-			celebrate: ["9M"],
 			flail: ["9M"],
 			happyhour: ["9M"],
 			hydropump: ["9M"],
+			liquidation: ["9M"], //Añadido
+			scaleshot: ["9M"], //Añadido
 			splash: ["9M"],
 			tackle: ["9M"],
+			//celebrate //Removido
 		},
 	},
 gyarados: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
+			amnesia: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
 			aquatail: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
@@ -19477,13 +21120,14 @@ gyarados: {
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
-			brine: ["9M"],
+			breakingswipe: ["9M"], //Añadido
 			brutalswing: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
@@ -19495,12 +21139,14 @@ gyarados: {
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
 			dragonrage: ["9M"],
+			dragonrush: ["9M"], //Añadido
 			dragontail: ["9M"],
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
+			firefang: ["9M"], //Añadido
 			flail: ["9M"],
 			flamethrower: ["9M"],
 			frustration: ["9M"],
@@ -19520,14 +21166,17 @@ gyarados: {
 			irontail: ["9M"],
 			lashout: ["9M"],
 			leer: ["9M"],
+			liquidation: ["9M"], //Añadido
 			mimic: ["9M"],
 			muddywater: ["9M"],
 			naturalgift: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			outrage: ["9M"],
 			payback: ["9M"],
 			powerwhip: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
+			ragingfury: ["9M"], //Añadido
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -19537,11 +21186,12 @@ gyarados: {
 			round: ["9M"],
 			sandstorm: ["9M"],
 			scald: ["9M"],
-			scaleshot: ["9M"],
+			scaleshot: ["9M"], //Añadido
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
+			snarl: ["9M"], //Añadido
 			snore: ["9M"],
 			spite: ["9M"],
 			splash: ["9M"],
@@ -19549,6 +21199,7 @@ gyarados: {
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			tackle: ["9M"],
@@ -19560,7 +21211,6 @@ gyarados: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			twister: ["9M"],
 			uproar: ["9M"],
@@ -19569,13 +21219,16 @@ gyarados: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//brine //Removido
+			//captivate //Removido
+			//torment //Removido
 		},
 	},
 lapras: {
 		learnset: {
 			alluringvoice: ["9M"],
 			ancientpower: ["9M"],
-			aquatail: ["9M"],
 			attract: ["9M"],
 			aurorabeam: ["9M"],
 			avalanche: ["9M"],
@@ -19587,7 +21240,6 @@ lapras: {
 			brine: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -19609,10 +21261,10 @@ lapras: {
 			endure: ["9M"],
 			facade: ["9M"],
 			fissure: ["9M"],
-			foresight: ["9M"],
 			freezedry: ["9M"],
 			frostbreath: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
@@ -19622,7 +21274,6 @@ lapras: {
 			healbell: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
-			horndrill: ["9M"],
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
@@ -19633,9 +21284,11 @@ lapras: {
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			lifedew: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			liquidation: ["9M"],
 			megahorn: ["9M"],
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
 			mist: ["9M"],
 			muddywater: ["9M"],
 			naturalgift: ["9M"],
@@ -19653,12 +21306,12 @@ lapras: {
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
+			rockslide: ["9M"], //Añadido
 			rocksmash: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			sheercold: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sing: ["9M"],
 			skullbash: ["9M"],
@@ -19666,18 +21319,19 @@ lapras: {
 			smartstrike: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			sparklingaria: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			tickle: ["9M"],
 			toxic: ["9M"],
+			uproar: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -19685,6 +21339,13 @@ lapras: {
 			whirlpool: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//aquatail //Removido
+			//captivate //Removido
+			//foresight //Removido
+			//horndrill //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
+			//tickle //Removido
 		},
 	},
 ditto: {
@@ -19698,12 +21359,10 @@ eevee: {
 			attract: ["9M"],
 			babydolleyes: ["9M"],
 			batonpass: ["9M"],
-			bide: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
@@ -19711,6 +21370,7 @@ eevee: {
 			curse: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
@@ -19724,16 +21384,22 @@ eevee: {
 			growl: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hypervoice: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
+			luckychant: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
@@ -19756,9 +21422,11 @@ eevee: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			synchronoise: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -19766,10 +21434,13 @@ eevee: {
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			trumpcard: ["9M"],
+			veeveevolley: ["9M"], //Añadido
 			weatherball: ["9M"],
 			wish: ["9M"],
 			workup: ["9M"],
 			yawn: ["9M"],
+			//bide //Removido
+			//celebrate //Removido
 		},
 	},
 eeveestarter: {
@@ -19850,7 +21521,6 @@ vaporeon: {
 			bubblebeam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -19859,6 +21529,7 @@ vaporeon: {
 			curse: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
@@ -19876,8 +21547,10 @@ vaporeon: {
 			haze: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
@@ -19887,12 +21560,16 @@ vaporeon: {
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			liquidation: ["9M"],
+			luckychant: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
 			mimic: ["9M"],
 			mist: ["9M"],
 			muddywater: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
@@ -19912,19 +21589,24 @@ vaporeon: {
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sparkingarea: ["9M"], //Añadido
 			storedpower: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			veeveevolley: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -19932,11 +21614,14 @@ vaporeon: {
 			whirlpool: ["9M"],
 			workup: ["9M"],
 			yawn: ["9M"],
+			//celebrate //Removido
 		},
 	},
 jolteon: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			attract: ["9M"],
 			babydolleyes: ["9M"],
@@ -19947,7 +21632,6 @@ jolteon: {
 			buzzybuzz: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			charm: ["9M"],
@@ -19957,6 +21641,7 @@ jolteon: {
 			curse: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
@@ -19969,7 +21654,6 @@ jolteon: {
 			endure: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
-			falseswipe: ["9M"],
 			flash: ["9M"],
 			focusenergy: ["9M"],
 			frustration: ["9M"],
@@ -19977,21 +21661,26 @@ jolteon: {
 			growl: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magnetrise: ["9M"],
-			metalsound: ["9M"],
+			mefirst: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			payday: ["9M"],
 			pinmissile: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
@@ -20017,8 +21706,10 @@ jolteon: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -20029,12 +21720,17 @@ jolteon: {
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			veeveevolley: ["9M"], //Añadido
 			voltswitch: ["9M"],
 			weatherball: ["9M"],
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
+			//celebrate //Removido
+			//falseswipe //Removido
+			//metalsound //Removido
 		},
 	},
 flareon: {
@@ -20049,7 +21745,6 @@ flareon: {
 			burningjealousy: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
@@ -20057,12 +21752,12 @@ flareon: {
 			curse: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
 			doubleteam: ["9M"],
 			echoedvoice: ["9M"],
 			ember: ["9M"],
-			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
@@ -20072,15 +21767,18 @@ flareon: {
 			flamecharge: ["9M"],
 			flamethrower: ["9M"],
 			flareblitz: ["9M"],
+			flash: ["9M"], //Añadido
 			focusenergy: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			incinerate: ["9M"],
@@ -20088,13 +21786,16 @@ flareon: {
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			lavaplume: ["9M"],
-			leer: ["9M"],
+			luckychant: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"],
 			overheat: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			rage: ["9M"],
@@ -20114,7 +21815,6 @@ flareon: {
 			sizzlyslide: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
-			smog: ["9M"],
 			snore: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
@@ -20122,19 +21822,27 @@ flareon: {
 			sunnyday: ["9M"],
 			superpower: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			veeveevolley: ["9M"], //Añadido
 			weatherball: ["9M"],
 			willowisp: ["9M"],
 			workup: ["9M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
+			//celebrate //Removido
+			//endeavor //Removido
+			//leer //Removido
+			//smog //Removido
 		},
 	},
 espeon: {
@@ -20143,12 +21851,12 @@ espeon: {
 			allyswitch: ["9M"],
 			attract: ["9M"],
 			babydolleyes: ["9M"],
+			barrier: ["9M"], //Añadido
 			batonpass: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
@@ -20160,6 +21868,8 @@ espeon: {
 			dazzlinggleam: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
@@ -20169,7 +21879,9 @@ espeon: {
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
+			fireblast: ["9M"], //Añadido
 			flash: ["9M"],
+			focusblast: ["9M"], //Añadido
 			focusenergy: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
@@ -20178,10 +21890,14 @@ espeon: {
 			grassknot: ["9M"],
 			gravity: ["9M"],
 			growl: ["9M"],
+			guardswap: ["9M"], //Añadido
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			healblock: ["9M"], //Añadido
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			imprison: ["9M"],
@@ -20189,16 +21905,22 @@ espeon: {
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
 			magicroom: ["9M"],
+			mefirst: ["9M"], //Añadido
 			mimic: ["9M"],
+			miracleeye: ["9M"], //Añadido
+			mirrorcoat: ["9M"], //Añadido
 			morningsun: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			payday: ["9M"],
-			powergem: ["9M"],
+			playnice: ["9M"], //Añadido
+			powergem: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			powerswap: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -20223,12 +21945,17 @@ espeon: {
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			speedswap: ["9M"], //Añadido
 			storedpower: ["9M"],
+			submission: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			telekinesis: ["9M"],
@@ -20238,10 +21965,12 @@ espeon: {
 			trailblaze: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			veeveevolley: ["9M"], //Añadido
 			weatherball: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//celebrate //Removido
 		},
 	},
 umbreon: {
@@ -20251,23 +21980,25 @@ umbreon: {
 			attract: ["9M"],
 			babydolleyes: ["9M"],
 			baddybad: ["9M"],
+			barrier: ["9M"], //Añadido
 			batonpass: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			copycat: ["9M"],
 			covet: ["9M"],
-			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			darkpulse: ["9M"],
+			destinybond: ["9M"], //Añadido
 			detect: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -20277,6 +22008,7 @@ umbreon: {
 			faketears: ["9M"],
 			feintattack: ["9M"],
 			flash: ["9M"],
+			focusblast: ["9M"], //Añadido
 			focusenergy: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
@@ -20285,27 +22017,40 @@ umbreon: {
 			guardswap: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			irontail: ["9M"],
+			knockoff: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lashout: ["9M"],
 			lastresort: ["9M"],
+			leer: ["9M"], //Añadido
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			meanlook: ["9M"],
+			mefirst: ["9M"], //Añadido
+			memento: ["9M"], //Añadido
 			mimic: ["9M"],
+			moonblast: ["9M"], //Añadido
 			moonlight: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nightdaze: ["9M"], //Añadido
 			nightmare: ["9M"],
 			payback: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychup: ["9M"],
 			pursuit: ["9M"],
+			quash: ["9M"], //Añadido
 			quickattack: ["9M"],
 			raindance: ["9M"],
 			reflect: ["9M"],
@@ -20319,6 +22064,7 @@ umbreon: {
 			screech: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
@@ -20330,8 +22076,10 @@ umbreon: {
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
@@ -20342,10 +22090,13 @@ umbreon: {
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			veeveevolley: ["9M"], //Añadido
 			weatherball: ["9M"],
 			wonderroom: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//celebrate //Removido
+			//crunch //Removido
 		},
 	},
 leafeon: {
@@ -20360,13 +22111,13 @@ leafeon: {
 			bulletseed: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			echoedvoice: ["9M"],
@@ -20386,8 +22137,10 @@ leafeon: {
 			growl: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			irontail: ["9M"],
@@ -20397,12 +22150,16 @@ leafeon: {
 			leafblade: ["9M"],
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magicalleaf: ["9M"],
+			mefirst: ["9M"], //Añadido
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			raindance: ["9M"],
@@ -20426,19 +22183,23 @@ leafeon: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			veeveevolley: ["9M"], //Añadido
 			weatherball: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
 			xscissor: ["9M"],
+			//celebrate //Removido
 		},
 	},
 glaceon: {
@@ -20456,7 +22217,6 @@ glaceon: {
 			bodyslam: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -20464,6 +22224,7 @@ glaceon: {
 			covet: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			echoedvoice: ["9M"],
@@ -20481,8 +22242,10 @@ glaceon: {
 			haze: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icebeam: ["9M"],
@@ -20493,11 +22256,15 @@ glaceon: {
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
+			luckychant: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
 			mirrorcoat: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			raindance: ["9M"],
@@ -20519,17 +22286,21 @@ glaceon: {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9M"],
+			veeveevolley: ["9M"], //Añadido
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			workup: ["9M"],
+			//celebrate //Removido
 		},
 	},
 porygon: {
@@ -20540,11 +22311,13 @@ porygon: {
 			barrier: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
+			boltbeak: ["9M"], //Añadido
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
-			conversion: ["9M"],
+			confuseray: ["9M"], //Añadido
 			conversion2: ["9M"],
+			conversion: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			discharge: ["9M"],
@@ -20568,9 +22341,11 @@ porygon: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			lockon: ["9M"],
 			magiccoat: ["9M"],
 			magnetrise: ["9M"],
+			metalsound: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
@@ -20599,9 +22374,11 @@ porygon: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
-			speedswap: ["9M"],
+			speedswap: ["9M"], //Añadido
+			steelbeam: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
@@ -20629,11 +22406,13 @@ porygon2: {
 			agility: ["9M"],
 			allyswitch: ["9M"],
 			blizzard: ["9M"],
+			boltbeak: ["9M"], //Añadido
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
-			conversion: ["9M"],
+			confuseray: ["9M"], //Añadido
 			conversion2: ["9M"],
+			conversion: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			discharge: ["9M"],
@@ -20656,9 +22435,11 @@ porygon2: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			lockon: ["9M"],
 			magiccoat: ["9M"],
 			magnetrise: ["9M"],
+			metalsound: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
@@ -20674,6 +22455,7 @@ porygon2: {
 			recycle: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rollout: ["9M"], //Añadido
 			round: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
@@ -20682,9 +22464,11 @@ porygon2: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
-			speedswap: ["9M"],
+			speedswap: ["9M"], //Añadido
+			steelbeam: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
@@ -20711,11 +22495,13 @@ porygonz: {
 			agility: ["9M"],
 			allyswitch: ["9M"],
 			blizzard: ["9M"],
+			boltbeak: ["9M"], //Añadido
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
-			conversion: ["9M"],
+			confuseray: ["9M"], //Añadido
 			conversion2: ["9M"],
+			conversion: ["9M"],
 			darkpulse: ["9M"],
 			defensecurl: ["9M"],
 			discharge: ["9M"],
@@ -20739,9 +22525,11 @@ porygonz: {
 			icywind: ["9M"],
 			irontail: ["9M"],
 			lastresort: ["9M"],
+			lightscreen: ["9M"], //Añadido
 			lockon: ["9M"],
 			magiccoat: ["9M"],
 			magnetrise: ["9M"],
+			metalsound: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			painsplit: ["9M"],
@@ -20756,6 +22544,7 @@ porygonz: {
 			recycle: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rollout: ["9M"], //Añadido
 			round: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
@@ -20764,9 +22553,11 @@ porygonz: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
-			speedswap: ["9M"],
+			speedswap: ["9M"], //Añadido
+			steelbeam: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
@@ -20790,20 +22581,20 @@ porygonz: {
 	},
 omanyte: {
 		learnset: {
+			amnesia: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			attract: ["9M"],
-			aurorabeam: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bite: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
 			captivate: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -20821,8 +22612,8 @@ omanyte: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			irondefense: ["9M"],
-			knockoff: ["9M"],
 			leer: ["9M"],
+			liquidation: ["9M"], //Añadido
 			meteorbeam: ["9M"],
 			mimic: ["9M"],
 			muddywater: ["9M"],
@@ -20831,6 +22622,7 @@ omanyte: {
 			protect: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			recover: ["9M"], //Añadido
 			reflect: ["9M"],
 			reflecttype: ["9M"],
 			rest: ["9M"],
@@ -20863,17 +22655,22 @@ omanyte: {
 			thief: ["9M"],
 			tickle: ["9M"],
 			toxic: ["9M"],
-			toxicspikes: ["9M"],
+			venoshock: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			withdraw: ["9M"],
 			wringout: ["9M"],
+			//aurorabeam //Removido
+			//brine //Removido
+			//knockoff //Removido
+			//toxicspikes //Removido
 		},
 	},
 omastar: {
 		learnset: {
+			amnesia: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
@@ -20881,13 +22678,13 @@ omastar: {
 			bite: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
 			captivate: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -20901,15 +22698,16 @@ omastar: {
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			hornattack: ["9M"],
-			horndrill: ["9M"],
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
+			icespinner: ["9M"], //Añadido
+			iciclecrash: ["9M"], //Añadido
 			icywind: ["9M"],
 			irondefense: ["9M"],
 			knockoff: ["9M"],
 			leer: ["9M"],
-			liquidation: ["9M"],
+			liquidation: ["9M"], //Añadido
 			meteorbeam: ["9M"],
 			mimic: ["9M"],
 			muddywater: ["9M"],
@@ -20919,6 +22717,7 @@ omastar: {
 			protect: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			recover: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -20939,6 +22738,7 @@ omastar: {
 			shellsmash: ["9M"],
 			skullbash: ["9M"],
 			sleeptalk: ["9M"],
+			sludgewave: ["9M"], //Añadido
 			smackdown: ["9M"],
 			snore: ["9M"],
 			spikecannon: ["9M"],
@@ -20954,30 +22754,32 @@ omastar: {
 			thief: ["9M"],
 			tickle: ["9M"],
 			toxic: ["9M"],
-			toxicspikes: ["9M"],
+			venoshock: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			withdraw: ["9M"],
+			//brine //Removido
+			//horndrill //Removido
+			//toxicspikes //Removido
 		},
 	},
 kabuto: {
 		learnset: {
 			absorb: ["9M"],
-			aerialace: ["9M"],
+			amnesia: ["9M"], //Añadido
 			ancientpower: ["9M"],
+			aquacutter: ["9M"], //Añadido
 			aquajet: ["9M"],
 			attract: ["9M"],
-			aurorabeam: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
+			bugbite: ["9M"], //Añadido
 			captivate: ["9M"],
 			confide: ["9M"],
-			confuseray: ["9M"],
 			curse: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -20995,10 +22797,12 @@ kabuto: {
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
 			hydropump: ["9M"],
+			hypnosis: ["9M"], //Añadido
 			icebeam: ["9M"],
+			iciclecrash: ["9M"], //Añadido
 			icywind: ["9M"],
 			irondefense: ["9M"],
-			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			leechlife: ["9M"],
 			leer: ["9M"],
 			liquidation: ["9M"],
@@ -21030,6 +22834,7 @@ kabuto: {
 			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -21047,37 +22852,47 @@ kabuto: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			wringout: ["9M"],
+			//aerialace //Removido
+			//aurorabeam //Removido
+			//brine //Removido
+			//confuseray //Removido
+			//knockoff //Removido
 		},
 	},
 kabutops: {
 		learnset: {
 			absorb: ["9M"],
 			aerialace: ["9M"],
+			amnesia: ["9M"], //Añadido
 			ancientpower: ["9M"],
+			aquacutter: ["9M"], //Añadido
 			aquajet: ["9M"],
-			aquatail: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			brine: ["9M"],
 			bubblebeam: ["9M"],
+			bugbite: ["9M"], //Añadido
 			captivate: ["9M"],
 			confide: ["9M"],
-			confuseray: ["9M"],
+			counter: ["9M"], //Añadido
 			crosspoison: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			dig: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dualchop: ["9M"], //Añadido
 			earthpower: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			feint: ["9M"],
+			firstimpression: ["9M"], //Añadido
 			flipturn: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			gigadrain: ["9M"],
@@ -21089,16 +22904,18 @@ kabutops: {
 			honeclaws: ["9M"],
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
+			hypnosis: ["9M"], //Añadido
 			icebeam: ["9M"],
+			iciclecrash: ["9M"], //Añadido
 			icywind: ["9M"],
 			irondefense: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			leechlife: ["9M"],
 			leer: ["9M"],
 			liquidation: ["9M"],
 			lowkick: ["9M"],
 			megadrain: ["9M"],
-			megakick: ["9M"],
 			metalsound: ["9M"],
 			meteorbeam: ["9M"],
 			mimic: ["9M"],
@@ -21112,7 +22929,6 @@ kabutops: {
 			rage: ["9M"],
 			raindance: ["9M"],
 			razorshell: ["9M"],
-			razorwind: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -21132,9 +22948,12 @@ kabutops: {
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			shadowclaw: ["9M"], //Añadido
+			sharpen: ["9M"], //Añadido
 			skullbash: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
+			sludgewave: ["9M"], //Añadido
 			smackdown: ["9M"],
 			snore: ["9M"],
 			stealthrock: ["9M"],
@@ -21148,16 +22967,24 @@ kabutops: {
 			takedown: ["9M"],
 			thief: ["9M"],
 			toxic: ["9M"],
+			tripleaxel: ["9M"], //Añadido
+			vacuumwave: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			wringout: ["9M"],
 			xscissor: ["9M"],
+			//aquatail //Removido
+			//brine //Removido
+			//confuseray //Removido
+			//megakick //Removido
+			//razorwind //Removido
 		},
 	},
 aerodactyl: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
@@ -21167,22 +22994,25 @@ aerodactyl: {
 			attract: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
+			breakingswipe: ["9M"], //Añadido
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			confide: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
 			defog: ["9M"],
-			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonbreath: ["9M"],
+			dragoncheer: ["9M"], //Añadido
 			dragonclaw: ["9M"],
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
 			dragonrage: ["9M"],
+			dragonrush: ["9M"], //Añadido
+			dragontail: ["9M"], //Añadido
+			dualchop: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
@@ -21192,17 +23022,18 @@ aerodactyl: {
 			firefang: ["9M"],
 			flamethrower: ["9M"],
 			fly: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			gust: ["9M"], //Añadido
 			headbutt: ["9M"],
+			headsmash: ["9M"], //Añadido
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			icefang: ["9M"],
-			incinerate: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
@@ -21210,6 +23041,7 @@ aerodactyl: {
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			ominouswind: ["9M"],
+			ourtrage: ["9M"], //Añadido
 			payback: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
@@ -21237,12 +23069,14 @@ aerodactyl: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			steelwing: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			supersonic: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
@@ -21251,12 +23085,16 @@ aerodactyl: {
 			taunt: ["9M"],
 			thief: ["9M"],
 			thunderfang: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			twister: ["9M"],
 			whirlwind: ["9M"],
 			wideguard: ["9M"],
 			wingattack: ["9M"],
+			//celebrate //Removido
+			//detect //Removido
+			//foresight //Removido
+			//incinerate //Removido
+			//torment //Removido
 		},
 	},
 munchlax: {
@@ -21267,13 +23105,11 @@ munchlax: {
 			belch: ["9M"],
 			bellydrum: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
-			chillingwater: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -21295,10 +23131,10 @@ munchlax: {
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			focuspunch: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
-			happyhour: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
@@ -21308,7 +23144,6 @@ munchlax: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			incinerate: ["9M"],
 			lastresort: ["9M"],
 			lick: ["9M"],
 			megakick: ["9M"],
@@ -21321,7 +23156,6 @@ munchlax: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
-			pursuit: ["9M"],
 			raindance: ["9M"],
 			recycle: ["9M"],
 			rest: ["9M"],
@@ -21338,10 +23172,7 @@ munchlax: {
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
 			sleeptalk: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			stockpile: ["9M"],
@@ -21360,13 +23191,21 @@ munchlax: {
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
-			trailblaze: ["9M"],
-			uproar: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			whirlwind: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//chillingwater //Removido
+			//happyhour //Removido
+			//incinerate //Removido
+			//pursuit //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//snatch //Removido
+			//trailblaze //Removido
+			//uproar //Removido
 		},
 	},
 snorlax: {
@@ -21378,17 +23217,15 @@ snorlax: {
 			bellydrum: ["9M"],
 			bide: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
+			bulletseed: ["9M"], //Añadido
 			captivate: ["9M"],
-			celebrate: ["9M"],
 			charm: ["9M"],
-			chillingwater: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -21398,12 +23235,13 @@ snorlax: {
 			darkestlariat: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
+			explosion: ["9M"], //Añadido
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firepunch: ["9M"],
@@ -21415,10 +23253,14 @@ snorlax: {
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gastroacid: ["9M"],
+			gigadrain: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grassknot: ["9M"], //Añadido
+			grasswhistle: ["9M"], //Añadido
+			grassyglide: ["9M"], //Añadido
 			gunkshot: ["9M"],
+			gyroball: ["9M"], //Añadido
 			hammerarm: ["9M"],
-			harden: ["9M"],
 			hardpress: ["9M"],
 			headbutt: ["9M"],
 			heatcrash: ["9M"],
@@ -21432,10 +23274,10 @@ snorlax: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			incinerate: ["9M"],
 			ironhead: ["9M"],
 			lastresort: ["9M"],
 			lick: ["9M"],
+			magnitude: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
@@ -21448,8 +23290,6 @@ snorlax: {
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychup: ["9M"],
-			psywave: ["9M"],
-			pursuit: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
 			recycle: ["9M"],
@@ -21470,18 +23310,17 @@ snorlax: {
 			seedbomb: ["9M"],
 			seismictoss: ["9M"],
 			selfdestruct: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
 			skullbash: ["9M"],
+			slackoff: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
-			snatch: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			steelroller: ["9M"],
 			stockpile: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
+			stuffcheeks: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -21490,6 +23329,7 @@ snorlax: {
 			surf: ["9M"],
 			swagger: ["9M"],
 			swallow: ["9M"],
+			synthesis: ["9M"], //Añadido
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -21498,8 +23338,6 @@ snorlax: {
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
 			toxic: ["9M"],
-			trailblaze: ["9M"],
-			uproar: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
@@ -21509,6 +23347,19 @@ snorlax: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//celebrate //Removido
+			//chillingwater //Removido
+			//dynamicpunch //Removido
+			//harden //Removido
+			//incinerate //Removido
+			//psywave //Removido
+			//pursuit //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//snatch //Removido
+			//trailblaze //Removido
+			//uproar //Removido
 		},
 	},
 articuno: {
@@ -21518,14 +23369,17 @@ articuno: {
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			ancientpower: ["9M"],
+			aurorabeam: ["9M"], //Añadido
 			auroraveil: ["9M"],
 			avalanche: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bravebird: ["9M"],
 			bubblebeam: ["9M"],
+			chillingwater: ["9M"], //Añadido
 			confide: ["9M"],
 			curse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			defog: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
@@ -21537,8 +23391,10 @@ articuno: {
 			featherdance: ["9M"],
 			fly: ["9M"],
 			freezedry: ["9M"],
+			freezyfrost: ["9M"], //Añadido
 			frostbreath: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gust: ["9M"],
 			hail: ["9M"],
@@ -21558,7 +23414,6 @@ articuno: {
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			mimic: ["9M"],
-			mindreader: ["9M"],
 			mirrorcoat: ["9M"],
 			mist: ["9M"],
 			mudslap: ["9M"],
@@ -21568,6 +23423,7 @@ articuno: {
 			pluck: ["9M"],
 			powdersnow: ["9M"],
 			protect: ["9M"],
+			psychic: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			razorwind: ["9M"],
@@ -21596,13 +23452,15 @@ articuno: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
-			tripleaxel: ["9M"],
+			triattack: ["9M"], //Añadido
 			twister: ["9M"],
 			uturn: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlwind: ["9M"],
+			//mindreader //Removido
+			//tripleaxel //Removido
 		},
 	},
 articunogalar: {
@@ -21612,60 +23470,103 @@ articunogalar: {
 			airslash: ["9M"],
 			allyswitch: ["9M"],
 			ancientpower: ["9M"],
+			aurorabeam: ["9M"], //Añadido
+			barrier: ["9M"], //Añadido
 			bravebird: ["9M"],
 			calmmind: ["9M"],
+			chillingwater: ["9M"], //Añadido
 			confusion: ["9M"],
+			darkpulse: ["9M"], //Añadido
+			dazzlinggleam: ["9M"], //Añadido
+			defog: ["9M"], //Añadido
+			detect: ["9M"], //Añadido
+			disable: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			endure: ["9M"],
 			expandingforce: ["9M"],
+			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
+			featherdance: ["9M"], //Añadido
+			flatter: ["9M"], //Añadido
 			fly: ["9M"],
+			focusblast: ["9M"], //Añadido
+			foresight: ["9M"], //Añadido
 			freezingglare: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
-			guardswap: ["9M"],
+			gravity: ["9M"], //Añadido
 			gust: ["9M"],
+			healblock: ["9M"], //Añadido
+			heatwave: ["9M"], //Añadido
 			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
 			imprison: ["9M"],
+			leer: ["9M"], //Añadido
 			lightscreen: ["9M"],
+			lockon: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
+			magicroom: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
 			mindreader: ["9M"],
-			powerswap: ["9M"],
+			miracleeye: ["9M"], //Añadido
+			nightshade: ["9M"], //Añadido
+			ominouswind: ["9M"], //Añadido
+			partingshot: ["9M"], //Añadido
+			pluck: ["9M"], //Añadido
+			powergem: ["9M"], //Añadido
+			powershift: ["9M"], //Añadido
+			powersplit: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
-			psychocut: ["9M"],
 			psychoshift: ["9M"],
+			psychup: ["9M"], //Añadido
 			psyshock: ["9M"],
+			psywave: ["9M"], //Añadido
 			raindance: ["9M"],
 			recover: ["9M"],
 			reflect: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
+			roleplay: ["9M"], //Añadido
+			roost: ["9M"], //Añadido
 			round: ["9M"],
 			scaryface: ["9M"],
 			shadowball: ["9M"],
+			simplebeam: ["9M"], //Añadido
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			speedswap: ["9M"], //Añadido
 			steelwing: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
+			telekinesis: ["9M"], //Añadido
+			teleport: ["9M"], //Añadido
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			trick: ["9M"],
 			trickroom: ["9M"],
-			uturn: ["9M"],
+			trumpcard: ["9M"], //Añadido
+			//guardswap //Removido
+			//psychocut //Removido
+			//uturn //Removido
 		},
 	},
 zapdos: {
@@ -21673,10 +23574,11 @@ zapdos: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			aircutter: ["9M"],
 			ancientpower: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
+			boltbeak: ["9M"], //Añadido
 			bravebird: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
@@ -21688,6 +23590,7 @@ zapdos: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillpeck: ["9M"],
+			drillrun: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			eerieimpulse: ["9M"],
 			electricterrain: ["9M"],
@@ -21695,10 +23598,14 @@ zapdos: {
 			endure: ["9M"],
 			extrasensory: ["9M"],
 			facade: ["9M"],
+			featherdance: ["9M"], //Añadido
 			flash: ["9M"],
 			fly: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			gust: ["9M"], //Añadido
 			hail: ["9M"],
 			headbutt: ["9M"],
 			heatwave: ["9M"],
@@ -21710,6 +23617,7 @@ zapdos: {
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			magneticflux: ["9M"],
+			magnetrise: ["9M"], //Añadido
 			metalsound: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
@@ -21751,6 +23659,7 @@ zapdos: {
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			twister: ["9M"],
 			uturn: ["9M"],
 			voltswitch: ["9M"],
@@ -21758,6 +23667,7 @@ zapdos: {
 			whirlwind: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//batonpass //Removido
 		},
 	},
 zapdosgalar: {
@@ -21768,50 +23678,73 @@ zapdosgalar: {
 			ancientpower: ["9M"],
 			assurance: ["9M"],
 			blazekick: ["9M"],
+			boltbeak: ["9M"], //Añadido
 			bounce: ["9M"],
 			bravebird: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
+			bulldoze: ["9M"], //Añadido
 			closecombat: ["9M"],
 			coaching: ["9M"],
 			counter: ["9M"],
+			defog: ["9M"], //Añadido
 			detect: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			drillpeck: ["9M"],
+			drillrun: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
+			extrasensory: ["9M"], //Añadido
+			extremespeed: ["9M"], //Añadido
 			facade: ["9M"],
+			featherdance: ["9M"], //Añadido
 			fly: ["9M"],
-			focusenergy: ["9M"],
+			focusenergy: ["9M"], //Añadido
+			furyattack: ["9M"], //Añadido
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			gust: ["9M"], //Añadido
+			heatbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
+			highjumpkick: ["9M"], //Añadido
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
+			jumpkick: ["9M"], //Añadido
 			knockoff: ["9M"],
+			leer: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
 			megakick: ["9M"],
 			payback: ["9M"],
 			peck: ["9M"],
-			pluck: ["9M"],
+			pluck: ["9M"], //Añadido
 			protect: ["9M"],
 			quickguard: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
 			revenge: ["9M"],
-			reversal: ["9M"],
+			reversal: ["9M"], //Añadido
+			rockclimb: ["9M"], //Añadido
 			rocksmash: ["9M"],
+			rollingkick: ["9M"], //Añadido
+			roost: ["9M"], //Añadido
 			round: ["9M"],
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
+			scratch: ["9M"], //Añadido
 			screech: ["9M"],
+			skyattack: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			steelwing: ["9M"],
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
+			stoneedge: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			superpower: ["9M"],
@@ -21820,15 +23753,16 @@ zapdosgalar: {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
+			thrash: ["9M"], //Añadido
 			throatchop: ["9M"],
 			thunderouskick: ["9M"],
 			trailblaze: ["9M"],
+			triplekick: ["9M"], //Añadido
 			uturn: ["9M"],
 		},
 	},
 moltres: {
 		learnset: {
-			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
 			aircutter: ["9M"],
@@ -21844,18 +23778,24 @@ moltres: {
 			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			drillpeck: ["9M"], //Añadido
+			drillrun: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			ember: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			extrasensory: ["9M"],
 			facade: ["9M"],
+			featherdance: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firespin: ["9M"],
 			flamecharge: ["9M"],
 			flamethrower: ["9M"],
 			flareblitz: ["9M"],
+			flash: ["9M"], //Añadido
 			fly: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gust: ["9M"],
 			headbutt: ["9M"],
@@ -21894,6 +23834,7 @@ moltres: {
 			skyattack: ["9M"],
 			skydrop: ["9M"],
 			sleeptalk: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			steelwing: ["9M"],
@@ -21906,17 +23847,18 @@ moltres: {
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			twister: ["9M"],
 			uturn: ["9M"],
 			weatherball: ["9M"],
 			whirlwind: ["9M"],
 			willowisp: ["9M"],
 			wingattack: ["9M"],
+			//acrobatics //Removido
 		},
 	},
 moltresgalar: {
 		learnset: {
-			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			afteryou: ["9M"],
 			agility: ["9M"],
@@ -21924,15 +23866,27 @@ moltresgalar: {
 			ancientpower: ["9M"],
 			assurance: ["9M"],
 			bravebird: ["9M"],
+			burningjealousy: ["9M"], //Añadido
+			commeupance: ["9M"], //Añadido
 			darkpulse: ["9M"],
+			defog: ["9M"], //Añadido
+			destinybond: ["9M"], //Añadido
+			detect: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			endure: ["9M"],
+			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
+			featherdance: ["9M"], //Añadido
 			fierywrath: ["9M"],
+			fireblast: ["9M"], //Añadido
 			fly: ["9M"],
 			foulplay: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			gust: ["9M"],
+			heatbutt: ["9M"], //Añadido
+			heatwave: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hex: ["9M"],
 			hiddenpower: ["9M"],
@@ -21944,11 +23898,20 @@ moltresgalar: {
 			leer: ["9M"],
 			memento: ["9M"],
 			nastyplot: ["9M"],
+			nigthmare: ["9M"], //Añadido
+			ominouswind: ["9M"], //Añadido
+			ourtrage: ["9M"], //Añadido
+			overheat: ["9M"], //Añadido
 			painsplit: ["9M"],
 			payback: ["9M"],
+			pluck: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
+			roost: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
@@ -21956,14 +23919,18 @@ moltresgalar: {
 			shadowball: ["9M"],
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snarl: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spite: ["9M"],
 			steelwing: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
@@ -21971,6 +23938,7 @@ moltresgalar: {
 			thief: ["9M"],
 			uturn: ["9M"],
 			wingattack: ["9M"],
+			//acrobatics //Removido
 		},
 	},
 dratini: {
@@ -21986,11 +23954,13 @@ dratini: {
 			breakingswipe: ["9M"],
 			brutalswing: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			detect: ["9M"],
+			dive: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dracometeor: ["9M"],
@@ -22061,6 +24031,7 @@ dratini: {
 			whirlpool: ["9M"],
 			wrap: ["9M"],
 			zapcannon: ["9M"],
+			//captivate //Removido
 		},
 	},
 dragonair: {
@@ -22075,11 +24046,13 @@ dragonair: {
 			breakingswipe: ["9M"],
 			brutalswing: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			detect: ["9M"],
+			dive: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dracometeor: ["9M"],
@@ -22090,6 +24063,7 @@ dragonair: {
 			dragonrage: ["9M"],
 			dragonrush: ["9M"],
 			dragontail: ["9M"],
+			drillrun: ["9M"], //Añadido
 			endure: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
@@ -22112,6 +24086,7 @@ dragonair: {
 			irontail: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
+			megahorn: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			outrage: ["9M"],
@@ -22149,6 +24124,7 @@ dragonair: {
 			whirlpool: ["9M"],
 			wrap: ["9M"],
 			zapcannon: ["9M"],
+			//captivate //Removido
 		},
 	},
 dragonite: {
@@ -22160,7 +24136,7 @@ dragonite: {
 			aquajet: ["9M"],
 			aquatail: ["9M"],
 			attract: ["9M"],
-			barrier: ["9M"],
+			bellydrum: ["9M"], //Añadido
 			bide: ["9M"],
 			bind: ["9M"],
 			blizzard: ["9M"],
@@ -22171,14 +24147,15 @@ dragonite: {
 			brutalswing: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
 			detect: ["9M"],
-			dive: ["9M"],
+			dive: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dracometeor: ["9M"],
@@ -22190,6 +24167,7 @@ dragonite: {
 			dragonrage: ["9M"],
 			dragonrush: ["9M"],
 			dragontail: ["9M"],
+			drillrun: ["9M"], //Añadido
 			dualwingbeat: ["9M"],
 			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
@@ -22204,9 +24182,10 @@ dragonite: {
 			fling: ["9M"],
 			fly: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			hail: ["9M"],
 			haze: ["9M"],
@@ -22230,6 +24209,7 @@ dragonite: {
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			lowkick: ["9M"],
+			megahorn: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
@@ -22260,6 +24240,7 @@ dragonite: {
 			secretpower: ["9M"],
 			shockwave: ["9M"],
 			skullbash: ["9M"],
+			skyattack: ["9M"], //Añadido
 			skydrop: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -22267,7 +24248,6 @@ dragonite: {
 			snowscape: ["9M"],
 			steelwing: ["9M"],
 			stompingtantrum: ["9M"],
-			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -22278,6 +24258,7 @@ dragonite: {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			thrash: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
@@ -22292,15 +24273,19 @@ dragonite: {
 			wingattack: ["9M"],
 			wrap: ["9M"],
 			zapcannon: ["9M"],
+			//barrier //Removido
+			//captivate //Removido
+			//furycutter //Removido
+			//stoneedge //Removido
 		},
 	},
 mewtwo: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
-			ancientpower: ["9M"],
 			aquatail: ["9M"],
 			aurasphere: ["9M"],
 			avalanche: ["9M"],
@@ -22322,6 +24307,7 @@ mewtwo: {
 			counter: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			detect: ["9M"],
 			disable: ["9M"],
 			dive: ["9M"],
@@ -22391,12 +24377,14 @@ mewtwo: {
 			poisonjab: ["9M"],
 			powergem: ["9M"],
 			powerswap: ["9M"],
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
 			psychicterrain: ["9M"],
+			psychoboost: ["9M"], //Añadido
 			psychocut: ["9M"],
 			psychup: ["9M"],
 			psyshock: ["9M"],
@@ -22440,13 +24428,16 @@ mewtwo: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			takedown: ["9M"],
 			taunt: ["9M"],
 			telekinesis: ["9M"],
 			teleport: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
@@ -22457,6 +24448,7 @@ mewtwo: {
 			triattack: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
@@ -22464,6 +24456,7 @@ mewtwo: {
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//ancientpower //Removido
 		},
 	},
 mew: {
@@ -22847,15 +24840,17 @@ mew: {
 	},
 chikorita: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			aromatherapy: ["9M"],
 			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
+			bind: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bulletseed: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
@@ -22879,21 +24874,25 @@ chikorita: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growl: ["9M"],
+			growth: ["9M"], //Añadido
 			headbutt: ["9M"],
 			healpulse: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			ingrain: ["9M"],
 			irontail: ["9M"],
+			leafblade: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
+			playnice: ["9M"], //Añadido
 			poisonpowder: ["9M"],
 			protect: ["9M"],
 			razorleaf: ["9M"],
@@ -22905,6 +24904,8 @@ chikorita: {
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			silverwind: ["9M"], //Añadido
+			sleeppowder: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
@@ -22918,30 +24919,35 @@ chikorita: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			vinewhip: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
 			wringout: ["9M"],
+			//counter //Removido
 		},
 	},
 bayleef: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			aromatherapy: ["9M"],
 			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
+			bind: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bulletseed: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dragondance: ["9M"], //Añadido
 			echoedvoice: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
@@ -22957,21 +24963,25 @@ bayleef: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growl: ["9M"],
+			growth: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
+			leafblade: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
+			playnice: ["9M"], //Añadido
 			poisonpowder: ["9M"],
 			protect: ["9M"],
 			razorleaf: ["9M"],
@@ -22983,10 +24993,13 @@ bayleef: {
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			silverwind: ["9M"], //Añadido
+			sleeppowder: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			solarblade: ["9M"],
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -22998,17 +25011,25 @@ bayleef: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
+			//counter //Removido
 		},
 	},
 meganium: {
 		learnset: {
+			absorb: ["9M"], //Añadido
+			afteryou: ["9M"], //Añadido
+			alluringvoice: ["9M"], //Añadido
+			allyswitch: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			aromatherapy: ["9M"],
 			attract: ["9M"],
+			babydolleyes: ["9M"], //Añadido
+			bind: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
@@ -23017,24 +25038,27 @@ meganium: {
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			dazzlinggleam: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dragondance: ["9M"], //Añadido
+			dragonhammer: ["9M"], //Añadido
 			dragontail: ["9M"],
 			drainingkiss: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
 			encore: ["9M"],
-			endeavor: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
+			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
 			faketears: ["9M"],
 			flash: ["9M"],
+			fleurcannon: ["9M"], //Añadido
 			frenzyplant: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
@@ -23045,28 +25069,42 @@ meganium: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			growl: ["9M"],
+			growth: ["9M"], //Añadido
 			headbutt: ["9M"],
+			healblock: ["9M"], //Añadido
+			healingwish: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
+			leafblade: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
+			luckychant: ["9M"], //Añadido
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
 			megadrain: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
+			mistyexplosion: ["9M"], //Añadido
+			mistyterrain: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			outrage: ["9M"],
 			petalblizzard: ["9M"],
 			petaldance: ["9M"],
+			playnice: ["9M"], //Añadido
 			poisonpowder: ["9M"],
+			poisonsting: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			razorleaf: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -23075,29 +25113,40 @@ meganium: {
 			rocksmash: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
+			scaleshot: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			silverwind: ["9M"], //Añadido
+			simplebeam: ["9M"], //Añadido
+			sleeppowder: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			solarblade: ["9M"],
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
+			storedpower: ["9M"], //Añadido
 			strength: ["9M"],
+			stringshot: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swordsdance: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			synthesis: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
 			workup: ["9M"],
 			worryseed: ["9M"],
 			zenheadbutt: ["9M"],
+			//counter //Removido
+			//endeavor //Removido
 		},
 	},
 cyndaquil: {
@@ -23111,11 +25160,9 @@ cyndaquil: {
 			captivate: ["9M"],
 			confide: ["9M"],
 			covet: ["9M"],
-			crushclaw: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doublekick: ["9M"],
@@ -23123,7 +25170,6 @@ cyndaquil: {
 			ember: ["9M"],
 			endure: ["9M"],
 			eruption: ["9M"],
-			extrasensory: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firefang: ["9M"],
@@ -23137,6 +25183,7 @@ cyndaquil: {
 			foresight: ["9M"],
 			frustration: ["9M"],
 			furyswipes: ["9M"],
+			grassknot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
@@ -23146,12 +25193,12 @@ cyndaquil: {
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			lavaplume: ["9M"],
-			leer: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
@@ -23161,10 +25208,13 @@ cyndaquil: {
 			roar: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			secretpower: ["9M"],
 			sleeptalk: ["9M"],
+			smog: ["9M"], //Añadido
 			smokescreen: ["9M"],
 			snore: ["9M"],
+			spikes: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -23180,11 +25230,16 @@ cyndaquil: {
 			willowisp: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//crushclaw //Removido
+			//detect //Removido
+			//extrasensory //Removido
+			//leer //Removido
 		},
 	},
 quilava: {
 		learnset: {
 			aerialace: ["9M"],
+			agility: ["9M"], //Añadido
 			attract: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -23196,7 +25251,6 @@ quilava: {
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -23215,7 +25269,7 @@ quilava: {
 			flareblitz: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
+			grassknot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
@@ -23230,6 +25284,7 @@ quilava: {
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
@@ -23240,10 +25295,14 @@ quilava: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
+			sandtomb: ["9M"], //Añadido
 			secretpower: ["9M"],
 			sleeptalk: ["9M"],
+			smog: ["9M"], //Añadido
 			smokescreen: ["9M"],
 			snore: ["9M"],
+			spikes: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -23254,15 +25313,19 @@ quilava: {
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
+			uturn: ["9M"], //Añadido
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//detect //Removido
+			//furycutter //Removido
 		},
 	},
 typhlosion: {
 		learnset: {
 			aerialace: ["9M"],
+			agility: ["9M"], //Añadido
 			attract: ["9M"],
 			blastburn: ["9M"],
 			bodyslam: ["9M"],
@@ -23272,12 +25335,10 @@ typhlosion: {
 			burnup: ["9M"],
 			captivate: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -23302,9 +25363,8 @@ typhlosion: {
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			gigaimpact: ["9M"],
-			gyroball: ["9M"],
+			grassknot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
@@ -23320,12 +25380,16 @@ typhlosion: {
 			lowkick: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
+			powergem: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
@@ -23339,16 +25403,22 @@ typhlosion: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
+			sandtomb: ["9M"], //Añadido
 			scorchingsands: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			sleeptalk: ["9M"],
+			sludgebomb: ["9M"], //Añadido
+			smog: ["9M"], //Añadido
 			smokescreen: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			spikes: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
+			stoneedge: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -23358,30 +25428,44 @@ typhlosion: {
 			takedown: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
-			throatchop: ["9M"],
 			thunderpunch: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
+			uturn: ["9M"], //Añadido
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//counter //Removido
+			//detect //Removido
+			//furycutter //Removido
+			//gyroball //Removido
+			//throatchop //Removido
 		},
 	},
 typhlosionhisui: {
 		learnset: {
 			aerialace: ["9M"],
+			agility: ["9M"], //Añadido
 			blastburn: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
 			burningjealousy: ["9M"],
 			calmmind: ["9M"],
+			clearsmog: ["9M"], //Añadido
+			commeupance: ["9M"], //Añadido
 			confuseray: ["9M"],
 			curse: ["9M"],
+			darkpulse: ["9M"], //Añadido
+			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
+			destinybond: ["9M"], //Añadido
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			earthquake: ["9M"],
+			embargo: ["9M"], //Añadido
 			ember: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
@@ -23399,7 +25483,7 @@ typhlosionhisui: {
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			gigaimpact: ["9M"],
-			gyroball: ["9M"],
+			grassknot: ["9M"], //Añadido
 			heatwave: ["9M"],
 			hex: ["9M"],
 			hyperbeam: ["9M"],
@@ -23409,10 +25493,15 @@ typhlosionhisui: {
 			lavaplume: ["9M"],
 			leer: ["9M"],
 			lowkick: ["9M"],
-			nightshade: ["9M"],
+			memento: ["9M"], //Añadido
+			nightdaze: ["9M"], //Añadido
+			nightshade: ["9M"], //Añadido
 			overheat: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
+			poisonpowder: ["9M"], //Añadido
 			poltergeist: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			quickattack: ["9M"],
 			rest: ["9M"],
@@ -23420,11 +25509,15 @@ typhlosionhisui: {
 			roar: ["9M"],
 			rockslide: ["9M"],
 			rollout: ["9M"],
+			sandattack: ["9M"], //Añadido
+			sandtomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			sleeptalk: ["9M"],
+			smog: ["9M"], //Añadido
 			smokescreen: ["9M"],
 			solarbeam: ["9M"],
+			spikes: ["9M"], //Añadido
 			spite: ["9M"],
 			stompingtantrum: ["9M"],
 			substitute: ["9M"],
@@ -23435,9 +25528,11 @@ typhlosionhisui: {
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			thunderpunch: ["9M"],
+			uturn: ["9M"], //Añadido
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
 			zenheadbutt: ["9M"],
+			//gyroball //Removido
 		},
 	},
 totodile: {
@@ -23449,7 +25544,6 @@ totodile: {
 			attract: ["9M"],
 			bite: ["9M"],
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
@@ -23460,6 +25554,7 @@ totodile: {
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
@@ -23502,11 +25597,11 @@ totodile: {
 			mudslap: ["9M"],
 			mudsport: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
-			razorwind: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			rockslide: ["9M"],
@@ -23528,13 +25623,13 @@ totodile: {
 			surf: ["9M"],
 			swagger: ["9M"],
 			swordsdance: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpledge: ["9M"],
@@ -23542,6 +25637,9 @@ totodile: {
 			watersport: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//block //Removido
+			//razorwind //Removido
+			//uproar //Removido
 		},
 	},
 croconaw: {
@@ -23552,7 +25650,6 @@ croconaw: {
 			attract: ["9M"],
 			bite: ["9M"],
 			blizzard: ["9M"],
-			block: ["9M"],
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
@@ -23563,6 +25660,7 @@ croconaw: {
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
@@ -23577,6 +25675,7 @@ croconaw: {
 			endure: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
+			firefang: ["9M"], //Añadido
 			flail: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
@@ -23603,6 +25702,7 @@ croconaw: {
 			muddywater: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
@@ -23632,26 +25732,29 @@ croconaw: {
 			surf: ["9M"],
 			swagger: ["9M"],
 			swordsdance: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
+			throatchop: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpledge: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//block //Removido
+			//uproar //Removido
 		},
 	},
 feraligatr: {
 		learnset: {
 			aerialace: ["9M"],
-			agility: ["9M"],
 			ancientpower: ["9M"],
+			aquacutter: ["9M"], //Añadido
 			aquatail: ["9M"],
 			attract: ["9M"],
 			avalanche: ["9M"],
@@ -23669,6 +25772,7 @@ feraligatr: {
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
@@ -23676,17 +25780,22 @@ feraligatr: {
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dracometeor: ["9M"], //Añadido
 			dragonbite: ["9M"],
+			dragoncheer: ["9M"], //Añadido
 			dragonclaw: ["9M"],
 			dragondance: ["9M"],
 			dragonpulse: ["9M"],
-			dragontail: ["9M"],
+			dragonrage: ["9M"], //Añadido
+			dragontail: ["9M"], //Añadido
+			dualchop: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
+			firefang: ["9M"], //Añadido
 			flail: ["9M"],
 			fling: ["9M"],
 			flipturn: ["9M"],
@@ -23708,6 +25817,8 @@ feraligatr: {
 			icepunch: ["9M"],
 			icywind: ["9M"],
 			irontail: ["9M"],
+			jawlock: ["9M"], //Añadido
+			knockoff: ["9M"], //Añadido
 			lashout: ["9M"],
 			leer: ["9M"],
 			liquidation: ["9M"],
@@ -23720,6 +25831,7 @@ feraligatr: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			outrage: ["9M"],
+			playnice: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
@@ -23753,19 +25865,23 @@ feraligatr: {
 			surf: ["9M"],
 			swagger: ["9M"],
 			swordsdance: ["9M"],
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
+			throatchop: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpledge: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//agility //Removido
+			//uproar //Removido
 		},
 	},
 sentret: {
@@ -23775,13 +25891,9 @@ sentret: {
 			assist: ["9M"],
 			attract: ["9M"],
 			babydolleyes: ["9M"],
-			batonpass: ["9M"],
-			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			captivate: ["9M"],
-			chargebeam: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -23789,7 +25901,6 @@ sentret: {
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -23804,9 +25915,7 @@ sentret: {
 			focusenergy: ["9M"],
 			focuspunch: ["9M"],
 			followme: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			grassknot: ["9M"],
 			headbutt: ["9M"],
@@ -23823,6 +25932,7 @@ sentret: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
@@ -23835,17 +25945,16 @@ sentret: {
 			reversal: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scratch: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			slam: ["9M"],
-			slash: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			splash: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
@@ -23854,12 +25963,15 @@ sentret: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailslap: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			tidyup: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -23869,10 +25981,21 @@ sentret: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//batonpass //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//chargebeam //Removido
+			//detect //Removido
+			//foresight //Removido
+			//furycutter //Removido
+			//shockwave //Removido
+			//slash //Removido
+			//solarbeam //Removido
 		},
 	},
 furret: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
 			amnesia: ["9M"],
 			aquatail: ["9M"],
@@ -23882,8 +26005,6 @@ furret: {
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			captivate: ["9M"],
-			chargebeam: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
@@ -23892,7 +26013,6 @@ furret: {
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -23907,13 +26027,12 @@ furret: {
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			followme: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
@@ -23928,11 +26047,13 @@ furret: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
@@ -23940,16 +26061,15 @@ furret: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scratch: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
-			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			splash: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
@@ -23958,12 +26078,15 @@ furret: {
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			tailslap: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			trick: ["9M"],
@@ -23973,39 +26096,56 @@ furret: {
 			whirlpool: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//chargebeam //Removido
+			//detect //Removido
+			//foresight //Removido
+			//furycutter //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
 		},
 	},
 furrip: {
 		learnset: {
+			acrobatics: ["9M"], //Añadido
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
 			amnesia: ["9M"],
 			aquatail: ["9M"],
+			astonish: ["9M"], //Añadido
 			attract: ["9M"],
 			batonpass: ["9M"],
+			bittermalice: ["9M"], //Añadido
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			captivate: ["9M"],
-			chargebeam: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			covet: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
+			darkpulse: ["9M"], //Añadido
+			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			destinybond: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
+			embargo: ["9M"], //Añadido
 			endeavor: ["9M"],
 			endure: ["9M"],
+			extremespeed: ["9M"], //Añadido
 			facade: ["9M"],
+			fireblast: ["9M"], //Añadido
 			firepunch: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
@@ -24013,32 +26153,54 @@ furrip: {
 			focuspunch: ["9M"],
 			followme: ["9M"],
 			foresight: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			grudge: ["9M"], //Añadido
+			haze: ["9M"], //Añadido
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
+			heatwave: ["9M"], //Añadido
 			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
+			icespinner: ["9M"], //Añadido
+			icywind: ["9M"], //Añadido
+			infestation: ["9M"], //Añadido
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			lastresort: ["9M"],
 			lastrespects: ["9M"],
+			lick: ["9M"], //Añadido
 			mefirst: ["9M"],
+			memento: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
+			nastyplot: ["9M"], //Añadido
 			naturalgift: ["9M"],
+			nightshade: ["9M"], //Añadido
+			ominouswind: ["9M"], //Añadido
+			painsplit: ["9M"], //Añadido
+			payback: ["9M"], //Añadido
+			phantomforce: ["9M"], //Añadido
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
+			poltergeist: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			quickattack: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
@@ -24046,74 +26208,107 @@ furrip: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
+			scorchingsands: ["9M"], //Añadido
 			scratch: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
+			shadowpunch: ["9M"], //Añadido
 			shadowsneak: ["9M"],
-			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
+			sludgebomb: ["9M"], //Añadido
+			smokescreen: ["9M"], //Añadido
+			snarl: ["9M"], //Añadido
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spite: ["9M"],
+			splash: ["9M"], //Añadido
 			strength: ["9M"],
+			submission: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			superfang: ["9M"],
+			supersonic: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			tailslap: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
+			teleport: ["9M"], //Añadido
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			trick: ["9M"],
+			trick: ["9M"], //Añadido
 			uproar: ["9M"],
 			uturn: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//chargebeam //Removido
+			//furycutter //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
 		},
 	},
 furrum: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
+			afteryou: ["9M"], //Añadido
 			agility: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
 			aquatail: ["9M"],
 			attract: ["9M"],
+			barrier: ["9M"], //Añadido
 			batonpass: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			captivate: ["9M"],
-			chargebeam: ["9M"],
+			calmmind: ["9M"], //Añadido
 			charm: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
+			confusion: ["9M"], //Añadido
 			covet: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
+			doubleslap: ["9M"], //Añadido
 			doubleteam: ["9M"],
+			drainingkiss: ["9M"], //Añadido
+			dreameater: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
+			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
-			fairywind: ["9M"],
 			firepunch: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
@@ -24122,51 +26317,86 @@ furrum: {
 			followme: ["9M"],
 			foresight: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
 			furyswipes: ["9M"],
+			futuresight: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
+			healblock: ["9M"], //Añadido
+			healingwish: ["9M"], //Añadido
+			healpulse: ["9M"], //Añadido
+			heartstamp: ["9M"], //Añadido
+			heatswap: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
+			hypnosis: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			lastresort: ["9M"],
-			lightofruin: ["9M"],
+			lightscreen: ["9M"], //Añadido
+			luckychant: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
 			mefirst: ["9M"],
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
+			mistyexplosion: ["9M"], //Añadido
 			moonblast: ["9M"],
 			moonlight: ["9M"],
+			morningsun: ["9M"], //Añadido
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
+			nastyplot: ["9M"], //Añadido
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
+			painsplit: ["9M"], //Añadido
+			perishsong: ["9M"], //Añadido
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			psybeam: ["9M"], //Añadido
+			psychic: ["9M"], //Añadido
+			psychicnoise: ["9M"], //Añadido
+			psychoshift: ["9M"], //Añadido
+			psywave: ["9M"], //Añadido
 			quickattack: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			recycle: ["9M"], //Añadido
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
 			reversal: ["9M"],
+			revivalblessing: ["9M"], //Añadido
 			rocksmash: ["9M"],
+			roleplay: ["9M"], //Añadido
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scratch: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
+			sing: ["9M"], //Añadido
+			slackoff: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			spiritbreak: ["9M"], //Añadido
+			splash: ["9M"], //Añadido
+			storedpower: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
@@ -24174,16 +26404,26 @@ furrum: {
 			superfang: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
+			tailslap: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
+			teatime: ["9M"], //Añadido
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
 			trick: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			uproar: ["9M"],
 			uturn: ["9M"],
 			waterpulse: ["9M"],
@@ -24191,10 +26431,17 @@ furrum: {
 			wish: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//chargebeam //Removido
+			//fairywind //Removido
+			//furycutter //Removido
+			//lightofruin //Removido
+			//shockwave //Removido
 		},
 	},
 furrful: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
 			amnesia: ["9M"],
 			aquatail: ["9M"],
@@ -24202,121 +26449,171 @@ furrful: {
 			batonpass: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
+			bounce: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			bulkup: ["9M"],
-			captivate: ["9M"],
+			bulldoze: ["9M"], //Añadido
+			calmmind: ["9M"], //Añadido
 			chargebeam: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
+			chipaway: ["9M"], //Añadido
+			closecombat: ["9M"], //Añadido
+			coaching: ["9M"], //Añadido
 			coil: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			covet: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
+			darkestlariat: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
+			dragontail: ["9M"], //Añadido
+			drainpunch: ["9M"], //Añadido
 			dynamicpunch: ["9M"],
 			echoedvoice: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			fakeout: ["9M"], //Añadido
+			feint: ["9M"], //Añadido
 			finalgambit: ["9M"],
 			firepunch: ["9M"],
 			flamethrower: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			followme: ["9M"],
-			foresight: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			highhorsepower: ["9M"], //Añadido
+			highjumpkick: ["9M"], //Añadido
+			holdback: ["9M"], //Añadido
 			honeclaws: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icebeam: ["9M"],
 			icepunch: ["9M"],
+			icespinner: ["9M"], //Añadido
 			irontail: ["9M"],
+			jumpkick: ["9M"], //Añadido
+			karatechop: ["9M"], //Añadido
 			knockoff: ["9M"],
 			lastresort: ["9M"],
+			lowsweep: ["9M"], //Añadido
+			machpunch: ["9M"], //Añadido
+			matblock: ["9M"], //Añadido
+			meditate: ["9M"], //Añadido
 			mefirst: ["9M"],
+			megakick: ["9M"], //Añadido
+			megapunch: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			psychup: ["9M"], //Añadido
 			quickattack: ["9M"],
+			quickguard: ["9M"], //Añadido
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			reflect: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
 			reversal: ["9M"],
+			rockclimb: ["9M"], //Añadido
+			rockslide: ["9M"], //Añadido
 			rocksmash: ["9M"],
+			rollingkick: ["9M"], //Añadido
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scratch: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
+			skyuppercut: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
+			smellingsalts: ["9M"], //Añadido
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			splash: ["9M"], //Añadido
+			stomp: ["9M"], //Añadido
 			strength: ["9M"],
+			stromthrow: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			superfang: ["9M"],
+			superpower: ["9M"], //Añadido
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			tailslap: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			trick: ["9M"],
+			tripleaxel: ["9M"], //Añadido
+			triplekick: ["9M"], //Añadido
 			uproar: ["9M"],
 			uturn: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//foresight //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
 		},
 	},
 hoothoot: {
 		learnset: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
-			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
-			attract: ["9M"],
 			bravebird: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -24332,6 +26629,7 @@ hoothoot: {
 			foresight: ["9M"],
 			frustration: ["9M"],
 			growl: ["9M"],
+			gust: ["9M"], //Añadido
 			haze: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
@@ -24339,6 +26637,7 @@ hoothoot: {
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
 			imprison: ["9M"],
+			lockon: ["9M"], //Añadido
 			magiccoat: ["9M"],
 			meanlook: ["9M"],
 			mimic: ["9M"],
@@ -24372,6 +26671,7 @@ hoothoot: {
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spite: ["9M"],
 			steelwing: ["9M"],
 			storedpower: ["9M"],
@@ -24387,33 +26687,36 @@ hoothoot: {
 			terablast: ["9M"],
 			thief: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			uproar: ["9M"],
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//captivate //Removido
+			//twister //Removido
 		},
 	},
 noctowl: {
 		learnset: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
-			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
-			attract: ["9M"],
 			bodyslam: ["9M"],
 			bravebird: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -24425,11 +26728,13 @@ noctowl: {
 			featherdance: ["9M"],
 			flash: ["9M"],
 			fly: ["9M"],
+			focusblast: ["9M"], //Añadido
 			foresight: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			gust: ["9M"], //Añadido
 			haze: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
@@ -24439,6 +26744,8 @@ noctowl: {
 			hypnosis: ["9M"],
 			imprison: ["9M"],
 			laserfocus: ["9M"],
+			leer: ["9M"], //Añadido
+			lockon: ["9M"], //Añadido
 			magiccoat: ["9M"],
 			mimic: ["9M"],
 			moonblast: ["9M"],
@@ -24461,6 +26768,7 @@ noctowl: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			roleplay: ["9M"], //Añadido
 			roost: ["9M"],
 			round: ["9M"],
 			scaryface: ["9M"],
@@ -24472,6 +26780,7 @@ noctowl: {
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spite: ["9M"],
 			steelwing: ["9M"],
 			storedpower: ["9M"],
@@ -24485,32 +26794,42 @@ noctowl: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
-			twister: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			uproar: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//captivate //Removido
+			//twister //Removido
 		},
 	},
 noceadowl: {
 		learnset: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
-			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
-			attract: ["9M"],
+			barrier: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bravebird: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
+			clearsmog: ["9M"], //Añadido
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
 			curse: ["9M"],
+			darkpulse: ["9M"], //Añadido
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
+			destinybond: ["9M"], //Añadido
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -24520,13 +26839,19 @@ noceadowl: {
 			extrasensory: ["9M"],
 			facade: ["9M"],
 			featherdance: ["9M"],
+			fireblast: ["9M"], //Añadido
 			flash: ["9M"],
+			flatter: ["9M"], //Añadido
 			fly: ["9M"],
+			focusblast: ["9M"], //Añadido
 			foresight: ["9M"],
+			foulplay: ["9M"], //Añadido
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			grudge: ["9M"], //Añadido
+			gust: ["9M"], //Añadido
 			haze: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
@@ -24534,10 +26859,17 @@ noceadowl: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
+			icywind: ["9M"], //Añadido
 			imprison: ["9M"],
+			infestation: ["9M"], //Añadido
 			laserfocus: ["9M"],
+			leer: ["9M"], //Añadido
+			lockon: ["9M"], //Añadido
 			magiccoat: ["9M"],
+			memento: ["9M"], //Añadido
 			mimic: ["9M"],
+			mindreader: ["9M"], //Añadido
+			mirrorcoat: ["9M"], //Añadido
 			moonblast: ["9M"],
 			mudslap: ["9M"],
 			nastyplot: ["9M"],
@@ -24553,27 +26885,35 @@ noceadowl: {
 			psychicnoise: ["9M"],
 			psychoshift: ["9M"],
 			psychup: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			recycle: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
+			retaliate: ["9M"], //Añadido
 			return: ["9M"],
+			roleplay: ["9M"], //Añadido
 			roost: ["9M"],
 			round: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			silverwind: ["9M"],
 			skillswap: ["9M"],
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
+			snarl: ["9M"], //Añadido
 			snore: ["9M"],
+			snowscape: ["9M"], //Añadido
+			sonicboom: ["9M"], //Añadido
 			spite: ["9M"],
 			steelwing: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			synchronoise: ["9M"],
@@ -24582,12 +26922,19 @@ noceadowl: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
+			trick: ["9M"], //Añadido
 			trickroom: ["9M"],
-			twister: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			uproar: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//captivate //Removido
+			//twister //Removido
 		},
 	},
 ledyba: {
@@ -24597,18 +26944,14 @@ ledyba: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
-			bide: ["9M"],
 			brickbreak: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			cometpunch: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
-			dig: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dizzypunch: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -24627,6 +26970,7 @@ ledyba: {
 			icepunch: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			machpunch: ["9M"],
 			megapunch: ["9M"],
@@ -24646,7 +26990,6 @@ ledyba: {
 			safeguard: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
-			silverwind: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
@@ -24661,11 +27004,19 @@ ledyba: {
 			swordsdance: ["9M"],
 			tackle: ["9M"],
 			tailwind: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//bide //Removido
+			//captivate //Removido
+			//dig //Removido
+			//silverwind //Removido
+			//uproar //Removido
 		},
 	},
 ledian: {
@@ -24675,17 +27026,15 @@ ledian: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			cometpunch: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
-			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
@@ -24695,6 +27044,7 @@ ledian: {
 			flash: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
@@ -24705,6 +27055,7 @@ ledian: {
 			icepunch: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			machpunch: ["9M"],
 			megapunch: ["9M"],
@@ -24722,7 +27073,7 @@ ledian: {
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
-			silverwind: ["9M"],
+			skyattack: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
@@ -24738,11 +27089,18 @@ ledian: {
 			swordsdance: ["9M"],
 			tackle: ["9M"],
 			tailwind: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//dig //Removido
+			//silverwind //Removido
+			//uproar //Removido
 		},
 	},
 ledstar: {
@@ -24750,30 +27108,49 @@ ledstar: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+			armthrust: ["9M"], //Añadido
 			attract: ["9M"],
+			aurasphere: ["9M"], //Añadido
 			batonpass: ["9M"],
+			bounce: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
+			bulletpunch: ["9M"], //Añadido
+			charge: ["9M"], //Añadido
+			chargebeam: ["9M"], //Añadido
+			closecombat: ["9M"], //Añadido
+			coaching: ["9M"], //Añadido
 			cometpunch: ["9M"],
 			confide: ["9M"],
 			cosmicpower: ["9M"],
 			curse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
+			dicharge: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dynamicpunch: ["9M"],
+			electricterrain: ["9M"], //Añadido
 			endure: ["9M"],
+			extremespeed: ["9M"], //Añadido
 			facade: ["9M"],
+			finalgambit: ["9M"], //Añadido
+			firepunch: ["9M"], //Añadido
 			firstimpression: ["9M"],
+			flamecharge: ["9M"], //Añadido
 			flash: ["9M"],
 			fling: ["9M"],
+			fly: ["9M"], //Añadido
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			gigadrain: ["9M"],
@@ -24786,8 +27163,14 @@ ledstar: {
 			infestation: ["9M"],
 			iondeluge: ["9M"],
 			knockoff: ["9M"],
+			laserfocus: ["9M"], //Añadido
+			lastresort: ["9M"], //Añadido
 			lightscreen: ["9M"],
+			lockon: ["9M"], //Añadido
+			lowsweep: ["9M"], //Añadido
 			machpunch: ["9M"],
+			meditate: ["9M"], //Añadido
+			mefirst: ["9M"], //Añadido
 			megapunch: ["9M"],
 			mimic: ["9M"],
 			naturalgift: ["9M"],
@@ -24799,6 +27182,7 @@ ledstar: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rockslide: ["9M"], //Añadido
 			rocksmash: ["9M"],
 			rockwrecker: ["9M"],
 			rollout: ["9M"],
@@ -24806,15 +27190,22 @@ ledstar: {
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
-			silverwind: ["9M"],
+			skyattack: ["9M"], //Añadido
+			skyuppercut: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			spark: ["9M"], //Añadido
+			spotlight: ["9M"], //Añadido
+			steelwing: ["9M"], //Añadido
 			strength: ["9M"],
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
+			stunspore: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supercellslam: ["9M"], //Añadido
+			superpower: ["9M"], //Añadido
 			supersonic: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
@@ -24822,29 +27213,35 @@ ledstar: {
 			swordsdance: ["9M"],
 			tackle: ["9M"],
 			tailwind: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
-			trickroom: ["9M"],
-			uproar: ["9M"],
 			uturn: ["9M"],
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zenheadbutt: ["9M"],
+			//captivate //Removido
+			//silverwind //Removido
+			//trickroom //Removido
+			//uproar //Removido
 		},
 	},
 spinarak: {
 		learnset: {
 			absorb: ["9M"],
 			acidspray: ["9M"],
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
+			assurance: ["9M"], //Añadido
+			astonish: ["9M"], //Añadido
+			bind: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			crosspoison: ["9M"],
@@ -24853,6 +27250,7 @@ spinarak: {
 			disable: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			drillrun: ["9M"], //Añadido
 			electroweb: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
@@ -24865,7 +27263,6 @@ spinarak: {
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
 			infestation: ["9M"],
-			knockoff: ["9M"],
 			leechlife: ["9M"],
 			lunge: ["9M"],
 			megahorn: ["9M"],
@@ -24896,9 +27293,9 @@ spinarak: {
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
-			sonicboom: ["9M"],
 			spiderweb: ["9M"],
+			spikecannon: ["9M"], //Añadido
+			spikes: ["9M"], //Añadido
 			spite: ["9M"],
 			stickyweb: ["9M"],
 			stringshot: ["9M"],
@@ -24909,6 +27306,7 @@ spinarak: {
 			swagger: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			toxicthread: ["9M"],
@@ -24916,20 +27314,28 @@ spinarak: {
 			twineedle: ["9M"],
 			venoshock: ["9M"],
 			xscissor: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//knockoff //Removido
+			//solarbeam //Removido
+			//sonicboom //Removido
 		},
 	},
 ariados: {
 		learnset: {
 			absorb: ["9M"],
 			acidspray: ["9M"],
+			acupressure: ["9M"], //Añadido
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
+			assurance: ["9M"], //Añadido
+			astonish: ["9M"], //Añadido
+			bind: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			crosspoison: ["9M"],
@@ -24937,6 +27343,7 @@ ariados: {
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			drillrun: ["9M"], //Añadido
 			electroweb: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
@@ -24952,7 +27359,6 @@ ariados: {
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
-			hyperbeam: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			leechlife: ["9M"],
@@ -24960,6 +27366,7 @@ ariados: {
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
+			peck: ["9M"], //Añadido
 			pinmissile: ["9M"],
 			poisonjab: ["9M"],
 			poisonsting: ["9M"],
@@ -24981,12 +27388,13 @@ ariados: {
 			sludgewave: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
 			spiderweb: ["9M"],
+			spikecannon: ["9M"], //Añadido
+			spikes: ["9M"], //Añadido
 			spite: ["9M"],
+			steamroller: ["9M"], //Añadido
 			stickybomb: ["9M"],
 			stickyweb: ["9M"],
-			stompingtantrum: ["9M"],
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
 			substitute: ["9M"],
@@ -24997,6 +27405,7 @@ ariados: {
 			terablast: ["9M"],
 			thief: ["9M"],
 			throatchop: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			toxicthread: ["9M"],
@@ -25004,20 +27413,22 @@ ariados: {
 			venomdrench: ["9M"],
 			venoshock: ["9M"],
 			xscissor: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//hyperbeam //Removido
+			//solarbeam //Removido
+			//stompingtantrum //Removido
 		},
 	},
 chinchou: {
 		learnset: {
-			agility: ["9M"],
 			amnesia: ["9M"],
 			aquaring: ["9M"],
-			attract: ["9M"],
 			blizzard: ["9M"],
-			bounce: ["9M"],
 			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			chillingwater: ["9M"],
@@ -25035,6 +27446,7 @@ chinchou: {
 			electroweb: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			faketears: ["9M"], //Añadido
 			flail: ["9M"],
 			flash: ["9M"],
 			flipturn: ["9M"],
@@ -25051,6 +27463,7 @@ chinchou: {
 			mist: ["9M"],
 			muddywater: ["9M"],
 			naturalgift: ["9M"],
+			paraboliccharge: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			raindance: ["9M"],
@@ -25068,14 +27481,15 @@ chinchou: {
 			soak: ["9M"],
 			spark: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			tailglow: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
+			thundershock: ["9M"], //Añadido
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			voltswitch: ["9M"],
@@ -25085,21 +27499,24 @@ chinchou: {
 			whirlpool: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//bounce //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 lanturn: {
 		learnset: {
-			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			amnesia: ["9M"],
 			aquaring: ["9M"],
 			aquatail: ["9M"],
-			attract: ["9M"],
 			blizzard: ["9M"],
-			bounce: ["9M"],
+			bodyslam: ["9M"], //Añadido
 			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			chillingwater: ["9M"],
@@ -25114,12 +27531,15 @@ lanturn: {
 			eerieimpulse: ["9M"],
 			electricterrain: ["9M"],
 			electroball: ["9M"],
+			electroshot: ["9M"], //Añadido
 			electroweb: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			faketears: ["9M"], //Añadido
 			flail: ["9M"],
 			flash: ["9M"],
 			flipturn: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			hail: ["9M"],
@@ -25130,10 +27550,13 @@ lanturn: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			iondeluge: ["9M"],
+			lifedew: ["9M"], //Añadido
 			liquidation: ["9M"],
 			mimic: ["9M"],
 			muddywater: ["9M"],
 			naturalgift: ["9M"],
+			painsplit: ["9M"], //Añadido
+			paraboliccharge: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			raindance: ["9M"],
@@ -25153,17 +27576,19 @@ lanturn: {
 			spotlight: ["9M"],
 			stockpile: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swallow: ["9M"],
+			tailglow: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
+			thundershock: ["9M"], //Añadido
 			thunderwave: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			voltswitch: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
@@ -25171,21 +27596,23 @@ lanturn: {
 			whirlpool: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//bounce //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 togepi: {
 		learnset: {
-			aerialace: ["9M"],
 			afteryou: ["9M"],
 			ancientpower: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
 			bestow: ["9M"],
 			bodyslam: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -25211,6 +27638,7 @@ togepi: {
 			futuresight: ["9M"],
 			grassknot: ["9M"],
 			growl: ["9M"],
+			gyroball: ["9M"], //Añadido
 			headbutt: ["9M"],
 			healbell: ["9M"],
 			helpinghand: ["9M"],
@@ -25233,8 +27661,10 @@ togepi: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			peck: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			present: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
@@ -25252,20 +27682,24 @@ togepi: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
+			shellsmash: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			softboiled: ["9M"],
 			solarbeam: ["9M"],
+			splash: ["9M"], //Añadido
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
+			sweetscent: ["9M"], //Añadido
 			swift: ["9M"],
 			telekinesis: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -25276,6 +27710,9 @@ togepi: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//aerialace //Removido
+			//batonpass //Removido
+			//counter //Removido
 		},
 	},
 togetic: {
@@ -25285,14 +27722,11 @@ togetic: {
 			aircutter: ["9M"],
 			ancientpower: ["9M"],
 			attract: ["9M"],
-			batonpass: ["9M"],
 			bestow: ["9M"],
 			bodyslam: ["9M"],
-			brickbreak: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
-			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
@@ -25320,9 +27754,9 @@ togetic: {
 			followme: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			growl: ["9M"],
+			gyroball: ["9M"], //Añadido
 			headbutt: ["9M"],
 			healbell: ["9M"],
 			heatwave: ["9M"],
@@ -25346,8 +27780,10 @@ togetic: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			ominouswind: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychup: ["9M"],
@@ -25365,6 +27801,7 @@ togetic: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
+			shellsmash: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			silverwind: ["9M"],
@@ -25374,16 +27811,19 @@ togetic: {
 			snore: ["9M"],
 			softboiled: ["9M"],
 			solarbeam: ["9M"],
+			splash: ["9M"], //Añadido
 			steelwing: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
+			sweetscent: ["9M"], //Añadido
 			swift: ["9M"],
 			tailwind: ["9M"],
 			telekinesis: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -25395,6 +27835,10 @@ togetic: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//brickbreak //Removido
+			//counter //Removido
+			//gigaimpact //Removido
 		},
 	},
 togekiss: {
@@ -25442,6 +27886,7 @@ togekiss: {
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			growl: ["9M"],
+			gyroball: ["9M"], //Añadido
 			headbutt: ["9M"],
 			healbell: ["9M"],
 			heatwave: ["9M"],
@@ -25465,9 +27910,11 @@ togekiss: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			ominouswind: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			pluck: ["9M"],
 			pound: ["9M"],
+			powertrick: ["9M"], //Añadido
 			present: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
@@ -25484,25 +27931,26 @@ togekiss: {
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
+			shellsmash: ["9M"], //Añadido
 			signalbeam: ["9M"],
 			silverwind: ["9M"],
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
-			smartstrike: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			splash: ["9M"], //Añadido
 			steelwing: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetkiss: ["9M"],
+			sweetscent: ["9M"], //Añadido
 			swift: ["9M"],
 			tailwind: ["9M"],
 			telekinesis: ["9M"],
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			triattack: ["9M"],
 			trick: ["9M"],
@@ -25513,6 +27961,9 @@ togekiss: {
 			workup: ["9M"],
 			yawn: ["9M"],
 			zenheadbutt: ["9M"],
+			//shadowball //Removido
+			//shockwave //Removido
+			//smartstrike //Removido
 		},
 	},
 natu: {
@@ -25521,15 +27972,15 @@ natu: {
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			allyswitch: ["9M"],
-			attract: ["9M"],
+			barrier: ["9M"], //Añadido
 			batonpass: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			cosmicpower: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
+			defog: ["9M"], //Añadido
 			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -25594,7 +28045,6 @@ natu: {
 			steelwing: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
@@ -25611,6 +28061,9 @@ natu: {
 			uturn: ["9M"],
 			wish: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 xatu: {
@@ -25619,25 +28072,28 @@ xatu: {
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			allyswitch: ["9M"],
-			attract: ["9M"],
+			ancientpower: ["9M"], //Añadido
+			barrier: ["9M"], //Añadido
 			batonpass: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			cosmicpower: ["9M"],
 			curse: ["9M"],
 			cyclonesphere: ["9M"],
 			dazzlinggleam: ["9M"],
-			defog: ["9M"],
+			defog: ["9M"], //Añadido
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
+			fireblast: ["9M"], //Añadido
 			flash: ["9M"],
 			fly: ["9M"],
 			focusblast: ["9M"],
@@ -25645,13 +28101,13 @@ xatu: {
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigadrain: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
 			guardswap: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			imprison: ["9M"],
+			irondefense: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
@@ -25662,6 +28118,7 @@ xatu: {
 			meteorbeam: ["9M"],
 			mimic: ["9M"],
 			miracleeye: ["9M"],
+			moonblast: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			nightshade: ["9M"],
@@ -25670,6 +28127,7 @@ xatu: {
 			peck: ["9M"],
 			pluck: ["9M"],
 			powergem: ["9M"],
+			powersplit: ["9M"], //Añadido
 			powerswap: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
@@ -25680,6 +28138,8 @@ xatu: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			rockpolish: ["9M"], //Añadido
+			rockslide: ["9M"], //Añadido
 			roost: ["9M"],
 			round: ["9M"],
 			secretpower: ["9M"],
@@ -25690,11 +28150,12 @@ xatu: {
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			snowscape: ["9M"], //Añadido
 			solarbeam: ["9M"],
+			stealthrock: ["9M"], //Añadido
 			steelwing: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
@@ -25706,10 +28167,16 @@ xatu: {
 			toxic: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			trumpcard: ["9M"], //Añadido
+			twinbeam: ["9M"], //Añadido
 			twister: ["9M"],
 			uturn: ["9M"],
 			wish: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//gigaimpact //Removido
+			//suckerpunch //Removido
 		},
 	},
 xatutotemserious: {
@@ -25812,10 +28279,8 @@ xatutotemserious: {
 mareep: {
 		learnset: {
 			afteryou: ["9M"],
-			agility: ["9M"],
-			attract: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			bodyslam: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
@@ -25849,6 +28314,7 @@ mareep: {
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			magnetrise: ["9M"],
+			milkdrink: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			odorsleuth: ["9M"],
@@ -25863,15 +28329,19 @@ mareep: {
 			sandattack: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
+			selfdestruct: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			spotlight: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailglow: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
@@ -25883,16 +28353,17 @@ mareep: {
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 flaaffy: {
 		learnset: {
 			afteryou: ["9M"],
-			agility: ["9M"],
-			attract: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
@@ -25933,6 +28404,7 @@ flaaffy: {
 			magnetrise: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			milkdrink: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			powergem: ["9M"],
@@ -25948,16 +28420,20 @@ flaaffy: {
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			selfdestruct: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			spotlight: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailglow: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
@@ -25970,19 +28446,19 @@ flaaffy: {
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 ampharos: {
 		learnset: {
 			afteryou: ["9M"],
-			agility: ["9M"],
-			attract: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
-			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
@@ -25997,6 +28473,7 @@ ampharos: {
 			discharge: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dragonbreath: ["9M"], //Añadido
 			dragoncheer: ["9M"],
 			dragonpulse: ["9M"],
 			dragontail: ["9M"],
@@ -26033,6 +28510,7 @@ ampharos: {
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			meteorbeam: ["9M"],
+			milkdrink: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			outrage: ["9M"],
@@ -26044,17 +28522,17 @@ ampharos: {
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
-			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			selfdestruct: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			stompingtantrum: ["9M"],
+			spotlight: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -26062,6 +28540,8 @@ ampharos: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
+			tailglow: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thunder: ["9M"],
@@ -26074,6 +28554,12 @@ ampharos: {
 			voltswitch: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//brutalswing //Removido
+			//captivate //Removido
+			//rockclimb //Removido
+			//stompingtantrum //Removido
 		},
 	},
 azurill: {
@@ -26088,13 +28574,13 @@ azurill: {
 			brutalswing: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			camouflage: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
 			covet: ["9M"],
 			defensecurl: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
@@ -26102,9 +28588,12 @@ azurill: {
 			endure: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
+			followme: ["9M"], //Añadido
 			frustration: ["9M"],
+			gyroball: ["9M"], //Añadido
 			hail: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hypervoice: ["9M"],
@@ -26114,11 +28603,13 @@ azurill: {
 			knockoff: ["9M"],
 			lightscreen: ["9M"],
 			mimic: ["9M"],
+			minimize: ["9M"], //Añadido
 			muddywater: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			perishsong: ["9M"],
+			playnice: ["9M"], //Añadido
 			present: ["9M"],
 			protect: ["9M"],
 			raindance: ["9M"],
@@ -26133,12 +28624,13 @@ azurill: {
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			soak: ["9M"],
 			splash: ["9M"],
 			substitute: ["9M"],
+			superfang: ["9M"], //Añadido
 			supersonic: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			swift: ["9M"],
 			tailwhip: ["9M"],
 			takedown: ["9M"],
@@ -26152,6 +28644,8 @@ azurill: {
 			watersport: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//camouflage //Removido
+			//soak //Removido
 		},
 	},
 marill: {
@@ -26171,7 +28665,6 @@ marill: {
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			camouflage: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			chillingwater: ["9M"],
@@ -26181,7 +28674,7 @@ marill: {
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
-			disarmingvoice: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -26203,12 +28696,14 @@ marill: {
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
 			hypervoice: ["9M"],
+			iceball: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icespinner: ["9M"],
 			icywind: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			lifedew: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
 			megakick: ["9M"],
@@ -26227,7 +28722,8 @@ marill: {
 			present: ["9M"],
 			protect: ["9M"],
 			raindance: ["9M"],
-			refresh: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			refresh: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rocksmash: ["9M"],
@@ -26241,8 +28737,7 @@ marill: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			soak: ["9M"],
-			steelroller: ["9M"],
+			stompingtantrum: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -26264,6 +28759,9 @@ marill: {
 			watersport: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//camouflage //Removido
+			//soak //Removido
+			//steelroller //Removido
 		},
 	},
 azumarill: {
@@ -26289,7 +28787,7 @@ azumarill: {
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
-			disarmingvoice: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -26299,6 +28797,7 @@ azumarill: {
 			endure: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
+			firepunch: ["9M"], //Añadido
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
@@ -26313,12 +28812,14 @@ azumarill: {
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
+			iceball: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icespinner: ["9M"],
 			icywind: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			lifedew: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
 			megakick: ["9M"],
@@ -26335,6 +28836,8 @@ azumarill: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			refresh: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rocksmash: ["9M"],
@@ -26347,7 +28850,8 @@ azumarill: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			steelroller: ["9M"],
+			sparkingarea: ["9M"], //Añadido
+			stompingtantrum: ["9M"], //Añadido
 			strength: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -26360,6 +28864,7 @@ azumarill: {
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			tripleaxel: ["9M"], //Añadido
 			uproar: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
@@ -26367,22 +28872,19 @@ azumarill: {
 			watersport: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			//steelroller //Removido
 		},
 	},
 bonsly: {
 		learnset: {
 			afteryou: ["9M"],
-			attract: ["9M"],
 			block: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
 			counter: ["9M"],
-			covet: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
@@ -26393,7 +28895,6 @@ bonsly: {
 			endure: ["9M"],
 			explosion: ["9M"],
 			facade: ["9M"],
-			faketears: ["9M"],
 			feintattack: ["9M"],
 			flail: ["9M"],
 			foulplay: ["9M"],
@@ -26425,7 +28926,6 @@ bonsly: {
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -26444,25 +28944,29 @@ bonsly: {
 			thief: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
+			//attract //Removido
+			//calmmind //Removido
+			//captivate //Removido
+			//covet //Removido
+			//faketears //Removido
+			//selfdestruct //Removido
+			//uproar //Removido
 		},
 	},
 sudowoodo: {
 		learnset: {
 			afteryou: ["9M"],
-			attract: ["9M"],
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			calmmind: ["9M"],
-			captivate: ["9M"],
+			camouflage: ["9M"], //Añadido
 			confide: ["9M"],
 			copycat: ["9M"],
 			counter: ["9M"],
-			covet: ["9M"],
 			curse: ["9M"],
+			darkestlariat: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -26473,9 +28977,7 @@ sudowoodo: {
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
-			explosion: ["9M"],
 			facade: ["9M"],
-			faketears: ["9M"],
 			feintattack: ["9M"],
 			firepunch: ["9M"],
 			flail: ["9M"],
@@ -26493,7 +28995,6 @@ sudowoodo: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
-			hyperbeam: ["9M"],
 			icepunch: ["9M"],
 			irondefense: ["9M"],
 			lowkick: ["9M"],
@@ -26524,8 +29025,8 @@ sudowoodo: {
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			secretpower: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			seismictoss: ["9M"],
-			selfdestruct: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -26545,44 +29046,55 @@ sudowoodo: {
 			terablast: ["9M"],
 			thief: ["9M"],
 			thunderpunch: ["9M"],
-			torment: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			wildcharge: ["9M"],
 			woodhammer: ["9M"],
+			//attract //Removido
+			//calmmind //Removido
+			//captivate //Removido
+			//covet //Removido
+			//explosion //Removido
+			//faketears //Removido
+			//hyperbeam //Removido
+			//selfdestruct //Removido
+			//torment //Removido
+			//uproar //Removido
 		},
 	},
 disdowoodion: {
 		learnset: {
 			afteryou: ["9M"],
-			attract: ["9M"],
+			bide: ["9M"], //Añadido
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			calmmind: ["9M"],
-			captivate: ["9M"],
+			camouflage: ["9M"], //Añadido
 			cometpunch: ["9M"],
 			confide: ["9M"],
 			copycat: ["9M"],
 			counter: ["9M"],
-			covet: ["9M"],
+			crosschop: ["9M"], //Añadido
 			curse: ["9M"],
+			darkestlariat: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			dig: ["9M"],
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
+			doublehit: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
 			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
+			electricterrain: ["9M"], //Añadido
 			endeavor: ["9M"],
 			endure: ["9M"],
 			explosion: ["9M"],
 			facade: ["9M"],
-			faketears: ["9M"],
 			feintattack: ["9M"],
 			firepunch: ["9M"],
 			flail: ["9M"],
@@ -26595,6 +29107,7 @@ disdowoodion: {
 			gyroball: ["9M"],
 			hammerarm: ["9M"],
 			harden: ["9M"],
+			hardpress: ["9M"], //Añadido
 			headbutt: ["9M"],
 			headsmash: ["9M"],
 			heavycollision: ["9M"],
@@ -26602,13 +29115,15 @@ disdowoodion: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
-			hyperbeam: ["9M"],
 			icepunch: ["9M"],
 			irondefense: ["9M"],
+			knockoff: ["9M"], //Añadido
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
+			magnitude: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			metalburst: ["9M"], //Añadido
 			meteorbeam: ["9M"],
 			mimic: ["9M"],
 			mudshot: ["9M"],
@@ -26619,6 +29134,9 @@ disdowoodion: {
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
+			quickguard: ["9M"], //Añadido
+			reflect: ["9M"], //Añadido
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rockblast: ["9M"],
@@ -26627,41 +29145,55 @@ disdowoodion: {
 			rocksmash: ["9M"],
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
+			rockwreaker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			secretpower: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			seismictoss: ["9M"],
-			selfdestruct: ["9M"],
 			sharproot: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snaptrap: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
 			spikes: ["9M"],
 			stealthrock: ["9M"],
+			steelroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
+			supercellslam: ["9M"], //Añadido
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
 			tearfullook: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunderpunch: ["9M"],
-			torment: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			wildcharge: ["9M"],
 			woodhammer: ["9M"],
+			//attract //Removido
+			//calmmind //Removido
+			//captivate //Removido
+			//covet //Removido
+			//faketears //Removido
+			//hyperbeam //Removido
+			//selfdestruct //Removido
+			//torment //Removido
+			//uproar //Removido
 		},
 	},
 hoppip: {
@@ -26671,19 +29203,16 @@ hoppip: {
 			aerialace: ["9M"],
 			amnesia: ["9M"],
 			aromatherapy: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bounce: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
-			confusion: ["9M"],
 			cottonguard: ["9M"],
 			cottonspore: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
 			defensecurl: ["9M"],
+			defog: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			encore: ["9M"],
@@ -26694,16 +29223,21 @@ hoppip: {
 			firefang: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
+			floatyfall: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
+			grassyglide: ["9M"], //Añadido
 			grassyterrain: ["9M"],
 			growl: ["9M"],
+			growth: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hyperfang: ["9M"],
 			infestation: ["9M"],
+			leafage: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
@@ -26714,12 +29248,14 @@ hoppip: {
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			payday: ["9M"],
+			playnice: ["9M"], //Añadido
 			poisonpowder: ["9M"],
 			pollenpuff: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
 			ragepowder: ["9M"],
 			raindance: ["9M"],
+			razorleaf: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -26747,10 +29283,15 @@ hoppip: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
 			worryseed: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//confusion //Removido
 		},
 	},
 skiploom: {
@@ -26758,17 +29299,15 @@ skiploom: {
 			absorb: ["9M"],
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bounce: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			cottonspore: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
 			defensecurl: ["9M"],
+			defog: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			encore: ["9M"],
@@ -26779,14 +29318,20 @@ skiploom: {
 			fairywind: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
+			floatyfall: ["9M"], //Añadido
+			flowershield: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
+			grassyglide: ["9M"], //Añadido
 			grassyterrain: ["9M"],
+			growth: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			infestation: ["9M"],
+			leafage: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
@@ -26796,12 +29341,14 @@ skiploom: {
 			memento: ["9M"],
 			mimic: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			poisonpowder: ["9M"],
 			pollenpuff: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
 			ragepowder: ["9M"],
 			raindance: ["9M"],
+			razorleaf: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -26827,10 +29374,14 @@ skiploom: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
 			worryseed: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
 		},
 	},
 jumpluff: {
@@ -26838,11 +29389,9 @@ jumpluff: {
 			absorb: ["9M"],
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
+			agility: ["9M"], //Añadido
 			bounce: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			cottonball: ["9M"],
@@ -26850,6 +29399,7 @@ jumpluff: {
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
 			defensecurl: ["9M"],
+			defog: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			encore: ["9M"],
@@ -26861,16 +29411,21 @@ jumpluff: {
 			falseswipe: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
+			floatyfall: ["9M"], //Añadido
+			flowershield: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
-			gigaimpact: ["9M"],
 			grassknot: ["9M"],
+			grasswhistle: ["9M"], //Añadido
+			grassyglide: ["9M"], //Añadido
 			grassyterrain: ["9M"],
+			growth: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			infestation: ["9M"],
+			leafage: ["9M"], //Añadido
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
 			lightscreen: ["9M"],
@@ -26880,12 +29435,14 @@ jumpluff: {
 			memento: ["9M"],
 			mimic: ["9M"],
 			naturalgift: ["9M"],
+			playnice: ["9M"], //Añadido
 			poisonpowder: ["9M"],
 			pollenpuff: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
 			ragepowder: ["9M"],
 			raindance: ["9M"],
+			razorleaf: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -26911,10 +29468,15 @@ jumpluff: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
 			worryseed: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//gigaimpact //Removido
 		},
 	},
 aipom: {
@@ -26922,16 +29484,16 @@ aipom: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
+			assist: ["9M"], //Añadido
 			astonish: ["9M"],
-			attract: ["9M"],
 			batonpass: ["9M"],
 			beatup: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			brickbreak: ["9M"],
-			captivate: ["9M"],
-			chillingwater: ["9M"],
+			brutalswing: ["9M"], //Añadido
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			counter: ["9M"],
 			covet: ["9M"],
 			curse: ["9M"],
@@ -26954,13 +29516,13 @@ aipom: {
 			focuspunch: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
-			furycutter: ["9M"],
-			furyswipes: ["9M"],
 			grassknot: ["9M"],
 			gunkshot: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			holdhands: ["9M"], //Añadido
 			honeclaws: ["9M"],
 			icepunch: ["9M"],
 			irontail: ["9M"],
@@ -26978,9 +29540,12 @@ aipom: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			payback: ["9M"],
+			playnice: ["9M"], //Añadido
+			playrough: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			pursuit: ["9M"],
+			quickattack: ["9M"], //Añadido
 			quickguard: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
@@ -26989,6 +29554,7 @@ aipom: {
 			revenge: ["9M"],
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
+			rollingkick: ["9M"], //Añadido
 			round: ["9M"],
 			sandattack: ["9M"],
 			scratch: ["9M"],
@@ -27023,7 +29589,6 @@ aipom: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
 			tickle: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -27033,6 +29598,12 @@ aipom: {
 			waterpulse: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//chillingwater //Removido
+			//furycutter //Removido
+			//furyswipes //Removido
+			//thunderwave //Removido
 		},
 	},
 ambipom: {
@@ -27040,14 +29611,17 @@ ambipom: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
+			assist: ["9M"], //Añadido
 			astonish: ["9M"],
 			attract: ["9M"],
 			batonpass: ["9M"],
 			bounce: ["9M"],
 			brickbreak: ["9M"],
+			brutalswing: ["9M"], //Añadido
 			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
+			constrict: ["9M"], //Añadido
 			covet: ["9M"],
 			cut: ["9M"],
 			dig: ["9M"],
@@ -27070,8 +29644,10 @@ ambipom: {
 			grassknot: ["9M"],
 			gunkshot: ["9M"],
 			headbutt: ["9M"],
+			heartstamp: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			holdhands: ["9M"], //Añadido
 			honeclaws: ["9M"],
 			hyperbeam: ["9M"],
 			icepunch: ["9M"],
@@ -27087,23 +29663,25 @@ ambipom: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			payback: ["9M"],
+			playnice: ["9M"], //Añadido
+			playrough: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			quickattack: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
+			rollingkick: ["9M"], //Añadido
 			round: ["9M"],
 			sandattack: ["9M"],
-			scratch: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
-			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snatch: ["9M"],
@@ -27134,19 +29712,19 @@ ambipom: {
 			uturn: ["9M"],
 			waterpulse: ["9M"],
 			workup: ["9M"],
+			//scratch //Removido
+			//shockwave //Removido
 		},
 	},
 sunkern: {
 		learnset: {
 			absorb: ["9M"],
 			afteryou: ["9M"],
-			attract: ["9M"],
-			bide: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
@@ -27196,11 +29774,15 @@ sunkern: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
-			trailblaze: ["9M"],
-			uproar: ["9M"],
 			weatherball: ["9M"],
 			worryseed: ["9M"],
+			//attract //Removido
+			//bide //Removido
+			//captivate //Removido
+			//trailblaze //Removido
+			//uproar //Removido
 		},
 	},
 sunflora: {
@@ -27209,11 +29791,11 @@ sunflora: {
 			afteryou: ["9M"],
 			attract: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			dazzlinggleam: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
@@ -27269,24 +29851,31 @@ sunflora: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
 			weatherball: ["9M"],
 			worryseed: ["9M"],
+			//captivate //Removido
+			//uproar //Removido
 		},
 	},
 sunfulwer: {
 		learnset: {
 			absorb: ["9M"],
 			afteryou: ["9M"],
+			aromatherapy: ["9M"], //Añadido
 			attract: ["9M"],
+			barrage: ["9M"], //Añadido
 			bulletseed: ["9M"],
-			captivate: ["9M"],
+			burnup: ["9M"], //Añadido
+			charm: ["9M"], //Añadido
+			chloroblast: ["9M"], //Añadido
 			confide: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			dazzlinggleam: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
@@ -27295,9 +29884,12 @@ sunfulwer: {
 			endure: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
+			fierydance: ["9M"], //Añadido
 			fireblast: ["9M"],
+			firespin: ["9M"], //Añadido
 			flash: ["9M"],
 			flowershield: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
@@ -27318,7 +29910,7 @@ sunfulwer: {
 			megadrain: ["9M"],
 			mimic: ["9M"],
 			naturalgift: ["9M"],
-			naturepower: ["9M"],
+			naturepower: ["9M"], //Añadido
 			overheat: ["9M"],
 			petalblizzard: ["9M"],
 			petaldance: ["9M"],
@@ -27330,10 +29922,12 @@ sunfulwer: {
 			return: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
+			scorchingsands: ["9M"], //Añadido
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			substitute: ["9M"],
@@ -27345,23 +29939,27 @@ sunfulwer: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
-			uproar: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			weatherball: ["9M"],
 			worryseed: ["9M"],
+			//captivate //Removido
+			//uproar //Removido
 		},
 	},
 yanma: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			aerialace: ["9M"],
+			agility: ["9M"], //Añadido
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			ancientpower: ["9M"],
 			attract: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
 			defog: ["9M"],
@@ -27370,6 +29968,7 @@ yanma: {
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			facade: ["9M"],
 			feint: ["9M"],
 			feintattack: ["9M"],
@@ -27380,8 +29979,11 @@ yanma: {
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			hypnosis: ["9M"],
+			infestation: ["9M"], //Añadido
 			leechlife: ["9M"],
+			lockon: ["9M"], //Añadido
 			lunge: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			ominouswind: ["9M"],
@@ -27392,9 +29994,9 @@ yanma: {
 			psychup: ["9M"],
 			pursuit: ["9M"],
 			quickattack: ["9M"],
+			quickguard: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
-			reversal: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
 			screech: ["9M"],
@@ -27424,13 +30026,18 @@ yanma: {
 			toxic: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
+			vacuumwave: ["9M"], //Añadido
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
+			//captivate //Removido
+			//reversal //Removido
 		},
 	},
 yanmega: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			aerialace: ["9M"],
+			agility: ["9M"], //Añadido
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			ancientpower: ["9M"],
@@ -27447,6 +30054,7 @@ yanmega: {
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			facade: ["9M"],
 			feint: ["9M"],
 			flash: ["9M"],
@@ -27458,9 +30066,12 @@ yanmega: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
+			infestation: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leechlife: ["9M"],
+			lockon: ["9M"], //Añadido
 			lunge: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
@@ -27472,6 +30083,7 @@ yanmega: {
 			psychup: ["9M"],
 			pursuit: ["9M"],
 			quickattack: ["9M"],
+			quickguard: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			reversal: ["9M"],
@@ -27506,21 +30118,21 @@ yanmega: {
 			toxic: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
+			vacuumwave: ["9M"], //Añadido
 		},
 	},
 wooper: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			afteryou: ["9M"],
 			amnesia: ["9M"],
-			ancientpower: ["9M"],
+			aquaring: ["9M"], //Añadido
 			aquatail: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -27529,16 +30141,12 @@ wooper: {
 			dig: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
-			doublekick: ["9M"],
 			doubleteam: ["9M"],
-			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
-			eerieimpulse: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
-			flash: ["9M"],
 			frustration: ["9M"],
 			guardswap: ["9M"],
 			hail: ["9M"],
@@ -27573,17 +30181,20 @@ wooper: {
 			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
 			spikes: ["9M"],
 			spitup: ["9M"],
+			splash: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			stockpile: ["9M"],
 			stompingtantrum: ["9M"],
@@ -27596,21 +30207,29 @@ wooper: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
-			trailblaze: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			yawn: ["9M"],
+			//ancientpower //Removido
+			//attract //Removido
+			//captivate //Removido
+			//doublekick //Removido
+			//dynamicpunch //Removido
+			//eerieimpulse //Removido
+			//flash //Removido
+			//trailblaze //Removido
 		},
 	},
 wooperpaldea: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			afteryou: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			bodypress: ["9M"],
+			aquaring: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			chillingwater: ["9M"],
@@ -27618,18 +30237,18 @@ wooperpaldea: {
 			curse: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
-			doublekick: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			haze: ["9M"],
 			helpinghand: ["9M"],
 			hydropump: ["9M"],
 			liquidation: ["9M"],
 			lowkick: ["9M"],
-			mist: ["9M"],
+			mudbomb: ["9M"], //Añadido
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			poisonjab: ["9M"],
@@ -27647,6 +30266,7 @@ wooperpaldea: {
 			sludgewave: ["9M"],
 			spikes: ["9M"],
 			spitup: ["9M"],
+			splash: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			stockpile: ["9M"],
 			stompingtantrum: ["9M"],
@@ -27665,23 +30285,25 @@ wooperpaldea: {
 			waterfall: ["9M"],
 			waterpulse: ["9M"],
 			yawn: ["9M"],
+			//bodypress //Removido
+			//doublekick //Removido
+			//mist //Removido
 		},
 	},
 quagsire: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			afteryou: ["9M"],
 			amnesia: ["9M"],
-			ancientpower: ["9M"],
+			aquaring: ["9M"], //Añadido
 			aquatail: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			blizzard: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -27692,10 +30314,8 @@ quagsire: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainpunch: ["9M"],
-			dynamicpunch: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
-			eerieimpulse: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
@@ -27741,17 +30361,20 @@ quagsire: {
 			rollout: ["9M"],
 			round: ["9M"],
 			safeguard: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
+			sludge: ["9M"], //Añadido
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
 			spikes: ["9M"],
+			splash: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -27765,12 +30388,17 @@ quagsire: {
 			thief: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
-			trailblaze: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			yawn: ["9M"],
+			//ancientpower //Removido
+			//attract //Removido
+			//captivate //Removido
+			//dynamicpunch //Removido
+			//eerieimpulse //Removido
+			//trailblaze //Removido
 		},
 	},
 quagsirefeudal: {
@@ -27788,7 +30416,6 @@ quagsirefeudal: {
 			brickbreak: ["9M"],
 			bubbleancientrite: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -27816,6 +30443,7 @@ quagsirefeudal: {
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
+			headlongrush: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -27881,12 +30509,14 @@ quagsirefeudal: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			yawn: ["9M"],
+			//captivate //Removido
 		},
 	},
 clodsire: {
 		learnset: {
 			acidspray: ["9M"],
 			amnesia: ["9M"],
+			aquaring: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
@@ -27953,10 +30583,9 @@ murkrow: {
 			airslash: ["9M"],
 			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
+			beatup: ["9M"], //Añadido
 			bravebird: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			curse: ["9M"],
@@ -27969,7 +30598,6 @@ murkrow: {
 			drillpeck: ["9M"],
 			dualwingbeat: ["9M"],
 			embargo: ["9M"],
-			endure: ["9M"],
 			facade: ["9M"],
 			featherdance: ["9M"],
 			feintattack: ["9M"],
@@ -27977,7 +30605,9 @@ murkrow: {
 			fly: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			gust: ["9M"],
 			haze: ["9M"],
 			heatwave: ["9M"],
@@ -27986,7 +30616,8 @@ murkrow: {
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			icywind: ["9M"],
-			lashout: ["9M"],
+			knockoff: ["9M"], //Añadido
+			lashout: ["9M"], //Añadido
 			meanlook: ["9M"],
 			mimic: ["9M"],
 			mirrormove: ["9M"],
@@ -27996,28 +30627,34 @@ murkrow: {
 			nightmare: ["9M"],
 			nightshade: ["9M"],
 			ominouswind: ["9M"],
+			partingshot: ["9M"], //Añadido
 			payback: ["9M"],
 			peck: ["9M"],
 			perishsong: ["9M"],
 			pluck: ["9M"],
+			powertrip: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
 			psychoshift: ["9M"],
 			psychup: ["9M"],
+			punishment: ["9M"], //Añadido
 			pursuit: ["9M"],
 			quash: ["9M"],
 			quickattack: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
-			retaliate: ["9M"],
+			retaliate: ["9M"], //Añadido
 			return: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
@@ -28030,19 +30667,23 @@ murkrow: {
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			switcheero: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
-			thunderwave: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//endure //Removido
+			//thunderwave //Removido
+			//twister //Removido
 		},
 	},
 honchkrow: {
@@ -28053,6 +30694,7 @@ honchkrow: {
 			airslash: ["9M"],
 			astonish: ["9M"],
 			attract: ["9M"],
+			beatup: ["9M"], //Añadido
 			bravebird: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
@@ -28074,7 +30716,9 @@ honchkrow: {
 			fly: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			haze: ["9M"],
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
@@ -28084,30 +30728,37 @@ honchkrow: {
 			hyperbeam: ["9M"],
 			icywind: ["9M"],
 			incinerate: ["9M"],
-			lashout: ["9M"],
+			knockoff: ["9M"], //Añadido
+			lashout: ["9M"], //Añadido
 			mudslap: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
 			nightslash: ["9M"],
 			ominouswind: ["9M"],
+			partingshot: ["9M"], //Añadido
 			payback: ["9M"],
 			pluck: ["9M"],
+			powertrip: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychicnoise: ["9M"],
 			psychup: ["9M"],
+			punishment: ["9M"], //Añadido
 			pursuit: ["9M"],
 			quash: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
-			retaliate: ["9M"],
+			retaliate: ["9M"], //Añadido
 			return: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
@@ -28121,6 +30772,7 @@ honchkrow: {
 			superpower: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			switcheero: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
@@ -28140,7 +30792,6 @@ misdreavus: {
 			aerialace: ["9M"],
 			allyswitch: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			burningjealousy: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
@@ -28152,8 +30803,8 @@ misdreavus: {
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M"],
-			defensecurl: ["9M"],
 			destinybond: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
@@ -28165,6 +30816,7 @@ misdreavus: {
 			facade: ["9M"],
 			faketears: ["9M"],
 			flash: ["9M"],
+			flashcannon: ["9M"], //Añadido
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
@@ -28179,6 +30831,7 @@ misdreavus: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
+			icebeam: ["9M"], //Añadido
 			icywind: ["9M"],
 			imprison: ["9M"],
 			inferno: ["9M"],
@@ -28189,6 +30842,7 @@ misdreavus: {
 			mefirst: ["9M"],
 			memento: ["9M"],
 			mimic: ["9M"],
+			moonlight: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
@@ -28244,6 +30898,8 @@ misdreavus: {
 			willowisp: ["9M"],
 			wonderroom: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//defensecurl //Removido
 		},
 	},
 mismagius: {
@@ -28262,6 +30918,7 @@ mismagius: {
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			drainingkiss: ["9M"],
 			dreameater: ["9M"],
@@ -28272,6 +30929,7 @@ mismagius: {
 			facade: ["9M"],
 			faketears: ["9M"],
 			flash: ["9M"],
+			flashcannon: ["9M"], //Añadido
 			foulplay: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
@@ -28285,6 +30943,7 @@ mismagius: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
+			icebeam: ["9M"], //Añadido
 			icywind: ["9M"],
 			imprison: ["9M"],
 			laserfocus: ["9M"],
@@ -28293,6 +30952,7 @@ mismagius: {
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
 			magicroom: ["9M"],
+			moonlight: ["9M"], //Añadido
 			mysticalfire: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
@@ -28369,6 +31029,8 @@ wynaut: {
 	},
 wobbuffet: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
+			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
 			charm: ["9M"],
 			counter: ["9M"],
@@ -28381,25 +31043,22 @@ wobbuffet: {
 	},
 girafarig: {
 		learnset: {
+			afteryou: ["9M"], //Añadido
 			agility: ["9M"],
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
-			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			batonpass: ["9M"],
-			beatup: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
-			crunch: ["9M"],
 			curse: ["9M"],
 			dazzlinggleam: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doublehit: ["9M"],
 			doublekick: ["9M"],
@@ -28408,7 +31067,6 @@ girafarig: {
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
 			endeavor: ["9M"],
-			endure: ["9M"],
 			energyball: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
@@ -28437,10 +31095,12 @@ girafarig: {
 			mimic: ["9M"],
 			mirrorcoat: ["9M"],
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			odorsleuth: ["9M"],
+			powershift: ["9M"], //Añadido
 			powerswap: ["9M"],
 			protect: ["9M"],
 			psybeam: ["9M"],
@@ -28460,8 +31120,8 @@ girafarig: {
 			rocksmash: ["9M"],
 			round: ["9M"],
 			secretpower: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
@@ -28483,6 +31143,7 @@ girafarig: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
+			topsyturvy: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			trick: ["9M"],
@@ -28493,17 +31154,22 @@ girafarig: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//assurance //Removido
+			//attract //Removido
+			//beatup //Removido
+			//captivate //Removido
+			//crunch //Removido
+			//endure //Removido
+			//shockwave //Removido
 		},
 	},
 pineco: {
 		learnset: {
-			attract: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -28512,7 +31178,6 @@ pineco: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillrun: ["9M"],
-			earthquake: ["9M"],
 			endure: ["9M"],
 			explosion: ["9M"],
 			facade: ["9M"],
@@ -28525,6 +31190,7 @@ pineco: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			icespinner: ["9M"],
+			infestation: ["9M"], //Añadido
 			irondefense: ["9M"],
 			lightscreen: ["9M"],
 			lunge: ["9M"],
@@ -28537,6 +31203,7 @@ pineco: {
 			pounce: ["9M"],
 			powertrick: ["9M"],
 			protect: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			raindance: ["9M"],
 			rapidspin: ["9M"],
 			reflect: ["9M"],
@@ -28561,6 +31228,7 @@ pineco: {
 			solarbeam: ["9M"],
 			spikes: ["9M"],
 			stealthrock: ["9M"],
+			steamroller: ["9M"], //Añadido
 			strength: ["9M"],
 			stringshot: ["9M"],
 			strugglebug: ["9M"],
@@ -28575,12 +31243,14 @@ pineco: {
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			venoshock: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//earthquake //Removido
 		},
 	},
 forretress: {
 		learnset: {
 			allyswitch: ["9M"],
-			attract: ["9M"],
 			autotomize: ["9M"],
 			bide: ["9M"],
 			block: ["9M"],
@@ -28589,7 +31259,6 @@ forretress: {
 			bugbite: ["9M"],
 			bugbuzz: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
@@ -28598,7 +31267,6 @@ forretress: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillrun: ["9M"],
-			earthpower: ["9M"],
 			earthquake: ["9M"],
 			endure: ["9M"],
 			explosion: ["9M"],
@@ -28608,6 +31276,7 @@ forretress: {
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
 			gravity: ["9M"],
+			gunkshot: ["9M"], //Añadido
 			gyroball: ["9M"],
 			hardpress: ["9M"],
 			headbutt: ["9M"],
@@ -28616,12 +31285,14 @@ forretress: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			icespinner: ["9M"],
+			infestation: ["9M"], //Añadido
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			laserfocus: ["9M"],
 			lightscreen: ["9M"],
 			lunge: ["9M"],
 			magnetrise: ["9M"],
+			metalburst: ["9M"], //Añadido
 			metalsound: ["9M"],
 			mimic: ["9M"],
 			mirrorshot: ["9M"],
@@ -28631,6 +31302,7 @@ forretress: {
 			poisonjab: ["9M"],
 			pounce: ["9M"],
 			protect: ["9M"],
+			ragepowder: ["9M"], //Añadido
 			raindance: ["9M"],
 			rapidspin: ["9M"],
 			reflect: ["9M"],
@@ -28651,11 +31323,12 @@ forretress: {
 			selfdestruct: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
-			smartstrike: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			spikes: ["9M"],
+			spinout: ["9M"], //Añadido
 			stealthrock: ["9M"],
+			steamroller: ["9M"], //Añadido
 			steelbeam: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -28668,7 +31341,6 @@ forretress: {
 			swift: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
-			telekinesis: ["9M"],
 			terablast: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
@@ -28676,18 +31348,20 @@ forretress: {
 			venoshock: ["9M"],
 			voltswitch: ["9M"],
 			zapcannon: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//earthpower //Removido
+			//smartstrike //Removido
+			//telekinesis //Removido
 		},
 	},
 dunsparce: {
 		learnset: {
-			agility: ["9M"],
 			airslash: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
 			aquatail: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bite: ["9M"],
@@ -28696,11 +31370,11 @@ dunsparce: {
 			breakingswipe: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
+			copycat: ["9M"], //Añadido
 			counter: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
@@ -28719,6 +31393,8 @@ dunsparce: {
 			fireblast: ["9M"],
 			flail: ["9M"],
 			flamethrower: ["9M"],
+			flamewheel: ["9M"], //Añadido
+			floatyfall: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			glare: ["9M"],
@@ -28740,6 +31416,7 @@ dunsparce: {
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			painsplit: ["9M"],
@@ -28763,6 +31440,7 @@ dunsparce: {
 			sandstorm: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
+			scorchingsands: ["9M"], //Añadido
 			screech: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
@@ -28775,7 +31453,6 @@ dunsparce: {
 			spite: ["9M"],
 			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
-			stoneedge: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -28787,7 +31464,6 @@ dunsparce: {
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			trumpcard: ["9M"],
 			uproar: ["9M"],
@@ -28796,18 +31472,23 @@ dunsparce: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//agility //Removido
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//stoneedge //Removido
+			//thunderwave //Removido
 		},
 	},
 wungsparce: {
 		learnset: {
 			agility: ["9M"],
+			aircutter: ["9M"], //Añadido
 			airslash: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
 			aquatail: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bite: ["9M"],
@@ -28817,11 +31498,11 @@ wungsparce: {
 			breakingswipe: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
+			copycat: ["9M"], //Añadido
 			counter: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
@@ -28830,6 +31511,8 @@ wungsparce: {
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonbreath: ["9M"],
+			dragondance: ["9M"], //Añadido
+			dragonpulse: ["9M"], //Añadido
 			dragonrush: ["9M"],
 			dreameater: ["9M"],
 			drillrun: ["9M"],
@@ -28838,21 +31521,27 @@ wungsparce: {
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			facade: ["9M"],
 			featherdance: ["9M"],
 			fireblast: ["9M"],
 			flail: ["9M"],
 			flamethrower: ["9M"],
+			flamewheel: ["9M"], //Añadido
+			floatyfall: ["9M"], //Añadido
 			fly: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			glare: ["9M"],
+			gust: ["9M"], //Añadido
 			gyroball: ["9M"],
 			headbutt: ["9M"],
+			heatwave: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			hurricane: ["9M"],
+			hydropump: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hyperdrill: ["9M"],
 			hypervoice: ["9M"],
@@ -28866,6 +31555,7 @@ wungsparce: {
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			painsplit: ["9M"],
@@ -28877,9 +31567,12 @@ wungsparce: {
 			pursuit: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			razorwind: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
+			reversal: ["9M"], //Añadido
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
@@ -28889,32 +31582,41 @@ wungsparce: {
 			sandstorm: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
+			scorchingsands: ["9M"], //Añadido
 			screech: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			skittersmack: ["9M"],
+			skyattack: ["9M"], //Añadido
+			skydrop: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spite: ["9M"],
 			stealthrock: ["9M"],
+			steelwing: ["9M"], //Añadido
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
-			stoneedge: ["9M"],
 			storedpower: ["9M"],
 			strength: ["9M"],
+			submission: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
+			tailwind: ["9M"], //Añadido
 			takedown: ["9M"],
+			teleport: ["9M"], //Añadido
 			terablast: ["9M"],
 			terrainpulse: ["9M"],
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
-			thunderwave: ["9M"],
+			thunderwave: ["9M"], //Añadido
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			trumpcard: ["9M"],
 			uproar: ["9M"],
 			waterpulse: ["9M"],
@@ -28923,6 +31625,10 @@ wungsparce: {
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//stoneedge //Removido
 		},
 	},
 wungsparcefeudal: {
@@ -28933,8 +31639,6 @@ wungsparcefeudal: {
 			ancientpower: ["9M"],
 			aquatail: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bite: ["9M"],
@@ -28944,7 +31648,6 @@ wungsparcefeudal: {
 			breakingswipe: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
@@ -28956,9 +31659,12 @@ wungsparcefeudal: {
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dracometeor: ["9M"], //Añadido
 			dragonascent: ["9M"],
 			dragonbreath: ["9M"],
+			dragoncheer: ["9M"], //Añadido
 			dragonhammer: ["9M"],
+			dragonrage: ["9M"], //Añadido
 			dragonrush: ["9M"],
 			dragontail: ["9M"],
 			dreameater: ["9M"],
@@ -29008,6 +31714,7 @@ wungsparcefeudal: {
 			pursuit: ["9M"],
 			rage: ["9M"],
 			raindance: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
@@ -29023,7 +31730,9 @@ wungsparcefeudal: {
 			screech: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			sheercold: ["9M"], //Añadido
 			shockwave: ["9M"],
+			sing: ["9M"], //Añadido
 			skittersmack: ["9M"],
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
@@ -29037,8 +31746,10 @@ wungsparcefeudal: {
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			takedown: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			terrainpulse: ["9M"],
 			thief: ["9M"],
@@ -29048,12 +31759,16 @@ wungsparcefeudal: {
 			toxic: ["9M"],
 			trumpcard: ["9M"],
 			uproar: ["9M"],
+			vacuumwave: ["9M"], //Añadido
 			waterpulse: ["9M"],
 			wildcharge: ["9M"],
 			wingattack: ["9M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
 		},
 	},
 dudunsparce: {
@@ -29072,6 +31787,7 @@ dudunsparce: {
 			calmmind: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
+			copycat: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			dig: ["9M"],
@@ -29088,6 +31804,8 @@ dudunsparce: {
 			fireblast: ["9M"],
 			flail: ["9M"],
 			flamethrower: ["9M"],
+			flamewheel: ["9M"], //Añadido
+			floatyfall: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			glare: ["9M"],
 			gyroball: ["9M"],
@@ -29103,6 +31821,7 @@ dudunsparce: {
 			lunge: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mudsport: ["9M"], //Añadido
 			outrage: ["9M"],
 			painsplit: ["9M"],
 			poisonjab: ["9M"],
@@ -29119,6 +31838,7 @@ dudunsparce: {
 			sandstorm: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
+			scorchingsands: ["9M"], //Añadido
 			screech: ["9M"],
 			shadowball: ["9M"],
 			skittersmack: ["9M"],
@@ -29151,14 +31871,10 @@ gligar: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
-			aquatail: ["9M"],
-			attract: ["9M"],
-			batonpass: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
 			bugbite: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			crabhammer: ["9M"],
@@ -29195,6 +31911,7 @@ gligar: {
 			icefang: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			leechlife: ["9M"], //Añadido
 			lunge: ["9M"],
 			metalclaw: ["9M"],
 			mimic: ["9M"],
@@ -29252,13 +31969,18 @@ gligar: {
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunderfang: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			uturn: ["9M"],
+			venomdrench: ["9M"], //Añadido
 			venoshock: ["9M"],
 			wingattack: ["9M"],
 			xscissor: ["9M"],
+			//aquatail //Removido
+			//attract //Removido
+			//batonpass //Removido
+			//captivate //Removido
+			//torment //Removido
 		},
 	},
 gliscor: {
@@ -29266,7 +31988,6 @@ gliscor: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
-			aquatail: ["9M"],
 			attract: ["9M"],
 			batonpass: ["9M"],
 			breakingswipe: ["9M"],
@@ -29307,6 +32028,7 @@ gliscor: {
 			icefang: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			leechlife: ["9M"], //Añadido
 			lunge: ["9M"],
 			metalclaw: ["9M"],
 			mudshot: ["9M"],
@@ -29363,8 +32085,10 @@ gliscor: {
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			uturn: ["9M"],
+			venomdrench: ["9M"], //Añadido
 			venoshock: ["9M"],
 			xscissor: ["9M"],
+			//aquatail //Removido
 		},
 	},
 snubbull: {
@@ -29383,9 +32107,9 @@ snubbull: {
 			covet: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
+			darkpulse: ["9M"], //Añadido
 			dazzlinggleam: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -29424,20 +32148,23 @@ snubbull: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			overheat: ["9M"],
 			payback: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			poweruppunch: ["9M"],
 			present: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			punishment: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
-			reversal: ["9M"],
+			reversal: ["9M"], //Añadido
 			roar: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
@@ -29445,13 +32172,13 @@ snubbull: {
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			smellingsalts: ["9M"],
 			snarl: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			spiritbreak: ["9M"], //Añadido
 			spite: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
@@ -29471,7 +32198,7 @@ snubbull: {
 			thunderbolt: ["9M"],
 			thunderfang: ["9M"],
 			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -29480,28 +32207,38 @@ snubbull: {
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//detect //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
+			//thunderwave //Removido
 		},
 	},
 granbull: {
 		learnset: {
+			assurance: ["9M"], //Añadido
 			attract: ["9M"],
 			bite: ["9M"],
-			bodyslam: ["9M"],
+			bodyslam: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
 			captivate: ["9M"],
 			charm: ["9M"],
 			closecombat: ["9M"],
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
+			darkestlariat: ["9M"], //Añadido
+			darkpulse: ["9M"], //Añadido
 			dazzlinggleam: ["9M"],
 			defensecurl: ["9M"],
-			detect: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dynamicpunch: ["9M"],
@@ -29512,6 +32249,7 @@ granbull: {
 			extremespeed: ["9M"],
 			facade: ["9M"],
 			faketears: ["9M"],
+			falsesurrender: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firefang: ["9M"],
 			firepunch: ["9M"],
@@ -29522,6 +32260,8 @@ granbull: {
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
+			grudge: ["9M"], //Añadido
+			gunkshot: ["9M"], //Añadido
 			headbutt: ["9M"],
 			healbell: ["9M"],
 			helpinghand: ["9M"],
@@ -29537,43 +32277,53 @@ granbull: {
 			lastresort: ["9M"],
 			lick: ["9M"],
 			lowkick: ["9M"],
-			lowsweep: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			outrage: ["9M"],
 			overheat: ["9M"],
 			payback: ["9M"],
+			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
+			poisonjab: ["9M"], //Añadido
+			powershift: ["9M"], //Añadido
+			powertrip: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			punishment: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
-			reversal: ["9M"],
+			revenge: ["9M"], //Añadido
+			reversal: ["9M"], //Añadido
 			roar: ["9M"],
 			rockclimb: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			smackdown: ["9M"], //Añadido
 			snarl: ["9M"],
+			snatch: ["9M"], //Añadido
 			snore: ["9M"],
-			solarbeam: ["9M"],
+			spiritbreak: ["9M"], //Añadido
 			spite: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -29591,11 +32341,12 @@ granbull: {
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			throatchop: ["9M"], //Añadido
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderfang: ["9M"],
 			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -29604,6 +32355,10 @@ granbull: {
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//detect //Removido
+			//lowsweep //Removido
+			//solarbeam //Removido
+			//thunderwave //Removido
 		},
 	},
 granbullfeudal: {
@@ -29611,6 +32366,7 @@ granbullfeudal: {
 			attract: ["9M"],
 			beatup: ["9M"],
 			bite: ["9M"],
+			blazekick: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			braveancientrite: ["9M"],
 			brickbreak: ["9M"],
@@ -29619,6 +32375,7 @@ granbullfeudal: {
 			captivate: ["9M"],
 			charm: ["9M"],
 			closecombat: ["9M"],
+			coaching: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -29646,6 +32403,7 @@ granbullfeudal: {
 			fling: ["9M"],
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
+			forcepalm: ["9M"], //Añadido
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
 			growl: ["9M"],
@@ -29653,13 +32411,14 @@ granbullfeudal: {
 			healbell: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			holdback: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icefang: ["9M"],
 			icepunch: ["9M"],
-			incinerate: ["9M"],
 			irontail: ["9M"],
 			jawlock: ["9M"],
+			karatechop: ["9M"], //Añadido
 			lashout: ["9M"],
 			lastresort: ["9M"],
 			lick: ["9M"],
@@ -29672,6 +32431,7 @@ granbullfeudal: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			noretreat: ["9M"], //Añadido
 			outrage: ["9M"],
 			overheat: ["9M"],
 			payback: ["9M"],
@@ -29682,6 +32442,7 @@ granbullfeudal: {
 			rage: ["9M"],
 			raindance: ["9M"],
 			reflect: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			retaliate: ["9M"],
 			return: ["9M"],
@@ -29701,11 +32462,11 @@ granbullfeudal: {
 			sludgebomb: ["9M"],
 			snarl: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
 			spite: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
+			stromthrow: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
@@ -29732,28 +32493,26 @@ granbullfeudal: {
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//incinerate //Removido
+			//solarbeam //Removido
 		},
 	},
 qwilfish: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			acupressure: ["9M"],
-			agility: ["9M"],
+			aquacutter: ["9M"], //Añadido
 			aquajet: ["9M"],
 			aquatail: ["9M"],
-			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			barbbarrage: ["9M"],
-			blizzard: ["9M"],
 			bounce: ["9M"],
 			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
-			crunch: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			destinybond: ["9M"],
@@ -29766,22 +32525,28 @@ qwilfish: {
 			fellstinger: ["9M"],
 			flail: ["9M"],
 			flipturn: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
+			furycutter: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
 			hail: ["9M"],
-			harden: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
+			iceball: ["9M"], //Añadido
 			icebeam: ["9M"],
+			iciclecrash: ["9M"], //Añadido
 			icywind: ["9M"],
+			irontail: ["9M"], //Añadido
 			liquidation: ["9M"],
 			mimic: ["9M"],
 			minimize: ["9M"],
+			mudbomb: ["9M"], //Añadido
+			muddywater: ["9M"], //Añadido
 			mudshot: ["9M"],
 			naturalgift: ["9M"],
 			painsplit: ["9M"],
@@ -29791,7 +32556,9 @@ qwilfish: {
 			poisonsting: ["9M"],
 			poisontail: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			revenge: ["9M"],
@@ -29802,14 +32569,13 @@ qwilfish: {
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
-			selfdestruct: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			snore: ["9M"],
+			spikecannon: ["9M"], //Añadido
 			spikes: ["9M"],
 			spite: ["9M"],
 			spitup: ["9M"],
@@ -29826,7 +32592,6 @@ qwilfish: {
 			taunt: ["9M"],
 			terablast: ["9M"],
 			throatchop: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			venomdrench: ["9M"],
@@ -29835,6 +32600,16 @@ qwilfish: {
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//agility //Removido
+			//assurance //Removido
+			//attract //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//crunch //Removido
+			//harden //Removido
+			//selfdestruct //Removido
+			//shockwave //Removido
+			//thunderwave //Removido
 		},
 	},
 qwilfishfeudal: {
@@ -29846,14 +32621,11 @@ qwilfishfeudal: {
 			aquatail: ["9M"],
 			assurance: ["9M"],
 			astonish: ["9M"],
-			attract: ["9M"],
 			barbbarrage: ["9M"],
-			blizzard: ["9M"],
 			bounce: ["9M"],
 			brine: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			coil: ["9M"],
 			confide: ["9M"],
@@ -29869,6 +32641,7 @@ qwilfishfeudal: {
 			facade: ["9M"],
 			fellstinger: ["9M"],
 			flail: ["9M"],
+			flamewheel: ["9M"], //Añadido
 			flipturn: ["9M"],
 			frustration: ["9M"],
 			gigaimpact: ["9M"],
@@ -29889,6 +32662,7 @@ qwilfishfeudal: {
 			mortalspin: ["9M"],
 			mudshot: ["9M"],
 			naturalgift: ["9M"],
+			noxioustorque: ["9M"], //Añadido
 			painsplit: ["9M"],
 			payback: ["9M"],
 			pinmissile: ["9M"],
@@ -29909,14 +32683,19 @@ qwilfishfeudal: {
 			secretpower: ["9M"],
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
-			shockwave: ["9M"],
+			sheercold: ["9M"], //Añadido
 			signalbeam: ["9M"],
+			slash: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
+			smartstrike: ["9M"], //Añadido
+			smog: ["9M"], //Añadido
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
 			spikes: ["9M"],
 			spikyancientrite: ["9M"],
+			spikyshield: ["9M"], //Añadido
 			spite: ["9M"],
 			spitup: ["9M"],
 			steamroller: ["9M"],
@@ -29931,6 +32710,7 @@ qwilfishfeudal: {
 			tackle: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			thunderwave: ["9M"],
@@ -29942,40 +32722,47 @@ qwilfishfeudal: {
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//attract //Removido
+			//blizzard //Removido
+			//captivate //Removido
+			//shockwave //Removido
 		},
 	},
 qwilfishhisui: {
 		learnset: {
+			acidarmor: ["9M"], //Añadido
 			acidspray: ["9M"],
 			acupressure: ["9M"],
-			agility: ["9M"],
 			aquajet: ["9M"],
 			aquatail: ["9M"],
 			astonish: ["9M"],
 			barbbarrage: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			brine: ["9M"],
+			brutalswing: ["9M"], //Añadido
 			bubblebeam: ["9M"],
 			chillingwater: ["9M"],
-			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			destinybond: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fellstinger: ["9M"],
 			flail: ["9M"],
+			focusenergy: ["9M"], //Añadido
+			furycutter: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
-			harden: ["9M"],
 			haze: ["9M"],
 			hex: ["9M"],
 			hydropump: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
+			irontail: ["9M"], //Añadido
 			lashout: ["9M"],
 			liquidation: ["9M"],
 			minimize: ["9M"],
@@ -29986,20 +32773,24 @@ qwilfishhisui: {
 			poisonsting: ["9M"],
 			poisontail: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
 			rest: ["9M"],
 			reversal: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
+			spikecannon: ["9M"], //Añadido
 			spikes: ["9M"],
 			spite: ["9M"],
 			spitup: ["9M"],
+			steamroller: ["9M"], //Añadido
 			stockpile: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			supersonic: ["9M"],
 			surf: ["9M"],
 			swift: ["9M"],
@@ -30014,6 +32805,11 @@ qwilfishhisui: {
 			venoshock: ["9M"],
 			waterfall: ["9M"],
 			waterpulse: ["9M"],
+			//agility //Removido
+			//blizzard //Removido
+			//crunch //Removido
+			//harden //Removido
+			//selfdestruct //Removido
 		},
 	},
 overqwil: {
@@ -30090,32 +32886,23 @@ shuckle: {
 			acupressure: ["9M"],
 			afteryou: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bind: ["9M"],
 			bodyslam: ["9M"],
 			bugbite: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
-			covet: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
-			dig: ["9M"],
 			discreettangle: ["9M"],
 			doubleedge: ["9M"],
-			doubleteam: ["9M"],
 			earthpower: ["9M"],
-			earthquake: ["9M"],
 			encore: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
-			finalgambit: ["9M"],
-			flash: ["9M"],
 			frustration: ["9M"],
 			gastroacid: ["9M"],
-			guardsplit: ["9M"],
 			gyroball: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
@@ -30128,7 +32915,6 @@ shuckle: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
-			powersplit: ["9M"],
 			powertrick: ["9M"],
 			protect: ["9M"],
 			rest: ["9M"],
@@ -30137,7 +32923,6 @@ shuckle: {
 			rockblast: ["9M"],
 			rockpolish: ["9M"],
 			rockslide: ["9M"],
-			rocksmash: ["9M"],
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
 			rollout: ["9M"],
@@ -30168,6 +32953,17 @@ shuckle: {
 			venoshock: ["9M"],
 			withdraw: ["9M"],
 			wrap: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//covet //Removido
+			//dig //Removido
+			//doubleteam //Removido
+			//earthquake //Removido
+			//finalgambit //Removido
+			//flash //Removido
+			//guardsplit //Removido
+			//powersplit //Removido
+			//rocksmash //Removido
 		},
 	},
 heracross: {
@@ -30175,7 +32971,6 @@ heracross: {
 			aerialace: ["9M"],
 			armthrust: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -30185,26 +32980,29 @@ heracross: {
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dynamicpunch: ["9M"], //Añadido
 			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			falseswipe: ["9M"],
 			feint: ["9M"],
+			finalgambit: ["9M"], //Añadido
 			flail: ["9M"],
 			fling: ["9M"],
+			floatyfall: ["9M"], //Añadido
 			focusblast: ["9M"],
 			focuspunch: ["9M"],
 			frustration: ["9M"],
@@ -30220,10 +33018,10 @@ heracross: {
 			hyperbeam: ["9M"],
 			irondefense: ["9M"],
 			knockoff: ["9M"],
-			leer: ["9M"],
 			lowkick: ["9M"],
 			lunge: ["9M"],
 			megahorn: ["9M"],
+			megapunch: ["9M"], //Añadido
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
@@ -30231,6 +33029,7 @@ heracross: {
 			pounce: ["9M"],
 			protect: ["9M"],
 			pursuit: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -30240,22 +33039,23 @@ heracross: {
 			rockblast: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
+			rockthrow: ["9M"], //Añadido
 			rocktomb: ["9M"],
+			roost: ["9M"], //Añadido
 			round: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
-			shadowclaw: ["9M"],
 			skittersmack: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
-			spikes: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			strugglebug: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swordsdance: ["9M"],
 			tackle: ["9M"],
@@ -30264,16 +33064,23 @@ heracross: {
 			thief: ["9M"],
 			thrash: ["9M"],
 			throatchop: ["9M"],
+			thunderpunch: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			upperhand: ["9M"],
 			vacuumwave: ["9M"],
 			venoshock: ["9M"],
 			workup: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//leer //Removido
+			//shadowclaw //Removido
+			//spikes //Removido
 		},
 	},
 sneasel: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			assist: ["9M"],
@@ -30281,17 +33088,13 @@ sneasel: {
 			avalanche: ["9M"],
 			beatup: ["9M"],
 			bite: ["9M"],
-			blizzard: ["9M"],
 			brickbreak: ["9M"],
-			calmmind: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			crushclaw: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			darkpulse: ["9M"],
-			defensecurl: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -30299,7 +33102,6 @@ sneasel: {
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			dynamicpunch: ["9M"],
-			embargo: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
@@ -30323,6 +33125,7 @@ sneasel: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			iceshard: ["9M"],
+			icespinner: ["9M"], //Añadido
 			iciclecrash: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
@@ -30333,8 +33136,8 @@ sneasel: {
 			leer: ["9M"],
 			lowkick: ["9M"],
 			lowsweep: ["9M"],
-			megakick: ["9M"],
 			megapunch: ["9M"],
+			memento: ["9M"], //Añadido
 			metalclaw: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
@@ -30342,6 +33145,7 @@ sneasel: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			payback: ["9M"],
+			pinmissile: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
@@ -30358,6 +33162,7 @@ sneasel: {
 			reversal: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
@@ -30373,10 +33178,12 @@ sneasel: {
 			spite: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			switcheero: ["9M"], //Añadido
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
@@ -30391,20 +33198,31 @@ sneasel: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			xscissor: ["9M"],
+			//blizzard //Removido
+			//calmmind //Removido
+			//captivate //Removido
+			//defensecurl //Removido
+			//embargo //Removido
+			//megakick //Removido
 		},
 	},
 sneaselhisui: {
 		learnset: {
 			acidspray: ["9M"],
+			acupressure: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
+			bite: ["9M"], //Añadido
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
-			calmmind: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9M"],
 			counter: ["9M"],
+			covet: ["9M"], //Añadido
+			crosspoison: ["9M"], //Añadido
+			crushclaw: ["9M"], //Añadido
 			dig: ["9M"],
+			direclaw: ["9M"], //Añadido
 			doublehit: ["9M"],
 			dynamicpunch: ["9M"],
 			endure: ["9M"],
@@ -30426,6 +33244,7 @@ sneaselhisui: {
 			metalclaw: ["9M"],
 			nastyplot: ["9M"],
 			nightslash: ["9M"],
+			pinmissile: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			poisontail: ["9M"],
 			protect: ["9M"],
@@ -30435,6 +33254,7 @@ sneaselhisui: {
 			rest: ["9M"],
 			reversal: ["9M"],
 			rocksmash: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scratch: ["9M"],
 			screech: ["9M"],
 			shadowball: ["9M"],
@@ -30460,10 +33280,12 @@ sneaselhisui: {
 			vacuumwave: ["9M"],
 			venoshock: ["9M"],
 			xscissor: ["9M"],
+			//calmmind //Removido
 		},
 	},
 weavile: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
 			aerialace: ["9M"],
 			agility: ["9M"],
 			assurance: ["9M"],
@@ -30473,7 +33295,6 @@ weavile: {
 			beatup: ["9M"],
 			blizzard: ["9M"],
 			brickbreak: ["9M"],
-			calmmind: ["9M"],
 			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
@@ -30506,7 +33327,7 @@ weavile: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			iceshard: ["9M"],
-			icespinner: ["9M"],
+			icespinner: ["9M"], //Añadido
 			iciclespear: ["9M"],
 			icywind: ["9M"],
 			irontail: ["9M"],
@@ -30518,6 +33339,7 @@ weavile: {
 			lowsweep: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			memento: ["9M"], //Añadido
 			metalclaw: ["9M"],
 			metronome: ["9M"],
 			mudslap: ["9M"],
@@ -30525,6 +33347,7 @@ weavile: {
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
 			payback: ["9M"],
+			pinmissile: ["9M"], //Añadido
 			poisonjab: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
@@ -30541,6 +33364,7 @@ weavile: {
 			reversal: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
 			screech: ["9M"],
@@ -30556,10 +33380,12 @@ weavile: {
 			spite: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
+			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			switcheero: ["9M"], //Añadido
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
@@ -30574,6 +33400,7 @@ weavile: {
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			xscissor: ["9M"],
+			//calmmind //Removido
 		},
 	},
 sneasler: {
@@ -30584,7 +33411,6 @@ sneasler: {
 			agility: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
-			calmmind: ["9M"],
 			closecombat: ["9M"],
 			coaching: ["9M"],
 			dig: ["9M"],
@@ -30643,6 +33469,7 @@ sneasler: {
 			vacuumwave: ["9M"],
 			venoshock: ["9M"],
 			xscissor: ["9M"],
+			//calmmind //Removido
 		},
 	},
 teddiursa: {
@@ -30652,11 +33479,11 @@ teddiursa: {
 			avalanche: ["9M"],
 			babydolleyes: ["9M"],
 			bellydrum: ["9M"],
+			bite: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			chipaway: ["9M"],
 			closecombat: ["9M"],
@@ -30665,6 +33492,7 @@ teddiursa: {
 			covet: ["9M"],
 			crosschop: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
@@ -30684,6 +33512,7 @@ teddiursa: {
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			furyswipes: ["9M"],
+			grassknot: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
@@ -30703,11 +33532,13 @@ teddiursa: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			nightslash: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			payback: ["9M"],
 			playnice: ["9M"],
 			playrough: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			refresh: ["9M"],
 			rest: ["9M"],
@@ -30728,20 +33559,25 @@ teddiursa: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			stockpile: ["9M"], //Añadido
 			strength: ["9M"],
+			stuffcheeks: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			superpower: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			sweetscent: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -30749,24 +33585,29 @@ teddiursa: {
 			workup: ["9M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
+			//captivate //Removido
 		},
 	},
 ursaring: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
 			aerialace: ["9M"],
 			attract: ["9M"],
 			avalanche: ["9M"],
+			beatup: ["9M"], //Añadido
+			bite: ["9M"], //Añadido
+			block: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			defensecurl: ["9M"],
@@ -30782,11 +33623,13 @@ ursaring: {
 			firepunch: ["9M"],
 			fling: ["9M"],
 			focusblast: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			frustration: ["9M"],
 			furycutter: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
+			grassknot: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			hammerarm: ["9M"],
 			headbutt: ["9M"],
@@ -30798,6 +33641,7 @@ ursaring: {
 			hypervoice: ["9M"],
 			icepunch: ["9M"],
 			laserfocus: ["9M"],
+			lashout: ["9M"], //Añadido
 			lastresort: ["9M"],
 			leer: ["9M"],
 			lick: ["9M"],
@@ -30809,11 +33653,13 @@ ursaring: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			payback: ["9M"],
 			playnice: ["9M"],
 			playrough: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -30823,8 +33669,8 @@ ursaring: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rollout: ["9M"],
 			round: ["9M"],
+			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
 			secretpower: ["9M"],
@@ -30834,30 +33680,41 @@ ursaring: {
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smellingsalts: ["9M"], //Añadido
+			snarl: ["9M"], //Añadido
 			snore: ["9M"],
+			stockpile: ["9M"], //Añadido
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
+			stuffcheeks: ["9M"], //Añadido
+			submission: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			superpower: ["9M"],
 			swagger: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			sweetscent: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
 			throatchop: ["9M"],
 			thunderpunch: ["9M"],
-			torment: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//captivate //Removido
+			//rollout //Removido
+			//torment //Removido
 		},
 	},
 ursaringfeudal: {
@@ -30866,12 +33723,13 @@ ursaringfeudal: {
 			attackorder: ["9M"],
 			attract: ["9M"],
 			avalanche: ["9M"],
+			bide: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulkup: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
+			circlethrow: ["9M"], //Añadido
 			closecombat: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -30879,6 +33737,7 @@ ursaringfeudal: {
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
+			defendorder: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -30909,6 +33768,7 @@ ursaringfeudal: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icepunch: ["9M"],
+			infestation: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			leer: ["9M"],
@@ -30948,6 +33808,7 @@ ursaringfeudal: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
+			solarblade: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -30968,15 +33829,22 @@ ursaringfeudal: {
 			torment: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			trumpcard: ["9M"], //Añadido
+			twineddle: ["9M"], //Añadido
 			uproar: ["9M"],
 			workup: ["9M"],
 			zapcannon: ["9M"],
+			//captivate //Removido
 		},
 	},
 ursaluna: {
 		learnset: {
+			acupressure: ["9M"], //Añadido
 			aerialace: ["9M"],
 			avalanche: ["9M"],
+			beatup: ["9M"], //Añadido
+			bite: ["9M"], //Añadido
+			block: ["9M"], //Añadido
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -30986,6 +33854,7 @@ ursaluna: {
 			closecombat: ["9M"],
 			covet: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -30997,9 +33866,11 @@ ursaluna: {
 			faketears: ["9M"],
 			firepunch: ["9M"],
 			fling: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
 			furyswipes: ["9M"],
 			gigaimpact: ["9M"],
+			grassknot: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			hammerarm: ["9M"],
 			hardpress: ["9M"],
@@ -31010,20 +33881,24 @@ ursaluna: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icepunch: ["9M"],
+			lashout: ["9M"], //Añadido
 			leer: ["9M"],
 			lick: ["9M"],
 			lowkick: ["9M"],
 			metalclaw: ["9M"],
 			metronome: ["9M"],
+			odorsleuth: ["9M"], //Añadido
 			payback: ["9M"],
 			playnice: ["9M"],
 			playrough: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			roar: ["9M"],
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
+			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
 			seedbomb: ["9M"],
@@ -31031,22 +33906,31 @@ ursaluna: {
 			slash: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smellingsalts: ["9M"], //Añadido
+			snarl: ["9M"], //Añadido
 			snore: ["9M"],
+			stockpile: ["9M"], //Añadido
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
+			stuffcheeks: ["9M"], //Añadido
+			submission: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			supercellslam: ["9M"],
+			sweetkiss: ["9M"], //Añadido
 			sweetscent: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
 			throatchop: ["9M"],
 			thunderpunch: ["9M"],
+			tickle: ["9M"], //Añadido
 			trailblaze: ["9M"],
 			uproar: ["9M"],
 		},
@@ -31127,23 +34011,18 @@ ursalunabloodmoon: {
 slugma: {
 		learnset: {
 			acidarmor: ["9M"],
-			afteryou: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
-			defensecurl: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			ember: ["9M"],
-			endure: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firespin: ["9M"],
@@ -31152,7 +34031,6 @@ slugma: {
 			flamethrower: ["9M"],
 			frustration: ["9M"],
 			guardswap: ["9M"],
-			harden: ["9M"],
 			heatcrash: ["9M"],
 			heatwave: ["9M"],
 			hiddenpower: ["9M"],
@@ -31173,6 +34051,7 @@ slugma: {
 			painsplit: ["9M"],
 			powergem: ["9M"],
 			protect: ["9M"],
+			purify: ["9M"], //Añadido
 			recover: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -31195,7 +34074,6 @@ slugma: {
 			spitup: ["9M"],
 			stealthrock: ["9M"],
 			stockpile: ["9M"],
-			stoneedge: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
@@ -31206,18 +34084,23 @@ slugma: {
 			toxic: ["9M"],
 			willowisp: ["9M"],
 			yawn: ["9M"],
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//defensecurl //Removido
+			//endure //Removido
+			//harden //Removido
+			//stoneedge //Removido
 		},
 	},
 magcargo: {
 		learnset: {
-			afteryou: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
+			blazingtorque: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			burningjealousy: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
@@ -31258,6 +34141,7 @@ magcargo: {
 			painsplit: ["9M"],
 			powergem: ["9M"],
 			protect: ["9M"],
+			purify: ["9M"], //Añadido
 			recover: ["9M"],
 			reflect: ["9M"],
 			refresh: ["9M"],
@@ -31283,7 +34167,6 @@ magcargo: {
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			stealthrock: ["9M"],
-			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -31295,18 +34178,21 @@ magcargo: {
 			toxic: ["9M"],
 			willowisp: ["9M"],
 			yawn: ["9M"],
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//stompingtantrum //Removido
 		},
 	},
 slastma: {
 		learnset: {
-			afteryou: ["9M"],
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
+			barrage: ["9M"], //Añadido
+			blazingtorque: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			burningjealousy: ["9M"],
-			captivate: ["9M"],
 			clearsmog: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
@@ -31338,6 +34224,7 @@ slastma: {
 			irondefense: ["9M"],
 			lavaplume: ["9M"],
 			lightscreen: ["9M"],
+			magmastorm: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
@@ -31347,6 +34234,7 @@ slastma: {
 			painsplit: ["9M"],
 			powergem: ["9M"],
 			protect: ["9M"],
+			purify: ["9M"], //Añadido
 			recover: ["9M"],
 			reflect: ["9M"],
 			refresh: ["9M"],
@@ -31372,7 +34260,6 @@ slastma: {
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			stealthrock: ["9M"],
-			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -31384,20 +34271,23 @@ slastma: {
 			toxic: ["9M"],
 			willowisp: ["9M"],
 			yawn: ["9M"],
+			//afteryou //Removido
+			//attract //Removido
+			//captivate //Removido
+			//stompingtantrum //Removido
 		},
 	},
 swinub: {
 		learnset: {
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			bite: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
+			chillingwater: ["9M"], //Añadido
 			confide: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
@@ -31419,6 +34309,7 @@ swinub: {
 			headbutt: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
+			iceball: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icefang: ["9M"],
 			iceshard: ["9M"],
@@ -31426,6 +34317,7 @@ swinub: {
 			iciclespear: ["9M"],
 			icywind: ["9M"],
 			lightscreen: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			mist: ["9M"],
 			mudbomb: ["9M"],
@@ -31446,6 +34338,7 @@ swinub: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
@@ -31455,6 +34348,7 @@ swinub: {
 			snore: ["9M"],
 			snowscape: ["9M"],
 			stealthrock: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -31466,20 +34360,22 @@ swinub: {
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 piloswine: {
 		learnset: {
 			amnesia: ["9M"],
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			avalanche: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
+			chillingwater: ["9M"], //Añadido
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			defensecurl: ["9M"],
 			detect: ["9M"],
@@ -31502,12 +34398,14 @@ piloswine: {
 			highhorsepower: ["9M"],
 			hornattack: ["9M"],
 			hyperbeam: ["9M"],
+			iceball: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icefang: ["9M"],
 			iceshard: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
 			lightscreen: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			mist: ["9M"],
 			mudbomb: ["9M"],
@@ -31519,6 +34417,7 @@ piloswine: {
 			peck: ["9M"],
 			powdersnow: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -31529,15 +34428,19 @@ piloswine: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
+			sheercold: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			snowscape: ["9M"],
 			stealthrock: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -31551,6 +34454,8 @@ piloswine: {
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 mamoswine: {
@@ -31564,9 +34469,10 @@ mamoswine: {
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
+			chillingwater: ["9M"], //Añadido
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -31590,6 +34496,7 @@ mamoswine: {
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			hyperbeam: ["9M"],
+			iceball: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icefang: ["9M"],
 			iceshard: ["9M"],
@@ -31599,6 +34506,7 @@ mamoswine: {
 			ironhead: ["9M"],
 			knockoff: ["9M"],
 			lightscreen: ["9M"],
+			meteorbeam: ["9M"], //Añadido
 			mist: ["9M"],
 			mudbomb: ["9M"],
 			mudshot: ["9M"],
@@ -31609,6 +34517,7 @@ mamoswine: {
 			peck: ["9M"],
 			powdersnow: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -31621,15 +34530,19 @@ mamoswine: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
+			sheercold: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			snowscape: ["9M"],
 			stealthrock: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -31643,6 +34556,7 @@ mamoswine: {
 			throatchop: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			//captivate //Removido
 		},
 	},
 corsola: {
@@ -31666,11 +34580,10 @@ corsola: {
 			confuseray: ["9M"],
 			curse: ["9M"],
 			defensecurl: ["9M"],
-			dig: ["9M"],
+			dive: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
-			earthquake: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
 			explosion: ["9M"],
@@ -31726,22 +34639,24 @@ corsola: {
 			shadowball: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			spikecannon: ["9M"],
 			stealthrock: ["9M"],
-			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			tackle: ["9M"],
-			throatchop: ["9M"],
 			toxic: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//dig //Removido
+			//earthquake //Removido
+			//spikecannon //Removido
+			//stompingtantrum //Removido
+			//suckerpunch //Removido
+			//throatchop //Removido
 		},
 	},
 corsolagalar: {
@@ -31758,10 +34673,8 @@ corsolagalar: {
 			confuseray: ["9M"],
 			curse: ["9M"],
 			destinybond: ["9M"],
-			dig: ["9M"],
 			disable: ["9M"],
 			earthpower: ["9M"],
-			earthquake: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
 			gigadrain: ["9M"],
@@ -31778,6 +34691,7 @@ corsolagalar: {
 			irondefense: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
+			memento: ["9M"], //Añadido
 			meteorbeam: ["9M"],
 			mirrorcoat: ["9M"],
 			naturepower: ["9M"],
@@ -31785,6 +34699,7 @@ corsolagalar: {
 			powergem: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -31798,21 +34713,24 @@ corsolagalar: {
 			screech: ["9M"],
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
+			shellsmash: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"],
 			stealthrock: ["9M"],
-			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strengthsap: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			tackle: ["9M"],
-			throatchop: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			willowisp: ["9M"],
+			//dig //Removido
+			//earthquake //Removido
+			//stompingtantrum //Removido
+			//throatchop //Removido
 		},
 	},
 crowthsola: {
@@ -31835,8 +34753,10 @@ crowthsola: {
 			confide: ["9M"],
 			confuseray: ["9M"],
 			curse: ["9M"],
+			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
-			dig: ["9M"],
+			disarmingvoice: ["9M"], //Añadido
+			dive: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			earthpower: ["9M"],
@@ -31877,9 +34797,11 @@ crowthsola: {
 			raindance: ["9M"],
 			recover: ["9M"],
 			reflect: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			refresh: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			revivalblessing: ["9M"], //Añadido
 			rockblast: ["9M"],
 			rockpolish: ["9M"],
 			rockslide: ["9M"],
@@ -31896,22 +34818,23 @@ crowthsola: {
 			shadowball: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			spikecannon: ["9M"],
 			stealthrock: ["9M"],
-			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			tackle: ["9M"],
-			throatchop: ["9M"],
 			toxic: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//dig //Removido
+			//spikecannon //Removido
+			//stompingtantrum //Removido
+			//suckerpunch //Removido
+			//throatchop //Removido
 		},
 	},
 cursola: {
@@ -31990,23 +34913,21 @@ cursola: {
 remoraid: {
 		learnset: {
 			acidspray: ["9M"],
-			assurance: ["9M"],
-			attract: ["9M"],
+			aquajet: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			aurorabeam: ["9M"],
 			blizzard: ["9M"],
 			bounce: ["9M"],
 			brine: ["9M"],
+			bubble: ["9M"], //Añadido
 			bubblebeam: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			curse: ["9M"],
-			defensecurl: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
-			endure: ["9M"],
 			entrainment: ["9M"],
 			facade: ["9M"],
 			fireblast: ["9M"],
@@ -32023,6 +34944,7 @@ remoraid: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			incinerate: ["9M"],
+			liquidation: ["9M"], //Añadido
 			lockon: ["9M"],
 			mimic: ["9M"],
 			mudshot: ["9M"],
@@ -32038,6 +34960,7 @@ remoraid: {
 			rockblast: ["9M"],
 			round: ["9M"],
 			scald: ["9M"],
+			scaleshot: ["9M"], //Añadido
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
@@ -32045,7 +34968,7 @@ remoraid: {
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snore: ["9M"],
-			soak: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stringshot: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -32054,32 +34977,39 @@ remoraid: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			thief: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			waterspout: ["9M"],
 			whirlpool: ["9M"],
+			//assurance //Removido
+			//attract //Removido
+			//captivate //Removido
+			//defensecurl //Removido
+			//endure //Removido
+			//soak //Removido
+			//thunderwave //Removido
 		},
 	},
 octillery: {
 		learnset: {
-			assurance: ["9M"],
-			attract: ["9M"],
+			aquajet: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			aurorabeam: ["9M"],
+			barrage: ["9M"], //Añadido
 			bind: ["9M"],
 			blizzard: ["9M"],
 			bounce: ["9M"],
 			brine: ["9M"],
+			bubble: ["9M"], //Añadido
 			bubblebeam: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			curse: ["9M"],
-			defensecurl: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -32091,8 +35021,10 @@ octillery: {
 			flashcannon: ["9M"],
 			focusenergy: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gunkshot: ["9M"],
+			harden: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
@@ -32100,11 +35032,12 @@ octillery: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			incinerate: ["9M"],
-			liquidation: ["9M"],
+			liquidation: ["9M"], //Añadido
 			lockon: ["9M"],
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			octazooka: ["9M"],
 			payback: ["9M"],
@@ -32112,11 +35045,14 @@ octillery: {
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			recover: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rockblast: ["9M"],
 			round: ["9M"],
 			scald: ["9M"],
+			scaleshot: ["9M"], //Añadido
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
@@ -32127,8 +35063,9 @@ octillery: {
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			smackdown: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
-			soak: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stringshot: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -32136,7 +35073,6 @@ octillery: {
 			swagger: ["9M"],
 			swift: ["9M"],
 			thief: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9M"],
@@ -32144,25 +35080,33 @@ octillery: {
 			whirlpool: ["9M"],
 			wrap: ["9M"],
 			wringout: ["9M"],
+			//assurance //Removido
+			//attract //Removido
+			//captivate //Removido
+			//soak //Removido
+			//thunderwave //Removido
 		},
 	},
 octank: {
 		learnset: {
-			assurance: ["9M"],
-			attract: ["9M"],
+			absorb: ["9M"], //Añadido
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			aquajet: ["9M"], //Añadido
+			assist: ["9M"], //Añadido
 			aurorabeam: ["9M"],
+			barrage: ["9M"], //Añadido
 			bind: ["9M"],
 			blizzard: ["9M"],
 			bounce: ["9M"],
 			brine: ["9M"],
+			bubble: ["9M"], //Añadido
 			bubblebeam: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			constrict: ["9M"],
 			curse: ["9M"],
-			defensecurl: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -32174,8 +35118,12 @@ octank: {
 			flashcannon: ["9M"],
 			focusenergy: ["9M"],
 			frustration: ["9M"],
+			gastroacid: ["9M"], //Añadido
+			gigadrain: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grassyglide: ["9M"], //Añadido
 			gunkshot: ["9M"],
+			harden: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hydrocannon: ["9M"],
@@ -32184,51 +35132,71 @@ octank: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			incinerate: ["9M"],
-			liquidation: ["9M"],
+			ingrain: ["9M"], //Añadido
+			irondefense: ["9M"], //Añadido
+			ironhead: ["9M"], //Añadido
+			liquidation: ["9M"], //Añadido
 			lockon: ["9M"],
+			megadrain: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			octazooka: ["9M"],
 			payback: ["9M"],
+			powerwhip: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
 			raindance: ["9M"],
+			rapidspin: ["9M"], //Añadido
+			recover: ["9M"], //Añadido
 			refinedinkbomb: ["9M"],
+			refresh: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			rockblast: ["9M"],
 			round: ["9M"],
 			scald: ["9M"],
+			scaleshot: ["9M"], //Añadido
+			scorchingsands: ["9M"], //Añadido
 			screech: ["9M"],
 			secretpower: ["9M"],
-			seedbomb: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			seismictoss: ["9M"],
+			selfdestruct: ["9M"], //Añadido
+			shadowball: ["9M"], //Añadido
 			signalbeam: ["9M"],
 			skittersmack: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
 			smackdown: ["9M"],
+			smokescreen: ["9M"], //Añadido
 			snore: ["9M"],
-			soak: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stringshot: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
+			vacuumwave: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
 			wrap: ["9M"],
 			wringout: ["9M"],
+			//assurance //Removido
+			//attract //Removido
+			//captivate //Removido
+			//soak //Removido
+			//thunderwave //Removido
 		},
 	},
 delibird: {
@@ -32238,7 +35206,6 @@ delibird: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			assurance: ["9M"],
 			attract: ["9M"],
 			aurorabeam: ["9M"],
 			auroraveil: ["9M"],
@@ -32251,28 +35218,30 @@ delibird: {
 			bravebird: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
-			captivate: ["9M"],
 			chillingwater: ["9M"],
 			confide: ["9M"],
+			copycat: ["9M"], //Añadido
 			counter: ["9M"],
 			curse: ["9M"],
 			defog: ["9M"],
-			destinybond: ["9M"],
 			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillpeck: ["9M"],
 			drillrun: ["9M"],
 			dualwingbeat: ["9M"],
+			encore: ["9M"], //Añadido
 			endeavor: ["9M"],
 			endure: ["9M"],
+			entertainment: ["9M"], //Añadido
+			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
 			fakeout: ["9M"],
 			featherdance: ["9M"],
 			fling: ["9M"],
 			fly: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			focuspunch: ["9M"],
-			foulplay: ["9M"],
 			freezedry: ["9M"],
 			frostbreath: ["9M"],
 			frustration: ["9M"],
@@ -32293,48 +35262,71 @@ delibird: {
 			icespinner: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
+			mefirst: ["9M"], //Añadido
 			megakick: ["9M"],
-			megapunch: ["9M"],
 			memento: ["9M"],
 			mimic: ["9M"],
+			mist: ["9M"], //Añadido
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			naturepower: ["9M"], //Añadido
 			pluck: ["9M"],
+			powdersnow: ["9M"], //Añadido
 			poweruppunch: ["9M"],
 			present: ["9M"],
 			protect: ["9M"],
+			psychocut: ["9M"], //Añadido
+			psychup: ["9M"], //Añadido
 			quickattack: ["9M"],
 			raindance: ["9M"],
 			rapidspin: ["9M"],
 			recycle: ["9M"],
+			refresh: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			reversal: ["9M"],
-			rollout: ["9M"],
+			rocksmash: ["9M"], //Añadido
+			roleplay: ["9M"], //Añadido
+			roost: ["9M"], //Añadido
 			round: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
 			seismictoss: ["9M"],
+			sheercold: ["9M"], //Añadido
 			signalbeam: ["9M"],
+			sing: ["9M"], //Añadido
 			skyattack: ["9M"],
 			sleeptalk: ["9M"],
+			smackdown: ["9M"], //Añadido
 			snore: ["9M"],
 			snowscape: ["9M"],
 			spikes: ["9M"],
-			splash: ["9M"],
 			steelwing: ["9M"],
 			substitute: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
+			teleport: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
+			tidyup: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
 			tripleaxel: ["9M"],
+			trumpcard: ["9M"], //Añadido
+			uturn: ["9M"], //Añadido
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
+			//assurance //Removido
+			//captivate //Removido
+			//destinybond //Removido
+			//foulplay //Removido
+			//megapunch //Removido
+			//rollout //Removido
+			//splash //Removido
 		},
 	},
 delibirdholiday: {
@@ -32452,13 +35444,11 @@ mantyke: {
 			airslash: ["9M"],
 			amnesia: ["9M"],
 			aquaring: ["9M"],
-			attract: ["9M"],
 			blizzard: ["9M"],
 			bounce: ["9M"],
 			bubble: ["9M"],
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			dive: ["9M"],
@@ -32483,7 +35473,6 @@ mantyke: {
 			raindance: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
-			rockslide: ["9M"],
 			round: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
@@ -32509,6 +35498,9 @@ mantyke: {
 			whirlpool: ["9M"],
 			wideguard: ["9M"],
 			wingattack: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//rockslide //Removido
 		},
 	},
 mantine: {
@@ -32520,9 +35512,7 @@ mantine: {
 			airslash: ["9M"],
 			amnesia: ["9M"],
 			aquaring: ["9M"],
-			aquatail: ["9M"],
-			assurance: ["9M"],
-			attract: ["9M"],
+			assist: ["9M"], //Añadido
 			blizzard: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
@@ -32532,7 +35522,6 @@ mantine: {
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			curse: ["9M"],
@@ -32544,9 +35533,9 @@ mantine: {
 			earthquake: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			flipturn: ["9M"], //Añadido
+			floatyfall: ["9M"], //Añadido
 			frustration: ["9M"],
-			gigaimpact: ["9M"],
-			gunkshot: ["9M"],
 			hail: ["9M"],
 			haze: ["9M"],
 			headbutt: ["9M"],
@@ -32557,7 +35546,7 @@ mantine: {
 			hyperbeam: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			ironhead: ["9M"],
+			lifedew: ["9M"], //Añadido
 			liquidation: ["9M"],
 			mimic: ["9M"],
 			mirrorcoat: ["9M"],
@@ -32570,8 +35559,6 @@ mantine: {
 			rest: ["9M"],
 			return: ["9M"],
 			rockblast: ["9M"],
-			rockslide: ["9M"],
-			rocktomb: ["9M"],
 			roost: ["9M"],
 			round: ["9M"],
 			scald: ["9M"],
@@ -32582,7 +35569,6 @@ mantine: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			splash: ["9M"],
-			stringshot: ["9M"],
 			substitute: ["9M"],
 			supersonic: ["9M"],
 			surf: ["9M"],
@@ -32600,6 +35586,16 @@ mantine: {
 			whirlpool: ["9M"],
 			wideguard: ["9M"],
 			wingattack: ["9M"],
+			//aquatail //Removido
+			//assurance //Removido
+			//attract //Removido
+			//captivate //Removido
+			//gigaimpact //Removido
+			//gunkshot //Removido
+			//ironhead //Removido
+			//rockslide //Removido
+			//rocktomb //Removido
+			//stringshot //Removido
 		},
 	},
 mantinefeudal: {
@@ -32612,9 +35608,7 @@ mantinefeudal: {
 			airslash: ["9M"],
 			amnesia: ["9M"],
 			aquaring: ["9M"],
-			aquatail: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
 			blizzard: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
@@ -32624,7 +35618,6 @@ mantinefeudal: {
 			bubblebeam: ["9M"],
 			bulldoze: ["9M"],
 			bulletseed: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
 			curse: ["9M"],
@@ -32672,11 +35665,19 @@ mantinefeudal: {
 			scald: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			shadowball: ["9M"], //Añadido
+			sheercold: ["9M"], //Añadido
 			signalbeam: ["9M"],
+			simplebeam: ["9M"], //Añadido
+			skyattack: ["9M"], //Añadido
+			skydrop: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
+			sludgewave: ["9M"], //Añadido
 			snore: ["9M"],
+			snowscape: ["9M"], //Añadido
 			splash: ["9M"],
+			steelwing: ["9M"], //Añadido
 			stringshot: ["9M"],
 			substitute: ["9M"],
 			supersonic: ["9M"],
@@ -32688,6 +35689,7 @@ mantinefeudal: {
 			takedown: ["9M"],
 			toxic: ["9M"],
 			twister: ["9M"],
+			uturn: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
@@ -32695,6 +35697,9 @@ mantinefeudal: {
 			whirlpool: ["9M"],
 			wideguard: ["9M"],
 			wingattack: ["9M"],
+			//aquatail //Removido
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 skarmory: {
@@ -32707,15 +35712,13 @@ skarmory: {
 			attract: ["9M"],
 			autotomize: ["9M"],
 			bodypress: ["9M"],
+			bodyslam: ["9M"], //Añadido
 			bravebird: ["9M"],
-			captivate: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
-			darkpulse: ["9M"],
 			defog: ["9M"],
-			detect: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			drillpeck: ["9M"],
@@ -32730,8 +35733,10 @@ skarmory: {
 			frustration: ["9M"],
 			furyattack: ["9M"],
 			furycutter: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			guardswap: ["9M"],
+			harden: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
@@ -32751,6 +35756,7 @@ skarmory: {
 			pluck: ["9M"],
 			protect: ["9M"],
 			pursuit: ["9M"],
+			razorwind: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
 			reversal: ["9M"],
@@ -32764,14 +35770,15 @@ skarmory: {
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			secretpower: ["9M"],
+			sharpen: ["9M"], //Añadido
 			skyattack: ["9M"],
 			skydrop: ["9M"],
 			slash: ["9M"],
 			sleeptalk: ["9M"],
+			smartstrike: ["9M"], //Añadido
 			snore: ["9M"],
 			spikes: ["9M"],
 			stealthrock: ["9M"],
-			steelbeam: ["9M"],
 			steelwing: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
@@ -32783,22 +35790,24 @@ skarmory: {
 			taunt: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
-			torment: ["9M"],
 			toxic: ["9M"],
-			twister: ["9M"],
 			whirlwind: ["9M"],
 			wingattack: ["9M"],
 			xscissor: ["9M"],
+			//captivate //Removido
+			//darkpulse //Removido
+			//detect //Removido
+			//steelbeam //Removido
+			//torment //Removido
+			//twister //Removido
 		},
 	},
 houndour: {
 		learnset: {
-			attract: ["9M"],
 			beatup: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			burningjealousy: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			comeuppance: ["9M"],
 			confide: ["9M"],
@@ -32808,6 +35817,7 @@ houndour: {
 			darkpulse: ["9M"],
 			destinybond: ["9M"],
 			detect: ["9M"],
+			dig: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -32825,9 +35835,12 @@ houndour: {
 			flareblitz: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
+			grudge: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			howl: ["9M"],
 			hypervoice: ["9M"],
@@ -32836,12 +35849,15 @@ houndour: {
 			irontail: ["9M"],
 			lashout: ["9M"],
 			leer: ["9M"],
+			memento: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
+			nightshade: ["9M"], //Añadido
 			odorsleuth: ["9M"],
 			overheat: ["9M"],
 			painsplit: ["9M"],
@@ -32850,6 +35866,7 @@ houndour: {
 			psychicfangs: ["9M"],
 			punishment: ["9M"],
 			pursuit: ["9M"],
+			quickattack: ["9M"], //Añadido
 			rage: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
@@ -32863,6 +35880,7 @@ houndour: {
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			smog: ["9M"],
@@ -32888,16 +35906,17 @@ houndour: {
 			trailblaze: ["9M"],
 			uproar: ["9M"],
 			willowisp: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 houndoom: {
 		learnset: {
-			attract: ["9M"],
+			agility: ["9M"], //Añadido
 			beatup: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			burningjealousy: ["9M"],
-			captivate: ["9M"],
 			comeuppance: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -32905,6 +35924,8 @@ houndoom: {
 			curse: ["9M"],
 			darkpulse: ["9M"],
 			detect: ["9M"],
+			dig: ["9M"], //Añadido
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
@@ -32914,6 +35935,7 @@ houndoom: {
 			endure: ["9M"],
 			facade: ["9M"],
 			feintattack: ["9M"],
+			fierywrath: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firefang: ["9M"],
 			firespin: ["9M"],
@@ -32922,10 +35944,13 @@ houndoom: {
 			flareblitz: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heatwave: ["9M"],
 			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			howl: ["9M"],
 			hyperbeam: ["9M"],
@@ -32936,18 +35961,24 @@ houndoom: {
 			laserfocus: ["9M"],
 			lashout: ["9M"],
 			leer: ["9M"],
+			memento: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
+			nightshade: ["9M"], //Añadido
 			odorsleuth: ["9M"],
+			ourtrage: ["9M"], //Añadido
 			overheat: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
+			quickattack: ["9M"], //Añadido
+			ragingfury: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -32957,9 +35988,12 @@ houndoom: {
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			shadowball: ["9M"],
+			shadowclaw: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
 			smog: ["9M"],
@@ -32987,15 +36021,15 @@ houndoom: {
 			trailblaze: ["9M"],
 			uproar: ["9M"],
 			willowisp: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 phanpy: {
 		learnset: {
 			ancientpower: ["9M"],
-			attract: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -33018,6 +36052,7 @@ phanpy: {
 			growl: ["9M"],
 			gunkshot: ["9M"],
 			headbutt: ["9M"],
+			headlongrush: ["9M"], //Añadido
 			headsmash: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
@@ -33036,6 +36071,7 @@ phanpy: {
 			odorsleuth: ["9M"],
 			playrough: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
@@ -33045,6 +36081,7 @@ phanpy: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			secretpower: ["9M"],
@@ -33054,6 +36091,7 @@ phanpy: {
 			smackdown: ["9M"],
 			snore: ["9M"],
 			stealthrock: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -33065,23 +36103,25 @@ phanpy: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			watergun: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 donphan: {
 		learnset: {
 			ancientpower: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
+			avalanche: ["9M"], //Añadido
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			charm: ["9M"],
 			confide: ["9M"],
 			counter: ["9M"],
@@ -33097,8 +36137,10 @@ donphan: {
 			endeavor: ["9M"],
 			endure: ["9M"],
 			facade: ["9M"],
+			falseswipe: ["9M"], //Añadido
 			firefang: ["9M"],
 			flail: ["9M"],
+			flamewheel: ["9M"], //Añadido
 			frustration: ["9M"],
 			furyattack: ["9M"],
 			gigaimpact: ["9M"],
@@ -33106,12 +36148,14 @@ donphan: {
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
 			headbutt: ["9M"],
+			headlongrush: ["9M"], //Añadido
 			heatcrash: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
 			hornattack: ["9M"],
+			horndrill: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icefang: ["9M"],
@@ -33127,20 +36171,25 @@ donphan: {
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
 			odorsleuth: ["9M"],
+			peck: ["9M"], //Añadido
 			playrough: ["9M"],
 			poisonjab: ["9M"],
 			protect: ["9M"],
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rapidspin: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
+			rockblast: ["9M"], //Añadido
+			rockclimb: ["9M"], //Añadido
 			rockpolish: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
@@ -33151,7 +36200,12 @@ donphan: {
 			smackdown: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
+			spinout: ["9M"], //Añadido
 			stealthrock: ["9M"],
+			steamroller: ["9M"], //Añadido
+			steelroller: ["9M"], //Añadido
+			stockpile: ["9M"], //Añadido
+			stomp: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
@@ -33164,46 +36218,63 @@ donphan: {
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunderfang: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 donphanfeudal: {
 		learnset: {
+			allyswitch: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			assurance: ["9M"],
-			attract: ["9M"],
+			barrier: ["9M"], //Añadido
+			batonpass: ["9M"], //Añadido
 			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
+			calmmind: ["9M"], //Añadido
 			charm: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
+			confusion: ["9M"], //Añadido
 			counter: ["9M"],
+			craftyshield: ["9M"], //Añadido
 			curse: ["9M"],
+			darkpulse: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
+			dreameater: ["9M"], //Añadido
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
 			encore: ["9M"],
 			endeavor: ["9M"],
 			endure: ["9M"],
+			expandingforce: ["9M"], //Añadido
 			facade: ["9M"],
 			firefang: ["9M"],
 			flail: ["9M"],
+			flashcannon: ["9M"], //Añadido
 			frustration: ["9M"],
 			furyattack: ["9M"],
 			gigaimpact: ["9M"],
+			gravity: ["9M"], //Añadido
 			growl: ["9M"],
+			guardsplit: ["9M"], //Añadido
 			gunkshot: ["9M"],
 			gyroball: ["9M"],
 			headbutt: ["9M"],
+			healpulse: ["9M"], //Añadido
+			heatswap: ["9M"], //Añadido
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
@@ -33214,43 +36285,73 @@ donphanfeudal: {
 			hypnosis: ["9M"],
 			icefang: ["9M"],
 			icespinner: ["9M"],
+			instruct: ["9M"], //Añadido
 			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			lastresort: ["9M"],
+			lightscreen: ["9M"], //Añadido
+			magiccoat: ["9M"], //Añadido
+			magicroom: ["9M"], //Añadido
 			magnitude: ["9M"],
+			meditate: ["9M"], //Añadido
 			meditationancientrite: ["9M"],
+			mefirst: ["9M"], //Añadido
 			mimic: ["9M"],
+			mindreader: ["9M"], //Añadido
+			miracleeye: ["9M"], //Añadido
+			mirrorcoat: ["9M"], //Añadido
 			mudshot: ["9M"],
 			mudslap: ["9M"],
+			nastyplot: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			odorsleuth: ["9M"],
+			painsplit: ["9M"], //Añadido
 			playrough: ["9M"],
 			poisonjab: ["9M"],
+			poltergeist: ["9M"], //Añadido
+			powergem: ["9M"], //Añadido
+			powershift: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
+			psybeam: ["9M"], //Añadido
+			psychic: ["9M"], //Añadido
+			psychicfangs: ["9M"], //Añadido
+			psychocut: ["9M"], //Añadido
 			psyshieldbash: ["9M"],
+			psywave: ["9M"], //Añadido
 			raindance: ["9M"],
 			rapidspin: ["9M"],
+			reflect: ["9M"], //Añadido
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
+			revivalblessing: ["9M"], //Añadido
 			roar: ["9M"],
 			rockpolish: ["9M"],
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
+			roleplay: ["9M"], //Añadido
 			rollout: ["9M"],
+			rototiller: ["9M"], //Añadido
 			round: ["9M"],
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			seedbomb: ["9M"],
+			shadowball: ["9M"], //Añadido
+			simplebeam: ["9M"], //Añadido
+			slackoff: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			smartstrike: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
@@ -33260,29 +36361,38 @@ donphanfeudal: {
 			superpower: ["9M"],
 			swagger: ["9M"],
 			takedown: ["9M"],
+			telekinesis: ["9M"], //Añadido
+			teleport: ["9M"], //Añadido
 			terablast: ["9M"],
+			terrainpulse: ["9M"], //Añadido
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunderfang: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			trickroom: ["9M"], //Añadido
+			twinbeam: ["9M"], //Añadido
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//captivate //Removido
 		},
 	},
 stantler: {
 		learnset: {
 			agility: ["9M"],
+			assist: ["9M"], //Añadido
 			astonish: ["9M"],
-			attract: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
@@ -33297,14 +36407,18 @@ stantler: {
 			energyball: ["9M"],
 			extrasensory: ["9M"],
 			facade: ["9M"],
+			falseswipe: ["9M"], //Añadido
 			flash: ["9M"],
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
+			grassknot: ["9M"], //Añadido
 			gravity: ["9M"],
+			guardswap: ["9M"], //Añadido
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			highhorsepower: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
 			imprison: ["9M"],
@@ -33317,11 +36431,13 @@ stantler: {
 			magicroom: ["9M"],
 			mefirst: ["9M"],
 			megahorn: ["9M"],
+			milkdrink: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			mudsport: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -33335,11 +36451,13 @@ stantler: {
 			retaliate: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
+			rockslide: ["9M"], //Añadido
 			roleplay: ["9M"],
 			round: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
@@ -33347,14 +36465,16 @@ stantler: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			spark: ["9M"], //Añadido
 			spite: ["9M"],
 			stomp: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -33366,29 +36486,34 @@ stantler: {
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
 			trick: ["9M"],
 			trickroom: ["9M"],
 			uproar: ["9M"],
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 clammdeer: {
 		learnset: {
 			agility: ["9M"],
 			antclay: ["9M"],
+			assist: ["9M"], //Añadido
 			astonish: ["9M"],
-			attract: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
-			captivate: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
@@ -33402,16 +36527,24 @@ clammdeer: {
 			endure: ["9M"],
 			energyball: ["9M"],
 			extrasensory: ["9M"],
+			extremespeed: ["9M"], //Añadido
 			facade: ["9M"],
+			falseswipe: ["9M"], //Añadido
+			fissure: ["9M"], //Añadido
 			flash: ["9M"],
+			focusenergy: ["9M"], //Añadido
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
 			gravity: ["9M"],
 			headbutt: ["9M"],
 			headcharge: ["9M"],
+			headlongrush: ["9M"], //Añadido
+			headsmash: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
+			horndrill: ["9M"], //Añadido
+			hornleech: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
 			imprison: ["9M"],
@@ -33425,10 +36558,12 @@ clammdeer: {
 			mefirst: ["9M"],
 			megahorn: ["9M"],
 			mimic: ["9M"],
+			mudshot: ["9M"], //Añadido
 			mudslap: ["9M"],
 			mudsport: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
+			powergem: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -33442,9 +36577,12 @@ clammdeer: {
 			retaliate: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
+			rocksmash: ["9M"], //Añadido
+			rockthrow: ["9M"], //Añadido
 			roleplay: ["9M"],
 			round: ["9M"],
 			sandattack: ["9M"],
+			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
 			secretpower: ["9M"],
 			shadowball: ["9M"],
@@ -33452,18 +36590,23 @@ clammdeer: {
 			signalbeam: ["9M"],
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
+			smackdown: ["9M"], //Añadido
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			spite: ["9M"],
+			stealthrock: ["9M"], //Añadido
+			steelroller: ["9M"], //Añadido
 			stomp: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
+			supercellslam: ["9M"], //Añadido
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"],
 			thrash: ["9M"],
@@ -33479,17 +36622,23 @@ clammdeer: {
 			wildcharge: ["9M"],
 			workup: ["9M"],
 			zenheadbutt: ["9M"],
+			//attract //Removido
+			//captivate //Removido
+			//suckerpunch //Removido
 		},
 	},
 wyrdeer: {
 		learnset: {
 			agility: ["9M"],
+			assist: ["9M"], //Añadido
 			astonish: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			chargebeam: ["9M"],
 			confuseray: ["9M"],
+			confusion: ["9M"], //Añadido
+			counter: ["9M"], //Añadido
 			curse: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -33499,11 +36648,14 @@ wyrdeer: {
 			energyball: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
+			falseswipe: ["9M"], //Añadido
 			futuresight: ["9M"],
 			gigaimpact: ["9M"],
+			grassknot: ["9M"], //Añadido
 			gravity: ["9M"],
+			guardswap: ["9M"], //Añadido
 			helpinghand: ["9M"],
-			highhorsepower: ["9M"],
+			highhorsepower: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
 			imprison: ["9M"],
@@ -33511,6 +36663,8 @@ wyrdeer: {
 			lightscreen: ["9M"],
 			lunge: ["9M"],
 			megahorn: ["9M"],
+			milkdrink: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psybeam: ["9M"],
 			psychic: ["9M"],
@@ -33522,19 +36676,24 @@ wyrdeer: {
 			reflect: ["9M"],
 			rest: ["9M"],
 			roar: ["9M"],
+			rockslide: ["9M"], //Añadido
 			roleplay: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"],
+			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skillswap: ["9M"],
 			sleeptalk: ["9M"],
 			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			spark: ["9M"], //Añadido
 			spite: ["9M"],
 			stomp: ["9M"],
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tackle: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -33544,6 +36703,7 @@ wyrdeer: {
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
 			trick: ["9M"],
 			trickroom: ["9M"],
 			uproar: ["9M"],
@@ -33584,9 +36744,9 @@ miltank: {
 			afteryou: ["9M"],
 			attract: ["9M"],
 			belch: ["9M"],
+			bellydrum: ["9M"], //Añadido
+			bestow: ["9M"], //Añadido
 			bide: ["9M"],
-			blizzard: ["9M"],
-			block: ["9M"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -33613,7 +36773,6 @@ miltank: {
 			gigaimpact: ["9M"],
 			growl: ["9M"],
 			gyroball: ["9M"],
-			hammerarm: ["9M"],
 			headbutt: ["9M"],
 			healbell: ["9M"],
 			heartstamp: ["9M"],
@@ -33621,12 +36780,11 @@ miltank: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
-			hyperbeam: ["9M"],
-			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
+			megahorn: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
 			metronome: ["9M"],
@@ -33639,7 +36797,6 @@ miltank: {
 			present: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"],
-			punishment: ["9M"],
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -33653,13 +36810,10 @@ miltank: {
 			sandstorm: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
-			shadowball: ["9M"],
-			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			solarbeam: ["9M"],
-			stealthrock: ["9M"],
 			steelroller: ["9M"],
+			stockpile: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"],
@@ -33672,7 +36826,6 @@ miltank: {
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
-			thunderwave: ["9M"],
 			toxic: ["9M"],
 			wakeupslap: ["9M"],
 			waterpulse: ["9M"],
@@ -33680,11 +36833,24 @@ miltank: {
 			workup: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//blizzard //Removido
+			//block //Removido
+			//hammerarm //Removido
+			//hyperbeam //Removido
+			//icebeam //Removido
+			//punishment //Removido
+			//shadowball //Removido
+			//shockwave //Removido
+			//solarbeam //Removido
+			//stealthrock //Removido
+			//thunderwave //Removido
 		},
 	},
 raikou: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
+			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
 			aurasphere: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
@@ -33693,6 +36859,7 @@ raikou: {
 			charge: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			crunch: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -33700,6 +36867,7 @@ raikou: {
 			dig: ["9M"],
 			discharge: ["9M"],
 			doubleedge: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			eerieimpulse: ["9M"],
 			electricterrain: ["9M"],
@@ -33709,39 +36877,51 @@ raikou: {
 			extrasensory: ["9M"],
 			extremespeed: ["9M"],
 			facade: ["9M"],
+			feintattack: ["9M"], //Añadido
+			finalgambit: ["9M"], //Añadido
 			flash: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			howl: ["9M"],
 			hyperbeam: ["9M"],
+			hypervoice: ["9M"], //Añadido
+			icefang: ["9M"], //Añadido
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			magnetrise: ["9M"],
+			metalclaw: ["9M"], //Añadido
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nobleroar: ["9M"], //Añadido
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
+			psychicfangs: ["9M"], //Añadido
 			psychup: ["9M"],
 			quash: ["9M"],
 			quickattack: ["9M"],
 			raindance: ["9M"],
+			razorwind: ["9M"], //Añadido
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			risingvoltage: ["9M"],
 			roar: ["9M"],
-			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scald: ["9M"],
 			scaryface: ["9M"],
+			scratch: ["9M"], //Añadido
 			secretpower: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -33749,13 +36929,16 @@ raikou: {
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
 			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			spark: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			supercellslam: ["9M"],
+			superfang: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
 			throatchop: ["9M"],
@@ -33766,27 +36949,33 @@ raikou: {
 			thunderwave: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			uproar: ["9M"], //Añadido
+			uturn: ["9M"], //Añadido
 			voltswitch: ["9M"],
 			weatherball: ["9M"],
 			wildcharge: ["9M"],
 			zapcannon: ["9M"],
+			//rockclimb //Removido
 		},
 	},
 entei: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
 			bulldoze: ["9M"],
 			calmmind: ["9M"],
 			confide: ["9M"],
+			counter: ["9M"], //Añadido
 			crunch: ["9M"],
-			crushclaw: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			ember: ["9M"],
 			endure: ["9M"],
@@ -33794,15 +36983,19 @@ entei: {
 			extrasensory: ["9M"],
 			extremespeed: ["9M"],
 			facade: ["9M"],
+			finalgambit: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firefang: ["9M"],
 			firespin: ["9M"],
+			flameburst: ["9M"], //Añadido
 			flamecharge: ["9M"],
 			flamethrower: ["9M"],
 			flamewheel: ["9M"],
 			flareblitz: ["9M"],
 			flash: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			headbutt: ["9M"],
 			heatwave: ["9M"],
@@ -33810,19 +37003,25 @@ entei: {
 			hiddenpower: ["9M"],
 			howl: ["9M"],
 			hyperbeam: ["9M"],
+			hypervoice: ["9M"], //Añadido
 			incinerate: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
+			jumpkick: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lavaplume: ["9M"],
 			leer: ["9M"],
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			overheat: ["9M"],
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
 			psychup: ["9M"],
+			pursuit: ["9M"], //Añadido
 			quash: ["9M"],
+			quickattack: ["9M"], //Añadido
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
@@ -33833,6 +37032,7 @@ entei: {
 			rocksmash: ["9M"],
 			round: ["9M"],
 			sacredfire: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
@@ -33843,24 +37043,34 @@ entei: {
 			snarl: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			stomp: ["9M"],
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			superfang: ["9M"], //Añadido
+			superpower: ["9M"], //Añadido
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			takedown: ["9M"],
 			terablast: ["9M"],
+			throatchop: ["9M"], //Añadido
+			thunderfang: ["9M"], //Añadido
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
+			uproar: ["9M"], //Añadido
 			weatherball: ["9M"],
 			willowisp: ["9M"],
+			//crushclaw //Removido
 		},
 	},
 suicune: {
 		learnset: {
+			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
 			airslash: ["9M"],
 			aquaring: ["9M"],
@@ -33882,12 +37092,19 @@ suicune: {
 			dig: ["9M"],
 			dive: ["9M"],
 			doubleedge: ["9M"],
+			doublekick: ["9M"], //Añadido
 			doubleteam: ["9M"],
 			endure: ["9M"],
+			energyball: ["9M"], //Añadido
 			extrasensory: ["9M"],
 			extremespeed: ["9M"],
 			facade: ["9M"],
+			finalgambit: ["9M"], //Añadido
+			flipturn: ["9M"], //Añadido
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
+			futuresight: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gust: ["9M"],
 			hail: ["9M"],
@@ -33896,6 +37113,7 @@ suicune: {
 			hiddenpower: ["9M"],
 			hydropump: ["9M"],
 			hyperbeam: ["9M"],
+			hypervoice: ["9M"], //Añadido
 			icebeam: ["9M"],
 			icefang: ["9M"],
 			icywind: ["9M"],
@@ -33910,18 +37128,23 @@ suicune: {
 			mist: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
+			nobleroar: ["9M"], //Añadido
 			ominouswind: ["9M"],
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
+			psychicnoise: ["9M"], //Añadido
 			psychup: ["9M"],
 			quash: ["9M"],
+			quickattack: ["9M"], //Añadido
 			raindance: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
 			roar: ["9M"],
-			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			scald: ["9M"],
 			secretpower: ["9M"],
@@ -33932,21 +37155,25 @@ suicune: {
 			snarl: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			sparkingarea: ["9M"], //Añadido
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
+			triattack: ["9M"], //Añadido
 			waterfall: ["9M"],
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M"],
+			//rockclimb //Removido
 		},
 	},
 larvitar: {
@@ -33958,12 +37185,12 @@ larvitar: {
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
 			confide: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -33975,6 +37202,7 @@ larvitar: {
 			facade: ["9M"],
 			focusenergy: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			headbutt: ["9M"],
 			helpinghand: ["9M"],
@@ -33984,6 +37212,8 @@ larvitar: {
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			leer: ["9M"],
+			lunge: ["9M"], //Añadido
+			megahorn: ["9M"], //Añadido
 			mimic: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
@@ -34005,6 +37235,7 @@ larvitar: {
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
@@ -34014,6 +37245,7 @@ larvitar: {
 			smackdown: ["9M"],
 			snarl: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			spite: ["9M"],
 			stealthrock: ["9M"],
 			stomp: ["9M"],
@@ -34031,24 +37263,26 @@ larvitar: {
 			torment: ["9M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
+			//captivate //Removido
 		},
 	},
 pupitar: {
 		learnset: {
-			aerialace: ["9M"],
 			ancientpower: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
 			bite: ["9M"],
+			bodypress: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			detect: ["9M"],
 			dig: ["9M"],
 			doubleedge: ["9M"],
@@ -34057,11 +37291,15 @@ pupitar: {
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			endure: ["9M"],
+			explosion: ["9M"], //Añadido
 			facade: ["9M"],
 			focusenergy: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			harden: ["9M"], //Añadido
 			headbutt: ["9M"],
+			heatcrash: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -34071,6 +37309,8 @@ pupitar: {
 			irontail: ["9M"],
 			lashout: ["9M"],
 			leer: ["9M"],
+			lunge: ["9M"], //Añadido
+			megahorn: ["9M"], //Añadido
 			mimic: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
@@ -34091,6 +37331,7 @@ pupitar: {
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
@@ -34100,8 +37341,10 @@ pupitar: {
 			smackdown: ["9M"],
 			snarl: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			spite: ["9M"],
 			stealthrock: ["9M"],
+			steamroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			substitute: ["9M"],
@@ -34116,11 +37359,12 @@ pupitar: {
 			torment: ["9M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
+			//aerialace //Removido
+			//captivate //Removido
 		},
 	},
 tyranitar: {
 		learnset: {
-			aerialace: ["9M"],
 			ancientpower: ["9M"],
 			aquatail: ["9M"],
 			assurance: ["9M"],
@@ -34129,22 +37373,26 @@ tyranitar: {
 			bite: ["9M"],
 			blizzard: ["9M"],
 			block: ["9M"],
-			bodypress: ["9M"],
+			bodypress: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
 			brickbreak: ["9M"],
 			brutalswing: ["9M"],
 			bulldoze: ["9M"],
-			captivate: ["9M"],
 			chipaway: ["9M"],
+			commeupance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
+			crushclaw: ["9M"], //Añadido
 			curse: ["9M"],
 			cut: ["9M"],
 			darkpulse: ["9M"],
+			defensecurl: ["9M"], //Añadido
 			detect: ["9M"],
 			dig: ["9M"],
+			disable: ["9M"], //Añadido
+			dizzypunch: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dragonbreath: ["9M"],
@@ -34156,6 +37404,7 @@ tyranitar: {
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			endure: ["9M"],
+			explosion: ["9M"], //Añadido
 			facade: ["9M"],
 			fireblast: ["9M"],
 			firefang: ["9M"],
@@ -34167,10 +37416,15 @@ tyranitar: {
 			focuspunch: ["9M"],
 			foulplay: ["9M"],
 			frustration: ["9M"],
+			furyattack: ["9M"], //Añadido
 			furycutter: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
+			harden: ["9M"], //Añadido
 			hardpress: ["9M"],
 			headbutt: ["9M"],
+			heatcrash: ["9M"], //Añadido
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
@@ -34190,8 +37444,12 @@ tyranitar: {
 			lashout: ["9M"],
 			leer: ["9M"],
 			lowkick: ["9M"],
+			lunge: ["9M"], //Añadido
+			megahorn: ["9M"], //Añadido
 			megakick: ["9M"],
 			megapunch: ["9M"],
+			metalclaw: ["9M"], //Añadido
+			meteorbeam: ["9M"], //Añadido
 			mimic: ["9M"],
 			muddywater: ["9M"],
 			mudshot: ["9M"],
@@ -34203,6 +37461,8 @@ tyranitar: {
 			powergem: ["9M"],
 			poweruppunch: ["9M"],
 			protect: ["9M"],
+			punishment: ["9M"], //Añadido
+			rage: ["9M"], //Añadido
 			raindance: ["9M"],
 			rest: ["9M"],
 			retaliate: ["9M"],
@@ -34217,31 +37477,37 @@ tyranitar: {
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
 			round: ["9M"],
+			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"],
 			secretpower: ["9M"],
 			seismictoss: ["9M"],
+			shadowball: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
 			snarl: ["9M"],
 			snore: ["9M"],
+			spark: ["9M"], //Añadido
 			spite: ["9M"],
 			stealthrock: ["9M"],
+			steamroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
+			supercellslam: ["9M"], //Añadido
 			superpower: ["9M"],
 			surf: ["9M"],
 			swagger: ["9M"],
 			tackle: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
+			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			thrash: ["9M"],
 			thunder: ["9M"],
@@ -34251,9 +37517,12 @@ tyranitar: {
 			thunderwave: ["9M"],
 			torment: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			uproar: ["9M"],
 			waterpulse: ["9M"],
 			whirlpool: ["9M"],
+			//aerialace //Removido
+			//captivate //Removido
 		},
 	},
 lugia: {
@@ -34263,9 +37532,12 @@ lugia: {
 			aeroblast: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			allyswitch: ["9M"], //Añadido
 			ancientpower: ["9M"],
 			aquatail: ["9M"],
+			aurorabeam: ["9M"], //Añadido
 			avalanche: ["9M"],
+			bleakwindstorm: ["9M"], //Añadido
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
 			bravebird: ["9M"],
@@ -34278,6 +37550,7 @@ lugia: {
 			curse: ["9M"],
 			defog: ["9M"],
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			dive: ["9M"],
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
@@ -34290,16 +37563,20 @@ lugia: {
 			earthpower: ["9M"],
 			earthquake: ["9M"],
 			echoedvoice: ["9M"],
+			encore: ["9M"], //Añadido
 			endure: ["9M"],
+			expandingforce: ["9M"], //Añadido
 			extrasensory: ["9M"],
 			facade: ["9M"],
-			featherdance: ["9M"],
+			featherdance: ["9M"], //Añadido
 			flash: ["9M"],
 			fly: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
+			gravity: ["9M"], //Añadido
 			gust: ["9M"],
 			hail: ["9M"],
 			headbutt: ["9M"],
@@ -34323,10 +37600,14 @@ lugia: {
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			ominouswind: ["9M"],
+			powerswap: ["9M"], //Añadido
+			powertrick: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
+			psychicfangs: ["9M"], //Añadido
 			psychicnoise: ["9M"],
 			psychoboost: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			psychup: ["9M"],
 			psyshock: ["9M"],
 			punishment: ["9M"],
@@ -34352,6 +37633,8 @@ lugia: {
 			skydrop: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
+			snowscape: ["9M"], //Añadido
+			sonicboom: ["9M"], //Añadido
 			steelwing: ["9M"],
 			strength: ["9M"],
 			substitute: ["9M"],
@@ -34359,6 +37642,7 @@ lugia: {
 			surf: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			telekinesis: ["9M"],
@@ -34367,6 +37651,7 @@ lugia: {
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			trick: ["9M"],
 			twister: ["9M"],
 			waterfall: ["9M"],
@@ -34385,6 +37670,7 @@ hooh: {
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			ancientpower: ["9M"],
+			aurorabeam: ["9M"], //Añadido
 			bodyslam: ["9M"],
 			bravebird: ["9M"],
 			bulldoze: ["9M"],
@@ -34407,6 +37693,7 @@ hooh: {
 			endure: ["9M"],
 			extrasensory: ["9M"],
 			facade: ["9M"],
+			featherdance: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firespin: ["9M"],
 			flamecharge: ["9M"],
@@ -34415,6 +37702,7 @@ hooh: {
 			flash: ["9M"],
 			fly: ["9M"],
 			frustration: ["9M"],
+			furyswipes: ["9M"], //Añadido
 			futuresight: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],
@@ -34429,16 +37717,18 @@ hooh: {
 			incinerate: ["9M"],
 			ironhead: ["9M"],
 			laserfocus: ["9M"],
-			lifedew: ["9M"],
 			lightscreen: ["9M"],
 			mimic: ["9M"],
+			morningsun: ["9M"], //Añadido
 			mudslap: ["9M"],
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
 			ominouswind: ["9M"],
 			overheat: ["9M"],
+			peck: ["9M"], //Añadido
 			pluck: ["9M"],
+			powerswap: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychup: ["9M"],
@@ -34471,6 +37761,7 @@ hooh: {
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			terablast: ["9M"],
@@ -34478,21 +37769,23 @@ hooh: {
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
 			toxic: ["9M"],
+			triattack: ["9M"], //Añadido
 			twister: ["9M"],
 			weatherball: ["9M"],
 			whirlwind: ["9M"],
 			willowisp: ["9M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			//lifedew //Removido
 		},
 	},
 celebi: {
 		learnset: {
+			absorb: ["9M"], //Añadido
 			aerialace: ["9M"],
 			allyswitch: ["9M"],
 			ancientpower: ["9M"],
 			aurasphere: ["9M"],
-			batonpass: ["9M"],
 			calmmind: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
@@ -34502,18 +37795,21 @@ celebi: {
 			dazzlinggleam: ["9M"],
 			defensecurl: ["9M"],
 			detect: ["9M"],
+			disable: ["9M"], //Añadido
 			doubleedge: ["9M"],
 			doubleteam: ["9M"],
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			earthpower: ["9M"],
 			echoedvoice: ["9M"],
+			encore: ["9M"], //Añadido
 			endure: ["9M"],
 			energyball: ["9M"],
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			flash: ["9M"],
 			fling: ["9M"],
+			focusblast: ["9M"], //Añadido
 			frustration: ["9M"],
 			futuresight: ["9M"],
 			gigadrain: ["9M"],
@@ -34521,6 +37817,7 @@ celebi: {
 			grassknot: ["9M"],
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
+			growth: ["9M"], //Añadido
 			healbell: ["9M"],
 			healblock: ["9M"],
 			healingwish: ["9M"],
@@ -34529,6 +37826,7 @@ celebi: {
 			holdback: ["9M"],
 			hyperbeam: ["9M"],
 			imprison: ["9M"],
+			junglehealing: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			leafblade: ["9M"],
@@ -34547,17 +37845,23 @@ celebi: {
 			naturepower: ["9M"],
 			nightmare: ["9M"],
 			perishsong: ["9M"],
+			playnice: ["9M"], //Añadido
 			pollenpuff: ["9M"],
+			powershift: ["9M"], //Añadido
 			protect: ["9M"],
 			psychic: ["9M"],
 			psychicterrain: ["9M"],
 			psychocut: ["9M"],
+			psychoshift: ["9M"], //Añadido
 			psychup: ["9M"],
+			psyshock: ["9M"], //Añadido
 			raindance: ["9M"],
 			recover: ["9M"],
 			reflect: ["9M"],
+			refresh: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
+			rototiller: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
@@ -34573,16 +37877,20 @@ celebi: {
 			solarbeam: ["9M"],
 			solarblade: ["9M"],
 			stealthrock: ["9M"],
+			stunspore: ["9M"], //Añadido
 			substitute: ["9M"],
-			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swift: ["9M"],
 			swordsdance: ["9M"],
+			synchronoise: ["9M"], //Añadido
 			synthesis: ["9M"],
 			telekinesis: ["9M"],
+			teleport: ["9M"], //Añadido
+			terrainpulse: ["9M"], //Añadido
 			thunderwave: ["9M"],
+			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -34593,6 +37901,8 @@ celebi: {
 			wonderroom: ["9M"],
 			worryseed: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
+			//suckerpunch //Removido
 		},
 	},
 celebifeudal: {
@@ -34601,10 +37911,11 @@ celebifeudal: {
 			allyswitch: ["9M"],
 			ancientpower: ["9M"],
 			aurasphere: ["9M"],
-			batonpass: ["9M"],
+			barrier: ["9M"], //Añadido
 			calmmind: ["9M"],
 			chargebeam: ["9M"],
 			confide: ["9M"],
+			confuseray: ["9M"], //Añadido
 			confusion: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"],
@@ -34651,23 +37962,31 @@ celebifeudal: {
 			megadrain: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9M"],
+			mirrorcoat: ["9M"], //Añadido
 			mudslap: ["9M"],
+			mysticalfire: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
 			naturepower: ["9M"],
 			nightmare: ["9M"],
+			painsplit: ["9M"], //Añadido
 			perishsong: ["9M"],
 			pollenpuff: ["9M"],
 			protect: ["9M"],
 			psychic: ["9M"],
+			psychicnoise: ["9M"], //Añadido
 			psychicterrain: ["9M"],
 			psychocut: ["9M"],
 			psychup: ["9M"],
+			psywave: ["9M"], //Añadido
 			raindance: ["9M"],
 			recover: ["9M"],
 			reflect: ["9M"],
+			reflecttype: ["9M"], //Añadido
 			rest: ["9M"],
 			return: ["9M"],
+			revivalblessing: ["9M"], //Añadido
+			roleplay: ["9M"], //Añadido
 			round: ["9M"],
 			safeguard: ["9M"],
 			sandstorm: ["9M"],
@@ -34677,17 +37996,21 @@ celebifeudal: {
 			shockwave: ["9M"],
 			signalbeam: ["9M"],
 			silverwind: ["9M"],
+			simplebeam: ["9M"], //Añadido
 			skillswap: ["9M"],
 			sleeppowder: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			solarblade: ["9M"],
+			sonicboom: ["9M"], //Añadido
 			stealthrock: ["9M"],
 			storedpower: ["9M"],
+			stringshot: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			sunnyday: ["9M"],
+			supersonic: ["9M"], //Añadido
 			swagger: ["9M"],
 			sweetscent: ["9M"],
 			swift: ["9M"],
@@ -34695,10 +38018,12 @@ celebifeudal: {
 			synthesis: ["9M"],
 			telekinesis: ["9M"],
 			thunderwave: ["9M"],
+			torment: ["9M"], //Añadido
 			toxic: ["9M"],
 			transcendentalancientrite: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
+			trumpcard: ["9M"], //Añadido
 			uproar: ["9M"],
 			uturn: ["9M"],
 			waterpulse: ["9M"],
@@ -34706,9 +38031,9 @@ celebifeudal: {
 			wonderroom: ["9M"],
 			worryseed: ["9M"],
 			zenheadbutt: ["9M"],
+			//batonpass //Removido
 		},
 	},
-
 	treecko: {
 		learnset: {
 			absorb: ["9E", "9E", "9L5", "9L5", "9L6", "9S1", "9L6", "9L6", "9M"],
