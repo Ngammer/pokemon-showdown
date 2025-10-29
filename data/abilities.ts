@@ -6840,7 +6840,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -140,
 	},
 	rainbowfeather: {
-		onModifyMove(move, pokemon, target) {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (move.type === 'Flying') {
 				if (this.randomChance(33, 100)) {
 					const r = this.random(100);
