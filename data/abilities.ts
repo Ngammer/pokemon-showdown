@@ -2047,7 +2047,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Water') {
+			if (move.type === 'Ice') {
 				this.debug('Ice Body boost');
 				return this.chainModify(1.1);
 			}
