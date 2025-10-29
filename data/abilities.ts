@@ -7103,4 +7103,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -149,
 	},
+	resilience: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Resilience",
+		rating: 3.5,
+		num: 62,
+	},
 };
