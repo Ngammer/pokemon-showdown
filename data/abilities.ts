@@ -6392,7 +6392,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (this.effectState.fallen) {
-				const powMod = [4096, 4301, 4506, 4710, 4915, 5120, 5325, 5530, 5734, 5939, 6144];
+				const powMod = [4096, 4321, 4547, 4772, 4997, 5222, 5448, 5673, 5898, 6124, 6349];
 				this.debug(`Soul Eater boost: ${powMod[this.effectState.fallen]}/4096`);
 				return this.chainModify([powMod[this.effectState.fallen], 4096]);
 			}
