@@ -6801,8 +6801,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -138,
 	},
 	cleanwater: {
-		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison' && move.type === 'Water') return 1;
+		onFoeEffectiveness(typeMod, target, type, move) {
+			if (type === 'Poison' && move.type === 'Water') return -1;
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && (effect.id === 'psn' || effect.id === 'tox')) {
@@ -6837,6 +6837,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifySpA(atk, attacker, defender, move) {
 			if (move.type === 'Water') {
 				return this.chainModify(2);
+			}
+		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (move.type === 'Electric' || move.type === 'Grass') {
+				return 1;
+			}
+			if (move.type === 'Fire' || move.type === 'Water' || move.type === 'Ice' || move.type === 'Steel') {
+				return 1;
 			}
 		},
 		flags: { breakable: 1 },
