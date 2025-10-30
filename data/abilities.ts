@@ -6689,8 +6689,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMove(move, pokemon, target) {
 			if (move.category === "Special") {
 				move.overrideOffensiveStat = 'spd';
+				move.basePower *= 0.75;
 			} else if (move.category === "Physical") {
 				move.overrideOffensiveStat = 'def';
+				move.basePower *= 0.75;
 			}
 		},
 		flags: { },
