@@ -6424,7 +6424,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (typeof move.accuracy === 'number') {
 				const change = 100 - move.accuracy;
 				move.accuracy += change;
-				move.basePower -= change * 0.25;
+				if (move.basePower !== 0) {
+					move.basePower -= change * 0.25;
+				}
 			}
 		},
 		flags: { },
