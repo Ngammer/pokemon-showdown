@@ -6788,6 +6788,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
 				this.add('-immune', target, '[from] ability: Volcano Aura');
+				this.add('-clearallboost');
+				for (const pokemon of this.getAllActive()) {
+					pokemon.clearBoosts();
+				}
 				return null;
 			}
 		},
