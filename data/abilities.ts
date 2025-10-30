@@ -6844,7 +6844,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return 1;
 			}
 			if (move.type === 'Fire' || move.type === 'Water' || move.type === 'Ice' || move.type === 'Steel') {
-				return 1;
+				return -1;
 			}
 		},
 		flags: { breakable: 1 },
