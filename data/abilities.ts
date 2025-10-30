@@ -6465,7 +6465,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	soulliberator: {
 		onStart(pokemon) {
 			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
-				this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, pokemon);
+				const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
+				for (const ally of allies) {
+					this.heal(ally.baseMaxhp / 10, ally, pokemon);
+				}
 			}
 		},
 		flags: { },
