@@ -6772,9 +6772,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -136,
 	},
 	emergingvolt: {
-		onModifyPriority(priority, pokemon, target, move) {
-			if (((pokemon.baseMaxhp / 2) > pokemon.hp) && move.type === 'Electric') {
-				return priority + 1;
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (((attacker.baseMaxhp / 2) > attacker.hp) && move.type === 'Electric') {
+				this.debug('Emerging Volt boost');
+				return this.chainModify(1.6);
 			}
 		},
 		flags: { },
