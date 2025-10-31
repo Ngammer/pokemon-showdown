@@ -23586,4 +23586,85 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Steel",
 		contestType: "Tough",
 	},
+	historicterrain: {
+		num: 604,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Historic Terrain",
+		pp: 10,
+		priority: 0,
+		flags: { nonsky: 1, metronome: 1 },
+		terrain: 'historicterrain',
+		condition: {
+			effectType: 'Terrain',
+			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasItem('terrainextender')) {
+					return 10;
+				}
+				return 5;
+			},
+			onBasePowerPriority: 6,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === 'Dragon' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
+					this.debug('historic terrain boost');
+					return this.chainModify([8192, 4096]);
+				}
+			},
+			onAfterMoveSecondarySelf(source, target, move) {
+				if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag &&
+					move.type === 'Dragon' && source.isGrounded() && !source.isSemiInvulnerable()) {
+					this.damage(source.baseMaxhp / 5, source, source);
+				}
+			},
+			onHit(target, source, move) {
+				if (move.type === 'Steel' && source.isGrounded() && !source.isSemiInvulnerable()) {
+					for (const side of source.side.foeSidesWithConditions()) {
+						side.addSideCondition('gmaxsteelsurge');
+					}
+				}
+				if (move.type === 'Electric' && source.isGrounded() && !source.isSemiInvulnerable()) {
+					for (const side of source.side.foeSidesWithConditions()) {
+						side.addSideCondition('iondeluge');
+					}
+				}
+				if (move.type === 'Ice' && source.isGrounded() && !source.isSemiInvulnerable()) {
+					this.field.setWeather('snowscape');
+				}
+				if (move.type === 'Rock' && source.isGrounded() && !source.isSemiInvulnerable()) {
+					this.field.setWeather('sandstorm');
+				}
+			},
+			onAnyEffectiveness(typeMod, target, type, move) {
+				if (move.type === 'Normal' && target?.isGrounded() && !target?.isSemiInvulnerable()) {
+					return 0;
+				}
+			},
+			onFieldStart(field, source, effect) {
+				if (effect?.effectType === 'Ability') {
+					this.add('-fieldstart', 'move: Historic Terrain', '[from] ability: ' + effect.name, `[of] ${source}`);
+				} else {
+					this.add('-fieldstart', 'move: Historic Terrain');
+				}
+			},
+			onFieldResidualOrder: 27,
+			onFieldResidualSubOrder: 7,
+			onFieldEnd() {
+				this.add('-fieldend', 'move: Historic Terrain');
+			},
+		},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: +1,
+				},
+			},
+		},
+		target: "all",
+		type: "Normal",
+		zMove: { boost: { spe: 1 } },
+		contestType: "Clever",
+	},
 };
