@@ -2465,6 +2465,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Snorlaxite",
 		shortDesc: "If held by a Snorlax, this item allows it to Mega Evolve in battle.",
 	},
+	laprasite: {
+		name: "Laprasite",
+		shortDesc: "If held by a Lapras, this item allows it to Mega Evolve in battle.",
+	},
 	dimencionador: {
 		name: "Dimencionador",
 		shortDesc: "Holder's use of Trick Room, Wonder Room, Magic Room, or Gravity lasts 8 turns instead of 5.",
