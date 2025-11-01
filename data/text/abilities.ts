@@ -2454,11 +2454,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	marine: {
 		name: "Marine",
-		shortDesc: "2x power of Water-type moves.",
+		shortDesc: "2x power of Water-type moves; Water type weaknesses and resistances.",
 	},
 	rainbowfeather: {
 		name: "Rainbow Feather",
-		shortDesc: "Flying-type moves have a 33% chance to raise a random stat.",
+		shortDesc: "Flying-type moves have a 33% chance to raise a random stat on hit.",
 	},
 	forestguardian: {
 		name: "Forest Guardian",
@@ -2487,5 +2487,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	brutalkick: {
 		name: "Brutal Kick",
 		shortDesc: "1.5x power for kicking moves.",
+	},
+	resilience: {
+		name: "Resilience",
+		desc: "If this Pokemon has a non-volatile status condition, its Special Attack is multiplied by 1.5. This Pokemon's special attacks ignore the freeze effect of halving damage.",
+		shortDesc: "If this Pokemon is statused, its Special Attack is 1.5x; ignores freeze halving special damage.",
 	},
 };
