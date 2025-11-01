@@ -84,7 +84,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	aspearberry: {
 		name: "Aspear Berry",
-		shortDesc: "Holder is cured if it is frozen. Single use.",
+		shortDesc: "Holder is cured if it is frozen and restores 1/4 max HP. Single use.",
 	},
 	assaultvest: {
 		name: "Assault Vest",
@@ -244,7 +244,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	cheriberry: {
 		name: "Cheri Berry",
-		shortDesc: "Holder cures itself if it is paralyzed. Single use.",
+		shortDesc: "Holder cures itself if it is paralyzed and restores 1/4 max HP. Single use.",
 	},
 	cherishball: {
 		name: "Cherish Ball",
@@ -252,7 +252,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	chestoberry: {
 		name: "Chesto Berry",
-		shortDesc: "Holder wakes up if it is asleep. Single use.",
+		shortDesc: "Holder wakes up if it is asleep and restores 1/4 max HP. Single use.",
 	},
 	chilanberry: {
 		name: "Chilan Berry",
@@ -1291,11 +1291,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	pechaberry: {
 		name: "Pecha Berry",
-		shortDesc: "Holder is cured if it is poisoned. Single use.",
+		shortDesc: "Holder is cured if it is poisoned and restores 1/4 max HP. Single use.",
 	},
 	persimberry: {
 		name: "Persim Berry",
-		shortDesc: "Holder is cured if it is confused. Single use.",
+		shortDesc: "Holder is cured if it is confused and restores 1/4 max HP. Single use.",
 	},
 	petayaberry: {
 		name: "Petaya Berry",
@@ -1465,7 +1465,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	rawstberry: {
 		name: "Rawst Berry",
-		shortDesc: "Holder is cured if it is burned. Single use.",
+		shortDesc: "Holder is cured if it is burned and restores 1/4 max HP. Single use.",
 	},
 	razorclaw: {
 		name: "Razor Claw",
