@@ -2432,11 +2432,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	emergingvolt: {
 		name: "Emerging Volt",
-		shortDesc: "Electric moves gain priority at 1/2 HP or less.",
+		shortDesc: "Electric have their power multiplied by 1.6 at 1/2 HP or less.",
 	},
 	volcanoaura: {
 		name: "Volcano Aura",
-		shortDesc: "Absorbs Water moves for immunity.",
+		desc: "This Pokemon is immune to Water-type moves and clears all stat changes when hit by an Electric-type move.",
+		shortDesc: "This Pokemon clears all stat changes when hit by Water moves; Water immunity.",
 	},
 	knowledge: {
 		name: "Knowledge",
@@ -2449,7 +2450,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cleanwater: {
 		name: "Clean Water",
-		shortDesc: "Water moves are super effective against Poison. Cannot be poisoned. Poison power against it is halved.",
+		shortDesc: "Water moves are super effective against Poison. Poison power against it is halved.",
 	},
 	marine: {
 		name: "Marine",
