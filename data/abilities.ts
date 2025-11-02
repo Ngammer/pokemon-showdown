@@ -6471,7 +6471,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				for (const ally of allies) {
 					ally.heal(ally.baseMaxhp / 10);
 				}
-				pokemon.heal(pokemon.baseMaxhp / 10)
+				pokemon.heal(pokemon.baseMaxhp / 10);
 			}
 		},
 		flags: { },
