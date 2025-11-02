@@ -1989,7 +1989,7 @@ raticatealola: {
 			bulkup: ["9M"],
 			bulletseed: ["9M"], //Añadido
 			chipaway: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -2338,7 +2338,7 @@ fearill: {
 			bravebird: ["9M"],
 			//captivate //Removido
 			ceaselessedge: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"], //Añadido
 			curse: ["9M"],
@@ -8696,7 +8696,7 @@ persian: {
 			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			//chillingwater //Removido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"], //Añadido
 			covet: ["9M"],
@@ -8825,7 +8825,7 @@ persianalola: {
 			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			//chillingwater //Removido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"],
 			covet: ["9M"],
@@ -22396,7 +22396,7 @@ gyarados: {
 			bulldoze: ["9M"],
 			//captivate //Removido
 			chillingwater: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			constrict: ["9M"], //Añadido
 			crunch: ["9M"],
@@ -25269,7 +25269,7 @@ moltresgalar: {
 			assurance: ["9M"],
 			bravebird: ["9M"],
 			burningjealousy: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			curse: ["9M"], //Añadido
 			cut: ["9M"], //Añadido
 			darkpulse: ["9M"],
@@ -26894,7 +26894,7 @@ typhlosionhisui: {
 			burningjealousy: ["9M"],
 			calmmind: ["9M"],
 			clearsmog: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confuseray: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"], //Añadido
@@ -28301,7 +28301,7 @@ noceadowl: {
 			calmmind: ["9M"],
 			//captivate //Removido
 			clearsmog: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
@@ -33951,7 +33951,7 @@ granbull: {
 			captivate: ["9M"],
 			charm: ["9M"],
 			closecombat: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -39292,7 +39292,7 @@ pupitar: {
 			bulldoze: ["9M"],
 			//captivate //Removido
 			chipaway: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
@@ -39398,7 +39398,7 @@ tyranitar: {
 			bulldoze: ["9M"],
 			//captivate //Removido
 			chipaway: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
