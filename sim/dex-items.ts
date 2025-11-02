@@ -6,6 +6,7 @@ interface FlingData {
 	basePower: number;
 	status?: string;
 	volatileStatus?: string;
+	chance?: number;
 	effect?: CommonHandlers['ResultMove'];
 }
 

@@ -1579,9 +1579,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of pokemon.foes()) {
 				if (target.item) {
 					this.add('-item', target, target.getItem().name, '[from] ability: Frisk', `[of] ${pokemon}`);
-					target.addVolatile("embargo");
+					target.addVolatile("frisk");
 				}
 			}
+		},
+		condition: {
+			duration: 8,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Frisk');
+				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			},
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Frisk');
+			},
 		},
 		flags: { },
 		name: "Frisk",
@@ -2036,7 +2047,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Water') {
+			if (move.type === 'Ice') {
 				this.debug('Ice Body boost');
 				return this.chainModify(1.1);
 			}
@@ -4977,7 +4988,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTakeItem(item, pokemon, source) {
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
 			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
-			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff' || this.activeMove.id === 'embargo') {
 				this.add('-activate', pokemon, 'ability: Sticky Hold');
 				return false;
 			}
@@ -6381,7 +6392,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (this.effectState.fallen) {
-				const powMod = [4096, 4301, 4506, 4710, 4915, 5120, 5325, 5530, 5734, 5939, 6144];
+				const powMod = [4096, 4321, 4547, 4772, 4997, 5222, 5448, 5673, 5898, 6124, 6349];
 				this.debug(`Soul Eater boost: ${powMod[this.effectState.fallen]}/4096`);
 				return this.chainModify([powMod[this.effectState.fallen], 4096]);
 			}
@@ -6413,7 +6424,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (typeof move.accuracy === 'number') {
 				const change = 100 - move.accuracy;
 				move.accuracy += change;
-				move.basePower -= change * 0.25;
+				if (move.basePower !== 0) {
+					move.basePower -= change * 0.25;
+				}
 			}
 		},
 		flags: { },
@@ -6454,7 +6467,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	soulliberator: {
 		onStart(pokemon) {
 			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
-				this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, pokemon);
+				const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
+				for (const ally of allies) {
+					this.heal(ally.baseMaxhp / 10, ally, pokemon);
+				}
 			}
 		},
 		flags: { },
@@ -6558,7 +6574,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['contact'] || move.type === 'Steel') {
-				return this.chainModify(1.15);
+				if (move.flags['contact'] && move.type === 'Steel') {
+					return this.chainModify(1.30);
+				} else {
+					return this.chainModify(1.15);
+				}
 			}
 		},
 		onSourceDamagingHit(damage, target, source, move) {
@@ -6669,8 +6689,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMove(move, pokemon, target) {
 			if (move.category === "Special") {
 				move.overrideOffensiveStat = 'spd';
+				move.basePower *= 0.75;
 			} else if (move.category === "Physical") {
 				move.overrideOffensiveStat = 'def';
+				move.basePower *= 0.75;
 			}
 		},
 		flags: { },
@@ -6750,9 +6772,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -136,
 	},
 	emergingvolt: {
-		onModifyPriority(priority, pokemon, target, move) {
-			if (((pokemon.baseMaxhp / 2) > pokemon.hp) && move.type === 'Electric') {
-				return priority + 1;
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (((attacker.baseMaxhp / 2) > attacker.hp) && move.type === 'Electric') {
+				this.debug('Emerging Volt boost');
+				return this.chainModify(1.6);
 			}
 		},
 		flags: { },
@@ -6764,6 +6788,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
 				this.add('-immune', target, '[from] ability: Volcano Aura');
+				this.add('-clearallboost');
+				for (const pokemon of this.getAllActive()) {
+					pokemon.clearBoosts();
+				}
 				return null;
 			}
 		},
@@ -6773,21 +6801,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -138,
 	},
 	cleanwater: {
-		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison' && move.type === 'Water') return 1;
+		onFoeEffectiveness(typeMod, target, type, move) {
+			if (type === 'Poison' && move.type === 'Water') return -1;
 		},
-		onUpdate(pokemon) {
-			if (pokemon.status === 'brn') {
-				this.add('-activate', pokemon, 'ability: Clean Water');
-				pokemon.cureStatus();
+		onDamage(damage, target, source, effect) {
+			if (effect && (effect.id === 'psn' || effect.id === 'tox')) {
+				return damage / 2;
 			}
-		},
-		onSetStatus(status, target, source, effect) {
-			if (status.id !== 'brn') return;
-			if ((effect as Move)?.status) {
-				this.add('-immune', target, '[from] ability: Clean Water');
-			}
-			return false;
 		},
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
@@ -6819,13 +6839,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(2);
 			}
 		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (move.type === 'Electric' || move.type === 'Grass') {
+				return 1;
+			}
+			if (move.type === 'Fire' || move.type === 'Water' || move.type === 'Ice' || move.type === 'Steel') {
+				return -1;
+			}
+		},
 		flags: { breakable: 1 },
 		name: "Marine",
 		rating: 4.5,
 		num: -140,
 	},
 	rainbowfeather: {
-		onModifyMove(move, pokemon, target) {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (move.type === 'Flying') {
 				if (this.randomChance(33, 100)) {
 					const r = this.random(100);
@@ -7087,5 +7116,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Brutal Kick",
 		rating: 3.5,
 		num: -149,
+	},
+	resilience: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Resilience",
+		rating: 3.5,
+		num: 62,
 	},
 };

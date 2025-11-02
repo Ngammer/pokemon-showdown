@@ -155,12 +155,31 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			const min = sourceEffect?.id === 'axekick' ? 3 : 2;
 			this.effectState.time = this.random(min, 6);
+			this.effectState.counter = 1;
 		},
 		onEnd(target) {
 			this.add('-end', target, 'confusion');
 		},
 		onModifyMove(move, pokemon, target) {
-			move.recoil = [25, 100];
+			move.recoil = [50, 100];
+		},
+		onBeforeMovePriority: 1,
+		onBeforeMove(pokemon) {
+			pokemon.volatiles['confusion'].time--;
+			if (!pokemon.volatiles['confusion'].time) {
+				pokemon.removeVolatile('confusion');
+				return;
+			}
+			pokemon.statusState.counter += 1;
+			if (pokemon.statusState.counter >= 3) {
+				this.activeTarget = pokemon;
+				const damage = this.actions.getConfusionDamage(pokemon, 40);
+				if (typeof damage !== 'number') throw new Error("Confusion damage not dealt");
+				const activeMove = { id: this.toID('confused'), effectType: 'Move', type: '???' };
+				this.damage(damage, pokemon, pokemon, activeMove as ActiveMove);
+				pokemon.statusState.counter = 1;
+				return false;
+			}
 		},
 	},
 	flinch: {
@@ -643,32 +662,36 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	hail: {
 		name: 'Hail',
-		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
+			if (source?.effectiveWeather() === 'snowscape') {
 				return 8;
 			}
 			return 5;
 		},
-		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, `[of] ${source}`);
-			} else {
-				this.add('-weather', 'Hail');
+		onSideStart(side) {
+			this.add('-sidestart', side, 'Hail');
+			this.effectState.layers = 1;
+		},
+		onSideRestart(side) {
+			if (this.effectState.layers >= 5) return false;
+			this.add('-sidestart', side, 'Hail');
+			this.effectState.layers++;
+		},
+		onSwitchIn(pokemon) {
+			if (pokemon.hasType('Ice')) {
+				this.add('-sideend', pokemon.side, 'move: Hail', `[of] ${pokemon}`);
+				pokemon.side.removeSideCondition('hail');
 			}
-		},
-		onFieldResidualOrder: 1,
-		onFieldResidual() {
-			this.add('-weather', 'Hail', '[upkeep]');
-			if (this.field.isWeather('hail')) this.eachEvent('Weather');
-		},
-		onWeather(target) {
-			this.damage(target.baseMaxhp / 16);
-		},
-		onFieldEnd() {
-			this.add('-weather', 'none');
+			if (pokemon.hasType('Ice') || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) {
+				return;
+			}
+			const damageAmounts = [0, 1, 2, 3, 4, 5];
+			this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 20);
+			const result = this.random(100);
+			if (result <= 5 * damageAmounts[this.effectState.layers]) {
+				pokemon.trySetStatus('frz', pokemon.side.foe.active[0]);
+			}
 		},
 	},
 	snowscape: {

@@ -66,8 +66,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	acupressure: {
 		name: "Acupressure",
-		desc: "Raises a random stat by 2 stages as long as the stat is not already at stage 6. The user can choose to use this move on itself or an adjacent ally. Fails if no stat stage can be raised or if used on an ally with a substitute.",
-		shortDesc: "Raises a random stat of the user or an ally by 2.",
+		desc: "Raises two random stats by 1 stage as long as the stats are not already at stage 6. The user can choose to use this move on itself or an adjacent ally. Fails if no stat stage can be raised or if used on an ally with a substitute.",
+		shortDesc: "Raises two random stats of the user or an ally by 1.",
 		gen4: {
 			desc: "Raises a random stat by 2 stages as long as the stat is not already at stage 6. The user can choose to use this move on itself or an ally. Fails if no stat stage can be raised or if the user or ally has a substitute.",
 		},
@@ -182,7 +182,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	aquatail: {
 		name: "Aqua Tail",
-		shortDesc: "No additional effect.",
+		desc: "Has a 30% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "30% chance to lower the target's Speed by 1.",
 	},
 	armorcannon: {
 		name: "Armor Cannon",
@@ -220,8 +221,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	assist: {
 		name: "Assist",
-		desc: "A random move among those known by the user's party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Blazing Torque, Bounce, Celebrate, Chatter, Circle Throw, Combat Torque, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Magical Torque, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Noxious Torque, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Tera Starstorm, Thief, Transform, Trick, Whirlwind, or Wicked Torque.",
-		shortDesc: "Uses a random move known by a team member.",
+		desc: "The user restores 1/8 of its maximum HP for each unfainted Pokemon, rounded half up.",
+		shortDesc: "All healthy allies aid in healing the user.",
 		gen8: {
 			desc: "A random move among those known by the user's party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, or Whirlwind.",
 		},
@@ -270,7 +271,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	attract: {
 		name: "Attract",
 		desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Oblivious Ability or protected by the Aroma Veil Ability are immune.",
-		shortDesc: "A target of the opposite gender gets infatuated.",
+		shortDesc: "A target of the opposite gender gets infatuated; -1 Def and Spd. ",
 		gen5: {
 			desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Oblivious Ability are immune.",
 		},
@@ -296,8 +297,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	aurorabeam: {
 		name: "Aurora Beam",
-		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "100% chance to lower the target's Attack by 1.",
+		shortDesc: "No additional effect.",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Attack by 1 stage.",
 			shortDesc: "33% chance to lower the target's Attack by 1.",
@@ -332,15 +332,15 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	axekick: {
 		name: "Axe Kick",
-		desc: "Has a 30% chance to confuse the target. If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
-		shortDesc: "30% confusion. User loses 50% max HP if miss.",
+		desc: "Has a 50% chance to confuse the target. If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
+		shortDesc: "50% confusion. User loses 50% max HP if miss.",
 
 		damage: "#crash",
 	},
 	babydolleyes: {
 		name: "Baby-Doll Eyes",
-		desc: "Lowers the target's Attack by 1 stage.",
-		shortDesc: "Lowers the target's Attack by 1.",
+		desc: "Lowers the target's Attack by 2 stages.",
+		shortDesc: "Lowers the target's Attack by 2.",
 	},
 	baddybad: {
 		name: "Baddy Bad",
@@ -384,8 +384,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	batonpass: {
 		name: "Baton Pass",
-		desc: "The user is replaced with another Pokemon in its party. The selected Pokemon has the user's stat stage changes transferred to it, as well as the effects of confusion, Aqua Ring, Curse, Dragon Cheer, Embargo, Focus Energy, Gastro Acid, Heal Block, Ingrain, Leech Seed, Lock-On (Mind Reader), Magnet Rise, Perish Song, Power Trick, Telekinesis, and a substitute with its remaining HP. The effect of Gastro Acid is not transferred if the recipient has an Ability that cannot be affected.",
-		shortDesc: "User switches, passing stat changes and more.",
+		desc: "The user is replaced with another Pokemon in its party. The selected Pokemon restores 1/4 of its maximum HP.",
+		shortDesc: "User switches, healing the target by 25% of its max HP.",
 		gen8: {
 			desc: "The user is replaced with another Pokemon in its party. The selected Pokemon has the user's stat stage changes transferred to it, as well as the effects of confusion, Aqua Ring, Curse, Embargo, Focus Energy, Gastro Acid, Heal Block, Ingrain, Leech Seed, Lock-On (Mind Reader), Magnet Rise, Perish Song, Power Trick, Telekinesis, and a substitute with its remaining HP. The effect of Gastro Acid is not transferred if the recipient has an Ability that cannot be affected.",
 		},
@@ -414,8 +414,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	beatup: {
 		name: "Beat Up",
-		desc: "For each fallen ally the movement gets -20BP.",
-		shortDesc: "For each fallen ally the movement gets -20BP.",
+		desc: "For each fallen ally the movement gets -15 BP.",
+		shortDesc: "For each fallen ally the movement gets -15 BP.",
 		gen4: {
 			desc: "Deals typeless damage. Hits one time for the user and one time for each unfainted Pokemon without a non-volatile status condition in the user's party. For each hit, the damage formula uses the participating Pokemon's base Attack as the Attack stat, the target's base Defense as the Defense stat, and ignores stat stages and other effects that modify Attack or Defense; each hit is considered to come from the user.",
 		},
@@ -458,8 +458,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bestow: {
 		name: "Bestow",
-		desc: "The target receives the user's held item. Fails if the user has no item or is holding a Mail or Z-Crystal, if the target is already holding an item, if the user is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, a Pokemon that can Mega Evolve holding the Mega Stone for its species, or if the target is one of those Pokemon and the user is holding the respective item.",
-		shortDesc: "User passes its held item to the target.",
+		desc: "If the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.",
+		shortDesc: "If the target is an ally, heals 50% of its max HP.",
 		gen6: {
 			desc: "The target receives the user's held item. Fails if the user has no item or is holding a Mail, if the target is already holding an item, if the user is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Pokemon that can Mega Evolve holding the Mega Stone for its species, or if the target is one of those Pokemon and the user is holding the respective item.",
 		},
@@ -1360,7 +1360,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	delusionancientrite: {
 		name: "Delusion Ancient Rite",
-		shortDesc: "Place a Substitute; Critical ratio: +2.",
+		shortDesc: "Place a Substitute; Critical ratio: +3.",
 	},
 	destinybond: {
 		name: "Destiny Bond",
@@ -3622,7 +3622,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	lazyancientrite: {
 		name: "Lazy Ancient Rite",
-		desc: "Causes the target's Ability to become Insomnia. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Truant, Zen Mode, or Zero to Hero. Reduces all target stats",
+		desc: "Causes the target's Ability to become Truant. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Truant, Zen Mode, or Zero to Hero. Reduces all target stats",
 		shortDesc: "The target's Ability becomes Truant. Can't be selected next turn. Spa: +1",
 	},
 	leafage: {

@@ -2340,8 +2340,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	souleater: {
 		name: "Soul Eater",
-		desc: "This Pokemon's moves have their power multiplied by 1+(X*0.05), where X is the total number of times any Pokemon has fainted when this Ability became active, and X cannot be greater than 10.",
-		shortDesc: "This Pokemon's moves have 5% more power for each fainted Pokemon, up to 10 Pokemon.",
+		desc: "This Pokemon's moves have their power multiplied by 1+(X*0.055), where X is the total number of times any Pokemon has fainted when this Ability became active, and X cannot be greater than 10.",
+		shortDesc: "This Pokemon's moves have 5.5% more power for each fainted Pokemon, up to 10 Pokemon.",
 
 		activate: "  [POKEMON] gained strength from the fallen!",
 	},
@@ -2363,7 +2363,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	soulliberator: {
 		name: "Soul Liberator",
-		shortDesc: "After an ally has fainted, if user switches-in, user's all stats +1.",
+		shortDesc: "After an ally has fainted, if user switches-in, all allies heal 10% HP.",
 		activate: "  [POKEMON] has led the fallen one along the path of light!",
 	},
 	puresoul: {
@@ -2372,7 +2372,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	lastblow: {
 		name: "Last Blow",
-		shortDesc: "On Switching in, automatically knocks out foes with less than 25% HP when.",
+		shortDesc: "On Switching in, automatically knocks out foes with less than 25% HP.",
 	},
 	vampirism: {
 		name: "Vampirism",
@@ -2416,7 +2416,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	overwhelmingdefense: {
 		name: "Overwhelming Defense",
-		shortDesc: "Uses Defense for physical attacks, Special Defense for special attacks.",
+		shortDesc: "Uses Defense for physical attacks and Special Defense for special attacks, but have their power multiplied by 0.75.",
 	},
 	blessedbody: {
 		name: "Blessed Body",
@@ -2432,11 +2432,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	emergingvolt: {
 		name: "Emerging Volt",
-		shortDesc: "Electric moves gain priority at 1/2 HP or less.",
+		shortDesc: "Electric have their power multiplied by 1.6 at 1/2 HP or less.",
 	},
 	volcanoaura: {
 		name: "Volcano Aura",
-		shortDesc: "Absorbs Water moves for immunity.",
+		desc: "This Pokemon is immune to Water-type moves and clears all stat changes when hit by an Electric-type move.",
+		shortDesc: "This Pokemon clears all stat changes when hit by Water moves; Water immunity.",
 	},
 	knowledge: {
 		name: "Knowledge",
@@ -2449,15 +2450,15 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cleanwater: {
 		name: "Clean Water",
-		shortDesc: "Water moves are super effective against Poison. Cannot be poisoned. Poison power against it is halved.",
+		shortDesc: "Water moves are super effective against Poison. Poison power against it is halved.",
 	},
 	marine: {
 		name: "Marine",
-		shortDesc: "2x power of Water-type moves.",
+		shortDesc: "2x power of Water-type moves; Water type weaknesses and resistances.",
 	},
 	rainbowfeather: {
 		name: "Rainbow Feather",
-		shortDesc: "Flying-type moves have a 33% chance to raise a random stat.",
+		shortDesc: "Flying-type moves have a 33% chance to raise a random stat on hit.",
 	},
 	forestguardian: {
 		name: "Forest Guardian",
@@ -2486,5 +2487,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	brutalkick: {
 		name: "Brutal Kick",
 		shortDesc: "1.5x power for kicking moves.",
+	},
+	resilience: {
+		name: "Resilience",
+		desc: "If this Pokemon has a non-volatile status condition, its Special Attack is multiplied by 1.5. This Pokemon's special attacks ignore the freeze effect of halving damage.",
+		shortDesc: "If this Pokemon is statused, its Special Attack is 1.5x; ignores freeze halving special damage.",
 	},
 };

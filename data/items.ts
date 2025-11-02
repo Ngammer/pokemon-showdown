@@ -324,6 +324,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'frz') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 153,
@@ -911,6 +912,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'par') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 149,
@@ -939,6 +941,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'slp') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 150,
@@ -1379,6 +1382,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 92,
 		fling: {
 			basePower: 80,
+			volatileStatus: 'confusion',
+			chance: 50,
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Dawn Stone') {
@@ -1720,6 +1725,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 116,
 		fling: {
 			basePower: 80,
+			volatileStatus: 'curse',
+			chance: 25,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Dusk Stone' && move.type === 'Ghost') {
@@ -2186,6 +2193,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 142,
 		fling: {
 			basePower: 30,
+			status: 'brn',
+			chance: 25,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Fire Stone' && move.type === 'Fire') {
@@ -2268,6 +2277,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 147,
 		fling: {
 			basePower: 30,
+			volatileStatus: 'magnetrise',
 		},
 		onModifyWeight(weighthg) {
 			return this.trunc(weighthg / 2);
@@ -2929,6 +2939,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 187,
 		fling: {
 			basePower: 100,
+			effect(target, source, move) {
+				this.field.setWeather('sandstorm');
+			},
+			chance: 20,
 		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
@@ -3131,6 +3145,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 693,
 		fling: {
 			basePower: 30,
+			effect(target, source, move) {
+				this.field.setWeather('snowscape');
+			},
+			chance: 20,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Ice Stone' && move.type === 'Ice') {
@@ -3533,6 +3551,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 241,
 		fling: {
 			basePower: 30,
+			volatileStatus: 'leechseed',
+			chance: 20,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Leaf Stone' && move.type === 'Grass') {
@@ -4515,6 +4535,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 295,
 		fling: {
 			basePower: 30,
+			volatileStatus: 'attract',
+			chance: 50,
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Moon Stone') {
@@ -4855,6 +4877,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'psn' || pokemon.status === 'tox') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 151,
@@ -4875,6 +4898,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		onEat(pokemon) {
 			pokemon.removeVolatile('confusion');
+			this.heal(pokemon.baseMaxhp / 4);
 		},
 		num: 156,
 		gen: 3,
@@ -5506,6 +5530,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onEat(pokemon) {
 			if (pokemon.status === 'brn') {
 				pokemon.cureStatus();
+				this.heal(pokemon.baseMaxhp / 4);
 			}
 		},
 		num: 152,
@@ -6670,6 +6695,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 480,
 		fling: {
 			basePower: 30,
+			effect(target, source, move) {
+				this.field.setWeather('sunnyday');
+			},
+			chance: 50,
 		},
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.evoItem === 'Sun Stone') {
@@ -6855,6 +6884,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 492,
 		fling: {
 			basePower: 30,
+			status: 'par',
+			chance: 25,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Thunder Stone' && move.type === 'Electric') {
@@ -8706,6 +8737,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 529,
 		fling: {
 			basePower: 30,
+			effect(target, source, move) {
+				this.field.setWeather('raindance');
+			},
+			chance: 20,
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (source.baseSpecies.evoItem === 'Water Stone' && move.type === 'Water') {
@@ -9377,8 +9412,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 
 	},
-	totemgigante: {
-		name: "Totem Gigante",
+	gianttotem: {
+		name: "Giant Totem",
 		spritenum: 758,
 		pseudoMegaStone: true,
 		onSwitchIn(pokemon) {

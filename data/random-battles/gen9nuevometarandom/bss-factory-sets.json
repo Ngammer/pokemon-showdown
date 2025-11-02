@@ -715,7 +715,7 @@
             ["U-turn"],
             ["Super Fang"]
         ],
-        "item": ["Totem Gigante"],
+        "item": ["Giant Totem"],
         "nature": "Careful",
         "evs": {"hp": 248, "atk": 8, "spd": 252},
         "teraType": ["Fairy", "Water"],
@@ -731,7 +731,7 @@
           ["Stockpile"],
           ["Power Trip"]
       ],
-      "item": ["Totem Gigante"],
+      "item": ["Giant Totem"],
       "nature": "Adamant",
       "evs": {"hp": 248, "atk": 252, "spd": 8},
       "teraType": ["Fairy", "Water"],
@@ -747,7 +747,7 @@
         ["Toxic"],
         ["Knock Off"]
     ],
-    "item": ["Totem Gigante"],
+    "item": ["Giant Totem"],
     "nature": "Careful",
     "evs": {"hp": 252, "spd": 252, "spe": 4},
     "teraType": ["Fairy", "Water"],
@@ -1837,7 +1837,7 @@
                     ["Monolith", "Head Smash"],
                     ["Wild Charge", "Thunder Fang"]
                 ],
-                "item": ["Totem Gigante"],
+                "item": ["Giant Totem"],
                 "nature": "Jolly",
                 "evs": {"atk": 252, "spd": 4, "spe": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -2685,7 +2685,7 @@
             ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
             ["Foul Play", "Burning Jealousy", "Swift"]
         ],
-        "item": ["Totem Gigante"],
+        "item": ["Giant Totem"],
         "nature": "Timid",
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
@@ -2702,7 +2702,7 @@
             ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
             ["Foul Play", "Burning Jealousy", "Swift"]
         ],
-        "item": ["Totem Gigante"],
+        "item": ["Giant Totem"],
         "nature": "Timid",
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
@@ -2719,7 +2719,7 @@
             ["Chloroblast", "Mega Drain", "Energy Ball", "Giga Drain"],
             ["Foul Play", "Burning Jealousy", "Swift"]
         ],
-        "item": ["Totem Gigante"],
+        "item": ["Giant Totem"],
         "nature": "Timid",
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "ivs": {"atk": 0},
@@ -2909,7 +2909,7 @@
                     ["Poltergeist", "Shadow Bone", "Rage"],
                     ["Knock Off", "Rock Climb", "Stone Edge", "Focus Punch", "Earthquake"]
                 ],
-                "item": ["Totem Gigante"],
+                "item": ["Giant Totem"],
                 "nature": "Brave",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -5145,7 +5145,7 @@
                   ["Roost"],
                   ["Focus Blast"]
               ],
-              "item": ["Totem Gigante"],
+              "item": ["Giant Totem"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
               "ivs": {"atk": 0},
@@ -5162,7 +5162,7 @@
                   ["Roost"],
                   ["Focus Blast", "Heat Wave"]
               ],
-              "item": ["Totem Gigante"],
+              "item": ["Giant Totem"],
               "nature": "Bold",
               "evs": {"hp": 252, "spa": 4, "def": 252},
               "ivs": {"atk": 0},
@@ -5179,7 +5179,7 @@
                 ["Focus Blast", "Heat Wave"],
                 ["Power Gem"]
             ],
-            "item": ["Totem Gigante"],
+            "item": ["Giant Totem"],
             "nature": "Timid",
             "evs": {"spd": 4, "hp": 252, "spa": 252},
             "ivs": {"atk": 0},

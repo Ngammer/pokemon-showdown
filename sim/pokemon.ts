@@ -865,7 +865,7 @@ export class Pokemon {
 		if (this.getItem().isPrimalOrb) return false;
 		if (this.itemState.knockedOff) return true; // Gen 3-4
 		if (this.battle.gen >= 5 && !this.isActive) return true;
-		if (this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom']) return true;
+		if (this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk']) return true;
 		// check Fling first to avoid infinite recursion
 		if (isFling) return this.battle.gen >= 5 && this.hasAbility('klutz');
 		return !this.getItem().ignoreKlutz && this.hasAbility('klutz');
@@ -1209,12 +1209,14 @@ export class Pokemon {
 
 	copyVolatileFrom(pokemon: Pokemon, switchCause?: string | boolean) {
 		this.clearVolatile();
-		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') this.boosts = pokemon.boosts;
+		if (switchCause !== 'shedtail' && switchCause !== 'doubleteam') this.heal(this.baseMaxhp / 4);
 		if (switchCause === 'doubleteam') this.setBoost({ spe: 1 });
 		for (const i in pokemon.volatiles) {
 			if (switchCause === 'shedtail' && i !== 'substitute') continue;
+
 			if (this.battle.dex.conditions.getByID(i as ID).noCopy) continue;
 			// shallow clones
+			/*
 			this.volatiles[i] = this.battle.initEffectState({ ...pokemon.volatiles[i], target: this });
 			if (this.volatiles[i].linkedPokemon) {
 				delete pokemon.volatiles[i].linkedPokemon;
@@ -1224,6 +1226,7 @@ export class Pokemon {
 					linkedPokeLinks[linkedPokeLinks.indexOf(pokemon)] = this;
 				}
 			}
+*/
 		}
 		pokemon.clearVolatile();
 		for (const i in this.volatiles) {
@@ -2119,7 +2122,7 @@ export class Pokemon {
 
 	isSemiInvulnerable() {
 		return (this.volatiles['fly'] || this.volatiles['bounce'] || this.volatiles['dive'] || this.volatiles['dig'] ||
-			this.volatiles['phantomforce'] || this.volatiles['shadowforce'] || this.isSkyDropped());
+			this.volatiles['phantomforce'] || this.volatiles['shadowforce'] || this.volatiles['camouflage'] || this.isSkyDropped());
 	}
 
 	isSkyDropped() {
