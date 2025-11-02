@@ -938,7 +938,7 @@ wartortle: {
 	},
 blastoise: {
 		learnset: {
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			ancientpower: ["9M"], //Añadido
 			aquajet: ["9M"],
 			aquatail: ["9M"],
@@ -13773,7 +13773,7 @@ magnemite: {
 	},
 magneton: {
 		learnset: {
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			autotomize: ["9M"], //Añadido
 			barrier: ["9M"], //Añadido
 			bide: ["9M"],
@@ -13864,7 +13864,7 @@ magneton: {
 	},
 magnezone: {
 		learnset: {
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			allyswitch: ["9M"],
 			autotomize: ["9M"], //Añadido
 			barrier: ["9M"], //Añadido
@@ -16433,7 +16433,7 @@ voltorbhisui: {
 electrode: {
 		learnset: {
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			bide: ["9M"],
 			burningjealousy: ["9M"],
 			charge: ["9M"],
@@ -16521,7 +16521,7 @@ electrode: {
 electrodehisui: {
 		learnset: {
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			ancientpower: ["9M"], //Añadido
 			bulletseed: ["9M"],
 			burningjealousy: ["9M"],
@@ -19782,7 +19782,7 @@ kingdrafeudal: {
 		learnset: {
 			acidspray: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			attract: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
@@ -22917,7 +22917,7 @@ jolteon: {
 		learnset: {
 			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			alluringvoice: ["9M"],
 			attract: ["9M"],
 			babydolleyes: ["9M"],
@@ -24957,7 +24957,7 @@ zapdos: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aircutter: ["9M"],
 			ancientpower: ["9M"],
 			//batonpass //Removido
@@ -25700,7 +25700,7 @@ mewtwo: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			//ancientpower //Removido
@@ -28603,7 +28603,7 @@ ledstar: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aircutter: ["9M"],
 			airslash: ["9M"],
 			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
@@ -29023,7 +29023,7 @@ chinchou: {
 lanturn: {
 		learnset: {
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			amnesia: ["9M"],
 			aquaring: ["9M"],
 			aquatail: ["9M"],
@@ -29831,7 +29831,7 @@ mareep: {
 		learnset: {
 			afteryou: ["9M"],
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			//attract //Removido
 			bodyslam: ["9M"],
 			//captivate //Removido
@@ -29917,7 +29917,7 @@ flaaffy: {
 		learnset: {
 			afteryou: ["9M"],
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			//attract //Removido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -30014,7 +30014,7 @@ ampharos: {
 		learnset: {
 			afteryou: ["9M"],
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			//attract //Removido
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
@@ -36990,7 +36990,7 @@ octillery: {
 octank: {
 		learnset: {
 			absorb: ["9M"], //Añadido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aquajet: ["9M"], //Añadido
 			assist: ["9M"], //Añadido
 			//assurance //Removido
@@ -38853,7 +38853,7 @@ raikou: {
 		learnset: {
 			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aurasphere: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
