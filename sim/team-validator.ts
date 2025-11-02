@@ -510,7 +510,8 @@ export class TeamValidator {
 
 		let outOfBattleSpecies = species;
 		let tierSpecies = species;
-		if (ability.id === 'battlebond' && toID(species.baseSpecies) === 'greninja') {
+		if (ability.id === 'battlebond' && toID(species.baseSpecies) === 'greninja' &&
+			this.format.mod !== 'gen9legendsou') {
 			outOfBattleSpecies = dex.species.get('greninjabond');
 			if (ruleTable.has('obtainableformes')) {
 				tierSpecies = outOfBattleSpecies;
@@ -646,6 +647,11 @@ export class TeamValidator {
 		species = dex.species.get(set.species);
 		item = dex.items.get(set.item);
 		ability = dex.abilities.get(set.ability);
+
+		if (!['M', 'F'].includes(set.gender)) set.gender = '';
+		if (this.gen <= 5 || ruleTable.has('obtainablemisc')) {
+			set.gender = species.gender || set.gender;
+		}
 
 		const { outOfBattleSpecies, tierSpecies } = this.getValidationSpecies(set);
 		if (ability.id === 'battlebond' && toID(species.baseSpecies) === 'greninja') {
@@ -1099,12 +1105,8 @@ export class TeamValidator {
 		}
 
 		if (!problems.length) {
-			if (!set.gender) {
-				if (this.gen <= 5 || ruleTable.has('obtainablemisc')) {
-					set.gender = species.gender || ['M', 'F'][Math.floor(Math.random() * 2)];
-				} else {
-					set.gender = 'N';
-				}
+			if (this.gen > 5 && !ruleTable.has('obtainablemisc')) {
+				set.gender ||= 'N';
 			}
 			if (adjustLevel) set.level = adjustLevel;
 			return null;
@@ -1594,8 +1596,13 @@ export class TeamValidator {
 		} else if (species.name === 'Slastma-Liberado') {
 			set.species = 'Slastma';
 			set.ability = 'Unstable Shell';
-		} else if (species.name === 'Zygarde-Complete') {
-			problems.push(`Zygarde-Complete must start the battle as Zygarde or Zygarde-10% with Power Construct. Please specify which Zygarde it should start as.`);
+		} else if (species.baseSpecies === 'Zygarde') {
+			if (species.name === 'Zygarde-Complete' || species.name === 'Zygarde-Mega') {
+				problems.push(`${species.name} must start the battle as Zygarde or Zygarde-10% with Power Construct. Please specify which Zygarde it should start as.`);
+			}
+			if (item.id === 'zygardite' && set.ability !== 'Power Construct') {
+				problems.push(`Zygarde holding Zygardite can only Mega Evolve with the Power Construct ability.`);
+			}
 		} else if (species.baseSpecies === 'Terapagos') {
 			set.species = 'Terapagos';
 			set.ability = 'Tera Shift';
