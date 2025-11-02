@@ -81,8 +81,7 @@ bulbasaur: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -183,8 +182,7 @@ ivysaur: {
 			return: ["9M"],
 			roar: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -301,8 +299,7 @@ venusaur: {
 			return: ["9M"],
 			roar: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -431,8 +428,7 @@ charmander: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -546,8 +542,7 @@ charmeleon: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -685,8 +680,7 @@ charizard: {
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			skydrop: ["9M"],
@@ -818,8 +812,7 @@ squirtle: {
 			rollout: ["9M"],
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -936,8 +929,7 @@ wartortle: {
 			rollout: ["9M"],
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -1071,8 +1063,7 @@ blastoise: {
 			rollout: ["9M"],
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			skullbash: ["9M"], //Añadido
@@ -1167,7 +1158,7 @@ caterpie: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -1223,7 +1214,7 @@ metapod: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -1315,8 +1306,7 @@ butterfree: {
 			return: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"],
@@ -1400,7 +1390,7 @@ weedle: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"], //Añadido
 			snore: ["9M"], //Añadido
@@ -1450,7 +1440,7 @@ kakuna: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"], //Añadido
 			snore: ["9M"], //Añadido
@@ -1528,8 +1518,7 @@ beedrill: {
 			return: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sharpen: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -1628,8 +1617,7 @@ pidgey: {
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -1713,8 +1701,7 @@ pidgeotto: {
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -1798,8 +1785,7 @@ pidgeot: {
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -1889,8 +1875,7 @@ rattata: {
 			revenge: ["9M"],
 			reversal: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skittersmack: ["9M"], //Añadido
@@ -1993,7 +1978,7 @@ rattataalola: {
 			reversal: ["9M"],
 			rocksmash: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -2094,8 +2079,7 @@ raticate: {
 			return: ["9M"],
 			roar: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skittersmack: ["9M"], //Añadido
@@ -2213,7 +2197,7 @@ raticatealola: {
 			rocksmash: ["9M"], //Añadido
 			rollout: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -2324,7 +2308,7 @@ raticatealolatotem: {
 			roar: ["9M"],
 			rocksmash: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -2425,8 +2409,7 @@ spearow: {
 			scaryface: ["9M"],
 			scratch: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -2522,8 +2505,7 @@ fearow: {
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -2644,8 +2626,7 @@ fearill: {
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
@@ -2762,8 +2743,7 @@ ekans: {
 			return: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowsneak: ["9M"],
 			slam: ["9M"],
@@ -2885,8 +2865,7 @@ arbok: {
 			rollout: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowsneak: ["9M"],
 			slam: ["9M"],
@@ -2992,8 +2971,7 @@ pichu: {
 			return: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -3109,8 +3087,7 @@ pichuspikyeared: {
 			reversal: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -3226,8 +3203,7 @@ pikachu: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			sing: ["9M"],
 			slam: ["9M"],
@@ -3351,8 +3327,7 @@ pikachucosplay: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -3451,7 +3426,7 @@ pikachurockstar: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -3535,7 +3510,7 @@ pikachubelle: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"], //Añadido
@@ -3607,7 +3582,7 @@ pikachupopstar: {
 			round: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -3698,7 +3673,7 @@ pikachuphd: {
 			safeguard: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
@@ -3779,7 +3754,7 @@ pikachulibre: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"], //Añadido
@@ -3867,7 +3842,7 @@ pikachuoriginal: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -3979,7 +3954,7 @@ pikachuhoenn: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4091,7 +4066,7 @@ pikachusinnoh: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4203,7 +4178,7 @@ pikachuunova: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4315,7 +4290,7 @@ pikachukalos: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4427,7 +4402,7 @@ pikachualola: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4539,7 +4514,7 @@ pikachupartner: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4642,7 +4617,7 @@ pikachustarter: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4739,7 +4714,7 @@ pikachuworld: {
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -4847,8 +4822,7 @@ raichu: {
 			rocksmash: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -5002,7 +4976,7 @@ raichualola: {
 			risingvoltage: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"],
@@ -5130,8 +5104,7 @@ sandshrew: {
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -5252,7 +5225,7 @@ sandshrewalola: {
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -5369,8 +5342,7 @@ sandslash: {
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -5504,7 +5476,7 @@ sandslashalola: {
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			sharpen: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -5603,8 +5575,7 @@ nidoranf: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -5699,8 +5670,7 @@ nidorina: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -5834,8 +5804,7 @@ nidoqueen: {
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
@@ -5959,8 +5928,7 @@ nidoranm: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -6053,8 +6021,7 @@ nidorino: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -6190,8 +6157,7 @@ nidoking: {
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
@@ -6335,8 +6301,7 @@ cleffa: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			sing: ["9M"],
@@ -6484,8 +6449,7 @@ clefairy: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			sing: ["9M"],
@@ -6660,8 +6624,7 @@ clefable: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			sing: ["9M"],
@@ -6817,8 +6780,7 @@ vulpix: {
 			roar: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
@@ -6932,8 +6894,7 @@ vulpixalola: {
 			roar: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sheercold: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -7056,8 +7017,7 @@ ninetales: {
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -7190,7 +7150,7 @@ ninetalesalola: {
 			round: ["9M"], //Añadido
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			sheercold: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -7302,8 +7262,7 @@ igglybuff: {
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			signalbeam: ["9M"], //Añadido
@@ -7448,8 +7407,7 @@ jigglypuff: {
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -7630,8 +7588,7 @@ wigglytuff: {
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -7774,8 +7731,7 @@ zubat: {
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -7879,8 +7835,7 @@ golbat: {
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -7988,8 +7943,7 @@ crobat: {
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			skyattack: ["9M"],
@@ -8091,8 +8045,7 @@ oddish: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -8191,8 +8144,7 @@ gloom: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -8294,8 +8246,7 @@ vileplume: {
 			return: ["9M"],
 			rototiller: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -8427,8 +8378,7 @@ bellossom: {
 			round: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -8529,8 +8479,7 @@ paras: {
 			rototiller: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -8630,8 +8579,7 @@ parasect: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -8730,8 +8678,7 @@ venonat: {
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -8840,8 +8787,7 @@ venomoth: {
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"],
@@ -8945,8 +8891,7 @@ diglett: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -9045,7 +8990,7 @@ diglettalola: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shoreup: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -9139,8 +9084,7 @@ dugtrio: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -9242,7 +9186,7 @@ dugtrioalola: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shoreup: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -9362,8 +9306,7 @@ meowth: {
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -9493,7 +9436,7 @@ meowthalola: {
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -9602,7 +9545,7 @@ meowthgalar: {
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -9724,8 +9667,7 @@ persian: {
 			roar: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -9865,7 +9807,7 @@ persianalola: {
 			roleplay: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -9980,7 +9922,7 @@ perrserker: {
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -10089,8 +10031,7 @@ psyduck: {
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			simplebeam: ["9M"],
 			slam: ["9M"], //Añadido
@@ -10249,8 +10190,7 @@ golduck: {
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			signalbeam: ["9M"], //Añadido
@@ -10407,8 +10347,7 @@ mankey: {
 			rollingkick: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
@@ -10544,8 +10483,7 @@ primeape: {
 			roleplay: ["9M"],
 			rollingkick: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -10653,7 +10591,7 @@ annihilape: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -10761,8 +10699,7 @@ growlithe: {
 			roar: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
@@ -10852,7 +10789,7 @@ growlithehisui: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -10957,8 +10894,7 @@ arcanine: {
 			sacredfire: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snarl: ["9M"],
@@ -11072,7 +11008,7 @@ arcaninehisui: {
 			sacredfire: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -11171,7 +11107,7 @@ arcaninehisuitotem: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -11258,8 +11194,7 @@ poliwag: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -11367,8 +11302,7 @@ poliwhirl: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -11512,8 +11446,7 @@ poliwrath: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			skyuppercut: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -11642,8 +11575,7 @@ politoed: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -11740,8 +11672,7 @@ abra: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
@@ -11862,8 +11793,7 @@ kadabra: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
@@ -11992,8 +11922,7 @@ alakazam: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skillswap: ["9M"], //Añadido
@@ -12123,8 +12052,7 @@ machop: {
 			roleplay: ["9M"],
 			rollingkick: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -12240,8 +12168,7 @@ machoke: {
 			rocktomb: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -12367,8 +12294,7 @@ machamp: {
 			rockwreaker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -12463,8 +12389,7 @@ bellsprout: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"],
 			sleeppowder: ["9M"],
@@ -12563,8 +12488,7 @@ weepinbell: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"],
 			sleeppowder: ["9M"],
@@ -12670,8 +12594,7 @@ victreebel: {
 			return: ["9M"],
 			rototiller: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeppowder: ["9M"],
@@ -12791,8 +12714,7 @@ tentacool: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -12918,8 +12840,7 @@ tentacruel: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -13034,8 +12955,7 @@ geodude: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -13142,7 +13062,7 @@ geodudealola: {
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shockwave: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -13254,8 +13174,7 @@ graveler: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -13363,7 +13282,7 @@ graveleralola: {
 			rollout: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -13477,8 +13396,7 @@ golem: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -13596,7 +13514,7 @@ golemalola: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -13698,8 +13616,7 @@ ponyta: {
 			rocksmash: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -13801,7 +13718,7 @@ ponytagalar: {
 			return: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			skillswap: ["9M"], //Añadido
@@ -13906,8 +13823,7 @@ rapidash: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
@@ -14039,7 +13955,7 @@ rapidashgalar: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
@@ -14151,8 +14067,7 @@ slowpoke: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slackoff: ["9M"],
 			slam: ["9M"], //Añadido
@@ -14273,7 +14188,7 @@ slowpokegalar: {
 			rest: ["9M"],
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slackoff: ["9M"],
 			slam: ["9M"], //Añadido
@@ -14399,8 +14314,7 @@ slowbro: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skullbash: ["9M"], //Añadido
 			slackoff: ["9M"],
@@ -14554,7 +14468,7 @@ slowbrogalar: {
 			rockblast: ["9M"],
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shellsidearm: ["9M"],
 			slackoff: ["9M"],
@@ -14708,8 +14622,7 @@ slowking: {
 			rockslide: ["9M"],
 			roleplay: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skillswap: ["9M"], //Añadido
 			skullbash: ["9M"], //Añadido
@@ -14887,8 +14800,7 @@ slowkingfeudal: {
 			round: ["9M"], //Añadido
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sheercold: ["9M"], //Añadido
@@ -15043,7 +14955,7 @@ slowkinggalar: {
 			return: ["9M"], //Añadido
 			roleplay: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slackoff: ["9M"],
 			slam: ["9M"], //Añadido
@@ -15166,8 +15078,7 @@ magnemite: {
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -15262,8 +15173,7 @@ magneton: {
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -15361,8 +15271,7 @@ magnezone: {
 			risingvoltage: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -15470,8 +15379,7 @@ farfetchd: {
 			sacredsword: ["9M"], //Añadido
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"],
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -15568,7 +15476,7 @@ farfetchdgalar: {
 			sacredsword: ["9M"], //Añadido
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"],
 			skyattack: ["9M"],
 			slam: ["9M"],
@@ -15636,7 +15544,7 @@ sirfetchd: {
 			roost: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -15708,8 +15616,7 @@ doduo: {
 			roost: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -15812,8 +15719,7 @@ dodrio: {
 			roost: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -15924,8 +15830,7 @@ seel: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			slackoff: ["9M"], //Añadido
 			slam: ["9M"],
@@ -16050,8 +15955,7 @@ dewgong: {
 			roleplay: ["9M"], //Añadido
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sheercold: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			slackoff: ["9M"], //Añadido
@@ -16164,8 +16068,7 @@ grimer: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shadowpunch: ["9M"],
@@ -16286,7 +16189,7 @@ grimeralola: {
 			return: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowsneak: ["9M"],
 			shockwave: ["9M"],
@@ -16408,8 +16311,7 @@ muk: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -16540,7 +16442,7 @@ mukalola: {
 			rocktomb: ["9M"],
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			shadowpunch: ["9M"], //Añadido
@@ -16647,8 +16549,7 @@ shellder: {
 			return: ["9M"],
 			rockblast: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -16747,8 +16648,7 @@ cloyster: {
 			return: ["9M"],
 			rockblast: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			skullbash: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -16865,8 +16765,7 @@ gastly: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
@@ -16985,8 +16884,7 @@ haunter: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -17122,8 +17020,7 @@ gengar: {
 			roleplay: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
@@ -17254,8 +17151,7 @@ onix: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -17374,8 +17270,7 @@ steelix: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -17482,8 +17377,7 @@ drowzee: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -17611,8 +17505,7 @@ hypno: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skillswap: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -17735,8 +17628,7 @@ krabby: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"], //Añadido
 			slam: ["9M"],
 			slash: ["9M"],
@@ -17851,8 +17743,7 @@ kingler: {
 			rocktomb: ["9M"],
 			rockwreaker: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -17951,8 +17842,7 @@ voltorb: {
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -18036,7 +17926,7 @@ voltorbhisui: {
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			shockwave: ["9M"], //Añadido
@@ -18117,8 +18007,7 @@ electrode: {
 			rollout: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -18211,7 +18100,7 @@ electrodehisui: {
 			rollout: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			shockwave: ["9M"], //Añadido
@@ -18291,7 +18180,7 @@ electrodehisuitotem: {
 			rollout: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			shockwave: ["9M"], //Añadido
@@ -18384,8 +18273,7 @@ exeggcute: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			slam: ["9M"], //Añadido
@@ -18503,8 +18391,7 @@ exeggutor: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			signalbeam: ["9M"], //Añadido
@@ -18629,7 +18516,7 @@ exeggutoralola: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			slam: ["9M"], //Añadido
@@ -18741,8 +18628,7 @@ cubone: {
 			sacredsword: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -18863,8 +18749,7 @@ marowak: {
 			sacredsword: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sing: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -19011,7 +18896,7 @@ marowakalola: {
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowbone: ["9M"],
@@ -19136,7 +19021,7 @@ marowakalolatotem: {
 			sacredsword: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowbone: ["9M"],
 			slam: ["9M"], //Añadido
@@ -19230,8 +19115,7 @@ tyrogue: {
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -19345,8 +19229,7 @@ hitmonlee: {
 			roleplay: ["9M"],
 			rollingkick: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -19468,8 +19351,7 @@ hitmonchan: {
 			rocktomb: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			skyuppercut: ["9M"],
 			slam: ["9M"], //Añadido
@@ -19587,8 +19469,7 @@ hitmontop: {
 			rollingkick: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"], //Añadido
@@ -19698,8 +19579,7 @@ lickitung: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"],
@@ -19828,8 +19708,7 @@ lickilicky: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -19924,8 +19803,7 @@ koffing: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slackoff: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -20029,8 +19907,7 @@ weezing: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slackoff: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -20146,7 +20023,7 @@ weezinggalar: {
 			round: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			silverwind: ["9M"], //Añadido
@@ -20278,8 +20155,7 @@ rhyhorn: {
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -20430,8 +20306,7 @@ rhydon: {
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -20575,8 +20450,7 @@ rhyperior: {
 			rockwrecker: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -20670,8 +20544,7 @@ happiny: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -20781,8 +20654,7 @@ chansey: {
 			return: ["9M"],
 			rockclimb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			sing: ["9M"],
@@ -20941,8 +20813,7 @@ blissey: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			sing: ["9M"],
@@ -21068,8 +20939,7 @@ tangela: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"],
 			sleeppowder: ["9M"],
@@ -21173,8 +21043,7 @@ tangrowth: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"],
@@ -21291,8 +21160,7 @@ kangaskhan: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -21406,8 +21274,7 @@ horsea: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smokescreen: ["9M"],
@@ -21497,8 +21364,7 @@ seadra: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -21601,8 +21467,7 @@ kingdra: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -21709,8 +21574,7 @@ kingdrafeudal: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -21796,8 +21660,7 @@ goldeen: {
 			return: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
@@ -21888,8 +21751,7 @@ seaking: {
 			return: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smartstrike: ["9M"],
@@ -21993,8 +21855,7 @@ staryu: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -22106,8 +21967,7 @@ starmie: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -22219,8 +22079,7 @@ mimejr: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -22362,8 +22221,7 @@ mrmime: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skillswap: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -22514,7 +22372,7 @@ mrmimegalar: {
 			return: ["9M"], //Añadido
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sheercold: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -22632,7 +22490,7 @@ mrrime: {
 			return: ["9M"], //Añadido
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slackoff: ["9M"],
 			slam: ["9M"], //Añadido
@@ -22736,8 +22594,7 @@ scyther: {
 			rocksmash: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sharpen: ["9M"], //Añadido
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -22852,8 +22709,7 @@ scizor: {
 			roost: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sharpen: ["9M"], //Añadido
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -22945,7 +22801,7 @@ kleavor: {
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
 			sleeptalk: ["9M"],
@@ -23036,8 +22892,7 @@ smoochum: {
 			return: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sing: ["9M"],
 			slam: ["9M"], //Añadido
@@ -23173,8 +23028,7 @@ jynx: {
 			roleplay: ["9M"],
 			scaryface: ["9M"], //Añadido
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sheercold: ["9M"], //Añadido
 			sing: ["9M"],
@@ -23304,8 +23158,7 @@ elekid: {
 			rocksmash: ["9M"],
 			rollingkick: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -23417,8 +23270,7 @@ electabuzz: {
 			rockclimb: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -23532,8 +23384,7 @@ electivire: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -23636,8 +23487,7 @@ magby: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smog: ["9M"],
@@ -23744,8 +23594,7 @@ magmar: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -23851,8 +23700,7 @@ magmortar: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smog: ["9M"],
@@ -23955,8 +23803,7 @@ pinsir: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
 			sleeptalk: ["9M"],
@@ -24066,8 +23913,7 @@ tauros: {
 			roleplay: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			skullbash: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -24168,7 +24014,7 @@ taurospaldeacombat: {
 			rocktomb: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			skullbash: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -24257,7 +24103,7 @@ taurospaldeablaze: {
 			rocktomb: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			skullbash: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -24343,7 +24189,7 @@ taurospaldeaaqua: {
 			rocktomb: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			skullbash: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -24404,7 +24250,7 @@ magikarp: {
 			return: ["9M"], //Añadido
 			scaleshot: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"], //Añadido
 			snore: ["9M"], //Añadido
@@ -24501,8 +24347,7 @@ gyarados: {
 			rocksmash: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snarl: ["9M"], //Añadido
@@ -24637,8 +24482,7 @@ lapras: {
 			rocksmash: ["9M"],
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sheercold: ["9M"],
 			sing: ["9M"],
 			slam: ["9M"], //Añadido
@@ -24759,8 +24603,7 @@ eevee: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			sing: ["9M"],
@@ -24845,7 +24688,7 @@ eeveestarter: {
 			sandattack: ["9M"],
 			sappyseed: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			sizzlyslide: ["9M"],
@@ -24959,8 +24802,7 @@ vaporeon: {
 			sandstorm: ["9M"], //Añadido
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -25086,8 +24928,7 @@ jolteon: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -25218,8 +25059,7 @@ flareon: {
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			sizzlyslide: ["9M"],
@@ -25359,8 +25199,7 @@ espeon: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			skillswap: ["9M"], //Añadido
@@ -25494,8 +25333,7 @@ umbreon: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
@@ -25622,8 +25460,7 @@ leafeon: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -25740,8 +25577,7 @@ glaceon: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -25845,8 +25681,7 @@ porygon: {
 			return: ["9M"],
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sharpen: ["9M"],
 			shockwave: ["9M"],
@@ -25950,8 +25785,7 @@ porygon2: {
 			rollout: ["9M"], //Añadido
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -26045,8 +25879,7 @@ porygonz: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -26140,8 +25973,7 @@ omanyte: {
 			rollout: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -26247,8 +26079,7 @@ omastar: {
 			rollout: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -26359,8 +26190,7 @@ kabuto: {
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -26483,8 +26313,7 @@ kabutops: {
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowclaw: ["9M"], //Añadido
 			sharpen: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -26618,8 +26447,7 @@ aerodactyl: {
 			rocktomb: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			skyattack: ["9M"],
 			skydrop: ["9M"],
@@ -26728,8 +26556,7 @@ munchlax: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			slam: ["9M"], //Añadido
@@ -26872,8 +26699,7 @@ snorlax: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -27019,8 +26845,7 @@ articuno: {
 			roost: ["9M"],
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sheercold: ["9M"],
 			skyattack: ["9M"],
 			skydrop: ["9M"],
@@ -27144,7 +26969,7 @@ articunogalar: {
 			round: ["9M"], //Añadido
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
@@ -27256,8 +27081,7 @@ zapdos: {
 			roost: ["9M"],
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			skyattack: ["9M"],
 			skydrop: ["9M"],
@@ -27374,7 +27198,7 @@ zapdosgalar: {
 			round: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			skyattack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -27481,8 +27305,7 @@ moltres: {
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			skyattack: ["9M"],
 			skydrop: ["9M"],
 			slam: ["9M"], //Añadido
@@ -27584,7 +27407,7 @@ moltresgalar: {
 			round: ["9M"], //Añadido
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -27683,8 +27506,7 @@ dratini: {
 			return: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -27783,8 +27605,7 @@ dragonair: {
 			return: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -27925,8 +27746,7 @@ dragonite: {
 			roost: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			skyattack: ["9M"], //Añadido
 			skydrop: ["9M"],
@@ -28105,8 +27925,7 @@ mewtwo: {
 			rocktomb: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -28443,8 +28262,7 @@ mew: {
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
@@ -28623,8 +28441,7 @@ chikorita: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -28720,8 +28537,7 @@ bayleef: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -28852,8 +28668,7 @@ meganium: {
 			round: ["9M"], //Añadido
 			scaleshot: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"], //Añadido
@@ -28964,8 +28779,7 @@ cyndaquil: {
 			rollout: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smog: ["9M"], //Añadido
@@ -29066,8 +28880,7 @@ quilava: {
 			sandattack: ["9M"], //Añadido
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smog: ["9M"], //Añadido
@@ -29185,8 +28998,7 @@ typhlosion: {
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -29319,7 +29131,7 @@ typhlosionhisui: {
 			sandattack: ["9M"], //Añadido
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -29422,8 +29234,7 @@ totodile: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -29542,8 +29353,7 @@ croconaw: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -29683,8 +29493,7 @@ feraligatr: {
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -29798,8 +29607,7 @@ sentret: {
 			rollout: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -29926,8 +29734,7 @@ furret: {
 			rollout: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowclaw: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -30089,8 +29896,7 @@ furrip: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -30281,8 +30087,7 @@ furrum: {
 			round: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -30470,8 +30275,7 @@ furrful: {
 			rollout: ["9M"],
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
@@ -30602,8 +30406,7 @@ hoothoot: {
 			roost: ["9M"],
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			silverwind: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -30722,8 +30525,7 @@ noctowl: {
 			roost: ["9M"],
 			round: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			silverwind: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -30865,8 +30667,7 @@ noceadowl: {
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			silverwind: ["9M"],
@@ -30983,8 +30784,7 @@ ledyba: {
 			rollout: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -31085,8 +30885,7 @@ ledian: {
 			rollout: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			skyattack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -31221,8 +31020,7 @@ ledstar: {
 			rollout: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"], //Añadido
 			signalbeam: ["9M"], //Añadido
 			skyattack: ["9M"], //Añadido
@@ -31334,8 +31132,7 @@ spinarak: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowsneak: ["9M"],
 			skittersmack: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -31438,8 +31235,7 @@ ariados: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowsneak: ["9M"],
 			skittersmack: ["9M"], //Añadido
@@ -31540,8 +31336,7 @@ chinchou: {
 			return: ["9M"],
 			risingvoltage: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -31644,8 +31439,7 @@ lanturn: {
 			risingvoltage: ["9M"],
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -31772,8 +31566,7 @@ togepi: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shellsmash: ["9M"], //Añadido
 			shockwave: ["9M"],
@@ -31905,8 +31698,7 @@ togetic: {
 			rollout: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shellsmash: ["9M"], //Añadido
 			shockwave: ["9M"],
@@ -32035,8 +31827,7 @@ togekiss: {
 			rollout: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			silverwind: ["9M"],
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -32155,8 +31946,7 @@ natu: {
 			return: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"],
@@ -32285,8 +32075,7 @@ xatu: {
 			roost: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			silverwind: ["9M"],
@@ -32408,8 +32197,7 @@ xatutotemserious: {
 			return: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			silverwind: ["9M"],
 			skyattack: ["9M"],
@@ -32495,8 +32283,7 @@ mareep: {
 			return: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -32597,8 +32384,7 @@ flaaffy: {
 			return: ["9M"],
 			roar: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -32717,8 +32503,7 @@ ampharos: {
 			return: ["9M"],
 			roar: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"], //Añadido
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -32829,8 +32614,7 @@ azurill: {
 			return: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sing: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -32944,8 +32728,7 @@ marill: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sing: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -33066,8 +32849,7 @@ azumarill: {
 			rocksmash: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -33159,8 +32941,7 @@ bonsly: {
 			rollout: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -33263,8 +33044,7 @@ sudowoodo: {
 			rollout: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -33401,8 +33181,7 @@ disdowoodion: {
 			safeguard: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			sharproot: ["9M"],
@@ -33527,8 +33306,7 @@ hoppip: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"],
 			slam: ["9M"], //Añadido
@@ -33634,8 +33412,7 @@ skiploom: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"],
 			slam: ["9M"], //Añadido
@@ -33739,8 +33516,7 @@ jumpluff: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			silverwind: ["9M"],
 			slam: ["9M"], //Añadido
@@ -33861,8 +33637,7 @@ aipom: {
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -33980,8 +33755,7 @@ ambipom: {
 			roleplay: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
@@ -34068,8 +33842,7 @@ sunkern: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -34149,8 +33922,7 @@ sunflora: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -34242,8 +34014,7 @@ sunfulwer: {
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -34338,8 +34109,7 @@ yanma: {
 			roost: ["9M"],
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			silverwind: ["9M"],
 			slam: ["9M"], //Añadido
@@ -34430,8 +34200,7 @@ yanmega: {
 			reversal: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			silverwind: ["9M"],
 			slam: ["9M"], //Añadido
@@ -34526,8 +34295,7 @@ wooper: {
 			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludge: ["9M"], //Añadido
@@ -34622,7 +34390,7 @@ wooperpaldea: {
 			rocktomb: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
@@ -34727,8 +34495,7 @@ quagsire: {
 			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludge: ["9M"], //Añadido
@@ -34858,8 +34625,7 @@ quagsirefeudal: {
 			sandattack: ["9M"], //Añadido
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludge: ["9M"], //Añadido
@@ -34950,7 +34716,7 @@ clodsire: {
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			sludgebomb: ["9M"],
@@ -35059,8 +34825,7 @@ murkrow: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			skyattack: ["9M"],
@@ -35167,8 +34932,7 @@ honchkrow: {
 			return: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -35278,8 +35042,7 @@ misdreavus: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowsneak: ["9M"],
 			shockwave: ["9M"],
@@ -35395,8 +35158,7 @@ mismagius: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			slam: ["9M"], //Añadido
@@ -35466,7 +35228,7 @@ wynaut: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"], //Añadido
 			snore: ["9M"], //Añadido
@@ -35565,8 +35327,7 @@ girafarig: {
 			return: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -35677,8 +35438,7 @@ pineco: {
 			rollout: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -35785,8 +35545,7 @@ forretress: {
 			safeguard: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			signalbeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -35917,8 +35676,7 @@ dunsparce: {
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -36070,8 +35828,7 @@ wungsparce: {
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -36246,8 +36003,7 @@ wungsparcefeudal: {
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sheercold: ["9M"], //Añadido
 			shockwave: ["9M"],
@@ -36373,7 +36129,7 @@ dudunsparce: {
 			roost: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -36485,8 +36241,7 @@ gligar: {
 			sandtomb: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			skyuppercut: ["9M"],
 			slam: ["9M"], //Añadido
 			slash: ["9M"],
@@ -36604,8 +36359,7 @@ gliscor: {
 			sandtomb: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			skyattack: ["9M"],
 			skyuppercut: ["9M"],
 			slam: ["9M"], //Añadido
@@ -36723,8 +36477,7 @@ snubbull: {
 			roar: ["9M"],
 			rocksmash: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -36881,8 +36634,7 @@ granbull: {
 			round: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			shockwave: ["9M"],
@@ -37049,8 +36801,7 @@ granbullfeudal: {
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -37182,8 +36933,7 @@ qwilfish: {
 			rollout: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -37306,8 +37056,7 @@ qwilfishfeudal: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			sheercold: ["9M"], //Añadido
@@ -37428,7 +37177,7 @@ qwilfishhisui: {
 			reversal: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -37524,7 +37273,7 @@ overqwil: {
 			reversal: ["9M"],
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -37604,8 +37353,7 @@ shuckle: {
 			rollout: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -37724,8 +37472,7 @@ heracross: {
 			rocktomb: ["9M"],
 			roost: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -37854,8 +37601,7 @@ sneasel: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -37965,7 +37711,7 @@ sneaselhisui: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -38080,8 +37826,7 @@ weavile: {
 			rocksmash: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -38172,7 +37917,7 @@ sneasler: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -38287,8 +38032,7 @@ teddiursa: {
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowclaw: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -38423,8 +38167,7 @@ ursaring: {
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
@@ -38580,8 +38323,7 @@ ursaringfeudal: {
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowclaw: ["9M"],
@@ -38709,7 +38451,7 @@ ursaluna: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -38795,7 +38537,7 @@ ursalunabloodmoon: {
 			rocktomb: ["9M"],
 			scaryface: ["9M"],
 			scratch: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowclaw: ["9M"],
 			slam: ["9M"], //Añadido
@@ -38878,8 +38620,7 @@ slugma: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -38983,8 +38724,7 @@ magcargo: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
@@ -39089,8 +38829,7 @@ slastma: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shellsmash: ["9M"],
 			slam: ["9M"], //Añadido
@@ -39192,8 +38931,7 @@ swinub: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -39296,8 +39034,7 @@ piloswine: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sheercold: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -39405,8 +39142,7 @@ mamoswine: {
 			rocktomb: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -39509,8 +39245,7 @@ corsola: {
 			safeguard: ["9M"], //Añadido
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
@@ -39609,7 +39344,7 @@ corsolagalar: {
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			shellsmash: ["9M"], //Añadido
@@ -39722,8 +39457,7 @@ crowthsola: {
 			safeguard: ["9M"], //Añadido
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
@@ -39823,7 +39557,7 @@ cursola: {
 			rockslide: ["9M"],
 			rocktomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			selfdestruct: ["9M"],
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
@@ -39905,8 +39639,7 @@ remoraid: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -40012,8 +39745,7 @@ octillery: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -40134,8 +39866,7 @@ octank: {
 			scaleshot: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			selfdestruct: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
@@ -40280,8 +40011,7 @@ delibird: {
 			roost: ["9M"], //Añadido
 			round: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			sheercold: ["9M"], //Añadido
 			sing: ["9M"], //Añadido
@@ -40411,8 +40141,7 @@ delibirdholiday: {
 			reversal: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			skyattack: ["9M"],
 			slam: ["9M"], //Añadido
@@ -40485,8 +40214,7 @@ mantyke: {
 			rest: ["9M"],
 			return: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
@@ -40582,8 +40310,7 @@ mantine: {
 			roost: ["9M"],
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -40694,8 +40421,7 @@ mantinefeudal: {
 			roost: ["9M"],
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
@@ -40816,8 +40542,7 @@ skarmory: {
 			sandattack: ["9M"],
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			sharpen: ["9M"], //Añadido
 			skyattack: ["9M"],
 			skydrop: ["9M"],
@@ -40934,8 +40659,7 @@ houndour: {
 			rocksmash: ["9M"],
 			roleplay: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -41061,8 +40785,7 @@ houndoom: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shadowclaw: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
@@ -41164,8 +40887,7 @@ phanpy: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
@@ -41288,8 +41010,7 @@ donphan: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			skullbash: ["9M"], //Añadido
 			slam: ["9M"],
@@ -41459,8 +41180,7 @@ donphanfeudal: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
@@ -41595,8 +41315,7 @@ stantler: {
 			roleplay: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -41749,8 +41468,7 @@ clammdeer: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"], //Añadido
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -41867,7 +41585,7 @@ wyrdeer: {
 			roleplay: ["9M"],
 			sandattack: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -41920,7 +41638,7 @@ smeargle: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			sketch: ["9M"],
 			slam: ["9M"], //Añadido
@@ -41956,7 +41674,7 @@ arteagle: {
 			rest: ["9M"], //Añadido
 			return: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			sketch: ["9M"],
 			slam: ["9M"], //Añadido
@@ -42032,8 +41750,7 @@ miltank: {
 			rocktomb: ["9M"],
 			rollout: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			simplebeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -42161,8 +41878,7 @@ raikou: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scratch: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			signalbeam: ["9M"], //Añadido
@@ -42287,8 +42003,7 @@ entei: {
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"],
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
@@ -42409,8 +42124,7 @@ suicune: {
 			sandattack: ["9M"], //Añadido
 			scald: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			sheercold: ["9M"],
 			signalbeam: ["9M"], //Añadido
@@ -42517,8 +42231,7 @@ larvitar: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -42630,8 +42343,7 @@ pupitar: {
 			sandstorm: ["9M"], //Añadido
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			smackdown: ["9M"],
@@ -42791,8 +42503,7 @@ tyranitar: {
 			sandtomb: ["9M"],
 			scaryface: ["9M"],
 			screech: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"], //Añadido
 			shadowclaw: ["9M"],
@@ -42958,8 +42669,7 @@ lugia: {
 			scald: ["9M"], //Añadido
 			scaleshot: ["9M"],
 			scaryface: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -43102,8 +42812,7 @@ hooh: {
 			sacredfire: ["9M"],
 			scaryface: ["9M"], //Añadido
 			scorchingsands: ["9M"],
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			shockwave: ["9M"],
 			skillswap: ["9M"], //Añadido
@@ -43230,8 +42939,7 @@ celebi: {
 			return: ["9M"],
 			rototiller: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			shadowball: ["9M"],
 			shockwave: ["9M"],
@@ -43368,8 +43076,7 @@ celebifeudal: {
 			round: ["9M"], //Añadido
 			safeguard: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"],
 			seismictoss: ["9M"], //Añadido
 			shadowball: ["9M"],
@@ -43493,7 +43200,7 @@ farigiraf: {
 			return: ["9M"], //Añadido
 			roar: ["9M"],
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
 			seedbomb: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
@@ -43601,8 +43308,7 @@ sylveon: {
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
-			secretpowder: ["9M"], //Añadido
-			secretpower: ["9M"],
+			secretpower: ["9M"], //Añadido
 			shadowball: ["9M"],
 			simplebeam: ["9M"], //Añadido
 			slam: ["9M"], //Añadido
