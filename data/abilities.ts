@@ -6469,8 +6469,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
 				const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
 				for (const ally of allies) {
-					this.heal(ally.baseMaxhp / 10, ally, pokemon);
+					ally.heal(ally.baseMaxhp / 10);
 				}
+				pokemon.heal(pokemon.baseMaxhp / 10)
 			}
 		},
 		flags: { },
