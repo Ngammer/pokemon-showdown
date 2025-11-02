@@ -5318,7 +5318,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 247,
 		name: "Pupitar",
 		types: ["Rock", "Ground"],
-		baseStats: { hp: 70, atk: 84, def: 70, spa: 65, spd: 70, spe: 51 },
+		baseStats: { hp: 70, atk: 84, def: 80, spa: 65, spd: 70, spe: 51 },
 		abilities: { 0: "Shed Skin" },
 		heightm: 1.2,
 		weightkg: 152,
