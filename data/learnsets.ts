@@ -938,7 +938,7 @@ wartortle: {
 	},
 blastoise: {
 		learnset: {
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			ancientpower: ["9M"], //Añadido
 			aquajet: ["9M"],
 			aquatail: ["9M"],
@@ -1989,7 +1989,7 @@ raticatealola: {
 			bulkup: ["9M"],
 			bulletseed: ["9M"], //Añadido
 			chipaway: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -2338,7 +2338,7 @@ fearill: {
 			bravebird: ["9M"],
 			//captivate //Removido
 			ceaselessedge: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"], //Añadido
 			curse: ["9M"],
@@ -8696,7 +8696,7 @@ persian: {
 			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			//chillingwater //Removido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"], //Añadido
 			covet: ["9M"],
@@ -8825,7 +8825,7 @@ persianalola: {
 			chargebeam: ["9M"], //Añadido
 			charm: ["9M"],
 			//chillingwater //Removido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"],
 			covet: ["9M"],
@@ -10120,7 +10120,7 @@ arcaninehisuitotem: {
 poliwag: {
 		learnset: {
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			//attract //Removido
@@ -10213,7 +10213,7 @@ poliwag: {
 poliwhirl: {
 		learnset: {
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			//attract //Removido
@@ -10318,7 +10318,7 @@ poliwrath: {
 		learnset: {
 			acupressure: ["9M"], //Añadido
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			armthrust: ["9M"], //Añadido
@@ -10460,7 +10460,7 @@ poliwrath: {
 politoed: {
 		learnset: {
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			attract: ["9M"],
@@ -12673,7 +12673,7 @@ rapidashgalar: {
 			growl: ["9M"],
 			healingwish: ["9M"],
 			healpulse: ["9M"],
-			heatswap: ["9M"], //Añadido
+
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -13773,7 +13773,7 @@ magnemite: {
 	},
 magneton: {
 		learnset: {
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			autotomize: ["9M"], //Añadido
 			barrier: ["9M"], //Añadido
 			bide: ["9M"],
@@ -13864,7 +13864,7 @@ magneton: {
 	},
 magnezone: {
 		learnset: {
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			allyswitch: ["9M"],
 			autotomize: ["9M"], //Añadido
 			barrier: ["9M"], //Añadido
@@ -16433,7 +16433,7 @@ voltorbhisui: {
 electrode: {
 		learnset: {
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			bide: ["9M"],
 			burningjealousy: ["9M"],
 			charge: ["9M"],
@@ -16521,7 +16521,7 @@ electrode: {
 electrodehisui: {
 		learnset: {
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			ancientpower: ["9M"], //Añadido
 			bulletseed: ["9M"],
 			burningjealousy: ["9M"],
@@ -17637,7 +17637,7 @@ hitmonchan: {
 		learnset: {
 			acupressure: ["9M"], //Añadido
 			agility: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			assurance: ["9M"], //Añadido
 			attract: ["9M"],
 			//aurasphere //Removido
@@ -19782,7 +19782,7 @@ kingdrafeudal: {
 		learnset: {
 			acidspray: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			attract: ["9M"],
 			blizzard: ["9M"],
 			bodyslam: ["9M"],
@@ -20369,7 +20369,7 @@ mrmime: {
 			//aerialace //Removido
 			afteryou: ["9M"], //Añadido
 			allyswitch: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			attract: ["9M"],
 			barrier: ["9M"],
 			batonpass: ["9M"],
@@ -22396,7 +22396,7 @@ gyarados: {
 			bulldoze: ["9M"],
 			//captivate //Removido
 			chillingwater: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			constrict: ["9M"], //Añadido
 			crunch: ["9M"],
@@ -22917,7 +22917,7 @@ jolteon: {
 		learnset: {
 			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			alluringvoice: ["9M"],
 			attract: ["9M"],
 			babydolleyes: ["9M"],
@@ -24957,7 +24957,7 @@ zapdos: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aircutter: ["9M"],
 			ancientpower: ["9M"],
 			//batonpass //Removido
@@ -25269,7 +25269,7 @@ moltresgalar: {
 			assurance: ["9M"],
 			bravebird: ["9M"],
 			burningjealousy: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			curse: ["9M"], //Añadido
 			cut: ["9M"], //Añadido
 			darkpulse: ["9M"],
@@ -25700,7 +25700,7 @@ mewtwo: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			allyswitch: ["9M"],
 			amnesia: ["9M"],
 			//ancientpower //Removido
@@ -26894,7 +26894,7 @@ typhlosionhisui: {
 			burningjealousy: ["9M"],
 			calmmind: ["9M"],
 			clearsmog: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confuseray: ["9M"],
 			curse: ["9M"],
 			cut: ["9M"], //Añadido
@@ -27797,7 +27797,7 @@ furrum: {
 			healingwish: ["9M"], //Añadido
 			healpulse: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatswap: ["9M"], //Añadido
+
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
@@ -28301,7 +28301,7 @@ noceadowl: {
 			calmmind: ["9M"],
 			//captivate //Removido
 			clearsmog: ["9M"], //Añadido
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			confuseray: ["9M"],
 			confusion: ["9M"],
@@ -28515,7 +28515,7 @@ ledian: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			//attract //Removido
 			//batonpass //Removido
 			brickbreak: ["9M"],
@@ -28603,10 +28603,10 @@ ledstar: {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			armthrust: ["9M"], //Añadido
 			attract: ["9M"],
 			aurasphere: ["9M"], //Añadido
@@ -29023,7 +29023,7 @@ chinchou: {
 lanturn: {
 		learnset: {
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			amnesia: ["9M"],
 			aquaring: ["9M"],
 			aquatail: ["9M"],
@@ -29831,7 +29831,7 @@ mareep: {
 		learnset: {
 			afteryou: ["9M"],
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			//attract //Removido
 			bodyslam: ["9M"],
 			//captivate //Removido
@@ -29917,7 +29917,7 @@ flaaffy: {
 		learnset: {
 			afteryou: ["9M"],
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			//attract //Removido
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -30014,7 +30014,7 @@ ampharos: {
 		learnset: {
 			afteryou: ["9M"],
 			//agility //Removido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			//attract //Removido
 			bodyslam: ["9M"],
 			breakingswipe: ["9M"],
@@ -33951,7 +33951,7 @@ granbull: {
 			captivate: ["9M"],
 			charm: ["9M"],
 			closecombat: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			covet: ["9M"],
@@ -36990,7 +36990,7 @@ octillery: {
 octank: {
 		learnset: {
 			absorb: ["9M"], //Añadido
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aquajet: ["9M"], //Añadido
 			assist: ["9M"], //Añadido
 			//assurance //Removido
@@ -38220,7 +38220,7 @@ donphanfeudal: {
 			gyroball: ["9M"],
 			headbutt: ["9M"],
 			healpulse: ["9M"], //Añadido
-			heatswap: ["9M"], //Añadido
+
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
@@ -38853,7 +38853,7 @@ raikou: {
 		learnset: {
 			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
-			ahorasloestospokmontendrnelmovimientoensuslearnset: ["9M"], //Añadido
+			
 			aurasphere: ["9M"],
 			bite: ["9M"],
 			bodyslam: ["9M"],
@@ -39292,7 +39292,7 @@ pupitar: {
 			bulldoze: ["9M"],
 			//captivate //Removido
 			chipaway: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			crunch: ["9M"],
 			curse: ["9M"],
@@ -39398,7 +39398,7 @@ tyranitar: {
 			bulldoze: ["9M"],
 			//captivate //Removido
 			chipaway: ["9M"],
-			commeupance: ["9M"], //Añadido
+			comeuppance: ["9M"], //Añadido
 			confide: ["9M"],
 			counter: ["9M"],
 			crunch: ["9M"],
