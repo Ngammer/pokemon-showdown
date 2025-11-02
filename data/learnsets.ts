@@ -10303,11 +10303,6 @@ poliwhirl: {
 			takedown: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"],
-			toxic: ["9M"],
-			swift: ["9M"],
-			takedown: ["9M"],
-			terablast: ["9M"],
-			thief: ["9M"],
 			tickle: ["9M"], //Añadido
 			toxic: ["9M"],
 			uproar: ["9M"],
