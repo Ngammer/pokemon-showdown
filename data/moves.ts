@@ -23586,16 +23586,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Steel",
 		contestType: "Tough",
 	},
-	historicterrain: {
+	/* regicode: {
 		num: 604,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Historic Terrain",
+		name: "Regi Code",
 		pp: 10,
 		priority: 0,
 		flags: { nonsky: 1, metronome: 1 },
-		terrain: 'historicterrain',
+		terrain: 'regicode',
 		condition: {
 			effectType: 'Terrain',
 			duration: 5,
@@ -23608,7 +23608,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onBasePowerPriority: 6,
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Dragon' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
-					this.debug('historic terrain boost');
+					this.debug('regi code boost');
 					return this.chainModify([8192, 4096]);
 				}
 			},
@@ -23643,15 +23643,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onFieldStart(field, source, effect) {
 				if (effect?.effectType === 'Ability') {
-					this.add('-fieldstart', 'move: Historic Terrain', '[from] ability: ' + effect.name, `[of] ${source}`);
+					this.add('-fieldstart', 'move: Regi Code', '[from] ability: ' + effect.name, `[of] ${source}`);
 				} else {
-					this.add('-fieldstart', 'move: Historic Terrain');
+					this.add('-fieldstart', 'move: Regi Code');
 				}
 			},
 			onFieldResidualOrder: 27,
 			onFieldResidualSubOrder: 7,
 			onFieldEnd() {
-				this.add('-fieldend', 'move: Historic Terrain');
+				this.add('-fieldend', 'move: Regi Code');
 			},
 		},
 		secondary: {
@@ -23667,4 +23667,4 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
 	},
-};
+*/ };
