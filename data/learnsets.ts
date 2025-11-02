@@ -10120,7 +10120,7 @@ arcaninehisuitotem: {
 poliwag: {
 		learnset: {
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			//attract //Removido
@@ -10213,7 +10213,7 @@ poliwag: {
 poliwhirl: {
 		learnset: {
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			//attract //Removido
@@ -10318,7 +10318,7 @@ poliwrath: {
 		learnset: {
 			acupressure: ["9M"], //Añadido
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			armthrust: ["9M"], //Añadido
@@ -10460,7 +10460,7 @@ poliwrath: {
 politoed: {
 		learnset: {
 			amnesia: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			aquajet: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
 			attract: ["9M"],
@@ -12673,7 +12673,7 @@ rapidashgalar: {
 			growl: ["9M"],
 			healingwish: ["9M"],
 			healpulse: ["9M"],
-			heatswap: ["9M"], //Añadido
+
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -17637,7 +17637,7 @@ hitmonchan: {
 		learnset: {
 			acupressure: ["9M"], //Añadido
 			agility: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			assurance: ["9M"], //Añadido
 			attract: ["9M"],
 			//aurasphere //Removido
@@ -20369,7 +20369,7 @@ mrmime: {
 			//aerialace //Removido
 			afteryou: ["9M"], //Añadido
 			allyswitch: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			attract: ["9M"],
 			barrier: ["9M"],
 			batonpass: ["9M"],
@@ -27797,7 +27797,7 @@ furrum: {
 			healingwish: ["9M"], //Añadido
 			healpulse: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatswap: ["9M"], //Añadido
+
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			honeclaws: ["9M"],
@@ -28515,7 +28515,7 @@ ledian: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			//attract //Removido
 			//batonpass //Removido
 			brickbreak: ["9M"],
@@ -28606,7 +28606,7 @@ ledstar: {
 			
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			apartirdeahoraestossonlosusuariosdedestructor: ["9M"], //Añadido
+
 			armthrust: ["9M"], //Añadido
 			attract: ["9M"],
 			aurasphere: ["9M"], //Añadido
@@ -38220,7 +38220,7 @@ donphanfeudal: {
 			gyroball: ["9M"],
 			headbutt: ["9M"],
 			healpulse: ["9M"], //Añadido
-			heatswap: ["9M"], //Añadido
+
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
