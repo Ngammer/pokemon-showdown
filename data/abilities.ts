@@ -7128,6 +7128,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Resilience",
 		rating: 3.5,
-		num: 62,
+		num: -150,
 	},
 };
