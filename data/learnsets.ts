@@ -11580,7 +11580,7 @@ politoed: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			sonicboom: ["9M"], //Añadido
-			sparkingarea: ["9M"], //Añadido
+			sparklingaria: ["9M"], //Añadido
 			substitute: ["9M"],
 			surf: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
@@ -21584,7 +21584,7 @@ kingdrafeudal: {
 			smokescreen: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			sparkingarea: ["9M"], //Añadido
+			sparklingaria: ["9M"], //Añadido
 			spikecannon: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"], //Añadido
@@ -24808,7 +24808,7 @@ vaporeon: {
 			slam: ["9M"], //Añadido
 			sleeptalk: ["9M"],
 			snore: ["9M"],
-			sparkingarea: ["9M"], //Añadido
+			sparklingaria: ["9M"], //Añadido
 			storedpower: ["9M"],
 			substitute: ["9M"],
 			surf: ["9M"], //Añadido
@@ -32854,7 +32854,7 @@ azumarill: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			sparkingarea: ["9M"], //Añadido
+			sparklingaria: ["9M"], //Añadido
 			stompingtantrum: ["9M"], //Añadido
 			strength: ["9M"], //Añadido
 			substitute: ["9M"],
@@ -42133,7 +42133,7 @@ suicune: {
 			snarl: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
-			sparkingarea: ["9M"], //Añadido
+			sparklingaria: ["9M"], //Añadido
 			substitute: ["9M"],
 			surf: ["9M"], //Añadido
 			swift: ["9M"], //Añadido
