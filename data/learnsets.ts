@@ -6995,7 +6995,7 @@ ninetales: {
 			naturalgift: ["9M"],
 			naturepower: ["9M"], //Añadido
 			nightshade: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			nineflames: ["9M"],
 			ominouswind: ["9M"],
 			overheat: ["9M"],
@@ -7128,7 +7128,7 @@ ninetalesalola: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"], //Añadido
 			naturepower: ["9M"], //Añadido
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			nineshard: ["9M"],
 			ominouswind: ["9M"], //Añadido
 			painsplit: ["9M"],
@@ -8663,7 +8663,7 @@ venonat: {
 			morningsun: ["9M"],
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			poisonfang: ["9M"],
 			poisonpowder: ["9M"],
 			pounce: ["9M"],
@@ -8767,7 +8767,7 @@ venomoth: {
 			moonlight: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			ominouswind: ["9M"],
 			poisonfang: ["9M"],
 			poisonpowder: ["9M"],
@@ -9791,7 +9791,7 @@ persianalola: {
 			naturalgift: ["9M"], //Añadido
 			nightdaze: ["9M"], //Añadido
 			nightslash: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			payback: ["9M"],
 			payday: ["9M"], //Añadido
 			playrough: ["9M"],
@@ -13931,7 +13931,7 @@ rapidashgalar: {
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"], //Añadido
 			naturepower: ["9M"], //Añadido
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			powergem: ["9M"], //Añadido
@@ -27390,7 +27390,7 @@ moltresgalar: {
 			mimic: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"], //Añadido
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			ominouswind: ["9M"], //Añadido
 			outrage: ["9M"], //Añadido
 			overheat: ["9M"], //Añadido
