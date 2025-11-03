@@ -11425,7 +11425,7 @@ poliwrath: {
 			mudshot: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
-			ourtrage: ["9M"], //Añadido
+			outrage: ["9M"], //Añadido
 			payback: ["9M"],
 			poisonjab: ["9M"],
 			pound: ["9M"], //Añadido
@@ -26428,7 +26428,7 @@ aerodactyl: {
 			mimic: ["9M"],
 			naturalgift: ["9M"],
 			ominouswind: ["9M"],
-			ourtrage: ["9M"], //Añadido
+			outrage: ["9M"], //Añadido
 			payback: ["9M"],
 			protect: ["9M"],
 			psychicfangs: ["9M"],
@@ -27392,7 +27392,7 @@ moltresgalar: {
 			naturalgift: ["9M"], //Añadido
 			nigthmare: ["9M"], //Añadido
 			ominouswind: ["9M"], //Añadido
-			ourtrage: ["9M"], //Añadido
+			outrage: ["9M"], //Añadido
 			overheat: ["9M"], //Añadido
 			painsplit: ["9M"],
 			payback: ["9M"],
@@ -35980,7 +35980,7 @@ wungsparcefeudal: {
 			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightmare: ["9M"],
-			ourtrage: ["9M"], //Añadido
+			outrage: ["9M"], //Añadido
 			painsplit: ["9M"],
 			poisonjab: ["9M"],
 			poisontail: ["9M"],
@@ -40766,7 +40766,7 @@ houndoom: {
 			nightmare: ["9M"],
 			nightshade: ["9M"], //Añadido
 			odorsleuth: ["9M"],
-			ourtrage: ["9M"], //Añadido
+			outrage: ["9M"], //Añadido
 			overheat: ["9M"],
 			painsplit: ["9M"],
 			payback: ["9M"],
