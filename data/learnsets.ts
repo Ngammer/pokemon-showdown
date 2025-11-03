@@ -3047,7 +3047,7 @@ pichuspikyeared: {
 			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			detect: ["9M"],
-			dicharge: ["9M"], //Añadido
+			discharge: ["9M"], //Añadido
 			disarmingvoice: ["9M"],
 			doubleedge: ["9M"],
 			doubleslap: ["9M"],
@@ -3179,7 +3179,6 @@ pikachu: {
 			grassknot: ["9M"],
 			headbutt: ["9M"],
 			heartstamp: ["9M"],
-			heatbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -3309,7 +3308,7 @@ pikachucosplay: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -3381,7 +3380,7 @@ pikachurockstar: {
 			echoedvoice: ["9M"], //Añadido
 			eerieimpulse: ["9M"], //Añadido
 			endeavor: ["9M"], //Añadido
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"], //Añadido
 			feintattack: ["9M"], //Añadido
 			fireblast: ["9M"], //Añadido
@@ -3396,7 +3395,7 @@ pikachurockstar: {
 			grudge: ["9M"], //Añadido
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hex: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
@@ -3478,7 +3477,7 @@ pikachubelle: {
 			drainingkiss: ["9M"], //Añadido
 			eerieimpulse: ["9M"], //Añadido
 			endeavor: ["9M"], //Añadido
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"], //Añadido
 			flail: ["9M"], //Añadido
 			flatter: ["9M"], //Añadido
@@ -3492,7 +3491,7 @@ pikachubelle: {
 			healingwish: ["9M"], //Añadido
 			healpulse: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			icebeam: ["9M"], //Añadido
@@ -3555,7 +3554,7 @@ pikachupopstar: {
 			echoedvoice: ["9M"], //Añadido
 			eerieimpulse: ["9M"], //Añadido
 			endeavor: ["9M"], //Añadido
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"], //Añadido
 			flail: ["9M"], //Añadido
 			flatter: ["9M"], //Añadido
@@ -3566,7 +3565,7 @@ pikachupopstar: {
 			happyhour: ["9M"], //Añadido
 			healingwish: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			hypervoice: ["9M"], //Añadido
@@ -3644,7 +3643,7 @@ pikachuphd: {
 			happyhour: ["9M"], //Añadido
 			healblock: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			hypnosis: ["9M"], //Añadido
@@ -3722,7 +3721,7 @@ pikachulibre: {
 			dynamicpunch: ["9M"], //Añadido
 			eerieimpulse: ["9M"], //Añadido
 			endeavor: ["9M"], //Añadido
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"], //Añadido
 			firepunch: ["9M"], //Añadido
 			flail: ["9M"], //Añadido
@@ -3734,7 +3733,7 @@ pikachulibre: {
 			gigaimpact: ["9M"], //Añadido
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			highhorsepower: ["9M"], //Añadido
@@ -3819,7 +3818,7 @@ pikachuoriginal: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -3931,7 +3930,7 @@ pikachuhoenn: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -4043,7 +4042,7 @@ pikachusinnoh: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -4155,7 +4154,7 @@ pikachuunova: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -4267,7 +4266,7 @@ pikachukalos: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -4379,7 +4378,7 @@ pikachualola: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -4491,7 +4490,7 @@ pikachupartner: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -4599,7 +4598,7 @@ pikachustarter: {
 			happyhour: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"], //Añadido
 			irontail: ["9M"],
@@ -4694,7 +4693,7 @@ pikachuworld: {
 			grassknot: ["9M"],
 			happyhour: ["9M"], //Añadido
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"], //Añadido
 			irontail: ["9M"],
@@ -4926,7 +4925,7 @@ raichualola: {
 			encore: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"], //Añadido
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
@@ -5339,7 +5338,7 @@ sandslash: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			rollout: ["9M"],
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
@@ -6262,7 +6261,7 @@ cleffa: {
 			drainingkiss: ["9M"],
 			dreameater: ["9M"],
 			encore: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"],
 			fairywind: ["9M"], //Añadido
 			faketears: ["9M"],
@@ -6394,7 +6393,7 @@ clefairy: {
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			encore: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"],
 			fairywind: ["9M"], //Añadido
 			faketears: ["9M"],
@@ -6568,7 +6567,7 @@ clefable: {
 			dreameater: ["9M"],
 			dualwingbeat: ["9M"],
 			encore: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"],
 			fairywind: ["9M"], //Añadido
 			faketears: ["9M"],
@@ -7000,7 +6999,7 @@ ninetales: {
 			naturalgift: ["9M"],
 			naturepower: ["9M"], //Añadido
 			nightshade: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			nineflames: ["9M"],
 			ominouswind: ["9M"],
 			overheat: ["9M"],
@@ -7133,7 +7132,7 @@ ninetalesalola: {
 			nastyplot: ["9M"],
 			naturalgift: ["9M"], //Añadido
 			naturepower: ["9M"], //Añadido
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			nineshard: ["9M"],
 			ominouswind: ["9M"], //Añadido
 			painsplit: ["9M"],
@@ -8326,7 +8325,7 @@ bellossom: {
 			endeavor: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			facade: ["9M"],
 			fairywind: ["9M"], //Añadido
 			faketears: ["9M"], //Añadido
@@ -8668,7 +8667,7 @@ venonat: {
 			morningsun: ["9M"],
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			poisonfang: ["9M"],
 			poisonpowder: ["9M"],
 			pounce: ["9M"],
@@ -8772,7 +8771,7 @@ venomoth: {
 			moonlight: ["9M"], //Añadido
 			naturalgift: ["9M"],
 			nightshade: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			ominouswind: ["9M"],
 			poisonfang: ["9M"],
 			poisonpowder: ["9M"],
@@ -9796,7 +9795,7 @@ persianalola: {
 			naturalgift: ["9M"], //Añadido
 			nightdaze: ["9M"], //Añadido
 			nightslash: ["9M"],
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			payback: ["9M"],
 			payday: ["9M"], //Añadido
 			playrough: ["9M"],
@@ -12296,7 +12295,7 @@ machamp: {
 			rocksmash: ["9M"],
 			rockthrow: ["9M"], //Añadido
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"], //Añadido
@@ -13691,7 +13690,7 @@ ponytagalar: {
 			healingwish: ["9M"],
 			healpulse: ["9M"],
 			heartstamp: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			highhorsepower: ["9M"],
@@ -13913,7 +13912,7 @@ rapidashgalar: {
 			healpulse: ["9M"],
 			heartstamp: ["9M"], //Añadido
 			heartswap: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			highhorsepower: ["9M"],
@@ -13936,7 +13935,7 @@ rapidashgalar: {
 			mysticalfire: ["9M"],
 			naturalgift: ["9M"], //Añadido
 			naturepower: ["9M"], //Añadido
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			playnice: ["9M"], //Añadido
 			playrough: ["9M"],
 			powergem: ["9M"], //Añadido
@@ -17748,7 +17747,7 @@ kingler: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"], //Añadido
@@ -17915,7 +17914,7 @@ voltorbhisui: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			gyroball: ["9M"],
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			leafstorm: ["9M"],
@@ -18090,7 +18089,7 @@ electrodehisui: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			gyroball: ["9M"],
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
@@ -18170,7 +18169,7 @@ electrodehisuitotem: {
 			grassyglide: ["9M"],
 			grassyterrain: ["9M"],
 			gyroball: ["9M"],
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			hyperbeam: ["9M"],
@@ -22161,7 +22160,7 @@ mrmime: {
 			dynamicpunch: ["9M"],
 			encore: ["9M"],
 			energyball: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
@@ -22322,7 +22321,7 @@ mrmimegalar: {
 			drainpunch: ["9M"],
 			encore: ["9M"],
 			energyball: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			expandingforce: ["9M"],
 			facade: ["9M"],
 			fakeout: ["9M"],
@@ -27172,7 +27171,7 @@ zapdosgalar: {
 			furyswipes: ["9M"], //Añadido
 			gigaimpact: ["9M"],
 			gust: ["9M"], //Añadido
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"], //Añadido
 			highjumpkick: ["9M"], //Añadido
@@ -27381,7 +27380,7 @@ moltresgalar: {
 			gigaimpact: ["9M"],
 			grudge: ["9M"], //Añadido
 			gust: ["9M"],
-			heatbutt: ["9M"], //Añadido
+			headbutt: ["9M"], //Añadido
 			heatwave: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hex: ["9M"],
@@ -27397,7 +27396,7 @@ moltresgalar: {
 			mimic: ["9M"], //Añadido
 			nastyplot: ["9M"],
 			naturalgift: ["9M"], //Añadido
-			nigthmare: ["9M"], //Añadido
+			nightmare: ["9M"], //Añadido
 			ominouswind: ["9M"], //Añadido
 			outrage: ["9M"], //Añadido
 			overheat: ["9M"], //Añadido
@@ -30962,7 +30961,7 @@ ledstar: {
 			cut: ["9M"], //Añadido
 			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
-			dicharge: ["9M"], //Añadido
+			discharge: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doublehit: ["9M"], //Añadido
@@ -33182,7 +33181,7 @@ disdowoodion: {
 			rocksmash: ["9M"],
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			rollout: ["9M"],
 			safeguard: ["9M"], //Añadido
@@ -39959,7 +39958,7 @@ delibird: {
 			encore: ["9M"], //Añadido
 			endeavor: ["9M"],
 			endure: ["9M"],
-			entertainment: ["9M"], //Añadido
+			entrainment: ["9M"], //Añadido
 			extrasensory: ["9M"], //Añadido
 			facade: ["9M"],
 			fakeout: ["9M"],
