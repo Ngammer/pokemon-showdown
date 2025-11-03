@@ -5334,7 +5334,7 @@ sandslash: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			rollout: ["9M"],
 			sandattack: ["9M"],
 			sandstorm: ["9M"], //Añadido
@@ -12291,7 +12291,7 @@ machamp: {
 			rocksmash: ["9M"],
 			rockthrow: ["9M"], //Añadido
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["9M"], //Añadido
@@ -17741,7 +17741,7 @@ kingler: {
 			rockslide: ["9M"],
 			rocksmash: ["9M"],
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			secretpower: ["9M"], //Añadido
 			shellsmash: ["9M"], //Añadido
@@ -33175,7 +33175,7 @@ disdowoodion: {
 			rocksmash: ["9M"],
 			rockthrow: ["9M"],
 			rocktomb: ["9M"],
-			rockwreaker: ["9M"], //Añadido
+			rockwrecker: ["9M"], //Añadido
 			roleplay: ["9M"],
 			rollout: ["9M"],
 			safeguard: ["9M"], //Añadido
