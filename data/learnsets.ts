@@ -11452,7 +11452,7 @@ poliwrath: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			strength: ["9M"], //Añadido
-			stromthrow: ["9M"], //Añadido
+			stormthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -12060,7 +12060,7 @@ machop: {
 			smellingsalts: ["9M"],
 			snore: ["9M"],
 			strength: ["9M"], //Añadido
-			stromthrow: ["9M"], //Añadido
+			stormthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -12176,7 +12176,7 @@ machoke: {
 			snore: ["9M"],
 			stompingtantrum: ["9M"],
 			strength: ["9M"], //Añadido
-			stromthrow: ["9M"], //Añadido
+			stormthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -12304,7 +12304,7 @@ machamp: {
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
 			strength: ["9M"], //Añadido
-			stromthrow: ["9M"], //Añadido
+			stormthrow: ["9M"], //Añadido
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
@@ -30290,7 +30290,7 @@ furrful: {
 			splash: ["9M"], //Añadido
 			stomp: ["9M"], //Añadido
 			strength: ["9M"], //Añadido
-			stromthrow: ["9M"], //Añadido
+			stormthrow: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			superfang: ["9M"],
@@ -36815,7 +36815,7 @@ granbullfeudal: {
 			spiritbreak: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stoneedge: ["9M"],
-			stromthrow: ["9M"], //Añadido
+			stormthrow: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			superfang: ["9M"],
