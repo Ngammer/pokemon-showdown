@@ -308,6 +308,8 @@ venusaur: {
 			snore: ["9M"],
 			solarbeam: ["9M"],
 			solarblade: ["9M"], //Añadido
+			spitup: ["9M"],
+			swallow: ["9M"],
 			stockpile: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stringshot: ["9M"],
@@ -1992,6 +1994,7 @@ rattataalola: {
 			snore: ["9M"],
 			spite: ["9M"], //Añadido
 			stockpile: ["9M"],
+			spitup: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			superfang: ["9M"],
@@ -2211,6 +2214,8 @@ raticatealola: {
 			snatch: ["9M"],
 			snore: ["9M"],
 			spite: ["9M"], //Añadido
+			spitup: ["9M"],
+			swallow: ["9M"],
 			steelroller: ["9M"], //Añadido
 			stompingtantrum: ["9M"],
 			stuffcheeks: ["9M"], //Añadido
@@ -14322,6 +14327,8 @@ slowbro: {
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			snowscape: ["9M"],
+			spitup: ["9M"],
+			swallow: ["9M"],
 			stockpile: ["9M"], //Añadido
 			storedpower: ["9M"],
 			submission: ["9M"],
