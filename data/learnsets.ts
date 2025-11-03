@@ -4593,7 +4593,6 @@ pikachustarter: {
 			happyhour: ["9M"], //Añadido
 			headbutt: ["9M"],
 			heartstamp: ["9M"], //Añadido
-			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"], //Añadido
 			irontail: ["9M"],
