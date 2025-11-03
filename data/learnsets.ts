@@ -3042,7 +3042,7 @@ pichuspikyeared: {
 			dazzlinggleam: ["9M"], //Añadido
 			defensecurl: ["9M"],
 			detect: ["9M"],
-			dicharge: ["9M"], //Añadido
+			discharge: ["9M"], //Añadido
 			disarmingvoice: ["9M"],
 			doubleedge: ["9M"],
 			doubleslap: ["9M"],
@@ -3174,7 +3174,6 @@ pikachu: {
 			grassknot: ["9M"],
 			headbutt: ["9M"],
 			heartstamp: ["9M"],
-			headbutt: ["9M"], //Añadido
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
@@ -30955,7 +30954,7 @@ ledstar: {
 			cut: ["9M"], //Añadido
 			defensecurl: ["9M"], //Añadido
 			defog: ["9M"],
-			dicharge: ["9M"], //Añadido
+			discharge: ["9M"], //Añadido
 			dig: ["9M"],
 			doubleedge: ["9M"],
 			doublehit: ["9M"], //Añadido
