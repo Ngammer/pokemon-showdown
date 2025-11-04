@@ -700,8 +700,8 @@ charizard: {
 			sunnyday: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
 			supersonic: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
+
 			tailwind: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
@@ -1399,7 +1399,7 @@ weedle: {
 			stringshot: ["9M"],
 			strugglebug: ["9M"], //Añadido
 			substitute: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
 			thief: ["9M"], //Añadido
 			toxic: ["9M"], //Añadido
@@ -1449,7 +1449,7 @@ kakuna: {
 			stringshot: ["9M"],
 			strugglebug: ["9M"], //Añadido
 			substitute: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
 			thief: ["9M"], //Añadido
 			toxic: ["9M"], //Añadido
@@ -1534,8 +1534,7 @@ beedrill: {
 			substitute: ["9M"],
 			suckerpunch: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"], //Añadido
 			thief: ["9M"], //Añadido
@@ -5123,8 +5122,7 @@ sandshrew: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			superfang: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -5239,8 +5237,7 @@ sandshrewalola: {
 			steelroller: ["9M"],
 			substitute: ["9M"],
 			superfang: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -5363,8 +5360,7 @@ sandslash: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			superfang: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -5494,8 +5490,7 @@ sandslashalola: {
 			substitute: ["9M"],
 			supercellslam: ["9M"], //Añadido
 			superfang: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -7961,7 +7956,7 @@ crobat: {
 			suckerpunch: ["9M"], //Añadido
 			superfang: ["9M"],
 			supersonic: ["9M"],
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"], //Añadido
 			thief: ["9M"], //Añadido
@@ -8598,8 +8593,7 @@ parasect: {
 			stunspore: ["9M"],
 			substitute: ["9M"],
 			sweetscent: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			synthesis: ["9M"],
 			terablast: ["9M"], //Añadido
 			throatchop: ["9M"],
@@ -11936,7 +11930,7 @@ alakazam: {
 			storedpower: ["9M"],
 			submission: ["9M"],
 			substitute: ["9M"],
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
 			telekinesis: ["9M"],
 			teleport: ["9M"],
@@ -15630,8 +15624,7 @@ doduo: {
 			steelwing: ["9M"],
 			substitute: ["9M"],
 			supersonic: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			thrash: ["9M"],
@@ -15734,8 +15727,7 @@ dodrio: {
 			stompingtantrum: ["9M"],
 			substitute: ["9M"],
 			supersonic: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			thrash: ["9M"],
@@ -17645,8 +17637,7 @@ krabby: {
 			suckerpunch: ["9M"], //Añadido
 			superpower: ["9M"],
 			surf: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			teeterdance: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
 			thrash: ["9M"], //Añadido
@@ -17760,8 +17751,7 @@ kingler: {
 			suckerpunch: ["9M"], //Añadido
 			superpower: ["9M"],
 			surf: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			teeterdance: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
 			thrash: ["9M"], //Añadido
@@ -18644,8 +18634,7 @@ cubone: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -18768,8 +18757,7 @@ marowak: {
 			substitute: ["9M"],
 			supercellslam: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -18919,8 +18907,7 @@ marowakalola: {
 			suckerpunch: ["9M"], //Añadido
 			sunnyday: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -19041,8 +19028,7 @@ marowakalolatotem: {
 			substitute: ["9M"],
 			sunnyday: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			tearfullook: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -22610,8 +22596,7 @@ scyther: {
 			steelwing: ["9M"],
 			strugglebug: ["9M"],
 			substitute: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			trailblaze: ["9M"],
@@ -22727,8 +22712,7 @@ scizor: {
 			strugglebug: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			thunderpunch: ["9M"], //Añadido
@@ -23823,8 +23807,7 @@ pinsir: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
 			thrash: ["9M"],
 			throatchop: ["9M"],
@@ -23931,7 +23914,7 @@ tauros: {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			terablast: ["9M"],
@@ -24031,7 +24014,7 @@ taurospaldeacombat: {
 			strength: ["9M"], //Añadido
 			substitute: ["9M"],
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			terablast: ["9M"],
@@ -24121,7 +24104,7 @@ taurospaldeablaze: {
 			substitute: ["9M"],
 			sunnyday: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			temperflare: ["9M"],
@@ -24207,7 +24190,7 @@ taurospaldeaaqua: {
 			substitute: ["9M"],
 			superpower: ["9M"], //Añadido
 			surf: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			terablast: ["9M"],
@@ -26334,8 +26317,7 @@ kabutops: {
 			superpower: ["9M"],
 			surf: ["9M"], //Añadido
 			swift: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
 			trailblaze: ["9M"], //Añadido
 			tripleaxel: ["9M"], //Añadido
@@ -26468,7 +26450,7 @@ aerodactyl: {
 			superpower: ["9M"], //Añadido
 			supersonic: ["9M"],
 			swift: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"], //Añadido
 			thunderfang: ["9M"],
@@ -33209,7 +33191,7 @@ disdowoodion: {
 			supercellslam: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
 			swift: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			takedown: ["9M"], //Añadido
 			tearfullook: ["9M"],
@@ -36259,8 +36241,7 @@ gligar: {
 			stoneedge: ["9M"],
 			strugglebug: ["9M"],
 			substitute: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			throatchop: ["9M"],
@@ -36826,7 +36807,7 @@ granbullfeudal: {
 			superfang: ["9M"],
 			superpower: ["9M"],
 			swagger: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			tailwhip: ["9M"],
 			takedown: ["9M"], //Añadido
@@ -37085,8 +37066,7 @@ qwilfishfeudal: {
 			supersonic: ["9M"],
 			surf: ["9M"], //Añadido
 			swallow: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			temperflare: ["9M"], //Añadido
 			terablast: ["9M"],
 			throatchop: ["9M"],
@@ -37620,8 +37600,7 @@ sneasel: {
 			substitute: ["9M"],
 			suckerpunch: ["9M"], //Añadido
 			switcheero: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"], //Añadido
@@ -37728,8 +37707,7 @@ sneaselhisui: {
 			strength: ["9M"], //Añadido
 			substitute: ["9M"],
 			switcheroo: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"], //Añadido
@@ -38199,8 +38177,7 @@ ursaring: {
 			swallow: ["9M"], //Añadido
 			sweetkiss: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			takedown: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
@@ -38359,8 +38336,7 @@ ursaringfeudal: {
 			swallow: ["9M"], //Añadido
 			sweetkiss: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			takedown: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
@@ -39057,7 +39033,7 @@ piloswine: {
 			substitute: ["9M"],
 			superpower: ["9M"],
 			swallow: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			terablast: ["9M"],
 			thrash: ["9M"],
 			throatchop: ["9M"],
@@ -40560,8 +40536,7 @@ skarmory: {
 			stealthrock: ["9M"],
 			steelwing: ["9M"],
 			substitute: ["9M"],
-			sworddance: ["9M"], //Añadido
-			swordsdance: ["9M"],
+			swordsdance: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			whirlwind: ["9M"],
@@ -41038,7 +41013,7 @@ donphan: {
 			superpower: ["9M"],
 			swallow: ["9M"], //Añadido
 			swift: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			takedown: ["9M"], //Añadido
 			terablast: ["9M"],
@@ -41337,7 +41312,7 @@ stantler: {
 			strength: ["9M"], //Añadido
 			substitute: ["9M"],
 			swift: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			synchronoise: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			takedown: ["9M"], //Añadido
@@ -41497,7 +41472,7 @@ clammdeer: {
 			supercellslam: ["9M"], //Añadido
 			superpower: ["9M"], //Añadido
 			swift: ["9M"], //Añadido
-			sworddance: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
 			synchronoise: ["9M"], //Añadido
 			tackle: ["9M"], //Añadido
 			takedown: ["9M"], //Añadido
