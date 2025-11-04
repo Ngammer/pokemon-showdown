@@ -230,6 +230,8 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 	readonly isMega?: boolean;
 	/** True if a pokemon is totem. */
 	readonly isTotem?: boolean;
+	/** True if a pokemon is feudal. */
+	readonly isFeudal?: boolean;
 	/** True if a pokemon is primal. */
 	declare readonly isPrimal?: boolean;
 	/** Name of its Gigantamax move, if a pokemon is capable of gigantamaxing. */

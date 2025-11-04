@@ -739,6 +739,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 	let sort = null;
 	let megaSearch = null;
 	let totemSearch = null;
+	let feudalSearch = null;
 	let gmaxSearch = null;
 	let tierSearch = null;
 	let capSearch: boolean | null = null;
@@ -1052,6 +1053,14 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 				break;
 			}
 
+			if (target === 'feudal') {
+				if (feudalSearch === isNotSearch) return { error: "A search cannot include and exclude 'feudal'." };
+				if (parameters.length > 1) return { error: "The parameter 'feudal' cannot have alternative parameters." };
+				feudalSearch = !isNotSearch;
+				orGroup.skip = true;
+				break;
+			}
+
 			if (target === 'gmax' || target === 'gigantamax') {
 				if (gmaxSearch === isNotSearch) return { error: "A search cannot include and exclude 'gigantamax'." };
 				if (parameters.length > 1) return { error: "The parameter 'gigantamax' cannot have alternative parameters." };
@@ -1271,7 +1280,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 	}
 	if (
 		showAll && searches.length === 0 && singleTypeSearch === null &&
-		megaSearch === null && totemSearch === null && gmaxSearch === null &&
+		megaSearch === null && totemSearch && feudalSearch === null && gmaxSearch === null &&
 		fullyEvolvedSearch === null && restrictedSearch === null && sort === null
 	) {
 		return {
@@ -1292,6 +1301,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 	for (const species of mod.species.all()) {
 		const megaSearchResult = megaSearch === null || megaSearch === !!species.isMega;
 		const totemSearchResult = totemSearch === null || totemSearch === !!species.isTotem;
+		const feudalSearchResult = feudalSearch === null || feudalSearch === !!species.isFeudal;
 		const gmaxSearchResult = gmaxSearch === null || gmaxSearch === species.name.endsWith('-Gmax');
 		const fullyEvolvedSearchResult = fullyEvolvedSearch === null || fullyEvolvedSearch !== species.nfe;
 		const restrictedSearchResult = restrictedSearch === null ||
@@ -1321,6 +1331,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 			(!species.tier.startsWith("CAP") || capSearch) &&
 			megaSearchResult &&
 			totemSearchResult &&
+			feudalSearchResult &&
 			gmaxSearchResult &&
 			fullyEvolvedSearchResult &&
 			restrictedSearchResult &&
