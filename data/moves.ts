@@ -10090,6 +10090,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { snatch: 1, bypasssub: 1, metronome: 1, mustpressure: 1 },
+		onAfterMove(source, target, move) {
+			source.addVolatile('imprison');
+		},
 		volatileStatus: 'imprison',
 		condition: {
 			noCopy: true,
@@ -10112,7 +10115,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		secondary: null,
-		target: "self",
+		target: "normal",
 		type: "Psychic",
 		zMove: { boost: { spd: 2 } },
 		contestType: "Clever",
