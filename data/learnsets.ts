@@ -590,10 +590,10 @@ charmeleon: {
 	},
 charizard: {
 		learnset: {
-			acrobatics: ["9M"],
-			aerialace: ["9M"],
-			aircutter: ["9M"],
-			airslash: ["9M"],
+			acrobatics: ["9L1"],
+			aerialace: ["9L1"],
+			aircutter: ["9L1"],
+			airslash: ["9L1"],
 			attract: ["9M"],
 			beatup: ["9M"],
 			bellydrum: ["9M"],
