@@ -13383,7 +13383,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (pokemon.ignoringItem()) return false;
 			const item = pokemon.getItem();
 			if (!item.naturalGift && item.name !== '') return false;
-			pokemon.setItem('');
 			pokemon.lastItem = item.id;
 			pokemon.usedItemThisTurn = true;
 			this.runEvent('AfterUseItem', pokemon, null, null, item);
