@@ -6844,10 +6844,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEffectiveness(typeMod, target, type, move) {
 			if (move.type === 'Electric' || move.type === 'Grass') {
-				return 1;
+				return typeMod + 1;
 			}
 			if (move.type === 'Fire' || move.type === 'Water' || move.type === 'Ice' || move.type === 'Steel') {
-				return -1;
+				return typeMod - 1;
 			}
 		},
 		flags: { breakable: 1 },
