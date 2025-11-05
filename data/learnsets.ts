@@ -42673,7 +42673,6 @@ lugia: {
 			icebeam: ["9M"],
 			icywind: ["9M"],
 			imprison: ["9M"], //Añadido
-			imprison: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
