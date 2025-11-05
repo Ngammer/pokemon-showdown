@@ -3705,7 +3705,7 @@ pikachuphd: {
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"], //Añadido
 			hypnosis: ["9M"], //Añadido
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			instruct: ["9M"], //Añadido
 			iondeluge: ["9M"], //Añadido
 			magiccoat: ["9M"], //Añadido
@@ -9693,7 +9693,7 @@ persian: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			irontail: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"], //Añadido
@@ -10203,7 +10203,7 @@ golduck: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lightscreen: ["9M"],
@@ -22230,7 +22230,7 @@ mrmime: {
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			infestation: ["9M"],
 			knockoff: ["9M"], //Añadido
 			lightscreen: ["9M"],
@@ -23042,7 +23042,7 @@ jynx: {
 			icepunch: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			lick: ["9M"],
 			lightscreen: ["9M"],
 			lovelykiss: ["9M"],
@@ -41160,7 +41160,7 @@ donphanfeudal: {
 			hypnosis: ["9M"],
 			icefang: ["9M"],
 			icespinner: ["9M"],
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			instruct: ["9M"], //Añadido
 			irondefense: ["9M"],
 			ironhead: ["9M"],
@@ -42672,7 +42672,7 @@ lugia: {
 			hypervoice: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			imprision: ["9M"], //Añadido
+			imprison: ["9M"], //Añadido
 			imprison: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
