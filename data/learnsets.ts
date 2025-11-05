@@ -3281,84 +3281,143 @@ pikachucosplay: {
 		learnset: {
 			aerialace: ["9M"], //Añadido
 			agility: ["9M"],
+			alluringvoice: ["9M"],
 			attract: ["9M"],
+			bestow: ["9M"],
+			bide: ["9M"],
+			bodyslam: ["9M"],
 			brickbreak: ["9M"],
+			charge: ["9M"],
 			chargebeam: ["9M"],
+			charm: ["9M"],
+			counter: ["9M"],
 			covet: ["9M"],
-			curse: ["9M"], //Añadido
+			curse: ["9M"],
 			cut: ["9M"], //Añadido
 			dig: ["9M"],
+			disarmingvoice: ["9M"],
 			discharge: ["9M"],
-			doubleedge: ["9M"], //Añadido
+			doubleedge: ["9M"],
+			doublekick: ["9M"],
 			doubleteam: ["9M"],
-			eerieimpulse: ["9M"], //Añadido
+			drainingkiss: ["9M"],
+			dynamicpunch: ["9M"],
+			eerieimpulse: ["9M"],
+			electricterrain: ["9M"],
 			electroball: ["9M"],
 			electroweb: ["9M"],
-			endeavor: ["9M"], //Añadido
+			encore: ["9M"],
+			extremespeed: ["9M"],
 			facade: ["9M"],
+			fakeout: ["9M"],
+			faketears: ["9M"],
 			feint: ["9M"],
 			flail: ["9M"], //Añadido
 			flash: ["9M"],
 			flatter: ["9M"], //Añadido
 			focusblast: ["9M"], //Añadido
-			focuspunch: ["9M"],
 			followme: ["9M"], //Añadido
 			frustration: ["9M"],
 			grassknot: ["9M"],
-			happyhour: ["9M"], //Añadido
-			heartstamp: ["9M"], //Añadido
-			headbutt: ["9M"], //Añadido
+			headbutt: ["9M"],
+			heartstamp: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
+			lastresort: ["9M"],
 			lightscreen: ["9M"],
 			magnetrise: ["9M"],
 			metronome: ["9M"], //Añadido
-			mimic: ["9M"], //Añadido
-			naturalgift: ["9M"], //Añadido
+			mimic: ["9M"],
+			mudslap: ["9M"],
+			nastyplot: ["9M"],
+			naturalgift: ["9M"],
 			nuzzle: ["9M"],
+			pikapapow: ["9M"], //Añadido
 			playnice: ["9M"],
-			playrough: ["9M"], //Añadido
+			playrough: ["9M"],
 			protect: ["9M"],
 			psychup: ["9M"], //Añadido
 			quickattack: ["9M"],
-			reflect: ["9M"], //Añadido
+			reflect: ["9M"],
+			refresh: ["9M"],
 			rest: ["9M"],
 			return: ["9M"],
+			risingvoltage: ["9M"],
 			rocksmash: ["9M"],
 			roleplay: ["9M"], //Añadido
 			sandattack: ["9M"], //Añadido
 			scaryface: ["9M"], //Añadido
 			secretpower: ["9M"], //Añadido
 			shockwave: ["9M"],
+			sing: ["9M"],
 			slam: ["9M"],
 			sleeptalk: ["9M"],
 			snore: ["9M"],
 			spark: ["9M"],
+			splash: ["9M"], //Añadido
+			submission: ["9M"],
 			substitute: ["9M"],
-			sweetkiss: ["9M"], //Añadido
+			superfang: ["9M"], //Añadido
+			sweetkiss: ["9M"],
 			tailwhip: ["9M"],
-			terablast: ["9M"], //Añadido
+			terablast: ["9M"],
 			terrainpulse: ["9M"], //Añadido
+			thunder: ["9M"], //Añadido
+			thunderbolt: ["9M"], //Añadido
 			thunderpunch: ["9M"],
 			thundershock: ["9M"],
 			thunderwave: ["9M"],
-			trailblaze: ["9M"], //Añadido
+			trailblaze: ["9M"],
 			voltswitch: ["9M"],
+			volttackle: ["9M"],
 			wildcharge: ["9M"],
+			workup: ["9M"], //Añadido
+			//zapcannon //Removido
+			//yawn //Removido
+			//wish //Removido
+			//uproar //Removido
+			//upperhand //Removido
 			//toxic //Removido
 			//thunderbolt //Removido
 			//thunder //Removido
+			//thief //Removido
+			//teeterdance //Removido
+			//takedown //Removido
+			//swift //Removido
+			//sweetscent //Removido
 			//swagger //Removido
+			//surf //Removido
 			//strength //Removido
+			//skullbash //Removido
 			//signalbeam //Removido
+			//seismictoss //Removido
 			//round //Removido
+			//rollout //Removido
+			//reversal //Removido
 			//raindance //Removido
+			//rage //Removido
+			//present //Removido
+			//payday //Removido
+			//megapunch //Removido
+			//megakick //Removido
+			//laserfocus //Removido
+			//holdhands //Removido
+			//happyhour //Removido
 			//growl //Removido
+			//focuspunch //Removido
+			//fly //Removido
 			//fling //Removido
+			//endure //Removido
+			//endeavor //Removido
 			//echoedvoice //Removido
+			//detect //Removido
+			//defensecurl //Removido
 			//confide //Removido
+			//celebrate //Removido
+			//captivate //Removido
+			//calmmind //Removido
 		},
 	},
 pikachurockstar: {
