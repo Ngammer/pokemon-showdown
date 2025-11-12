@@ -2652,7 +2652,7 @@ fearill: {
 			suckerpunch: ["9M"], //Añadido
 			superpower: ["9M"],
 			swagger: ["9M"], //Añadido
-			switcheero: ["9M"], //Añadido
+			switcheroo: ["9M"], //Añadido
 			tailwind: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -34885,7 +34885,7 @@ murkrow: {
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			swagger: ["9M"], //Añadido
-			switcheero: ["9M"], //Añadido
+			switcheroo: ["9M"], //Añadido
 			tailwind: ["9M"],
 			terablast: ["9M"],
 			thief: ["9M"], //Añadido
@@ -37658,7 +37658,7 @@ sneasel: {
 			spite: ["9M"], //Añadido
 			substitute: ["9M"],
 			suckerpunch: ["9M"], //Añadido
-			switcheero: ["9M"], //Añadido
+			switcheroo: ["9M"], //Añadido
 			swordsdance: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
