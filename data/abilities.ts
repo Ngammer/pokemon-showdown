@@ -6599,7 +6599,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -126,
 	},
 	tectoanchor: {
-		onDragOutPriority: 1,
 		onDragOut(pokemon, source) {
 			if ((source && source !== pokemon) && !source.hasType('Flying')) {
 				this.add('-activate', pokemon, 'ability: Tectoanchor');
