@@ -7075,7 +7075,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	triumphalentry: {
 		onStart(pokemon) {
 			const activated = false;
-			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'sharproot', 'hail', 'iondeluge'];
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'sharproot', 'hail', 'iondeluge'];
 			for (const condition of sideConditions) {
 				if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
 					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Triumphal Entry', `[of] ${pokemon}`);
