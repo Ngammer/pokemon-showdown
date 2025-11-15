@@ -83637,6 +83637,7 @@ sylveon: {
 		eventData: [
 			{generation: 6, level: 50, moves: ["diamondstorm", "reflect", "return", "moonblast"], pokeball: "cherishball"},
 			{generation: 6, level: 50, shiny: true, moves: ["diamondstorm", "moonblast", "reflect", "return"], pokeball: "cherishball"},
+			{generation: 9, level: 70, moves: ["diamondstorm", "moonblast", "stealthrock", "drainingkiss"], source: "gen9legends"},
 		],
 		eventOnly: true,
 	},
