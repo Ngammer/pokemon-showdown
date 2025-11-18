@@ -1654,7 +1654,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 561,
 		gen: 5,
-
 	},
 	dragoninite: {
 		name: "Dragoninite",
@@ -9776,7 +9775,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	gianttotem: {
 		name: "Giant Totem",
-		spritenum: 758,
+		spritenum: 566,
 		pseudoMegaStone: true,
 		onSwitchIn(pokemon) {
 			if (pokemon.baseSpecies.otherFormes && !(pokemon.species.name === "Xatu")) {
@@ -9825,7 +9824,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	dimencionador: {
 		name: "Dimencionador",
-		spritenum: 662,
+		spritenum: 565,
 		fling: {
 			basePower: 60,
 		},
