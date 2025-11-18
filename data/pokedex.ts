@@ -5248,7 +5248,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.4,
 		weightkg: 71.2,
 		color: "Brown",
-		evos: ["Wyrdeer"],
+		evos: ["Wyrdeer", "Clammdeer"],
 		eggGroups: ["Field"],
 	},
 	clammdeer: {
