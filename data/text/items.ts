@@ -207,13 +207,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Bug-type attack will have 1.5x power. Single use.",
 		},
 	},
-	bugmemory: {
-		name: "Bug Memory",
-		shortDesc: "Holder's Multi-Attack is Bug type. Holder's Bug-type attacks have 1.25x power.",
-	},
 	buginiumz: {
 		name: "Buginium Z",
 		shortDesc: "If holder has a Bug move, this item allows it to use a Bug Z-Move.",
+	},
+	bugmemory: {
+		name: "Bug Memory",
+		shortDesc: "Holder's Multi-Attack is Bug type. Holder's Bug-type attacks have 1.25x power.",
 	},
 	burndrive: {
 		name: "Burn Drive",
@@ -358,13 +358,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Dark-type attack will have 1.5x power. Single use.",
 		},
 	},
-	darkmemory: {
-		name: "Dark Memory",
-		shortDesc: "Holder's Multi-Attack is Dark type. Holder's Dark-type attacks have 1.25x power.",
-	},
 	darkiniumz: {
 		name: "Darkinium Z",
 		shortDesc: "If holder has a Dark move, this item allows it to use a Dark Z-Move.",
+	},
+	darkmemory: {
+		name: "Dark Memory",
+		shortDesc: "Holder's Multi-Attack is Dark type. Holder's Dark-type attacks have 1.25x power.",
 	},
 	dawnstone: {
 		name: "Dawn Stone",
@@ -435,6 +435,14 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Dragon-type attack will have 1.5x power. Single use.",
 		},
 	},
+	dragoninite: {
+		name: "Dragoninite",
+		shortDesc: "If held by a Dragonite, this item allows it to Mega Evolve in battle.",
+	},
+	dragoniumz: {
+		name: "Dragonium Z",
+		shortDesc: "If holder has a Dragon move, this item allows it to use a Dragon Z-Move.",
+	},
 	dragonmemory: {
 		name: "Dragon Memory",
 		shortDesc: "Holder's Multi-Attack is Dragon type. Holder's Dragon-type attacks have 1.25x power.",
@@ -445,14 +453,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		gen2: {
 			shortDesc: "Holder's Dragon-type attacks have 1.1x power. Evolves Seadra (trade).",
 		},
-	},
-	dragoninite: {
-		name: "Dragoninite",
-		shortDesc: "If held by a Dragonite, this item allows it to Mega Evolve in battle.",
-	},
-	dragoniumz: {
-		name: "Dragonium Z",
-		shortDesc: "If holder has a Dragon move, this item allows it to use a Dragon Z-Move.",
 	},
 	drampanite: {
 		name: "Drampanite",
@@ -749,13 +749,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Ghost-type attack will have 1.5x power. Single use.",
 		},
 	},
-	ghostmemory: {
-		name: "Ghost Memory",
-		shortDesc: "Holder's Multi-Attack is Ghost type. Holder's Ghost-type attacks have 1.25x power.",
-	},
 	ghostiumz: {
 		name: "Ghostium Z",
 		shortDesc: "If holder has a Ghost move, this item allows it to use a Ghost Z-Move.",
+	},
+	ghostmemory: {
+		name: "Ghost Memory",
+		shortDesc: "Holder's Multi-Attack is Ghost type. Holder's Ghost-type attacks have 1.25x power.",
 	},
 	glalitite: {
 		name: "Glalitite",
@@ -772,13 +772,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Grass-type attack will have 1.5x power. Single use.",
 		},
 	},
-	grassmemory: {
-		name: "Grass Memory",
-		shortDesc: "Holder's Multi-Attack is Grass type. Holder's Grass-type attacks have 1.25x power.",
-	},
 	grassiumz: {
 		name: "Grassium Z",
 		shortDesc: "If holder has a Grass move, this item allows it to use a Grass Z-Move.",
+	},
+	grassmemory: {
+		name: "Grass Memory",
+		shortDesc: "Holder's Multi-Attack is Grass type. Holder's Grass-type attacks have 1.25x power.",
 	},
 	grassyseed: {
 		name: "Grassy Seed",
@@ -818,13 +818,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Ground-type attack will have 1.5x power. Single use.",
 		},
 	},
-	groundmemory: {
-		name: "Ground Memory",
-		shortDesc: "Holder's Multi-Attack is Ground type. Holder's Ground-type attacks have 1.25x power.",
-	},
 	groundiumz: {
 		name: "Groundium Z",
 		shortDesc: "If holder has a Ground move, this item allows it to use a Ground Z-Move.",
+	},
+	groundmemory: {
+		name: "Ground Memory",
+		shortDesc: "Holder's Multi-Attack is Ground type. Holder's Ground-type attacks have 1.25x power.",
 	},
 	gyaradosite: {
 		name: "Gyaradosite",
@@ -952,6 +952,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Jaw Fossil",
 		shortDesc: "Increases Critical ratio +2 when the ability Fossilization is active.",
 	},
+	kangaskhanite: {
+		name: "Kangaskhanite",
+		shortDesc: "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
+	},
 	kasibberry: {
 		name: "Kasib Berry",
 		shortDesc: "Halves damage taken from a supereffective Ghost-type attack. Single use.",
@@ -967,10 +971,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	kelpsyberry: {
 		name: "Kelpsy Berry",
 		shortDesc: "Removes all entry hazards from the user's side of the field when consumed.",
-	},
-	kangaskhanite: {
-		name: "Kangaskhanite",
-		shortDesc: "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
 	},
 	kingsrock: {
 		name: "King's Rock",
@@ -1419,13 +1419,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Poison-type attack will have 1.5x power. Single use.",
 		},
 	},
-	poisonmemory: {
-		name: "Poison Memory",
-		shortDesc: "Holder's Multi-Attack is Poison type. Holder's Poison-type attacks have 1.25x power.",
-	},
 	poisoniumz: {
 		name: "Poisonium Z",
 		shortDesc: "If holder has a Poison move, this item allows it to use a Poison Z-Move.",
+	},
+	poisonmemory: {
+		name: "Poison Memory",
+		shortDesc: "Holder's Multi-Attack is Poison type. Holder's Poison-type attacks have 1.25x power.",
 	},
 	pokeball: {
 		name: "Poke Ball",
@@ -1606,13 +1606,13 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Rock Incense",
 		shortDesc: "Summons Sandstorm when hit and is consumed.",
 	},
-	rockmemory: {
-		name: "Rock Memory",
-		shortDesc: "Holder's Multi-Attack is Rock type. Holder's Rock-type attacks have 1.25x power.",
-	},
 	rockiumz: {
 		name: "Rockium Z",
 		shortDesc: "If holder has a Rock move, this item allows it to use a Rock Z-Move.",
+	},
+	rockmemory: {
+		name: "Rock Memory",
+		shortDesc: "Holder's Multi-Attack is Rock type. Holder's Rock-type attacks have 1.25x power.",
 	},
 	rockyhelmet: {
 		name: "Rocky Helmet",
@@ -1841,10 +1841,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Star Sweet",
 		shortDesc: "(Alcremie only) Gains Electric as a secondary type. +50% Special Defense.",
 	},
-	steelixite: {
-		name: "Steelixite",
-		shortDesc: "If held by a Steelix, this item allows it to Mega Evolve in battle.",
-	},
 	steelgem: {
 		name: "Steel Gem",
 		shortDesc: "Holder's first successful Steel-type attack will have 1.5x power. Single use.",
@@ -1852,13 +1848,17 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Steel-type attack will have 1.5x power. Single use.",
 		},
 	},
-	steelmemory: {
-		name: "Steel Memory",
-		shortDesc: "Holder's Multi-Attack is Steel type. Holder's Steel-type attacks have 1.25x power.",
-	},
 	steeliumz: {
 		name: "Steelium Z",
 		shortDesc: "If holder has a Steel move, this item allows it to use a Steel Z-Move.",
+	},
+	steelixite: {
+		name: "Steelixite",
+		shortDesc: "If held by a Steelix, this item allows it to Mega Evolve in battle.",
+	},
+	steelmemory: {
+		name: "Steel Memory",
+		shortDesc: "Holder's Multi-Attack is Steel type. Holder's Steel-type attacks have 1.25x power.",
 	},
 	stick: {
 		name: "Stick",
@@ -2405,6 +2405,10 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Holder's first successful Water-type attack will have 1.5x power. Single use.",
 		},
 	},
+	wateriumz: {
+		name: "Waterium Z",
+		shortDesc: "If holder has a Water move, this item allows it to use a Water Z-Move.",
+	},
 	watermemory: {
 		name: "Water Memory",
 		shortDesc: "Holder's Multi-Attack is Water type. Holder's Water-type attacks have 1.25x power.",
@@ -2413,10 +2417,6 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Water Stone",
 		desc: "Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.",
 		shortDesc: "1.5x power for Water moves. Only for Pokémon evolving this way.",
-	},
-	wateriumz: {
-		name: "Waterium Z",
-		shortDesc: "If holder has a Water move, this item allows it to use a Water Z-Move.",
 	},
 	watmelberry: {
 		name: "Watmel Berry",

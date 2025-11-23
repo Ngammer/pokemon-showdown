@@ -5224,6 +5224,24 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 33,
 	},
+	swordofruin: {
+		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
+			this.add('-ability', pokemon, 'Sword of Ruin');
+		},
+		onAnyModifyDef(def, target, source, move) {
+			const abilityHolder = this.effectState.target;
+			if (target.hasAbility('Sword of Ruin')) return;
+			if (!move.ruinedDef?.hasAbility('Sword of Ruin')) move.ruinedDef = abilityHolder;
+			if (move.ruinedDef !== abilityHolder) return;
+			this.debug('Sword of Ruin Def drop');
+			return this.chainModify(0.75);
+		},
+		flags: { },
+		name: "Sword of Ruin",
+		rating: 4.5,
+		num: 285,
+	},
 	symbiosis: {
 		onAllyAfterUseItem(item, pokemon) {
 			if (pokemon.switchFlag) return;
@@ -5274,24 +5292,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Synchronize",
 		rating: 2,
 		num: 28,
-	},
-	swordofruin: {
-		onStart(pokemon) {
-			if (this.suppressingAbility(pokemon)) return;
-			this.add('-ability', pokemon, 'Sword of Ruin');
-		},
-		onAnyModifyDef(def, target, source, move) {
-			const abilityHolder = this.effectState.target;
-			if (target.hasAbility('Sword of Ruin')) return;
-			if (!move.ruinedDef?.hasAbility('Sword of Ruin')) move.ruinedDef = abilityHolder;
-			if (move.ruinedDef !== abilityHolder) return;
-			this.debug('Sword of Ruin Def drop');
-			return this.chainModify(0.75);
-		},
-		flags: { },
-		name: "Sword of Ruin",
-		rating: 4.5,
-		num: 285,
 	},
 	tabletsofruin: {
 		onStart(pokemon) {
@@ -7074,7 +7074,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	triumphalentry: {
 		onStart(pokemon) {
 			const activated = false;
-			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'sharproot', 'hail', 'iondeluge'];
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'sharproot', 'hail', 'iondeluge'];
 			for (const condition of sideConditions) {
 				if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
 					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Triumphal Entry', `[of] ${pokemon}`);
