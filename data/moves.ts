@@ -12886,7 +12886,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 						this.add('-activate', target, "move: Mist");
 						return false;
 					}
-					this.add('-immune', target);
+					this.add('-activate', target, "move: Mist");
 					return false;
 				}
 			},
