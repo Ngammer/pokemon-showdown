@@ -12879,15 +12879,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHitPriority: 4,
 			onTryHit(target, source, move) {
-				if (!(move.category === "Status" || target == source)) {
+				if (!(move.category === "Status" || target === source)) {
 					return;
 				} else {
-						if (move.target == "foeSide"){
-							this.add('-activate', target, "move: Mist");
-							return false;
-						}
-						this.add('-immune', target);
+					if (move.target === "foeSide") {
+						this.add('-activate', target, "move: Mist");
 						return false;
+					}
+					this.add('-immune', target);
+					return false;
 				}
 			},
 		},
