@@ -12868,7 +12868,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 30,
 		priority: 0,
 		flags: { snatch: 1, metronome: 1 },
-		sideCondition: 'mist',
+		pseudoWeather: 'mist',
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
@@ -12878,8 +12878,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return 5;
 			},
 			onTryHitPriority: 4,
-			onTryHit(target, source, move) {
-				if (!(move.category === "Status" || target === source)) {
+			onBeforeMove(source, target, move) {
+				if ((move.category !== "Status" || target === source)) {
 					return;
 				} else {
 					if (move.target === "foeSide") {
