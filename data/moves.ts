@@ -12879,7 +12879,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHitPriority: 4,
 			onBeforeMove(source, target, move) {
-				if ((move.category !== "Status" || target === source)) {
+				if ((move.category !== "Status" || move.target === "self")) {
 					return;
 				} else {
 					if (move.target === "foeSide") {
