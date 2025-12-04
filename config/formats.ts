@@ -2900,7 +2900,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// Pet Mods
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "Pet Mods",
 	},
@@ -2976,7 +2976,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Min Source Gen = 3', 'Terastal Clause'],
 		banlist: ['Uber', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock', 'Quick Claw', 'Baton Pass'],
 	},
-
+ */
 	// Randomized Format Spotlight
 	///////////////////////////////////////////////////////////////////
 
