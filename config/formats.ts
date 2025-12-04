@@ -515,7 +515,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// OM of the Month
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "OM of the Month",
 		column: 2,
@@ -719,7 +719,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 	},
-
+ */
 	// Other Metagames
 	///////////////////////////////////////////////////////////////////
 
@@ -2980,7 +2980,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	// Randomized Format Spotlight
 	///////////////////////////////////////////////////////////////////
 
-	{
+	/* {
 		section: "Randomized Format Spotlight",
 		column: 3,
 	},
@@ -2991,7 +2991,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		team: 'random',
 		ruleset: ['Force of the Fallen Mod'],
 		bestOfDefault: true,
-	},
+	}, */
 
 	// Randomized Metas
 	///////////////////////////////////////////////////////////////////
