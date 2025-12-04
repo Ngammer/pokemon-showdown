@@ -1166,7 +1166,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	mewtwomegay: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "OU",
 	},
 	mew: {
