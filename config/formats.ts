@@ -2995,7 +2995,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// Randomized Metas
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "Randomized Metas",
 		column: 3,
@@ -3638,7 +3638,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			}
 		},
 	},
-
+ */
 	// RoA Spotlight
 	///////////////////////////////////////////////////////////////////
 
