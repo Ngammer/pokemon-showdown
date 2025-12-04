@@ -24,7 +24,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	{
 		section: "S/V Singles",
-		column: 2,
 	},
 	{
 		name: "[Gen 9] Random Battle",
@@ -2620,7 +2619,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// National Dex Other Tiers
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "National Dex Other Tiers",
 	},
@@ -2658,6 +2657,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			}
 		},
 	},
+	*/
 	{
 		name: "[Gen 9] National Dex Ubers",
 		mod: 'gen9',
@@ -2687,6 +2687,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Smoochum', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Vulpix-Base', 'Wynaut', 'Yanma', 'Splash', 'Oval Stone', 'Baton Pass',
 		],
 	},
+	/*
 	{
 		name: "[Gen 9] National Dex Monotype",
 		mod: 'gen9',
@@ -2703,6 +2704,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Last Respects', 'Shed Tail',
 		],
 	},
+	*/
 	{
 		name: "[Gen 9] National Dex Doubles",
 		mod: 'gen9',
@@ -3654,6 +3656,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['[Gen 8] OU'],
 		banlist: ['OU', 'UUBL', 'Light Clay'],
 	},
+	/*
 	{
 		name: "[Gen 8] CAP",
 		desc: "The Create-A-Pok&eacute;mon project is a community dedicated to exploring and understanding the competitive Pok&eacute;mon metagame by designing, creating, and playtesting new Pok&eacute;mon concepts.",
@@ -3670,7 +3673,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		bestOfDefault: true,
 		ruleset: ['Flat Rules', 'Kalos Pokedex', 'Min Source Gen = 6'],
 	},
-
+	*/
 	// Past Gens OU
 	///////////////////////////////////////////////////////////////////
 
