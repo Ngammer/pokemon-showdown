@@ -14,6 +14,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		team: 'randomBSSFactory',
 		ruleset: ['Standard NatDex', 'PotD', 'Illusion Level Mod', 'Nuevo Meta Pokedex', 'Terastal Clause', 'Item Clause = 1'],
 	},
+	/*
 	{
 		name: "[Gen 9] Nuevo Meta",
 		mod: 'gen9',
@@ -82,7 +83,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		ruleset: ['Standard AG', 'NatDex Mod', 'Terastal Clause', 'Nuevo Meta Pokedex'],
 	},
-
+	*/
 ];
 
 // Nuevo Meta Singles
