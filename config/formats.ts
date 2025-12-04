@@ -74,13 +74,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] OU",
 		mod: 'gen9',
-		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Terastal Clause'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', 'Nuevo Meta Pokedex', '!Evasion Clause', '!OHKO Clause', 'Form Item Clause'],
 		banlist: ['Uber', 'AG'],
 	},
 	{
 		name: "[Gen 9] Ubers",
 		mod: 'gen9',
-		ruleset: ['Standard', 'Terastal Clause'],
+		ruleset: ['Standard NatDex', 'Nuevo Meta Pokedex', '!Evasion Clause', '!OHKO Clause', 'Terastal Clause'],
 		banlist: ['AG'],
 	},
 	{
