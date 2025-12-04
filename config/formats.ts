@@ -338,7 +338,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] Anything Goes",
 		mod: 'gen9',
-		ruleset: ['Standard AG'],
+		ruleset: ['Standard AG', 'NatDex Mod', 'Terastal Clause', 'Nuevo Meta Pokedex'],
 	},
 	{
 		name: "[Gen 9] Ubers UU",
