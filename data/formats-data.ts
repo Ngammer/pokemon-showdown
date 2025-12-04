@@ -37,7 +37,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	charizardgmax: {
-		tier: "Illegal",
+		tier: "AG",
 	},
 	squirtle: {
 		tier: "LC",
@@ -66,7 +66,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	butterfree: {
-		tier: "UU",
+		tier: "OU",
 		natDexTier: "OU",
 	},
 	butterfreemega: {
@@ -1166,7 +1166,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	mewtwomegay: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "OU",
 	},
 	mew: {
