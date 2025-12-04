@@ -136,7 +136,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		ruleset: ['[Gen 9] OU', '+CAP'],
 		banlist: ['Crucibellite', 'Rage Fist'],
-	}, */
+	},
 	{
 		name: "[Gen 9] BSS Reg I",
 		mod: 'gen9',
@@ -152,6 +152,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 9', 'VGC Timer', 'Limit Two Restricted'],
 		restricted: ['Restricted Legendary', 'Mythical'],
 	},
+	*/
 	{
 		name: "[Gen 9] Custom Game",
 		mod: 'gen9',
@@ -366,6 +367,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['[Gen 9] PU'],
 		banlist: ['PU', 'ZUBL', 'Unburden', 'Heat Rock'],
 	},
+	/*
 	{
 		name: "[Gen 9] Free-For-All",
 		mod: 'gen9',
@@ -383,6 +385,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Malignant Chain', 'Poison Fang', 'Rage Powder', 'Skill Swap', 'Spicy Extract', 'Swagger', 'Toxic', 'Toxic Spikes',
 		],
 	},
+	*/
 	{
 		name: "[Gen 9] LC UU",
 		mod: 'gen9',
@@ -400,7 +403,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] NFE",
 		desc: `Only Pok&eacute;mon that can evolve are allowed.`,
 		mod: 'gen9',
-		searchShow: false,
 		ruleset: ['Standard OMs', 'Not Fully Evolved', 'Sleep Moves Clause', 'Terastal Clause'],
 		banlist: [
 			'Aipom', 'Azurill', 'Bonsly', 'Corsola-Galar', 'Electabuzz', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Magmar', 'Magneton', 'Mantyke', 'Mime Jr.',
@@ -411,7 +413,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// Draft League
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "Draft",
 		column: 2,
@@ -515,7 +517,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		ruleset: ['Standard Draft'],
 	},
-
+	*/
 	// OM of the Month
 	///////////////////////////////////////////////////////////////////
 	/*
@@ -2761,6 +2763,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		ruleset: ['Standard AG', 'NatDex Mod'],
 	},
+	/*
 	{
 		name: "[Gen 9] National Dex AAA",
 		desc: `Pok&eacute;mon have access to almost any ability.`,
@@ -2901,7 +2904,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		searchShow: false,
 		ruleset: ['Standard AG', 'NatDex Mod'],
 	},
-
+ */
 	// Pet Mods
 	///////////////////////////////////////////////////////////////////
 	/*
