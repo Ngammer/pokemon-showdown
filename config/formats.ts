@@ -24,6 +24,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	{
 		section: "S/V Singles",
+		column: 2,
 	},
 	{
 		name: "[Gen 9] Random Battle",
@@ -411,7 +412,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	{
 		section: "Draft",
-		column: 1,
+		column: 2,
 	},
 	{
 		name: "[Gen 9] Draft",
@@ -2601,6 +2602,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	{
 		section: "National Dex",
+		column: 2,
 	},
 	{
 		name: "[Gen 9] National Dex",
