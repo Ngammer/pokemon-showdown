@@ -66,7 +66,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "NFE",
 	},
 	butterfree: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	butterfreemega: {
