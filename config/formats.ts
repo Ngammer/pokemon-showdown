@@ -722,7 +722,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
  */
 	// Other Metagames
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "Other Metagames",
 		column: 2,
@@ -2595,7 +2595,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: ['Acupressure'],
 	},
-
+	*/
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 
