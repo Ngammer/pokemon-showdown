@@ -74,14 +74,14 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] OU",
 		mod: 'gen9',
-		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod'],
+		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Terastal Clause'],
 		banlist: ['Uber', 'AG'],
 	},
 	{
 		name: "[Gen 9] Ubers",
 		mod: 'gen9',
-		ruleset: ['Standard'],
-		banlist: ['AG', 'Moody', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects'],
+		ruleset: ['Standard', 'Terastal Clause'],
+		banlist: ['AG'],
 	},
 	{
 		name: "[Gen 9] UU",
@@ -93,41 +93,32 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] RU",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] UU'],
-		banlist: ['UU', 'RUBL', 'Light Clay'],
+		banlist: ['UU', 'RUBL'],
 	},
 	{
 		name: "[Gen 9] NU",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] RU'],
-		banlist: ['RU', 'NUBL', 'Drought', 'Quick Claw'],
+		banlist: ['RU', 'NUBL'],
 	},
 	{
 		name: "[Gen 9] PU",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] NU'],
-		banlist: ['NU', 'PUBL', 'Damp Rock'],
+		banlist: ['NU', 'PUBL'],
 	},
 	{
 		name: "[Gen 9] LC",
 		mod: 'gen9',
 		ruleset: ['Little Cup', 'Standard'],
 		banlist: [
-			'Aipom', 'Abra', 'Azurill', 'Bonsly', 'Corsola-Galar', 'Farfetch\u2019d-Galar', 'Girafarig', 'Gligar', 'Happiny', 'Lickitung', 'Mantyke', 'Mime Jr.', 'Misdreavus',
-			'Munchlax', 'Murkrow', 'Qwilfish-Hisui', 'Scyther', 'Smoochum', 'Sneasel', 'Sneasel-Hisui', 'Tangela', 'Vulpix-Base', 'Wynaut', 'Yanma', 'Moody', 'Dream Ball',
-			'Heat Rock', 'Oval Stone', 'Baton Pass', 'Splash',
 		],
 	},
 	{
 		name: "[Gen 9] Monotype",
 		mod: 'gen9',
-		ruleset: ['Standard', 'Evasion Abilities Clause', 'Same Type Clause', 'Terastal Clause'],
+		ruleset: ['Standard', 'Same Type Clause', 'Terastal Clause'],
 		banlist: [
-			'Annihilape', 'Arceus', 'Baxcalibur', 'Calyrex-Ice', 'Calyrex-Shadow', 'Chi-Yu', 'Chien-Pao', 'Blaziken', 'Deoxys-Normal', 'Deoxys-Attack',
-			'Dialga', 'Dialga-Origin', 'Espathra', 'Eternatus', 'Giratina', 'Giratina-Origin', 'Gouging Fire', 'Groudon', 'Ho-Oh', 'Iron Bundle', 'Kingambit',
-			'Koraidon', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane',
-			'Palafin', 'Palkia', 'Palkia-Origin', 'Rayquaza', 'Reshiram', 'Shaymin-Sky', 'Solgaleo', 'Ursaluna-Bloodmoon', 'Urshifu-Single-Strike', 'Zacian',
-			'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Moody', 'Shadow Tag', 'Booster Energy', 'Damp Rock', 'Focus Band', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Smooth Rock', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 	},
 	/* {
