@@ -6259,7 +6259,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, reflectable: 1, heal: 1, allyanim: 1, metronome: 1 },
 		heal: [1, 2],
 		onHitField() {
-			this.add('-clearanegativeboost');
+			this.add('-clearnegativeboost');
 			for (const pokemon of this.getAllActive()) {
 				pokemon.clearBoosts();
 			}
@@ -14724,9 +14724,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
-		onAfterHit(source, target, move) {
+		onHit(target, source, move) {
 			source.clearBoosts();
-			this.add('-clearboost', source);
+			this.add('-clearpositiveboost', source);
 		},
 		secondary: null,
 		target: "normal",
@@ -15296,8 +15296,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
-		onAfterHit(source, target, move) {
+		onHit(target, source, move) {
 			source.clearBoosts();
+			this.add('-clearpositiveboost', source);
 		},
 		secondary: null,
 		target: "normal",
