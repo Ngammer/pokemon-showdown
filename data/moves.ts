@@ -14724,7 +14724,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
-		onAfterMove(source, target, move) {
+		onAfterHit(source, target, move) {
 			source.clearBoosts();
 			this.add('-clearboost', source);
 		},
