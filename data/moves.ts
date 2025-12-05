@@ -14726,7 +14726,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onHit(target, source, move) {
 			source.clearBoosts();
-			this.add('-clearpositiveboost', source);
+			this.add('-clearboost', source);
 		},
 		secondary: null,
 		target: "normal",
@@ -15298,7 +15298,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onHit(target, source, move) {
 			source.clearBoosts();
-			this.add('-clearpositiveboost', source);
+			this.add('-clearboost', source);
 		},
 		secondary: null,
 		target: "normal",
