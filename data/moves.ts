@@ -14726,6 +14726,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onAfterMove(source, target, move) {
 			source.clearBoosts();
+			this.add('-clearboost', source);
 		},
 		secondary: null,
 		target: "normal",
