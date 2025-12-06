@@ -94,7 +94,6 @@ bulbasaur: {
 			substitute: ["9M"],
 			supersonic: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			terablast: ["9M"],
 			trailblaze: ["9M"],
@@ -195,7 +194,6 @@ ivysaur: {
 			sunnyday: ["9M"], //Añadido
 			supersonic: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			terablast: ["9M"],
 			trailblaze: ["9M"],
@@ -315,7 +313,6 @@ venusaur: {
 			sunnyday: ["9M"], //Añadido
 			supersonic: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			terablast: ["9M"],
 			terrainpulse: ["9M"],
@@ -437,7 +434,6 @@ charmander: {
 			submission: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"], //Añadido
-			swordsdance: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
 			thunderpunch: ["9M"],
@@ -698,7 +694,6 @@ charizard: {
 			superpower: ["9M"], //Añadido
 			supersonic: ["9M"], //Añadido
 			swordsdance: ["9M"], //Añadido
-
 			tailwind: ["9M"],
 			temperflare: ["9M"],
 			terablast: ["9M"],
@@ -1265,7 +1260,6 @@ butterfree: {
 			grassknot: ["9M"], //Añadido
 			gust: ["9M"],
 			harden: ["9M"],
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hurricane: ["9M"],
@@ -1789,7 +1783,6 @@ pidgeot: {
 			steelwing: ["9M"],
 			substitute: ["9M"],
 			superpower: ["9M"], //Añadido
-			swordsdance: ["9M"],
 			tailwind: ["9M"],
 			terablast: ["9M"], //Añadido
 			thrash: ["9M"], //Añadido
@@ -2086,7 +2079,6 @@ raticate: {
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			superfang: ["9M"],
-			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -2216,7 +2208,6 @@ raticatealola: {
 			suckerpunch: ["9M"],
 			superfang: ["9M"],
 			swagger: ["9M"], //Añadido
-			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -2325,7 +2316,6 @@ raticatealolatotem: {
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
 			superfang: ["9M"],
-			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"], //Añadido
@@ -8104,7 +8094,6 @@ oddish: {
 			substitute: ["9M"],
 			sunnyday: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			teeterdance: ["9M"],
 			terablast: ["9M"],
@@ -8202,7 +8191,6 @@ gloom: {
 			substitute: ["9M"],
 			sunnyday: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			terablast: ["9M"],
 			terrainpulse: ["9M"], //Añadido
@@ -8308,7 +8296,6 @@ vileplume: {
 			substitute: ["9M"],
 			sunnyday: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			terablast: ["9M"],
 			terrainpulse: ["9M"], //Añadido
@@ -8439,7 +8426,6 @@ bellossom: {
 			sunnyday: ["9M"], //Añadido
 			sweetkiss: ["9M"], //Añadido
 			sweetscent: ["9M"],
-			swordsdance: ["9M"],
 			synthesis: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
@@ -8949,7 +8935,6 @@ diglett: {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
-			swordsdance: ["9M"],
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -9049,7 +9034,6 @@ diglettalola: {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
-			swordsdance: ["9M"],
 			terablast: ["9M"],
 			trailblaze: ["9M"], //Añadido
 			workup: ["9M"],
@@ -9142,7 +9126,6 @@ dugtrio: {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
-			swordsdance: ["9M"],
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -9245,7 +9228,6 @@ dugtrioalola: {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			suckerpunch: ["9M"],
-			swordsdance: ["9M"],
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
@@ -9362,6 +9344,7 @@ meowth: {
 			snatch: ["9M"],
 			snore: ["9M"],
 			substitute: ["9M"],
+			swordsdance: ["9M"],
 			tailwhip: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
@@ -9491,6 +9474,7 @@ meowthalola: {
 			snore: ["9M"],
 			spite: ["9M"], //Añadido
 			substitute: ["9M"],
+			swordsdance: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"], //Añadido
@@ -9723,6 +9707,7 @@ persian: {
 			snore: ["9M"],
 			substitute: ["9M"],
 			switcheroo: ["9M"],
+			swordsdance: ["9M"],
 			tailslap: ["9M"], //Añadido
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
@@ -9863,6 +9848,7 @@ persianalola: {
 			spite: ["9M"], //Añadido
 			substitute: ["9M"],
 			switcheroo: ["9M"],
+			swordsdance: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
 			thief: ["9M"], //Añadido
@@ -11690,7 +11676,6 @@ abra: {
 			grassknot: ["9M"],
 			gravity: ["9M"],
 			grudge: ["9M"], //Añadido
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			lightscreen: ["9M"],
@@ -11808,7 +11793,6 @@ kadabra: {
 			grassknot: ["9M"],
 			gravity: ["9M"],
 			grudge: ["9M"], //Añadido
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			kinesis: ["9M"],
@@ -11930,7 +11914,6 @@ alakazam: {
 			grassknot: ["9M"],
 			gravity: ["9M"],
 			grudge: ["9M"], //Añadido
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
@@ -15085,7 +15068,6 @@ magnemite: {
 			frustration: ["9M"],
 			gravity: ["9M"],
 			gyroball: ["9M"],
-			headbutt: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
@@ -15178,7 +15160,6 @@ magneton: {
 			frustration: ["9M"],
 			gravity: ["9M"],
 			gyroball: ["9M"],
-			headbutt: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
@@ -16758,7 +16739,6 @@ gastly: {
 			grudge: ["9M"],
 			gunkshot: ["9M"],
 			haze: ["9M"],
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hex: ["9M"],
 			hiddenpower: ["9M"],
@@ -16876,7 +16856,6 @@ haunter: {
 			gigadrain: ["9M"],
 			gunkshot: ["9M"],
 			haze: ["9M"],
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hex: ["9M"],
 			hiddenpower: ["9M"],
@@ -17002,7 +16981,6 @@ gengar: {
 			gigadrain: ["9M"],
 			gunkshot: ["9M"],
 			haze: ["9M"],
-			headbutt: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hex: ["9M"],
 			hiddenpower: ["9M"],
@@ -19579,7 +19557,6 @@ lickitung: {
 			mimic: ["9M"],
 			mudslap: ["9M"],
 			naturalgift: ["9M"],
-			nightmare: ["9M"],
 			poweruppunch: ["9M"],
 			powerwhip: ["9M"],
 			protect: ["9M"],
@@ -33613,7 +33590,6 @@ aipom: {
 			mudslap: ["9M"],
 			nastyplot: ["9M"],
 			naturalgift: ["9M"],
-			nightmare: ["9M"],
 			payback: ["9M"],
 			playnice: ["9M"], //Añadido
 			playrough: ["9M"], //Añadido
@@ -35648,7 +35624,6 @@ dunsparce: {
 			mudslap: ["9M"],
 			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
-			nightmare: ["9M"],
 			painsplit: ["9M"],
 			poisonjab: ["9M"],
 			poisontail: ["9M"],
@@ -35797,7 +35772,6 @@ wungsparce: {
 			mudslap: ["9M"],
 			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
-			nightmare: ["9M"],
 			painsplit: ["9M"],
 			poisonjab: ["9M"],
 			poisontail: ["9M"],
@@ -35971,7 +35945,6 @@ wungsparcefeudal: {
 			mudslap: ["9M"],
 			mudsport: ["9M"], //Añadido
 			naturalgift: ["9M"],
-			nightmare: ["9M"],
 			outrage: ["9M"], //Añadido
 			painsplit: ["9M"],
 			poisonjab: ["9M"],
