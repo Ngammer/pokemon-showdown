@@ -6467,7 +6467,6 @@ clefairy: {
 			hypervoice: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
@@ -6643,7 +6642,6 @@ clefable: {
 			hypervoice: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
@@ -6811,7 +6809,6 @@ vulpix: {
 			hiddenpower: ["9M"],
 			howl: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			inferno: ["9M"],
 			irontail: ["9M"],
@@ -6926,7 +6923,6 @@ vulpixalola: {
 			iceshard: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			metronome: ["9M"], //Añadido
 			mimic: ["9M"], //Añadido
@@ -7038,7 +7034,6 @@ ninetales: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			inferno: ["9M"],
 			irontail: ["9M"],
@@ -7172,7 +7167,6 @@ ninetalesalola: {
 			iceshard: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lightscreen: ["9M"], //Añadido
@@ -11946,7 +11940,6 @@ alakazam: {
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
-			imprison: ["9M"],
 			instruct: ["9M"], //Añadido
 			kinesis: ["9M"],
 			laserfocus: ["9M"],
@@ -13750,7 +13743,6 @@ ponytagalar: {
 			hypervoice: ["9M"], //Añadido
 			hypnosis: ["9M"],
 			icebeam: ["9M"], //Añadido
-			imprison: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"], //Añadido
 			mefirst: ["9M"], //Añadido
@@ -13971,7 +13963,6 @@ rapidashgalar: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"], //Añadido
 			icebeam: ["9M"], //Añadido
-			imprison: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"], //Añadido
 			luminacrash: ["9M"], //Añadido
@@ -14096,7 +14087,6 @@ slowpoke: {
 			hydropump: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
@@ -14223,7 +14213,6 @@ slowpokegalar: {
 			hydropump: ["9M"],
 			icebeam: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
@@ -14337,8 +14326,7 @@ slowbro: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
-			irondefense: ["9M"],
+ 			irondefense: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			liquidation: ["9M"],
@@ -14494,7 +14482,6 @@ slowbrogalar: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irondefense: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
@@ -14641,7 +14628,6 @@ slowking: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irondefense: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
@@ -14814,7 +14800,6 @@ slowkingfeudal: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			instruct: ["9M"], //Añadido
 			irondefense: ["9M"],
 			irontail: ["9M"],
@@ -14978,7 +14963,6 @@ slowkinggalar: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			irondefense: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
@@ -16100,7 +16084,6 @@ grimer: {
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			icepunch: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			infestation: ["9M"],
 			lick: ["9M"],
@@ -16219,7 +16202,6 @@ grimeralola: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			icepunch: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			meanlook: ["9M"],
@@ -16341,7 +16323,6 @@ muk: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			icepunch: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
@@ -16469,7 +16450,6 @@ mukalola: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			icepunch: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			lashout: ["9M"],
@@ -16790,7 +16770,6 @@ gastly: {
 			hiddenpower: ["9M"],
 			hypnosis: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			leer: ["9M"], //Añadido
@@ -16910,7 +16889,6 @@ haunter: {
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			leer: ["9M"], //Añadido
@@ -17038,7 +17016,6 @@ gengar: {
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
@@ -17400,7 +17377,6 @@ drowzee: {
 			hiddenpower: ["9M"],
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
-			imprison: ["9M"],
 			knockoff: ["9M"],
 			lightscreen: ["9M"],
 			magiccoat: ["9M"],
@@ -17526,7 +17502,6 @@ hypno: {
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
 			icepunch: ["9M"],
-			imprison: ["9M"],
 			instruct: ["9M"], //Añadido
 			knockoff: ["9M"],
 			lightscreen: ["9M"],
@@ -18299,7 +18274,6 @@ exeggcute: {
 			helpinghand: ["9M"],
 			hiddenpower: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			ingrain: ["9M"],
 			leafstorm: ["9M"],
@@ -18415,7 +18389,6 @@ exeggutor: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			leafstorm: ["9M"],
 			leechseed: ["9M"],
@@ -18540,7 +18513,6 @@ exeggutoralola: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			infestation: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9M"],
@@ -18911,7 +18883,6 @@ marowakalola: {
 			hex: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
-			imprison: ["9M"],
 			inferno: ["9M"], //Añadido
 			irondefense: ["9M"],
 			ironhead: ["9M"],
@@ -25205,7 +25176,6 @@ espeon: {
 			howl: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
@@ -26976,7 +26946,6 @@ articunogalar: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			leer: ["9M"], //Añadido
 			lightscreen: ["9M"],
 			lockon: ["9M"], //Añadido
@@ -27428,7 +27397,6 @@ moltresgalar: {
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			lashout: ["9M"],
 			leer: ["9M"],
 			memento: ["9M"],
@@ -27918,7 +27886,6 @@ mewtwo: {
 			icebeam: ["9M"],
 			icepunch: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			irontail: ["9M"],
 			knockoff: ["9M"],
@@ -28208,7 +28175,6 @@ mew: {
 			icespinner: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			infestation: ["9M"],
 			irondefense: ["9M"],
@@ -30424,7 +30390,6 @@ hoothoot: {
 			hurricane: ["9M"],
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			lockon: ["9M"], //Añadido
 			magiccoat: ["9M"],
 			meanlook: ["9M"],
@@ -30541,7 +30506,6 @@ noctowl: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			laserfocus: ["9M"],
 			leer: ["9M"], //Añadido
 			lockon: ["9M"], //Añadido
@@ -30674,7 +30638,6 @@ noceadowl: {
 			hypervoice: ["9M"],
 			hypnosis: ["9M"],
 			icywind: ["9M"], //Añadido
-			imprison: ["9M"],
 			infestation: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leer: ["9M"], //Añadido
@@ -31712,7 +31675,6 @@ togetic: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			lastresort: ["9M"],
 			lifedew: ["9M"],
@@ -31846,7 +31808,6 @@ togekiss: {
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
@@ -31961,7 +31922,6 @@ natu: {
 			heatwave: ["9M"],
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
-			imprison: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			luckychant: ["9M"],
@@ -32083,7 +32043,6 @@ xatu: {
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
-			imprison: ["9M"],
 			irondefense: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			leer: ["9M"],
@@ -32212,7 +32171,6 @@ xatutotemserious: {
 			helpinghand: ["9M"], //Añadido
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
-			imprison: ["9M"],
 			laserfocus: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
@@ -35056,7 +35014,6 @@ misdreavus: {
 			hypervoice: ["9M"],
 			icebeam: ["9M"], //Añadido
 			icywind: ["9M"],
-			imprison: ["9M"],
 			inferno: ["9M"],
 			magicalleaf: ["9M"],
 			magiccoat: ["9M"],
@@ -35175,7 +35132,6 @@ mismagius: {
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
 			icywind: ["9M"],
-			imprison: ["9M"],
 			laserfocus: ["9M"],
 			lashout: ["9M"],
 			luckychant: ["9M"],
@@ -35342,7 +35298,6 @@ girafarig: {
 			highhorsepower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			lightscreen: ["9M"],
 			magiccoat: ["9M"],
@@ -41320,7 +41275,6 @@ stantler: {
 			highhorsepower: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			jumpkick: ["9M"],
 			lastresort: ["9M"],
@@ -41465,7 +41419,6 @@ clammdeer: {
 			hornleech: ["9M"], //Añadido
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			irontail: ["9M"],
 			jumpkick: ["9M"],
 			lastresort: ["9M"],
@@ -41602,7 +41555,6 @@ wyrdeer: {
 			highhorsepower: ["9M"],
 			hyperbeam: ["9M"],
 			hypnosis: ["9M"],
-			imprison: ["9M"],
 			leer: ["9M"],
 			lightscreen: ["9M"],
 			lunge: ["9M"],
@@ -42818,7 +42770,6 @@ hooh: {
 			hurricane: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			incinerate: ["9M"],
 			ironhead: ["9M"],
 			laserfocus: ["9M"],
@@ -42940,7 +42891,6 @@ celebi: {
 			hiddenpower: ["9M"],
 			holdback: ["9M"],
 			hyperbeam: ["9M"],
-			imprison: ["9M"],
 			junglehealing: ["9M"], //Añadido
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
@@ -43073,7 +43023,6 @@ celebifeudal: {
 			hiddenpower: ["9M"],
 			holdback: ["9M"],
 			hyperbeam: ["9M"],
-			imprison: ["9M"],
 			laserfocus: ["9M"],
 			lastresort: ["9M"],
 			leafblade: ["9M"],
@@ -43214,7 +43163,6 @@ farigiraf: {
 			highhorsepower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			imprison: ["9M"],
 			ironhead: ["9M"],
 			lightscreen: ["9M"],
 			metronome: ["9M"], //Añadido
