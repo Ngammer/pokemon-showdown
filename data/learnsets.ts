@@ -31017,7 +31017,6 @@ ledstar: {
 			return: ["9M"],
 			rockslide: ["9M"], //Añadido
 			rocksmash: ["9M"],
-			rockwrecker: ["9M"],
 			rollout: ["9M"],
 			roost: ["9M"],
 			scaryface: ["9M"], //Añadido
