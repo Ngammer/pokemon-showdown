@@ -2196,8 +2196,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flash: {
 		name: "Flash",
-		desc: "Lowers the target's Special Attack by 1 stage.",
-		shortDesc: "Lowers the target's Spa by 1.",
+		desc: "Has a 100% chance to make the target flinch. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken.",
+		shortDesc: "100% flinch chance.",
 	},
 	flashcannon: {
 		name: "Flash Cannon",
