@@ -1988,8 +1988,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	faketears: {
 		name: "Fake Tears",
-		desc: "Lowers the target's Special Defense by 2 stages.",
-		shortDesc: "Lowers the target's Sp. Def by 2.",
+		shortDesc: "For 5 turns, all damage to the user is reduced by 30%.",
 	},
 	falsesurrender: {
 		name: "False Surrender",
@@ -1997,8 +1996,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	falseswipe: {
 		name: "False Swipe",
-		desc: "Leaves the target with at least 1 HP.",
-		shortDesc: "Always leaves the target with at least 1 HP.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 	},
 	featherdance: {
 		name: "Feather Dance",
@@ -2095,8 +2094,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	firepunch: {
 		name: "Fire Punch",
-		desc: "Has a 10% chance to burn the target.",
-		shortDesc: "10% chance to burn the target.",
+		desc: "Has a 20% chance to burn the target.",
+		shortDesc: "20% chance to burn the target.",
 	},
 	firespin: {
 		name: "Fire Spin",
