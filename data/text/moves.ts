@@ -1616,7 +1616,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	dragonclaw: {
 		name: "Dragon Claw",
-		shortDesc: "No additional effect.",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
 	},
 	dragondance: {
 		name: "Dragon Dance",
@@ -1635,7 +1636,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	dragonhammer: {
 		name: "Dragon Hammer",
-		shortDesc: "No additional effect.",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
 	},
 	dragonpulse: {
 		name: "Dragon Pulse",
@@ -1749,8 +1751,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	eerieimpulse: {
 		name: "Eerie Impulse",
-		desc: "Lowers the target's Special Attack by 2 stages.",
-		shortDesc: "Lowers the target's Sp. Atk by 2.",
+		desc: "Lowers the user's Special Attack by 2 stages.",
+		shortDesc: "Lowers the user's Sp. Atk by 2.",
 	},
 	eeriespell: {
 		name: "Eerie Spell",
@@ -1766,17 +1768,16 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	electricterrain: {
 		name: "Electric Terrain",
 		desc: "For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.",
-		shortDesc: "5 turns. Grounded: +Electric power, can't sleep.",
+		shortDesc: "5 turns. Grounded: +Electric power, can't sleep. Spe: +1",
 		gen7: {
 			desc: "For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.5 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.",
 		},
 	},
 	electrify: {
 		name: "Electrify",
-		desc: "Causes the target's move to become Electric type this turn. Among effects that can change a move's type, this effect happens last. Fails if the target already moved this turn.",
-		shortDesc: "Changes the target's move to Electric this turn.",
+		shortDesc: "Target becomes weak to electric moves.",
 
-		start: "  [POKEMON]'s moves have been electrified!",
+		start: "  [POKEMON] became weaker to electric!",
 	},
 	electroball: {
 		name: "Electro Ball",
@@ -1805,8 +1806,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	embargo: {
 		name: "Embargo",
-		desc: "For 5 turns, the target's held item has no effect. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items.",
-		shortDesc: "For 5 turns, the target's item has no effect.",
+		desc: "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+		shortDesc: "1.5x damage if foe holds an item. Removes item.",
 
 		start: "  [POKEMON] can't use items anymore!",
 		end: "  [POKEMON] can use items again!",
