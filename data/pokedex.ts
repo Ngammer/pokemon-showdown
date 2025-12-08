@@ -4563,7 +4563,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1009,
 		name: "Wungsparce",
 		types: ["Normal", "Flying"],
-		baseStats: { hp: 100, atk: 90, def: 80, spa: 85, spd: 75, spe: 75 },
+		baseStats: { hp: 100, atk: 90, def: 80, spa: 85, spd: 75, spe: 90 },
 		abilities: { 0: "Serene Grace", 1: "Adaptability" },
 		heightm: 2.9,
 		weightkg: 30,

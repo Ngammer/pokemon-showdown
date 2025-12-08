@@ -580,8 +580,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	block: {
 		name: "Block",
-		desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.",
-		shortDesc: "Prevents the target from switching out.",
+		desc: "Prevents the target and user from switching out.  If they faint, the opponent boosts their 3 higest stats by 1 and heals 25%. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.",
+		shortDesc: "Prevents the target and user from switching out. If they faint, the opponent boosts their 3 higest stats by 1 and heals 25%.",
 		gen7: {
 			desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
 		},
@@ -716,8 +716,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	breakingswipe: {
 		name: "Breaking Swipe",
-		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "100% chance to lower the foe(s) Attack by 1.",
+		desc: "Has a 100% chance to lower the target's Attack by 1 stage. Has a 30% chance to make the target flinch.",
+		shortDesc: "100% chance to lower the foe(s) Attack by 1. 30% chance to flinch.",
 	},
 	breakneckblitz: {
 		name: "Breakneck Blitz",
@@ -750,7 +750,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	brutalswing: {
 		name: "Brutal Swing",
-		shortDesc: "100% chance to lower the target's Atk by 1. Hits adjacent pokemon",
+		shortDesc: "100% chance to lower the target's Atk by 1. 30% chance to confuse the target. Hits adjacent pokemon",
 	},
 	bubble: {
 		name: "Bubble",
@@ -805,8 +805,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bulldoze: {
 		name: "Bulldoze",
-		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "100% chance lower adjacent Pkmn Speed by 1.",
+		desc: "Free user from spikes/toxic spikes/ion deluge. Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "Free user from spikes/toxic spikes/ion deluge; 100% chance lower adjacent Pkmn Speed by 1.",
 	},
 	bulletpunch: {
 		name: "Bullet Punch",
