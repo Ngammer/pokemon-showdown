@@ -14835,6 +14835,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		onTryMove(source, target, move) {
+			if (source.baseSpecies.baseSpecies === 'Delibird' && !source.transformed) {
+				move.willChangeForme = true;
+			}
 			if (source.isAlly(target) && source.volatiles['healblock']) {
 				this.attrLastMove('[still]');
 				this.add('cant', source, 'move: Heal Block', move);
@@ -14842,9 +14845,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		onHit(target, source, move) {
-			if (source.baseSpecies.baseSpecies === 'Delibird' && !source.transformed) {
-				move.willChangeForme = true;
-			}
 			if (source.isAlly(target)) {
 				if (!this.heal(Math.floor(target.baseMaxhp * 0.5))) {
 					if (target.volatiles['healblock'] && target.hp !== target.maxhp) {
