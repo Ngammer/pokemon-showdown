@@ -1070,7 +1070,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	constrict: {
 		name: "Constrict",
 		desc: "Has a 100% chance to lower the target's Speed by 2 stage.",
-		shortDesc: "100% chance to lower the target's Speed by 2.",
+		shortDesc: "100% chance to lower the target's Speed by 2. User: +1 Atk",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
 			shortDesc: "33% chance to lower the target's Speed by 1.",
@@ -1082,8 +1082,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	conversion: {
 		name: "Conversion",
-		desc: "The user's type changes to match the original type of the move in its first move slot. Fails if the user cannot change its type, or if the type is one of the user's current types.",
-		shortDesc: "Changes user's type to match its first move.",
+		desc: "The user's type changes to match the original type of the move in its first move slot. Raises the user's Special Attack by 2 stages. Fails if the user cannot change its type, or if the type is one of the user's current types.",
+		shortDesc: "Changes user's type to match its first move and raises the user's Sp. Atk by 2.",
 		gen5: {
 			desc: "The user's type changes to match the original type of one of its known moves besides this move, at random, but not either of its current types. Fails if the user cannot change its type, or if this move would only be able to select one of the user's current types.",
 			shortDesc: "Changes user's type to match a known move.",
@@ -1103,8 +1103,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	conversion2: {
 		name: "Conversion 2",
-		desc: "The user's type changes to match a type that resists or is immune to the type of the last move used by the target, but not either of its current types. The determined type of the move is used rather than the original type. Fails if the target has not made a move, if the user cannot change its type, or if this move would only be able to select one of the user's current types.",
-		shortDesc: "Changes user's type to resist target's last move.",
+		desc: "The user's type changes to match the original type of the move in its second move slot. Raises the user's Attack and Special Attack by 1 stage. Fails if the user cannot change its type, or if the type is one of the user's current types.",
+		shortDesc: "Changes user's type to match its second move and raises the user's Atk and Sp. Atk by 1.",
 		gen4: {
 			desc: "The user's type changes to match a type that resists or is immune to the type of the last move used against the user, if it was successful against the user, but not either of its current types. The determined type of the move is used rather than the original type. Fails if the last move used against the user was not successful, if the user has the Multitype Ability, or if this move would only be able to select one of the user's current types.",
 			shortDesc: "User's type changes to resist last move against it.",
