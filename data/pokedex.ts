@@ -4579,7 +4579,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Wungsparce",
 		forme: "Feudal",
 		types: ["Dragon", "Flying"],
-		baseStats: { hp: 120, atk: 90, def: 80, spa: 85, spd: 75, spe: 75 },
+		baseStats: { hp: 120, atk: 90, def: 80, spa: 85, spd: 75, spe: 90 },
 		abilities: { 0: "Sage" },
 		heightm: 4,
 		weightkg: 60,
