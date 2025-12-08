@@ -43,7 +43,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	wartortle: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	blastoise: {
 		tier: "OU",
@@ -1382,7 +1382,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	yanma: {
-		tier: "NFE",
+		tier: "OU",
 	},
 	yanmega: {
 		tier: "Illegal",
@@ -1415,7 +1415,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	misdreavus: {
-		tier: "NFE",
+		tier: "OU",
 	},
 	mismagius: {
 		tier: "Illegal",
