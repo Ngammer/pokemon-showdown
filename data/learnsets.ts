@@ -18862,7 +18862,7 @@ marowakalola: {
 			knockoff: ["9M"],
 			laserfocus: ["9M"],
 			lashout: ["9M"], //Añadido
-			lastrespect: ["9M"], //Añadido
+			lastrespects: ["9M"], //Añadido
 			leer: ["9M"],
 			megakick: ["9M"],
 			megapunch: ["9M"],

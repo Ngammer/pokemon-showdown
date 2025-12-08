@@ -2542,7 +2542,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Marowak-Alola",
 		forme: "Alola-Totem",
 		types: ["Fire", "Ghost"],
-		baseStats: { hp: 80, atk: 165, def: 105, spa: 76, spd: 80, spe: 15 },
+		baseStats: { hp: 101, atk: 190, def: 105, spa: 30, spd: 80, spe: 15 },
 		abilities: { 0: "Gigantification" },
 		heightm: 1.7,
 		weightkg: 98,
