@@ -18477,7 +18477,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	sonicboom: {
 		num: 49,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 100,
 		category: "Special",
 
