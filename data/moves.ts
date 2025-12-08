@@ -23140,10 +23140,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1 },
 		boosts: {
-			atk: 3,
+			atk: 2,
 		},
-		secondary: null,
-		target: "self",
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					def: -2,
+				},
+			},
+		},
+		target: "normal",
 		type: "Fighting",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
