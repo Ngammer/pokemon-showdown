@@ -858,8 +858,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	camouflage: {
 		name: "Camouflage",
-		desc: "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain, Electric type during Electric Terrain, Fairy type during Misty Terrain, Grass type during Grassy Terrain, and Psychic type during Psychic Terrain. Fails if the user's type cannot be changed or if the user is already purely that type.",
-		shortDesc: "Changes user's type by terrain (default Normal).",
+		desc: "The user evades most attacks made by other Pokemon during this turn and boosts speed by 1 level. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "User dissapears, +1 Spe.",
 		gen6: {
 			desc: "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain, Electric type during Electric Terrain, Fairy type during Misty Terrain, and Grass type during Grassy Terrain. Fails if the user's type cannot be changed or if the user is already purely that type.",
 		},
@@ -877,8 +877,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	captivate: {
 		name: "Captivate",
-		desc: "Lowers the target's Special Attack by 6 stages. The target is unaffected if both the user and the target are the same gender, or if either is genderless. Pokemon with the Oblivious Ability are immune.",
-		shortDesc: "Lowers the foe(s) Sp. Atk by 6 if opposite gender.",
+		desc: "Lowers the target's Attack by 6 stages. The target is unaffected if both the user and the target are the same gender, or if either is genderless. Pokemon with the Oblivious Ability are immune.",
+		shortDesc: "Lowers the foe(s) Atk by 6 if opposite gender.",
 	},
 	catastropika: {
 		name: "Catastropika",
@@ -917,8 +917,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	charm: {
 		name: "Charm",
-		desc: "Lowers the target's Attack by 2 stages.",
-		shortDesc: "Lowers the target's Attack by 2.",
+		desc: "Lowers the target's Special Attack by 2 stages.",
+		shortDesc: "Lowers the target's Special Attack by 2. Usually goes first",
 	},
 	chatter: {
 		name: "Chatter",
@@ -1054,8 +1054,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	confide: {
 		name: "Confide",
-		desc: "Lowers the target's Special Attack by 2 stages.",
-		shortDesc: "Lowers the target's Sp. Atk by 2.",
+		desc: "Lowers the target's Attack and Special Attack by 1 stage.",
+		shortDesc: "Lowers the target's Atk and Sp. Atk by 1. Usually goes first.",
 	},
 	confuseray: {
 		name: "Confuse Ray",
@@ -1378,8 +1378,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	detect: {
 		name: "Detect",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user, next user hit priority +1. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from damaging attacks. Contact: Next hit priority +1.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user, boosts speed +1. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: spe +1.",
 		gen8: {
 			desc: "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
 		},
