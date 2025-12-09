@@ -10090,7 +10090,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Imprison",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, bypasssub: 1, metronome: 1, mustpressure: 1 },
+		flags: { snatch: 1, bypasssub: 1, metronome: 1 },
 		onAfterMove(source, target, move) {
 			source.addVolatile('imprison');
 		},
