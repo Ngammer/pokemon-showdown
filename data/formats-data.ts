@@ -243,6 +243,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	raichumegax: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	raichumegay: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	sandshrew: {
 		tier: "LC",
 	},
@@ -2331,6 +2339,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	chimechomega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	absol: {
 
 		tier: "Illegal",
@@ -2340,6 +2352,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 
 		tier: "Illegal",
 		natDexTier: "OU",
+	},
+	absolmegaz: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	snorunt: {
 		tier: "Illegal",
@@ -2569,6 +2585,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	staraptormega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	bidoof: {
 
 		tier: "Illegal",
@@ -2757,6 +2777,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 		natDexTier: "(OU)",
 	},
+	garchompmegaz: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	riolu: {
 		tier: "Illegal",
 	},
@@ -2769,6 +2793,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 
 		tier: "Illegal",
 		natDexTier: "OU",
+	},
+	lucariomegaz: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	hippopotas: {
 		tier: "Illegal",
@@ -2794,11 +2822,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	toxicroak: {
 		tier: "Illegal",
 		doublesTier: "(DUU)",
-		natDexTier: "OU",
-	},
-	carnivine: {
-
-		tier: "Illegal",
 		natDexTier: "OU",
 	},
 	finneon: {
@@ -2892,6 +2915,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DUU",
 		natDexTier: "OU",
 	},
+	heatranmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	regigigas: {
 		tier: "Illegal",
 		doublesTier: "(DUU)",
@@ -2926,6 +2953,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 		doublesTier: "DUber",
 		natDexTier: "OU",
+	},
+	darkraimega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	shaymin: {
 		tier: "Illegal",
@@ -3612,6 +3643,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	golurkmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	pawniard: {
 		tier: "Illegal",
 	},
@@ -3922,6 +3957,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
+	},
+	meowsticmmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	meowsticfmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	honedge: {
 
@@ -4279,6 +4322,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	crabominablemega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	oricorio: {
 		tier: "Illegal",
 		doublesTier: "(DUU)",
@@ -4447,6 +4494,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 
 		tier: "Illegal",
 		natDexTier: "OU",
+	},
+	golisopodmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	sandygast: {
 		tier: "Illegal",
@@ -4723,6 +4774,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DUber",
 		natDexTier: "OU",
 	},
+	magearnamega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	magearnaoriginalmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	marshadow: {
 
 		tier: "Illegal",
@@ -4752,6 +4811,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 
 		tier: "Illegal",
 		natDexTier: "OU",
+	},
+	zeraoramega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	meltan: {
 
@@ -5389,6 +5452,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	scovillainmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	tadbulb: {
 		tier: "Illegal",
 	},
@@ -5437,10 +5504,26 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	baxcaliburmega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	tatsugiri: {
 		tier: "Illegal",
 		doublesTier: "DUber",
 		natDexTier: "OU",
+	},
+	tatsugiricurlymega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	tatsugiridroopymega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	tatsugiristretchymega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	cyclizar: {
 		tier: "Illegal",
@@ -5504,6 +5587,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+	},
+	glimmoramega: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	shroodle: {
 		tier: "Illegal",

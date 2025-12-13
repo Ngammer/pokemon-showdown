@@ -48,7 +48,7 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 	 * forme this allows transformation into.
 	 * undefined, if not a mega stone.
 	 */
-	readonly megaStone?: string;
+	readonly megaStone?: string | string[];
 
 	readonly pseudoMegaStone?: boolean;
 
@@ -57,8 +57,7 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 	 * forme this allows transformation from.
 	 * undefined, if not a mega stone.
 	 */
-	readonly megaEvolves?: string;
-
+	readonly megaEvolves?: string | string[];
 	/**
 	 * If this is a Z crystal: true if the Z Crystal is generic
 	 * (e.g. Firium Z). If species-specific, the name
