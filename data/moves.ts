@@ -23619,7 +23619,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Steel",
 		contestType: "Tough",
 	},
-	/* regicode: {
+	regicode: {
 		num: 604,
 		accuracy: true,
 		basePower: 0,
@@ -23649,6 +23649,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag &&
 					move.type === 'Dragon' && source.isGrounded() && !source.isSemiInvulnerable()) {
 					this.damage(source.baseMaxhp / 5, source, source);
+				}
+			},
+			onEffectiveness(typeMod, target, type, move) {
+				if (move.type === 'Normal') {
+					move.ignoreImmunity = true;
+					return 0;
 				}
 			},
 			onHit(target, source, move) {
@@ -23700,4 +23706,4 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
 	},
-*/ };
+};
