@@ -23620,7 +23620,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	regicode: {
-		num: 604,
+		num: 0,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
