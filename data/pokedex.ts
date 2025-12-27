@@ -13315,7 +13315,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 678,
 		name: "Meowstic-M-Mega",
 		baseSpecies: "Meowstic",
-		forme: "Mega",
+		forme: "M-Mega",
 		types: ["Psychic"],
 		gender: "M",
 		baseStats: { hp: 74, atk: 48, def: 76, spa: 143, spd: 101, spe: 124 },
@@ -13325,6 +13325,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Field"],
 		requiredItem: "Meowsticite",
+		battleOnly: "Meowstic",
 		gen: 9,
 	},
 	meowsticfmega: {
