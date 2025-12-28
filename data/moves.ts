@@ -23706,4 +23706,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
 	},
+	leafdance: {
+		num: 0,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Leaf Dance",
+		pp: 10,
+		priority: 0,
+		flags: { snatch: 1, dance: 1, metronome: 1 },
+		boosts: {
+			spa: 1,
+			def: 1,
+			spe: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Grass",
+	},
 };
