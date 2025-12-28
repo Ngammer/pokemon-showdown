@@ -23724,4 +23724,49 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "self",
 		type: "Grass",
 	},
+	sheddingclaws: {
+		num: 0,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Shedding Claws",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1 },
+		multihit: 2,
+		smartTarget: true,
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		maxMove: { basePower: 130 },
+	},
+	gigatonspikedmace: {
+		num: 0,
+		accuracy: 70,
+		basePower: 140,
+		category: "Physical",
+		name: "Gigaton Spikedmace",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1 },
+		onAfterHit(target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('spikes');
+					side.addSideCondition('spikes');
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('spikes');
+					side.addSideCondition('spikes');
+				}
+			}
+		},
+		secondary: {}, // Sheer Force-boosted
+		target: "normal",
+		type: "Ground",
+	},
 };
