@@ -11488,7 +11488,6 @@ poliwrath: {
 			substitute: ["9M"],
 			superpower: ["9M"],
 			surf: ["9M"], //Añadido
-			surgingstrikes: ["9M"],
 			taunt: ["9M"], //Añadido
 			terablast: ["9M"],
 			thrash: ["9M"], //Añadido
