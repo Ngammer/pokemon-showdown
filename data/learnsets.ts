@@ -33948,7 +33948,6 @@ sunfulwer: {
 			encore: ["9M"],
 			energyball: ["9M"],
 			facade: ["9M"],
-			fierydance: ["9M"], //Añadido
 			fireblast: ["9M"],
 			firespin: ["9M"], //Añadido
 			flash: ["9M"],
