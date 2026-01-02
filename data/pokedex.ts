@@ -17537,8 +17537,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 89,
 		color: "Blue",
 		eggGroups: ["Water 1", "Field"],
-		otherFormes: ["Eiscue-Noice"],
-		formeOrder: ["Eiscue", "Eiscue-Noice"],
+		otherFormes: ["Eiscue-Noice", "Eiscue-Hoenn", "Eiscue-Hoenn-Norock"],
+		formeOrder: ["Eiscue", "Eiscue-Noice", "Eiscue-Hoenn", "Eiscue-Hoenn-Norock"],
 	},
 	eiscuenoice: {
 		num: 875,
@@ -17554,6 +17554,34 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1", "Field"],
 		requiredAbility: "Ice Face",
 		battleOnly: "Eiscue",
+	},
+	eiscuehoenn: {
+		num: 875,
+		name: "Eiscue-Hoenn",
+		baseForme: "Rock",
+		forme: "Hoenn",
+		types: ["Rock"],
+		baseStats: { hp: 80, atk: 120, def: 60, spa: 20, spd: 80, spe: 110 },
+		abilities: { 0: "Ice Face" }, // cambiar
+		heightm: 1.4, // cambiar
+		weightkg: 89, // cambiar
+		color: "Blue", // cambiar
+		eggGroups: ["Water 1", "Field"],
+	},
+	eiscuehoennnorock: {
+		num: 875,
+		name: "Eiscue-Hoenn-Norock",
+		baseSpecies: "Eiscue",
+		forme: "Hoenn-Norock",
+		types: ["Rock"],
+		baseStats: { hp: 80, atk: 40, def: 150, spa: 25, spd: 130, spe: 45 },
+		abilities: { 0: "Ice Face" }, // cambiar
+		heightm: 1.4, // cambiar
+		weightkg: 89, // cambiar
+		color: "Blue", // cambiar
+		eggGroups: ["Water 1", "Field"],
+		requiredAbility: "Ice Face", // cambiar
+		battleOnly: "Eiscue-Hoenn",
 	},
 	indeedee: {
 		num: 876,
@@ -19426,8 +19454,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Dunsparce",
 		evoType: "levelMove",
 		evoMove: "Hyper Drill",
-		otherFormes: ["Dudunsparce-Three-Segment"],
-		formeOrder: ["Dudunsparce", "Dudunsparce-Three-Segment"],
+		otherFormes: ["Dudunsparce-Three-Segment", "Dudunsparce-Hoenn"],
+		formeOrder: ["Dudunsparce", "Dudunsparce-Three-Segment", "Dudunsparce-Hoenn"],
 		eggGroups: ["Field"],
 	},
 	dudunsparcethreesegment: {
@@ -19444,6 +19472,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Dunsparce",
 		evoType: "levelMove",
 		evoMove: "Hyper Drill",
+		eggGroups: ["Field"],
+	},
+	dudunsparcehoenn: {
+		num: 982,
+		name: "Dudunsparce-Hoenn",
+		forme: "Hoenn",
+		types: ["Normal", "Fire"],
+		baseStats: { hp: 80, atk: 148, def: 90, spa: 67, spd: 80, spe: 50 },
+		abilities: { 0: "Serene Grace", 1: "Magma Armor", H: "Adaptability" },
+		heightm: 3.6, // cambiar
+		weightkg: 39.2, // cambiar
+		color: "Yellow", // cambiar
+		prevo: "Dunsparce",
+		evoType: "levelMove", // cambiar
+		evoMove: "Hyper Drill", // cambiar
 		eggGroups: ["Field"],
 	},
 	kingambit: {
