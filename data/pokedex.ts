@@ -13544,6 +13544,37 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredAbility: "Stance Change",
 		battleOnly: "Aegislash",
 	},
+	aegislashjohto: {
+		num: 681,
+		name: "Aegislash-Johto",
+		baseSpecies: "Aegislash",
+		baseForme: "Johto-Slicing",
+		types: ["Grass", "Ghost"],
+		baseStats: { hp: 50, atk: 170, def: 85, spa: 40, spd: 65, spe: 90 },
+		abilities: { 0: "Stance Change" },
+		heightm: 1.7, // cambiar
+		weightkg: 53, // cambiar
+		color: "Brown", // cambiar
+		prevo: "Doublade",
+		evoType: "useItem", // cambiar
+		evoItem: "Dusk Stone", // cambiar
+		eggGroups: ["Mineral"],
+	},
+	aegislashjohtosplinter: {
+		num: 681,
+		name: "Aegislash-Johto-Splinter",
+		baseSpecies: "Aegislash-Johto",
+		forme: "Johto-Splinter",
+		types: ["Grass", "Ghost"],
+		baseStats: { hp: 50, atk: 90, def: 65, spa: 40, spd: 85, spe: 170 },
+		abilities: { 0: "Stance Change" },
+		heightm: 1.7, // cambiar
+		weightkg: 53, // cambiar
+		color: "Brown", // cambiar
+		eggGroups: ["Mineral"],
+		requiredAbility: "Stance Change",
+		battleOnly: "Aegislash-Johto",
+	},
 	spritzee: {
 		num: 682,
 		name: "Spritzee",
