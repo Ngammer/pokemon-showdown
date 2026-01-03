@@ -5110,8 +5110,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoCondition: "with a Remoraid in party",
 		eggGroups: ["Water 1"],
 		canHatch: true,
-		otherFormes: ["mantine-Feudal"],
-		formeOrder: ["mantine", "mantine-Feudal"],
+		otherFormes: ["Mantine-Feudal"],
+		formeOrder: ["Mantine", "Mantine-Feudal"],
 	},
 	mantinefeudal: {
 		num: 226,
@@ -5127,7 +5127,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1"],
 		requiredItem: "Ancient Rock",
 		changesFrom: "Mantine",
-		canHatch: true,
 	},
 	skarmory: {
 		num: 227,
@@ -5227,7 +5226,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Water 1", "Dragon"],
 		requiredItem: "Ancient Rock",
-		changesFrom: "Kingra",
+		changesFrom: "Kingdra",
 	},
 	phanpy: {
 		num: 231,
@@ -5567,8 +5566,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		tags: ["Mythical"],
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Donphan-Feudal"],
-		formeOrder: ["Donphan", "Donphan-Feudal"],
+		otherFormes: ["Celebi-Feudal"],
+		formeOrder: ["Celebi", "Celebi-Feudal"],
 	},
 	celebifeudal: {
 		num: 251,
