@@ -6907,6 +6907,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 52.5,
 		color: "Black",
 		eggGroups: ["Field", "Dragon"],
+		otherFormes: ["Seviper-Johto"],
+		formeOrder: ["Seviper", "Seviper-Johto"],
+	},
+	seviperjohto: {
+		num: 336,
+		name: "Seviper-Johto",
+		baseSpecies: "Seviper",
+		forme: "Johto",
+		types: ["Poison", "Ice"],
+		baseStats: { hp: 70, atk: 144, def: 63, spa: 30, spd: 63, spe: 100 },
+		abilities: { 0: "Refrigerate", 1: "Strong Jaw", H: "Corrosion" },
+		heightm: 2.7, // cambiar
+		weightkg: 52.5, // cambiar
+		color: "Black", // cambiar
+		eggGroups: ["Field", "Dragon"],
 	},
 	lunatone: {
 		num: 337,
