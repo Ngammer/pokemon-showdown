@@ -9361,8 +9361,10 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		otherFormes: ["Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
-		formeOrder: ["Rotom", "Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
+		otherFormes: ["Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow",
+			"Rotom-Johto", "Rotom-Johto-Statue", "Rotom-Johto-Sharp", "Rotom-Johto-Ash", "Rotom-Johto-Berserk"],
+		formeOrder: ["Rotom", "Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow",
+			"Rotom-Johto", "Rotom-Johto-Statue", "Rotom-Johto-Sharp", "Rotom-Johto-Ash", "Rotom-Johto-Berserk"],
 	},
 	rotomheat: {
 		num: 479,
@@ -9438,6 +9440,80 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Amorphous"],
 		changesFrom: "Rotom",
+	},
+	rotomjohto: {
+		num: 479,
+		name: "Rotom-Johto",
+		baseSpecies: "Rotom",
+		forme: "Johto",
+		types: ["Ground", "Ghost"],
+		gender: "N",
+		baseStats: { hp: 80, atk: 120, def: 80, spa: 40, spd: 80, spe: 70 },
+		abilities: { 0: "Sand Veil" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.3, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Amorphous"],
+	},
+	rotomjohtostatue: {
+		num: 479,
+		name: "Rotom-Johto-Statue",
+		baseSpecies: "Rotom-Johto",
+		forme: "Johto-Statue",
+		types: ["Ground", "Psychic"],
+		gender: "N",
+		baseStats: { hp: 80, atk: 130, def: 80, spa: 40, spd: 120, spe: 70 },
+		abilities: { 0: "Sand Veil" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.3, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Amorphous"],
+		changesFrom: "Rotom-Johto",
+	},
+	rotomjohtosharp: {
+		num: 479,
+		name: "Rotom-Johto-Sharp",
+		baseSpecies: "Rotom-Johto",
+		forme: "Johto-Sharp",
+		types: ["Ground", "Dark"],
+		gender: "N",
+		baseStats: { hp: 80, atk: 140, def: 70, spa: 40, spd: 70, spe: 120 },
+		abilities: { 0: "Sand Veil" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.3, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Amorphous"],
+		changesFrom: "Rotom-Johto",
+	},
+	rotomjohtoash: {
+		num: 479,
+		name: "Rotom-Johto-Ash",
+		baseSpecies: "Rotom-Johto",
+		forme: "Johto-Ash",
+		types: ["Ground", "Fire"],
+		gender: "N",
+		baseStats: { hp: 80, atk: 125, def: 80, spa: 40, spd: 85, spe: 100 },
+		abilities: { 0: "Sand Veil" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.3, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Amorphous"],
+		changesFrom: "Rotom-Johto",
+	},
+	rotomjohtoberserk: {
+		num: 479,
+		name: "Rotom-Johto-Berserk",
+		baseSpecies: "Rotom-Johto",
+		forme: "Johto-Berserk",
+		types: ["Ground", "Dragon"],
+		gender: "N",
+		baseStats: { hp: 80, atk: 150, def: 80, spa: 40, spd: 80, spe: 90 },
+		abilities: { 0: "Sand Veil" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.3, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Amorphous"],
+		changesFrom: "Rotom-Johto",
 	},
 	uxie: {
 		num: 480,
