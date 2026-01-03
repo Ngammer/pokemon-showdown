@@ -12137,8 +12137,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Golett",
 		evoLevel: 43,
 		eggGroups: ["Mineral"],
-		otherFormes: ["Golurk-Mega"],
-		formeOrder: ["Golurk", "Golurk-Mega"],
+		otherFormes: ["Golurk-Mega", "Golurk-Johto"],
+		formeOrder: ["Golurk", "Golurk-Mega", "Golurk-Johto"],
 	},
 	golurkmega: {
 		num: 623,
@@ -12155,6 +12155,22 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 		requiredItem: "Golurkite",
 		gen: 9,
+	},
+	golurkjohto: {
+		num: 623,
+		name: "Golurk-Johto",
+		baseSpecies: "Golurk",
+		forme: "Johto",
+		types: ["Rock", "Ghost"],
+		gender: "N",
+		baseStats: { hp: 99, atk: 55, def: 72, spa: 132, spd: 83, spe: 44 },
+		abilities: { 0: "Berserk", 1: "Stress", H: "Intimidate" },
+		heightm: 2.8, // cambiar
+		weightkg: 330, // cambiar
+		color: "Green", // cambiar
+		prevo: "Golett",
+		evoLevel: 43, // cambiar
+		eggGroups: ["Mineral"],
 	},
 	pawniard: {
 		num: 624,
