@@ -12302,6 +12302,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 33,
 		color: "Gray",
 		eggGroups: ["Bug"],
+		otherFormes: ["Durant-Kanto"],
+		formeOrder: ["Durant", "Durant-Kanto"],
+	},
+	durantkanto: {
+		num: 632,
+		name: "Durant-Kanto",
+		baseSpecies: "Durant",
+		forme: "Kanto",
+		types: ["Bug", "Ground"],
+		baseStats: { hp: 78, atk: 100, def: 72, spa: 48, spd: 67, spe: 120 },
+		abilities: { 0: "Swarm", 1: "Hustle", H: "Sand Force" },
+		heightm: 0.3, // cambiar
+		weightkg: 33, // cambiar
+		color: "Gray", // cambiar
+		eggGroups: ["Bug"],
 	},
 	deino: {
 		num: 633,
@@ -12987,6 +13002,23 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		prevo: "Fletchinder",
 		evoLevel: 35,
+		eggGroups: ["Flying"],
+		otherFormes: ["Talonflame-Kanto"],
+		formeOrder: ["Talonflame", "Talonflame-Kanto"],
+	},
+	talonflamekanto: {
+		num: 663,
+		name: "Talonflame-Kanto",
+		baseSpecies: "Talonflame",
+		forme: "Kanto",
+		types: ["Ice", "Flying"],
+		baseStats: { hp: 78, atk: 41, def: 62, spa: 104, spd: 84, spe: 131 },
+		abilities: { 0: "Frozen Body", 1: "Snow Cloak", H: "Gale Wings" },
+		heightm: 1.2, // cambiar
+		weightkg: 24.5, // cambiar
+		color: "Red", // cambiar
+		prevo: "Fletchinder",
+		evoLevel: 35, // cambiar
 		eggGroups: ["Flying"],
 	},
 	scatterbug: {
@@ -15744,6 +15776,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 212,
 		color: "Red",
 		eggGroups: ["Monster", "Dragon"],
+		otherFormes: ["Turtonator-Kanto"],
+		formeOrder: ["Turtonator", "Turtonator-Kanto"],
+	},
+	turtonatorkanto: {
+		num: 776,
+		name: "Turtonator-Kanto",
+		baseSpecies: "Turtonator",
+		forme: "Kanto",
+		types: ["Fairy", "Dragon"],
+		baseStats: { hp: 70, atk: 48, def: 105, spa: 111, spd: 95, spe: 56 },
+		abilities: { 0: "Shell Armor", 1: "Prism", H: "Magical" },
+		heightm: 2, // cambiar
+		weightkg: 212, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Monster", "Dragon"],
 	},
 	togedemaru: {
 		num: 777,
@@ -17107,8 +17154,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Toxel",
 		evoLevel: 30,
 		eggGroups: ["Human-Like"],
-		otherFormes: ["Toxtricity-Low-Key"],
-		formeOrder: ["Toxtricity", "Toxtricity-Low-Key"],
+		otherFormes: ["Toxtricity-Low-Key", "Toxtricity-Johto", "Toxtricity-Johto-Big-Drum"],
+		formeOrder: ["Toxtricity", "Toxtricity-Low-Key", "Toxtricity-Johto", "Toxtricity-Johto-Big-Drum"],
 		canGigantamax: "G-Max Stun Shock",
 	},
 	toxtricitylowkey: {
