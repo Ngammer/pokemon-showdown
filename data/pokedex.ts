@@ -4602,6 +4602,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoType: "levelMove",
 		evoMove: "Air Slash",
 		eggGroups: ["Field"],
+		otherFormes: ["Wungsparce-Feudal", "Wungsparce-Hoenn"],
+		formeOrder: ["Wungsparce", "Wungsparce-Feudal", "Wungsparce-Hoenn"],
 	},
 	wungsparcefeudal: {
 		num: -1009,
@@ -4617,6 +4619,22 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 		requiredItem: "Ancient Rock",
 		changesFrom: "Wungsparce",
+	},
+	wungsparcehoenn: {
+		num: -1009,
+		name: "Wungsparce-Hoenn",
+		baseSpecies: "Wungsparce",
+		forme: "Hoenn",
+		types: ["Normal", "Water"],
+		baseStats: { hp: 70, atk: 67, def: 70, spa: 148, spd: 60, spe: 100 },
+		abilities: { 0: "Serene Grace", 1: "Water Veil", H: "Adaptability" },
+		heightm: 2.9, // cambiar
+		weightkg: 30, // cambiar
+		color: "Yellow", // cambiar
+		prevo: "Dunsparce",
+		evoType: "levelMove", // cambiar
+		evoMove: "Air Slash", // cambiar
+		eggGroups: ["Field"],
 	},
 	gligar: {
 		num: 207,
