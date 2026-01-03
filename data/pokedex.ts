@@ -13526,8 +13526,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoType: "useItem",
 		evoItem: "Dusk Stone",
 		eggGroups: ["Mineral"],
-		otherFormes: ["Aegislash-Blade"],
-		formeOrder: ["Aegislash", "Aegislash-Blade"],
+		otherFormes: ["Aegislash-Blade", "Aegislash-Johto", "Aegislash-Johto-Splinter"],
+		formeOrder: ["Aegislash", "Aegislash-Blade", "Aegislash-Johto", "Aegislash-Johto-Splinter"],
 	},
 	aegislashblade: {
 		num: 681,
