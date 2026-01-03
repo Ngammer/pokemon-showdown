@@ -17156,6 +17156,36 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		battleOnly: "Toxtricity-Low-Key",
 		changesFrom: "Toxtricity-Low-Key",
 	},
+	toxtricityjohto: {
+		num: 849,
+		name: "Toxtricity-Johto",
+		baseSpecies: "Toxtricity",
+		baseForme: "Johto-Small-Drum",
+		types: ["Rock", "Poison"],
+		baseStats: { hp: 90, atk: 65, def: 70, spa: 114, spd: 70, spe: 75 },
+		abilities: { 0: "Percussion", 1: "Own Tempo", H: "Adaptability" },
+		heightm: 1.6, // cambiar
+		weightkg: 40, // cambiar
+		color: "Purple", // cambiar
+		prevo: "Toxel",
+		evoLevel: 30, // cambiar
+		eggGroups: ["Human-Like"],
+	},
+	toxtricityjohtobigdrum: {
+		num: 849,
+		name: "Toxtricity-Johto-Big-Drum",
+		baseSpecies: "Toxtricity-Johto",
+		forme: "Johto-Big-Drum",
+		types: ["Rock", "Poison"],
+		baseStats: { hp: 90, atk: 35, def: 100, spa: 135, spd: 105, spe: 40 },
+		abilities: { 0: "Percussion", 1: "Own Tempo", H: "Mineralize" },
+		heightm: 1.6, // cambiar
+		weightkg: 40, // cambiar
+		color: "Purple", // cambiar
+		prevo: "Toxel",
+		evoLevel: 30, // cambiar
+		eggGroups: ["Human-Like"],
+	},
 	sizzlipede: {
 		num: 850,
 		name: "Sizzlipede",
