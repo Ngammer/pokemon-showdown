@@ -8948,6 +8948,23 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Finneon",
 		evoLevel: 31,
 		eggGroups: ["Water 2"],
+		otherFormes: ["Lumineon-Hoenn"],
+		formeOrder: ["Lumineon", "Lumineon-Hoenn"],
+	},
+	lumineonhoenn: {
+		num: 457,
+		name: "Lumineon-Hoenn",
+		baseSpecies: "Lumineon",
+		forme: "Hoenn",
+		types: ["Water", "Psychic"],
+		baseStats: { hp: 89, atk: 16, def: 49, spa: 89, spd: 126, spe: 101 },
+		abilities: { 0: "Photocollision", 1: "Storm Drain", H: "Water Veil" },
+		heightm: 1.2, // cambiar
+		weightkg: 24, // cambiar
+		color: "Blue", // cambiar
+		prevo: "Finneon",
+		evoLevel: 31, // cambiar
+		eggGroups: ["Water 2"],
 	},
 	mantyke: {
 		num: 458,
@@ -13606,6 +13623,23 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Clauncher",
 		evoLevel: 37,
 		eggGroups: ["Water 1", "Water 3"],
+		otherFormes: ["Clawitzer-Hoenn"],
+		formeOrder: ["Clawitzer", "Clawitzer-Hoenn"],
+	},
+	clawitzerhoenn: {
+		num: 693,
+		name: "Clawitzer-Hoenn",
+		baseSpecies: "Clawitzer",
+		forme: "Hoenn",
+		types: ["Water", "Fire"],
+		baseStats: { hp: 71, atk: 33, def: 94, spa: 167, spd: 96, spe: 39 },
+		abilities: { 0: "Mega Launcher" },
+		heightm: 1.3, // cambiar
+		weightkg: 35.3, // cambiar
+		color: "Blue", // cambiar
+		prevo: "Clauncher",
+		evoLevel: 37, // cambiar
+		eggGroups: ["Water 1", "Water 3"],
 	},
 	helioptile: {
 		num: 694,
@@ -13756,6 +13790,22 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Clear Body", H: "Sturdy" },
 		heightm: 0.3,
 		weightkg: 5.7,
+		color: "Gray",
+		eggGroups: ["Fairy", "Mineral"],
+		otherFormes: ["Carbink-Hoenn"],
+		formeOrder: ["Carbink", "Carbink-Hoenn"],
+	},
+	carbinkhoenn: {
+		num: 703,
+		name: "Carbink-Hoenn",
+		baseSpecies: "Carbink",
+		forme: "Hoenn",
+		types: ["Rock", "Dark"],
+		gender: "N",
+		baseStats: { hp: 70, atk: 50, def: 150, spa: 80, spd: 100, spe: 50 },
+		abilities: { 0: "Enveloping Darkness", 1: "Sturdy", H: "Cursed Body" },
+		heightm: 0.3, // cambiar
+		weightkg: 5.7, // cambiar
 		color: "Gray",
 		eggGroups: ["Fairy", "Mineral"],
 	},
@@ -17562,7 +17612,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Hoenn",
 		types: ["Rock"],
 		baseStats: { hp: 80, atk: 120, def: 60, spa: 20, spd: 80, spe: 110 },
-		abilities: { 0: "Ice Face" }, // cambiar
+		abilities: { 0: "Rock Face" },
 		heightm: 1.4, // cambiar
 		weightkg: 89, // cambiar
 		color: "Blue", // cambiar
@@ -17571,16 +17621,16 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	eiscuehoennnorock: {
 		num: 875,
 		name: "Eiscue-Hoenn-Norock",
-		baseSpecies: "Eiscue",
+		baseSpecies: "Eiscue-Hoenn",
 		forme: "Hoenn-Norock",
 		types: ["Rock"],
 		baseStats: { hp: 80, atk: 40, def: 150, spa: 25, spd: 130, spe: 45 },
-		abilities: { 0: "Ice Face" }, // cambiar
+		abilities: { 0: "Rock Face" },
 		heightm: 1.4, // cambiar
 		weightkg: 89, // cambiar
 		color: "Blue", // cambiar
 		eggGroups: ["Water 1", "Field"],
-		requiredAbility: "Ice Face", // cambiar
+		requiredAbility: "Rock Face",
 		battleOnly: "Eiscue-Hoenn",
 	},
 	indeedee: {

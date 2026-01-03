@@ -2064,6 +2064,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
+				this.boost({ spd: 1 }, pokemon);
 			}
 		},
 		onDamagePriority: 1,
@@ -2104,6 +2105,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
+				this.boost({ spd: 1 }, pokemon);
 			}
 		},
 		flags: {
@@ -7132,5 +7134,64 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Resilience",
 		rating: 3.5,
 		num: -150,
+	},
+	rockface: {
+		onSwitchInPriority: -2,
+		onStart(pokemon) {
+			if (this.field.isWeather(['sandstorm']) && pokemon.species.id === 'eiscuehoennnorock') {
+				this.add('-activate', pokemon, 'ability: Rock Face');
+				this.effectState.busted = false;
+				pokemon.formeChange('Eiscue-Hoenn', this.effect, true);
+				this.boost({ def: 1 }, pokemon);
+			}
+		},
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect?.effectType === 'Move' && effect.category === 'Physical' && target.species.id === 'eiscuehoenn') {
+				this.add('-activate', target, 'ability: Rock Face');
+				this.effectState.busted = true;
+				return 0;
+			}
+		},
+		onCriticalHit(target, type, move) {
+			if (!target) return;
+			if (move.category !== 'Physical' || target.species.id !== 'eiscuehoenn') return;
+			if (target.volatiles['substitute'] && !(move.flags['bypasssub'] || move.infiltrates)) return;
+			if (!target.runImmunity(move)) return;
+			return false;
+		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target) return;
+			if (move.category !== 'Physical' || target.species.id !== 'eiscuehoenn') return;
+
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move)) return;
+			return 0;
+		},
+		onUpdate(pokemon) {
+			if (pokemon.species.id === 'eiscuehoenn' && this.effectState.busted) {
+				pokemon.formeChange('Eiscue-Hoenn-Norock', this.effect, true);
+			}
+		},
+		onWeatherChange(pokemon, source, sourceEffect) {
+			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Rock Face
+			if ((sourceEffect as Ability)?.suppressWeather) return;
+			if (!pokemon.hp) return;
+			if (this.field.isWeather(['sandstorm']) && pokemon.species.id === 'eiscuehoennnorock') {
+				this.add('-activate', pokemon, 'ability: Rock Face');
+				this.effectState.busted = false;
+				pokemon.formeChange('Eiscue-Hoenn', this.effect, true);
+				this.boost({ def: 1 }, pokemon);
+			}
+		},
+		flags: {
+			failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1,
+			breakable: 1, notransform: 1,
+		},
+		name: "Rock Face",
+		rating: 3,
+		num: -151,
 	},
 };
