@@ -18028,6 +18028,22 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evos: ["Archaludon"],
 		eggGroups: ["Mineral", "Dragon"],
 		canGigantamax: "G-Max Depletion",
+		otherFormes: ["Duraludon-Kanto"],
+		formeOrder: ["Duraludon", "Duraludon-Kanto"],
+	},
+	duraludonkanto: {
+		num: 884,
+		name: "Duraludon-Kanto",
+		baseSpecies: "Duraludon",
+		forme: "Kanto",
+		types: ["Steel", "Electric"],
+		baseStats: { hp: 60, atk: 85, def: 90, spa: 135, spd: 70, spe: 95 },
+		abilities: { 0: "Light Metal", 1: "Ligthning Rod", H: "Competitive" },
+		heightm: 1.8, // cambiar
+		weightkg: 40, // cambiar
+		color: "White", // cambiar
+		evos: ["Archaludon"], // cambiar
+		eggGroups: ["Mineral", "Dragon"],
 	},
 	duraludongmax: {
 		num: 884,
