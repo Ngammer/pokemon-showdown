@@ -684,11 +684,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	hypercutter: {
 		name: "Hyper Cutter",
-		shortDesc: "Prevents other Pokemon from lowering this Pokemon's Attack stat stage. 50% chance of lowering the target's defense with slicing moves",
+		shortDesc: "50% chance of lowering the target's defense with slicing moves",
 	},
 	icebody: {
 		name: "Ice Body",
-		desc: "If Snow is active, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn. This Pokemon's Poison-type moves have their power multiplied by 1.1.",
+		desc: "If Snow is active, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn. This Pokemon's Ice-type moves have their power multiplied by 1.1.",
 		shortDesc: "If Snow is active, this Pokemon heals 1/8 of its max HP each turn.",
 		gen8: {
 			desc: "If Hail is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This Pokemon takes no damage from Hail.",
