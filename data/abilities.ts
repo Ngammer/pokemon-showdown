@@ -6310,7 +6310,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyTypePriority: -1,
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.category === 'Special' && !move.flags['contact']) {
+			if (move.category === 'Special') {
 				return this.chainModify(1.3);
 			}
 		},

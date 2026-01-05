@@ -2308,18 +2308,16 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	watts: {
 		name: "Watts",
-		desc: "",
 		shortDesc: "This Pokemon's Electric-type moves have their power multiplied by 1.2.",
 	},
 	fossilization: {
 		name: "Fossilization",
-		desc: "This Pokemon is immune to Rock-type and Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type or Steel-type move. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them.",
-		shortDesc: "This Pokemon is healed 1/4 by Rock and Steel. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them.",
+		desc: "This Pokemon is immune to Rock-type and Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type or Steel-type move. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them from both sides of the field.",
+		shortDesc: "This Pokemon is healed 1/4 by Rock and Steel. This Pokemon is immune to Stealth Rocks and removes them.",
 	},
 	coldmind: {
 		name: "Cold mind",
-		desc: "",
-		shortDesc: "This Pokemon's special moves that don't make contact have their power multiplied by 1.3 and 30% chance of freezing.",
+		shortDesc: "This Pokemon's special moves have their power multiplied by 1.3 and 50% chance of freezing.",
 	},
 	sinisterflame: {
 		name: "Sinister Flame",
