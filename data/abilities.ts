@@ -4636,14 +4636,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
 			} else if (!pokemon.volatiles['slowstart']) {
-				return this.chainModify(1.05);
+				return this.chainModify(1.1);
 			}
 		},
 		onModifySpe(spe, pokemon) {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
 			} else if (!pokemon.volatiles['slowstart']) {
-				return this.chainModify(1.05);
+				return this.chainModify(1.1);
 			}
 		},
 		onEnd(pokemon) {
@@ -4665,19 +4665,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					const debuff = 0.8 + (0.1 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				} else {
-					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					const debuff = 0.85 + (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
 			onModifySpe(spe, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					const debuff = 0.8 + (0.1 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				} else {
-					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					const debuff = 0.85 + (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
