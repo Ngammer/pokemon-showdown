@@ -59,8 +59,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	arenatrap: {
 		name: "Arena Trap",
-		desc: "Prevents opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type.",
-		shortDesc: "Prevents opposing Pokemon from switch if HP under 33%.",
+		desc: "Prevents opposing Pokemon from choosing to switch out when under half health unless they are airborne, are holding a Shed Shell, are a Ghost, Bug or Flying type.",
+		shortDesc: "Prevents opposing Pokemon from switch if HP under 50%.",
 		gen6: {
 			desc: "Prevents adjacent opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type.",
 		},
