@@ -2347,8 +2347,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	ancientintelligence: {
 		name: "Ancient Intelligence",
-		desc: "This Pokemon's moves will always hit and the power of its attacks is decreased by X/2, where X is the difference between the moves accuracy and 100.",
-		shortDesc: "Every move used by this Pokemon will always hit, but power is decreased by 1/2 the accuracy increase.",
+		desc: "This Pokemon's moves will always hit and the power of its attacks is decreased by X/5, where X is the difference between the moves accuracy and 100.",
+		shortDesc: "Every move used by this Pokemon will always hit, but power is decreased by 1/5 of the accuracy increase.",
 	},
 	wattfeather: {
 		name: "Watt Feather",
