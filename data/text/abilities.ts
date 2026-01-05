@@ -2224,8 +2224,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	wonderskin: {
 		name: "Wonder Skin",
-		desc: "Non-damaging moves that check accuracy have their accuracy changed to 50% when used against this Pokemon. This effect comes before other effects that modify accuracy.",
-		shortDesc: "Status moves with accuracy checks are 50% accurate when used on this Pokemon.",
+		shortDesc: "This Pokemon is immune to Status moves.",
 	},
 	zenmode: {
 		name: "Zen Mode",
