@@ -1209,7 +1209,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	pickpocket: {
 		name: "Pickpocket",
-		shortDesc: "Contact movements have a 33% chance of removing the object from target.",
+		desc: "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+		shortDesc: "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. The User' contact moves have 33% chance to remove items.",
 	},
 	pickup: {
 		name: "Pickup",
@@ -1236,8 +1237,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	plus: {
 		name: "Plus",
-		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5. Prevents other Pokemon from lowering this Pokemon's stat stages.",
-		shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 2.5. Prevents other Pokemon from lowering this Pokemon's stat stages.",
+		shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 2.5x. Prevents other Pokemon from lowering this Pokemon's stat stages.",
 		gen4: {
 			desc: "If an active ally has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
 			shortDesc: "If an active ally has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
@@ -1394,7 +1395,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	quickdraw: {
 		name: "Quick Draw",
-		shortDesc: "Every third hit adquires priority.",
+		shortDesc: "Every three turns, this Pokemon has +1 priority.",
 
 		activate: "  Quick Draw made [POKEMON] move faster!",
 	},
