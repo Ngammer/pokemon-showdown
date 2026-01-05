@@ -46,8 +46,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	anticipation: {
 		name: "Anticipation",
-		desc: "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, or any OHKO move. This effect considers Hidden Power to be its determined type, and every other move to be its original type.",
-		shortDesc: "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move.",
+		desc: "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, and disables it. This effect considers Hidden Power to be its determined type, and every other move to be its original type.",
+		shortDesc: "On switch-in, this Pokemon shudders if any foe has a supereffective move and disables it.",
 		gen5: {
 			desc: "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, or any OHKO move. This effect considers moves to be their original type.",
 		},
