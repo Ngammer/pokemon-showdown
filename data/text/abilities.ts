@@ -2282,12 +2282,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	lucky: {
 		name: "Lucky",
-		desc: "",
 		shortDesc: "This Pokemon's attacks are critical hits.",
 	},
 	gigantification: {
 		name: "Gigantification",
-		desc: "",
 		shortDesc: "On switch-in, this Pokemon's highest stat is raised by 1 stage.",
 	},
 	malice: {
@@ -2296,18 +2294,17 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	frubble: {
 		name: "Frubble",
-		desc: "This Pokemon receives 1/10 damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
-		shortDesc: "This Pokemon receives 1/10 damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
+		desc: "This Pokemon receives 90% damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
+		shortDesc: "This Pokemon receives 90% damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
 	},
 	screensetter: {
 		name: "Screen Setter",
-		desc: "",
 		shortDesc: "This Pokemon's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
 	},
 	icysong: {
 		name: "Icy Song",
-		desc: "This Pokemon's sound-based moves become Ice-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. This Pokemon's sound-based moves have a 30% chance of freezing.",
-		shortDesc: "This Pokemon's sound-based moves become Ice type. This Pokemon's sound-based moves have a 30% chance of freezing",
+		desc: "This Pokemon's sound-based moves become Ice-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. This Pokemon's sound-based moves have a 33% chance of freezing.",
+		shortDesc: "This Pokemon's sound-based moves become Ice type. This Pokemon's sound-based moves have a 33% chance of freezing",
 	},
 	watts: {
 		name: "Watts",
