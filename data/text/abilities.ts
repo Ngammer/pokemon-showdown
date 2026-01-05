@@ -2270,7 +2270,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	// Nuevo Meta
 	scaleshield: {
 		name: "Scale Shield",
-		desc: "Puede envenenar, paralizar y dormir al contacto (11% de posibilidad para cada alteración de estado). Convierte el movimiento Viento Plata en Viento Escama.",
+		desc: "33% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep. Transforms Silver Wind into Scale Wind.",
 		shortDesc: "50% chance of poison/paralysis/sleep on others dealing damage",
 	},
 	stoneknuckles: {
