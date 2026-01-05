@@ -2138,7 +2138,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	vitalspirit: {
 		name: "Vital Spirit",
-		shortDesc: "At less than half health, recovers 50% of MAX HP. Activated once per battle",
+		shortDesc: "At less than half health, recovers 50% of max HP. Activates once per battle",
 	},
 	voltabsorb: {
 		name: "Volt Absorb",
