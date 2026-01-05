@@ -2352,13 +2352,13 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	wattfeather: {
 		name: "Watt Feather",
-		shortDesc: "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+		desc: "Every three turns, this Pokemon deals double damage. If paralyzed, all moves have their power doubled. ignores Speed drop from paralysis.",
 
-		activate: "  Watt Feather made [POKEMON] move faster!",
+		activate: "  Watt Feather made [POKEMON] hit harder!",
 	},
 	soulliberator: {
 		name: "Soul Liberator",
-		shortDesc: "After an ally has fainted, if user switches-in, all allies heal 10% HP.",
+		shortDesc: "After an ally has fainted, if user switches-in, all allies heal 20% HP.",
 		activate: "  [POKEMON] has led the fallen one along the path of light!",
 	},
 	puresoul: {
@@ -2395,7 +2395,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	tectoanchor: {
 		name: "Tecto Anchor",
-		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses.",
+		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch unless Flying types. +15% Defense.",
 	},
 	sage: {
 		name: "Sage",

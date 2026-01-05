@@ -6485,14 +6485,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -119,
 	},
 	puresoul: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod === 1) {
-				this.debug('Pure Soul neutralize');
-				return this.chainModify(0.5);
-			} else if (target.getMoveHitData(move).typeMod === 2) {
-				this.debug('Pure Soul neutralize');
-				return this.chainModify(0.25);
-			}
+		onEffectiveness(typeMod, target, type, move) {
+			return 0;
 		},
 		flags: { breakable: 1 },
 		name: "Pure Soul",
