@@ -5087,11 +5087,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	superluck: {
 		onModifyCritRatio(critRatio, pokemon) {
-			if ((pokemon.volatiles['superluck']?.turns >= 3 && pokemon.item !== 'scopelens')) {
+			if ((pokemon.volatiles['superluck']?.turns >= 2 && pokemon.item !== 'scopelens')) {
 				pokemon.volatiles['superluck'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Super Luck');
 				return 5;
-			} else if ((pokemon.volatiles['superluck']?.turns >= 2 && pokemon.item === 'scopelens')) {
+			} else if ((pokemon.volatiles['superluck']?.turns >= 1 && pokemon.item === 'scopelens')) {
 				pokemon.volatiles['superluck'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Super Luck');
 				return 5;
@@ -6153,7 +6153,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -3,
 	},
 
-	// Nuevo Meta
+	// PKM Espejo
 	scaleshield: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target) && source.runStatusImmunity('powder')) {
