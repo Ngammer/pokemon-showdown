@@ -266,7 +266,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cudchew: {
 		name: "Cud Chew",
-		shortDesc: "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn. when consuming a berry additionaly heals 1/4",
+		shortDesc: "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn. Consuming a berry additionally heals 1/4 of its maximum HP",
 	},
 	curiousmedicine: {
 		name: "Curious Medicine",
@@ -278,7 +278,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cutecharm: {
 		name: "Cute Charm",
-		desc: "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. Every time the opponent hits this pokemon, its attacks are weakened by 10% with a maximum of 90%. The effect is lost when changing pokemon.",
+		desc: "There is a 33% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. Every time the opponent hits this pokemon, its attacks are weakened by 10% with a maximum of 90%. The effect is lost when changing pokemon.",
 		shortDesc: "This Pokemon's opponents lose 10% damage after it is damaged by a move. 30% chance of infatuating Pokemon of the opposite gender if they make contact.",
 		gen4: {
 			desc: "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. This effect does not happen if this Pokemon did not lose HP from the attack.",
