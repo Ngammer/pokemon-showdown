@@ -253,7 +253,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	corrosion: {
 		name: "Corrosion",
-		shortDesc: "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+		shortDesc: "This Pokemon can hit Steel types with Poison-type moves.",
 	},
 	costar: {
 		name: "Costar",
