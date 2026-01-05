@@ -6862,15 +6862,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (this.randomChance(33, 100)) {
 					const r = this.random(100);
 					if (r < 20) {
-						this.boost({ atk: 1 });
+						this.boost({ atk: 1 }, source);
 					} else if (r < 40) {
-						this.boost({ spa: 1 });
+						this.boost({ spa: 1 }, source);
 					} else if (r < 60) {
-						this.boost({ def: 1 });
+						this.boost({ def: 1 }, source);
 					} else if (r < 80) {
-						this.boost({ spd: 1 });
+						this.boost({ spd: 1 }, source);
 					} else if (r < 100) {
-						this.boost({ spe: 1 });
+						this.boost({ spe: 1 }, source);
 					}
 				}
 			}

@@ -46,8 +46,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	anticipation: {
 		name: "Anticipation",
-		desc: "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, or any OHKO move. This effect considers Hidden Power to be its determined type, and every other move to be its original type.",
-		shortDesc: "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move.",
+		desc: "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, and disables it. This effect considers Hidden Power to be its determined type, and every other move to be its original type.",
+		shortDesc: "On switch-in, this Pokemon shudders if any foe has a supereffective move and disables it.",
 		gen5: {
 			desc: "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attacking move with a type that is super effective against this Pokemon, or any OHKO move. This effect considers moves to be their original type.",
 		},
@@ -59,8 +59,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	arenatrap: {
 		name: "Arena Trap",
-		desc: "Prevents opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type.",
-		shortDesc: "Prevents opposing Pokemon from switch if HP under 33%.",
+		desc: "Prevents opposing Pokemon from choosing to switch out when under half health unless they are airborne, are holding a Shed Shell, are a Ghost, Bug or Flying type.",
+		shortDesc: "Prevents opposing Pokemon from switch if HP under 50%.",
 		gen6: {
 			desc: "Prevents adjacent opposing Pokemon from choosing to switch out unless they are airborne, are holding a Shed Shell, or are a Ghost type.",
 		},
