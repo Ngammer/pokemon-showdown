@@ -1174,7 +1174,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	owntempo: {
 		name: "Own Tempo",
 		desc: "This Pokemon cannot be statused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-		shortDesc: "This Pokemon cannot be statused. Immune to Intimidate.",
+		shortDesc: "This Pokemon cannot be statused. Immune to Intimidate. Immune to Confusion.",
 		gen7: {
 			desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it.",
 			shortDesc: "This Pokemon cannot be confused.",
