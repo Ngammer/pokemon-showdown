@@ -1800,8 +1800,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	stench: {
 		name: "Stench",
-		desc: "This Pokemon receives 1/2 damage from wind moves. This Pokemon's Poison-type moves have their power multiplied by 1.1.",
-		shortDesc: "This Pokemon takes 1/2 damage from wind moves, its Poison-type moves have 1.1x power.",
+		desc: "While this Pokemon is on the field, opponents lose 6.25% of their max HP every turn.",
+		shortDesc: "While this Pokemon is on the field, opponents lose 6.25% of their max HP every turn.",
 		gen4: {
 			desc: "No competitive use.",
 			shortDesc: "No competitive use.",
@@ -1846,13 +1846,13 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	suctioncups: {
 		name: "Suction Cups",
-		shortDesc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+		shortDesc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item. This Pokemon's contact moves trap the target.",
 
 		block: "  [POKEMON] is anchored in place with its suction cups!",
 	},
 	superluck: {
 		name: "Super Luck",
-		shortDesc: "Hits a critical hit every three turns. power critical hits x1.75.",
+		shortDesc: "Hits a critical hit every other turns.",
 	},
 	supersweetsyrup: {
 		name: "Supersweet Syrup",
