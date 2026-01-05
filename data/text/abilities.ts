@@ -134,7 +134,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	battlearmor: {
 		name: "Battle Armor",
-		shortDesc: "This Pokemon cannot be struck by a critical hit. Upon entering and during the following turn, the user receives half damage",
+		desc: "This Pokemon cannot be struck by a critical hit. Upon entering and during the following turn, the user receives half damage",
+		shortDesc: "This Pokemon cannot be struck by a critical hit. On swithch-in, it takes half damage for 1 turn.",
 	},
 	battlebond: {
 		name: "Battle Bond",
