@@ -861,7 +861,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	lightmetal: {
 		name: "Light Metal",
-		shortDesc: "Reduces half the power of steel-type movements, but they adquire +1 prority.",
+		shortDesc: "Halves the power of steel-type movements, but they acquire +1 priority.",
 	},
 	lightningrod: {
 		name: "Lightning Rod",
@@ -908,7 +908,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	longreach: {
 		name: "Long Reach",
-		shortDesc: "This Pokemon's attacks do not make contact with the target.",
+		shortDesc: "This Pokemon's non-contact moves have their power multiplied by 1.3.",
 	},
 	magicbounce: {
 		name: "Magic Bounce",
@@ -936,7 +936,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	magmaarmor: {
 		name: "Magma Armor",
-		shortDesc: "Reduces damage by grass, ice and water 33%.",
+		shortDesc: "This Pokemon cannot be frozen. Reduces damage from Grass-, Ice- and Water-Type moves by 33%.",
 	},
 	magnetpull: {
 		name: "Magnet Pull",
@@ -986,8 +986,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	minus: {
 		name: "Minus",
-		desc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-		shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
+		desc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 2.5. When one of this Pokemon's stat stages would be lowered by another Pokemon, that Pokemon's stat stage is lowered instead. This effect does not happen if this Pokemon's stat stage was already -6. If the other Pokemon has a substitute, neither Pokemon has its stat stage lowered.",
+		shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 2.5x. If this Pokemon's stat stages would be lowered, the attacker's are lowered instead.",
 		gen4: {
 			desc: "If an active ally has the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
 			shortDesc: "If an active ally has the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
