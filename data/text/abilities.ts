@@ -2411,7 +2411,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	overwhelmingdefense: {
 		name: "Overwhelming Defense",
-		shortDesc: "Uses Defense for physical attacks and Special Defense for special attacks, but have their power multiplied by 0.75.",
+		shortDesc: "Uses Defense for physical attacks and Special Defense for special attacks, but lose by 25% power.",
 	},
 	blessedbody: {
 		name: "Blessed Body",
@@ -2423,7 +2423,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	hardhead: {
 		name: "Hardhead",
-		shortDesc: "1.5x power for head-based moves.",
+		shortDesc: "This Pokemon's head moves have their power multiplied by 1.5",
 	},
 	emergingvolt: {
 		name: "Emerging Volt",
@@ -2431,7 +2431,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	volcanoaura: {
 		name: "Volcano Aura",
-		desc: "This Pokemon is immune to Water-type moves and clears all stat changes when hit by an Electric-type move.",
+		desc: "This Pokemon is immune to Water-type moves and clears all stat changes when hit by a Water-type move.",
 		shortDesc: "This Pokemon clears all stat changes when hit by Water moves; Water immunity.",
 	},
 	knowledge: {

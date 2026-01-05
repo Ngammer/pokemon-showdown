@@ -6802,7 +6802,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	cleanwater: {
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison' && move.type === 'Water') return -1;
+			if (type === 'Poison' && move.type === 'Water') return typeMod + 1;
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && (effect.id === 'psn' || effect.id === 'tox')) {
