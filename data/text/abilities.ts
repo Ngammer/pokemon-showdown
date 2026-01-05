@@ -1498,7 +1498,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	runaway: {
 		name: "Run Away",
-		shortDesc: "The user's speed cannot be lowered in any way.",
+		shortDesc: "The user's speed cannot be lowered in any way. Can't be prevented from switching out.",
 	},
 	sandforce: {
 		name: "Sand Force",
