@@ -5337,7 +5337,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!target.swordBoost) {
 				this.debug('Tangling Hair weaken');
 				target.swordBoost = true;
-				return this.chainModify(0.4);
+				return this.chainModify(0.6);
 			}
 		},
 		flags: { breakable: 1 },

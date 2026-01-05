@@ -1934,7 +1934,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	tanglinghair: {
 		name: "Tangling Hair",
-		shortDesc: "Pokemon making contact: Speed lowered by 1 stage. Damage first attack is reduced by 60%",
+		shortDesc: "Pokemon making contact: Speed lowered by 1 stage. Damage first attack is reduced by 40%",
 	},
 	technician: {
 		name: "Technician",
