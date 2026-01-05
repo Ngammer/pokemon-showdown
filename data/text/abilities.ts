@@ -1726,7 +1726,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	soundproof: {
 		name: "Soundproof",
 		desc: "This Pokemon is immune to sound moves. The first time it is hit by a sound move, its offensive stat is multiplied by 2 while using its next attack as long as it remains active and has this Ability.",
-		shortDesc: "This Pokemon's next attack does 2x damage if hit by one sound move; sound immunity.",
+		shortDesc: "This Pokemon's next attack does 2x damage if hit by a sound move; sound immunity.",
 		gen7: {
 			shortDesc: "This Pokemon is immune to sound-based moves, including Heal Bell.",
 		},
