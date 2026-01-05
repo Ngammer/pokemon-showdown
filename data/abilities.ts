@@ -2484,7 +2484,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (source && target === source && boost.spe && boost.spe < 0) {
 				delete boost.spe;
 				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", `[of] ${target}`);
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Limber", `[of] ${target}`);
 				}
 			}
 		},
@@ -2548,8 +2548,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 204,
 	},
 	longreach: {
-		onModifyMove(move) {
-			delete move.flags['contact'];
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (!move.flags['contact']) {
+				return this.chainModify([5325, 4096]);
+			}
 		},
 		flags: { },
 		name: "Long Reach",
@@ -2792,7 +2795,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onTryBoost(boost, target, source, effect) {
 			// Don't bounce self stat changes, or boosts that have already bounced
-			if (!source || target === source || !boost || effect.name === 'Mirror Armor') return;
+			if (!source || target === source || !boost || effect.name === 'Minus') return;
 			let b: BoostID;
 			for (b in boost) {
 				if (boost[b]! < 0) {
@@ -2801,7 +2804,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					negativeBoost[b] = boost[b];
 					delete boost[b];
 					if (source.hp) {
-						this.add('-ability', target, 'Mirror Armor');
+						this.add('-ability', target, 'Minus');
 						this.boost(negativeBoost, source, target, null, true);
 					}
 				}
@@ -3440,6 +3443,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAfterMoveSecondary(target, source, move) {
 			if (source && source !== target && move?.flags['contact']) {
 				if (target.item || target.switchFlag || target.forceSwitchFlag || source.switchFlag === true) {
+					if (target.hasItem('covertcloak')) return;
+					if (this.checkMoveMakesContact(move, target, source)) {
+						const r = this.random(100);
+						if (r < 34) {
+							const item = target.takeItem();
+							if (item) {
+								this.add('-enditem', target, item.name, '[from] ability: Pickpocket', `[of] ${source}`);
+							}
+						}
+					}
 					return;
 				}
 				const yourItem = source.takeItem(target);
@@ -3452,19 +3465,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 				this.add('-enditem', source, yourItem, '[silent]', '[from] ability: Pickpocket', `[of] ${source}`);
 				this.add('-item', target, yourItem, '[from] ability: Pickpocket', `[of] ${source}`);
-			}
-		},
-		onSourceDamagingHit(damage, target, source, move) {
-			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
-			if (target.hasItem('covertcloak')) return;
-			if (this.checkMoveMakesContact(move, target, source)) {
-				const r = this.random(100);
-				if (r < 34) {
-					const item = target.takeItem();
-					if (item) {
-						this.add('-enditem', target, item.name, '[from] ability: Pickpocket', `[of] ${source}`);
-					}
-				}
 			}
 		},
 		flags: { },
