@@ -3443,16 +3443,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAfterMoveSecondary(target, source, move) {
 			if (source && source !== target && move?.flags['contact']) {
 				if (target.item || target.switchFlag || target.forceSwitchFlag || source.switchFlag === true) {
-					if (target.hasItem('covertcloak')) return;
-					if (this.checkMoveMakesContact(move, target, source)) {
-						const r = this.random(100);
-						if (r < 34) {
-							const item = target.takeItem();
-							if (item) {
-								this.add('-enditem', target, item.name, '[from] ability: Pickpocket', `[of] ${source}`);
-							}
-						}
-					}
 					return;
 				}
 				const yourItem = source.takeItem(target);
@@ -3465,6 +3455,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 				this.add('-enditem', source, yourItem, '[silent]', '[from] ability: Pickpocket', `[of] ${source}`);
 				this.add('-item', target, yourItem, '[from] ability: Pickpocket', `[of] ${source}`);
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasItem('covertcloak')) return;
+			if (move?.flags['contact']) {
+				const r = this.random(100);
+				if (r < 34) {
+					const item = target.takeItem();
+					if (item) {
+						this.add('-enditem', target, item.name, '[from] ability: Pickpocket', `[of] ${source}`);
+					}
+				}
 			}
 		},
 		flags: { },
@@ -4633,14 +4636,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
 			} else if (!pokemon.volatiles['slowstart']) {
-				return this.chainModify(1.05);
+				return this.chainModify(1.1);
 			}
 		},
 		onModifySpe(spe, pokemon) {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
 			} else if (!pokemon.volatiles['slowstart']) {
-				return this.chainModify(1.05);
+				return this.chainModify(1.1);
 			}
 		},
 		onEnd(pokemon) {
@@ -4662,19 +4665,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					const debuff = 0.8 + (0.1 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				} else {
-					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					const debuff = 0.85 + (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
 			onModifySpe(spe, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					const debuff = 0.8 + (0.1 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				} else {
-					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					const debuff = 0.85 + (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
@@ -5334,7 +5337,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!target.swordBoost) {
 				this.debug('Tangling Hair weaken');
 				target.swordBoost = true;
-				return this.chainModify(0.4);
+				return this.chainModify(0.6);
 			}
 		},
 		flags: { breakable: 1 },
@@ -6307,7 +6310,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyTypePriority: -1,
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.category === 'Special' && !move.flags['contact']) {
+			if (move.category === 'Special') {
 				return this.chainModify(1.3);
 			}
 		},
@@ -6482,14 +6485,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -119,
 	},
 	puresoul: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod === 1) {
-				this.debug('Pure Soul neutralize');
-				return this.chainModify(0.5);
-			} else if (target.getMoveHitData(move).typeMod === 2) {
-				this.debug('Pure Soul neutralize');
-				return this.chainModify(0.25);
-			}
+		onEffectiveness(typeMod, target, type, move) {
+			return 0;
 		},
 		flags: { breakable: 1 },
 		name: "Pure Soul",
@@ -6805,7 +6802,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	cleanwater: {
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison' && move.type === 'Water') return -1;
+			if (type === 'Poison' && move.type === 'Water') return typeMod + 1;
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && (effect.id === 'psn' || effect.id === 'tox')) {

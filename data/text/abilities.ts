@@ -134,7 +134,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	battlearmor: {
 		name: "Battle Armor",
-		shortDesc: "This Pokemon cannot be struck by a critical hit. Upon entering and during the following turn, the user receives half damage",
+		desc: "This Pokemon cannot be struck by a critical hit. Upon entering and during the following turn, the user receives half damage",
+		shortDesc: "This Pokemon cannot be struck by a critical hit. On swithch-in, it takes half damage for 1 turn.",
 	},
 	battlebond: {
 		name: "Battle Bond",
@@ -252,7 +253,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	corrosion: {
 		name: "Corrosion",
-		shortDesc: "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+		shortDesc: "This Pokemon can hit Steel types with Poison-type moves.",
 	},
 	costar: {
 		name: "Costar",
@@ -265,7 +266,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cudchew: {
 		name: "Cud Chew",
-		shortDesc: "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn. when consuming a berry additionaly heals 1/4",
+		shortDesc: "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn. Consuming a berry additionally heals 1/4 of its maximum HP",
 	},
 	curiousmedicine: {
 		name: "Curious Medicine",
@@ -277,7 +278,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cutecharm: {
 		name: "Cute Charm",
-		desc: "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. Every time the opponent hits this pokemon, its attacks are weakened by 10% with a maximum of 90%. The effect is lost when changing pokemon.",
+		desc: "There is a 33% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. Every time the opponent hits this pokemon, its attacks are weakened by 10% with a maximum of 90%. The effect is lost when changing pokemon.",
 		shortDesc: "This Pokemon's opponents lose 10% damage after it is damaged by a move. 30% chance of infatuating Pokemon of the opposite gender if they make contact.",
 		gen4: {
 			desc: "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender. This effect does not happen if this Pokemon did not lose HP from the attack.",
@@ -579,7 +580,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	gooey: {
 		name: "Gooey",
-		shortDesc: "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+		shortDesc: "Pokemon making contact with this Pokemon have their Speed and Attack lowered by 1 stage.",
 	},
 	gorillatactics: {
 		name: "Gorilla Tactics",
@@ -683,11 +684,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	hypercutter: {
 		name: "Hyper Cutter",
-		shortDesc: "Prevents other Pokemon from lowering this Pokemon's Attack stat stage. 50% chance of lowering the target's defense with slicing moves",
+		shortDesc: "50% chance of lowering the target's defense with slicing moves",
 	},
 	icebody: {
 		name: "Ice Body",
-		desc: "If Snow is active, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn. This Pokemon's Poison-type moves have their power multiplied by 1.1.",
+		desc: "If Snow is active, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn. This Pokemon's Ice-type moves have their power multiplied by 1.1.",
 		shortDesc: "If Snow is active, this Pokemon heals 1/8 of its max HP each turn.",
 		gen8: {
 			desc: "If Hail is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This Pokemon takes no damage from Hail.",
@@ -860,7 +861,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	lightmetal: {
 		name: "Light Metal",
-		shortDesc: "Reduces half the power of steel-type movements, but they adquire +1 prority.",
+		shortDesc: "Halves the power of steel-type movements, but they acquire +1 priority.",
 	},
 	lightningrod: {
 		name: "Lightning Rod",
@@ -907,7 +908,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	longreach: {
 		name: "Long Reach",
-		shortDesc: "This Pokemon's attacks do not make contact with the target.",
+		shortDesc: "This Pokemon's non-contact moves have their power multiplied by 1.3.",
 	},
 	magicbounce: {
 		name: "Magic Bounce",
@@ -935,7 +936,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	magmaarmor: {
 		name: "Magma Armor",
-		shortDesc: "Reduces damage by grass, ice and water 33%.",
+		shortDesc: "This Pokemon cannot be frozen. Reduces damage from Grass-, Ice- and Water-Type moves by 33%.",
 	},
 	magnetpull: {
 		name: "Magnet Pull",
@@ -985,8 +986,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	minus: {
 		name: "Minus",
-		desc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-		shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
+		desc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 2.5. When one of this Pokemon's stat stages would be lowered by another Pokemon, that Pokemon's stat stage is lowered instead. This effect does not happen if this Pokemon's stat stage was already -6. If the other Pokemon has a substitute, neither Pokemon has its stat stage lowered.",
+		shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 2.5x. If this Pokemon's stat stages would be lowered, the attacker's are lowered instead.",
 		gen4: {
 			desc: "If an active ally has the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
 			shortDesc: "If an active ally has the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
@@ -1173,7 +1174,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	owntempo: {
 		name: "Own Tempo",
 		desc: "This Pokemon cannot be statused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-		shortDesc: "This Pokemon cannot be statused. Immune to Intimidate.",
+		shortDesc: "This Pokemon cannot be statused. Immune to Intimidate. Immune to Confusion.",
 		gen7: {
 			desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it.",
 			shortDesc: "This Pokemon cannot be confused.",
@@ -1208,7 +1209,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	pickpocket: {
 		name: "Pickpocket",
-		shortDesc: "Contact movements have a 33% chance of removing the object from target.",
+		desc: "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+		shortDesc: "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. The User' contact moves have 33% chance to remove items.",
 	},
 	pickup: {
 		name: "Pickup",
@@ -1235,8 +1237,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	plus: {
 		name: "Plus",
-		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5. Prevents other Pokemon from lowering this Pokemon's stat stages.",
-		shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 2.5. Prevents other Pokemon from lowering this Pokemon's stat stages.",
+		shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 2.5x. Prevents other Pokemon from lowering this Pokemon's stat stages.",
 		gen4: {
 			desc: "If an active ally has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
 			shortDesc: "If an active ally has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
@@ -1393,7 +1395,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	quickdraw: {
 		name: "Quick Draw",
-		shortDesc: "Every third hit adquires priority.",
+		shortDesc: "Every three turns, this Pokemon has +1 priority.",
 
 		activate: "  Quick Draw made [POKEMON] move faster!",
 	},
@@ -1496,7 +1498,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	runaway: {
 		name: "Run Away",
-		shortDesc: "The user's speed cannot be lowered in any way.",
+		shortDesc: "The user's speed cannot be lowered in any way. Can't be prevented from switching out.",
 	},
 	sandforce: {
 		name: "Sand Force",
@@ -1667,7 +1669,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	slowstart: {
 		name: "Slow Start",
-		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns.",
+		shortDesc: "On switch-in, this Pokemon's Attack and Speed are reduced by 15% and increase by 5% for 5 turns.",
 		gen7: {
 			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation.",
 		},
@@ -1724,7 +1726,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	soundproof: {
 		name: "Soundproof",
 		desc: "This Pokemon is immune to sound moves. The first time it is hit by a sound move, its offensive stat is multiplied by 2 while using its next attack as long as it remains active and has this Ability.",
-		shortDesc: "This Pokemon's next attack does 2x damage if hit by one sound move; sound immunity.",
+		shortDesc: "This Pokemon's next attack does 2x damage if hit by a sound move; sound immunity.",
 		gen7: {
 			shortDesc: "This Pokemon is immune to sound-based moves, including Heal Bell.",
 		},
@@ -1798,8 +1800,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	stench: {
 		name: "Stench",
-		desc: "This Pokemon receives 1/2 damage from wind moves. This Pokemon's Poison-type moves have their power multiplied by 1.1.",
-		shortDesc: "This Pokemon takes 1/2 damage from wind moves, its Poison-type moves have 1.1x power.",
+		desc: "While this Pokemon is on the field, opponents lose 6.25% of their max HP every turn.",
+		shortDesc: "While this Pokemon is on the field, opponents lose 6.25% of their max HP every turn.",
 		gen4: {
 			desc: "No competitive use.",
 			shortDesc: "No competitive use.",
@@ -1844,13 +1846,13 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	suctioncups: {
 		name: "Suction Cups",
-		shortDesc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+		shortDesc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item. This Pokemon's contact moves trap the target.",
 
 		block: "  [POKEMON] is anchored in place with its suction cups!",
 	},
 	superluck: {
 		name: "Super Luck",
-		shortDesc: "Hits a critical hit every three turns. power critical hits x1.75.",
+		shortDesc: "Hits a critical hit every other turns.",
 	},
 	supersweetsyrup: {
 		name: "Supersweet Syrup",
@@ -1932,7 +1934,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	tanglinghair: {
 		name: "Tangling Hair",
-		shortDesc: "Pokemon making contact: Speed lowered by 1 stage. Damage first attack is reduced by 60%",
+		shortDesc: "Pokemon making contact: Speed lowered by 1 stage. Damage first attack is reduced by 40%",
 	},
 	technician: {
 		name: "Technician",
@@ -2136,7 +2138,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	vitalspirit: {
 		name: "Vital Spirit",
-		shortDesc: "At less than half health, recovers 50% of MAX HP. Activated once per battle",
+		shortDesc: "At less than half health, recovers 50% of max HP. Activates once per battle",
 	},
 	voltabsorb: {
 		name: "Volt Absorb",
@@ -2222,8 +2224,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	wonderskin: {
 		name: "Wonder Skin",
-		desc: "Non-damaging moves that check accuracy have their accuracy changed to 50% when used against this Pokemon. This effect comes before other effects that modify accuracy.",
-		shortDesc: "Status moves with accuracy checks are 50% accurate when used on this Pokemon.",
+		shortDesc: "This Pokemon is immune to Status moves.",
 	},
 	zenmode: {
 		name: "Zen Mode",
@@ -2269,7 +2270,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	// Nuevo Meta
 	scaleshield: {
 		name: "Scale Shield",
-		desc: "Puede envenenar, paralizar y dormir al contacto (11% de posibilidad para cada alteración de estado). Convierte el movimiento Viento Plata en Viento Escama.",
+		desc: "33% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep. Transforms Silver Wind into Scale Wind.",
 		shortDesc: "50% chance of poison/paralysis/sleep on others dealing damage",
 	},
 	stoneknuckles: {
@@ -2281,12 +2282,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	lucky: {
 		name: "Lucky",
-		desc: "",
 		shortDesc: "This Pokemon's attacks are critical hits.",
 	},
 	gigantification: {
 		name: "Gigantification",
-		desc: "",
 		shortDesc: "On switch-in, this Pokemon's highest stat is raised by 1 stage.",
 	},
 	malice: {
@@ -2295,33 +2294,30 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	frubble: {
 		name: "Frubble",
-		desc: "This Pokemon receives 1/10 damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
-		shortDesc: "This Pokemon receives 1/10 damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
+		desc: "This Pokemon receives 90% damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
+		shortDesc: "This Pokemon receives 90% damage from contact moves. This Pokemon's moves lower the Speed of opponents by 1 stage.",
 	},
 	screensetter: {
 		name: "Screen Setter",
-		desc: "",
 		shortDesc: "This Pokemon's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
 	},
 	icysong: {
 		name: "Icy Song",
-		desc: "This Pokemon's sound-based moves become Ice-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. This Pokemon's sound-based moves have a 30% chance of freezing.",
-		shortDesc: "This Pokemon's sound-based moves become Ice type. This Pokemon's sound-based moves have a 30% chance of freezing",
+		desc: "This Pokemon's sound-based moves become Ice-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. This Pokemon's sound-based moves have a 33% chance of freezing.",
+		shortDesc: "This Pokemon's sound-based moves become Ice type. This Pokemon's sound-based moves have a 33% chance of freezing",
 	},
 	watts: {
 		name: "Watts",
-		desc: "",
 		shortDesc: "This Pokemon's Electric-type moves have their power multiplied by 1.2.",
 	},
 	fossilization: {
 		name: "Fossilization",
-		desc: "This Pokemon is immune to Rock-type and Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type or Steel-type move. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them.",
-		shortDesc: "This Pokemon is healed 1/4 by Rock and Steel. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them.",
+		desc: "This Pokemon is immune to Rock-type and Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type or Steel-type move. This Pokemon is unaffected by Stealth Rocks on its side of the field and removes them from both sides of the field.",
+		shortDesc: "This Pokemon is healed 1/4 by Rock and Steel. This Pokemon is immune to Stealth Rocks and removes them.",
 	},
 	coldmind: {
 		name: "Cold mind",
-		desc: "",
-		shortDesc: "This Pokemon's special moves that don't make contact have their power multiplied by 1.3 and 30% chance of freezing.",
+		shortDesc: "This Pokemon's special moves have their power multiplied by 1.3 and 50% chance of freezing.",
 	},
 	sinisterflame: {
 		name: "Sinister Flame",
@@ -2335,13 +2331,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	artificialintelligence: {
 		name: "Artificial Intelligence",
-		desc: "This Pokemon's moves have their power multiplied by 1.4 and the accuracy of its attacks is multiplied by 0.95.",
-		shortDesc: "This Pokemon's moves have 1.4x power and accuracy of its attacks is 0.95x.",
+		shortDesc: "This Pokemon's moves have their power increased by 40%, but lose 5% accuracy.",
 	},
 	souleater: {
 		name: "Soul Eater",
 		desc: "This Pokemon's moves have their power multiplied by 1+(X*0.055), where X is the total number of times any Pokemon has fainted when this Ability became active, and X cannot be greater than 10.",
-		shortDesc: "This Pokemon's moves have 5.5% more power for each fainted Pokemon, up to 10 Pokemon.",
+		shortDesc: "This Pokemon's moves have 5% more power for each fainted Pokemon, up to 10 Pokemon.",
 
 		activate: "  [POKEMON] gained strength from the fallen!",
 	},
@@ -2352,14 +2347,14 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	ancientintelligence: {
 		name: "Ancient Intelligence",
-		desc: "This Pokemon's moves will always hit and the power of its attacks is decreased by X/2, where X is the difference between the moves accuracy and 100.",
-		shortDesc: "Every move used by this Pokemon will always hit, but power is decreased by 1/2 the accuracy increase.",
+		desc: "This Pokemon's moves will always hit and the power of its attacks is decreased by X/5, where X is the difference between the moves accuracy and 100.",
+		shortDesc: "Every move used by this Pokemon will always hit, but power is decreased by 1/5 of the accuracy increase.",
 	},
 	wattfeather: {
 		name: "Watt Feather",
-		shortDesc: "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+		desc: "Every three turns, this Pokemon deals double damage. If paralyzed, all moves have their power doubled. ignores Speed drop from paralysis.",
 
-		activate: "  Watt Feather made [POKEMON] move faster!",
+		activate: "  Watt Feather made [POKEMON] hit harder!",
 	},
 	soulliberator: {
 		name: "Soul Liberator",
@@ -2400,7 +2395,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	tectoanchor: {
 		name: "Tecto Anchor",
-		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch. Not Flying types. +15% Defenses.",
+		shortDesc: "Prevents forced switching. 30% foe's HP before fainting/forced switch unless Flying types. +15% Defense.",
 	},
 	sage: {
 		name: "Sage",
@@ -2416,7 +2411,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	overwhelmingdefense: {
 		name: "Overwhelming Defense",
-		shortDesc: "Uses Defense for physical attacks and Special Defense for special attacks, but have their power multiplied by 0.75.",
+		shortDesc: "Uses Defense for physical attacks and Special Defense for special attacks, but lose by 25% power.",
 	},
 	blessedbody: {
 		name: "Blessed Body",
@@ -2428,7 +2423,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	hardhead: {
 		name: "Hardhead",
-		shortDesc: "1.5x power for head-based moves.",
+		shortDesc: "This Pokemon's head moves have their power multiplied by 1.5",
 	},
 	emergingvolt: {
 		name: "Emerging Volt",
@@ -2436,7 +2431,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	volcanoaura: {
 		name: "Volcano Aura",
-		desc: "This Pokemon is immune to Water-type moves and clears all stat changes when hit by an Electric-type move.",
+		desc: "This Pokemon is immune to Water-type moves and clears all stat changes when hit by a Water-type move.",
 		shortDesc: "This Pokemon clears all stat changes when hit by Water moves; Water immunity.",
 	},
 	knowledge: {
