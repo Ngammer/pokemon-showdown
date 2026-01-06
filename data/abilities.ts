@@ -6427,7 +6427,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				const change = 100 - move.accuracy;
 				move.accuracy += change;
 				if (move.basePower !== 0) {
-					move.basePower -= change * 0.25;
+					move.basePower -= change * 0.2;
 				}
 			}
 		},
@@ -6471,9 +6471,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
 				const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
 				for (const ally of allies) {
-					ally.heal(ally.baseMaxhp / 10);
+					ally.heal(ally.baseMaxhp / 5);
 				}
-				pokemon.heal(pokemon.baseMaxhp / 10);
+				pokemon.heal(pokemon.baseMaxhp / 5);
 			}
 		},
 		flags: { },

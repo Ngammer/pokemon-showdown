@@ -2363,7 +2363,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	soulliberator: {
 		name: "Soul Liberator",
-		shortDesc: "After an ally has fainted, if user switches-in, all allies heal 10% HP.",
+		shortDesc: "After an ally has fainted, if user switches-in, all allies heal 20% HP.",
 		activate: "  [POKEMON] has led the fallen one along the path of light!",
 	},
 	puresoul: {

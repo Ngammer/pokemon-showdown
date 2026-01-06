@@ -620,7 +620,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			spd: 2,
 		},
 		onHit(pokemon) {
-			if (['', 'slp', 'frz'].includes(pokemon.status)) return false;
+			if (['', 'slp'].includes(pokemon.status)) return false;
 			pokemon.cureStatus();
 		},
 		secondary: null,
