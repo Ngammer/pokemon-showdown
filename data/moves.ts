@@ -3105,7 +3105,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: {
 			chance: 30,
-			status: 'tox',
+			status: 'psn',
 		},
 		target: "allAdjacent",
 		type: "Poison",
