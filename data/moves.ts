@@ -14742,7 +14742,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Power Trick",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, snatch: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		overrideOffensivePokemon: 'target',
 		secondary: null,
 		target: "normal",
