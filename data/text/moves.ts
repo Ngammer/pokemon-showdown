@@ -5795,8 +5795,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	shadowclaw: {
 		name: "Shadow Claw",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
-		shortDesc: "Always results in a critical hit.",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
 	},
 	shadowforce: {
 		name: "Shadow Force",
