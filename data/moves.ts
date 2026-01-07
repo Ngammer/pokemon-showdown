@@ -18685,7 +18685,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, reflectable: 1, mirror: 1 },
 		boosts: {
 			atk: 3,
-			def: -2,
+			def: -3,
 			spa: 3,
 			spd: -3,
 		},

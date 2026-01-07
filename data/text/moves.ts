@@ -6096,8 +6096,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	sludge: {
 		name: "Sludge",
-		desc: "Has a 20% chance to poison the target. Always results in a critical hit",
-		shortDesc: "20% chance to poison the target. Always is critical hit",
+		desc: "Has a 10% chance to poison the target. Always results in a critical hit",
+		shortDesc: "10% chance to poison the target. Always is critical hit",
 		gen1: {
 			desc: "Has a 40% chance to poison the target.",
 			shortDesc: "40% chance to poison the target.",
