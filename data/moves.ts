@@ -21952,7 +21952,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	volttackle: {
 		num: 344,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 150,
 		category: "Physical",
 		name: "Volt Tackle",
 		pp: 15,
