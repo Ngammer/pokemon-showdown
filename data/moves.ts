@@ -22024,7 +22024,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	waterpledge: {
 		num: 518,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Water Pledge",
 		pp: 10,
