@@ -4929,7 +4929,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	slastma: {
 		num: -1010,
 		name: "Slastma",
-		baseForme: "Caparazon",
+		baseForme: "Shell",
 		types: ["Rock", "Fire"],
 		baseStats: { hp: 65, atk: 67, def: 158, spa: 93, spd: 102, spe: 15 },
 		abilities: { 0: "Unstable Shell" },

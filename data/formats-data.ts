@@ -1582,9 +1582,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
-	slastmaliberado: {
-
-	},
 	swinub: {
 		tier: "LC",
 	},
