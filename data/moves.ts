@@ -22490,13 +22490,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					}
 				}
 				if (this.checkMoveMakesContact(move, source, target)) {
-					this.boost({ def: 1 }, target, target, this.dex.getActiveMove("Withdraw"));
+					this.boost({ spd: 1 }, target, target, this.dex.getActiveMove("Withdraw"));
 				}
 				return this.NOT_FAIL;
 			},
 			onHit(target, source, move) {
 				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
-					this.boost({ def: 1 }, target, target, this.dex.getActiveMove("Withdraw"));
+					this.boost({ spd: 1 }, target, target, this.dex.getActiveMove("Withdraw"));
 				}
 			},
 		},
