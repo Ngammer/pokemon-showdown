@@ -21322,7 +21322,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (type === 'Rock') return -1;
 				if (type === 'Bug') return 1;
 				if (type === 'Grass') return 1;
-				if (type === 'Rock') return 1;
+				if (type === 'Ice') return 1;
 				if (type === 'steel') return 1;
 			}
 			if (move.hit === 2) {
