@@ -1770,7 +1770,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	skyplate: {
 		name: "Sky Plate",
-		shortDesc: "Holder's Flying-type attacks have 1.25x power. Judgment is Flying type.",
+		shortDesc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
 	},
 	slowbronite: {
 		name: "Slowbronite",
@@ -2577,8 +2577,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Laprasite",
 		shortDesc: "If held by a Lapras, this item allows it to Mega Evolve in battle.",
 	},
-	dimencionador: {
-		name: "Dimencionador",
+	dimensionator: {
+		name: "Dimensionator",
 		shortDesc: "Holder's use of Trick Room, Wonder Room, Magic Room, or Gravity lasts 8 turns instead of 5.",
 	},
 	cryorb: {

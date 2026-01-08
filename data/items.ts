@@ -10090,8 +10090,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 
 	},
-	dimencionador: {
-		name: "Dimencionador",
+	dimensionator: {
+		name: "Dimensionator",
 		spritenum: 565,
 		fling: {
 			basePower: 60,

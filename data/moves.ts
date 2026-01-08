@@ -8267,7 +8267,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
-				if (source?.hasItem('dimencionador')) {
+				if (source?.hasItem('dimensionator')) {
 					return 8;
 				}
 				return 5;
@@ -11453,7 +11453,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
-				if (source?.hasItem('dimencionador')) {
+				if (source?.hasItem('dimensionator')) {
 					return 8;
 				}
 				return 5;
@@ -21417,7 +21417,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
-				if (source?.hasItem('dimencionador')) {
+				if (source?.hasItem('dimensionator')) {
 					return 8;
 				}
 				return 5;
@@ -22479,7 +22479,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
-				if (source?.hasItem('dimencionador')) {
+				if (source?.hasItem('dimensionator')) {
 					return 8;
 				}
 				return 5;
