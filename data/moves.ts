@@ -11529,47 +11529,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: { snatch: 1, distance: 1, bypasssub: 1, metronome: 1 },
-		volatileStatus: 'charge',
-		condition: {
-			onStart(pokemon, source, effect) {
-				if (effect && ['Electromorphosis', 'Wind Power'].includes(effect.name) && (pokemon.hasType('Steel') || pokemon.hasType('Electric'))) {
-					this.add('-start', pokemon, 'Charge', this.activeMove!.name, '[from] ability: ' + effect.name);
-				} else if (pokemon.hasType('Steel') || pokemon.hasType('Electric')){
-					this.add('-start', pokemon, 'Charge');
-				} else {
-					return;
-				}
-			},
-			onRestart(pokemon, source, effect) {
-				if ((effect && ['Electromorphosis', 'Wind Power'].includes(effect.name)) && (pokemon.hasType('Steel') || pokemon.hasType('Electric'))) {
-					this.add('-start', pokemon, 'Charge', this.activeMove!.name, '[from] ability: ' + effect.name);
-				} else if(pokemon.hasType('Steel') || pokemon.hasType('Electric')){
-					this.add('-start', pokemon, 'Charge');
-				} else {
-					return;
-				}
-			},
-			onBasePowerPriority: 9,
-			onBasePower(basePower, attacker, defender, move) {
-				if (move.type === 'Electric') {
-					this.debug('charge boost');
-					return this.chainModify(2);
-				}
-			},
-			onMoveAborted(pokemon, target, move) {
-				if (move.type === 'Electric' && move.id !== 'charge') {
-					pokemon.removeVolatile('charge');
-				}
-			},
-			onAfterMove(pokemon, target, move) {
-				if (move.type === 'Electric' && move.id !== 'charge') {
-					pokemon.removeVolatile('charge');
-				}
-			},
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'Charge', '[silent]');
-			},
-		},
 		onHitSide(side, source, move) {
 			const targets = side.allies().filter(target => (
 				target.hasAbility(['plus', 'minus']) &&
@@ -11630,7 +11589,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let success = false;
 			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb',
 				'gmaxsteelsurge', 'sharproot', 'iondeluge', 'hail'];
-			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'st', ...removeAll];
+			const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...removeAll];
 			for (const targetCondition of removeTarget) {
 				if (field.side.removeSideCondition(targetCondition)) {
 					if (!removeAll.includes(targetCondition)) continue;
