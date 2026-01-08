@@ -4385,8 +4385,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	monolith: {
 		name: "Monolith",
-		desc: "Has a 50% chance to make the target flinch. If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 1/2 recoil. 50% chance to flinch.",
+		desc: "Has a 50% chance to make the target flinch.",
+		shortDesc: "50% chance to flinch.",
 	},
 	moonblast: {
 		name: "Moonblast",

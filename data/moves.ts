@@ -22780,14 +22780,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 2,
 		flags: { contact: 1, protect: 1, mirror: 1 },
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spe: -1,
-				},
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
@@ -22963,7 +22956,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [1, 2],
 		secondary: {
 			chance: 50,
 			volatileStatus: 'flinch',
