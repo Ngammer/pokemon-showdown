@@ -3623,7 +3623,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['bullet']) {
 				this.debug('iron ball boost');
-				return this.chainModify(1.25);
+				return this.chainModify(1.3);
 			}
 		},
 		num: 278,

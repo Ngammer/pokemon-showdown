@@ -935,9 +935,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ironball: {
 		name: "Iron Ball",
-		shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
+		shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.3.",
 		gen4: {
-			shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
+			shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.3.",
 		},
 	},
 	ironplate: {
