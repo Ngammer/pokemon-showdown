@@ -2395,12 +2395,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 			},
 			onMoveAborted(pokemon, target, move) {
-				if (move.type === 'Electric' && move.id !== 'charge') {
+				if (move.type === 'Electric' && move.id !== 'charge' && move.id !== 'magneticflux') {
 					pokemon.removeVolatile('charge');
 				}
 			},
 			onAfterMove(pokemon, target, move) {
-				if (move.type === 'Electric' && move.id !== 'charge') {
+				if (move.type === 'Electric' && move.id !== 'charge' && move.id !== 'magneticflux') {
 					pokemon.removeVolatile('charge');
 				}
 			},
