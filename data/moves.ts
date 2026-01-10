@@ -13036,7 +13036,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Moonlight",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1, light: 1 },
+		flags: { snatch: 1, heal: 1, metronome: 1, light: 1, cosmic: 1 },
 		onHit(pokemon) {
 			let factor = 0.5;
 			switch (pokemon.effectiveWeather()) {
