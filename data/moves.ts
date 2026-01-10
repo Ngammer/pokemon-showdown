@@ -6804,7 +6804,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Fury Swipes",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1, metronome: 1 },
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
