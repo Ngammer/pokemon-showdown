@@ -3116,7 +3116,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Cosmic Power",
 		pp: 20,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
+		flags: { snatch: 1, metronome: 1, cosmic: 1 },
 		boosts: {
 			def: 1,
 			spd: 1,
