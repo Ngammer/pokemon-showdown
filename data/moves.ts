@@ -11210,7 +11210,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Lunar Blessing",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1, light: 1 },
+		flags: { snatch: 1, heal: 1, metronome: 1, light: 1, spacial: 1 },
 		onHit(pokemon) {
 			const success = !!this.heal(this.modify(pokemon.maxhp, 0.33));
 			return pokemon.cureStatus() || success;
@@ -11227,7 +11227,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Lunar Dance",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, dance: 1, heal: 1, metronome: 1, light: 1 },
+		flags: { snatch: 1, dance: 1, heal: 1, metronome: 1, light: 1, spacial: 1 },
 		onTryHit(source) {
 			if (!this.canSwitch(source.side)) {
 				this.attrLastMove('[still]');
@@ -13002,7 +13002,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Moonblast",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, light: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, spacial: 1 },
 		secondary: {
 			chance: 30,
 			boosts: {
@@ -13021,7 +13021,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Moongeist Beam",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, light: 1 },
+		flags: { protect: 1, mirror: 1, darkness: 1, spacial: 1 },
 		ignoreAbility: true,
 		secondary: null,
 		target: "normal",
@@ -19707,7 +19707,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sunsteel Strike",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, spacial: 1 },
 		ignoreAbility: true,
 		secondary: null,
 		target: "normal",
@@ -22375,7 +22375,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wish",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1, light: 1 },
+		flags: { snatch: 1, heal: 1, metronome: 1, spacial: 1 },
 		slotCondition: 'Wish',
 		condition: {
 			onStart(pokemon, source) {
