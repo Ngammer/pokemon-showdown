@@ -1665,7 +1665,8 @@ function runMovesearch(target: string, cmd: string, message: string, isTest: boo
 		'allyanim', 'bypasssub', 'bite', 'bullet', 'cantusetwice', 'charge', 'contact', 'dance', 'defrost', 'distance', 'failcopycat', 'failencore',
 		'failinstruct', 'failmefirst', 'failmimic', 'futuremove', 'gravity', 'heal', 'metronome', 'mirror', 'mustpressure', 'noassist', 'nonsky',
 		'noparentalbond', 'nosketch', 'nosleeptalk', 'pledgecombo', 'powder', 'protect', 'pulse', 'punch', 'recharge', 'reflectable', 'slicing',
-		'snatch', 'sound', 'wind', 'tail', 'head', 'wing', 'tail', 'head', 'wing', 'kick', 'light', 'beam',
+		'snatch', 'sound', 'wind', 'tail', 'head', 'wing', 'tail', 'head', 'wing', 'kick', 'light', 'beam', 'spin', 'piercing', 'darkness', 'slamming',
+		'look', 'palm', 'sticky', 'explosion', 'field', 'cosmic', 'destiny',
 
 		// Not flags directly from move data, but still useful to sort by
 		'highcrit', 'multihit', 'ohko', 'protection', 'secondary',

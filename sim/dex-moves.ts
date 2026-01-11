@@ -71,14 +71,14 @@ interface MoveFlags {
 	beam?: 1; // Movimientos en los que su ataque es un rayo (beam)
 	spin?: 1; // Movimientos en los que se realizan giros
 	piercing?: 1; // Movimientos perforantes
-	darkness?: 1; //Movimientos que utilizan la oscuridad
+	darkness?: 1; // Movimientos relacionados con la oscuridad
 	slamming?: 1; // Movimientos que atacan con todo el cuerpo o embisten
-	look?: 1; // Movimientos que usan los ojos
-	palm?: 1; // Movimientos que usan las palmas
-	sticky?: 1; // Movimientos relacionados con lo pegajoso
+	look?: 1; // Movimientos basados en miradas
+	palm?: 1; // Movimientos basados en palmas
+	Sticky?: 1; // Movimientos relacionados con lo pegajoso
 	explosion?: 1; // Movimientos que se basan en explosiones
-	field?: 1; // Movimientos que afectan al campo y/o se realizan en todo el campo
-	spacial?: 1; // Movimientos relacionados al espacio exterior
+	Field?: 1; // Movimientos que afentan al campo y/o se realizan en todo el campo
+	Spacial?: 1; // Movimientos relacionados al espacio exterior
 	destiny?: 1; // Movimientos relacionados con el destino
 	constrict?: 1; // Movimientos que aprietan al objetivo
 }
