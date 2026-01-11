@@ -4671,7 +4671,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Dual Chop",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1},
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 		multihit: 2,
 		secondary: null,
 		target: "normal",
@@ -6051,7 +6051,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flash Cannon",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, light: 1, beam: 1},
+		flags: { protect: 1, mirror: 1, metronome: 1, light: 1, beam: 1 },
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -6329,7 +6329,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {
 			contact: 1, charge: 1, protect: 1, mirror: 1, gravity: 1, distance: 1,
-			metronome: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1, slamming: 1
+			metronome: 1, nosleeptalk: 1, noassist: 1, failinstruct: 1, slamming: 1,
 		},
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
