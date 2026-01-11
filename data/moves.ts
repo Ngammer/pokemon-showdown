@@ -4342,7 +4342,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Draco Meteor",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, spacial: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, cosmic: 1 },
 		self: {
 			boosts: {
 				spa: -2,
@@ -4361,7 +4361,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Dragon Ascent",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, distance: 1, spacial: 1, slamming: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, distance: 1, cosmic: 1, slamming: 1 },
 		self: {
 			boosts: {
 				def: -1,

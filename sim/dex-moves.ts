@@ -77,8 +77,8 @@ interface MoveFlags {
 	palm?: 1; // Movimientos basados en palmas
 	Sticky?: 1; // Movimientos relacionados con lo pegajoso
 	explosion?: 1; // Movimientos que se basan en explosiones
-	Field?: 1; // Movimientos que afentan al campo y/o se realizan en todo el campo
-	Spacial?: 1; // Movimientos relacionados al espacio exterior
+	field?: 1; // Movimientos que afentan al campo y/o se realizan en todo el campo
+	cosmic?: 1; // Movimientos relacionados al espacio exterior
 	destiny?: 1; // Movimientos relacionados con el destino
 	constrict?: 1; // Movimientos que aprietan al objetivo
 }
