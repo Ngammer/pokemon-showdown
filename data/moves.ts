@@ -2039,8 +2039,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Bulldoze",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, field: 1
-		 },
+		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, field: 1 },
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
 				const sideConditions = ['spikes', 'toxicspikes', 'iondeluge'];
@@ -2504,7 +2503,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Chilly Reception",
 		pp: 10,
 		priority: 0,
-		flags: {metronome: 1},
+		flags: { metronome: 1 },
 		priorityChargeCallback(source) {
 			source.addVolatile('chillyreception');
 		},
@@ -2773,7 +2772,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {
 			protect: 1, failencore: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1,
-			failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1, spin: 1
+			failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1, spin: 1,
 		},
 		secondary: {
 			chance: 30,
@@ -4066,7 +4065,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Doodle",
 		pp: 10,
 		priority: 0,
-		flags: {metronome: 1},
+		flags: { metronome: 1 },
 		onTryHit(target, source) {
 			const targetAbility = target.getAbility();
 			const sourceAbility = source.getAbility();
