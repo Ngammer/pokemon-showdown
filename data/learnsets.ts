@@ -5407,7 +5407,7 @@ sandslash: {
 			terablast: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"], //Añadido
-			twineddle: ["9M"], //Añadido
+			twineedle: ["9M"], //Añadido
 			uturn: ["9M"], //Añadido
 			wideguard: ["9M"], //Añadido
 			wildcharge: ["9M"], //Añadido
