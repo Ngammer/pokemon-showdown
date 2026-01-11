@@ -6486,7 +6486,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	puresoul: {
 		onEffectiveness(typeMod, target, type, move) {
-			if (typeMod > 0){
+			if (typeMod > 0) {
 				return 0;
 			}
 		},
