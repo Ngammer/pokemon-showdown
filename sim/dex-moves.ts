@@ -75,7 +75,7 @@ interface MoveFlags {
 	slamming?: 1; // Movimientos que atacan con todo el cuerpo o embisten
 	look?: 1; // Movimientos basados en miradas
 	palm?: 1; // Movimientos basados en palmas
-	Sticky?: 1; // Movimientos relacionados con lo pegajoso
+	sticky?: 1; // Movimientos relacionados con lo pegajoso
 	explosion?: 1; // Movimientos que se basan en explosiones
 	field?: 1; // Movimientos que afentan al campo y/o se realizan en todo el campo
 	cosmic?: 1; // Movimientos relacionados al espacio exterior
