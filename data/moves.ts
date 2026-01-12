@@ -12835,6 +12835,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if ((move.category !== "Status" || move.target === "self")) {
 					return;
 				} else {
+					if (move.target === "foeSide") {
+						this.add('-activate', target, "move: Mist");
+						return false;
+					}
+					this.add('-activate', target, "move: Mist");
 					return false;
 				}
 			},
