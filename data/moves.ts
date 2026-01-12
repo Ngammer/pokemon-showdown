@@ -12835,6 +12835,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if ((move.category !== "Status" || move.target === "self")) {
 					return;
 				} else {
+					this.add('-activate', target, "move: Mist");
 					return false;
 				}
 			},
@@ -12891,7 +12892,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Misty Terrain",
 		pp: 10,
 		priority: 0,
-		flags: { nonsky: 1, metronome: 1, field: 1 },
+		flags: { nonsky: 1, metronome: 1,field: 1 },
 		terrain: 'mistyterrain',
 		condition: {
 			effectType: 'Terrain',
@@ -13251,8 +13252,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Multi-Attack",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1, piercing: 1, head: 1,
-			slamming: 1, kick: 1, punch: 1, tail: 1, bite: 1, wing: 1, spin: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1, piercing: 1, head: 1, slamming: 1, kick: 1, punch: 1, tail: 1, bite: 1, wing: 1, spin: 1 },
 		onModifyType(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
 			move.type = this.runEvent('Memory', pokemon, null, move, 'Normal');
