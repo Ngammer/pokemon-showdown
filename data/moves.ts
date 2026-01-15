@@ -14296,7 +14296,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Play Rough",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, kick: 1, },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1, kick: 1 },
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -17634,7 +17634,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		num: 695,
 		accuracy: true,
 		basePower: 180,
-		category: "Physical",
+		category: "Special",
+
 		name: "Sinister Arrow Raid",
 		pp: 1,
 		priority: 0,
