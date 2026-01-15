@@ -17643,7 +17643,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		num: 695,
 		accuracy: true,
 		basePower: 180,
-		category: "Physical",
+		category: "Special",
 
 		name: "Sinister Arrow Raid",
 		pp: 1,
