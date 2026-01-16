@@ -18221,7 +18221,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		secondary: null,
-		target: "self",
+		target: "normal",
 		type: "Dark",
 		zMove: { boost: { spe: 2 } },
 		contestType: "Clever",
