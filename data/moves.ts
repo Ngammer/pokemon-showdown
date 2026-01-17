@@ -21186,7 +21186,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const boost: SparseBoostsTable = {};
 				boost[randomStat] = 1;
 				boost[randomStat2] = 1;
-				this.boost(boost);
+				this.boost(boost, pokemon);
 			} else {
 				return false;
 			}
