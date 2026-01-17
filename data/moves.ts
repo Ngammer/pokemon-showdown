@@ -13199,7 +13199,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-
 		name: "Mud Sport",
 		pp: 15,
 		priority: 4,
@@ -20104,7 +20103,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tackle",
 		pp: 35,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		secondary: {
 			chance: 40,
 			volatileStatus: 'flinch',
@@ -20121,7 +20120,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tail Glow",
 		pp: 20,
 		priority: 0,
-		flags: { snatch: 1, metronome: 1 },
+		flags: { snatch: 1, metronome: 1, tail: 1, light: 1 },
 		boosts: {
 			spa: 3,
 		},
@@ -20222,7 +20221,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Take Down",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		recoil: [1, 4],
 		secondary: {
 			chance: 30,
@@ -20257,7 +20256,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tar Shot",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1, sticky: 1 },
 		volatileStatus: 'tarshot',
 		condition: {
 			onStart(pokemon) {
@@ -20338,7 +20337,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tearful Look",
 		pp: 20,
 		priority: 1,
-		flags: { reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { reflectable: 1, mirror: 1, metronome: 1, look: 1 },
 		boosts: {
 			atk: -1,
 			spa: -1,
@@ -20380,11 +20379,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
-
 		name: "Techno Blast",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, light: 1, beam: 1 },
 		onModifyType(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
 			move.type = this.runEvent('Drive', pokemon, null, move, 'Normal');
@@ -20399,7 +20397,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 1,
 		category: "Physical",
-
 		name: "Tectonic Rage",
 		pp: 1,
 		priority: 0,
@@ -20419,7 +20416,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, failinstruct: 1,
-			head: 1, tail: 1, dance: 1, kick: 1, punch: 1 },
+			dance: 1, },
 		self: {
 			volatileStatus: 'lockedmove',
 		},
@@ -20434,7 +20431,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 120,
 		category: "Special",
-
 		name: "Telekinesis",
 		pp: 15,
 		priority: 0,
@@ -20480,7 +20476,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Temper Flare",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Fire",
@@ -20499,7 +20495,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tera Blast",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, mustpressure: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, mustpressure: 1, beam: 1, light: 1, explosion: 1 },
 		onPrepareHit(target, source, move) {
 			if (source.terastallized) {
 				this.attrLastMove('[anim] Tera Blast ' + source.teraType);
@@ -20530,7 +20526,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tera Starstorm",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, noassist: 1, failcopycat: 1, failmimic: 1, nosketch: 1 },
+		flags: { protect: 1, mirror: 1, noassist: 1, failcopycat: 1, failmimic: 1, nosketch: 1, cosmic: 1, light: 1 },
 		onModifyType(move, pokemon) {
 			if (pokemon.species.name === 'Terapagos-Stellar') {
 				move.type = 'Stellar';
@@ -20640,11 +20636,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
-
 		name: "Thousand Arrows",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, nonsky: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, nonsky: 1, piercing: 1, field: 1 },
 		onEffectiveness(typeMod, target, type, move) {
 			if (move.type !== 'Ground') return;
 			if (!target) return; // avoid crashing when called from a chat plugin
@@ -20677,7 +20672,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Thousand Waves",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, nonsky: 1 },
+		flags: { protect: 1, mirror: 1, nonsky: 1, field: 1 },
 		condition: {
 			onStart() {
 				this.effectState.increase = 40;
@@ -20718,7 +20713,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Throat Chop",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, punch: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		condition: {
 			duration: 2,
 			onStart(target) {
@@ -20813,7 +20808,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Thunder Cage",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, field: 1 },
 		volatileStatus: 'partiallytrapped',
 		secondary: null,
 		target: "normal",
@@ -20922,7 +20917,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Thunder Wave",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, pulse: 1 },
 		status: 'par',
 		ignoreImmunity: false,
 		secondary: null,
@@ -20939,7 +20934,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tickle",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1, contact: 1 },
 		boosts: {
 			atk: -1,
 			def: -1,
@@ -20958,7 +20953,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tidy Up",
 		pp: 10,
 		priority: 0,
-		flags: {},
+		flags: { field: 1},
 		onHit(pokemon) {
 			let success = false;
 			for (const active of this.getAllActive()) {
@@ -20990,7 +20985,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Topsy-Turvy",
 		pp: 20,
 		priority: 1,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1, spin: 1 },
 		onHit(target) {
 			let success = false;
 			let i: BoostID;
@@ -21087,7 +21082,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Toxic Spikes",
 		pp: 20,
 		priority: 0,
-		flags: { reflectable: 1, nonsky: 1, metronome: 1, mustpressure: 1 },
+		flags: { reflectable: 1, nonsky: 1, metronome: 1, mustpressure: 1, field: 1 },
 		sideCondition: 'toxicspikes',
 		condition: {
 			// this is a side condition
@@ -21128,7 +21123,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Toxic Thread",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, sticky: 1 },
 		status: 'tox',
 		boosts: {
 			spe: -2,
@@ -21147,7 +21142,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Trailblaze",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, slamming: 1 },
 		secondary: {
 			chance: 100,
 			self: {
@@ -21168,7 +21163,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Transform",
 		pp: 10,
 		priority: 0,
-		flags: { allyanim: 1, failencore: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1 },
+		flags: { allyanim: 1, failencore: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1, metronome: 1 },
 		onHit(target, pokemon) {
 			if (!pokemon.transformInto(target)) {
 				return false;
@@ -21309,7 +21304,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Trick-or-Treat",
 		pp: 20,
 		priority: 1,
-		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1, darkness: 1 },
 		volatileStatus: 'trickortreat',
 		condition: {
 			onStart(pokemon) {
@@ -21346,7 +21341,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Trick Room",
 		pp: 5,
 		priority: -7,
-		flags: { mirror: 1, metronome: 1 },
+		flags: { mirror: 1, metronome: 1, field: 1 },
 		pseudoWeather: 'trickroom',
 		condition: {
 			duration: 5,
@@ -21387,7 +21382,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Triple Arrows",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, piercing: 1 },
 		critRatio: 2,
 		secondaries: [
 			{
@@ -21431,7 +21426,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Triple Dive",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, head: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		multihit: 3,
 		secondary: null,
 		target: "normal",
@@ -21482,7 +21477,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 200,
 		category: "Special",
-
 		name: "Trump Card",
 		pp: 1,
 		noPPBoosts: true,
@@ -21522,11 +21516,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
-
 		name: "Twineedle",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, piercing: 1 },
 		multihit: 2,
 		secondary: {
 			chance: 30,
@@ -21542,7 +21535,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 1,
 		category: "Physical",
-
 		name: "Twinkle Tackle",
 		pp: 1,
 		priority: 0,
@@ -21574,7 +21566,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Upper Hand",
 		pp: 15,
 		priority: 3,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, palm: 1 },
 		onTry(source, target) {
 			const action = this.queue.willMove(target);
 			const move = action?.choice === 'move' ? action.move : null;
@@ -21685,7 +21677,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "V-create",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, head: 1 },
 		self: {
 			boosts: {
 				spe: -1,
@@ -21712,7 +21704,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Veevee Volley",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, slamming: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -21726,7 +21718,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Venom Drench",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1, field: 1, sticky: 1 },
 		onHit(target, source, move) {
 			if (target.status === 'psn') {
 				return !!this.boost({ atk: -1, spa: -1, spe: -1, def: -1, spd: -1 }, target, source, move);
@@ -21803,7 +21795,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Vise Grip",
 		pp: 30,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, constrict: 1 },
 		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
@@ -21817,7 +21809,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 100,
 		category: "Physical",
-
 		name: "Vital Throw",
 		pp: 10,
 		priority: 0,
@@ -21850,7 +21841,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Volt Tackle",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		recoil: [33, 100],
 		secondary: {
 			chance: 10,
@@ -21876,7 +21867,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wake-Up Slap",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, palm: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -21890,7 +21881,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Waterfall",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		secondary: {
 			chance: 20,
 			volatileStatus: 'flinch',
@@ -21922,7 +21913,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Water Pledge",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, pledgecombo: 1 },
+		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, pledgecombo: 1, field: 1 },
 		pseudoWeather: 'waterpledge',
 		condition: {
 			duration: 1,
@@ -21979,7 +21970,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Water Shuriken",
 		pp: 20,
 		priority: 1,
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, slicing: 1 },
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
@@ -21991,11 +21982,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-
 		name: "Water Sport",
 		pp: 15,
 		priority: 4,
-		flags: { noassist: 1, failcopycat: 1 },
+		flags: { noassist: 1, failcopycat: 1, field: 1 },
 		stallingMove: true,
 		volatileStatus: 'watersport',
 		onPrepareHit(pokemon) {
@@ -22052,7 +22042,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Water Spout",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, field: 1 },
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Water",
@@ -22066,7 +22056,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wave Crash",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		recoil: [33, 100],
 		secondary: null,
 		target: "normal",
@@ -22135,7 +22125,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Whirlpool",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, spin: 1 },
 		volatileStatus: 'partiallytrapped',
 		secondary: null,
 		target: "normal",
@@ -22180,7 +22170,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wicked Torque",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, contact: 1 },
+		flags: { protect: 1, contact: 1, spin: 1 },
 		secondary: {
 			chance: 10,
 			status: 'slp',
@@ -22266,7 +22256,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wild Charge",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slamming: 1 },
 		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
@@ -22407,7 +22397,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wonder Room",
 		pp: 10,
 		priority: 0,
-		flags: { mirror: 1, metronome: 1, heal: 1 },
+		flags: { mirror: 1, metronome: 1, heal: 1, field: 1 },
 		heal: [1, 4],
 		pseudoWeather: 'wonderroom',
 		condition: {
@@ -22535,7 +22525,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wrap",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, constrict: 1 },
 		volatileStatus: 'partiallytrapped',
 		multihit: [2, 5],
 		secondary: null,
@@ -22557,7 +22547,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wring Out",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, constrict: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -22621,7 +22611,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Zap Cannon",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, pulse: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
 		secondary: {
 			chance: 100,
 			status: 'par',
@@ -22655,7 +22645,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Zing Zap",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, piercing: 1, slamming: 1 },
 		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
@@ -22672,7 +22662,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Zippy Zap",
 		pp: 10,
 		priority: 2,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, slamming: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Electric",
@@ -22690,7 +22680,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Paleo Wave",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, pulse: 1 },
 		secondary: {
 			chance: 20,
 			boosts: {
@@ -22710,7 +22700,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Shadow Strike",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, slamming: 1, darkness: 1 },
 		secondary: {
 			chance: 50,
 			boosts: {
@@ -22825,7 +22815,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Parasitic Clamp",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, slicing: 1, sticky: 1 },
 		secondaries: [
 			{
 				chance: 50,
@@ -22882,7 +22872,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tripeck",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, piercing: 1 },
 		multihit: 3,
 		multiaccuracy: true,
 		secondary: null,
@@ -22948,7 +22938,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sticky Bomb",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bullet: 1, sticky: 1 },
 		onAfterHit(target, source, move) {
 			if (!move.hasSheerForce && source.hp) {
 				for (const side of source.side.foeSidesWithConditions()) {
@@ -23079,7 +23069,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Spiky Ancient Rite",
 		pp: 5,
 		priority: 0,
-		flags: { reflectable: 1, nonsky: 1, mustpressure: 1, dance: 1, nosketch: 1 },
+		flags: { reflectable: 1, nonsky: 1, mustpressure: 1, dance: 1, nosketch: 1, field: 1, piercing: 1 },
 		onHit(target, source, move) {
 			if (source.hp) {
 				for (const side of source.side.foeSidesWithConditions()) {
@@ -23103,7 +23093,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Honey Ancient Rite",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1 },
+		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, sticky: 1 },
 		boosts: {
 			atk: 1,
 			def: 1,
@@ -23123,7 +23113,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Acrobatic Ancient Rite",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1 },
+		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1, gravity: 1 },
 		heal: [1, 2],
 		sideCondition: 'tailwind',
 		secondary: null,
@@ -23206,7 +23196,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Transcendental Ancient Rite",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1 },
+		flags: { snatch: 1, dance: 1, metronome: 1, nosketch: 1, heal: 1, field: 1, cosmic: 1 },
 		onHit(target, source) {
 			this.add('-activate', source, 'move: Transcendental Ancient Rite');
 			let success = false;
@@ -23306,7 +23296,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Cyclone Sphere",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1, snatch: 1, pulse: 1 },
+		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1, snatch: 1, pulse: 1, bullet: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -23325,7 +23315,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Antclay",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, head: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, head: 1, sticky: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -23431,7 +23421,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {
 			protect: 1,
 			failencore: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1,
-		},
+			explosion: 1},
 		target: "allAdjacent",
 		type: "Fire",
 		contestType: "Tough",
@@ -23444,7 +23434,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Refined Ink Bomb",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, bullet: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, bullet: 1, sticky: 1 },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -23466,7 +23456,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Physical",
 		name: "Heroic Punch",
 		pp: 10,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1, gravity: 1 },
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Water' || type === 'Flying') return 1;
 		},
@@ -23485,7 +23475,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sharp Root",
 		pp: 20,
 		priority: 0,
-		flags: { reflectable: 1, metronome: 1, mustpressure: 1 },
+		flags: { reflectable: 1, metronome: 1, mustpressure: 1, field: 1 },
 		sideCondition: 'sharproot',
 		condition: {
 			// this is a side condition
@@ -23512,7 +23502,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Cotton Ball",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, powder: 1 },
 		overrideOffensiveStat: 'spe',
 		secondary: null,
 		target: "normal",
@@ -23529,7 +23519,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Heavy Collision",
 		pp: 10,
 		priority: -6,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, noassist: 1, failcopycat: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, noassist: 1, failcopycat: 1, slamming: 1 },
 		forceSwitch: true,
 		target: "normal",
 		type: "Steel",
@@ -23543,7 +23533,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Regi Code",
 		pp: 10,
 		priority: 0,
-		flags: { nonsky: 1, metronome: 1 },
+		flags: { nonsky: 1, metronome: 1, field: 1 },
 		terrain: 'regicode',
 		condition: {
 			effectType: 'Terrain',
