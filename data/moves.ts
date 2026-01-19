@@ -17510,28 +17510,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		num: 318,
 		accuracy: 100,
 		basePower: 70,
-		category: "Special",
-		name: "Silver Wind",
-		pp: 5,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
-		onTryHit(target, pokemon) {
-			let move = 'silverwind2';
-			if (pokemon.hasAbility("Scale Shield")) {
-				move = 'silverwind3';
-			}
-			this.actions.useMove(move, pokemon, { target });
-			return null;
-		},
-		callsMove: true,
-		target: "normal",
-		type: "Bug",
-		contestType: "Beautiful",
-	},
-	silverwind2: {
-		num: 318,
-		accuracy: 100,
-		basePower: 70,
 		basePowerCallback(pokemon, target, move) {
 			if (pokemon.hasType('Fairy')) {
 				return move.basePower * 1.5;
@@ -17542,7 +17520,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Silver Wind",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1, nosketch: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		secondary: {
 			chance: 10,
 			self: {
@@ -17559,7 +17537,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 		contestType: "Beautiful",
 	},
-	silverwind3: {
+	scalewind: {
 		num: 318,
 		accuracy: 100,
 		basePower: 90,
@@ -17567,7 +17545,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Scale Wind",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1, nosketch: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		secondary: {
 			chance: 100,
 			onHit(target, source) {
@@ -20416,7 +20394,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, failinstruct: 1,
-			dance: 1, },
+			dance: 1 },
 		self: {
 			volatileStatus: 'lockedmove',
 		},
@@ -20953,7 +20931,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tidy Up",
 		pp: 10,
 		priority: 0,
-		flags: { field: 1},
+		flags: { field: 1 },
 		onHit(pokemon) {
 			let success = false;
 			for (const active of this.getAllActive()) {
@@ -23421,7 +23399,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {
 			protect: 1,
 			failencore: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1,
-			explosion: 1},
+			explosion: 1 },
 		target: "allAdjacent",
 		type: "Fire",
 		contestType: "Tough",

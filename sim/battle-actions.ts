@@ -1924,6 +1924,21 @@ export class BattleActions {
 			}
 		}
 
+		if (speciesid === 'Butterfree-Mega') {
+			const silverWind = pokemon.moveSlots.findIndex(x => x.id === 'silverwind');
+			if (silverWind >= 0) {
+				const scaleWind = this.battle.dex.moves.get('scalewind');
+				pokemon.moveSlots[silverWind] = pokemon.baseMoveSlots[silverWind] = {
+					id: scaleWind.id,
+					move: scaleWind.name,
+					pp: pokemon.moveSlots[silverWind].pp,
+					maxpp: pokemon.moveSlots[silverWind].maxpp,
+					disabled: false,
+					used: false,
+				};
+			}
+		}
+
 		this.battle.runEvent('AfterMega', pokemon);
 		return true;
 	}
