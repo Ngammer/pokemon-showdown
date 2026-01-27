@@ -155,7 +155,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 	},
 	pikachu: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
@@ -295,7 +295,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	clefairy: {
-		tier: "OU",
+		tier: "NFE",
 		doublesTier: "DUU",
 		natDexTier: "NFE",
 	},
@@ -693,7 +693,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	onix: {
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "LC",
 	},
 	steelix: {
