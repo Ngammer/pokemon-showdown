@@ -5587,6 +5587,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		prevo: "Zigzagoon",
 		evoLevel: 20,
+		evos: ["Scalgoon"],
 		eggGroups: ["Field"],
 		otherFormes: ["Linoone-Galar"],
 		formeOrder: ["Linoone", "Linoone-Galar"],
@@ -6105,6 +6106,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Skitty",
 		evoType: "useItem",
 		evoItem: "Moon Stone",
+		evos: ["Cattmory"],
 		eggGroups: ["Field", "Fairy"],
 	},
 	sableye: {
@@ -21956,5 +21958,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 35, // cambiar
 		evoCondition: "at night", // cambiar
 		eggGroups: ["Field"],
+	},
+	cattmory: {
+		num: -1016,
+		name: "Cattmory",
+		types: ["Normal", "Steel"],
+		genderRatio: { M: 0.25, F: 0.75 },
+		baseStats: { hp: 80, atk: 43, def: 115, spa: 82, spd: 109, spe: 71 },
+		abilities: { 0: "Heatproof", 1: "Wonder Skin", H: "Steelized" },
+		heightm: 1.1, // cambiar
+		weightkg: 32.6, // cambiar
+		color: "Purple", // cambiar
+		prevo: "Delcatty",
+		evoType: "useItem", // cambiar
+		evoItem: "Moon Stone", // cambiar
+		eggGroups: ["Field", "Fairy"],
 	},
 };
