@@ -6542,6 +6542,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.1,
 		weightkg: 5,
 		color: "Brown",
+		evos: ["Unkbear"],
 		eggGroups: ["Field", "Human-Like"],
 	},
 	trapinch: {
@@ -22001,5 +22002,18 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Minun",
 		evoLevel: 26, // cambiar
 		eggGroups: ["Fairy"],
+	},
+	unkbear: {
+		num: -1019,
+		name: "Unkbear",
+		types: ["Normal", "Poison"],
+		baseStats: { hp: 150, atk: 110, def: 80, spa: 65, spd: 75, spe: 70 },
+		abilities: { 0: "Sticky Hold", 1: "Poison Point", H: "Drunk" },
+		heightm: 1.1, // cambiar
+		weightkg: 5, // cambiar
+		color: "Brown", // cambiar
+		prevo: "Spinda",
+		evoLevel: 26, // cambiar
+		eggGroups: ["Field", "Human-Like"],
 	},
 };
