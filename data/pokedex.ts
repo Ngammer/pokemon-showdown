@@ -9458,7 +9458,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	rotomjohtostatue: {
 		num: 479,
 		name: "Rotom-Johto-Statue",
-		baseSpecies: "Rotom-Johto",
+		baseSpecies: "Rotom",
 		forme: "Johto-Statue",
 		types: ["Ground", "Psychic"],
 		gender: "N",
@@ -9473,7 +9473,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	rotomjohtosharp: {
 		num: 479,
 		name: "Rotom-Johto-Sharp",
-		baseSpecies: "Rotom-Johto",
+		baseSpecies: "Rotom",
 		forme: "Johto-Sharp",
 		types: ["Ground", "Dark"],
 		gender: "N",
@@ -9488,7 +9488,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	rotomjohtoash: {
 		num: 479,
 		name: "Rotom-Johto-Ash",
-		baseSpecies: "Rotom-Johto",
+		baseSpecies: "Rotom",
 		forme: "Johto-Ash",
 		types: ["Ground", "Fire"],
 		gender: "N",
@@ -9503,7 +9503,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	rotomjohtoberserk: {
 		num: 479,
 		name: "Rotom-Johto-Berserk",
-		baseSpecies: "Rotom-Johto",
+		baseSpecies: "Rotom",
 		forme: "Johto-Berserk",
 		types: ["Ground", "Dragon"],
 		gender: "N",
@@ -13580,7 +13580,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 681,
 		name: "Aegislash-Johto",
 		baseSpecies: "Aegislash",
-		baseForme: "Johto-Slicing",
+		forme: "Johto",
 		types: ["Grass", "Ghost"],
 		baseStats: { hp: 50, atk: 170, def: 85, spa: 40, spd: 65, spe: 90 },
 		abilities: { 0: "Stance Change" },
@@ -13595,7 +13595,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	aegislashjohtosplinter: {
 		num: 681,
 		name: "Aegislash-Johto-Splinter",
-		baseSpecies: "Aegislash-Johto",
+		baseSpecies: "Aegislash",
 		forme: "Johto-Splinter",
 		types: ["Grass", "Ghost"],
 		baseStats: { hp: 50, atk: 90, def: 65, spa: 40, spd: 85, spe: 170 },
@@ -17207,7 +17207,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 849,
 		name: "Toxtricity-Johto",
 		baseSpecies: "Toxtricity",
-		baseForme: "Johto-Small-Drum",
+		forme: "Johto",
 		types: ["Rock", "Poison"],
 		baseStats: { hp: 90, atk: 65, def: 70, spa: 114, spd: 70, spe: 75 },
 		abilities: { 0: "Percussion", 1: "Own Tempo", H: "Adaptability" },
@@ -17221,7 +17221,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	toxtricityjohtobigdrum: {
 		num: 849,
 		name: "Toxtricity-Johto-Big-Drum",
-		baseSpecies: "Toxtricity-Johto",
+		baseSpecies: "Toxtricity",
 		forme: "Johto-Big-Drum",
 		types: ["Rock", "Poison"],
 		baseStats: { hp: 90, atk: 35, def: 100, spa: 135, spd: 105, spe: 40 },
@@ -17840,7 +17840,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	eiscuehoenn: {
 		num: 875,
 		name: "Eiscue-Hoenn",
-		baseForme: "Rock",
+		baseSpecies: "Eiscue",
 		forme: "Hoenn",
 		types: ["Rock"],
 		baseStats: { hp: 80, atk: 120, def: 60, spa: 20, spd: 80, spe: 110 },
@@ -17853,7 +17853,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	eiscuehoennnorock: {
 		num: 875,
 		name: "Eiscue-Hoenn-Norock",
-		baseSpecies: "Eiscue-Hoenn",
+		baseSpecies: "Eiscue",
 		forme: "Hoenn-Norock",
 		types: ["Rock"],
 		baseStats: { hp: 80, atk: 40, def: 150, spa: 25, spd: 130, spe: 45 },
@@ -19359,6 +19359,24 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Pink",
 		prevo: "Tinkatuff",
 		evoLevel: 38,
+		otherFormes: ["Tinkaton-Kanto"],
+		formeOrder: ["Tinkaton", "Tinkaton-Kanto"],
+		eggGroups: ["Fairy"],
+	},
+	tinkatonkanto: {
+		num: 959,
+		name: "Tinkaton-Kanto",
+		baseSpecies: "Tinkaton",
+		forme: "Kanto",
+		types: ["Fairy", "Ground"],
+		gender: "F",
+		baseStats: { hp: 105, atk: 89, def: 93, spa: 62, spd: 87, spe: 74 },
+		abilities: { 0: "Mold Breaker", 1: "Anger Point", H: "Long Reach" },
+		heightm: 0.7, // cambiar
+		weightkg: 112.8, // cambiar
+		color: "Pink", // cambiar
+		prevo: "Tinkatuff",
+		evoLevel: 38, // cambiar
 		eggGroups: ["Fairy"],
 	},
 	wiglett: {
@@ -19775,6 +19793,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	dudunsparcehoenn: {
 		num: 982,
 		name: "Dudunsparce-Hoenn",
+		baseSpecies: "Dudunsparce",
 		forme: "Hoenn",
 		types: ["Normal", "Fire"],
 		baseStats: { hp: 80, atk: 148, def: 90, spa: 67, spd: 80, spe: 50 },
