@@ -2163,7 +2163,7 @@
                     ["Teleport"],
                     ["Future Sight", "Psywave", "Incinerate"]
                 ],
-                "item": ["Dimencionador"],
+                "item": ["Dimensionator"],
                 "nature": "Relaxed",
                 "evs": {"def": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -2794,7 +2794,7 @@
                     ["Wood Hammer", "Power Whip", "Seed Bomb"],
                     ["Earthquake", "Knock Off", "Iron Head", "Rollout", "Iron Tail"]
                 ],
-                "item": ["Dimencionador"],
+                "item": ["Dimensionator"],
                 "nature": "Brave",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -2809,7 +2809,7 @@
                     ["Power Whip"],
                     ["Stomping Tantrum"]
                 ],
-                "item": ["Dimencionador"],
+                "item": ["Dimensionator"],
                 "nature": "Brave",
                 "evs": {"atk": 252, "spd": 4, "hp": 252},
                 "teraType": ["Fairy", "Fire", "Flying"],
@@ -3377,7 +3377,7 @@
                   ["Trick Room"],
                   ["Mystical Fire", "Focus Blast", "Psyshock", "Flash", "Zap Cannon"]
               ],
-              "item": ["Dimencionador"],
+              "item": ["Dimensionator"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
               "ivs": {"atk": 0},
@@ -4798,7 +4798,7 @@
                   ["Roost"],
                   ["Trick Room"]
               ],
-              "item": ["Dimencionador"],
+              "item": ["Dimensionator"],
               "nature": "Calm",
               "evs": {"hp": 252, "spa": 4, "spd": 252},
               "ivs": {"atk": 0},

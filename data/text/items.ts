@@ -935,9 +935,9 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ironball: {
 		name: "Iron Ball",
-		shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
+		shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.3.",
 		gen4: {
-			shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.25.",
+			shortDesc: "Holder's Speed is halved. Power of projectile moves by x1.3.",
 		},
 	},
 	ironplate: {
@@ -1770,7 +1770,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	skyplate: {
 		name: "Sky Plate",
-		shortDesc: "Holder's Flying-type attacks have 1.25x power. Judgment is Flying type.",
+		shortDesc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
 	},
 	slowbronite: {
 		name: "Slowbronite",
@@ -2381,7 +2381,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	utilityumbrella: {
 		name: "Utility Umbrella",
 		desc: "The holder ignores rain- and sun-based effects, including those of its Ability unless it is Orichalcum Pulse or Protosynthesis. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
-		shortDesc: "Increases the duration of Tailwind to 5 turns.",
+		shortDesc: "Increases the duration of Tailwind to 6 turns.",
 		gen8: {
 			desc: "The holder ignores rain- and sun-based effects, including those of its Ability. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
 		},
@@ -2577,8 +2577,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Laprasite",
 		shortDesc: "If held by a Lapras, this item allows it to Mega Evolve in battle.",
 	},
-	dimencionador: {
-		name: "Dimencionador",
+	dimensionator: {
+		name: "Dimensionator",
 		shortDesc: "Holder's use of Trick Room, Wonder Room, Magic Room, or Gravity lasts 8 turns instead of 5.",
 	},
 	cryorb: {

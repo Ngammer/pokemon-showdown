@@ -4385,8 +4385,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	monolith: {
 		name: "Monolith",
-		desc: "Has a 50% chance to make the target flinch. If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 1/2 recoil. 50% chance to flinch.",
+		desc: "Has a 50% chance to make the target flinch.",
+		shortDesc: "50% chance to flinch.",
 	},
 	moonblast: {
 		name: "Moonblast",
@@ -5795,8 +5795,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	shadowclaw: {
 		name: "Shadow Claw",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
-		shortDesc: "Always results in a critical hit.",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
 	},
 	shadowforce: {
 		name: "Shadow Force",
@@ -6096,8 +6096,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	sludge: {
 		name: "Sludge",
-		desc: "Has a 20% chance to poison the target. Always results in a critical hit",
-		shortDesc: "20% chance to poison the target. Always is critical hit",
+		desc: "Has a 10% chance to poison the target. Always results in a critical hit",
+		shortDesc: "10% chance to poison the target. Always is critical hit",
 		gen1: {
 			desc: "Has a 40% chance to poison the target.",
 			shortDesc: "40% chance to poison the target.",

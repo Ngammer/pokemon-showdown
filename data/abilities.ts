@@ -2486,7 +2486,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (source && target === source && boost.spe && boost.spe < 0) {
 				delete boost.spe;
 				if (!(effect as ActiveMove).secondaries) {
-					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", `[of] ${target}`);
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Limber", `[of] ${target}`);
 				}
 			}
 		},
@@ -2550,8 +2550,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 204,
 	},
 	longreach: {
-		onModifyMove(move) {
-			delete move.flags['contact'];
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (!move.flags['contact']) {
+				return this.chainModify([5325, 4096]);
+			}
 		},
 		flags: { },
 		name: "Long Reach",
@@ -2794,7 +2797,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onTryBoost(boost, target, source, effect) {
 			// Don't bounce self stat changes, or boosts that have already bounced
-			if (!source || target === source || !boost || effect.name === 'Mirror Armor') return;
+			if (!source || target === source || !boost || effect.name === 'Minus') return;
 			let b: BoostID;
 			for (b in boost) {
 				if (boost[b]! < 0) {
@@ -2803,7 +2806,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					negativeBoost[b] = boost[b];
 					delete boost[b];
 					if (source.hp) {
-						this.add('-ability', target, 'Mirror Armor');
+						this.add('-ability', target, 'Minus');
 						this.boost(negativeBoost, source, target, null, true);
 					}
 				}
@@ -3459,7 +3462,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (target.hasItem('covertcloak')) return;
-			if (this.checkMoveMakesContact(move, target, source)) {
+			if (move?.flags['contact']) {
 				const r = this.random(100);
 				if (r < 34) {
 					const item = target.takeItem();
@@ -4635,14 +4638,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
 			} else if (!pokemon.volatiles['slowstart']) {
-				return this.chainModify(1.05);
+				return this.chainModify(1.1);
 			}
 		},
 		onModifySpe(spe, pokemon) {
 			if (!pokemon.volatiles['slowstart'] && pokemon.volatiles['premierball']) {
 				return this.chainModify(1.3);
 			} else if (!pokemon.volatiles['slowstart']) {
-				return this.chainModify(1.05);
+				return this.chainModify(1.1);
 			}
 		},
 		onEnd(pokemon) {
@@ -4664,19 +4667,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onModifyAtkPriority: 5,
 			onModifyAtk(atk, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					const debuff = 0.8 + (0.1 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				} else {
-					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					const debuff = 0.85 + (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
 			onModifySpe(spe, pokemon) {
 				if (pokemon.volatiles['premierball']) {
-					const debuff = 1.3 - (0.1 * this.effectState.duration!);
+					const debuff = 0.8 + (0.1 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				} else {
-					const debuff = 1.05 - (0.05 * this.effectState.duration!);
+					const debuff = 0.85 + (0.05 * this.effectState.duration!);
 					return this.chainModify(debuff);
 				}
 			},
@@ -5089,11 +5092,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	superluck: {
 		onModifyCritRatio(critRatio, pokemon) {
-			if ((pokemon.volatiles['superluck']?.turns >= 3 && pokemon.item !== 'scopelens')) {
+			if ((pokemon.volatiles['superluck']?.turns >= 2 && pokemon.item !== 'scopelens')) {
 				pokemon.volatiles['superluck'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Super Luck');
 				return 5;
-			} else if ((pokemon.volatiles['superluck']?.turns >= 2 && pokemon.item === 'scopelens')) {
+			} else if ((pokemon.volatiles['superluck']?.turns >= 1 && pokemon.item === 'scopelens')) {
 				pokemon.volatiles['superluck'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Super Luck');
 				return 5;
@@ -5336,7 +5339,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!target.swordBoost) {
 				this.debug('Tangling Hair weaken');
 				target.swordBoost = true;
-				return this.chainModify(0.4);
+				return this.chainModify(0.6);
 			}
 		},
 		flags: { breakable: 1 },
@@ -6155,7 +6158,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -3,
 	},
 
-	// Nuevo Meta
+	// PKM Espejo
 	scaleshield: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target) && source.runStatusImmunity('powder')) {
@@ -6309,7 +6312,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyTypePriority: -1,
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.category === 'Special' && !move.flags['contact']) {
+			if (move.category === 'Special') {
 				return this.chainModify(1.3);
 			}
 		},
@@ -6429,7 +6432,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				const change = 100 - move.accuracy;
 				move.accuracy += change;
 				if (move.basePower !== 0) {
-					move.basePower -= change * 0.25;
+					move.basePower -= change * 0.2;
 				}
 			}
 		},
@@ -6473,9 +6476,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
 				const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
 				for (const ally of allies) {
-					ally.heal(ally.baseMaxhp / 10);
+					ally.heal(ally.baseMaxhp / 5);
 				}
-				pokemon.heal(pokemon.baseMaxhp / 10);
+				pokemon.heal(pokemon.baseMaxhp / 5);
 			}
 		},
 		flags: { },
@@ -6484,13 +6487,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -119,
 	},
 	puresoul: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod === 1) {
-				this.debug('Pure Soul neutralize');
-				return this.chainModify(0.5);
-			} else if (target.getMoveHitData(move).typeMod === 2) {
-				this.debug('Pure Soul neutralize');
-				return this.chainModify(0.25);
+		onEffectiveness(typeMod, target, type, move) {
+			if (typeMod > 0) {
+				return 0;
 			}
 		},
 		flags: { breakable: 1 },
@@ -6807,7 +6806,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	cleanwater: {
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison' && move.type === 'Water') return -1;
+			if (type === 'Poison' && move.type === 'Water') return typeMod + 1;
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && (effect.id === 'psn' || effect.id === 'tox')) {
@@ -6864,15 +6863,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (this.randomChance(33, 100)) {
 					const r = this.random(100);
 					if (r < 20) {
-						this.boost({ atk: 1 });
+						this.boost({ atk: 1 }, source);
 					} else if (r < 40) {
-						this.boost({ spa: 1 });
+						this.boost({ spa: 1 }, source);
 					} else if (r < 60) {
-						this.boost({ def: 1 });
+						this.boost({ def: 1 }, source);
 					} else if (r < 80) {
-						this.boost({ spd: 1 });
+						this.boost({ spd: 1 }, source);
 					} else if (r < 100) {
-						this.boost({ spe: 1 });
+						this.boost({ spe: 1 }, source);
 					}
 				}
 			}

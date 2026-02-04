@@ -67,8 +67,20 @@ interface MoveFlags {
 	head?: 1; // Movimientos que usan la cabeza del pokemon
 	wing?: 1; // Movmientos que usan el ala del pokemon
 	kick?: 1; // Movimientos que usan las patas del pokémon
-	light?: 1; // Movimientos basados en luz
-	beam?: 1; // Movimientos basados en rayos
+	light?: 1; // Movimientos que utilizan la luz
+	beam?: 1; // Movimientos en los que su ataque es un rayo (beam)
+	spin?: 1; // Movimientos en los que se realizan giros
+	piercing?: 1; // Movimientos perforantes
+	darkness?: 1; // Movimientos relacionados con la oscuridad
+	slamming?: 1; // Movimientos que atacan con todo el cuerpo o embisten
+	look?: 1; // Movimientos basados en miradas
+	palm?: 1; // Movimientos basados en palmas
+	sticky?: 1; // Movimientos relacionados con lo pegajoso
+	explosion?: 1; // Movimientos que se basan en explosiones
+	field?: 1; // Movimientos que afentan al campo y/o se realizan en todo el campo
+	cosmic?: 1; // Movimientos relacionados al espacio exterior
+	destiny?: 1; // Movimientos relacionados con el destino
+	constrict?: 1; // Movimientos que aprietan al objetivo
 }
 
 export interface HitEffect {
