@@ -893,4 +893,20 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return bp;
 		},
 	},
+	blind:{
+		name: 'blind',
+		onStart(target, source, sourceEffect){
+			if (sourceEffect?.effectType === 'Ability') {
+				this.add('-start', target, 'blind', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
+			} else {
+				this.add('-start', target, 'blind');
+			}
+		},
+		onEnd(target) {
+			this.add('-end', target, 'blind');
+		},
+		onModifyMove(move, pokemon, target) {
+			target = this.getRandomTarget(pokemon, move)
+		}
+	}
 };

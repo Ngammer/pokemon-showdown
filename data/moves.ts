@@ -23811,4 +23811,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 		contestType: "Cool",
 	},
+	darknessgem: {
+		num: 0,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Darkness Gem",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1/*, darkness: 1*/ },
+		secondary: {
+			chance: 100,
+			volatileStatus: 'blind',
+		},
+		target: "normal",
+		type: "Rock",
+		contestType: "Cool",
+	},
 };
