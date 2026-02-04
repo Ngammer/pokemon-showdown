@@ -6309,6 +6309,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 4.2,
 		color: "Yellow",
+		evos: ["Plucheer"],
 		eggGroups: ["Fairy"],
 	},
 	minun: {
@@ -6320,6 +6321,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 4.2,
 		color: "Yellow",
+		evos: ["Cheermin"],
 		eggGroups: ["Fairy"],
 	},
 	volbeat: {
@@ -21973,5 +21975,31 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoType: "useItem", // cambiar
 		evoItem: "Moon Stone", // cambiar
 		eggGroups: ["Field", "Fairy"],
+	},
+	plucheer: {
+		num: -1017,
+		name: "Plucheer",
+		types: ["Electric"],
+		baseStats: { hp: 65, atk: 51, def: 51, spa: 113, spd: 77, spe: 113 },
+		abilities: { 0: "Plus", 1: "Joyful", H: "Cheerleader" },
+		heightm: 0.4, // cambiar
+		weightkg: 4.2, // cambiar
+		color: "Yellow", // cambiar
+		prevo: "Plusle",
+		evoLevel: 26, // cambiar
+		eggGroups: ["Fairy"],
+	},
+	cheermin: {
+		num: -1018,
+		name: "Cheermin",
+		types: ["Electric"],
+		baseStats: { hp: 76, atk: 30, def: 72, spa: 76, spd: 108, spe: 108 },
+		abilities: { 0: "Minus", 1: "Repelling", H: "Cheerleader" },
+		heightm: 0.4, // cambiar
+		weightkg: 4.2, // cambiar
+		color: "Yellow", // cambiar
+		prevo: "Minun",
+		evoLevel: 26, // cambiar
+		eggGroups: ["Fairy"],
 	},
 };
