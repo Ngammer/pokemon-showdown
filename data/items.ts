@@ -6229,7 +6229,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		isPrimalOrb: true,
 		num: 534,
 		gen: 6,
-
 	},
 	repeatball: {
 		name: "Repeat Ball",
@@ -10272,5 +10271,70 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -108,
 		gen: 4,
+	},
+	jadeorb: {
+		name: "Jade Orb",
+		spritenum: 390,
+		onSwitchInPriority: -1,
+		onSwitchIn(pokemon) {
+			if (pokemon.baseSpecies.name === 'Relicanth' && !pokemon.transformed) {
+				this.effectState.wTimer = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Registeel' && !pokemon.transformed) {
+				this.effectState.rCounter = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Rayquaza' && !pokemon.transformed) {
+				this.effectState.cTimer = 2;
+			} else if (!pokemon.transformed) {
+				this.effectState.cTimer = 3;
+			}
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((source.isActive && source.baseSpecies.name === 'Rayquaza' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.id === 'dragonascent') {
+				source.formeChange('Rayquaza-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Tropius' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.type === 'Dragon') {
+				source.formeChange('Tropius-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Snowy') &&
+				move.id === 'weatherball') {
+				source.formeChange('Castform-Snowy-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Registeel' && !source.transformed) &&
+				this.field.isTerrain('regicode') && (move.type === 'Ice' || move.type === 'Rock' ||
+					move.type === 'Steel' || move.type === 'Electric' || move.type === 'Dragon' || move.type === 'Normal') &&
+					move.id !== 'regicode') {
+				this.effectState.rCounter += 1; // TODO: no permitir repetidos
+				if (this.effectState.rCounter >= 2) {
+					source.formeChange('Registeel-Primal', this.effect, true);
+				}
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
+				pokemon.baseSpecies.name === 'Relicanth') {
+				this.effectState.wTimer += 1;
+			}
+			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Relicanth' && !pokemon.transformed) &&
+				this.effectState.wTimer >= 3) {
+				pokemon.formeChange('Relicanth-Primal', this.effect, true);
+			}
+			if (pokemon.activeTurns && !pokemon.transformed) {
+				this.effectState.cTimer -= 1;
+			}
+			if (!pokemon.transformed && this.effectState.cTimer <= 0) {
+				this.damage(pokemon.baseMaxhp / 5, pokemon, pokemon, this.dex.items.get('jadeorb'));
+				this.effectState.cTimer = 3;
+			}
+		},
+		onTakeItem(item, source) {
+			return false;
+		},
+		itemUser: ["Rayquaza", "Registeel", "Castform", "Relicanth", "Tropius"],
+		isPrimalOrb: true,
+		num: -109,
+		gen: 6,
 	},
 };
