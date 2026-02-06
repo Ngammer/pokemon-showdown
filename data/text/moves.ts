@@ -44,8 +44,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	acidarmor: {
 		name: "Acid Armor",
-		desc: "Raises the user's Defense by 2 stages. Hit steel type pokemon with neutral damage.",
-		shortDesc: "Raises the user's Defense by 2 and hit steel type pokemon.",
+		desc: "Raises the user's Defense by 2 stages.",
+		shortDesc: "Raises the user's Defense by 2.",
 	},
 	aciddownpour: {
 		name: "Acid Downpour",
