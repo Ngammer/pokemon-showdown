@@ -673,6 +673,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (pokemon.baseSpecies.name === 'Cradily' && !pokemon.transformed) {
 				this.effectState.wTimer = 0;
 			}
+			if (pokemon.baseSpecies.name === 'Regice' && !pokemon.transformed) {
+				this.effectState.rCounter = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Kyogre' && !pokemon.transformed) {
+				this.effectState.cTimer = 2;
+			} else if (!pokemon.transformed) {
+				this.effectState.cTimer = 3;
+			}
 		},
 		onAfterMoveSecondarySelf(source, target, move) {
 			if ((source.isActive && source.baseSpecies.name === 'Kyogre' && !source.transformed) &&
@@ -687,6 +695,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				move.id === 'weatherball') {
 				source.formeChange('Castform-Rainy-Primal', this.effect, true);
 			}
+			if ((source.isActive && source.baseSpecies.name === 'Regice' && !source.transformed) &&
+				this.field.isTerrain('regicode') && (move.type === 'Ice' || move.type === 'Rock' ||
+					move.type === 'Steel' || move.type === 'Electric' || move.type === 'Dragon' || move.type === 'Normal') &&
+					move.id !== 'regicode') {
+				this.effectState.rCounter += 1; // TODO: no permitir repetidos
+				if (this.effectState.rCounter >= 2) {
+					source.formeChange('Regice-Primal', this.effect, true);
+				}
+			}
 		},
 		onResidual(pokemon) {
 			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
@@ -696,6 +713,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Cradily' && !pokemon.transformed) &&
 				this.effectState.wTimer >= 3) {
 				pokemon.formeChange('Cradily-Primal', this.effect, true);
+			}
+			if (pokemon.activeTurns && !pokemon.transformed) {
+				this.effectState.cTimer -= 1;
+			}
+			if (!pokemon.transformed && this.effectState.cTimer <= 0) {
+				this.damage(pokemon.baseMaxhp / 5, pokemon, pokemon, this.dex.items.get('blueorb'));
+				this.effectState.cTimer = 3;
 			}
 		},
 		onTakeItem(item, source) {

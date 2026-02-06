@@ -7023,7 +7023,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 0.8, // cambiar
 		color: "White", // cambiar
 		eggGroups: ["Fairy", "Amorphous"],
-		requiredItem: "Green Orb",
+		requiredItem: "Jade Orb",
 	},
 	kecleon: {
 		num: 352,
@@ -7129,7 +7129,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 100, // cambiar
 		color: "Green", // cambiar
 		eggGroups: ["Monster", "Grass"],
-		requiredItem: "Green Orb",
+		requiredItem: "Jade Orb",
 	},
 	chimecho: {
 		num: 358,
@@ -7367,7 +7367,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray", // cambiar
 		tags: ["Fossil"],
 		eggGroups: ["Water 1", "Water 2"],
-		requiredItem: "Green Orb",
+		requiredItem: "Jade Orb",
 	},
 	luvdisc: {
 		num: 370,
@@ -7597,7 +7597,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Green Orb",
+		requiredItem: "Jade Orb",
 	},
 	latias: {
 		num: 380,
@@ -7762,7 +7762,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 392,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Green Orb",
+		requiredItem: "Jade Orb",
 	},
 	jirachi: {
 		num: 385,
