@@ -6900,6 +6900,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredAbility: "Forecast",
 		battleOnly: "Castform",
 	},
+	castformsunnyprimal: {
+		num: 351,
+		name: "Castform-Sunny-Primal",
+		baseSpecies: "Castform",
+		forme: "Sunny-Primal",
+		types: ["Fire", "Flying"],
+		baseStats: { hp: 80, atk: 20, def: 100, spa: 160, spd: 80, spe: 140 },
+		abilities: { 0: "Climatologist" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.8, // cambiar
+		color: "Red", // cambiar
+		eggGroups: ["Fairy", "Amorphous"],
+		requiredItem: "Red Orb",
+	},
 	castformrainy: {
 		num: 351,
 		name: "Castform-Rainy",
@@ -6915,6 +6929,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredAbility: "Forecast",
 		battleOnly: "Castform",
 	},
+	castformrainyprimal: {
+		num: 351,
+		name: "Castform-Rainy-Primal",
+		baseSpecies: "Castform",
+		forme: "Rainy-Primal",
+		types: ["Water", "Flying"],
+		baseStats: { hp: 80, atk: 20, def: 140, spa: 160, spd: 140, spe: 40 },
+		abilities: { 0: "Climatologist" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.8, // cambiar
+		color: "Blue", // cambiar
+		eggGroups: ["Fairy", "Amorphous"],
+		requiredItem: "Blue Orb",
+	},
 	castformsnowy: {
 		num: 351,
 		name: "Castform-Snowy",
@@ -6929,6 +6957,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Fairy", "Amorphous"],
 		requiredAbility: "Forecast",
 		battleOnly: "Castform",
+	},
+	castformsnowyprimal: {
+		num: 351,
+		name: "Castform-Snowy-Primal",
+		baseSpecies: "Castform",
+		forme: "Snowy-Primal",
+		types: ["Ice", "Flying"],
+		baseStats: { hp: 80, atk: 20, def: 80, spa: 160, spd: 100, spe: 140 },
+		abilities: { 0: "Climatologist" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.8, // cambiar
+		color: "White", // cambiar
+		eggGroups: ["Fairy", "Amorphous"],
+		requiredItem: "Green Orb",
 	},
 	kecleon: {
 		num: 352,
@@ -7583,8 +7625,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Rayquaza-Mega"],
-		formeOrder: ["Rayquaza", "Rayquaza-Mega"],
+		otherFormes: ["Rayquaza-Mega", "Rayquaza-Primal"],
+		formeOrder: ["Rayquaza", "Rayquaza-Mega", "Rayquaza-Primal"],
 	},
 	rayquazamega: { // Borrar
 		num: 384,
