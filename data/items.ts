@@ -669,9 +669,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Blue Orb",
 		spritenum: 41,
 		onSwitchInPriority: -1,
-		onSwitchIn(pokemon) {
+		/* onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Kyogre' && !pokemon.transformed) {
 				pokemon.formeChange('Kyogre-Primal', this.effect, true);
+			}
+		}, */
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((source.isActive && source.baseSpecies.name === 'Kyogre' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.id === 'originpulse') {
+				source.formeChange('Kyogre-Primal', this.effect, true);
 			}
 		},
 		onTakeItem(item, source) {
