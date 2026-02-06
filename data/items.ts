@@ -683,8 +683,18 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				(!target || target.fainted || target.hp <= 0) && move.type === 'Fairy') {
 				source.formeChange('Luvdisc-Primal', this.effect, true);
 			}
-			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Rainy') && move.id === 'weatherball') {
-				source.formeChange('Castform-Primal', this.effect, true);
+			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Rainy') 
+				&& move.id === 'weatherball') {
+				source.formeChange('Castform-Rainy-Primal', this.effect, true);
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && 
+			pokemon.baseSpecies.name === 'Cradily') {
+				timer += 1;
+			}
+			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Cradily' && !pokemon.transformed) && timer >= 3) {
+				pokemon.formeChange('Cradily-Primal', this.effect, true);
 			}
 		},
 		onTakeItem(item, source) {
