@@ -6816,6 +6816,24 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 40,
 		tags: ["Fossil"],
 		eggGroups: ["Water 3"],
+		otherFormes: ["Cradily-Primal"],
+		formeOrder: ["Cradily", "Cradily-Primal"],
+	},
+	cradilyprimal: {
+		num: 346,
+		name: "Cradily-Primal",
+		baseSpecies: "Cradily",
+		forme: "Primal",
+		types: ["Water", "Grass"],
+		genderRatio: { M: 0.875, F: 0.125 },
+		baseStats: { hp: 111, atk: 116, def: 142, spa: 136, spd: 152, spe: 13 },
+		abilities: { 0: "Tangle" },
+		heightm: 1.5, // cambiar
+		weightkg: 60.4, // cambiar
+		color: "Green", // cambiar
+		tags: ["Fossil"],
+		eggGroups: ["Water 3"],
+		requiredItem: "Blue Orb",
 	},
 	anorith: {
 		num: 347,
@@ -6845,6 +6863,24 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 40,
 		tags: ["Fossil"],
 		eggGroups: ["Water 3"],
+		otherFormes: ["Armaldo-Primal"],
+		formeOrder: ["Armaldo", "Armaldo-Primal"],
+	},
+	armaldoprimal: {
+		num: 348,
+		name: "Armaldo-Primal",
+		baseSpecies: "Armaldo",
+		forme: "Primal",
+		types: ["Water", "Bug"],
+		genderRatio: { M: 0.875, F: 0.125 },
+		baseStats: { hp: 95, atk: 165, def: 75, spa: 90, spd: 75, spe: 170 },
+		abilities: { 0: "Armor Piercing" },
+		heightm: 1.5, // cambiar
+		weightkg: 68.2, // cambiar
+		color: "Gray", // cambiar
+		tags: ["Fossil"],
+		eggGroups: ["Water 3"],
+		requiredItem: "Red Orb",
 	},
 	feebas: {
 		num: 349,
@@ -6882,8 +6918,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 0.8,
 		color: "Gray",
 		eggGroups: ["Fairy", "Amorphous"],
-		otherFormes: ["Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
-		formeOrder: ["Castform", "Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
+		otherFormes: ["Castform-Sunny", "Castform-Sunny-Primal", "Castform-Rainy", "Castform-Rainy-Primal", "Castform-Snowy", "Castform-Snowy-Primal"],
+		formeOrder: ["Castform", "Castform-Sunny", "Castform-Sunny-Primal", "Castform-Rainy", "Castform-Rainy-Primal", "Castform-Snowy", "Castform-Snowy-Primal"],
 	},
 	castformsunny: {
 		num: 351,
@@ -7278,7 +7314,26 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1,
 		weightkg: 23.4,
 		color: "Gray",
+		tags: ["Fossil"],
 		eggGroups: ["Water 1", "Water 2"],
+		otherFormes: ["Relicanth-Primal"],
+		formeOrder: ["Relicanth", "Relicanth-Primal"],
+	},
+	relicanthprimal: {
+		num: 369,
+		name: "Relicanth-Primal",
+		baseSpecies: "Relicanth",
+		forme: "Primal",
+		types: ["Water", "Ground"],
+		genderRatio: { M: 0.875, F: 0.125 },
+		baseStats: { hp: 100, atk: 150, def: 135, spa: 60, spd: 115, spe: 110 },
+		abilities: { 0: "Leg Flipper" },
+		heightm: 1, // cambiar
+		weightkg: 23.4, // cambiar
+		color: "Gray", // cambiar
+		tags: ["Fossil"],
+		eggGroups: ["Water 1", "Water 2"],
+		requiredItem: "Green Orb",
 	},
 	luvdisc: {
 		num: 370,
