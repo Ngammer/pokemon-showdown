@@ -675,10 +675,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onTakeItem(item, source) {
-			if (source.baseSpecies.baseSpecies === 'Kyogre') return false;
+			if (item.itemUser?.includes(source.baseSpecies.baseSpecies)) return false;
 			return true;
 		},
-		itemUser: ["Kyogre"],
+		itemUser: ["Kyogre", "Regice", "Castform", "Cradily", "Luvdisc"],
 		isPrimalOrb: true,
 		num: 535,
 		gen: 6,
