@@ -6507,6 +6507,23 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 80.4,
 		color: "Brown",
 		eggGroups: ["Field"],
+		otherFormes: ["Torkoal-Primal"],
+		formeOrder: ["Torkoal", "Torkoal-Primal"],
+	},
+	torkoalprimal: {
+		num: 324,
+		name: "Torkoal-Primal",
+		baseSpecies: "Torkoal",
+		forme: "Primal",
+		types: ["Fire", "Steel"],
+		genderRatio: { M: 0.25, F: 0.75 },
+		baseStats: { hp: 70, atk: 45, def: 180, spa: 125, spd: 140, spe: 10 },
+		abilities: { 0: "Heating" },
+		heightm: 0.5, // cambiar
+		weightkg: 80.4, // cambiar
+		color: "Brown", // cambiar
+		eggGroups: ["Field"],
+		requiredItem: "Red Orb",
 	},
 	spoink: {
 		num: 325,
@@ -7096,6 +7113,23 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 100,
 		color: "Green",
 		eggGroups: ["Monster", "Grass"],
+		otherFormes: ["Tropius-Primal"],
+		formeOrder: ["Tropius", "Tropius-Primal"],
+	},
+	tropiusprimal: {
+		num: 357,
+		name: "Tropius-Primal",
+		baseSpecies: "Tropius",
+		forme: "Primal",
+		types: ["Grass", "Dragon"],
+		genderRatio: { M: 0.25, F: 0.75 },
+		baseStats: { hp: 99, atk: 18, def: 103, spa: 112, spd: 117, spe: 121 },
+		abilities: { 0: "Dragon Fruit" },
+		heightm: 2, // cambiar
+		weightkg: 100, // cambiar
+		color: "Green", // cambiar
+		eggGroups: ["Monster", "Grass"],
+		requiredItem: "Green Orb",
 	},
 	chimecho: {
 		num: 358,
@@ -7346,6 +7380,23 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 8.7,
 		color: "Pink",
 		eggGroups: ["Water 2"],
+		otherFormes: ["Luvdisc-Primal"],
+		formeOrder: ["Luvdisc", "Luvdisc-Primal"],
+	},
+	luvdiscprimal: {
+		num: 370,
+		name: "Luvdisc-Primal",
+		baseSpecies: "Luvdisc",
+		forme: "Primal",
+		types: ["Water", "Fairy"],
+		genderRatio: { M: 0.25, F: 0.75 },
+		baseStats: { hp: 72, atk: 20, def: 88, spa: 90, spd: 140, spe: 160 },
+		abilities: { 0: "Shield Heart" },
+		heightm: 0.6, // cambiar
+		weightkg: 8.7, // cambiar
+		color: "Pink", // cambiar
+		eggGroups: ["Water 2"],
+		requiredItem: "Blue Orb",
 	},
 	bagon: {
 		num: 371,
