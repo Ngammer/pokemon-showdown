@@ -6170,15 +6170,62 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 390,
 		onSwitchInPriority: -1,
 		onSwitchIn(pokemon) {
-			if (pokemon.isActive && pokemon.baseSpecies.name === 'Groudon' && !pokemon.transformed) {
-				pokemon.formeChange('Groudon-Primal', this.effect, true);
+			if (pokemon.baseSpecies.name === 'Armaldo' && !pokemon.transformed) {
+				this.effectState.wTimer = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Regirock' && !pokemon.transformed) {
+				this.effectState.rCounter = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Groudon' && !pokemon.transformed) {
+				this.effectState.cTimer = 2;
+			} else if (!pokemon.transformed) {
+				this.effectState.cTimer = 3;
+			}
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((source.isActive && source.baseSpecies.name === 'Groudon' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.id === 'precipiceblades') {
+				source.formeChange('Groudon-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Torkoal' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.type === 'Steel') {
+				source.formeChange('Torkoal-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Sunny') &&
+				move.id === 'weatherball') {
+				source.formeChange('Castform-Sunny-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Regirock' && !source.transformed) &&
+				this.field.isTerrain('regicode') && (move.type === 'Ice' || move.type === 'Rock' ||
+					move.type === 'Steel' || move.type === 'Electric' || move.type === 'Dragon' || move.type === 'Normal') &&
+					move.id !== 'regicode') {
+				this.effectState.rCounter += 1; // TODO: no permitir repetidos
+				if (this.effectState.rCounter >= 2) {
+					source.formeChange('Regirock-Primal', this.effect, true);
+				}
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
+				pokemon.baseSpecies.name === 'Armaldo') {
+				this.effectState.wTimer += 1;
+			}
+			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Armaldo' && !pokemon.transformed) &&
+				this.effectState.wTimer >= 3) {
+				pokemon.formeChange('Armaldo-Primal', this.effect, true);
+			}
+			if (pokemon.activeTurns && !pokemon.transformed) {
+				this.effectState.cTimer -= 1;
+			}
+			if (!pokemon.transformed && this.effectState.cTimer <= 0) {
+				this.damage(pokemon.baseMaxhp / 5, pokemon, pokemon, this.dex.items.get('redorb'));
+				this.effectState.cTimer = 3;
 			}
 		},
 		onTakeItem(item, source) {
-			if (source.baseSpecies.baseSpecies === 'Groudon') return false;
-			return true;
+			return false;
 		},
-		itemUser: ["Groudon"],
+		itemUser: ["Groudon", "Regirock", "Castform", "Armaldo", "Torkoal"],
 		isPrimalOrb: true,
 		num: 534,
 		gen: 6,
