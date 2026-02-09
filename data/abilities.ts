@@ -7193,4 +7193,45 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -151,
 	},
+	changestance: {
+		onModifyMovePriority: 1,
+		onModifyMove(move, attacker, defender) {
+			if (move.id !== 'cuttingivy' && move.id !== 'piercingivy') return;
+			const targetForme = (move.id === 'piercingivy' ? 'Aegislash-Johto' : 'Aegislash-Johto-Splinter');
+			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+
+			if (targetForme === 'Aegislash-Johto-Splinter') {
+				const cuttingIvy = attacker.moveSlots.findIndex(x => x.id === 'cuttingivy');
+				if (cuttingIvy >= 0) {
+					const piercingIvy = this.dex.moves.get('piercingivy');
+					attacker.moveSlots[cuttingIvy] = attacker.baseMoveSlots[cuttingIvy] = {
+						id: piercingIvy.id,
+						move: piercingIvy.name,
+						pp: attacker.moveSlots[cuttingIvy].pp,
+						maxpp: attacker.moveSlots[cuttingIvy].maxpp,
+						disabled: false,
+						used: false,
+					};
+				}
+			}
+			if (targetForme === 'Aegislash-Johto') {
+				const piercingIvy = attacker.moveSlots.findIndex(x => x.id === 'piercingivy');
+				if (piercingIvy >= 0) {
+					const cuttingIvy = this.dex.moves.get('cuttingivy');
+					attacker.moveSlots[piercingIvy] = attacker.baseMoveSlots[piercingIvy] = {
+						id: cuttingIvy.id,
+						move: cuttingIvy.name,
+						pp: attacker.moveSlots[piercingIvy].pp,
+						maxpp: attacker.moveSlots[piercingIvy].maxpp,
+						disabled: false,
+						used: false,
+					};
+				}
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "Change Stance",
+		rating: 4,
+		num: -152,
+	},
 };

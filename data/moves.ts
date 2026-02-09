@@ -23689,7 +23689,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Piercing Ivy",
 		pp: 5,
 		priority: 1,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, piercing: 1 },
 		secondary: null,
 		target: "normal",
 		type: "Grass",

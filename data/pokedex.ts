@@ -13558,7 +13558,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Johto",
 		types: ["Grass", "Ghost"],
 		baseStats: { hp: 50, atk: 170, def: 85, spa: 40, spd: 65, spe: 90 },
-		abilities: { 0: "Stance Change" },
+		abilities: { 0: "Change Stance" },
 		heightm: 1.7, // cambiar
 		weightkg: 53, // cambiar
 		color: "Brown", // cambiar
@@ -13574,12 +13574,12 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Johto-Splinter",
 		types: ["Grass", "Ghost"],
 		baseStats: { hp: 50, atk: 90, def: 65, spa: 40, spd: 85, spe: 170 },
-		abilities: { 0: "Stance Change" },
+		abilities: { 0: "Change Stance" },
 		heightm: 1.7, // cambiar
 		weightkg: 53, // cambiar
 		color: "Brown", // cambiar
 		eggGroups: ["Mineral"],
-		requiredAbility: "Stance Change",
+		requiredAbility: "Change Stance",
 		battleOnly: "Aegislash-Johto",
 	},
 	spritzee: {
