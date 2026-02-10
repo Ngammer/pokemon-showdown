@@ -599,7 +599,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 13,
 	},
 	colorchange: {
-		onAfterMoveSecondary(target, source, move) {
+		onFoeBeforeMove(source, target, move) {
 			if (!target.hp) return;
 			const type = move.type;
 			if (

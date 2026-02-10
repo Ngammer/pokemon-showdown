@@ -23706,11 +23706,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, darkness: 1 },
 		secondary: {
 			chance: 100,
-			volatileStatus: 'blind',
+			volatileStatus: 'darknessgem',
 		},
 		target: "normal",
 		type: "Rock",
 		contestType: "Cool",
+		volatileStatus: 'darknessgem',
+		condition: {
+			onStart(target, source, sourceEffect) {
+				if (sourceEffect?.effectType === 'Ability') {
+					this.add('-start', target, 'Darkness Gem', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
+				} else {
+					this.add('-start', target, 'Darkness Gem');
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'Darkness Gem');
+			},
+			onModifyMove(move, pokemon, target) {
+				target = this.getRandomTarget(pokemon, move);
+			},
+		},
 	},
 	evaporationpulse: {
 		num: 0,
