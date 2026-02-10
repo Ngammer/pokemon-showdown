@@ -23712,4 +23712,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		contestType: "Cool",
 	},
+	evaporationpulse: {
+		num: 0,
+		accuracy: 95,
+		basePower: 90,
+		category: "Special",
+		name: "Evaporation Pulse",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1 },
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "any",
+		type: "Fire",
+		contestType: "Beautiful",
+	},
 };
