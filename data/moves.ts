@@ -23713,7 +23713,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 		volatileStatus: 'darknessgem',
 		condition: {
+			duration: 2,
+			durationCallback(source, effect) {
+				if (source?.hasItem('blackglasses')) {
+					return 3;
+				}
+				return 2;
+			},
 			onStart(target, source, sourceEffect) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration!++;
+					this.effectState.duration!++;
+				}
 				if (sourceEffect?.effectType === 'Ability') {
 					this.add('-start', target, 'Darkness Gem', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 				} else {
