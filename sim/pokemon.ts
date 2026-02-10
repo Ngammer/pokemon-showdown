@@ -871,8 +871,8 @@ export class Pokemon {
 		if (this.battle.gen >= 5 && !this.isActive) return true;
 		if (this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk']) return true;
 		// check Fling first to avoid infinite recursion
-		if (isFling) return this.battle.gen >= 5 && this.hasAbility('klutz');
-		return !this.getItem().ignoreKlutz && this.hasAbility('klutz');
+		if (isFling) return this.battle.gen >= 5;
+		return !this.getItem().ignoreKlutz;
 	}
 
 	deductPP(move: string | Move, amount?: number | null, target?: Pokemon | null | false) {
