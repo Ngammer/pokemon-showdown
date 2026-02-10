@@ -4852,7 +4852,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	stall: {
 		onFractionalPriority: -0.1,
-		flags: { },
+		onModifyDef(def) {
+			return this.chainModify(1.5);
+		},
+		onModifySpD(spd) {
+			return this.chainModify(1.5);
+		},
+		flags: { breakable: 1 },
 		name: "Stall",
 		rating: -1,
 		num: 100,
