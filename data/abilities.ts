@@ -5523,10 +5523,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if ((attacker.status === 'psn' || attacker.status === 'tox') && move.category === 'Physical') {
-				return this.chainModify(1.5);
+				return this.chainModify(1.75);
 			}
 		},
-		flags: { },
+		onDamage(damage, target, source, effect) {
+			if (effect && (effect.id === 'psn' || effect.id === 'tox')) {
+				return damage / 2;
+			}
+		},
+		flags: { breakable: 1 },
 		name: "Toxic Boost",
 		rating: 3,
 		num: 137,
