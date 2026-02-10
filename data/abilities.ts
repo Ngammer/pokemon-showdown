@@ -5634,6 +5634,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBeforeMove(pokemon) {
 			if (pokemon.removeVolatile('truant')) {
 				this.add('cant', pokemon, 'ability: Truant');
+				pokemon.heal(pokemon.baseMaxhp / 3);
 				return false;
 			}
 			pokemon.addVolatile('truant');
