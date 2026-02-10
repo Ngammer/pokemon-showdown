@@ -2379,7 +2379,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSwitchInPriority: 1,
 		// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
 		onStart(pokemon) {
-			this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			pokemon.addVolatile('confusion');
+			this.boost({ atk: 1 }, pokemon);
 		},
 		flags: { },
 		name: "Klutz",
