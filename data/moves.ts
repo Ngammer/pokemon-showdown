@@ -23724,7 +23724,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-end', target, 'Darkness Gem');
 			},
 			onModifyMove(move, pokemon, target) {
-				move.target = 'randomNormal';
+				if (move.target === 'normal' || move.target === 'any' || move.target === 'adjacentFoe') {
+					move.target = 'randomNormal';
+				}
 			},
 		},
 	},
