@@ -1521,6 +1521,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (!this.field.isWeather('sandstorm') && attacker.effectiveWeather()) {
+				this.debug('Forecast boost');
+				return this.chainModify(1.25);
+			}
+		},
 		onWeatherChange(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Castform' || pokemon.transformed) return;
 			let forme = null;
