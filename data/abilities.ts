@@ -1637,11 +1637,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	galewings: {
 		onModifyPriority(priority, pokemon, target, move) {
-			if (move?.type === 'Flying' && pokemon.hp === pokemon.maxhp) return priority + 1;
+			if (move?.type === 'Flying') return priority + 1;
 		},
 		flags: { },
 		name: "Gale Wings",
-		rating: 1.5,
+		rating: 4,
 		num: 177,
 	},
 	galvanize: {
