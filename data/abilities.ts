@@ -2193,6 +2193,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.cureStatus();
 			}
 		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.type === 'Poison') {
+				this.debug('Immunity neutralize');
+				return this.chainModify(0.66);
+			}
+		},
 		onSetStatus(status, target, source, effect) {
 			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Immunity');
