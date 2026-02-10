@@ -23732,7 +23732,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	astralcollision: {
-		num: 428,
+		num: 0,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
@@ -23749,7 +23749,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	gemcrash: {
-		num: 457,
+		num: 0,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
