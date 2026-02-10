@@ -23731,4 +23731,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Beautiful",
 	},
+	astralcollision: {
+		num: 428,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Astral Collision",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, light: 1, cosmic: 1 },
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
 };
