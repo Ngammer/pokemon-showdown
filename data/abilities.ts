@@ -7252,9 +7252,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.actions.useMove('prism', target);
 			}
 		},
-		flags: { breakable: 1 },
+		flags: { },
 		name: "Prism",
 		rating: 2.5,
 		num: -153,
+	},
+	mossy: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (source.volatiles['leechseed']) return;
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				source.addVolatile('leechseed', this.effectState.target);
+			}
+		},
+		flags: { },
+		name: "Mossy",
+		rating: 2.5,
+		num: -154,
 	},
 };
