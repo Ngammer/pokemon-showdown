@@ -13523,7 +13523,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	nihillight: {
 		num: 920,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 200,
 		category: "Special",
 		name: "Nihil Light",
 		pp: 10,
