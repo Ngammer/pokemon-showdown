@@ -7270,4 +7270,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2.5,
 		num: -154,
 	},
+	abduction: {
+		onStart(pokemon) {
+			this.effectState.source = pokemon;
+			this.add('-ability', pokemon, 'Abduction');
+		},
+		onFoeSwitchOut(pokemon) {
+			this.damage(pokemon.baseMaxhp / 4, pokemon, this.effectState.source);
+		},
+		flags: { },
+		name: "Abduction",
+		rating: 4.5,
+		num: -155,
+	},
 };

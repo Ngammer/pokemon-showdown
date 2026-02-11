@@ -466,6 +466,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	beastball: {
 		name: "Beast Ball",
 		spritenum: 661,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Beast Ball');
+		},
 		num: 851,
 		gen: 7,
 		isPokeball: true,
@@ -1023,6 +1026,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	cherishball: {
 		name: "Cherish Ball",
 		spritenum: 64,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Cherish Ball');
+		},
 		num: 16,
 		gen: 4,
 		isPokeball: true,
@@ -1663,6 +1669,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	diveball: {
 		name: "Dive Ball",
 		spritenum: 101,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Dive Ball');
+		},
 		num: 7,
 		gen: 3,
 		isPokeball: true,
@@ -1880,6 +1889,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Dream Ball",
 		spritenum: 111,
 		onStart(pokemon) {
+			this.add('-item', pokemon, 'Dream Ball');
 			pokemon.addVolatile('dreamball');
 		},
 		condition: {},
@@ -1942,6 +1952,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	duskball: {
 		name: "Dusk Ball",
 		spritenum: 115,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Dusk Ball');
+		},
 		num: 13,
 		gen: 4,
 		isPokeball: true,
@@ -2357,6 +2370,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	fastball: {
 		name: "Fast Ball",
 		spritenum: 137,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Fast Ball');
+		},
 		num: 492,
 		gen: 2,
 		isPokeball: true,
@@ -2779,6 +2795,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	friendball: {
 		name: "Friend Ball",
 		spritenum: 153,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Friend Ball');
+		},
 		num: 497,
 		gen: 2,
 		isPokeball: true,
@@ -3150,6 +3169,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.hasAbility('effectspore')) {
 				pokemon.addVolatile(`greatball`);
+				this.add('-item', pokemon, 'Great Ball');
 			}
 		},
 		condition: {
@@ -3364,6 +3384,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 188,
 		onStart(pokemon) {
 			pokemon.addVolatile('healball');
+			this.add('-item', pokemon, 'Heal Ball');
 		},
 		condition: {
 			onBasePower(basepower) {
@@ -3421,6 +3442,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	heavyball: {
 		name: "Heavy Ball",
 		spritenum: 194,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Heavy Ball');
+		},
 		num: 495,
 		gen: 2,
 		isPokeball: true,
@@ -4047,6 +4071,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	levelball: {
 		name: "Level Ball",
 		spritenum: 246,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Level Ball');
+		},
 		num: 493,
 		gen: 2,
 		isPokeball: true,
@@ -4158,6 +4185,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	loveball: {
 		name: "Love Ball",
 		spritenum: 258,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Love Ball');
+		},
 		num: 496,
 		gen: 2,
 		isPokeball: true,
@@ -4287,6 +4317,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 264,
 		onStart(pokemon) {
 			pokemon.addVolatile('lureball');
+			this.add('-item', pokemon, 'Lure Ball');
 		},
 		condition: {},
 		num: 494,
@@ -4332,6 +4363,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	luxuryball: {
 		name: "Luxury Ball",
 		spritenum: 266,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Luxury Ball');
+		},
 		num: 11,
 		gen: 3,
 		isPokeball: true,
@@ -4553,6 +4587,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	masterball: {
 		name: "Master Ball",
 		spritenum: 276,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Master Ball');
+		},
 		num: 1,
 		gen: 1,
 		isPokeball: true,
@@ -5014,6 +5051,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 294,
 		onStart(pokemon) {
 			pokemon.addVolatile('moonball');
+			this.add('-item', pokemon, 'Moon Ball');
 		},
 		num: 498,
 		gen: 2,
@@ -5106,6 +5144,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 303,
 		onStart(pokemon) {
 			pokemon.addVolatile('nestball');
+			this.add('-item', pokemon, 'Nest Ball');
 		},
 		condition: {},
 		num: 8,
@@ -5115,6 +5154,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	netball: {
 		name: "Net Ball",
 		spritenum: 304,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Net Ball');
+		},
 		num: 6,
 		gen: 3,
 		isPokeball: true,
@@ -5298,6 +5340,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	parkball: {
 		name: "Park Ball",
 		spritenum: 325,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Park Ball');
+		},
 		num: 500,
 		gen: 4,
 		isPokeball: true,
@@ -5591,6 +5636,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	pokeball: {
 		name: "Poke Ball",
 		spritenum: 345,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Poke Ball');
+		},
 		num: 4,
 		gen: 1,
 		isPokeball: true,
@@ -5734,6 +5782,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 363,
 		onStart(pokemon) {
 			pokemon.addVolatile('premierball');
+			this.add('-item', pokemon, 'Premier Ball');
 		},
 		condition: {},
 		num: 12,
@@ -5960,6 +6009,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	quickball: {
 		name: "Quick Ball",
 		spritenum: 372,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Quick Ball');
+		},
 		num: 15,
 		gen: 4,
 		isPokeball: true,
@@ -6233,6 +6285,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	repeatball: {
 		name: "Repeat Ball",
 		spritenum: 401,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Repeat Ball');
+		},
 		num: 9,
 		gen: 3,
 		isPokeball: true,
@@ -6528,6 +6583,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 425,
 		onStart(pokemon) {
 			pokemon.addVolatile('safariball');
+			this.add('-item', pokemon, 'Safari Ball');
 		},
 		condition: {},
 		num: 5,
@@ -7140,6 +7196,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	sportball: {
 		name: "Sport Ball",
 		spritenum: 465,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Sport Ball');
+		},
 		num: 499,
 		gen: 2,
 		isPokeball: true,
@@ -7338,6 +7397,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	strangeball: {
 		name: "Strange Ball",
 		spritenum: 308,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Strange Ball');
+		},
 		num: 1785,
 		gen: 8,
 		isPokeball: true,
@@ -7581,6 +7643,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	timerball: {
 		name: "Timer Ball",
 		spritenum: 494,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Timer Ball');
+		},
 		num: 10,
 		gen: 3,
 		isPokeball: true,
@@ -9252,6 +9317,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	ultraball: {
 		name: "Ultra Ball",
 		spritenum: 521,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Ultra Ball');
+		},
 		num: 2,
 		gen: 1,
 		isPokeball: true,
