@@ -2323,7 +2323,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 234,
 	},
-
 	ironbarbs: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
@@ -7245,5 +7244,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Change Stance",
 		rating: 4,
 		num: -152,
+	},
+	prism: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (move.flags['light']) {
+				this.actions.useMove('prism', target);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Prism",
+		rating: 2.5,
+		num: -153,
 	},
 };

@@ -23791,4 +23791,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		contestType: "Tough",
 	},
+	prism: {
+		num: 0,
+		accuracy: true,
+		basePower: 100,
+		category: "Special",
+		name: "Prism",
+		pp: 1,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {
+			protect: 1,
+			failencore: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1,
+			failinstruct: 1, nosketch: 1, light: 1 },
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Fairy",
+		contestType: "Beautiful",
+	},
 };
