@@ -7319,6 +7319,33 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Climatologist",
 		rating: 4.5,
-		num: 189,
+		num: -156,
+	},
+	tangle: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (!this.checkMoveMakesContact(move, target, source)) {
+				target.addVolatile('trapped', source, this.dex.abilities.get('tangle'), 'trapper');
+			}
+		},
+		flags: { },
+		name: "Tangle",
+		rating: 2,
+		num: -157,
+	},
+	legflipper: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk) {
+			return this.chainModify(1.5);
+		},
+		onModifySpePriority: 5,
+		onModifySpe(spe) {
+			return this.chainModify(1.5);
+		},
+		flags: { },
+		name: "Leg Flipper",
+		rating: 5,
+		num: -158,
 	},
 };
