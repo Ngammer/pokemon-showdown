@@ -1013,7 +1013,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.field.setWeather('deltastream');
 		},
 		onAnySetWeather(target, source, weather) {
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'climatologist'];
 			if (this.field.getWeather().id === 'deltastream' && !strongWeathers.includes(weather.id)) return false;
 		},
 		onEnd(pokemon) {
@@ -1037,7 +1037,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.field.setWeather('desolateland');
 		},
 		onAnySetWeather(target, source, weather) {
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'climatologist'];
 			if (this.field.getWeather().id === 'desolateland' && !strongWeathers.includes(weather.id)) return false;
 		},
 		onEnd(pokemon) {
@@ -3114,7 +3114,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSwitchIn(pokemon) {
 			this.add('-ability', pokemon, 'Neutralizing Gas');
 			pokemon.abilityState.ending = false;
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'climatologist'];
 			for (const target of this.getAllActive()) {
 				if (target.hasItem('Ability Shield')) {
 					this.add('-block', target, 'item: Ability Shield');
@@ -3702,7 +3702,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.field.setWeather('primordialsea');
 		},
 		onAnySetWeather(target, source, weather) {
-			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream'];
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'climatologist'];
 			if (this.field.getWeather().id === 'primordialsea' && !strongWeathers.includes(weather.id)) return false;
 		},
 		onEnd(pokemon) {
@@ -7282,5 +7282,43 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Abduction",
 		rating: 4.5,
 		num: -155,
+	},
+	climatologist: {
+		onStart(source) {
+			if (source.hasType('Water')) {
+				this.field.setWeather('primordialsea');
+			} else if (source.hasType('Fire')) {
+				this.field.setWeather('desolateland');
+			} else if (source.hasType('Ice')) {
+				this.field.setWeather('climatologist');
+			}
+		},
+		onAnySetWeather(target, source, weather) {
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'climatologist'];
+			if ((this.field.getWeather().id === 'primordialsea' && !strongWeathers.includes(weather.id) &&
+				source.hasType('Water')) ||
+				(this.field.getWeather().id === 'desolateland' && !strongWeathers.includes(weather.id) &&
+					source.hasType('Fire')) ||
+					(this.field.getWeather().id === 'climatologist' && !strongWeathers.includes(weather.id)) &&
+					source.hasType('Ice')) return false;
+		},
+		onEnd(pokemon) {
+			if (this.field.weatherState.source !== pokemon) return;
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue;
+				if (target.hasAbility('primordialsea') && pokemon.hasType('Water')) {
+					this.field.weatherState.source = target;
+					return;
+				} else if (target.hasAbility('desolateland') && pokemon.hasType('Fire')) {
+					this.field.weatherState.source = target;
+					return;
+				}
+			}
+			this.field.clearWeather();
+		},
+		flags: { },
+		name: "Climatologist",
+		rating: 4.5,
+		num: 189,
 	},
 };
