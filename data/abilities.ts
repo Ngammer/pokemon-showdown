@@ -7348,4 +7348,147 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: -158,
 	},
+	filthy: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Poison') {
+				this.debug('Filthy boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Filthy",
+		rating: 2,
+		num: -159,
+	},
+	grounded: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Ground') {
+				this.debug('Grounded boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Grounded",
+		rating: 2,
+		num: -160,
+	},
+	cold: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				this.debug('Cold boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Cold",
+		rating: 2,
+		num: -161,
+	},
+	ferric: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Ferric boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Ferric",
+		rating: 2,
+		num: -162,
+	},
+	draconian: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Dragon') {
+				this.debug('Draconian boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Draconian",
+		rating: 2,
+		num: -163,
+	},
+	rocky: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Rock') {
+				this.debug('Rocky boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Rocky",
+		rating: 2,
+		num: -164,
+	},
+	plain: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Normal') {
+				this.debug('Plain boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Plain",
+		rating: 2,
+		num: -165,
+	},
+	breeze: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Flying') {
+				this.debug('Breeze boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Breeze",
+		rating: 2,
+		num: -166,
+	},
+	terrifying: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Ghost') {
+				this.debug('Terrifying boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Terrifying",
+		rating: 2,
+		num: -167,
+	},
+	feisty: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Feisty boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Feisty",
+		rating: 2,
+		num: -168,
+	},
+	magical: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Fairy') {
+				this.debug('Magical boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Magical",
+		rating: 2,
+		num: -168,
+	},
 };
