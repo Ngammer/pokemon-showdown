@@ -5897,7 +5897,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return false;
 		},
-		onModifyDef(spd) {
+		onModifySpD(spd) {
 			return this.chainModify(1.2);
 		},
 		flags: { breakable: 1 },
@@ -6351,7 +6351,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
-			if (!this.checkMoveMakesContact(move, target, source) && move.type === "Dark") {
+			if (move.type === "Dark") {
 				if (this.randomChance(5, 10)) {
 					target.trySetStatus('brn', source);
 				}
@@ -6869,7 +6869,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	rainbowfeather: {
 		onSourceDamagingHit(damage, target, source, move) {
-			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (move.type === 'Flying') {
 				if (this.randomChance(33, 100)) {
 					const r = this.random(100);
@@ -7489,6 +7488,261 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Magical",
 		rating: 2,
-		num: -168,
+		num: -169,
+	},
+	frozenbody: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(5, 10)) {
+					source.trySetStatus('frz', target);
+				}
+			}
+		},
+		flags: { },
+		name: "Frozen Body",
+		rating: 2,
+		num: -170,
+	},
+	mineralize: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Rock';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: { },
+		name: "Mineralize",
+		rating: 4,
+		num: -171,
+	},
+	statictouch: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.checkMoveMakesContact(move, target, source)) {
+				if (this.randomChance(2, 10)) {
+					target.trySetStatus('par', source);
+				}
+			}
+		},
+		flags: { },
+		name: "Static Touch",
+		rating: 2,
+		num: -172,
+	},
+	specialist: {
+		onModifyMove(move, pokemon, target) {
+			if (move.category !== "Status") {
+				if (pokemon.getStat('atk', false, false) > pokemon.getStat('spa', false, false) && move.category === "Special") {
+					move.overrideOffensiveStat = 'atk';
+				// eslint-disable-next-line @stylistic/max-len
+				} else if (pokemon.getStat('spa', false, false) > pokemon.getStat('atk', false, false) && move.category === "Physical") {
+					move.overrideOffensiveStat = 'spa';
+				}
+			}
+		},
+		flags: { },
+		name: "Specialist",
+		rating: 3,
+		num: -173,
+	},
+	stormpower: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				this.damage(target.baseMaxhp / 16, target, target);
+			}
+		},
+		flags: { },
+		name: "Storm Power",
+		rating: 2,
+		num: -174,
+	},
+	stress: {
+		onStart(pokemon) {
+			this.boost({ spa: 1 }, pokemon);
+			pokemon.addVolatile('confusion');
+		},
+		flags: { },
+		name: "Stress",
+		rating: 4,
+		num: -175,
+	},
+	strongwings: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['wing']) {
+				this.debug('Strong Wings boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Strong Wings",
+		rating: 3.5,
+		num: -176,
+	},
+	repelling: {
+		onDamagingHit(damage, target, source, effect) {
+			this.boost({ spd: 1 });
+		},
+		flags: { },
+		name: "Repelling",
+		rating: 4,
+		num: -177,
+	},
+	creep: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('Creep boost');
+				return this.chainModify([2731, 4096]);
+			}
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (pokemon.hasType(move.type)) {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: { },
+		name: "Creep",
+		rating: 1,
+		num: -178,
+	},
+	shining: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['light']) {
+				this.debug('Shining boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Shining",
+		rating: 3.5,
+		num: -179,
+	},
+	scary: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Scary', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ spe: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: { },
+		name: "Scary",
+		rating: 3.5,
+		num: -180,
+	},
+	steelized: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Steel';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: { },
+		name: "Steelized",
+		rating: 4,
+		num: -181,
+	},
+	percussion: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (move.flags['sound']) {
+				const r = this.random(100);
+				if (r < 34) {
+					this.boost({ def: -1 }, target, source, null, true, false);
+				} else {
+					this.boost({ spd: -1 }, target, source, null, true, false);
+				}
+			}
+		},
+		flags: { },
+		name: "Percussion",
+		rating: 1.5,
+		num: -182,
+	},
+	rainbowfield: {
+		onStart(source) {
+			source.side.addSideCondition('rainbowfield');
+		},
+		flags: { },
+		name: "Rainbow Field",
+		rating: 4,
+		num: -183,
+		condition: {
+			duration: 4,
+			onSideStart(targetSide) {
+				this.add('-sidestart', targetSide, 'Rainbow Field');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 7,
+			onSideEnd(targetSide) {
+				this.add('-sideend', targetSide, 'Rainbow Field');
+			},
+			onModifyMove(move, pokemon) {
+				if (move.secondaries && move.id !== 'secretpower') {
+					this.debug('doubling secondary chance');
+					for (const secondary of move.secondaries) {
+						if (pokemon.hasAbility('serenegrace') && secondary.volatileStatus === 'flinch') continue;
+						if (secondary.chance) secondary.chance *= 2;
+					}
+					if (move.self?.chance) move.self.chance *= 2;
+				}
+			},
+		},
+	},
+	photocollision: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Photocollision');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					target.addVolatile('confusion', pokemon, this.dex.abilities.get('photocollision'));
+				}
+			}
+		},
+		flags: { },
+		name: "Photocollision",
+		rating: 3.5,
+		num: -184,
 	},
 };
