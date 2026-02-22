@@ -7920,4 +7920,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -191,
 	},
+	reflectiveskin: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (move.category === 'Special') {
+				this.damage(source.baseMaxhp / 10, source, target);
+			}
+		},
+		flags: { },
+		name: "Reflective Skin",
+		rating: 2.5,
+		num: 24,
+	},
 };
