@@ -7902,7 +7902,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Shield Heart",
 		rating: 3.5,
-		num: -184,
+		num: -190,
 	},
-
+	cheerleader: {
+		onStart(pokemon) {
+			this.effectState.source = pokemon;
+			this.add('-ability', pokemon, 'Cheerleader');
+		},
+		onAllyModifyPriority(priority, pokemon, target, move) {
+			if (this.effectState.source.activeMoveActions > 1 && pokemon !== this.effectState.source) {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: { },
+		name: "Cheerleader",
+		rating: 4,
+		num: -191,
+	},
 };
