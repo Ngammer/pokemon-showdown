@@ -740,6 +740,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
 				if (effect.name === 'Cute Charm') {
 					this.add('-start', pokemon, 'Attract', '[from] ability: Cute Charm', `[of] ${source}`);
+				} else if (effect.name === 'Shield Heart') {
+					this.add('-start', pokemon, 'Attract', '[from] ability: Shield Heart', `[of] ${source}`);
 				} else if (effect.name === 'Destiny Knot') {
 					this.add('-start', pokemon, 'Attract', '[from] item: Destiny Knot', `[of] ${source}`);
 				} else {

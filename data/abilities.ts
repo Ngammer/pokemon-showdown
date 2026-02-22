@@ -7745,4 +7745,164 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -184,
 	},
+	drunk: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.target === 'normal' || move.target === 'any') {
+				this.debug('Drunk boost');
+				return this.chainModify(1.25);
+			}
+		},
+		onModifyMove(move, pokemon, target) {
+			if (move.target === 'normal' || move.target === 'any' || move.target === 'adjacentFoe') {
+				move.target = 'randomNormal';
+			}
+		},
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'confusion') {
+				let stats: BoostID[] = [];
+				const boost: SparseBoostsTable = {};
+				let statPlus: BoostID;
+				for (statPlus in pokemon.boosts) {
+					if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
+					if (pokemon.boosts[statPlus] < 6) {
+						stats.push(statPlus);
+					}
+				}
+				const randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
+				if (randomStat) boost[randomStat] = 1;
+				stats = [];
+
+				this.boost(boost, pokemon, pokemon);
+				return null;
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Drunk",
+		rating: 3.5,
+		num: -185,
+	},
+	groundpower: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (['sandstorm'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'sandstorm') {
+				this.damage(target.baseMaxhp / 16, target, target);
+			}
+		},
+		flags: { },
+		name: "Ground Power",
+		rating: 2,
+		num: -186,
+	},
+	dragonfruit: {
+		onDamagingHit(damage, target, source, effect) {
+			if (target.hp > ((target.baseMaxhp / 4) * 3)) {
+				let stats: BoostID[] = [];
+				const boost: SparseBoostsTable = {};
+				let statPlus: BoostID;
+				for (statPlus in target.boosts) {
+					if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
+					if (target.boosts[statPlus] < 6) {
+						stats.push(statPlus);
+					}
+				}
+				const randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
+				if (randomStat) boost[randomStat] = 1;
+				stats = [];
+				this.boost(boost, target, target);
+			} else {
+				this.heal(target.baseMaxhp / 4);
+			}
+			if (source.hp > ((source.baseMaxhp / 4) * 3)) {
+				let stats2: BoostID[] = [];
+				const boost2: SparseBoostsTable = {};
+				let statPlus2: BoostID;
+				for (statPlus2 in source.boosts) {
+					if (statPlus2 === 'accuracy' || statPlus2 === 'evasion') continue;
+					if (source.boosts[statPlus2] < 6) {
+						stats2.push(statPlus2);
+					}
+				}
+				const randomStat: BoostID | undefined = stats2.length ? this.sample(stats2) : undefined;
+				if (randomStat) boost2[randomStat] = 1;
+				stats2 = [];
+				this.boost(boost2, source, target);
+			} else {
+				this.heal(source.baseMaxhp / 4);
+			}
+		},
+		flags: { },
+		name: "Dragon Fruit",
+		rating: 4,
+		num: -187,
+	},
+	heating: {
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Heating');
+		},
+		onAnyModifyDamage(relayVar, source, target, move) {
+			if (move.type === 'Fire') {
+				this.debug('Heating boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Water' || move.type === 'Ice') {
+				this.debug('Heating suppress');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: { },
+		name: "Heating",
+		rating: 3,
+		num: -188,
+	},
+	armorpiercing: {
+		onModifyMove(move) {
+			move.infiltrates = true;
+			move.ignoreDefensive = true;
+		},
+		onSourceTryHit(source, target) {
+			// will shatter screens through sub, before you hit
+			target.side.removeSideCondition('reflect');
+			target.side.removeSideCondition('lightscreen');
+			target.side.removeSideCondition('auroraveil');
+			target.removeVolatile('substitute');
+		},
+		flags: { },
+		name: "Armor Piercing",
+		rating: 2.5,
+		num: -189,
+	},
+	shieldheart: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Shield Heart');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					target.addVolatile('attract', pokemon, this.dex.abilities.get('shieldheart'));
+				}
+			}
+		},
+		onAllyModifyDamage(damage, source, target, move) {
+			if (target.volatiles['attract']) {
+				this.debug('Shield Heart boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Shield Heart",
+		rating: 3.5,
+		num: -184,
+	},
+
 };
