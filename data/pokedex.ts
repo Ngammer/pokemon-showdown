@@ -22123,6 +22123,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 10,
 		color: "Pink",
 		prevo: "Corsola",
+		// falta evo
 		eggGroups: ["Water 1", "Water 3"],
 	},
 	octank: {
