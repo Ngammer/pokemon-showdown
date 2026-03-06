@@ -2559,7 +2559,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Marowak-Alola",
 		forme: "Alola-Totem",
 		types: ["Fire", "Ghost"],
-		baseStats: { hp: 101, atk: 190, def: 105, spa: 30, spd: 80, spe: 15 },
+		baseStats: { hp: 100, atk: 190, def: 105, spa: 30, spd: 80, spe: 15 },
 		abilities: { 0: "Gigantification" },
 		heightm: 1.7,
 		weightkg: 98,
@@ -19777,7 +19777,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Dudunsparce",
 		forme: "Hoenn",
 		types: ["Normal", "Fire"],
-		baseStats: { hp: 80, atk: 148, def: 90, spa: 67, spd: 80, spe: 50 },
+		baseStats: { hp: 80, atk: 150, def: 90, spa: 70, spd: 80, spe: 50 },
 		abilities: { 0: "Serene Grace", 1: "Magma Armor", H: "Adaptability" },
 		heightm: 3.6, // cambiar
 		weightkg: 39.2, // cambiar
@@ -22072,7 +22072,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Wungsparce",
 		forme: "Hoenn",
 		types: ["Normal", "Water"],
-		baseStats: { hp: 70, atk: 67, def: 70, spa: 148, spd: 60, spe: 100 },
+		baseStats: { hp: 70, atk: 70, def: 70, spa: 150, spd: 60, spe: 100 },
 		abilities: { 0: "Serene Grace", 1: "Water Veil", H: "Adaptability" },
 		heightm: 2.9, // cambiar
 		weightkg: 30, // cambiar
