@@ -9468,7 +9468,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Johto-Ash",
 		types: ["Ground", "Fire"],
 		gender: "N",
-		baseStats: { hp: 80, atk: 125, def: 80, spa: 40, spd: 85, spe: 100 },
+		baseStats: { hp: 80, atk: 125, def: 80, spa: 40, spd: 85, spe: 110 },
 		abilities: { 0: "Sand Veil" },
 		heightm: 0.3, // cambiar
 		weightkg: 0.3, // cambiar
@@ -17189,7 +17189,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Toxtricity",
 		forme: "Johto",
 		types: ["Rock", "Poison"],
-		baseStats: { hp: 90, atk: 65, def: 70, spa: 114, spd: 70, spe: 75 },
+		baseStats: { hp: 90, atk: 65, def: 70, spa: 105, spd: 75, spe: 90 },
 		abilities: { 0: "Percussion", 1: "Own Tempo", H: "Adaptability" },
 		heightm: 1.6, // cambiar
 		weightkg: 40, // cambiar
@@ -17204,7 +17204,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Toxtricity",
 		forme: "Johto-Big-Drum",
 		types: ["Rock", "Poison"],
-		baseStats: { hp: 90, atk: 35, def: 100, spa: 135, spd: 105, spe: 40 },
+		baseStats: { hp: 90, atk: 35, def: 95, spa: 135, spd: 100, spe: 40 },
 		abilities: { 0: "Percussion", 1: "Own Tempo", H: "Mineralize" },
 		heightm: 1.6, // cambiar
 		weightkg: 40, // cambiar
