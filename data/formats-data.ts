@@ -1753,10 +1753,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	treecko: {
-		tier: "OU",
+		tier: "LC",
 	},
 	grovyle: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	sceptile: {
 		tier: "OU",
@@ -1769,10 +1769,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	torchic: {
-		tier: "OU",
+		tier: "LC",
 	},
 	combusken: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	blaziken: {
 		tier: "OU",
@@ -1785,10 +1785,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	mudkip: {
-		tier: "OU",
+		tier: "LC",
 	},
 	marshtomp: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	swampert: {
 		tier: "OU",
@@ -1801,7 +1801,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	poochyena: {
-		tier: "OU",
+		tier: "LC",
 	},
 	mightyena: {
 		tier: "OU",
@@ -1810,23 +1810,27 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	zigzagoon: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "NFE",
 	},
 	zigzagoongalar: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	linoone: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "OU",
 	},
 	linoonegalar: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
+	},
+	scalgoon: {
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	obstagoon: {
 
@@ -1835,12 +1839,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	wurmple: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	silcoon: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	beautifly: {
@@ -1850,7 +1854,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	cascoon: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	dustox: {
@@ -1859,10 +1863,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	lotad: {
-		tier: "OU",
+		tier: "LC",
 	},
 	lombre: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	ludicolo: {
 		tier: "OU",
@@ -1870,10 +1874,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	seedot: {
-		tier: "OU",
+		tier: "LC",
 	},
 	nuzleaf: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	shiftry: {
 		tier: "OU",
@@ -1882,7 +1886,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	taillow: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	swellow: {
@@ -1891,7 +1895,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	wingull: {
-		tier: "OU",
+		tier: "LC",
 	},
 	pelipper: {
 		tier: "OU",
@@ -1899,10 +1903,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	ralts: {
-		tier: "OU",
+		tier: "LC",
 	},
 	kirlia: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	gardevoir: {
 		tier: "OU",
@@ -1925,7 +1929,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	surskit: {
-		tier: "OU",
+		tier: "LC",
 	},
 	masquerain: {
 		tier: "OU",
@@ -1933,7 +1937,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	shroomish: {
-		tier: "OU",
+		tier: "LC",
 	},
 	breloom: {
 		tier: "OU",
@@ -1941,10 +1945,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	slakoth: {
-		tier: "OU",
+		tier: "LC",
 	},
 	vigoroth: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	slaking: {
 		tier: "OU",
@@ -1953,7 +1957,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	nincada: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	ninjask: {
@@ -1968,12 +1972,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	whismur: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	loudred: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	exploud: {
@@ -1982,7 +1986,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	makuhita: {
-		tier: "OU",
+		tier: "LC",
 	},
 	hariyama: {
 		tier: "OU",
@@ -1990,7 +1994,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	nosepass: {
-		tier: "OU",
+		tier: "LC",
 	},
 	probopass: {
 		tier: "OU",
@@ -1999,10 +2003,15 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	skitty: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	delcatty: {
+
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	cattmory: {
 
 		tier: "OU",
 		natDexTier: "OU",
@@ -2029,12 +2038,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	aron: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	lairon: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	aggron: {
@@ -2048,7 +2057,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	meditite: {
-		tier: "OU",
+		tier: "LC",
 	},
 	medicham: {
 		tier: "OU",
@@ -2062,7 +2071,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	electrike: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	manectric: {
@@ -2076,11 +2085,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	plusle: {
+		tier: "LC",
+		doublesTier: "(DUU)",
+		natDexTier: "OU",
+	},
+	plucheer: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
-	minun: {
+	cheermin: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
@@ -2097,12 +2111,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	budew: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	roselia: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	roserade: {
@@ -2111,7 +2125,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	gulpin: {
-		tier: "OU",
+		tier: "LC",
 	},
 	swalot: {
 		tier: "OU",
@@ -2120,7 +2134,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	carvanha: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	sharpedo: {
@@ -2135,7 +2149,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	wailmer: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	wailord: {
@@ -2144,7 +2158,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	numel: {
-		tier: "OU",
+		tier: "LC",
 	},
 	camerupt: {
 		tier: "OU",
@@ -2162,7 +2176,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	spoink: {
-		tier: "OU",
+		tier: "LC",
 	},
 	grumpig: {
 		tier: "OU",
@@ -2171,14 +2185,18 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	spinda: {
 
+		tier: "LC",
+		natDexTier: "OU",
+	},
+	unkbear: {
 		tier: "OU",
 		natDexTier: "OU",
 	},
 	trapinch: {
-		tier: "OU",
+		tier: "LC",
 	},
 	vibrava: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	flygon: {
 		tier: "OU",
@@ -2186,7 +2204,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	cacnea: {
-		tier: "OU",
+		tier: "LC",
 	},
 	cacturne: {
 		tier: "OU",
@@ -2194,7 +2212,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	swablu: {
-		tier: "OU",
+		tier: "LC",
 	},
 	altaria: {
 		tier: "OU",
@@ -2227,7 +2245,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	barboach: {
-		tier: "OU",
+		tier: "LC",
 	},
 	whiscash: {
 		tier: "OU",
@@ -2235,7 +2253,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	corphish: {
-		tier: "OU",
+		tier: "LC",
 	},
 	crawdaunt: {
 		tier: "OU",
@@ -2244,7 +2262,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	baltoy: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	claydol: {
@@ -2254,7 +2272,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	lileep: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	cradily: {
@@ -2264,7 +2282,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	anorith: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	armaldo: {
@@ -2273,7 +2291,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	feebas: {
-		tier: "OU",
+		tier: "LC",
 	},
 	milotic: {
 		tier: "OU",
@@ -2300,7 +2318,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	shuppet: {
-		tier: "OU",
+		tier: "LC",
 	},
 	banette: {
 		tier: "OU",
@@ -2313,10 +2331,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	duskull: {
-		tier: "OU",
+		tier: "LC",
 	},
 	dusclops: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	dusknoir: {
 		tier: "OU",
@@ -2329,7 +2347,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	chingling: {
-		tier: "OU",
+		tier: "LC",
 	},
 	chimecho: {
 		tier: "OU",
@@ -2355,7 +2373,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 	},
 	snorunt: {
-		tier: "OU",
+		tier: "LC",
 	},
 	glalie: {
 		tier: "OU",
@@ -2378,12 +2396,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	spheal: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	sealeo: {
 
-		tier: "OU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	walrein: {
@@ -2393,7 +2411,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	clamperl: {
 
-		tier: "OU",
+		tier: "LC",
 		natDexTier: "NFE",
 	},
 	huntail: {
@@ -2417,10 +2435,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	bagon: {
-		tier: "OU",
+		tier: "LC",
 	},
 	shelgon: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	salamence: {
 		tier: "OU",
@@ -2433,10 +2451,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "OU",
 	},
 	beldum: {
-		tier: "OU",
+		tier: "LC",
 	},
 	metang: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	metagross: {
 		tier: "OU",
