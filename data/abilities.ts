@@ -6254,7 +6254,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -106,
 	},
-	screensetter: {
+	screensetter: { // Falta adaptar
 		// aplicado en moves.ts
 		name: "Screen Setter",
 		rating: 3.5,
@@ -6303,7 +6303,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		onStart(pokemon) {
+		onStart(pokemon) { // Falta adaptar
 			const removeAll = ['stealthrock'];
 			const sides = [pokemon.side, ...pokemon.side.foeSidesWithConditions()];
 			for (const side of sides) {
