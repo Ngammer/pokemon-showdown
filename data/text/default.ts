@@ -319,6 +319,13 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 		activate: "  The mysterious strong winds weakened the attack!",
 		block: "  The mysterious strong winds blow on regardless!",
 	},
+	climatologist: {
+		weatherName: "Whiteout",
+		start: "  Mysterious strong winds are protecting Ice-type Pok\u00E9mon!",
+		end: "  The mysterious strong winds have dissipated!",
+		activate: "  The mysterious strong winds weakened the attack!",
+		block: "  The mysterious strong winds blow on regardless!",
+	},
 
 	// terrain
 	electricterrain: {

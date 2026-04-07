@@ -740,6 +740,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
 				if (effect.name === 'Cute Charm') {
 					this.add('-start', pokemon, 'Attract', '[from] ability: Cute Charm', `[of] ${source}`);
+				} else if (effect.name === 'Shield Heart') {
+					this.add('-start', pokemon, 'Attract', '[from] ability: Shield Heart', `[of] ${source}`);
 				} else if (effect.name === 'Destiny Knot') {
 					this.add('-start', pokemon, 'Attract', '[from] item: Destiny Knot', `[of] ${source}`);
 				} else {
@@ -8200,7 +8202,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 100,
 			self: {
 				boosts: {
-					atk: +1,
+					atk: 1,
 				},
 			},
 		},
@@ -13523,13 +13525,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	nihillight: {
 		num: 920,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 200,
 		category: "Special",
-		isNonstandard: "Future",
 		name: "Nihil Light",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, light: 1, beam: 1 },
+		flags: { protect: 1, mirror: 1, light: 1, beam: 1, nosketch: 1 },
 		ignoreEvasion: true,
 		ignoreDefensive: true,
 		ignoreImmunity: { 'Fairy': true },
@@ -14686,7 +14687,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Power Trick",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, snatch: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		overrideOffensivePokemon: 'target',
 		secondary: null,
 		target: "normal",
@@ -21197,7 +21198,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (type === 'Electric') return -1;
 				if (type === 'Grass') return -1;
 				if (type === 'Dragon') return -1;
-				if (type === 'Ground') return -3;
+				if (type === 'Ground') return 3;
 			}
 			if (move.hit === 3) {
 				if (type === 'Dragon') return 1;
@@ -22723,7 +22724,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	// Nuevo meta moves
 
 	beakdrill: {
-		num: 0,
+		num: -101,
 		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
@@ -22738,7 +22739,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	nineflames: {
-		num: 0,
+		num: -102,
 		accuracy: 100,
 		basePower: 10,
 		category: "Special",
@@ -22756,7 +22757,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		maxMove: { basePower: 130 },
 	},
 	nineshard: {
-		num: 0,
+		num: -103,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -22786,7 +22787,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 	},
 	parasiticclamp: {
-		num: 0,
+		num: -104,
 		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
@@ -22809,7 +22810,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 	},
 	monolith: {
-		num: 0,
+		num: -105,
 		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
@@ -22826,7 +22827,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	galvanizedrock: {
-		num: 0,
+		num: -106,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -22843,7 +22844,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	tripeck: {
-		num: 0,
+		num: -107,
 		accuracy: 95,
 		basePower: 45,
 		category: "Physical",
@@ -22861,7 +22862,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	bubblefang: {
-		num: 0,
+		num: -108,
 		accuracy: 95,
 		basePower: 70,
 		category: "Physical",
@@ -22885,7 +22886,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	dragonbite: {
-		num: 0,
+		num: -109,
 		accuracy: 95,
 		basePower: 85,
 		category: "Physical",
@@ -22909,7 +22910,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	stickybomb: {
-		num: 0,
+		num: -110,
 		accuracy: 95,
 		basePower: 65,
 		category: "Physical",
@@ -22936,7 +22937,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 	},
 	bubbleancientrite: {
-		num: 0,
+		num: -111,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -22960,7 +22961,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	lazyancientrite: {
-		num: 0,
+		num: -112,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -22995,7 +22996,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	mistycalancientrite: {
-		num: 0,
+		num: -113,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23015,7 +23016,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	braveancientrite: {
-		num: 0,
+		num: -114,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23040,7 +23041,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	spikyancientrite: {
-		num: 0,
+		num: -115,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23064,7 +23065,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	honeyancientrite: {
-		num: 0,
+		num: -116,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23084,7 +23085,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	acrobaticancientrite: {
-		num: 0,
+		num: -117,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23101,7 +23102,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	delusionancientrite: {
-		num: 0,
+		num: -118,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23147,7 +23148,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	meditationancientrite: {
-		num: 0,
+		num: -119,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23167,7 +23168,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	transcendentalancientrite: {
-		num: 0,
+		num: -120,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23209,7 +23210,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	hiddenblock: {
-		num: 0,
+		num: -121,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23267,7 +23268,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	cyclonesphere: {
-		num: 0,
+		num: -122,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -23286,7 +23287,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	antclay: {
-		num: 0,
+		num: -123,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
@@ -23305,7 +23306,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	discreettangle: {
-		num: 0,
+		num: -124,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -23329,7 +23330,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 	},
 	hiddenincrease: {
-		num: 0,
+		num: -125,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23357,7 +23358,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	hiddenreintegration: {
-		num: 0,
+		num: -126,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23405,7 +23406,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	refinedinkbomb: {
-		num: 0,
+		num: -127,
 		accuracy: 85,
 		basePower: 40,
 		category: "Special",
@@ -23428,7 +23429,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 	},
 	heroicpunch: {
-		num: 0,
+		num: -128,
 		accuracy: 95,
 		basePower: 90,
 		category: "Physical",
@@ -23446,7 +23447,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 	},
 	sharproot: {
-		num: 0,
+		num: -129,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23473,7 +23474,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	cottonball: {
-		num: 0,
+		num: -130,
 		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
@@ -23490,7 +23491,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	heavycollision: {
-		num: 0,
+		num: -131,
 		accuracy: 90,
 		basePower: 60,
 		category: "Physical",
@@ -23503,8 +23504,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Steel",
 		contestType: "Tough",
 	},
-	/* regicode: {
-		num: 604,
+	regicode: {
+		num: -132,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -23533,6 +23534,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag &&
 					move.type === 'Dragon' && source.isGrounded() && !source.isSemiInvulnerable()) {
 					this.damage(source.baseMaxhp / 5, source, source);
+				}
+			},
+			onEffectiveness(typeMod, target, type, move) {
+				if (move.type === 'Normal') {
+					move.ignoreImmunity = true;
+					return 0;
 				}
 			},
 			onHit(target, source, move) {
@@ -23584,4 +23591,224 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
 	},
-*/ };
+	leafdance: {
+		num: -133,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Leaf Dance",
+		pp: 10,
+		priority: 0,
+		flags: { snatch: 1, dance: 1, metronome: 1 },
+		boosts: {
+			spa: 1,
+			def: 1,
+			spe: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Grass",
+	},
+	sheddingclaws: {
+		num: -134,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Shedding Claws",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1 },
+		multihit: 2,
+		smartTarget: true,
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		maxMove: { basePower: 130 },
+	},
+	gigatonspikedmace: {
+		num: -135,
+		accuracy: 70,
+		basePower: 140,
+		category: "Physical",
+		name: "Gigaton Spikedmace",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1 },
+		onAfterHit(target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('spikes');
+					side.addSideCondition('spikes');
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('spikes');
+					side.addSideCondition('spikes');
+				}
+			}
+		},
+		secondary: {}, // Sheer Force-boosted
+		target: "normal",
+		type: "Ground",
+	},
+	archaicnoise: {
+		num: -136,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Archaic Noise",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		contestType: "Beautiful",
+	},
+	cuttingivy: {
+		num: -137,
+		accuracy: 95,
+		basePower: 100,
+		category: "Physical",
+		name: "Cutting Ivy",
+		pp: 5,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Cool",
+	},
+	piercingivy: {
+		num: -137,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Piercing Ivy",
+		pp: 5,
+		priority: 1,
+		flags: { contact: 1, failcopycat: 1, failmimic: 1, failinstruct: 1, nosketch: 1, protect: 1, mirror: 1, piercing: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Cool",
+	},
+	darknessgem: {
+		num: -138,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Darkness Gem",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, darkness: 1 },
+		secondary: {
+			chance: 100,
+			volatileStatus: 'darknessgem',
+		},
+		target: "normal",
+		type: "Rock",
+		contestType: "Cool",
+		volatileStatus: 'darknessgem',
+		condition: {
+			duration: 2,
+			durationCallback(source, effect) {
+				if (source?.hasItem('blackglasses')) {
+					return 3;
+				}
+				return 2;
+			},
+			onStart(target, source, sourceEffect) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration!++;
+					this.effectState.duration!++;
+				}
+				if (sourceEffect?.effectType === 'Ability') {
+					this.add('-start', target, 'Darkness Gem', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
+				} else {
+					this.add('-start', target, 'Darkness Gem');
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'Darkness Gem');
+			},
+			onModifyMove(move, pokemon, target) {
+				if (move.target === 'normal' || move.target === 'any' || move.target === 'adjacentFoe') {
+					move.target = 'randomNormal';
+				}
+			},
+		},
+	},
+	evaporationpulse: {
+		num: -139,
+		accuracy: 95,
+		basePower: 90,
+		category: "Special",
+		name: "Evaporation Pulse",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1 },
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "any",
+		type: "Fire",
+		contestType: "Beautiful",
+	},
+	astralcollision: {
+		num: -140,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Astral Collision",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, light: 1, cosmic: 1 },
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	gemcrash: {
+		num: -141,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Gem Crash",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		recoil: [1, 3],
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		contestType: "Tough",
+	},
+	prism: {
+		num: 0,
+		accuracy: true,
+		basePower: 100,
+		category: "Special",
+		name: "Prism",
+		pp: 1,
+		noPPBoosts: true,
+		priority: 0,
+		flags: {
+			protect: 1,
+			failencore: 1, failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1,
+			failinstruct: 1, nosketch: 1, light: 1 },
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Fairy",
+		contestType: "Beautiful",
+	},
+};

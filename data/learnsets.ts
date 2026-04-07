@@ -8363,6 +8363,7 @@ bellossom: {
 			hyperbeam: ["9M"],
 			infestation: ["9M"],
 			leafblade: ["9M"],
+			leafdance: ["9M"],
 			leafstorm: ["9M"],
 			megadrain: ["9M"],
 			metronome: ["9M"], //Añadido
@@ -53727,6 +53728,7 @@ sylveon: {
 			hurricane: ["9M"],
 			hyperbeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			leafblade: ["9E", "9E", "9E", "9E", "9E"],
+			leafdance: ["9M"],
 			leafstorm: ["9M", "9L1", "9L1", "9E", "9L1", "9E", "9L71", "9E", "9L61", "9E"],
 			leaftornado: ["9L26", "9L26", "9L47"],
 			leechseed: ["9E", "9E", "9E", "9E", "5D", "9E", "9E"],

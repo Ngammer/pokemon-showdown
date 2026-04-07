@@ -466,6 +466,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	beastball: {
 		name: "Beast Ball",
 		spritenum: 661,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Beast Ball');
+		},
 		num: 851,
 		gen: 7,
 		isPokeball: true,
@@ -670,15 +673,62 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 41,
 		onSwitchInPriority: -1,
 		onSwitchIn(pokemon) {
-			if (pokemon.isActive && pokemon.baseSpecies.name === 'Kyogre' && !pokemon.transformed) {
-				pokemon.formeChange('Kyogre-Primal', this.effect, true);
+			if (pokemon.baseSpecies.name === 'Cradily' && !pokemon.transformed) {
+				this.effectState.wTimer = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Regice' && !pokemon.transformed) {
+				this.effectState.rCounter = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Kyogre' && !pokemon.transformed) {
+				this.effectState.cTimer = 2;
+			} else if (!pokemon.transformed) {
+				this.effectState.cTimer = 3;
+			}
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((source.isActive && source.baseSpecies.name === 'Kyogre' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.id === 'originpulse') {
+				source.formeChange('Kyogre-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Luvdisc' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.type === 'Fairy') {
+				source.formeChange('Luvdisc-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Rainy') &&
+				move.id === 'weatherball') {
+				source.formeChange('Castform-Rainy-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Regice' && !source.transformed) &&
+				this.field.isTerrain('regicode') && (move.type === 'Ice' || move.type === 'Rock' ||
+					move.type === 'Steel' || move.type === 'Electric' || move.type === 'Dragon' || move.type === 'Normal') &&
+					move.id !== 'regicode') {
+				this.effectState.rCounter += 1; // TODO: no permitir repetidos
+				if (this.effectState.rCounter >= 2) {
+					source.formeChange('Regice-Primal', this.effect, true);
+				}
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
+				pokemon.baseSpecies.name === 'Cradily') {
+				this.effectState.wTimer += 1;
+			}
+			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Cradily' && !pokemon.transformed) &&
+				this.effectState.wTimer >= 3) {
+				pokemon.formeChange('Cradily-Primal', this.effect, true);
+			}
+			if (pokemon.activeTurns && !pokemon.transformed) {
+				this.effectState.cTimer -= 1;
+			}
+			if (!pokemon.transformed && this.effectState.cTimer <= 0) {
+				this.damage(pokemon.baseMaxhp / 5, pokemon, pokemon, this.dex.items.get('blueorb'));
+				this.effectState.cTimer = 3;
 			}
 		},
 		onTakeItem(item, source) {
-			if (source.baseSpecies.baseSpecies === 'Kyogre') return false;
-			return true;
+			return false;
 		},
-		itemUser: ["Kyogre"],
+		itemUser: ["Kyogre", "Regice", "Castform", "Cradily", "Luvdisc"],
 		isPrimalOrb: true,
 		num: 535,
 		gen: 6,
@@ -976,6 +1026,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	cherishball: {
 		name: "Cherish Ball",
 		spritenum: 64,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Cherish Ball');
+		},
 		num: 16,
 		gen: 4,
 		isPokeball: true,
@@ -1616,6 +1669,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	diveball: {
 		name: "Dive Ball",
 		spritenum: 101,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Dive Ball');
+		},
 		num: 7,
 		gen: 3,
 		isPokeball: true,
@@ -1833,6 +1889,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Dream Ball",
 		spritenum: 111,
 		onStart(pokemon) {
+			this.add('-item', pokemon, 'Dream Ball');
 			pokemon.addVolatile('dreamball');
 		},
 		condition: {},
@@ -1895,6 +1952,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	duskball: {
 		name: "Dusk Ball",
 		spritenum: 115,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Dusk Ball');
+		},
 		num: 13,
 		gen: 4,
 		isPokeball: true,
@@ -2310,6 +2370,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	fastball: {
 		name: "Fast Ball",
 		spritenum: 137,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Fast Ball');
+		},
 		num: 492,
 		gen: 2,
 		isPokeball: true,
@@ -2732,6 +2795,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	friendball: {
 		name: "Friend Ball",
 		spritenum: 153,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Friend Ball');
+		},
 		num: 497,
 		gen: 2,
 		isPokeball: true,
@@ -3103,6 +3169,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onStart(pokemon) {
 			if (pokemon.hasAbility('effectspore')) {
 				pokemon.addVolatile(`greatball`);
+				this.add('-item', pokemon, 'Great Ball');
 			}
 		},
 		condition: {
@@ -3317,6 +3384,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 188,
 		onStart(pokemon) {
 			pokemon.addVolatile('healball');
+			this.add('-item', pokemon, 'Heal Ball');
 		},
 		condition: {
 			onBasePower(basepower) {
@@ -3374,6 +3442,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	heavyball: {
 		name: "Heavy Ball",
 		spritenum: 194,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Heavy Ball');
+		},
 		num: 495,
 		gen: 2,
 		isPokeball: true,
@@ -4000,6 +4071,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	levelball: {
 		name: "Level Ball",
 		spritenum: 246,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Level Ball');
+		},
 		num: 493,
 		gen: 2,
 		isPokeball: true,
@@ -4111,6 +4185,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	loveball: {
 		name: "Love Ball",
 		spritenum: 258,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Love Ball');
+		},
 		num: 496,
 		gen: 2,
 		isPokeball: true,
@@ -4240,6 +4317,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 264,
 		onStart(pokemon) {
 			pokemon.addVolatile('lureball');
+			this.add('-item', pokemon, 'Lure Ball');
 		},
 		condition: {},
 		num: 494,
@@ -4285,6 +4363,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	luxuryball: {
 		name: "Luxury Ball",
 		spritenum: 266,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Luxury Ball');
+		},
 		num: 11,
 		gen: 3,
 		isPokeball: true,
@@ -4506,6 +4587,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	masterball: {
 		name: "Master Ball",
 		spritenum: 276,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Master Ball');
+		},
 		num: 1,
 		gen: 1,
 		isPokeball: true,
@@ -4967,6 +5051,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 294,
 		onStart(pokemon) {
 			pokemon.addVolatile('moonball');
+			this.add('-item', pokemon, 'Moon Ball');
 		},
 		num: 498,
 		gen: 2,
@@ -5059,6 +5144,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 303,
 		onStart(pokemon) {
 			pokemon.addVolatile('nestball');
+			this.add('-item', pokemon, 'Nest Ball');
 		},
 		condition: {},
 		num: 8,
@@ -5068,6 +5154,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	netball: {
 		name: "Net Ball",
 		spritenum: 304,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Net Ball');
+		},
 		num: 6,
 		gen: 3,
 		isPokeball: true,
@@ -5251,6 +5340,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	parkball: {
 		name: "Park Ball",
 		spritenum: 325,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Park Ball');
+		},
 		num: 500,
 		gen: 4,
 		isPokeball: true,
@@ -5544,6 +5636,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	pokeball: {
 		name: "Poke Ball",
 		spritenum: 345,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Poke Ball');
+		},
 		num: 4,
 		gen: 1,
 		isPokeball: true,
@@ -5687,6 +5782,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 363,
 		onStart(pokemon) {
 			pokemon.addVolatile('premierball');
+			this.add('-item', pokemon, 'Premier Ball');
 		},
 		condition: {},
 		num: 12,
@@ -5913,6 +6009,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	quickball: {
 		name: "Quick Ball",
 		spritenum: 372,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Quick Ball');
+		},
 		num: 15,
 		gen: 4,
 		isPokeball: true,
@@ -6123,23 +6222,72 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 390,
 		onSwitchInPriority: -1,
 		onSwitchIn(pokemon) {
-			if (pokemon.isActive && pokemon.baseSpecies.name === 'Groudon' && !pokemon.transformed) {
-				pokemon.formeChange('Groudon-Primal', this.effect, true);
+			if (pokemon.baseSpecies.name === 'Armaldo' && !pokemon.transformed) {
+				this.effectState.wTimer = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Regirock' && !pokemon.transformed) {
+				this.effectState.rCounter = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Groudon' && !pokemon.transformed) {
+				this.effectState.cTimer = 2;
+			} else if (!pokemon.transformed) {
+				this.effectState.cTimer = 3;
+			}
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((source.isActive && source.baseSpecies.name === 'Groudon' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.id === 'precipiceblades') {
+				source.formeChange('Groudon-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Torkoal' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.type === 'Steel') {
+				source.formeChange('Torkoal-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Sunny') &&
+				move.id === 'weatherball') {
+				source.formeChange('Castform-Sunny-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Regirock' && !source.transformed) &&
+				this.field.isTerrain('regicode') && (move.type === 'Ice' || move.type === 'Rock' ||
+					move.type === 'Steel' || move.type === 'Electric' || move.type === 'Dragon' || move.type === 'Normal') &&
+					move.id !== 'regicode') {
+				this.effectState.rCounter += 1; // TODO: no permitir repetidos
+				if (this.effectState.rCounter >= 2) {
+					source.formeChange('Regirock-Primal', this.effect, true);
+				}
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
+				pokemon.baseSpecies.name === 'Armaldo') {
+				this.effectState.wTimer += 1;
+			}
+			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Armaldo' && !pokemon.transformed) &&
+				this.effectState.wTimer >= 3) {
+				pokemon.formeChange('Armaldo-Primal', this.effect, true);
+			}
+			if (pokemon.activeTurns && !pokemon.transformed) {
+				this.effectState.cTimer -= 1;
+			}
+			if (!pokemon.transformed && this.effectState.cTimer <= 0) {
+				this.damage(pokemon.baseMaxhp / 5, pokemon, pokemon, this.dex.items.get('redorb'));
+				this.effectState.cTimer = 3;
 			}
 		},
 		onTakeItem(item, source) {
-			if (source.baseSpecies.baseSpecies === 'Groudon') return false;
-			return true;
+			return false;
 		},
-		itemUser: ["Groudon"],
+		itemUser: ["Groudon", "Regirock", "Castform", "Armaldo", "Torkoal"],
 		isPrimalOrb: true,
 		num: 534,
 		gen: 6,
-
 	},
 	repeatball: {
 		name: "Repeat Ball",
 		spritenum: 401,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Repeat Ball');
+		},
 		num: 9,
 		gen: 3,
 		isPokeball: true,
@@ -6435,6 +6583,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 425,
 		onStart(pokemon) {
 			pokemon.addVolatile('safariball');
+			this.add('-item', pokemon, 'Safari Ball');
 		},
 		condition: {},
 		num: 5,
@@ -7047,6 +7196,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	sportball: {
 		name: "Sport Ball",
 		spritenum: 465,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Sport Ball');
+		},
 		num: 499,
 		gen: 2,
 		isPokeball: true,
@@ -7245,6 +7397,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	strangeball: {
 		name: "Strange Ball",
 		spritenum: 308,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Strange Ball');
+		},
 		num: 1785,
 		gen: 8,
 		isPokeball: true,
@@ -7488,6 +7643,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	timerball: {
 		name: "Timer Ball",
 		spritenum: 494,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Timer Ball');
+		},
 		num: 10,
 		gen: 3,
 		isPokeball: true,
@@ -9159,6 +9317,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	ultraball: {
 		name: "Ultra Ball",
 		spritenum: 521,
+		onStart(pokemon) {
+			this.add('-item', pokemon, 'Ultra Ball');
+		},
 		num: 2,
 		gen: 1,
 		isPokeball: true,
@@ -10178,5 +10339,70 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -108,
 		gen: 4,
+	},
+	jadeorb: {
+		name: "Jade Orb",
+		spritenum: 390,
+		onSwitchInPriority: -1,
+		onSwitchIn(pokemon) {
+			if (pokemon.baseSpecies.name === 'Relicanth' && !pokemon.transformed) {
+				this.effectState.wTimer = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Registeel' && !pokemon.transformed) {
+				this.effectState.rCounter = 0;
+			}
+			if (pokemon.baseSpecies.name === 'Rayquaza' && !pokemon.transformed) {
+				this.effectState.cTimer = 2;
+			} else if (!pokemon.transformed) {
+				this.effectState.cTimer = 3;
+			}
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if ((source.isActive && source.baseSpecies.name === 'Rayquaza' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.id === 'dragonascent') {
+				source.formeChange('Rayquaza-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Tropius' && !source.transformed) &&
+				(!target || target.fainted || target.hp <= 0) && move.type === 'Dragon') {
+				source.formeChange('Tropius-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Castform' && source.species.forme === 'Snowy') &&
+				move.id === 'weatherball') {
+				source.formeChange('Castform-Snowy-Primal', this.effect, true);
+			}
+			if ((source.isActive && source.baseSpecies.name === 'Registeel' && !source.transformed) &&
+				this.field.isTerrain('regicode') && (move.type === 'Ice' || move.type === 'Rock' ||
+					move.type === 'Steel' || move.type === 'Electric' || move.type === 'Dragon' || move.type === 'Normal') &&
+					move.id !== 'regicode') {
+				this.effectState.rCounter += 1; // TODO: no permitir repetidos
+				if (this.effectState.rCounter >= 2) {
+					source.formeChange('Registeel-Primal', this.effect, true);
+				}
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
+				pokemon.baseSpecies.name === 'Relicanth') {
+				this.effectState.wTimer += 1;
+			}
+			if ((pokemon.isActive && pokemon.baseSpecies.name === 'Relicanth' && !pokemon.transformed) &&
+				this.effectState.wTimer >= 3) {
+				pokemon.formeChange('Relicanth-Primal', this.effect, true);
+			}
+			if (pokemon.activeTurns && !pokemon.transformed) {
+				this.effectState.cTimer -= 1;
+			}
+			if (!pokemon.transformed && this.effectState.cTimer <= 0) {
+				this.damage(pokemon.baseMaxhp / 5, pokemon, pokemon, this.dex.items.get('jadeorb'));
+				this.effectState.cTimer = 3;
+			}
+		},
+		onTakeItem(item, source) {
+			return false;
+		},
+		itemUser: ["Rayquaza", "Registeel", "Castform", "Relicanth", "Tropius"],
+		isPrimalOrb: true,
+		num: -109,
+		gen: 6,
 	},
 };
