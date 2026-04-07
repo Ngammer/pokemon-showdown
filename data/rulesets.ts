@@ -910,16 +910,21 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		onValidateTeam(team) {
 			let totemsCount = 0;
 			let rocksCount = 0;
+			let primalCount = 0;
 			for (const set of team) {
 				const item = this.dex.items.get(set.item);
 				if (item.id === 'gianttotem') totemsCount++;
 				if (item.id === 'ancientrock') rocksCount++;
+				if (item.id === 'jadeorb' || item.id === 'blueorb' || item.id === 'redorb') primalCount++;
 			}
 			if (totemsCount > 1) {
 				return [`You can only have one Totem Pokémon.`];
 			}
 			if (rocksCount > 1) {
 				return [`You can only have one Feudal Pokémon.`];
+			}
+			if (primalCount > 1) {
+				return [`You can only have one Primal Pokémon.`];
 			}
 		},
 	},
