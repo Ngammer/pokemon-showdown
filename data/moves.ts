@@ -6351,7 +6351,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Physical",
 		name: "Flying Press",
 		pp: 10,
-		flags: { contact: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nonsky: 1, metronome: 1, slamming: 1, minimize: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nonsky: 1,
+			metronome: 1, slamming: 1, minimize: 1 },
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Grass' || type === 'Bug' || type === 'Fighting') return 1;
 		},
