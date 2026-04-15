@@ -2920,7 +2920,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 
 	},
 	victini: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DUU",
 		natDexTier: "OU",
 	},
