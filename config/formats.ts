@@ -4418,21 +4418,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			}
 		},
 	},
- */
-	// RoA Spotlight
-	///////////////////////////////////////////////////////////////////
-
-	{
-		section: "RoA Spotlight",
-		column: 4,
-	},
-	{
-		name: "[Gen 1] Ubers",
-		mod: 'gen1',
-		// searchShow: false,
-		ruleset: ['Standard'],
-	},
-	/*
 	{
 		name: "[Gen 3] Orre Colosseum",
 		mod: 'gen3colosseum',
