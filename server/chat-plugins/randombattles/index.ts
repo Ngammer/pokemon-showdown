@@ -258,21 +258,21 @@ function getLetsGoMoves(species: string | Species) {
 	return data.moves.map(formatMove).sort().join(`, `);
 }
 
-function battleFactorySets(species: string | Species, tier: string | null, gen = 'gen9', isBSS = false, isNM = false) {
+function battleFactorySets(species: string | Species, tier: string | null, gen = 'gen9', isBSS = false, is1v1 = false, isNM = false) {
 	species = Dex.species.get(species);
 	if (typeof species.battleOnly === 'string') {
 		species = Dex.species.get(species.battleOnly);
 	}
 	gen = toID(gen);
 	const genNum = parseInt(gen[3]);
-	if (isNaN(genNum) || genNum < 6 || (isBSS && genNum < 7)) return null;
+	if (isNaN(genNum) || genNum < 6 || (isBSS && genNum < 7) || (is1v1 && genNum < 9)) return null;
 	const statsFile = JSON.parse(
-		FS(`data/random-battles/gen${isNM ? `9nuevometarandom` : genNum}/${isBSS ? `bss-` : ``}${isNM ? `bss-` : ``}factory-sets.json`).readIfExistsSync() ||
+		FS(`data/random-battles/gen${isNM ? `9nuevometarandom` : genNum}/${isBSS ? `bss-` : is1v1 ? `1v1-` : ``}${isNM ? `bss-` : ``}factory-sets.json`).readIfExistsSync() ||
 		"{}"
 	);
 	if (!Object.keys(statsFile).length) return null;
 	let buf = ``;
-	if (!isBSS && !isNM) {
+	if (!isBSS && !is1v1 && !isNM) {
 		if (!tier) throw new Chat.ErrorMessage(`Please provide a valid tier.`);
 		if (!(toID(tier) in TIERS)) throw new Chat.ErrorMessage(`That tier isn't supported.`);
 		if (!(TIERS[toID(tier)] in statsFile)) {
@@ -331,19 +331,26 @@ function battleFactorySets(species: string | Species, tier: string | null, gen =
 			buf += `</ul></details>`;
 		}
 	} else {
-		let format = Dex.formats.get(`${gen}bssfactory`);
-		if (!(species.id in statsFile)) throw new Chat.ErrorMessage(`${species.name} doesn't have any sets in ${format.name}.`);
-		const setObj = statsFile[species.id];
+		const format = Dex.formats.get(`${gen}${is1v1 ? '1v1' : 'bss'}factory`);
+		if (!((is1v1 ? species.name : species.id) in statsFile))
+			throw new Chat.ErrorMessage(`${species.name} doesn't have any sets in ${format.name}.`);
+		const setObj = statsFile[is1v1 ? species.name : species.id];
 		if (genNum >= 9 && !isNM) {
 			buf += `Species rarity: ${setObj.weight} (higher is more common, max 10)<br />`;
 			buf += `Sets for ${species.name} in ${format.name}:<br />`;
 			for (const [i, set] of setObj.sets.entries()) {
 				buf += `<details class="details"><summary>Set ${i + 1} (${set.weight}%)</summary>`;
 				buf += `<ul style="list-style-type:none;padding-left:0;">`;
-				buf += `<li>${Dex.forFormat(format).species.get(set.species).name} @ ${set.item.map(formatItem).join(" / ")}</li>`;
-				buf += `<li>Ability: ${set.ability.map(formatAbility).join(" / ")}</li>`;
-				buf += `<li>Level: 50</li>`;
-				buf += `<li>Tera Type: ${set.teraType.map(formatType).join(' / ')}</li>`;
+				const item = !Array.isArray(set.item) ? [set.item] : set.item;
+				buf += `<li>${Dex.forFormat(format).species.get(set.species).name} @ ${item.map(formatItem).join(" / ")}</li>`;
+				const ability = !Array.isArray(set.ability) ? [set.ability] : set.ability;
+				buf += `<li>Ability: ${ability.map(formatAbility).join(" / ")}</li>`;
+				if (isBSS) {
+					buf += `<li>Level: 50</li>`;
+				} else if (set.level) {
+					buf += `<li>Level: ${set.level}</li>`;
+				}
+				if (!is1v1) buf += `<li>Tera Type: ${set.teraType.map(formatType).join(' / ')}</li>`;
 				if (set.evs) {
 					buf += `<li>EVs: `;
 					const evs: string[] = [];
@@ -354,7 +361,8 @@ function battleFactorySets(species: string | Species, tier: string | null, gen =
 					}
 					buf += `${evs.join(" / ")}</li>`;
 				}
-				buf += `<li>${formatNature(set.nature)} Nature</li>`;
+				const nature = !Array.isArray(set.nature) ? [set.nature] : set.nature;
+				buf += `<li>${nature.map(formatNature).join(" / ")} Nature</li>`;
 				if (set.ivs) {
 					buf += `<li>IVs: `;
 					const ivs: string[] = [];
@@ -371,7 +379,6 @@ function battleFactorySets(species: string | Species, tier: string | null, gen =
 				buf += `</ul></details>`;
 			}
 		} else if (genNum >= 9 && isNM) {
-			format = Dex.formats.get(`${gen}nuevometarandombattle`);
 			buf += `Species rarity: ${setObj.weight} (higher is more common, max 10)<br />`;
 			buf += `Sets for ${species.name} in ${format.name}:<br />`;
 			for (const [i, set] of setObj.sets.entries()) {
@@ -638,14 +645,17 @@ export const commands: Chat.ChatCommands = {
 	randombattleshelp: [
 		`/randombattles OR /randbats [pokemon], [gen] - Displays a Pok\u00e9mon's Random Battle Moves. Defaults to Gen 9. If used in a battle, defaults to the gen of that battle.`,
 		`/randomdoublesbattle OR /randdubs [pokemon], [gen] - Same as above, but instead displays Random Doubles Battle moves.`,
+		'/randffats [pokemon] - (Gen 9 only) Shows the potential moves for a Pok\u00e9mon in Free-For-All Random Battle.',
 	],
 
+	'1v1factory': 'battlefactory',
 	bssfactory: 'battlefactory',
 	nmrand: 'battlefactory',
 	battlefactory(target, room, user, connection, cmd) {
 		if (!this.runBroadcast()) return;
 		const isBSS = cmd === 'bssfactory';
 		const isNM = cmd === 'nmrand';
+		const is1v1 = cmd === '1v1factory';
 		if (isBSS) {
 			const args = target.split(',');
 			if (!args[0]) return this.parse(`/help battlefactory`);
@@ -670,6 +680,15 @@ export const commands: Chat.ChatCommands = {
 			const bssSets = battleFactorySets(species, null, mod, false, true);
 			if (!bssSets) return this.parse(`/help battlefactory`);
 			return this.sendReplyBox(bssSets);
+		} else if (is1v1) {
+			if (!target) return this.parse(`/help battlefactory`);
+			const species = Dex.species.get(target);
+			if (!species.exists) {
+				throw new Chat.ErrorMessage(`Error: Pok\u00e9mon '${target.trim()}' not found.`);
+			}
+			const onevoneSets = battleFactorySets(species, null, 'gen9', false, true);
+			if (!onevoneSets) return this.parse(`/help battlefactory`);
+			return this.sendReplyBox(onevoneSets);
 		} else {
 			const args = target.split(',');
 			if (!args[0]) return this.parse(`/help battlefactory`);
