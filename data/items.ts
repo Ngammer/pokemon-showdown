@@ -10003,12 +10003,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	butterfreetite: {
 		name: "Butterfreetite",
 		spritenum: 628,
-		megaStone: "Butterfree-Mega",
-		megaEvolves: "Butterfree",
+		megaStone: { "Butterfree": "Butterfree-Mega" },
 		itemUser: ["Butterfree"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
 		num: -101,
 		gen: 6,
@@ -10017,12 +10015,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	machampite: {
 		name: "Machampite",
 		spritenum: 599,
-		megaStone: "Machamp-Mega",
-		megaEvolves: "Machamp",
+		megaStone: { "Machamp": "Machamp-Mega" },
 		itemUser: ["Machamp"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
 		num: -102,
 		gen: 6,
@@ -10052,12 +10048,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	kinglerite: {
 		name: "Kinglerite",
 		spritenum: 599,
-		megaStone: "Kingler-Mega",
-		megaEvolves: "Kingler",
+		megaStone: { "Kingler": "Kingler-Mega" },
 		itemUser: ["Kingler"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
 		num: -104,
 		gen: 6,
@@ -10066,12 +10060,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	laprasite: {
 		name: "Laprasite",
 		spritenum: 599,
-		megaStone: "Lapras-Mega",
-		megaEvolves: "Lapras",
+		megaStone: { "Lapras": "Lapras-Mega" },
 		itemUser: ["Lapras"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
 		num: -104,
 		gen: 6,
@@ -10089,12 +10081,10 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	snorlaxite: {
 		name: "Snorlaxite",
 		spritenum: 599,
-		megaStone: "Snorlax-Mega",
-		megaEvolves: "Snorlax",
+		megaStone: { "Snorlax": "Snorlax-Mega" },
 		itemUser: ["Snorlax"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
 		num: -106,
 		gen: 6,
