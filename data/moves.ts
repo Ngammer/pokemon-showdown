@@ -56,7 +56,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		ignoreImmunity: true,
-
 		target: "allAdjacentFoes",
 		type: "Poison",
 		contestType: "Clever",
@@ -489,7 +488,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onResidualOrder: 6,
 			onResidual(pokemon) {
-				this.heal(pokemon.baseMaxhp / 16);
+				this.heal(pokemon.baseMaxhp / 12);
 			},
 		},
 
@@ -4593,7 +4592,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, heal: 1, metronome: 1 },
-		drain: [1, 2],
+		drain: [3, 4],
 		onTryImmunity(target) {
 			return target.status === 'slp' || target.hasAbility('comatose');
 		},
@@ -4753,7 +4752,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (!pokemon.volatiles['echoedvoice'] || move.hit === 1) {
 				pokemon.addVolatile('echoedvoice');
 			}
-			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['echoedvoice'].increase, 1, 150);
+			const bp = this.clampIntRange(move.basePower + pokemon.volatiles['echoedvoice'].increase, 1, 190);
 			this.debug(`BP: ${bp}`);
 			return bp;
 		},
@@ -4764,11 +4763,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		condition: {
 			onStart() {
-				this.effectState.increase = 30;
+				this.effectState.increase = 40;
 			},
 			onRestart() {
-				if (this.effectState.increase < 530) {
-					this.effectState.increase += 30;
+				if (this.effectState.increase < 190) {
+					this.effectState.increase += 40;
 				}
 			},
 		},
@@ -10720,7 +10719,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 40,
 		priority: 1,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-
 		target: "normal",
 		type: "Grass",
 		contestType: "Tough",
