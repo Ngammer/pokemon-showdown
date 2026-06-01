@@ -5829,17 +5829,4 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		battle: { trunc: Math.trunc },
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Desync Clause Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
-	{
-		section: "Type Dex",
-		column: 2,
-	},
-	{
-		name: "[Gen 9] Bug Dex",
-		mod: 'gen9bugdex',
-		ruleset: ['Standard NatDex', 'Terastal Clause'],
-		banlist: [
-			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
-		],
-	},
 ];
