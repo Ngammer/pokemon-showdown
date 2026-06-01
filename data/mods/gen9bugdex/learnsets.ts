@@ -1,4 +1,4 @@
-export const Learnsets: import('../../../sim/dex-species').LearnsetDataTable = {
+export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTable = {
 	missingno: {
 		learnset: {
 			blizzard: ["3L1"],
