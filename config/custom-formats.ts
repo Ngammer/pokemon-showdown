@@ -86,10 +86,10 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	*/
 	{
 		section: "Type Dex",
-		column: 1,
+		column: 2,
 	},
 	{
-		name: "[Gen 9] Bug Dex",
+		name: "[Gen 9] National Dex Only Bug",
 		mod: 'gen9bugdex',
 		ruleset: ['Standard NatDex', 'Terastal Clause'],
 		banlist: [
