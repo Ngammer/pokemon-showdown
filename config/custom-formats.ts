@@ -90,7 +90,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 9] National Dex Only Bug",
-		mod: 'gen9',
+		mod: 'gen9bugdex',
 		ruleset: ['Standard NatDex'],
 		banlist: [
 		],
