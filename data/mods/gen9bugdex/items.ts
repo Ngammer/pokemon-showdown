@@ -1,4 +1,4 @@
-export const Items: import('../sim/dex-items').ItemDataTable = {
+export const Items: import('../../../sim/dex-items').ItemDataTable = {
 	abilityshield: {
 		name: "Ability Shield",
 		spritenum: 746,

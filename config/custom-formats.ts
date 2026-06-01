@@ -84,6 +84,19 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard AG', 'NatDex Mod', 'Terastal Clause', 'Nuevo Meta Pokedex'],
 	},
 	*/
+	{
+		section: "Type Dex",
+		column: 1,
+	},
+	{
+		name: "[Gen 9] Bug Dex",
+		mod: 'gen9bugdex',
+		ruleset: ['Standard NatDex', 'Terastal Clause'],
+		banlist: [
+			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
+	},
 ];
 
 // Nuevo Meta Singles
