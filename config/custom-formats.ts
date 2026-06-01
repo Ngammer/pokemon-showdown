@@ -90,11 +90,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	{
 		name: "[Gen 9] National Dex Only Bug",
-		mod: 'gen9bugdex',
-		ruleset: ['Standard NatDex', 'Terastal Clause'],
+		mod: 'gen9',
+		ruleset: ['Standard NatDex'],
 		banlist: [
-			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 	},
 ];
