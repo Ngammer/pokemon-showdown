@@ -98,7 +98,8 @@ interface CommonHandlers {
 }
 
 type TableGenericTag = "True Past" | "Past Unobtainable";
-type TableSpeciesTag = "Mythical" | "Restricted Legendary" | "Sub-Legendary" | "Ultra Beast" | "Paradox" | "Pokestar";
+type TableSpeciesTag = "Mythical" | "Restricted Legendary" | "Sub-Legendary" |
+	"Ultra Beast" | "Paradox" | "Pokestar" | "Fossil";
 type TableTag = TableGenericTag | TableSpeciesTag;
 
 interface EffectData {
