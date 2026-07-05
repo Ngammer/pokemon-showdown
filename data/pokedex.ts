@@ -73,6 +73,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Monster", "Grass"],
 		changesFrom: "Venusaur",
+		placeholderFor: "Venusaur",
 	},
 	charmander: {
 		num: 4,
@@ -163,6 +164,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Monster", "Dragon"],
 		changesFrom: "Charizard",
+		placeholderFor: "Charizard",
 	},
 	squirtle: {
 		num: 7,
@@ -238,6 +240,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Monster", "Water 1"],
 		changesFrom: "Blastoise",
+		placeholderFor: "Blastoise",
 	},
 	caterpie: {
 		num: 10,
@@ -308,6 +311,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Bug"],
 		changesFrom: "Butterfree",
+		placeholderFor: "Butterfree",
 	},
 	weedle: {
 		num: 13,
@@ -580,6 +584,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		gen: 6,
 	},
@@ -595,6 +600,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Pikachu-Cosplay",
 		gen: 6,
@@ -611,6 +617,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Pikachu-Cosplay",
 		gen: 6,
@@ -627,6 +634,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Pikachu-Cosplay",
 		gen: 6,
@@ -643,6 +651,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Pikachu-Cosplay",
 		gen: 6,
@@ -659,6 +668,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Pikachu-Cosplay",
 		gen: 6,
@@ -794,6 +804,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Field", "Fairy"],
 		changesFrom: "Pikachu",
+		placeholderFor: "Pikachu",
 	},
 	pikachuworld: {
 		num: 25,
@@ -850,7 +861,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega-X",
 		types: ["Electric"],
 		baseStats: { hp: 60, atk: 135, def: 95, spa: 90, spd: 95, spe: 110 },
-		abilities: { 0: "Surge Surfer" },
+		abilities: { 0: "Electric Surge" },
 		heightm: 1.2,
 		weightkg: 38,
 		color: "Yellow",
@@ -865,7 +876,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega-Y",
 		types: ["Electric"],
 		baseStats: { hp: 60, atk: 100, def: 55, spa: 160, spd: 80, spe: 130 },
-		abilities: { 0: "Surge Surfer" },
+		abilities: { 0: "No Guard" },
 		heightm: 1,
 		weightkg: 26,
 		color: "Yellow",
@@ -1391,6 +1402,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Field"],
 		changesFrom: "Meowth",
+		placeholderFor: "Meowth",
 	},
 	persian: {
 		num: 53,
@@ -1726,6 +1738,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Human-Like"],
 		changesFrom: "Machamp",
+		placeholderFor: "Machamp",
 	},
 	bellsprout: {
 		num: 69,
@@ -2288,6 +2301,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Purple",
 		eggGroups: ["Amorphous"],
 		changesFrom: "Gengar",
+		placeholderFor: "Gengar",
 	},
 	onix: {
 		num: 95,
@@ -2367,6 +2381,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Water 3"],
 		changesFrom: "Kingler",
+		placeholderFor: "Kingler",
 	},
 	kinglermega: {
 		num: 99,
@@ -3091,6 +3106,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Monster", "Water 1"],
 		changesFrom: "Lapras",
+		placeholderFor: "Lapras",
 	},
 	ditto: {
 		num: 132,
@@ -3148,6 +3164,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		eggGroups: ["Field"],
 		changesFrom: "Eevee",
+		placeholderFor: "Eevee",
 	},
 	vaporeon: {
 		num: 134,
@@ -3342,6 +3359,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		eggGroups: ["Monster"],
 		changesFrom: "Snorlax",
+		placeholderFor: "Snorlax",
 	},
 	articuno: {
 		num: 144,
@@ -3892,6 +3910,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.3,
 		weightkg: 2,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Undiscovered"],
 		gen: 4,
 	},
@@ -11162,7 +11181,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega",
 		types: ["Dark", "Fighting"],
 		baseStats: { hp: 67, atk: 130, def: 135, spa: 55, spd: 135, spe: 68 },
-		abilities: { 0: "Shed Skin", 1: "Moxie", H: "Intimidate" },
+		abilities: { 0: "Shed Skin" },
 		heightm: 1.1,
 		weightkg: 31,
 		color: "Red",
@@ -11319,6 +11338,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Mineral"],
 		changesFrom: "Garbodor",
+		placeholderFor: "Garbodor",
 	},
 	zorua: {
 		num: 570,
@@ -15015,6 +15035,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.4,
 		weightkg: 60,
 		color: "Brown",
+		tags: ["True Past"],
 		eggGroups: ["Field"],
 	},
 	grubbin: {
@@ -15070,6 +15091,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 2.6,
 		weightkg: 147.5,
 		color: "Blue",
+		tags: ["True Past"],
 		eggGroups: ["Bug"],
 	},
 	crabrawler: {
@@ -15213,6 +15235,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 2,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Bug", "Fairy"],
 	},
 	rockruff: {
@@ -15395,6 +15418,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 3.1,
 		weightkg: 217.5,
 		color: "Green",
+		tags: ["True Past"],
 		eggGroups: ["Water 1", "Bug"],
 	},
 	fomantis: {
@@ -15436,6 +15460,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 58,
 		color: "Pink",
+		tags: ["True Past"],
 		eggGroups: ["Grass"],
 	},
 	morelull: {
@@ -15503,6 +15528,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Corrosion" },
 		heightm: 2.1,
 		weightkg: 81,
+		tags: ["True Past"],
 		color: "Black",
 		eggGroups: ["Monster", "Dragon"],
 	},
@@ -16132,6 +16158,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.6,
 		weightkg: 13,
 		color: "Gray",
+		tags: ["True Past"],
 		eggGroups: ["Field", "Fairy"],
 	},
 	mimikyu: {
@@ -16174,6 +16201,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 2.8,
 		color: "Yellow",
+		tags: ["True Past"],
 		eggGroups: ["Amorphous"],
 	},
 	mimikyubustedtotem: {
@@ -16294,6 +16322,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 2.4,
 		weightkg: 207.5,
 		color: "Gray",
+		tags: ["True Past"],
 		eggGroups: ["Dragon"],
 	},
 	tapukoko: {
@@ -16764,6 +16793,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Melmetal",
+		placeholderFor: "Melmetal",
 	},
 	// gen 8
 	grookey: {
@@ -16823,6 +16853,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Field", "Grass"],
 		changesFrom: "Rillaboom",
+		placeholderFor: "Rillaboom",
 	},
 	scorbunny: {
 		num: 813,
@@ -16881,6 +16912,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Field", "Human-Like"],
 		changesFrom: "Cinderace",
+		placeholderFor: "Cinderace",
 	},
 	sobble: {
 		num: 816,
@@ -16939,6 +16971,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Water 1", "Field"],
 		changesFrom: "Inteleon",
+		placeholderFor: "Inteleon",
 	},
 	skwovet: {
 		num: 819,
@@ -17018,6 +17051,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Purple",
 		eggGroups: ["Flying"],
 		changesFrom: "Corviknight",
+		placeholderFor: "Corviknight",
 	},
 	blipbug: {
 		num: 824,
@@ -17072,6 +17106,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Bug"],
 		changesFrom: "Orbeetle",
+		placeholderFor: "Orbeetle",
 	},
 	nickit: {
 		num: 827,
@@ -17187,6 +17222,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Monster", "Water 1"],
 		changesFrom: "Drednaw",
+		placeholderFor: "Drednaw",
 	},
 	yamper: {
 		num: 835,
@@ -17266,6 +17302,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		eggGroups: ["Mineral"],
 		changesFrom: "Coalossal",
+		placeholderFor: "Coalossal",
 	},
 	applin: {
 		num: 840,
@@ -17307,6 +17344,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Grass", "Dragon"],
 		changesFrom: "Flapple",
+		placeholderFor: "Flapple",
 	},
 	appletun: {
 		num: 842,
@@ -17336,6 +17374,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Grass", "Dragon"],
 		changesFrom: "Appletun",
+		placeholderFor: "Appletun",
 	},
 	silicobra: {
 		num: 843,
@@ -17376,6 +17415,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Field", "Dragon"],
 		changesFrom: "Sandaconda",
+		placeholderFor: "Sandaconda",
 	},
 	cramorant: {
 		num: 845,
@@ -17504,6 +17544,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Purple",
 		eggGroups: ["Human-Like"],
 		changesFrom: "Toxtricity",
+		placeholderFor: "Toxtricity",
 	},
 	toxtricitylowkeygmax: {
 		num: 849,
@@ -17519,6 +17560,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 		battleOnly: "Toxtricity-Low-Key",
 		changesFrom: "Toxtricity-Low-Key",
+		placeholderFor: "Toxtricity-Low-Key",
 	},
 	toxtricityjohto: {
 		num: 849,
@@ -17589,6 +17631,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Bug"],
 		changesFrom: "Centiskorch",
+		placeholderFor: "Centiskorch",
 	},
 	clobbopus: {
 		num: 852,
@@ -17739,6 +17782,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Pink",
 		eggGroups: ["Fairy"],
 		changesFrom: "Hatterene",
+		placeholderFor: "Hatterene",
 	},
 	impidimp: {
 		num: 859,
@@ -17797,6 +17841,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Purple",
 		eggGroups: ["Fairy", "Human-Like"],
 		changesFrom: "Grimmsnarl",
+		placeholderFor: "Grimmsnarl",
 	},
 	obstagoon: {
 		num: 862,
@@ -18046,6 +18091,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Fairy", "Amorphous"],
 		changesFrom: "Alcremie",
+		placeholderFor: "Alcremie",
 	},
 	falinks: {
 		num: 870,
@@ -18069,7 +18115,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Fighting"],
 		gender: "N",
 		baseStats: { hp: 65, atk: 135, def: 135, spa: 70, spd: 65, spe: 100 },
-		abilities: { 0: "Battle Armor", H: "Defiant" },
+		abilities: { 0: "Defiant" },
 		heightm: 1.6,
 		weightkg: 99,
 		color: "Yellow",
@@ -18280,6 +18326,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Field", "Mineral"],
 		changesFrom: "Copperajah",
+		placeholderFor: "Copperajah",
 	},
 	dracozolt: {
 		num: 880,
@@ -18375,6 +18422,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Mineral", "Dragon"],
 		changesFrom: "Duraludon",
+		placeholderFor: "Duraludon",
 	},
 	dreepy: {
 		num: 885,
@@ -18511,6 +18559,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 100,
 		weightkg: 0,
 		color: "Purple",
+		tags: ["Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cannotDynamax: true,
 	},
@@ -18580,6 +18629,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
 		changesFrom: "Urshifu",
+		placeholderFor: "Urshifu",
 	},
 	urshifurapidstrikegmax: {
 		num: 892,
@@ -18596,6 +18646,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 		battleOnly: "Urshifu-Rapid-Strike",
 		changesFrom: "Urshifu-Rapid-Strike",
+		placeholderFor: "Urshifu-Rapid-Strike",
 	},
 	zarude: {
 		num: 893,
@@ -22041,6 +22092,18 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		battleOnly: "Ramnarok",
 		gen: 9,
 	},
+	obliteryx: {
+		num: -80,
+		name: "Obliteryx",
+		types: ["Dark", "Flying"],
+		baseStats: { hp: 102, atk: 128, def: 126, spa: 45, spd: 90, spe: 64 },
+		abilities: { 0: "Opportunist", 1: "Analytic" },
+		heightm: 1.6,
+		weightkg: 62,
+		color: "Black",
+		eggGroups: ["Flying"],
+		gen: 9,
+	},
 	// NOTE: PokeStar "formes" are not actually formes and thus do not have a formeOrder
 	pokestarsmeargle: {
 		num: -5000,
@@ -22051,6 +22114,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Field"],
 		gen: 5,
 	},
@@ -22064,6 +22128,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Pokestar UFO-2", "Pokestar UFO-PropU2"],
 		cosmeticFormes: ["Pokestar UFO-PropU1"],
@@ -22081,6 +22146,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},
@@ -22094,6 +22160,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Brycen-Man-Prop"],
 		gen: 5,
@@ -22108,6 +22175,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar MT-Prop"],
 		gen: 5,
@@ -22122,6 +22190,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar MT2-Prop"],
 		gen: 5,
@@ -22136,6 +22205,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Transport-Prop"],
 		gen: 5,
@@ -22150,6 +22220,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Giant-2", "Pokestar Giant-PropO1", "Pokestar Giant-PropO2"],
 		gen: 5,
@@ -22163,6 +22234,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Humanoid-Prop"],
 		gen: 5,
@@ -22176,6 +22248,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Monster-Prop"],
 		gen: 5,
@@ -22189,6 +22262,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar F-00-Prop"],
 		gen: 5,
@@ -22202,6 +22276,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar F-002-Prop"],
 		gen: 5,
@@ -22215,6 +22290,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Spirit-Prop"],
 		gen: 5,
@@ -22229,6 +22305,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Black Door-Prop"],
 		gen: 5,
@@ -22243,6 +22320,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar White Door-Prop"],
 		gen: 5,
@@ -22257,6 +22335,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		cosmeticFormes: ["Pokestar Black Belt-Prop"],
 		gen: 5,
@@ -22273,6 +22352,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.5,
 		weightkg: 61,
 		color: "White",
+		tags: ["Pokestar", "True Past", "Past Unobtainable"],
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},

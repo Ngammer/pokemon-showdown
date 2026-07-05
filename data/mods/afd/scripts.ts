@@ -342,8 +342,8 @@ export const Scripts: ModdedBattleScriptsData = {
 			const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
 			const item = pokemon.getItem();
 			// Mega Rayquaza
-			if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past') ||
-				this.battle.ruleTable.has('+pokemontag:future')) &&
+			if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+tag:past') ||
+				this.battle.ruleTable.has('+tag:future')) &&
 				altForme?.isMega && altForme?.requiredMove &&
 				pokemon.baseMoves.includes(this.battle.toID(altForme.requiredMove)) && !item.zMove) {
 				return altForme.name;
@@ -374,7 +374,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			}
 
 			// weather modifier
-			baseDamage = this.battle.runEvent('WeatherModifyDamage', pokemon, target, move, baseDamage);
+			baseDamage = this.battle.priorityEvent('WeatherModifyDamage', pokemon, target, move, baseDamage);
 
 			// crit - not a modifier
 			const isCrit = target.getMoveHitData(move).crit;
