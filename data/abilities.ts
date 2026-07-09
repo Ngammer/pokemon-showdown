@@ -7635,9 +7635,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -174,
 	},
 	stress: {
-		onStart(pokemon) {
-			this.boost({ spa: 1 }, pokemon);
-			pokemon.addVolatile('confusion');
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({ spa: 1 });
+			}
 		},
 		flags: { },
 		name: "Stress",
