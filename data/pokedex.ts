@@ -15144,7 +15144,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Fire", "Flying"],
 		genderRatio: { M: 0.25, F: 0.75 },
 		baseStats: { hp: 75, atk: 60, def: 70, spa: 102, spd: 70, spe: 113 },
-		abilities: { 0: "Dancer", 1: "Flash Fire", H:  "Costar" },
+		abilities: { 0: "Dancer", 1: "Flash Fire", H: "Costar" },
 		heightm: 0.6,
 		weightkg: 3.4,
 		color: "Red",
@@ -16428,7 +16428,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Psychic", "Ghost"],
 		gender: "N",
 		baseStats: { hp: 137, atk: 113, def: 89, spa: 137, spd: 107, spe: 97 },
-		abilities: { 0: "Shadow Shield", 1: "Reflective Skin", H: "Levitate" },// Lunala Forma Drácula
+		abilities: { 0: "Shadow Shield", 1: "Reflective Skin", H: "Levitate" }, // Lunala Forma Drácula
 		heightm: 4,
 		weightkg: 120,
 		color: "Purple",
@@ -16482,7 +16482,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Electric"],
 		gender: "N",
 		baseStats: { hp: 83, atk: 89, def: 71, spa: 173, spd: 71, spe: 83 },
-		abilities: { 0: "Beast Boost", 1:"Lightning Rod", H: "Illuminate" },
+		abilities: { 0: "Beast Boost", 1: "Lightning Rod", H: "Illuminate" },
 		heightm: 3.8,
 		weightkg: 100,
 		color: "Black",
