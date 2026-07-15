@@ -20491,7 +20491,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		tags: ["Paradox"],
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["Great Tusk-Totem"],
-		formeOrder: ["Great Tusk", "Great Tusk-Totem"]
+		formeOrder: ["Great Tusk", "Great Tusk-Totem"],
 	},
 	greattusktotem: {
 		num: 984,
