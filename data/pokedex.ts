@@ -1558,7 +1558,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Hisui-Totem",
 		types: ["Fire", "Rock"],
 		genderRatio: { M: 0.75, F: 0.25 },
-		baseStats: { hp: 100, atk: 135, def: 90, spa: 85, spd: 90, spe: 105 },
+		baseStats: { hp: 115, atk: 145, def: 80, spa: 95, spd: 80, spe: 90 },
 		abilities: { 0: "Gigantification" },
 		heightm: 2.8,
 		weightkg: 282.24,
