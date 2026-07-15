@@ -16213,6 +16213,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.3,
 		weightkg: 3.3,
 		color: "Gray",
+		tags: ["True Past"],
 		eggGroups: ["Field", "Fairy"],
 		otherFormes: ["Togedemaru-Totem"],
 		formeOrder: ["Togedemaru", "Togedemaru-Totem"],
