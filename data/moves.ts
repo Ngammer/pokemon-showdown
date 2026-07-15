@@ -23651,6 +23651,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					move.target = 'randomNormal';
 				}
 			},
+			onTrapPokemon(pokemon) {
+				pokemon.tryTrap();
+			},
 		},
 	},
 	evaporationpulse: {

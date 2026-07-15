@@ -1049,7 +1049,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	disguise: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
-			if (effect?.effectType === 'Move' && ['mimikyu', 'mimikyutotem'].includes(target.species.id)) {
+			if (effect?.effectType === 'Move' && ['mimikyu'].includes(target.species.id)) {
 				this.add('-activate', target, 'ability: Disguise');
 				this.effectState.busted = true;
 				return 0;
@@ -1057,7 +1057,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onCriticalHit(target, source, move) {
 			if (!target) return;
-			if (!['mimikyu', 'mimikyutotem'].includes(target.species.id)) {
+			if (!['mimikyu'].includes(target.species.id)) {
 				return;
 			}
 			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
@@ -1068,7 +1068,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onEffectiveness(typeMod, target, type, move) {
 			if (!target || move.category === 'Status') return;
-			if (!['mimikyu', 'mimikyutotem'].includes(target.species.id)) {
+			if (!['mimikyu'].includes(target.species.id)) {
 				return;
 			}
 
@@ -1079,8 +1079,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return 0;
 		},
 		onUpdate(pokemon) {
-			if (['mimikyu', 'mimikyutotem'].includes(pokemon.species.id) && this.effectState.busted) {
-				const speciesid = pokemon.species.id === 'mimikyutotem' ? 'Mimikyu-Busted-Totem' : 'Mimikyu-Busted';
+			if (['mimikyu'].includes(pokemon.species.id) && this.effectState.busted) {
+				const speciesid = 'Mimikyu-Busted';
 				pokemon.formeChange(speciesid, this.effect, true);
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
@@ -8028,9 +8028,56 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: { },
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
 		name: "Gigantification (Schooling)",
 		rating: 4,
 		num: -193,
+	},
+	gigantificationdisguise: {
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect?.effectType === 'Move' && ['mimikyutotem'].includes(target.species.id)) {
+				this.add('-activate', target, 'ability: Disguise');
+				this.effectState.busted = true;
+				return 0;
+			}
+		},
+		onCriticalHit(target, source, move) {
+			if (!target) return;
+			if (!['mimikyutotem'].includes(target.species.id)) {
+				return;
+			}
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move)) return;
+			return false;
+		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target || move.category === 'Status') return;
+			if (!['mimikyutotem'].includes(target.species.id)) {
+				return;
+			}
+
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move)) return;
+			return 0;
+		},
+		onUpdate(pokemon) {
+			if (['mimikyutotem'].includes(pokemon.species.id) && this.effectState.busted) {
+				const speciesid = 'Mimikyu-Busted-Totem';
+				pokemon.formeChange(speciesid, this.effect, true);
+				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
+			}
+		},
+		flags: {
+			failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1,
+			breakable: 1, notransform: 1,
+		},
+		name: "Gigantification (Disguise)",
+		rating: 3.5,
+		num: -194,
 	},
 };
