@@ -7999,7 +7999,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	gigantificationschooling: {
 		onSwitchInPriority: -1,
 		onStart(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies !== 'Wishiwashi-Totem' || pokemon.level < 20 || pokemon.transformed) return;
+			if (pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 || pokemon.transformed) return;
 			if (pokemon.hp > pokemon.maxhp / 4) {
 				if (pokemon.species.id === 'wishiwashitotem') {
 					pokemon.formeChange('Wishiwashi-School-Totem');
@@ -8015,7 +8015,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
 			if (
-				pokemon.baseSpecies.baseSpecies !== 'Wishiwashi-Totem' || pokemon.level < 20 ||
+				pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 ||
 				pokemon.transformed || !pokemon.hp
 			) return;
 			if (pokemon.hp > pokemon.maxhp / 4) {
