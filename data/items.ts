@@ -10029,7 +10029,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, source) {
 			return false;
 		},
-		itemUser: ["Raticate-Alola", 'Marowak-Alola', "Electrode-Hisui", "Arcanine-Hisui", "Xatu"],
+		itemUser: ["Raticate-Alola", 'Marowak-Alola', "Electrode-Hisui", "Arcanine-Hisui", "Xatu", "Donphan", "Lilligant-Hisui", "Avalugg-Hisui", "Spyshoos", "Vikavolt", "Ribombee", "Wishiwashi", "Araquanid", "Lurantis", "Salazzle", "Mimikyu", "Kommo-o", "Kleavor"],
 		num: -103,
 		gen: 6,
 
