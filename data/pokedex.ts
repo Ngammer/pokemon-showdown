@@ -15352,7 +15352,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Wishiwashi",
 		baseForme: "Solo",
 		types: ["Water"],
-		baseStats: { hp: 55, atk: 40, def: 25, spa: 45, spd: 25, spe: 65 },
+		baseStats: { hp: 55, atk: 40, def: 25, spa: 40, spd: 25, spe: 65 },
 		abilities: { 0: "Schooling" },
 		heightm: 0.2,
 		weightkg: 0.3,
