@@ -16286,7 +16286,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 2.8,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
-		requiredAbility: "Disguise",
+		requiredAbility: "Gigantification (Disguise)",
 		battleOnly: "Mimikyu-Totem",
 		requiredItem: "Giant Totem",
 	},
