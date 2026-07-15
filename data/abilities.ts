@@ -7994,6 +7994,43 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Reflective Skin",
 		rating: 2.5,
-		num: 24,
+		num: -192,
+	},
+	gigantificationschooling: {
+		onSwitchInPriority: -1,
+		onStart(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 || pokemon.transformed) return;
+			if (pokemon.hp > pokemon.maxhp / 4) {
+				if (pokemon.species.id === 'wishiwashitotem') {
+					pokemon.formeChange('Wishiwashi-School-Totem');
+				}
+			} else {
+				if (pokemon.species.id === 'wishiwashischooltotem') {
+					pokemon.formeChange('Wishiwashi-Totem');
+				}
+			}
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (
+				pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 ||
+				pokemon.transformed || !pokemon.hp
+			) return;
+			if (pokemon.hp > pokemon.maxhp / 4) {
+				if (pokemon.species.id === 'wishiwashitotem') {
+					pokemon.formeChange('Wishiwashi-School-Totem');
+				}
+			} else {
+				if (pokemon.species.id === 'wishiwashischooltotem') {
+					pokemon.formeChange('Wishiwashi-Totem');
+				}
+			}
+		},
+		flags: { },
+		name: "Gigantification (Schooling)",
+		rating: 4,
+		num: -193,
 	},
 };
