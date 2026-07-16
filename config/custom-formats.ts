@@ -85,15 +85,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	},
 	*/
 	{
-		section: "Type Dex",
+		section: "Eventos",
 		column: 2,
 	},
 	{
-		name: "[Gen 9] National Dex Only Bug",
-		mod: 'gen9bugdex',
-		ruleset: ['Standard NatDex'],
-		banlist: [
-		],
+		name: "[Gen 9] PokeLike",
+		desc: `Once a Pok&eacute;mon switches in, its ability is shared with the rest of the team.`,
+		mod: 'pokelike',
+		ruleset: ['Standard NatDex', 'Terastal Clause', '!Evasion Clause', '!OHKO Clause', 'Form Item Clause', 'Overflow Stat Mod'],
+		banlist: [],
+		unbanlist: [],
+		restricted: [],
 	},
 ];
 
