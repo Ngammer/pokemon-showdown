@@ -4610,6 +4610,38 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	shellarmor: {
 		onCriticalHit: false,
+		onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
+		onSourceBasePower(basePower, source, target, move) {
+			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb', 'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
+				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
+				'buggem', 'darkgem', 'dragongem', 'electricgem', 'fairygem', 'fightinggem', 'firegem', 'flyinggem', 'ghostgem', 'grassgem', 'groundgem', 'icegem', 'normalgem', 'poisongem', 'psychicgem', 'rockgem',
+				'steelgem', 'watergem', 'dracoplate', 'dreadplate', 'earthplate', 'fistplate', 'flameplate', 'icicleplate', 'insectplate', 'ironplate', 'meadowplate', 'mindplate', 'pixieplate', 'skyplate',
+				'splashplate', 'spookyplate', 'stoneplate', 'toxicplate', 'zapplate', 'skullfossil', 'adamantorb', 'griseousorb', 'lustrousorb', 'souldew', 'deepseascale', 'deepseatooth', 'lightball', 'thickclub',
+				'stick', 'dragonscale', 'duskstone', 'firestone', 'waterstone', 'thunderstone', 'leafstone','shinyrock', 'ovalstone', 'icestone', 'bugmemory', 'darkmemory', 'dragonmemory', 'electricmemory',
+				'fairymemory', 'fightingmemory', 'firememory', 'flyingmemory', 'ghostmemory', 'grassmemory', 'groundmemory', 'icememory', 'normalmemory', 'poisonmemory', 'psychicmemory', 'rockmemory', 'steelmemory',
+				'watermemory', 'adamantcrystal', 'griseouscrystal', 'lustrouscrystal', 'leek', 'metalalloy', ];
+			if (bannedItems.includes(source.item)) {
+				source.addVolatile('itemignored');
+			}
+		},
+		/*(onTryHit(target, source, move) {
+			const bannedItems = ['silkscarf', 'choiceband'];
+			if(bannedItems.includes(source.item) && move.category !== 'Status') {
+				source.addVolatile('itemignored');
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			source.removeVolatile('itemignored');
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-activate', pokemon, '[from] item suppression');
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, '[from] item suppression');
+			},
+		}, */
 		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,

@@ -885,7 +885,7 @@ export class Pokemon {
 	ignoringItem(isFling = false) {
 		if (this.getItem().isPrimalOrb) return false;
 		if (this.battle.gen >= 5 && !this.isActive) return true;
-		if (this.volatiles['embargo'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk']) return true;
+		if (this.volatiles['embargo'] || this.volatiles['itemignored'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk']) return true;
 		// check Fling first to avoid infinite recursion
 		if (isFling) return this.battle.gen >= 5;
 	}
