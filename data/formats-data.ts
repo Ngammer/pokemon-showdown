@@ -5891,7 +5891,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	missingno: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	syclar: {
 		isNonstandard: "CAP",
@@ -6215,70 +6215,70 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	pokestarsmeargle: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarufo: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarufo2: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarbrycenman: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarmt: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarmt2: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestartransport: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestargiant: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarhumanoid: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarmonster: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarf00: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarf002: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarspirit: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarblackdoor: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarwhitedoor: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarblackbelt: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	pokestarufopropu2: {
 		isNonstandard: "Custom",
-		tier: "OU",
+		tier: "Illegal",
 	},
 };
