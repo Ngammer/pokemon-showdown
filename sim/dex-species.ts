@@ -7,8 +7,6 @@ interface SpeciesAbility {
 	1?: string;
 	H?: string;
 	S?: string;
-	S2?: string;
-	S3?: string;
 }
 
 export interface SpeciesData extends Partial<Species> {
