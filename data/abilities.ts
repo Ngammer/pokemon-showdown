@@ -8113,34 +8113,41 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
 					target.addVolatile('blindrop')
 				}
-				if (target.item === 'Bright Powder' || target.item === 'Lax Incense') {
+				if (target.item === 'Bright Powder' || target.item === 'Wide Lens' || target.item === 'Zoom Lens' || target.item === 'Power Lens' || target.item === 'Micle Berry' || target.item === 'Skull Fossil') {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
 					target.addVolatile('blindrop');
 				}
 			}
 		},
 		onAnyAccuracy(accuracy, target, source, move) {
-			if (move.type === 'Water') {
-				return true;
-			}
-			return (accuracy-10);
+			if (move.type === 'Water') return true;
+			if (move.accuracy === true) accuracy = 100;
+			return this.clampIntRange(accuracy - 10, 0, 100);
 		},
+		 // Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan 
 		onAnyModifyBoost(boosts, pokemon) {
 			const unawareUser = this.effectState.target;
 			if (unawareUser === pokemon) return;
 			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
 				boosts['accuracy'] = 0;
 			}
-		}, // Falta la parte que hace que ignora los cambios de presición en los movimientos de los demás pokémon en campo 
+		},
 		condition: {
 			onStart(pokemon) {
 				this.add('-start', pokemon, 'Blind Drop');
-				this.singleEvent('End', pokemon.getAbility(), pokemon.abilityState, pokemon);
 			},
 			onResidualOrder: 21,
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'Blind Drop');
 			},
+		},
+		onSwitchOut(pokemon) {
+			for (const target of pokemon.foes()) {
+				if (target.volatiles['blindrop']) {
+					this.add('-end', pokemon, 'ability: Blind Drop');
+					target.removeVolatile('blindrop');
+				}
+			}
 		},
 		flags: { },
 		name: "Blind Drop",
