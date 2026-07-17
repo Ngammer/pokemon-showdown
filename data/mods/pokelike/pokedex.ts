@@ -158,11 +158,13 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	mamoswine: {
 		inherit: true,
+		baseStats: { hp: 120, atk: 140, def: 90, spa: 70, spd: 80, spe: 90 }, // 10 a todas aplicada
 	},
 	kricketune: {
 		inherit: true,
 	},
 	frosmoth: {
+		types: ["Ice", "Bug", "Dark"],
 		inherit: true,
 	},
 	// Fabio
