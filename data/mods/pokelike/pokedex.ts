@@ -39,6 +39,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dragapult: {
 		inherit: true,
+		baseStats: { hp: 88, atk: 130, def: 75, spa: 100, spd: 75, spe: 142 }, // 10 a atk
 	},
 	dragapultmega: {
 		inherit: true,
@@ -48,6 +49,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	umbreon: {
 		inherit: true,
+		baseStats: { hp: 100, atk: 65, def: 110, spa: 60, spd: 130, spe: 65 }, // 5 a hp
 	},
 	// Sebas
 	kingler: {
@@ -61,12 +63,14 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	crobat: {
 		inherit: true,
+		baseStats: { hp: 85, atk: 100, def: 80, spa: 65, spd: 75, spe: 135 }, // 5 a hp
 	},
 	spidops: {
 		inherit: true,
 	},
 	cattmory: {
 		inherit: true,
+		baseStats: { hp: 90, atk: 53, def: 125, spa: 92, spd: 119, spe: 81 }, // 10 a todas aplicada
 	},
 	ironthorns: {
 		inherit: true,
@@ -74,6 +78,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Zape
 	dragalge: {
 		inherit: true,
+		types: ["Poison"],
 	},
 	dragalgemega: {
 		inherit: true,
@@ -105,6 +110,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dugtrio: {
 		inherit: true,
+		types: ["Ground", "Ghost"],
 	},
 	luxray: {
 		inherit: true,
@@ -179,15 +185,19 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	toxtricitylowkey: {
 		inherit: true,
+		baseStats: { hp: 80, atk: 73, def: 75, spa: 119, spd: 75, spe: 103 }, // 5 a todas aplicada
 	},
 	goodrahisui: {
 		inherit: true,
+		baseStats: { hp: 90, atk: 100, def: 100, spa: 110, spd: 150, spe: 60 }, // 10 a hp
 	},
 	dachsbun: {
 		inherit: true,
+		types: ["Fairy", "Steel"],
 	},
 	venomoth: {
 		inherit: true,
+		baseStats: { hp: 90, atk: 65, def: 60, spa: 120, spd: 90, spe: 105 }, // 10 a todas aplicada
 	},
 	// Sam
 	walrein: {
@@ -198,6 +208,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	disdowoodion: {
 		inherit: true,
+		types: ["Steel"],
 	},
 	palafin: {
 		inherit: true,
@@ -209,6 +220,26 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 	},
 	nidoqueen: {
+		inherit: true,
+	},
+	// Nero
+	clawitzer: {
+		inherit: true,
+	},
+	liepard: {
+		inherit: true,
+	},
+	whimsicott: {
+		inherit: true,
+	},
+	hydreigon: {
+		inherit: true,
+	},
+	blissey: {
+		inherit: true,
+		baseStats: { hp: 265, atk: 10, def: 10, spa: 75, spd: 135, spe: 55 }, // 10 a hp
+	},
+	toxtricity: {
 		inherit: true,
 	},
 };
