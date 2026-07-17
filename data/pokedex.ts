@@ -22912,7 +22912,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Arteagle",
 		types: ["Fairy"],
 		baseStats: { hp: 75, atk: 95, def: 55, spa: 95, spd: 65, spe: 85 },
-		abilities: { 0: "Own Tempo", 1: "Magical", H: "Conjurator" },
+		abilities: { 0: "Own Tempo", 1: "Magical", H: "Feared" },
 		heightm: 1.2,
 		weightkg: 56,
 		color: "Pink",
