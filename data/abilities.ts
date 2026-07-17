@@ -4610,7 +4610,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	shellarmor: {
 		onCriticalHit: false,
-		/* onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
+		 onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
 		onSourceBasePower(basePower, source, target, move) {
 			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb', 'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
 				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
@@ -4623,8 +4623,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (bannedItems.includes(source.item)) {
 				source.addVolatile('itemignored');
 			}
-		}, */
-		onTryHit(target, source, move) {
+		}, 
+		/*onTryHit(target, source, move) {
 			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb', 'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
 				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
 				'buggem', 'darkgem', 'dragongem', 'electricgem', 'fairygem', 'fightinggem', 'firegem', 'flyinggem', 'ghostgem', 'grassgem', 'groundgem', 'icegem', 'normalgem', 'poisongem', 'psychicgem', 'rockgem',
@@ -4648,7 +4648,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, '[from] item suppression');
 			},
-		},
+		}, */
 		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,
