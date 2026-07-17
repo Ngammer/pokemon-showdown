@@ -92,7 +92,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] PokeLike",
 		desc: `Once a Pok&eacute;mon switches in, its ability is shared with the rest of the team.`,
 		mod: 'pokelike',
-		ruleset: ['Standard NatDex', 'Terastal Clause', '!Evasion Clause', '!OHKO Clause', 'Form Item Clause', 'Overflow Stat Mod'],
+		ruleset: ['Standard NatDex', 'Terastal Clause', '!Evasion Clause', '!OHKO Clause', 'Form Item Clause', 'Overflow Stat Mod', 'Bonus Type Mod'],
 		banlist: [],
 		unbanlist: [],
 		restricted: [],
