@@ -934,7 +934,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 		contestType: "Beautiful",
 	},
-	axekick: {
+	axekick: { 
 		num: 853,
 		accuracy: 95,
 		basePower: 120,
@@ -972,7 +972,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
 	},
-	baddybad: {
+	baddybad: { //10
 		num: 737,
 		accuracy: 95,
 		basePower: 80,
@@ -1470,7 +1470,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fire",
 	},
-	bleakwindstorm: {
+	bleakwindstorm: { //20
 		num: 846,
 		accuracy: 80,
 		basePower: 100,
@@ -2754,7 +2754,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fighting",
 		contestType: "Tough",
 	},
-	combattorque: {
+	combattorque: { //37
 		num: 899,
 		accuracy: 100,
 		basePower: 100,
@@ -21363,7 +21363,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		maxMove: { basePower: 80 },
 		contestType: "Cool",
 	},
-	tropkick: {
+	tropkick: { // 55
 		num: 688,
 		accuracy: 90,
 		basePower: 130,
@@ -22875,7 +22875,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
 	},
-	lazyancientrite: {
+	lazyancientrite: { //32
 		num: -112,
 		accuracy: true,
 		basePower: 0,

@@ -20122,7 +20122,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Glimmora",
 		types: ["Rock", "Poison"],
 		baseStats: { hp: 83, atk: 55, def: 90, spa: 130, spd: 81, spe: 86 },
-		abilities: { 0: "Toxic Debris", H: "Corrosion" },
+		abilities: { 0: "Toxic Debris", 1: "Flower Veil", H: "Corrosion" },
 		heightm: 1.5,
 		weightkg: 45,
 		color: "Blue",

@@ -867,6 +867,7 @@ export class Pokemon {
 		// Certain Abilities won't activate while Transformed, even if they ordinarily couldn't be suppressed (e.g. Disguise)
 		if (this.getAbility().flags['notransform'] && this.transformed) return true;
 		if (this.getAbility().flags['cantsuppress']) return false;
+		if (this.volatiles['blinddrop']) return true;
 		if (this.volatiles['gastroacid']) return true;
 
 		// Check if any active pokemon have the ability Neutralizing Gas
@@ -885,7 +886,7 @@ export class Pokemon {
 	ignoringItem(isFling = false) {
 		if (this.getItem().isPrimalOrb) return false;
 		if (this.battle.gen >= 5 && !this.isActive) return true;
-		if (this.volatiles['embargo'] || this.volatiles['itemignored'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk']) return true;
+		if (this.volatiles['embargo'] || this.volatiles['itemignored'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk'] || this.volatiles['blinddrop']) return true;
 		// check Fling first to avoid infinite recursion
 		if (isFling) return this.battle.gen >= 5;
 	}

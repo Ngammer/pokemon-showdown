@@ -4624,19 +4624,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				source.addVolatile('itemignored');
 			}
 		}, 
-		/*onTryHit(target, source, move) {
-			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb', 'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
-				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
-				'buggem', 'darkgem', 'dragongem', 'electricgem', 'fairygem', 'fightinggem', 'firegem', 'flyinggem', 'ghostgem', 'grassgem', 'groundgem', 'icegem', 'normalgem', 'poisongem', 'psychicgem', 'rockgem',
-				'steelgem', 'watergem', 'dracoplate', 'dreadplate', 'earthplate', 'fistplate', 'flameplate', 'icicleplate', 'insectplate', 'ironplate', 'meadowplate', 'mindplate', 'pixieplate', 'skyplate',
-				'splashplate', 'spookyplate', 'stoneplate', 'toxicplate', 'zapplate', 'skullfossil', 'adamantorb', 'griseousorb', 'lustrousorb', 'souldew', 'deepseascale', 'deepseatooth', 'lightball', 'thickclub',
-				'stick', 'dragonscale', 'duskstone', 'firestone', 'waterstone', 'thunderstone', 'leafstone','shinyrock', 'ovalstone', 'icestone', 'bugmemory', 'darkmemory', 'dragonmemory', 'electricmemory',
-				'fairymemory', 'fightingmemory', 'firememory', 'flyingmemory', 'ghostmemory', 'grassmemory', 'groundmemory', 'icememory', 'normalmemory', 'poisonmemory', 'psychicmemory', 'rockmemory', 'steelmemory',
-				'watermemory', 'adamantcrystal', 'griseouscrystal', 'lustrouscrystal', 'leek', 'metalalloy', 'choicespecs', 'choiceband' ];
-			if(bannedItems.includes(source.item) && move.category !== 'Status') {
-				source.addVolatile('itemignored');
-			}
-		}, */
 		onDamagingHit(damage, target, source, move) {
 			source.removeVolatile('itemignored');
 		},
@@ -8118,5 +8105,46 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Gigantification (Disguise)",
 		rating: 3.5,
 		num: -194,
+	},
+	blinddrop: {
+		onStart(pokemon) {
+			for (const target of pokemon.foes()) {
+				if (target.ability === 'No Guard' || target.ability === 'Illuminate') {
+					this.add('-activate', pokemon, 'ability: Blind Drop');
+					target.addVolatile('blindrop')
+				}
+				if (target.item === 'Bright Powder' || target.item === 'Lax Incense') {
+					this.add('-activate', pokemon, 'ability: Blind Drop');
+					target.addVolatile('blindrop');
+				}
+			}
+		},
+		onAnyAccuracy(accuracy, target, source, move) {
+			if (move.type === 'Water') {
+				return true;
+			}
+			return (accuracy-10);
+		},
+		onAnyModifyBoost(boosts, pokemon) {
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
+				boosts['accuracy'] = 0;
+			}
+		}, // Falta la parte que hace que ignora los cambios de presición en los movimientos de los demás pokémon en campo 
+		condition: {
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Blind Drop');
+				this.singleEvent('End', pokemon.getAbility(), pokemon.abilityState, pokemon);
+			},
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Blind Drop');
+			},
+		},
+		flags: { },
+		name: "Blind Drop",
+		rating: 3,
+		num: -195,
 	},
 };
