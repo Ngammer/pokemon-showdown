@@ -4648,7 +4648,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, '[from] item suppression');
 			},
-		}, 
+		},
 		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,
@@ -6866,12 +6866,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -135,
 	},
-	conjurator: {
+	feared: {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
 				if (!activated) {
-					this.add('-ability', pokemon, 'Conjurator', 'boost');
+					this.add('-ability', pokemon, 'Feared', 'boost');
 					activated = true;
 				}
 				if (target.volatiles['substitute']) {
@@ -6882,7 +6882,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: { },
-		name: "Conjurator",
+		name: "Feared",
 		rating: 3.5,
 		num: -136,
 	},
