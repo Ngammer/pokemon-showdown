@@ -4636,7 +4636,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if(bannedItems.includes(source.item) && move.category !== 'Status') {
 				source.addVolatile('itemignored');
 			}
-		},
+		}, */
 		onDamagingHit(damage, target, source, move) {
 			source.removeVolatile('itemignored');
 		},
@@ -4648,7 +4648,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, '[from] item suppression');
 			},
-		}, */
+		}, 
 		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,
