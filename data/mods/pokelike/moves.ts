@@ -1,10 +1,10 @@
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
-	spikyshield: {
+	kalostrois: {
 		num: 596,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Spiky Shield",
+		name: "Kalos Trois",
 		pp: 10,
 		priority: 4,
 		flags: { noassist: 1, failcopycat: 1, piercing: 1 },
@@ -15,6 +15,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 		onHit(pokemon) {
 			pokemon.addVolatile('stall');
+		},
+		onAfterHit(pokemon, target) {
+			this.actions.useMove('watershuriken', pokemon);
+			this.actions.useMove('mysticalfire', pokemon);
 		},
 		condition: {
 			duration: 1,
