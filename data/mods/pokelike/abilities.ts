@@ -281,11 +281,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-			for (const type in attacker.types) {
-				if (move.type === type && attacker.activeMoveActions <= 1) {
-					this.debug('STAB boost');
-					return this.chainModify(1.5);
-				}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
 			}
 		},
 		flags: { },
@@ -301,11 +299,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			move.ignoreAbility = true;
 		},
 		onBasePower(basePower, attacker, defender, move) {
-			for (const type in attacker.types) {
-				if (move.type === type && attacker.activeMoveActions <= 1) {
-					this.debug('STAB boost')
-					return this.chainModify(1.5);
-				}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
 			}
 		},
 		flags: { },
@@ -316,6 +312,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	metalbreakerplus: {
 		onEffectiveness(typeMod, target, type, move) {
 			if (type === 'Steel' && move.type === 'Steel') return 1;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
 		},
 		flags: { },
 		name: "Metal Breaker-Plus",
@@ -410,5 +412,183 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Blind Drop",
 		rating: 3,
 		num: -195,
+	},
+	beastboostplus: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				const bestStat = source.getBestStat(true, true);
+				this.boost({ [bestStat]: length }, source);
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Beast Ball' && pokemon.useItem()) {
+				const bestStat = pokemon.getBestStat(true, true);
+				this.boost({ [bestStat]: 1 }, pokemon);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Beast Boost-Plus",
+		rating: 3.5,
+		num: 224,
+	},
+	levitateplus: {
+		// airborneness implemented in sim/pokemon.js:Pokemon#isGrounded
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Levitate-Plus",
+		rating: 3.5,
+		num: 26,
+	},
+	filthyplus: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && move.type === 'Poison' && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.8);
+			}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Poison') {
+				this.debug('Filthy boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Filthy-Plus",
+		rating: 2,
+		num: -159,
+	},
+	sandveilplus: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather('sandstorm'))) mod *= 0.75;
+			return this.chainModify(mod);
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Sand Veil-Plus",
+		rating: 1.5,
+		num: 8,
+	},
+	draconianplus: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && move.type === 'Dragon' && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.8);
+			}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Dragon') {
+				this.debug('Draconian boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Draconian-Plus",
+		rating: 2,
+		num: -163,
+	},
+	dragonizeplus: {
+		isNonstandard: "Future",
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Dragon';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (pokemon.hasType(move.type) && pokemon.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Dragonize-Plus",
+		rating: 4,
+		num: 312,
+	},
+	joyfulplus: {
+		onDamagingHit(damage, target, source, effect) {
+			this.boost({ spa: 1 });
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Joyful-Plus",
+		rating: 1,
+		num: -124,
+	},
+	regeneratorplus: {
+		onSwitchOut(pokemon) {
+			pokemon.heal(pokemon.baseMaxhp / 3);
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Regenerator-Plus",
+		rating: 4.5,
+		num: 144,
+	},
+	blessedbodyplus: {
+		onDamagingHit(damage, target, source, effect) {
+			const r = this.random(100);
+			if (r < 20) {
+				this.boost({ atk: 1 });
+			} else if (r < 40) {
+				this.boost({ spa: 1 });
+			} else if (r < 60) {
+				this.boost({ def: 1 });
+			} else if (r < 80) {
+				this.boost({ spd: 1 });
+			} else if (r < 100) {
+				this.boost({ spe: 1 });
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Blessed Body-Plus",
+		rating: 1,
+		num: -133,
 	},
 };

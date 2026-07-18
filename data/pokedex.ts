@@ -9523,7 +9523,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Ground", "Dragon"],
 		gender: "N",
 		baseStats: { hp: 80, atk: 150, def: 80, spa: 40, spd: 80, spe: 90 },
-		abilities: { 0: "Sand Veil" },
+		abilities: { 0: "Sand Veil", 1: "Draconian", H: "Dragonize" },
 		heightm: 0.3, // cambiar
 		weightkg: 0.3, // cambiar
 		color: "Red", // cambiar
