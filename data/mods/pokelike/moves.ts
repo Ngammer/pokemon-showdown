@@ -1,10 +1,10 @@
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
-	kalostrois: {
+	kalostrio: {
 		num: 596,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Kalos Trois",
+		name: "Kalos Trio",
 		pp: 10,
 		priority: 4,
 		flags: { noassist: 1, failcopycat: 1, piercing: 1 },
