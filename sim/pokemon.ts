@@ -886,7 +886,8 @@ export class Pokemon {
 	ignoringItem(isFling = false) {
 		if (this.getItem().isPrimalOrb) return false;
 		if (this.battle.gen >= 5 && !this.isActive) return true;
-		if (this.volatiles['embargo'] || this.volatiles['itemignored'] || this.battle.field.pseudoWeather['magicroom'] || this.volatiles['frisk'] || this.volatiles['blinddrop']) return true;
+		if (this.volatiles['embargo'] || this.volatiles['itemignored'] || this.battle.field.pseudoWeather['magicroom'] ||
+			this.volatiles['frisk'] || this.volatiles['blinddrop']) return true;
 		// check Fling first to avoid infinite recursion
 		if (isFling) return this.battle.gen >= 5;
 	}
@@ -2163,7 +2164,8 @@ export class Pokemon {
 		// If a Fire/Flying type uses Burn Up and Roost, it becomes ???/Flying-type, but it's still grounded.
 		if (!negateImmunity && this.hasType('Flying') && !(this.hasType('???') && 'roost' in this.volatiles)) return false;
 
-		if (this.hasAbility(['levitate', 'eelevate', 'surgesurfer', 'weezingfusion']) && !this.battle.suppressingAbility(this)) return null;
+		if (this.hasAbility(['levitate', 'eelevate', 'surgesurfer', 'weezingfusion']) &&
+			!this.battle.suppressingAbility(this)) return null;
 		if ('magnetrise' in this.volatiles) return false;
 		if ('telekinesis' in this.volatiles) return false;
 		return item !== 'airballoon';
