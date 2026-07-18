@@ -219,15 +219,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	torrentplus: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			for (const type in attacker.types) {
-				if (move.type === type && move.type === 'Water' && attacker.activeMoveActions <= 1) {
-					this.debug('STAB boost');
-					return this.chainModify(1.8);
-				}
-				if (move.type === type && attacker.activeMoveActions <= 1) {
-					this.debug('STAB boost');
-					return this.chainModify(1.5);
-				}
+			if (attacker.hasType(move.type) && move.type === 'Water' && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.8);
+			}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
 			}
 			if (move.type === 'Water') {
 				this.debug('Torrent boost');
