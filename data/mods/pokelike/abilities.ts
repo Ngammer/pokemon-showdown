@@ -216,4 +216,28 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 305,
 	},
+	torrent: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			for (const type in attacker.types) {
+				if (move.type === type && move.type  === 'Water' && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost')
+					return this.chainModify(1.8);
+				}
+				if (move.type === type && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost')
+					return this.chainModify(1.5);
+				}
+			}
+			if (move.type === 'Water') {
+				this.debug('Torrent boost');
+				return this.chainModify(1.2);
+			}
+			
+		},
+		flags: { },
+		name: "Torrent",
+		rating: 2,
+		num: 67,
+	},
 };
