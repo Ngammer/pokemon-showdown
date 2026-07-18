@@ -4623,7 +4623,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (bannedItems.includes(source.item)) {
 				source.addVolatile('itemignored');
 			}
-		}, 
+		},
 		onDamagingHit(damage, target, source, move) {
 			source.removeVolatile('itemignored');
 		},
@@ -4635,7 +4635,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, '[from] item suppression');
 			},
-		}, 
+		},
 		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,
@@ -5429,8 +5429,30 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 284,
 	},
 	tangledfeet: {
-		onEmergencyExit(target) {
-			this.boost({ spe: 1 });
+		onDamage(damage, target, source, effect) {
+			this.effectState.checkedTangledFeet = !(
+				effect.effectType === "Move" && !effect.multihit &&
+				!(effect.hasSheerForce && source.hasAbility('sheerforce'))
+			);
+		},
+		onTryEatItem(item) {
+			const healingItems = [
+				'aguavberry', 'enigmaberry', 'figyberry', 'iapapaberry', 'magoberry', 'sitrusberry', 'wikiberry', 'oranberry', 'berryjuice',
+			];
+			if (healingItems.includes(item.id)) {
+				return this.effectState.checkedTangledFeet;
+			}
+			return true;
+		},
+		onAfterMoveSecondary(target, source, move) {
+			this.effectState.checkedTangledFeet = true;
+			if (!source || source === target || !target.hp || !move.totalDamage) return;
+			const lastAttackedBy = target.getLastAttackedBy();
+			if (!lastAttackedBy) return;
+			const damage = move.multihit && !move.smartTarget ? move.totalDamage : lastAttackedBy.damage;
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
+				this.boost({ spe: 1 }, target, target);
+			}
 		},
 		flags: { },
 		name: "Tangled Feet",

@@ -17,6 +17,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dodrio: {
 		inherit: true,
+		abilities: { 0: "Dodrio Fusion" },
 	},
 	simipour: {
 		inherit: true,
