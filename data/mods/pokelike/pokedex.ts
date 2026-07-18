@@ -195,6 +195,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	golurk: {
 		inherit: true,
+		abilities: { 0: "Iron Fist (Golurk)", 1: "Klutz (Golurk)", H: "No Guard (Golurk)" },
 	},
 	toxtricitylowkey: {
 		inherit: true,

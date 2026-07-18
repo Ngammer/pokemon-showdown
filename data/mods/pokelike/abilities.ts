@@ -216,4 +216,93 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 305,
 	},
+	ironfistgolurk: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist (Golurk) boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		onDamage(damage, target, source, effect) {
+			this.effectState.checkedBerserk = !(
+				effect.effectType === "Move" && !effect.multihit &&
+				!(effect.hasSheerForce && source.hasAbility('sheerforce'))
+			);
+		},
+		onTryEatItem(item) {
+			const healingItems = [
+				'aguavberry', 'enigmaberry', 'figyberry', 'iapapaberry', 'magoberry', 'sitrusberry', 'wikiberry', 'oranberry', 'berryjuice',
+			];
+			if (healingItems.includes(item.id)) {
+				return this.effectState.checkedBerserk;
+			}
+			return true;
+		},
+		onAfterMoveSecondary(target, source, move) {
+			this.effectState.checkedBerserk = true;
+			if (!source || source === target || !target.hp || !move.totalDamage) return;
+			const lastAttackedBy = target.getLastAttackedBy();
+			if (!lastAttackedBy) return;
+			const damage = move.multihit && !move.smartTarget ? move.totalDamage : lastAttackedBy.damage;
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
+				this.boost({ spa: 1 }, target, target);
+			}
+		},
+		flags: { },
+		name: "Iron Fist (Golurk)",
+		rating: 3,
+		num: 89,
+	},
+	klutzgolurk: {
+		// Klutz isn't technically active immediately in-game, but it activates early enough to beat all items
+		// we should keep an eye out in future gens for items that activate on switch-in before Unnerve
+		onSwitchInPriority: 1,
+		// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
+		onStart(pokemon) {
+			pokemon.addVolatile('confusion');
+			this.boost({ atk: 1 }, pokemon);
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({ spa: 1 });
+			}
+		},
+		flags: { },
+		name: "Klutz (Golurk)",
+		rating: -1,
+		num: 103,
+	},
+	noguardgolurk: {
+		onAnyInvulnerabilityPriority: 1,
+		onAnyInvulnerability(target, source, move) {
+			if (move && (source === this.effectState.target || target === this.effectState.target)) return 0;
+		},
+		onAnyAccuracy(accuracy, target, source, move) {
+			if (move && (source === this.effectState.target || target === this.effectState.target)) {
+				return true;
+			}
+			return accuracy;
+		},
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'No Guard (Golurk)', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ atk: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: { },
+		name: "No Guard (Golurk)",
+		rating: 4,
+		num: 99,
+	},
 };

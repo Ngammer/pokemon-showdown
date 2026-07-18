@@ -16,7 +16,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onHit(pokemon) {
 			pokemon.addVolatile('stall');
 		},
-		onAfterHit(pokemon, target) {
+		onAfterMove(pokemon, target) {
 			this.actions.useMove('watershuriken', pokemon);
 			this.actions.useMove('mysticalfire', pokemon);
 		},
