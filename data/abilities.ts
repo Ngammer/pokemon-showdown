@@ -8107,7 +8107,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -194,
 	},
 	blinddrop: {
-		onStart(pokemon) {
+		/* onStart(pokemon) {
 			for (const target of pokemon.foes()) {
 				if (target.ability === 'No Guard' || target.ability === 'Illuminate') {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
@@ -8118,7 +8118,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					target.addVolatile('blinddrop');
 				}
 			}
-		},// Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan 
+		},  Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan */
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Water') return true;
 			if (move.accuracy == true ) accuracy = 100;
@@ -8134,7 +8134,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				boosts['accuracy'] = 0;
 			}
 		},
-		condition: {
+		/* condition: {
 			onStart(pokemon) {
 				this.add('-start', pokemon, 'Blind Drop');
 			},
@@ -8142,7 +8142,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, 'Blind Drop');
 			},
-		},
+		}, */
 		onSwitchOut(pokemon) {
 			for (const target of pokemon.foes()) {
 				if (target.volatiles['blinddrop']) {
