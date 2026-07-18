@@ -272,7 +272,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kyuremblack: {
 		inherit: true,
-		abilities: { 0: "Teravolt", S: "Sand Force", S2: "Ground Power", S3: "Sheer Force", S4: "Intimidate", S5: "Justified", S6: "Quick Feet", S7: "Soaked", S8: "Apprentice" },
+		abilities: { 0: "Teravolt", S: "Sand Force", S2: "Ground Power", S3: "Sheer Force",
+			S4: "Intimidate", S5: "Justified", S6: "Quick Feet", S7: "Soaked", S8: "Apprentice" },
 	},
 	dubwool: {
 		inherit: true,
@@ -285,6 +286,27 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	kingambit: {
 		inherit: true,
 		types: ["Dark", "Steel", "Psychic"],
+	},
+	regice: {
+		inherit: true,
+		types: ["Ice", "Ghost"],
+	},
+	noivern: {
+		inherit: true,
+		abilities: { 0: "Frisk", 1: "Infiltrator", H: "Amplifier", S: "Telepathy", S2:
+			"Fairy Aura", S3: "Healer", S4: "Regenerator" },
+	},
+	empoleon: {
+		inherit: true,
+		types: ["Water", "Steel", "Fire", "Fighting"],
+	},
+	solrock: {
+		inherit: true,
+		types: ["Psychic"],
+	},
+	absol: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Super Luck", H: "Justified", S: "Sharpness" },
 	},
 	munkidori: {
 		inherit: true,
