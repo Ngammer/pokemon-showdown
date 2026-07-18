@@ -4610,20 +4610,21 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	shellarmor: {
 		onCriticalHit: false,
-		 onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
+		onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
 		onSourceBasePower(basePower, source, target, move) {
-			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb', 'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
+			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb',
+				'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
 				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
 				'buggem', 'darkgem', 'dragongem', 'electricgem', 'fairygem', 'fightinggem', 'firegem', 'flyinggem', 'ghostgem', 'grassgem', 'groundgem', 'icegem', 'normalgem', 'poisongem', 'psychicgem', 'rockgem',
 				'steelgem', 'watergem', 'dracoplate', 'dreadplate', 'earthplate', 'fistplate', 'flameplate', 'icicleplate', 'insectplate', 'ironplate', 'meadowplate', 'mindplate', 'pixieplate', 'skyplate',
 				'splashplate', 'spookyplate', 'stoneplate', 'toxicplate', 'zapplate', 'skullfossil', 'adamantorb', 'griseousorb', 'lustrousorb', 'souldew', 'deepseascale', 'deepseatooth', 'lightball', 'thickclub',
-				'stick', 'dragonscale', 'duskstone', 'firestone', 'waterstone', 'thunderstone', 'leafstone','shinyrock', 'ovalstone', 'icestone', 'bugmemory', 'darkmemory', 'dragonmemory', 'electricmemory',
+				'stick', 'dragonscale', 'duskstone', 'firestone', 'waterstone', 'thunderstone', 'leafstone', 'shinyrock', 'ovalstone', 'icestone', 'bugmemory', 'darkmemory', 'dragonmemory', 'electricmemory',
 				'fairymemory', 'fightingmemory', 'firememory', 'flyingmemory', 'ghostmemory', 'grassmemory', 'groundmemory', 'icememory', 'normalmemory', 'poisonmemory', 'psychicmemory', 'rockmemory', 'steelmemory',
-				'watermemory', 'adamantcrystal', 'griseouscrystal', 'lustrouscrystal', 'leek', 'metalalloy', 'choicespecs', 'choiceband' ];
+				'watermemory', 'adamantcrystal', 'griseouscrystal', 'lustrouscrystal', 'leek', 'metalalloy', 'choicespecs', 'choiceband'];
 			if (bannedItems.includes(source.item)) {
 				source.addVolatile('itemignored');
 			}
-		}, 
+		},
 		onDamagingHit(damage, target, source, move) {
 			source.removeVolatile('itemignored');
 		},
@@ -4635,7 +4636,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(pokemon) {
 				this.add('-end', pokemon, '[from] item suppression');
 			},
-		}, 
+		},
 		flags: { breakable: 1 },
 		name: "Shell Armor",
 		rating: 1,
@@ -5429,8 +5430,30 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 284,
 	},
 	tangledfeet: {
-		onEmergencyExit(target) {
-			this.boost({ spe: 1 });
+		onDamage(damage, target, source, effect) {
+			this.effectState.checkedTangledFeet = !(
+				effect.effectType === "Move" && !effect.multihit &&
+				!(effect.hasSheerForce && source.hasAbility('sheerforce'))
+			);
+		},
+		onTryEatItem(item) {
+			const healingItems = [
+				'aguavberry', 'enigmaberry', 'figyberry', 'iapapaberry', 'magoberry', 'sitrusberry', 'wikiberry', 'oranberry', 'berryjuice',
+			];
+			if (healingItems.includes(item.id)) {
+				return this.effectState.checkedTangledFeet;
+			}
+			return true;
+		},
+		onAfterMoveSecondary(target, source, move) {
+			this.effectState.checkedTangledFeet = true;
+			if (!source || source === target || !target.hp || !move.totalDamage) return;
+			const lastAttackedBy = target.getLastAttackedBy();
+			if (!lastAttackedBy) return;
+			const damage = move.multihit && !move.smartTarget ? move.totalDamage : lastAttackedBy.damage;
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
+				this.boost({ spe: 1 }, target, target);
+			}
 		},
 		flags: { },
 		name: "Tangled Feet",
@@ -8113,7 +8136,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
 					target.addVolatile('blinddrop')
 				}
-				if (target.item === 'Bright Powder' || target.item === 'Wide Lens' || target.item === 'Zoom Lens' || target.item === 'Power Lens' || target.item === 'Micle Berry' || target.item === 'Skull Fossil') {
+				if (target.item === 'Bright Powder' || target.item === 'Wide Lens' || target.item === 'Zoom Lens' ||
+				target.item === 'Power Lens' || target.item === 'Micle Berry' || target.item === 'Skull Fossil') {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
 					target.addVolatile('blinddrop');
 				}
@@ -8121,10 +8145,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},  Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan */
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Water') return true;
-			if (move.accuracy == true ) accuracy = 100;
-			if(move.accuracy !== accuracy) accuracy == move.accuracy;
+			if (move.accuracy === true) accuracy = 100;
+			if (move.accuracy !== accuracy && typeof move.accuracy === 'number') accuracy = move.accuracy;
 			const final = this.clampIntRange(accuracy - 10, 0, 100);
-				this.add('-message', `DEBUG: accuracy original=${move.accuracy} accuracy recibida=${accuracy}, final=${final}`); // ← temporal
+			this.add('-message', `DEBUG: accuracy original=${move.accuracy} accuracy recibida=${accuracy}, final=${final}`); // ← temporal
 			return final;
 		},
 		onAnyModifyBoost(boosts, pokemon) {
