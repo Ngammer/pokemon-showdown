@@ -1193,4 +1193,268 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			workup: ["9M"],
 		},
 	},
+	talonflame: {
+		learnset: {
+			acrobatics: ["9M", "9L22", "9M", "9L22", "9M", "9L44", "9M", "9L44"],
+			aerialace: ["9M", "9L38", "9L38", "9M", "9M"],
+			aircutter: ["9M"],
+			airslash: ["9M"],
+			bravebird: ["9M", "9L83", "9M", "9L83", "9L1", "9L1"],
+			defog: ["9T"],
+			dualwingbeat: ["9M", "9T"],
+			ember: ["9L1", "9L1", "9L1", "9L17"],
+			featherdance: ["9M"],
+			fireblast: ["9M", "9M", "9M", "9M"],
+			firespin: ["9M", "9M"],
+			flamecharge: ["9M", "9L1", "9L1", "9M", "9L39", "9M", "9L39"],
+			flamethrower: ["9M", "9M", "9M", "9M"],
+			flareblitz: ["9M", "9L1", "9M", "9L1", "9L1", "9L1"],
+			fly: ["9M", "9L74", "9M", "9L74", "9M", "9M"],
+			heatwave: ["9M", "9M", "9T", "9T"],
+			hurricane: ["9M", "9M"],
+			incinerate: ["9M"],
+			overheat: ["9M", "9M", "9M", "9M"],
+			peck: ["9L1", "9L1", "9L1", "9L10"],
+			razorwind: ["9L27", "9L27"],
+			roost: ["9L65", "9L65", "9M", "9L25", "9M", "9L25"],
+			sunnyday: ["9M", "9M", "9M", "9M"],
+			tailwind: ["9M", "9L47", "9L47", "9T", "9L55", "9T", "9L55"],
+			temperflare: ["9M"],
+			willowisp: ["9M", "9M", "9M", "9M"],
+		},
+	},
+	luxray: {
+		learnset: {
+			charge: ["9M", "9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			chargebeam: ["9M", "9M", "9M", "9M", "9M"],
+			discharge: ["9L64", "9L64", "9L56", "9L56", "9L56", "9L56"],
+			eerieimpulse: ["9M", "9M"],
+			electricterrain: ["9M", "9L1", "9M", "9L1", "9L1", "9L1"],
+			electroball: ["9M", "9M"],
+			electroweb: ["9M"],
+			icefang: ["9M", "9M"],
+			magnetrise: ["9T", "9T", "9T", "9T"],
+			risingvoltage: ["9T"],
+			shockwave: ["9T", "9T", "9M"],
+			spark: ["9L18", "9L18", "9L13", "9L13", "9L13", "9L13"],
+			supercellslam: ["9M"],
+			thunder: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			thunderfang: ["9M", "9M", "9L35", "9L35", "9L35", "9L35"],
+			thundershock: ["9L1", "9L1"],
+			thunderwave: ["9M", "9L48", "9M", "9L48", "9M", "9M", "9M", "9M"],
+			voltswitch: ["9M", "9L33", "9M", "9L33", "9M", "9M", "9M"],
+			wildcharge: ["9M", "9L80", "9M", "9L80", "9M", "9L63", "9M", "9L63", "9M", "9L63"],
+		},
+	},
+	qwilfish: {
+		learnset: {
+			acidarmor: ["9M"], //Añadido
+			acidspray: ["9M"],
+			acupressure: ["9M"],
+			aquacutter: ["9M"], //Añadido
+			aquajet: ["9M"],
+			aquatail: ["9M"],
+			astonish: ["9M"],
+			barbbarrage: ["9M"],
+			bounce: ["9M"],
+			brine: ["9M"],
+			bubble: ["9M"],
+			bubblebeam: ["9M"],
+			chillingwater: ["9M"],
+			curse: ["9M"],
+			cut: ["9M"], //Añadido
+			defensecurl: ["9M"],
+			destinybond: ["9M"],
+			dive: ["9M"],
+			doubleedge: ["9M"],
+			doubleteam: ["9M"],
+			endure: ["9M"],
+			explosion: ["9M"],
+			facade: ["9M"],
+			fellstinger: ["9M"],
+			flipturn: ["9M"],
+			focusblast: ["9M"], //Añadido
+			focusenergy: ["9M"], //Añadido
+			frustration: ["9M"],
+			furycutter: ["9M"], //Añadido
+			gigaimpact: ["9M"],
+			gunkshot: ["9M"],
+			gyroball: ["9M"],
+			haze: ["9M"],
+			headbutt: ["9M"],
+			helpinghand: ["9M"], //Añadido
+			hex: ["9M"],
+			hiddenpower: ["9M"],
+			hydropump: ["9M"],
+			iceball: ["9M"], //Añadido
+			icebeam: ["9M"],
+			iciclecrash: ["9M"], //Añadido
+			icywind: ["9M"],
+			irontail: ["9M"], //Añadido
+			liquidation: ["9M"],
+			metronome: ["9M"], //Añadido
+			mimic: ["9M"],
+			minimize: ["9M"],
+			mudbomb: ["9M"], //Añadido
+			muddywater: ["9M"], //Añadido
+			mudshot: ["9M"],
+			naturalgift: ["9M"],
+			painsplit: ["9M"],
+			payback: ["9M"],
+			pinmissile: ["9M"],
+			poisonjab: ["9M"],
+			poisonsting: ["9M"],
+			poisontail: ["9M"],
+			protect: ["9M"],
+			rage: ["9M"], //Añadido
+			raindance: ["9M"], //Añadido
+			rapidspin: ["9M"], //Añadido
+			rest: ["9M"],
+			return: ["9M"],
+			revenge: ["9M"],
+			reversal: ["9M"],
+			rollout: ["9M"],
+			scaleshot: ["9M"],
+			scaryface: ["9M"],
+			secretpower: ["9M"], //Añadido
+			shadowball: ["9M"],
+			slam: ["9M"], //Añadido
+			sleeptalk: ["9M"],
+			sludgebomb: ["9M"],
+			sludgewave: ["9M"],
+			snore: ["9M"],
+			spikecannon: ["9M"], //Añadido
+			spikes: ["9M"],
+			spitup: ["9M"],
+			steelroller: ["9M"],
+			stockpile: ["9M"],
+			substitute: ["9M"],
+			supersonic: ["9M"],
+			surf: ["9M"], //Añadido
+			swallow: ["9M"], //Añadido
+			terablast: ["9M"],
+			throatchop: ["9M"],
+			toxic: ["9M"], //Añadido
+			toxicspikes: ["9M"],
+			trailblaze: ["9M"], //Añadido
+			venomdrench: ["9M"],
+			venoshock: ["9M"],
+			waterfall: ["9M"],
+			watergun: ["9M"],
+			waterpulse: ["9M"],
+			whirlpool: ["9M"],
+			fishiousrend: ["9M"],
+		},
+	},
+qwilfishfeudal: {
+		learnset: {
+			acidspray: ["9M"],
+			acupressure: ["9M"],
+			agility: ["9M"],
+			aquajet: ["9M"],
+			aquatail: ["9M"],
+			assurance: ["9M"],
+			astonish: ["9M"],
+			barbbarrage: ["9M"],
+			bounce: ["9M"],
+			brine: ["9M"],
+			bubble: ["9M"],
+			bubblebeam: ["9M"],
+			chillingwater: ["9M"],
+			coil: ["9M"],
+			crunch: ["9M"],
+			curse: ["9M"],
+			cut: ["9M"], //Añadido
+			defensecurl: ["9M"],
+			destinybond: ["9M"],
+			dive: ["9M"],
+			doubleedge: ["9M"],
+			doubleteam: ["9M"],
+			endure: ["9M"],
+			explosion: ["9M"],
+			facade: ["9M"],
+			fellstinger: ["9M"],
+			flamewheel: ["9M"], //Añadido
+			flipturn: ["9M"],
+			focusblast: ["9M"], //Añadido
+			frustration: ["9M"],
+			gigaimpact: ["9M"],
+			gunkshot: ["9M"],
+			gyroball: ["9M"],
+			harden: ["9M"],
+			haze: ["9M"],
+			headbutt: ["9M"],
+			helpinghand: ["9M"], //Añadido
+			hex: ["9M"],
+			hiddenpower: ["9M"],
+			hydropump: ["9M"],
+			icebeam: ["9M"],
+			icywind: ["9M"],
+			liquidation: ["9M"],
+			metronome: ["9M"], //Añadido
+			mimic: ["9M"],
+			minimize: ["9M"],
+			mortalspin: ["9M"],
+			mudshot: ["9M"],
+			naturalgift: ["9M"],
+			noxioustorque: ["9M"], //Añadido
+			painsplit: ["9M"],
+			payback: ["9M"],
+			pinmissile: ["9M"],
+			poisonjab: ["9M"],
+			poisonsting: ["9M"],
+			poisontail: ["9M"],
+			protect: ["9M"],
+			rest: ["9M"],
+			return: ["9M"],
+			revenge: ["9M"],
+			reversal: ["9M"],
+			rollout: ["9M"],
+			safeguard: ["9M"], //Añadido
+			scald: ["9M"], //Añadido
+			scaleshot: ["9M"],
+			scaryface: ["9M"],
+			secretpower: ["9M"], //Añadido
+			selfdestruct: ["9M"],
+			shadowball: ["9M"],
+			sheercold: ["9M"], //Añadido
+			slam: ["9M"], //Añadido
+			slash: ["9M"], //Añadido
+			sleeptalk: ["9M"],
+			sludgebomb: ["9M"],
+			sludgewave: ["9M"],
+			smartstrike: ["9M"], //Añadido
+			smog: ["9M"], //Añadido
+			smokescreen: ["9M"], //Añadido
+			snore: ["9M"],
+			spikes: ["9M"],
+			spikyancientrite: ["9M"],
+			spikyshield: ["9M"], //Añadido
+			spitup: ["9M"],
+			steamroller: ["9M"],
+			steelroller: ["9M"],
+			stockpile: ["9M"],
+			substitute: ["9M"],
+			supersonic: ["9M"],
+			surf: ["9M"], //Añadido
+			swallow: ["9M"], //Añadido
+			swordsdance: ["9M"], //Añadido
+			temperflare: ["9M"], //Añadido
+			terablast: ["9M"],
+			throatchop: ["9M"],
+			thunderwave: ["9M"],
+			toxic: ["9M"], //Añadido
+			toxicspikes: ["9M"],
+			trailblaze: ["9M"], //Añadido
+			venomdrench: ["9M"],
+			venoshock: ["9M"],
+			waterfall: ["9M"],
+			watergun: ["9M"],
+			waterpulse: ["9M"],
+			wavecrash: ["9M"], //Añadido
+			whirlpool: ["9M"],
+			fishiousrend: ["9M"],
+		},
+	},
 };

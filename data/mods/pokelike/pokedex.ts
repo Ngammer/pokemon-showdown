@@ -227,6 +227,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	lumineonhoenn: {
 		inherit: true,
+		abilities: { 0: "Photocollision", 1: "Storm Drain", H: "Water Veil", S: "Swift Swim", S2: "Water Absorb" },
 	},
 	nidoqueen: {
 		inherit: true,
@@ -254,5 +255,25 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	tapufini: {
 		inherit: true,
 		abilities: { 0: "Misty Surge", 1: "Steelized", H: "Telepathy", S: "Grassy Surge", S2: "Fighter Spirit", S3: "Unaware", S4: "Levitate", S5: "Shining" },
+	},
+	furfrou: {
+		inherit: true,
+		types: ["Normal", "Ghost"],
+	},
+	feraligatr: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 118, def: 100, spa: 79, spd: 83, spe: 80 }, // + 10 Ataque
+	},
+	kyuremblack: {
+		inherit: true,
+		abilities: { 0: "Teravolt", S: "Sand Force", S2: "Ground Power", S3: "Sheer Force", S4: "Intimidate", S5: "Justified", S6: "Quick Feet", S7: "Soaked", S8: "Apprentice" },
+	},
+	dubwool: {
+		inherit: true,
+		baseStats: { hp: 72, atk: 80, def: 110, spa: 60, spd: 90, spe: 88 }, // + 10 Defensa
+	},
+	crowthsola: {
+		inherit: true,
+		baseStats: { hp: 105, atk: 58, def: 110, spa: 82, spd: 110, spe: 40 }, // + 5 Ps
 	}
 };
