@@ -153,4 +153,19 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 22,
 	},
+	infiltratingprankster: {
+		onModifyMove(move) {
+			move.infiltrates = true;
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.category === 'Status') {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: { },
+		name: "Infiltrating Prankster",
+		rating: 2.5,
+		num: 151,
+	},
 };

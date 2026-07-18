@@ -244,6 +244,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	whimsicott: {
 		inherit: true,
+		abilities: { 0: "Infiltrating Prankster", H: "Chlorophyll" },
 	},
 	hydreigon: {
 		inherit: true,
@@ -259,5 +260,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Misty Surge", 1: "Steelized", H: "Telepathy", S: "Grassy Surge", S2: "Fighter Spirit",
 			S3: "Unaware", S4: "Levitate", S5: "Shining" },
+	},
+	kingambit: {
+		inherit: true,
+		types: ["Dark", "Steel", "Psychic"],
 	},
 };
