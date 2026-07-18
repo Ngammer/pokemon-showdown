@@ -216,6 +216,85 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 305,
 	},
+	torrentsimipour: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			for (const type in attacker.types) {
+				if (move.type === type && move.type === 'Water' && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost');
+					return this.chainModify(1.8);
+				}
+				if (move.type === type && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost');
+					return this.chainModify(1.5);
+				}
+			}
+			if (move.type === 'Water') {
+				this.debug('Torrent boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Torrent Simipour",
+		rating: 2,
+		num: 67,
+	},
+	gluttonysimipour: {
+		onStart(pokemon) {
+			pokemon.abilityState.gluttony = true;
+		},
+		onDamage(item, pokemon) {
+			pokemon.abilityState.gluttony = true;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			for (const type in attacker.types) {
+				if (move.type === type && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost');
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		flags: { },
+		name: "Gluttony Simipour",
+		rating: 1.5,
+		num: 82,
+	},
+	blinddrop: {
+		onAnyAccuracy(accuracy, target, source, move) {
+			if (move.type === 'Water') return true;
+			if (move.accuracy === true) accuracy = 100;
+			if (move.accuracy !== accuracy && typeof move.accuracy === 'number') accuracy = move.accuracy;
+			const final = this.clampIntRange(accuracy - 10, 0, 100);
+			this.add('-message', `DEBUG: accuracy original=${move.accuracy} accuracy recibida=${accuracy}, final=${final}`); // ← temporal
+			return final;
+		},
+		onAnyModifyBoost(boosts, pokemon) {
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
+				boosts['accuracy'] = 0;
+			}
+		},
+		onSwitchOut(pokemon) {
+			for (const target of pokemon.foes()) {
+				if (target.volatiles['blinddrop']) {
+					target.removeVolatile('blinddrop');
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			for (const type in attacker.types) {
+				if (move.type === type && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost');
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		flags: { },
+		name: "Blind Drop",
+		rating: 3,
+		num: -195,
+	},
 	ironfistgolurk: {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
@@ -301,8 +380,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "No Guard (Golurk)",
-		rating: 4,
-		num: 99,
+		name: "Blind Drop",
+		rating: 3,
+		num: -195,
 	},
 };

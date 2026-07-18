@@ -1593,9 +1593,6 @@ qwilfishfeudal: {
 			wavecrash: ["9L66"],
 			whirlpool: ["9M", "9L39", "9L39", "9L39", "9L39", "9M", "9L39"],
 		},
-		eventData: [
-			{generation: 5, level: 100, gender: "M", moves: ["hydropump", "aquajet"], pokeball: "cherishball"},
-		],
 	},
 chesnaught: {
 		learnset: {
