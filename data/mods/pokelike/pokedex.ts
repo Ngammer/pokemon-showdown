@@ -125,6 +125,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	luxray: {
 		inherit: true,
+		types: ["Electric", "Ice"],
+		baseStats: { hp: 80, atk: 125, def: 74, spa: 75, spd: 74, spe: 107 }, // 5 a atk
 	},
 	gastrodon: {
 		inherit: true,
