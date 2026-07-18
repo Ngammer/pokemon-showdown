@@ -52,7 +52,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		// Ability suppression implemented in sim/pokemon.ts:Pokemon#ignoringAbility
 		onSwitchInPriority: 2,
 		onSwitchIn(pokemon) {
-			this.add('-ability', pokemon, 'Neutralizing Gas');
+			this.add('-ability', pokemon, 'Weezing Fusion');
 			pokemon.abilityState.ending = false;
 			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream', 'climatologist'];
 			for (const target of this.getAllActive()) {
@@ -65,25 +65,25 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 					continue;
 				}
 				if (target.illusion) {
-					this.singleEvent('End', this.dex.abilities.get('Illusion'), target.abilityState, target, pokemon, 'neutralizinggas');
+					this.singleEvent('End', this.dex.abilities.get('Illusion'), target.abilityState, target, pokemon, 'weezingfusion');
 				}
 				if (target.volatiles['slowstart']) {
 					delete target.volatiles['slowstart'];
 					this.add('-end', target, 'Slow Start', '[silent]');
 				}
 				if (strongWeathers.includes(target.getAbility().id)) {
-					this.singleEvent('End', this.dex.abilities.get(target.getAbility().id), target.abilityState, target, pokemon, 'neutralizinggas');
+					this.singleEvent('End', this.dex.abilities.get(target.getAbility().id), target.abilityState, target, pokemon, 'weezingfusion');
 				}
 			}
 		},
 		onEnd(source) {
 			if (source.transformed) return;
 			for (const pokemon of this.getAllActive()) {
-				if (pokemon !== source && pokemon.hasAbility('Neutralizing Gas')) {
+				if (pokemon !== source && pokemon.hasAbility('Weezing Fusion')) {
 					return;
 				}
 			}
-			this.add('-end', source, 'ability: Neutralizing Gas');
+			this.add('-end', source, 'ability: Weezing Fusion');
 
 			// FIXME this happens before the pokemon switches out, should be the opposite order.
 			// Not an easy fix since we cant use a supported event. Would need some kind of special event that
@@ -139,7 +139,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			const side = source.isAlly(target) ? source.side.foe : source.side;
 			const toxicSpikes = side.sideConditions['toxicspikes'];
 			if (move.category === 'Physical' && (!toxicSpikes || toxicSpikes.layers < 2)) {
-				this.add('-activate', target, 'ability: Toxic Debris');
+				this.add('-activate', target, 'ability: Overqwil Fusion');
 				side.addSideCondition('toxicspikes', target);
 			}
 			if (this.checkMoveMakesContact(move, source, target)) {
@@ -167,5 +167,53 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Infiltrating Prankster",
 		rating: 2.5,
 		num: 151,
+	},
+	munkidorifusion: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+
+			/* if (this.randomChance(3, 10)) { */
+			target.trySetStatus('tox', source);
+			/* } */
+		},
+		onStart(pokemon) {
+			for (const target of pokemon.foes()) {
+				if (target.item) {
+					this.add('-item', target, target.getItem().name, '[from] ability: Munkidori Fusion', `[of] ${pokemon}`);
+					target.addVolatile("munkidorifusion");
+				}
+			}
+		},
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Poison';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		condition: {
+			duration: 8,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Munkidori Fusion');
+				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			},
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Munkidori Fusion');
+			},
+		},
+		flags: { },
+		name: "Munkidori Fusion",
+		rating: 4.5,
+		num: 305,
 	},
 };

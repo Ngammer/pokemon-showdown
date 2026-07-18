@@ -286,4 +286,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		types: ["Dark", "Steel", "Psychic"],
 	},
+	munkidori: {
+		inherit: true,
+		abilities: { 0: "Munkidori Fusion" },
+	},
 };
