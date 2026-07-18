@@ -1094,4 +1094,103 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			{generation: 5, level: 50, shiny: 1, moves: ["leafstorm", "dragonpulse", "focusblast", "rockslide"], pokeball: "cherishball"},
 		],
 	},
+	glimmora: {
+		learnset: {
+			acidarmor: ["9L44"],
+			acidspray: ["9M", "9L7"],
+			ancientpower: ["9L11"],
+			gunkshot: ["9M"],
+			meteorbeam: ["9M"],
+			mortalspin: ["9L0"],
+			powergem: ["9M", "9L39"],
+			rockblast: ["9M"],
+			rockpolish: ["9L15"],
+			rockslide: ["9M", "9L33"],
+			rockthrow: ["9L1"],
+			rocktomb: ["9M"],
+			sandstorm: ["9M", "9L26"],
+			sludgebomb: ["9M"],
+			sludgewave: ["9M", "9L50"],
+			smackdown: ["9M", "9L1"],
+			stealthrock: ["9M", "9L18"],
+			stoneedge: ["9M"],
+			toxic: ["9M"],
+			toxicspikes: ["9M", "9L1"],
+			venoshock: ["9M", "9L22"],
+		},
+	},
+	furrip: {
+		learnset: {
+			astonish: ["9M"], //Añadido
+			attract: ["9M"],
+			batonpass: ["9M"],
+			bittermalice: ["9M"], //Añadido
+			bodyslam: ["9M"],
+			confide: ["9M"], //Añadido
+			confuseray: ["9M"], //Añadido
+			curse: ["9M"],
+			defensecurl: ["9M"],
+			destinybond: ["9M"],
+			disable: ["9M"], //Añadido
+			doubleedge: ["9M"],
+			doubleteam: ["9M"], 
+			encore: ["9M"], //Añadido
+			endeavor: ["9M"],
+			endure: ["9M"],
+			extremespeed: ["9M"], //Añadido
+			facade: ["9M"],
+			followme: ["9M"],
+			foresight: ["9M"],
+			frustration: ["9M"],
+			gigaimpact: ["9M"],
+			grudge: ["9M"], //Añadido
+			headbutt: ["9M"],
+			helpinghand: ["9M"],
+			hex: ["9M"], //Añadido
+			hyperbeam: ["9M"],
+			hypervoice: ["9M"],
+			lastresort: ["9M"],
+			lastrespects: ["9M"],
+			lick: ["9M"], //Añadido
+			mefirst: ["9M"],
+			metronome: ["9M"], //Añadido
+			mimic: ["9M"],
+			naturalgift: ["9M"],
+			nightshade: ["9M"], //Añadido
+			ominouswind: ["9M"], //Añadido
+			painsplit: ["9M"], //Añadido
+			phantomforce: ["9M"], //Añadido
+			playnice: ["9M"], //Añadido
+			poltergeist: ["9M"], //Añadido
+			protect: ["9M"],
+			quickattack: ["9M"],
+			rage: ["9M"], //Añadido
+			rapidspin: ["9M"], //Añadido
+			retaliate: ["9M"],
+			return: ["9M"],
+			scaryface: ["9M"], //Añadido
+			secretpower: ["9M"], //Añadido
+			shadowball: ["9M"],
+			shadowclaw: ["9M"],
+			shadowpunch: ["9M"], //Añadido
+			shadowsneak: ["9M"],
+			simplebeam: ["9M"], //Añadido
+			slam: ["9M"],
+			sleeptalk: ["9M"],
+			snore: ["9M"],
+			sonicboom: ["9M"], //Añadido
+			spite: ["9M"], //Añadido
+			splash: ["9M"], //Añadido
+			substitute: ["9M"],
+			superfang: ["9M"],
+			supersonic: ["9M"], //Añadido
+			tailslap: ["9M"], //Añadido
+			tailwhip: ["9M"], //Añadido
+			terablast: ["9M"],
+			tickle: ["9M"], //Añadido
+			torment: ["9M"], //Añadido
+			uproar: ["9M"],
+			workup: ["9M"],
+		},
+	},
 };

@@ -2,7 +2,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Adri
 	marowak: {
 		inherit: true,
-		abilities: { 0: "Rock Head", 1: "Sand Force", H: "Battle Armor", S: "Limber"/* , S2: "Reckless", S3: "Unburden" */ },
+		abilities: { 0: "Rock Head", 1: "Sand Force", H: "Battle Armor", S: "Limber" , S2: "Reckless", S3: "Unburden" },
 	},
 	zebstrika: {
 		inherit: true,
@@ -11,9 +11,17 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 	},
 	latiasmega: {
-		inherit: true,
+		num: 380,
+		name: "Latias-Mega",
+		baseSpecies: "Latias",
+		types: ["Dragon", "Psychic"],
+		gender: "F",
+		baseStats: { hp: 80, atk: 100, def: 120, spa: 140, spd: 150, spe: 110 },
 		abilities: { 0: "Levitate" },
-		requiredItem: undefined,
+		heightm: 1.8,
+		weightkg: 52,
+		color: "Purple",
+		eggGroups: ["Undiscovered"],
 	},
 	dodrio: {
 		inherit: true,
@@ -242,4 +250,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	toxtricity: {
 		inherit: true,
 	},
+	tapufini: {
+		inherit: true,
+		abilities: { 0: "Misty Surge", 1: "Steelized", H: "Telepathy", S: "Grassy Surge", S2: "Fighter Spirit", S3: "Unaware", S4: "Levitate", S5: "Shining" },
+	}
 };
