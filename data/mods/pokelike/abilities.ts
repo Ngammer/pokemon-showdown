@@ -216,7 +216,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 305,
 	},
-	torrentsimipour: {
+	torrentplus: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			for (const type in attacker.types) {
@@ -236,11 +236,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			
 		},
 		flags: { },
-		name: "Torrent Simipour",
+		name: "Torrent-Plus",
 		rating: 2,
 		num: 67,
 	},
-	gluttonysimipour: {
+	gluttonyplus: {
 		onStart(pokemon) {
 			pokemon.abilityState.gluttony = true;
 		},
@@ -256,7 +256,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Gluttony Simipour",
+		name: "Gluttony-Plus",
 		rating: 1.5,
 		num: 82,
 	},
@@ -295,5 +295,34 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Blind Drop",
 		rating: 3,
 		num: -195,
+	},
+	moldbreakerplus: {
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Mold Breaker');
+		},
+		onModifyMove(move) {
+			move.ignoreAbility = true;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			for (const type in attacker.types) {
+				if (move.type === type && attacker.activeMoveActions <= 1) {
+					this.debug('STAB boost')
+					return this.chainModify(1.5);
+				}
+			}
+		},
+		flags: { },
+		name: "Mold Breaker-Plus",
+		rating: 3,
+		num: 104,
+	},
+	metalbreakerplus: {
+		onEffectiveness(typeMod, target, type, move) {
+			if (type === 'Steel' && move.type === 'Steel') return 1;
+		},
+		flags: { },
+		name: "Metal Breaker-Plus",
+		rating: 3.5,
+		num: -197,
 	},
 };

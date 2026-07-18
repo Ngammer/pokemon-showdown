@@ -8198,6 +8198,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Noxious",
 		rating: 4,
-		num: 174,
+		num: -196,
+	},
+	metalbreaker: {
+		onEffectiveness(typeMod, target, type, move) {
+			if (type === 'Steel' && move.type === 'Steel') return 1;
+		},
+		flags: { },
+		name: "Metal Breaker-Plus",
+		rating: 3.5,
+		num: -197,
 	},
 };
