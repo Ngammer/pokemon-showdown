@@ -216,7 +216,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 305,
 	},
-	torrent: {
+	torrentsimipur: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			for (const type in attacker.types) {
@@ -236,7 +236,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			
 		},
 		flags: { },
-		name: "Torrent",
+		name: "Torrent Simipour",
 		rating: 2,
 		num: 67,
 	},
