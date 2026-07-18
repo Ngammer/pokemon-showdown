@@ -8205,7 +8205,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (type === 'Steel' && move.type === 'Steel') return 1;
 		},
 		flags: { },
-		name: "Metal Breaker-Plus",
+		name: "Metal Breaker",
 		rating: 3.5,
 		num: -197,
 	},
