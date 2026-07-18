@@ -8121,9 +8121,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},// Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan 
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Water') return true;
-			if (move.accuracy === true) accuracy = 100;
+			if (move.accuracy == true ) accuracy = 100;
+			if(move.accuracy !== accuracy) accuracy == move.accuracy;
 			const final = this.clampIntRange(accuracy - 10, 0, 100);
-				this.add('-message', `DEBUG: accuracy recibida=${accuracy}, final=${final}`); // ← temporal
+				this.add('-message', `DEBUG: accuracy original=${move.accuracy} accuracy recibida=${accuracy}, final=${final}`); // ← temporal
 			return final;
 		},
 		onAnyModifyBoost(boosts, pokemon) {
