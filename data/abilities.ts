@@ -8111,20 +8111,21 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of pokemon.foes()) {
 				if (target.ability === 'No Guard' || target.ability === 'Illuminate') {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
-					target.addVolatile('blindrop')
+					target.addVolatile('blinddrop')
 				}
 				if (target.item === 'Bright Powder' || target.item === 'Wide Lens' || target.item === 'Zoom Lens' || target.item === 'Power Lens' || target.item === 'Micle Berry' || target.item === 'Skull Fossil') {
 					this.add('-activate', pokemon, 'ability: Blind Drop');
-					target.addVolatile('blindrop');
+					target.addVolatile('blinddrop');
 				}
 			}
-		},
+		},// Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan 
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Water') return true;
 			if (move.accuracy === true) accuracy = 100;
-			return this.clampIntRange(accuracy - 10, 0, 100);
+			const final = this.clampIntRange(accuracy - 10, 0, 100);
+				this.add('-message', `DEBUG: accuracy recibida=${accuracy}, final=${final}`); // ← temporal
+			return final;
 		},
-		 // Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan 
 		onAnyModifyBoost(boosts, pokemon) {
 			const unawareUser = this.effectState.target;
 			if (unawareUser === pokemon) return;
@@ -8143,9 +8144,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSwitchOut(pokemon) {
 			for (const target of pokemon.foes()) {
-				if (target.volatiles['blindrop']) {
-					this.add('-end', pokemon, 'ability: Blind Drop');
-					target.removeVolatile('blindrop');
+				if (target.volatiles['blinddrop']) {
+					target.removeVolatile('blinddrop');
 				}
 			}
 		},
