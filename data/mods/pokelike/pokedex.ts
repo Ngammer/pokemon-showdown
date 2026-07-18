@@ -286,4 +286,24 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		types: ["Dark", "Steel", "Psychic"],
 	},
+	regice: {
+		inherit: true,
+		types: ["Ice", "Ghost"],
+	},
+	noivern: {
+		inherit: true,
+		abilities: { 0: "Frisk", 1: "Infiltrator", H: "Amplifier", S: "Telepathy", S2: "Fairy Aura", S3: "Healer", S4: "Regenerator" },
+	},
+	empoleon: {
+		inherit: true,
+		types: ["Water", "Steel", "Fire", "Fighting"],
+	},
+	solrock: {
+		inherit: true,
+		types: ["Psychic"],
+	},
+	absol: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Super Luck", H: "Justified", S: "Sharpness" },
+	}
 };
