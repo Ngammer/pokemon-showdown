@@ -2,7 +2,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Adri
 	marowak: {
 		inherit: true,
-		abilities: { 0: "Rock Head", 1: "Sand Force", H: "Battle Armor", S: "Limber" , S2: "Reckless", S3: "Unburden" },
+		abilities: { 0: "Rock Head", 1: "Sand Force", H: "Battle Armor", S: "Limber", S2: "Reckless", S3: "Unburden" },
 	},
 	zebstrika: {
 		inherit: true,
@@ -39,9 +39,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Johan
 	weezing: {
 		inherit: true,
+		abilities: { 0: "Weezing Fusion" },
 	},
 	overqwil: {
 		inherit: true,
+		abilities: { 0: "Overqwil Fusion" },
 	},
 	furrip: {
 		inherit: true,
@@ -123,6 +125,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	luxray: {
 		inherit: true,
+		types: ["Electric", "Ice"],
+		baseStats: { hp: 80, atk: 125, def: 74, spa: 75, spd: 74, spe: 107 }, // 5 a atk
 	},
 	gastrodon: {
 		inherit: true,
@@ -241,6 +245,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	whimsicott: {
 		inherit: true,
+		abilities: { 0: "Infiltrating Prankster", H: "Chlorophyll" },
 	},
 	hydreigon: {
 		inherit: true,
@@ -254,7 +259,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	tapufini: {
 		inherit: true,
-		abilities: { 0: "Misty Surge", 1: "Steelized", H: "Telepathy", S: "Grassy Surge", S2: "Fighter Spirit", S3: "Unaware", S4: "Levitate", S5: "Shining" },
+		abilities: { 0: "Misty Surge", 1: "Steelized", H: "Telepathy", S: "Grassy Surge", S2: "Fighter Spirit",
+			S3: "Unaware", S4: "Levitate", S5: "Shining" },
 	},
 	furfrou: {
 		inherit: true,
@@ -275,5 +281,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	crowthsola: {
 		inherit: true,
 		baseStats: { hp: 105, atk: 58, def: 110, spa: 82, spd: 110, spe: 40 }, // + 5 Ps
-	}
+	},
+	kingambit: {
+		inherit: true,
+		types: ["Dark", "Steel", "Psychic"],
+	},
 };

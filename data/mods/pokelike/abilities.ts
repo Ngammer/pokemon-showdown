@@ -120,4 +120,52 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 256,
 	},
+	overqwilfusion: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Intimidate', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ atk: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			const side = source.isAlly(target) ? source.side.foe : source.side;
+			const toxicSpikes = side.sideConditions['toxicspikes'];
+			if (move.category === 'Physical' && (!toxicSpikes || toxicSpikes.layers < 2)) {
+				this.add('-activate', target, 'ability: Toxic Debris');
+				side.addSideCondition('toxicspikes', target);
+			}
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(5, 10)) {
+					source.trySetStatus('tox', target);
+				}
+			}
+		},
+		flags: { },
+		name: "Overqwil Fusion",
+		rating: 3.5,
+		num: 22,
+	},
+	infiltratingprankster: {
+		onModifyMove(move) {
+			move.infiltrates = true;
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.category === 'Status') {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: { },
+		name: "Infiltrating Prankster",
+		rating: 2.5,
+		num: 151,
+	},
 };
