@@ -6369,11 +6369,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target) && source.runStatusImmunity('powder')) {
 				const r = this.random(100);
-				if (r < 11) {
+				if (r <= 15) {
 					source.trySetStatus('slp', target);
-				} else if (r < 22) {
+				} else if (r <= 30) {
 					source.trySetStatus('par', target);
-				} else if (r < 33) {
+				} else if (r <= 45) {
 					source.trySetStatus('psn', target);
 				}
 			}
