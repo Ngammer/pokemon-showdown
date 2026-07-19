@@ -389,7 +389,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (source.bondTriggered) return;
 			if (effect?.effectType !== 'Move') return;
-			if (source.species.id === 'greninjabond' && source.hp && !source.transformed && source.side.foePokemonLeft()) {
+			if (source.hp && !source.transformed && source.side.foePokemonLeft()) {
 				this.boost({ atk: 1, spa: 1, spe: 1 }, source, source, this.effect);
 				this.add('-activate', source, 'ability: Battle Bond');
 				source.bondTriggered = true;
@@ -398,7 +398,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			if (pokemon.getItem().name === 'Strange Ball') {
 				this.boost({ spe: 1, spa: 1, atk: 1 }, pokemon);
-				this.damage(pokemon.baseMaxhp / 3.33, pokemon);
 				pokemon.useItem();
 			}
 		},
