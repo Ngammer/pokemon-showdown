@@ -272,7 +272,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		onTryHit(target, source, move){
+		onTryHit(target, source, move) {
 			if (source.isAlly(target) && move.flags['wind']) {
 				move.basePower = 0;
 				move.infiltrates = true;
@@ -8417,6 +8417,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-activate', source, 'ability: Oil Spill');
 				side.addSideCondition('toxicspikes', source);
 			}
+		},
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Oil Spill');
+			},
+			onSwitchIn(pokemon) {
+				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) return;
+				this.singleEvent('SwitchIn', this.effect, this.effectState, pokemon);
+				this.damage(pokemon.maxhp / 40);
+			},
 		},
 		flags: { },
 		name: "Oil Spill",
