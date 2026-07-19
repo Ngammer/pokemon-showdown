@@ -669,4 +669,40 @@ assaultvest: {
 		num: 237,
 		gen: 2,
 	},
+	spelltag: {
+		name: "Spell Tag",
+		spritenum: 461,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Ghost' && target.baseSpecies.num === 995) {
+				return this.chainModify([6144, 4096]);
+			}
+			if (move.type === 'Ghost') {
+				return this.chainModify([5120, 4096]);
+			}
+		},
+		num: 247,
+		gen: 2,
+	},
+	twistedspoon: {
+		name: "Twisted Spoon",
+		spritenum: 520,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Psychic' && target.baseSpecies.num === 995) {
+				return this.chainModify([6144, 4096]);
+			}
+			if (move.type === 'Psychic') {
+				return this.chainModify([5120, 4096]);
+			}
+		},
+		num: 248,
+		gen: 2,
+	},
 }
