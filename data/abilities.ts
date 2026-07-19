@@ -6378,6 +6378,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.category !== 'Status' && move.flags['wind']) {
+				this.damage(target.baseMaxhp / 16, target, source);
+			}
+		},
 		flags: { },
 		name: "Scale Shield",
 		rating: 2,
