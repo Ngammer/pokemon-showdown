@@ -651,4 +651,22 @@ assaultvest: {
 		num: 222,
 		gen: 2,
 	},
+	softsand: {
+		name: "Soft Sand",
+		spritenum: 456,
+		fling: {
+			basePower: 10,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Bug' && target.baseSpecies.num === 995) {
+				return this.chainModify([6144, 4096]);
+			}
+			if (move.type === 'Ground') {
+				return this.chainModify([5120, 4096]);
+			}
+		},
+		num: 237,
+		gen: 2,
+	},
 }

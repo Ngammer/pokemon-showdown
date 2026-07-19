@@ -2462,6 +2462,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				break;
 			default:
 				rained ??= false;
+				this.add('-message', `DEBUG: Rained Status=${rained}`); // ← temporal
 				if (weather == 'noraindance' && rained){
 					pokemon.heal(pokemon.maxhp / 4);
 					rained = false;
