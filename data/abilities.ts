@@ -8412,4 +8412,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2.5,
 		num: -203,
 	},
+	amplifier: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['sound']) {
+				this.debug('Amplifier boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['sound'] && move.target === 'allAdjacent') {
+				move.target = 'allAdjacentFoes';
+			}
+		},
+		flags: { },
+		name: "Amplifier",
+		rating: 3,
+		num: -204,
+	},
 };
