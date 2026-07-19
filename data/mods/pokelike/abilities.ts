@@ -2443,13 +2443,30 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(0.5);
 			}
 		},
-		onResidualOrder: 5,
-		onResidualSubOrder: 3,
-		onResidual(pokemon) {
-			if (pokemon.status && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
-				this.debug('Rain Breath');
-				this.add('-activate', pokemon, 'ability: Rain Breath');
-				pokemon.heal(pokemon.baseMaxhp / 4);
+		onStart(pokemon) {
+			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
+		},
+		onWeatherChange(pokemon) {
+			var weather = 'noraindance'
+			if(this.field.weather == 'raindance'){
+				weather = 'raindance'
+			}
+			if (weather == 'raindance'){
+				var rained = true;
+			}
+			
+			switch (pokemon.effectiveWeather()) {
+			case 'raindance':
+			case 'primordialsea':
+				pokemon.heal(pokemon.maxhp / 4);
+				break;
+			default:
+				rained ??= false;
+				if (weather == 'noraindance' && rained){
+					pokemon.heal(pokemon.maxhp / 4);
+					rained = false;
+				} 
+				break;
 			}
 		},
 		flags: { breakable: 1 },
@@ -2473,13 +2490,30 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.chainModify(1.1);
 			}
 		},
-		onResidualOrder: 5,
-		onResidualSubOrder: 3,
-		onResidual(pokemon) {
-			if (pokemon.status && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
-				this.debug('Rain Breath');
-				this.add('-activate', pokemon, 'ability: Rain Breath');
-				pokemon.heal(pokemon.baseMaxhp / 4);
+		onStart(pokemon) {
+			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
+		},
+		onWeatherChange(pokemon) {
+			var weather = 'noraindance'
+			if(this.field.weather == 'raindance'){
+				weather = 'raindance'
+			}
+			if (weather == 'raindance'){
+				var rained = true;
+			}
+			
+			switch (pokemon.effectiveWeather()) {
+			case 'raindance':
+			case 'primordialsea':
+				pokemon.heal(pokemon.maxhp / 4);
+				break;
+			default:
+				rained ??= false;
+				if (weather == 'noraindance' && rained){
+					pokemon.heal(pokemon.maxhp / 4);
+					rained = false;
+				} 
+				break;
 			}
 		},
 		flags: { },
@@ -2515,13 +2549,30 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Oblivious', `[of] ${target}`);
 			}
 		},
-		onResidualOrder: 5,
-		onResidualSubOrder: 3,
-		onResidual(pokemon) {
-			if (pokemon.status && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
-				this.debug('Rain Breath');
-				this.add('-activate', pokemon, 'ability: Rain Breath');
-				pokemon.heal(pokemon.baseMaxhp / 4);
+		onStart(pokemon) {
+			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
+		},
+		onWeatherChange(pokemon) {
+			if(this.field.weather == 'raindance'){
+				weather = 'raindance'
+			}
+			var weather = 'noraindance'
+			if (weather == 'raindance'){
+				var rained = true;
+			}
+			
+			switch (pokemon.effectiveWeather()) {
+			case 'raindance':
+			case 'primordialsea':
+				pokemon.heal(pokemon.maxhp / 4);
+				break;
+			default:
+				rained ??= false;
+				if (weather == 'noraindance' && rained){
+					pokemon.heal(pokemon.maxhp / 4);
+					rained = false;
+				} 
+				break;
 			}
 		},
 		flags: { breakable: 1 },

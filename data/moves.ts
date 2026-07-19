@@ -15585,7 +15585,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		flags: { metronome: 1, dance: 1, field: 1 },
 		weather: 'RainDance',
-
 		target: "all",
 		type: "Water",
 		zMove: { boost: { spe: 1 } },
