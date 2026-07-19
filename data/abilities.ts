@@ -8452,4 +8452,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -205,
 	},
+	innerenergy: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(spa) {
+			return this.chainModify(2);
+		},
+		flags: { },
+		name: "Inner Power",
+		rating: 5,
+		num: -206,
+	},
 };
