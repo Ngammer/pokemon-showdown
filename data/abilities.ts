@@ -2193,6 +2193,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 246,
 	},
 	illuminate: {
+		onAnyAccuracyPriority: 1,
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move && (source === this.effectState.target)) {
 				accuracy += 10;
@@ -3282,6 +3283,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAnyInvulnerability(target, source, move) {
 			if (move && (source === this.effectState.target || target === this.effectState.target)) return 0;
 		},
+		onAnyAccuracyPriority: 1,
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move && (source === this.effectState.target || target === this.effectState.target)) {
 				return true;
@@ -5632,6 +5634,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAnyInvulnerability(target, source, move) {
 			if (move.type === 'Electric' && (source === this.effectState.target || target === this.effectState.target)) return 0;
 		},
+		onAnyAccuracyPriority: 1,
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Electric' && (source === this.effectState.target || target === this.effectState.target)) {
 				return true;
@@ -6870,6 +6873,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
+		onAnyAccuracyPriority: 1,
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move && move.type === 'Dark') {
 				return true;
@@ -8226,6 +8230,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},  Hay un problema y es que los movimientos que no sean de tipo agua siempre fallan */
+		onAnyAccuracyPriority: -1,
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Water') return true;
 			if (move.accuracy === true) accuracy = 100;
