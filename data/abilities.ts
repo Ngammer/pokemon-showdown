@@ -8425,7 +8425,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 			onSwitchIn(pokemon) {
 				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) return;
-				this.singleEvent('SwitchIn', this.effect, this.effectState, pokemon);
 				this.damage(pokemon.maxhp / 40);
 			},
 		},
