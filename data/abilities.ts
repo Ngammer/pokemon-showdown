@@ -3018,6 +3018,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.removeVolatile('charge');
 			}
 		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('motordrive');
+		},
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
 			onStart(target) {
