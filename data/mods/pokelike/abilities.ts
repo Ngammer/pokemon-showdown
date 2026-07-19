@@ -407,7 +407,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Blind Drop",
+		name: "No-Guard (Golurk)",
 		rating: 3,
 		num: -195,
 	},

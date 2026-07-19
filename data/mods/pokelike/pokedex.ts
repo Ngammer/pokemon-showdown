@@ -216,6 +216,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Sam
 	walrein: {
 		inherit: true,
+		abilities: { 0: "Thick Fat-Rain Breath", 1: "Ice Body-Rain Breath", H: "Oblivious-Rain Breath" },
 	},
 	sceptile: {
 		inherit: true,
