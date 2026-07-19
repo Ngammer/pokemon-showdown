@@ -8275,7 +8275,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.randomChance(10, 10)) {
 				this.boost({ spe: -1 }, target, source, null, true, false);
 			}
-			if (this.randomChance(3, 10)){
+			if (this.randomChance(3, 10)) {
 				target.addVolatile('weaver');
 			}
 		},
