@@ -245,11 +245,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			pokemon.abilityState.gluttony = true;
 		},
 		onBasePower(basePower, attacker, defender, move) {
-			for (const type in attacker.types) {
-				if (move.type === type && attacker.activeMoveActions <= 1) {
-					this.debug('STAB boost');
-					return this.chainModify(1.5);
-				}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
 			}
 		},
 		flags: { },
@@ -311,7 +309,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	metalbreakerplus: {
 		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Steel' && move.type === 'Steel') return 1;
+			if (type === 'Steel' && move.type === 'Steel') return typeMod + 1;
 		},
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
