@@ -8257,4 +8257,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -197,
 	},
+	emergentexcavation: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (pokemon.hasType(move.type) && pokemon.hp <= pokemon.maxhp / 2) {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: { },
+		name: "Emergent Excavation",
+		rating: 4,
+		num: 158,
+	},
 };
