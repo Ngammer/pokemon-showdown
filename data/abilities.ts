@@ -8267,6 +8267,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Emergent Excavation",
 		rating: 4,
-		num: 158,
+		num: -198,
 	},
 };
