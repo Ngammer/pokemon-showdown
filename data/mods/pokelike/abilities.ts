@@ -589,4 +589,364 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 1,
 		num: -133,
 	},
+	toxicdebrisplus: {
+		onDamagingHit(damage, target, source, move) {
+			const side = source.isAlly(target) ? source.side.foe : source.side;
+			const toxicSpikes = side.sideConditions['toxicspikes'];
+			if (move.category === 'Physical' && (!toxicSpikes || toxicSpikes.layers < 2)) {
+				this.add('-activate', target, 'ability: Toxic Debris');
+				side.addSideCondition('toxicspikes', target);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Toxic Debris-Plus",
+		rating: 3.5,
+		num: 295,
+	},
+	corrosionplus: {
+		// Implemented in sim/pokemon.js:Pokemon#setStatus
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Poison'] = true;
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Corrosion-Plus",
+		rating: 2.5,
+		num: 212,
+	},
+	flowerveilplus: {
+		onAllyTryBoost(boost, target, source, effect) {
+			if ((source && target === source) || !target.hasType('Grass')) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries) {
+				const effectHolder = this.effectState.target;
+				this.add('-block', target, 'ability: Flower Veil', `[of] ${effectHolder}`);
+			}
+		},
+		onAllySetStatus(status, target, source, effect) {
+			if (target.hasType('Grass') && source && target !== source && effect && effect.id !== 'yawn') {
+				this.debug('interrupting setStatus with Flower Veil');
+				if (effect.name === 'Synchronize' || (effect.effectType === 'Move' && !effect.secondaries)) {
+					const effectHolder = this.effectState.target;
+					this.add('-block', target, 'ability: Flower Veil', `[of] ${effectHolder}`);
+				}
+				return null;
+			}
+		},
+		onAllyTryAddVolatile(status, target) {
+			if (target.hasType('Grass') && status.id === 'yawn') {
+				this.debug('Flower Veil blocking yawn');
+				const effectHolder = this.effectState.target;
+				this.add('-block', target, 'ability: Flower Veil', `[of] ${effectHolder}`);
+				return null;
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Flower Veil-Plus",
+		rating: 0,
+		num: 166,
+	},
+	runawayplus: {
+		onTryBoost(boost, target, source, effect) {
+			if (boost.spe && boost.spe < 0) {
+				delete boost.spe;
+				if (!(effect as ActiveMove).secondaries) {
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Run Away", `[of] ${target}`);
+				}
+			}
+		},
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = pokemon.maybeTrapped = false;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Run Away-Plus",
+		rating: 0,
+		num: 50,
+	},
+	terrifyingplus: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && move.type === 'Ghost') {
+				this.debug('STAB boost');
+				return this.chainModify(1.56);
+			}
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+			if (move.type === 'Ghost') {
+				this.debug('Terrifying boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Terrifying-Plus",
+		rating: 2,
+		num: -167,
+	},
+	souleaterplus: {
+		onStart(pokemon) {
+			if (pokemon.side.totalFainted) {
+				this.add('-activate', pokemon, 'ability: Soul Eater');
+				const fallen = Math.min(pokemon.side.totalFainted + pokemon.side.foe.totalFainted, 10);
+				this.add('-start', pokemon, `fallen${fallen}`, '[silent]');
+				this.effectState.fallen = fallen;
+			}
+		},
+		onEnd(pokemon) {
+			this.add('-end', pokemon, `fallen${this.effectState.fallen}`, '[silent]');
+		},
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (this.effectState.fallen && attacker.hasType(move.type)) {
+				const powMod = [5325, 5617, 5911, 6204, 6496, 6789, 7082, 7375, 7667, 7961, 8254];
+				this.debug(`Soul Eater boost: ${powMod[this.effectState.fallen]}/4096`);
+				return this.chainModify(([powMod[this.effectState.fallen], 4096]));
+			}
+			if (this.effectState.fallen) {
+				const powMod = [4096, 4321, 4547, 4772, 4997, 5222, 5448, 5673, 5898, 6124, 6349];
+				this.debug(`Soul Eater boost: ${powMod[this.effectState.fallen]}/4096`);
+				return this.chainModify([powMod[this.effectState.fallen], 4096]);
+			}
+		},
+		flags: { },
+		name: "Soul Eater-Plus",
+		rating: 4,
+		num: -115,
+	},
+	flamebodyplus: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(5, 10)) {
+					source.trySetStatus('brn', target);
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Flame Body-Plus",
+		rating: 2,
+		num: 49,
+	},
+	toughclawsplus: {
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['contact'] && attacker.hasType(move.type)) {
+				return this.chainModify([6923, 4096]);
+			}
+			if (move.flags['contact']) {
+				return this.chainModify([5325, 4096]);
+			}
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Tough Claws-Plus",
+		rating: 3.5,
+		num: 181,
+	},
+	galewingsplus: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.type === 'Flying') return priority + 1;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Gale Wings-Plus",
+		rating: 4,
+		num: 177,
+	},
+	insomniaplus: {
+		onUpdate(pokemon) {
+			if (pokemon.status === 'slp') {
+				this.add('-activate', pokemon, 'ability: Insomnia');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'slp') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Insomnia');
+			}
+			return false;
+		},
+		onTryAddVolatile(status, target) {
+			if (status.id === 'yawn') {
+				this.add('-immune', target, '[from] ability: Insomnia');
+				return null;
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+				return this.clampIntRange(move.basePower + 10, 0, 1000);
+		},
+		flags: { breakable: 1 },
+		name: "Insomnia-Plus",
+		rating: 1.5,
+		num: 15,
+	},
+	stakeoutplus: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender) {
+			if (!defender.activeTurns) {
+				this.debug('Stakeout boost');
+				return this.chainModify(2);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender) {
+			if (!defender.activeTurns) {
+				this.debug('Stakeout boost');
+				return this.chainModify(2);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+				return this.clampIntRange(move.basePower + 10, 0, 1000);
+		},
+		flags: { },
+		name: "Stakeout-Plus",
+		rating: 4.5,
+		num: 198,
+	},
+	weaverplus: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.randomChance(10, 10)) {
+				this.boost({ spe: -1 }, target, source, null, true, false);
+			}
+			if (this.randomChance(3, 10)){
+				target.addVolatile('weaver');
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+				return this.clampIntRange(move.basePower + 10, 0, 1000);
+		},
+		condition: {
+			onTrapPokemon(pokemon) {
+				if (pokemon.volatiles['weaver']) {
+					pokemon.trapped = pokemon.maybeTrapped = false;
+				}
+			},
+		},
+		flags: { breakable: 1 },
+		name: "Weaver-Plus",
+		rating: 3.5,
+		num: -198,
+	},
+	rivalryplus: {
+		onBasePowerPriority: 24,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.gender && defender.gender && attacker.hasType(move.type)) {
+				if (attacker.gender === defender.gender) {
+					this.debug('Rivalry boost');
+					return this.chainModify(1.95);
+				}
+			}
+			if (attacker.gender && defender.gender) {
+				if (attacker.gender === defender.gender) {
+					this.debug('Rivalry boost');
+					return this.chainModify(1.5);
+				}
+			}
+			if (attacker.hasType(move.type)) {
+				if (attacker.gender === defender.gender) {
+					this.debug('Rivalry boost');
+					return this.chainModify(1.3);
+				}
+			}
+		},
+		flags: { },
+		name: "Rivalry-Plus",
+		rating: 0,
+		num: 79,
+	},
+	intimidate: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Intimidate', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ atk: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Intimidate",
+		rating: 3.5,
+		num: 22,
+	},
+	guts: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type)) {
+				this.debug('STAB boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Guts",
+		rating: 3.5,
+		num: 62,
+	},
 };
