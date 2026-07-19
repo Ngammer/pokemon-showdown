@@ -309,7 +309,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	metalbreakerplus: {
 		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Steel' && move.type === 'Steel') return 1;
+			if (type === 'Steel' && move.type === 'Steel') return typeMod + 1;
 		},
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
