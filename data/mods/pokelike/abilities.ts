@@ -2446,7 +2446,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onStart(pokemon) {
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
-		onWeatherChange(pokemon) {
+		/*onWeatherChange(pokemon) {
 			var weather = 'noraindance'
 			if(this.field.weather == 'raindance'){
 				weather = 'raindance'
@@ -2469,7 +2469,16 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				} 
 				break;
 			}
-		},
+		}, */
+		onWeatherChange(pokemon) {
+		const isRaining = ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather());
+		if (isRaining) {
+			pokemon.heal(pokemon.maxhp / 4);
+		} else if (this.effectState.wasRaining) {
+			pokemon.heal(pokemon.maxhp / 4);
+		}
+		this.effectState.wasRaining = isRaining; 
+	},
 		flags: { breakable: 1 },
 		name: "Thick Fat-Rain Breath",
 		rating: 3.5,
