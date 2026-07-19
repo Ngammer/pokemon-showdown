@@ -23376,6 +23376,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility("Oblivious")) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('sharproot')), -6, 6);
 				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
+				if (pokemon.side.sideConditions['oilspill']) {
+					this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
+				}
 			},
 		},
 
