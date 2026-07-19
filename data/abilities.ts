@@ -8324,4 +8324,32 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -200,
 	},
+	apprentice: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Apprentice", `[of] ${target}`);
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (source.hasType(move.type)) {
+				this.boost({ spe: 1 });
+			}
+		},
+		onBasePower(basePower, pokemon, target, move) {
+			return this.chainModify([5325, 4096]);
+		},
+		flags: { breakable: 1 },
+		name: "Apprentice",
+		rating: 2,
+		num: -201,
+	},
 };
