@@ -1422,6 +1422,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'brn') {
+				return false;
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.activeTurns % 2 === 0 && pokemon.status === 'brn') {
+				this.boost({ spe: 1 });
+				this.boost({ spa: 1 });
+			}
+		},
 		flags: { },
 		name: "Flare Boost",
 		rating: 2,
@@ -2979,7 +2991,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	motordrive: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
-				if (!this.boost({ spe: 1 })) {
+				if (!this.boost({ spe: 1 }) && !target.addVolatile('motordrive')) {
 					this.add('-immune', target, '[from] ability: Motor Drive');
 				}
 				return null;
@@ -2995,6 +3007,39 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({ spe: 1 }, pokemon);
 				pokemon.useItem();
 			}
+		},
+		onMoveAborted(pokemon, target, move) {
+			if (move.type === 'Electric' && move.category !== 'Status') {
+				pokemon.removeVolatile('charge');
+			}
+		},
+		onAfterMove(pokemon, target, move) {
+			if (move.type === 'Electric' && move.category !== 'Status') {
+				pokemon.removeVolatile('charge');
+			}
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Motor Drive');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Electric' && attacker.hasAbility('motordrive')) {
+					this.debug('Motor Drive boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Electric' && attacker.hasAbility('motordrive')) {
+					this.debug('Motor Drive boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Motor Drive', '[silent]');
+			},
 		},
 		flags: { breakable: 1 },
 		name: "Motor Drive",
