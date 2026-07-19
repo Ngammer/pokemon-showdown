@@ -8289,8 +8289,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -196,
 	},
 	metalbreaker: {
-		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Steel' && move.type === 'Steel') return typeMod + 1;
+		onFoeEffectiveness(typeMod, target, type, move) {
+			if (type === 'Steel' && move.type === 'Steel') return typeMod + 2;
 		},
 		flags: { },
 		name: "Metal Breaker",

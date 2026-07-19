@@ -106,6 +106,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 				}
 				sharedPower.add(ally.baseAbility);
 			}
+			if (pokemon.species.id !== 'deoxys') {
+				sharedPower.delete(pokemon.baseAbility);
+			}
 			return sharedPower;
 		},
 		onBeforeSwitchIn(pokemon) {
