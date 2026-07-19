@@ -8415,7 +8415,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const oilSpill = side.sideConditions['oilspill'];
 			if (!oilSpill) {
 				this.add('-activate', source, 'ability: Oil Spill');
-				side.addSideCondition('toxicspikes', source);
+				side.addSideCondition('oilspill', source);
 			}
 		},
 		condition: {
