@@ -16610,7 +16610,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Dark", "Dragon"],
 		gender: "N",
 		baseStats: { hp: 223, atk: 101, def: 53, spa: 97, spd: 53, spe: 43 },
-		abilities: { 0: "Beast Boost", 1: "Tough Claws", H: "Devorer" },
+		abilities: { 0: "Beast Boost", 1: "Tough Claws", H: "Devourer" },
 		heightm: 5.5,
 		weightkg: 888,
 		color: "Black",

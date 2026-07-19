@@ -8434,4 +8434,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -204,
 	},
+	bomber: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['explosion']) {
+				this.debug('Bomber boost');
+				return this.chainModify(1.75);
+			}
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (source !== target && move.category !== 'Status' && !source.forceSwitchFlag && move.flags['explosion']) {
+				this.damage(source.baseMaxhp / 6.66, source, source);
+			}
+		},
+		flags: { },
+		name: "Bomber",
+		rating: 3,
+		num: -205,
+	},
 };
