@@ -8209,4 +8209,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -197,
 	},
+	weaver: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.randomChance(10, 10)) {
+				this.boost({ spe: -1 }, target, source, null, true, false);
+			}
+			if (this.randomChance(3, 10)){
+				target.addVolatile('weaver');
+			}
+		},
+		condition: {
+			onTrapPokemon(pokemon) {
+				if (pokemon.volatiles['weaver']) {
+					pokemon.trapped = pokemon.maybeTrapped = false;
+				}
+			},
+		},
+		flags: { breakable: 1 },
+		name: "Weaver",
+		rating: 3.5,
+		num: -198,
+	},
 };
