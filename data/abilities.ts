@@ -8376,4 +8376,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -201,
 	},
+	oilspill: {
+		onStart(source) {
+			const side = source.side.foe;
+			const oilSpill = side.sideConditions['oilspill'];
+			if (!oilSpill) {
+				this.add('-activate', source, 'ability: Oil Spill');
+				side.addSideCondition('toxicspikes', source);
+			}
+		},
+		flags: { },
+		name: "Oil Spill",
+		rating: 4,
+		num: -199,
+	},
 };

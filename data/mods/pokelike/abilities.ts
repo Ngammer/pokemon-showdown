@@ -905,7 +905,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 0,
 		num: 79,
 	},
-	intimidate: {
+	intimidateplus: {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
@@ -927,11 +927,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Intimidate",
+		name: "Intimidate-Plus",
 		rating: 3.5,
 		num: 22,
 	},
-	guts: {
+	gutsplus: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
 			if (pokemon.status) {
@@ -945,8 +945,620 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Guts",
+		name: "Guts-Plus",
 		rating: 3.5,
 		num: 62,
+	},
+	motordriveplus: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Electric') {
+				if (!this.boost({ spe: 1 }) && !target.addVolatile('motordrive')) {
+					this.add('-immune', target, '[from] ability: Motor Drive');
+				}
+				return null;
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (source.hasItem('Electirizer') && move.type === 'Electric' && source.species.name === 'Electivire') {
+				this.boost({ spe: 1 }, source);
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Quick Ball') {
+				this.boost({ spe: 1 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onMoveAborted(pokemon, target, move) {
+			if (move.type === 'Electric' && move.category !== 'Status') {
+				pokemon.removeVolatile('motordrive');
+			}
+		},
+		onAfterMove(pokemon, target, move) {
+			if (move.type === 'Electric' && move.category !== 'Status') {
+				pokemon.removeVolatile('motordrive');
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('motordrive');
+		},
+		onBasePower(basePower, attacker, defender, move) {
+				return this.clampIntRange(move.basePower + 10, 0, 1000);
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Motor Drive');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Electric' && attacker.hasAbility('motordrive')) {
+					this.debug('Motor Drive boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Electric' && attacker.hasAbility('motordrive')) {
+					this.debug('Motor Drive boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Motor Drive', '[silent]');
+			},
+		},
+		flags: { breakable: 1 },
+		name: "Motor Drive-Plus",
+		rating: 3,
+		num: 78,
+	},
+	lightningrodplus: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Electric') {
+				if (!this.boost({ spa: 1 })) {
+					this.add('-immune', target, '[from] ability: Lightning Rod');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Electric' || move.flags['pledgecombo']) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Lightning Rod');
+				}
+				return this.effectState.target;
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Fast Ball') {
+				this.boost({ spa: 1 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+				return this.clampIntRange(move.basePower + 10, 0, 1000);
+		},
+		flags: { breakable: 1 },
+		name: "Lightning Rod-Plus",
+		rating: 3,
+		num: 31,
+	},
+	sapsipperplus: {
+		onTryHitPriority: 1,
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Grass') {
+				if (!this.boost({ atk: 1 })) {
+					this.add('-immune', target, '[from] ability: Sap Sipper');
+				}
+				return null;
+			}
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (source === this.effectState.target || !target.isAlly(source)) return;
+			if (move.type === 'Grass') {
+				this.boost({ atk: 1 }, this.effectState.target);
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Friend Ball') {
+				this.boost({ atk: 1 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+				return this.clampIntRange(move.basePower + 10, 0, 1000);
+		},
+		flags: { breakable: 1 },
+		name: "Sap Sipper-Plus",
+		rating: 3,
+		num: 157,
+	},
+	keeneyeplus: {
+		onStart(pokemon) {
+			this.boost({ accuracy: 1 }, pokemon);
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'flying') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Keen Eye-Plus",
+		rating: 0.5,
+		num: 51,
+	},
+	tangledfeetplus: {
+		onDamage(damage, target, source, effect) {
+			this.effectState.checkedTangledFeet = !(
+				effect.effectType === "Move" && !effect.multihit &&
+				!(effect.hasSheerForce && source.hasAbility('sheerforce'))
+			);
+		},
+		onTryEatItem(item) {
+			const healingItems = [
+				'aguavberry', 'enigmaberry', 'figyberry', 'iapapaberry', 'magoberry', 'sitrusberry', 'wikiberry', 'oranberry', 'berryjuice',
+			];
+			if (healingItems.includes(item.id)) {
+				return this.effectState.checkedTangledFeet;
+			}
+			return true;
+		},
+		onAfterMoveSecondary(target, source, move) {
+			this.effectState.checkedTangledFeet = true;
+			if (!source || source === target || !target.hp || !move.totalDamage) return;
+			const lastAttackedBy = target.getLastAttackedBy();
+			if (!lastAttackedBy) return;
+			const damage = move.multihit && !move.smartTarget ? move.totalDamage : lastAttackedBy.damage;
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
+				this.boost({ spe: 1 }, target, target);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'flying') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Tangled Feet-Plus",
+		rating: 1,
+		num: 77,
+	},
+	bigpecksplus: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (move.flags['contact']) mod = 0.9;
+			return this.chainModify(mod);
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'flying') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Big Pecks-Plus",
+		rating: 0.5,
+		num: 145,
+	},
+	shieldsdownplus: {
+		onSwitchInPriority: -1,
+		onStart(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Minior' || pokemon.transformed) return;
+			if (pokemon.hp > pokemon.maxhp / 2) {
+				if (pokemon.species.forme !== 'Meteor') {
+					pokemon.formeChange('Minior-Meteor');
+				}
+			} else {
+				if (pokemon.species.forme === 'Meteor') {
+					pokemon.formeChange(pokemon.set.species);
+				}
+			}
+		},
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Minior' || pokemon.transformed || !pokemon.hp) return;
+			if (pokemon.hp > pokemon.maxhp / 2) {
+				if (pokemon.species.forme !== 'Meteor') {
+					pokemon.formeChange('Minior-Meteor');
+				}
+			} else {
+				if (pokemon.species.forme === 'Meteor') {
+					pokemon.formeChange(pokemon.set.species);
+				}
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (target.species.id !== 'miniormeteor' || target.transformed) return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Shields Down');
+			}
+			return false;
+		},
+		onTryAddVolatile(status, target) {
+			if (target.species.id !== 'miniormeteor' || target.transformed) return;
+			if (status.id !== 'yawn') return;
+			this.add('-immune', target, '[from] ability: Shields Down');
+			return null;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'flying') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "Shields Down-Plus",
+		rating: 3,
+		num: 197,
+	},
+	unnerveplus: {
+		onSwitchInPriority: 1,
+		onStart(pokemon) {
+			if (this.field.pseudoWeather['unnerved']) return;
+			this.add('-ability', pokemon, 'Unnerve');
+			this.field.addPseudoWeather('unnerved');
+		},
+		onEnd() {
+			this.field.removePseudoWeather('unnerved');
+		},
+		onFoeTryEatItem() {
+			return !this.field.pseudoWeather['unnerved'];
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'psychic') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Unnerve-Plus",
+		rating: 1,
+		num: 127,
+	},
+	healerplus: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onStart(pokemon) {
+			const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
+			for (const ally of allies) {
+				ally.cureStatus();
+			}
+		},
+		onResidual(pokemon) {
+			for (const allyActive of pokemon.adjacentAllies()) {
+				if (allyActive.status && this.randomChance(3, 10)) {
+					this.add('-activate', pokemon, 'ability: Healer');
+					allyActive.cureStatus();
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'psychic') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Healer-Plus",
+		rating: 0,
+		num: 131,
+	},
+	telepathyplus: {
+		onTryHit(target, source, move) {
+			if (target !== source && target.isAlly(source) && move.category !== 'Status') {
+				this.add('-activate', target, 'ability: Telepathy');
+				return null;
+			}
+		},
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			move.ignoreImmunity = true;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'psychic') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Telepathy-Plus",
+		rating: 0,
+		num: 140,
+	},
+	cutecharmplus: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					source.addVolatile('attract', this.effectState.target);
+				}
+				// Increment the cumulative damage reduction, capped at 0.9
+				if (!target.volatiles['cutecharm']) {
+					source.addVolatile('cutecharm');
+				}
+				const currentStack = source.volatiles['cutecharm'].stack || 0;
+				if (!target.fainted) {
+					source.volatiles['cutecharm'].stack = Math.min(currentStack + 0.1, 0.9);
+				}
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (move.flags['contact']) {
+				const reduction = source.volatiles['cutecharm']?.stack || 0;
+				mod *= 1 - reduction;
+			}
+			return this.chainModify(mod);
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'fairy') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Cute Charm-Plus",
+		rating: 0.5,
+		num: 56,
+	},
+	magicalplus: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Fairy') {
+				this.debug('Magical boost');
+				return this.chainModify(1.38);
+			}
+		},
+		flags: { },
+		name: "Magical-Plus",
+		rating: 2,
+		num: -169,
+	},
+	pixilateplus: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Fairy';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.type === 'fairy') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Pixilate-Plus",
+		rating: 4,
+		num: 182,
+	},
+	megalauncherplus: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['pulse']) {
+				return this.chainModify(1.5);
+			}
+		},
+		onStart(pokemon) {
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		flags: { },
+		name: "Mega Launcher-Plus",
+		rating: 3,
+		num: 178,
+	},
+	shellarmorplus: {
+		onCriticalHit: false,
+		onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
+		onSourceBasePower(basePower, source, target, move) {
+			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb',
+				'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
+				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
+				'buggem', 'darkgem', 'dragongem', 'electricgem', 'fairygem', 'fightinggem', 'firegem', 'flyinggem', 'ghostgem', 'grassgem', 'groundgem', 'icegem', 'normalgem', 'poisongem', 'psychicgem', 'rockgem',
+				'steelgem', 'watergem', 'dracoplate', 'dreadplate', 'earthplate', 'fistplate', 'flameplate', 'icicleplate', 'insectplate', 'ironplate', 'meadowplate', 'mindplate', 'pixieplate', 'skyplate',
+				'splashplate', 'spookyplate', 'stoneplate', 'toxicplate', 'zapplate', 'skullfossil', 'adamantorb', 'griseousorb', 'lustrousorb', 'souldew', 'deepseascale', 'deepseatooth', 'lightball', 'thickclub',
+				'stick', 'dragonscale', 'duskstone', 'firestone', 'waterstone', 'thunderstone', 'leafstone', 'shinyrock', 'ovalstone', 'icestone', 'bugmemory', 'darkmemory', 'dragonmemory', 'electricmemory',
+				'fairymemory', 'fightingmemory', 'firememory', 'flyingmemory', 'ghostmemory', 'grassmemory', 'groundmemory', 'icememory', 'normalmemory', 'poisonmemory', 'psychicmemory', 'rockmemory', 'steelmemory',
+				'watermemory', 'adamantcrystal', 'griseouscrystal', 'lustrouscrystal', 'leek', 'metalalloy', 'choicespecs', 'choiceband'];
+			if (bannedItems.includes(source.item)) {
+				source.addVolatile('itemignored');
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			source.removeVolatile('itemignored');
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-activate', pokemon, '[from] item suppression');
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, '[from] item suppression');
+			},
+		},
+		onStart(pokemon) {
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		flags: { breakable: 1 },
+		name: "Shell Armor-Plus",
+		rating: 1,
+		num: 75,
+	},
+	regeneratorclawitzer: {
+		onSwitchOut(pokemon) {
+			pokemon.heal(pokemon.baseMaxhp / 3);
+		},
+		onStart(pokemon) {
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		flags: { },
+		name: "Regenerator-Clawitzer",
+		rating: 4.5,
+		num: 144,
+	},
+	sandveilnidoqueen: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather('sandstorm'))) mod *= 0.75;
+			return this.chainModify(mod);
+		},
+		onStart(pokemon) {
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		flags: { breakable: 1 },
+		name: "Sand Veil-Nidoqueen",
+		rating: 1.5,
+		num: 8,
+	},
+	poisonpointplus: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(5, 10)) {
+					source.trySetStatus('tox', target);
+				}
+			}
+		},
+		onStart(pokemon) {
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		flags: { },
+		name: "Poison Point",
+		rating: 1.5,
+		num: 38,
+	},
+	sheerforceplus: {
+		onModifyMove(move, pokemon) {
+			if (move.secondaries && !move.hasSheerForceBoost) {
+				delete move.secondaries;
+				// Technically not a secondary effect, but it is negated
+				delete move.self;
+				if (move.id === 'clangoroussoulblaze') delete move.selfBoost;
+				// Actual negation of `AfterMoveSecondary` effects implemented in scripts.js
+				move.hasSheerForce = true;
+			}
+		},
+		onBasePowerPriority: 21,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.hasSheerForce || move.hasSheerForceBoost) return this.chainModify([5325, 4096]);
+		},
+		onStart(pokemon) {
+			const bestStat = pokemon.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, pokemon);
+		},
+		flags: { },
+		name: "Sheer Force",
+		rating: 3.5,
+		num: 125,
+	},
+	earlybirdplus: {
+		flags: { },
+		name: "Early Bird-Plus",
+		onStart(pokemon) {
+			this.actions.useMove('metronome', pokemon)
+		},
+		onModifyPriority(priority, source, target, move) {
+			if (['sunnyday', 'desolateland'].includes(source.effectiveWeather()) || source.volatiles['dreamball']) {
+				return priority + 1;
+			}
+		},
+		onEnd(pokemon) {
+			if (pokemon.getItem().name === 'Dream Ball') {
+				pokemon.useItem();
+			}
+		},
+		// Implemented in statuses.js
+		rating: 1.5,
+		num: 48,
+	},
+	scrappyplus: {
+		onStart(pokemon) {
+			this.actions.useMove('metronome', pokemon)
+		},
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Fighting'] = true;
+				move.ignoreImmunity['Normal'] = true;
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', `[of] ${target}`);
+			}
+		},
+		flags: { },
+		name: "Scrappy-Plus",
+		rating: 3,
+		num: 113,
+	},
+	innerfocusplus: {
+		onStart(pokemon) {
+			this.actions.useMove('metronome', pokemon)
+		},
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'flinch') return null;
+			if (status.id === 'confusion') return null;
+			if (status.id === 'taunt') return null;
+			if (status.id === 'curse') return null;
+			if (status.id === 'torment') return null;
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Inner Focus', `[of] ${target}`);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Inner Focus-Plus",
+		rating: 1,
+		num: 39,
+	},
+	seedsowerplus: {
+		onStart(pokemon) {
+			this.actions.useMove('metronome', pokemon)
+		},
+		onDamagingHit(damage, target, source, move) {
+			this.field.setTerrain('grassyterrain');
+		},
+		flags: { },
+		name: "Seed Sower-Plus",
+		rating: 2.5,
+		num: 269,
+	},
+	harvestplus: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (this.field.isWeather(['sunnyday', 'desolateland']) || this.randomChance(1, 2)) {
+				if (pokemon.hp && !pokemon.item && this.dex.items.get(pokemon.lastItem).isBerry) {
+					pokemon.setItem(pokemon.lastItem);
+					pokemon.lastItem = '';
+					this.add('-item', pokemon, pokemon.getItem(), '[from] ability: Harvest');
+				}
+			}
+		},
+		flags: { },
+		name: "Harvest-Plus",
+		rating: 2.5,
+		num: 139,
 	},
 };
