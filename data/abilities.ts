@@ -3010,12 +3010,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onMoveAborted(pokemon, target, move) {
 			if (move.type === 'Electric' && move.category !== 'Status') {
-				pokemon.removeVolatile('charge');
+				pokemon.removeVolatile('motordrive');
 			}
 		},
 		onAfterMove(pokemon, target, move) {
 			if (move.type === 'Electric' && move.category !== 'Status') {
-				pokemon.removeVolatile('charge');
+				pokemon.removeVolatile('motordrive');
 			}
 		},
 		onEnd(pokemon) {
