@@ -8393,6 +8393,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Oil Spill",
 		rating: 4,
-		num: -199,
+		num: -202,
+	},
+	spikyarmor: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.damage(source.baseMaxhp / 8, source, target);
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.flags['contact']) {
+				return this.chainModify(0.75);
+			}
+		},
+		flags: { },
+		name: "Spiky Armor",
+		rating: 2.5,
+		num: -203,
 	},
 };
