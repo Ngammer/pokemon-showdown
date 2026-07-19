@@ -5359,6 +5359,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.debug('Sweet Veil interrupts sleep');
 				const effectHolder = this.effectState.target;
 				this.add('-block', target, 'ability: Sweet Veil', `[of] ${effectHolder}`);
+				target.addVolatile('sweetveil');
 				return null;
 			}
 		},
@@ -5367,8 +5368,31 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.debug('Sweet Veil blocking yawn');
 				const effectHolder = this.effectState.target;
 				this.add('-block', target, 'ability: Sweet Veil', `[of] ${effectHolder}`);
+				target.addVolatile('sweetveil');
 				return null;
 			}
+		},
+		onMoveAborted(pokemon, target, move) {
+			pokemon.removeVolatile('sweetveil');
+		},
+		onAfterMove(pokemon, target, move) {
+			pokemon.removeVolatile('sweetveil');
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('sweetveil');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Sweet Veil');
+			},
+			onModifyPriority(priority, pokemon, target, move) {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Sweet Veil', '[silent]');
+			},
 		},
 		flags: { breakable: 1 },
 		name: "Sweet Veil",
