@@ -2215,6 +2215,45 @@ export class Pokemon {
 		case 'primordialsea':
 			if (this.hasItem('utilityumbrella')) return '';
 		}
+		if (this.battle.activePokemon?.hasAbility('waterabsorbeternalrain') && sourceEffect &&
+			(sourceEffect.id === 'waterabsorbeternalrain' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
+			sourceEffect.id !== 'electroshot') {
+			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Water Absorb-Eternal Rain');
+			return 'raindance' as ID;
+		}
+		switch (weather) {
+		case 'sunnyday':
+		case 'raindance':
+		case 'desolateland':
+		case 'primordialsea':
+			if (this.hasItem('utilityumbrella')) return '';
+		}
+		if (this.battle.activePokemon?.hasAbility('dampeternalrain') && sourceEffect &&
+			(sourceEffect.id === 'dampeternalrain' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
+			sourceEffect.id !== 'electroshot') {
+			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Damp-Eternal Rain');
+			return 'raindance' as ID;
+		}
+		switch (weather) {
+		case 'sunnyday':
+		case 'raindance':
+		case 'desolateland':
+		case 'primordialsea':
+			if (this.hasItem('utilityumbrella')) return '';
+		}
+		if (this.battle.activePokemon?.hasAbility('swiftswimeternalrain') && sourceEffect &&
+			(sourceEffect.id === 'swiftswimeternalrain' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
+			sourceEffect.id !== 'electroshot') {
+			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Swift Swim-Eternal Rain');
+			return 'raindance' as ID;
+		}
+		switch (weather) {
+		case 'sunnyday':
+		case 'raindance':
+		case 'desolateland':
+		case 'primordialsea':
+			if (this.hasItem('utilityumbrella')) return '';
+		}
 		return weather;
 	}
 
