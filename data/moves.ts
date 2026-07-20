@@ -15298,7 +15298,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 							}
 						}
 					}
-					this.actions.runMove('pursuit', source, source.getLocOf(pokemon));
+					this.actions.runMove(source.moveThisTurn, source, source.getLocOf(pokemon));
 				}
 			},
 		},
