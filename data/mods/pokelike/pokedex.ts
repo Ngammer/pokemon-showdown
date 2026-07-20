@@ -6,6 +6,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	zebstrika: {
 		inherit: true,
+		abilities: { 0: "Lightning Rod-More Power", 1: "Motor Drive-More Power", H: "Sap Sipper-More Power" },
 	},
 	latias: {
 		inherit: true,
@@ -29,9 +30,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	simipour: {
 		inherit: true,
+		abilities: { 0: "Gluttony-STAB Hit", 1: "Torrent-STAB Hit", H: "Blind Drop-STAB Hit" },
 	},
 	glimmora: {
 		inherit: true,
+		abilities: { 0: "Toxic Debris-Only STAB", 1: "Flower Veil-Only STAB", H: "Corrosion-Only STAB" },
 	},
 	glimmoramega: {
 		inherit: true,
@@ -47,6 +50,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	furrip: {
 		inherit: true,
+		abilities: { 0: "Run Away-Only STAB", 1: "Terrifying-Only STAB", H: "Soul Eater-Only STAB" },
 	},
 	dragapult: {
 		inherit: true,
@@ -57,6 +61,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	chatot: {
 		inherit: true,
+		abilities: { 0: "Keen Eye-Affinity", 1: "Tangled Feet-Affinity", H: "Big Pecks-Affinity" },
 	},
 	umbreon: {
 		inherit: true,
@@ -65,12 +70,15 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Sebas
 	kingler: {
 		inherit: true,
+		abilities: { 0: "Hyper Cutter-Explosive", 1: "Shell Armor-Explosive", H: "Sheer Force-Explosive" },
 	},
 	kinglermega: {
 		inherit: true,
+		abilities: { 0: "Frubble-Explosive" },
 	},
 	torterra: {
 		inherit: true,
+		abilities: { 0: "Overgrow-Seed Hit", 1: "Battle Bond-Seed Hit", H: "Shell Armor-Seed Hit" },
 	},
 	crobat: {
 		inherit: true,
@@ -78,6 +86,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	spidops: {
 		inherit: true,
+		abilities: { 0: "Insomnia-More Power", 1: "Weaver-More Power", H: "Stakeout-More Power" },
 	},
 	cattmory: {
 		inherit: true,
@@ -102,15 +111,19 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kangaskhan: {
 		inherit: true,
+		abilities: { 0: "Early Bird-Random", 1: "Scrappy-Random", H: "Inner Focus-Random" },
 	},
 	kangaskhanmega: {
 		inherit: true,
+		abilities: { 0: "Parental Bond-Random" },
 	},
 	tinkaton: {
 		inherit: true,
+		abilities: { 0: "Mold Breaker-STAB Hit", 1: "Metal Breaker-STAB Hit", H: "Pickpocket-STAB Hit" },
 	},
 	masquerain: {
 		inherit: true,
+		abilities: { 0: "Intimidate-Explosive", 1: "Damp-Explosive", H: "Unnerve-Explosive" },
 	},
 	// Gerr
 	barbaracle: {
@@ -126,6 +139,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	luxray: {
 		inherit: true,
 		types: ["Electric", "Ice"],
+		abilities: { 0: "Rivalry-Only STAB", 1: "Intimidate-Only STAB", H: "Guts-Only STAB" },
 		baseStats: { hp: 80, atk: 125, def: 74, spa: 75, spd: 74, spe: 107 }, // 5 a atk
 	},
 	gastrodon: {
@@ -140,18 +154,21 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Andlol
 	minior: {
 		inherit: true,
+		abilities: { 0: "Shields Down-Affinity" },
 	},
 	skeledirge: {
 		inherit: true,
 	},
 	naganadel: {
 		inherit: true,
+		abilities: { 0: "Beast Boost-Only STAB", 1: "Levitate-Only STAB", H: "Filthy-Only STAB" },
 	},
 	xatu: {
 		inherit: true,
 	},
 	xatutotem: {
 		inherit: true,
+		abilities: { 0: "Hierarchical Head-Omni Boost" },
 	},
 	scolipede: {
 		inherit: true,
@@ -161,6 +178,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	purugly: {
 		inherit: true,
+		abilities: { 0: "Thick Fat-Simplified", 1: "Own Tempo-Simplified", H: "Defiant-Simplified" },
 	},
 	// Pou
 	slowbrogalar: {
@@ -181,6 +199,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kricketune: {
 		inherit: true,
+		abilities: { 0: "Swarm-Lucky", 1: "Own Tempo-Lucky", H: "Technician-Lucky" },
 	},
 	frosmoth: {
 		types: ["Ice", "Bug", "Dark"],
@@ -189,9 +208,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	// Fabio
 	aerodactyl: {
 		inherit: true,
+		abilities: { 0: "Rock Head-Defog", 1: "Pressure-Defog", H: "Fossilization-Defog" },
 	},
 	aerodactylmega: {
 		inherit: true,
+		abilities: { 0: "Tough Claws-Defog" },
 	},
 	golurk: {
 		inherit: true,
@@ -227,9 +248,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	palafin: {
 		inherit: true,
+		abilities: { 0: "Zero to Hero-Surf" },
 	},
 	palafinhero: {
 		inherit: true,
+		abilities: { 0: "Zero to Hero'Surf" },
 	},
 	lumineonhoenn: {
 		inherit: true,
@@ -237,13 +260,16 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	nidoqueen: {
 		inherit: true,
+		abilities: { 0: "Poison Point-Plus", 1: "Sand Veil-Plus", H: "Sheer Force-Plus" },
 	},
 	// Nero
 	clawitzer: {
 		inherit: true,
+		abilities: { 0: "Mega Launcher-Plus", 1: "Shell Armor-Plus", H: "Regenerator-Plus" },
 	},
 	liepard: {
 		inherit: true,
+		abilities: { 0: "Limber-Blinded", 1: "Unburden-Blinded", H: "Prankster-Blinded" },
 	},
 	whimsicott: {
 		inherit: true,

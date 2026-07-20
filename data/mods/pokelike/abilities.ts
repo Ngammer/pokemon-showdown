@@ -216,7 +216,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 305,
 	},
-	torrentplus: {
+	torrentstabhit: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hasType(move.type) && move.type === 'Water' && attacker.activeMoveActions <= 1) {
@@ -233,11 +233,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Torrent-Plus",
+		name: "Torrent-STAB hit",
 		rating: 2,
 		num: 67,
 	},
-	gluttonyplus: {
+	gluttonystabhit: {
 		onStart(pokemon) {
 			pokemon.abilityState.gluttony = true;
 		},
@@ -251,11 +251,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Gluttony-Plus",
+		name: "Gluttony-STAB hit",
 		rating: 1.5,
 		num: 82,
 	},
-	blinddrop: {
+	blinddropstabhit: {
 		onAnyAccuracy(accuracy, target, source, move) {
 			if (move.type === 'Water') return true;
 			if (move.accuracy === true) accuracy = 100;
@@ -285,11 +285,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Blind Drop",
+		name: "Blind Drop-STAB Hit",
 		rating: 3,
 		num: -195,
 	},
-	moldbreakerplus: {
+	moldbreakerstabhit: {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Mold Breaker');
 		},
@@ -303,11 +303,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Mold Breaker-Plus",
+		name: "Mold Breaker-STAB Hit",
 		rating: 3,
 		num: 104,
 	},
-	metalbreakerplus: {
+	metalbreakerstabhit: {
 		onEffectiveness(typeMod, target, type, move) {
 			if (type === 'Steel' && move.type === 'Steel') return typeMod + 1;
 		},
@@ -318,7 +318,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Metal Breaker-Plus",
+		name: "Metal Breaker-STAB hit",
 		rating: 3.5,
 		num: -197,
 	},
@@ -411,7 +411,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3,
 		num: -195,
 	},
-	beastboostplus: {
+	beastbooststabhit: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
 				const bestStat = source.getBestStat(true, true);
@@ -431,7 +431,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Beast Boost-Plus",
+		name: "Beast Boost-STAB hit",
 		rating: 3.5,
 		num: 224,
 	},
@@ -448,7 +448,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 26,
 	},
-	filthyplus: {
+	filthystabhit: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hasType(move.type) && move.type === 'Poison' && attacker.activeMoveActions <= 1) {
@@ -465,11 +465,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Filthy-Plus",
+		name: "Filthy-STAB Hit",
 		rating: 2,
 		num: -159,
 	},
-	sandveilplus: {
+	sandveilstabhit: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
 			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather('sandstorm'))) mod *= 0.75;
@@ -482,11 +482,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Sand Veil-Plus",
+		name: "Sand Veil-STAB Hit",
 		rating: 1.5,
 		num: 8,
 	},
-	draconianplus: {
+	draconianstabhit: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hasType(move.type) && move.type === 'Dragon' && attacker.activeMoveActions <= 1) {
@@ -503,11 +503,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Draconian-Plus",
+		name: "Draconian-STAB Hit",
 		rating: 2,
 		num: -163,
 	},
-	dragonizeplus: {
+	dragonizestabhit: {
 		isNonstandard: "Future",
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
@@ -529,7 +529,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: {},
-		name: "Dragonize-Plus",
+		name: "Dragonize-STAB Hit",
 		rating: 4,
 		num: 312,
 	},
@@ -607,7 +607,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 1,
 		num: -133,
 	},
-	toxicdebrisplus: {
+	toxicdebrisonlystab: {
 		onDamagingHit(damage, target, source, move) {
 			const side = source.isAlly(target) ? source.side.foe : source.side;
 			const toxicSpikes = side.sideConditions['toxicspikes'];
@@ -623,11 +623,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Toxic Debris-Plus",
+		name: "Toxic Debris-Only STAB",
 		rating: 3.5,
 		num: 295,
 	},
-	corrosionplus: {
+	corrosiononlystab: {
 		// Implemented in sim/pokemon.js:Pokemon#setStatus
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
@@ -643,11 +643,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Corrosion-Plus",
+		name: "Corrosion-Only STAB",
 		rating: 2.5,
 		num: 212,
 	},
-	flowerveilplus: {
+	flowerveilonlystab: {
 		onAllyTryBoost(boost, target, source, effect) {
 			if ((source && target === source) || !target.hasType('Grass')) return;
 			let showMsg = false;
@@ -688,11 +688,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Flower Veil-Plus",
+		name: "Flower Veil-Only STAB",
 		rating: 0,
 		num: 166,
 	},
-	runawayplus: {
+	runawayonlystab: {
 		onTryBoost(boost, target, source, effect) {
 			if (boost.spe && boost.spe < 0) {
 				delete boost.spe;
@@ -711,11 +711,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Run Away-Plus",
+		name: "Run Away-Only STAB",
 		rating: 0,
 		num: 50,
 	},
-	terrifyingplus: {
+	terrifyingonlystab: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.hasType(move.type) && move.type === 'Ghost') {
@@ -732,11 +732,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Terrifying-Plus",
+		name: "Terrifying-Only STAB",
 		rating: 2,
 		num: -167,
 	},
-	souleaterplus: {
+	souleateronlystab: {
 		onStart(pokemon) {
 			if (pokemon.side.totalFainted) {
 				this.add('-activate', pokemon, 'ability: Soul Eater');
@@ -762,11 +762,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Soul Eater-Plus",
+		name: "Soul Eater-Only STAB",
 		rating: 4,
 		num: -115,
 	},
-	flamebodyplus: {
+	flamebodyonlystab: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(5, 10)) {
@@ -781,7 +781,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Flame Body-Plus",
+		name: "Flame Body-Only STAB",
 		rating: 2,
 		num: 49,
 	},
@@ -804,7 +804,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 181,
 	},
-	galewingsplus: {
+	galewingsonlystab: {
 		onModifyPriority(priority, pokemon, target, move) {
 			if (move?.type === 'Flying') return priority + 1;
 		},
@@ -815,11 +815,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Gale Wings-Plus",
+		name: "Gale Wings-Only STAB",
 		rating: 4,
 		num: 177,
 	},
-	insomniaplus: {
+	insomniamorepower: {
 		onUpdate(pokemon) {
 			if (pokemon.status === 'slp') {
 				this.add('-activate', pokemon, 'ability: Insomnia');
@@ -843,11 +843,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { breakable: 1 },
-		name: "Insomnia-Plus",
+		name: "Insomnia-More Power",
 		rating: 1.5,
 		num: 15,
 	},
-	stakeoutplus: {
+	stakeoutmorepower: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender) {
 			if (!defender.activeTurns) {
@@ -866,11 +866,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { },
-		name: "Stakeout-Plus",
+		name: "Stakeout-More Power",
 		rating: 4.5,
 		num: 198,
 	},
-	weaverplus: {
+	weavermorepower: {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
@@ -892,11 +892,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			},
 		},
 		flags: { breakable: 1 },
-		name: "Weaver-Plus",
+		name: "Weaver-More Power",
 		rating: 3.5,
 		num: -198,
 	},
-	rivalryplus: {
+	rivalryonlystab: {
 		onBasePowerPriority: 24,
 		onBasePower(basePower, attacker, defender, move) {
 			if (attacker.gender && defender.gender && attacker.hasType(move.type)) {
@@ -919,7 +919,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Rivalry-Plus",
+		name: "Rivalry-Only STAB",
 		rating: 0,
 		num: 79,
 	},
@@ -949,7 +949,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 22,
 	},
-	gutsstabonly: {
+	gutsonlystab: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
 			if (pokemon.status) {
@@ -967,7 +967,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 62,
 	},
-	motordriveplus: {
+	motordrivemorepower: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
 				if (!this.boost({ spe: 1 }) && !target.addVolatile('motordrive')) {
@@ -1027,11 +1027,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			},
 		},
 		flags: { breakable: 1 },
-		name: "Motor Drive-Plus",
+		name: "Motor Drive-More Power",
 		rating: 3,
 		num: 78,
 	},
-	lightningrodplus: {
+	lightningrodmorepower: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
 				if (!this.boost({ spa: 1 })) {
@@ -1061,11 +1061,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { breakable: 1 },
-		name: "Lightning Rod-Plus",
+		name: "Lightning Rod-More Power",
 		rating: 3,
 		num: 31,
 	},
-	sapsipperplus: {
+	sapsippermorepower: {
 		onTryHitPriority: 1,
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Grass') {
@@ -1091,11 +1091,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { breakable: 1 },
-		name: "Sap Sipper-Plus",
+		name: "Sap Sipper-More Power",
 		rating: 3,
 		num: 157,
 	},
-	keeneyeplus: {
+	keeneyeaffinity: {
 		onStart(pokemon) {
 			this.boost({ accuracy: 1 }, pokemon);
 		},
@@ -1106,11 +1106,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Keen Eye-Plus",
+		name: "Keen Eye-Affinity",
 		rating: 0.5,
 		num: 51,
 	},
-	tangledfeetplus: {
+	tangledfeetaffinity: {
 		onDamage(damage, target, source, effect) {
 			this.effectState.checkedTangledFeet = !(
 				effect.effectType === "Move" && !effect.multihit &&
@@ -1143,11 +1143,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Tangled Feet-Plus",
+		name: "Tangled Feet-Affinity",
 		rating: 1,
 		num: 77,
 	},
-	bigpecksplus: {
+	bigpecksaffinity: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
 			if (move.flags['contact']) mod = 0.9;
@@ -1160,11 +1160,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Big Pecks-Plus",
+		name: "Big Pecks-Affinity",
 		rating: 0.5,
 		num: 145,
 	},
-	shieldsdownplus: {
+	shieldsdownaffinity: {
 		onSwitchInPriority: -1,
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Minior' || pokemon.transformed) return;
@@ -1211,11 +1211,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
-		name: "Shields Down-Plus",
+		name: "Shields Down-Affinity",
 		rating: 3,
 		num: 197,
 	},
-	unnerveplus: {
+	unnerveaffinity: {
 		onSwitchInPriority: 1,
 		onStart(pokemon) {
 			if (this.field.pseudoWeather['unnerved']) return;
@@ -1235,11 +1235,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Unnerve-Plus",
+		name: "Unnerve-Affinity",
 		rating: 1,
 		num: 127,
 	},
-	healerplus: {
+	healeraffinity: {
 		onResidualOrder: 5,
 		onResidualSubOrder: 3,
 		onStart(pokemon) {
@@ -1263,11 +1263,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Healer-Plus",
+		name: "Healer-Affinity",
 		rating: 0,
 		num: 131,
 	},
-	telepathyplus: {
+	telepathyaffinity: {
 		onTryHit(target, source, move) {
 			if (target !== source && target.isAlly(source) && move.category !== 'Status') {
 				this.add('-activate', target, 'ability: Telepathy');
@@ -1285,11 +1285,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Telepathy-Plus",
+		name: "Telepathy-Affinity",
 		rating: 0,
 		num: 140,
 	},
-	cutecharmplus: {
+	cutecharmaffinity: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(3, 10)) {
@@ -1320,11 +1320,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Cute Charm-Plus",
+		name: "Cute Charm-Affinity",
 		rating: 0.5,
 		num: 56,
 	},
-	magicalplus: {
+	magicalaffinity: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Fairy') {
@@ -1333,11 +1333,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Magical-Plus",
+		name: "Magical-Affinity",
 		rating: 2,
 		num: -169,
 	},
-	pixilateplus: {
+	pixilateaffinity: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [
@@ -1358,7 +1358,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Pixilate-Plus",
+		name: "Pixilate-Affinity",
 		rating: 4,
 		num: 182,
 	},
@@ -1429,7 +1429,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 4.5,
 		num: 144,
 	},
-	sandveilnidoqueen: {
+	sandveilplus: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
 			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather('sandstorm'))) mod *= 0.75;
@@ -1440,7 +1440,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.boost({ [bestStat]: 1 }, pokemon);
 		},
 		flags: { breakable: 1 },
-		name: "Sand Veil-Nidoqueen",
+		name: "Sand Veil-Plpus",
 		rating: 1.5,
 		num: 8,
 	},
@@ -1528,7 +1528,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3,
 		num: 113,
 	},
-	innerfocusplus: {
+	innerfocusrandom: {
 		onStart(pokemon) {
 			this.actions.useMove('metronome', pokemon)
 		},
@@ -1579,7 +1579,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 2.5,
 		num: 139,
 	},
-	hypercutterplus: {
+	hypercutterexplosive: {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
 			if (move.flags['slicing']) {
@@ -1596,7 +1596,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Hyper Cutter-Plus",
+		name: "Hyper Cutter-Explosive",
 		rating: 1.5,
 		num: 52,
 	},
@@ -1638,7 +1638,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 1,
 		num: 75,
 	},
-	sheerforce: {
+	sheerforceexplosive: {
 		onModifyMove(move, pokemon) {
 			if (move.secondaries && !move.hasSheerForceBoost) {
 				delete move.secondaries;
@@ -1660,7 +1660,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Sheer Force-Plus",
+		name: "Sheer Force-Explosive",
 		rating: 3.5,
 		num: 125,
 	},
@@ -1690,7 +1690,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 22,
 	},
-	dampplus: {
+	dampexplosive: {
 		onAnyTryMove(target, source, effect) {
 			if (['explosion', 'mindblown', 'mistyexplosion', 'selfdestruct'].includes(effect.id)) {
 				this.attrLastMove('[still]');
@@ -1715,11 +1715,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Damp-Plus",
+		name: "Damp-Explosive",
 		rating: 0.5,
 		num: 6,
 	},
-	unnervemasquerain: {
+	unnerveexplosive: {
 		onSwitchInPriority: 1,
 		onStart(pokemon) {
 			if (this.field.pseudoWeather['unnerved']) return;
@@ -1739,7 +1739,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Unnerve-Masquerain",
+		name: "Unnerve-Explosive",
 		rating: 1,
 		num: 127,
 	},
