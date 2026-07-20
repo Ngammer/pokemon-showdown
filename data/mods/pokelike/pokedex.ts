@@ -287,6 +287,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	toxtricity: {
 		inherit: true,
+		abilities: { 0: "Punk Rock-Thunderous", 1: "Plus-Thunderous", H: "Galvanize-Thunderous" },
 	},
 	tapufini: {
 		inherit: true,
