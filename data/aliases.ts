@@ -637,7 +637,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	florgesorange: "Florges",
 	florgeswhite: "Florges",
 	florgesyellow: "Florges",
-	gastrodone: "Gastrodon",
+	gastrodone: "Gastrodon-East",
 	gastrodoneast: "Gastrodon-East",
 	gastrodonw: "Gastrodon",
 	gastrodonwest: "Gastrodon",
