@@ -2182,7 +2182,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				this.boost({ spe: -1, atk: -1 }, source, target, null, true);
 			}
 			if (target.hp <= target.maxhp / 2) {
-				move.pranksterBoosted = true;
 				this.boost({ atk: 1 }, target);
 				this.boost({ def: 1 }, target);
 				this.boost({ spa: 1 }, target);
@@ -2217,7 +2216,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onDamagingHit(damage, target, source, move) {
 			if (target.hp <= target.maxhp / 2) {
-				move.pranksterBoosted = true;
 				this.boost({ atk: 1 }, target);
 				this.boost({ def: 1 }, target);
 				this.boost({ spa: 1 }, target);
@@ -2254,7 +2252,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onDamagingHit(damage, target, source, move) {
 			if (target.hp <= target.maxhp / 2) {
-				move.pranksterBoosted = true;
 				this.boost({ atk: 1 }, target);
 				this.boost({ def: 1 }, target);
 				this.boost({ spa: 1 }, target);

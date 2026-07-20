@@ -356,4 +356,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Protosynthesis-Flaming", 1: "Intimidate-Flaming", H: "Tough Claws-Flaming" },
 	},
+	goodra: {
+		inherit: true,
+		abilities: { 0: "Sap Sipper-Berserker", 1: "Hydration-Berserker", H: "Gooey-Berserker" },
+	},
 };
