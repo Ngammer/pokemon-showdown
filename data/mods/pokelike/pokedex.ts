@@ -365,4 +365,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Keen Eye-Persecution", 1: "Sand Rush-Persecution", H: "Steadfast-Persecution" },
 	},
+	farigiraf: {
+		inherit: true,
+		abilities: { 0: "Cud Chew-Field", 1: "Armor Tail-Field", H: "Sap Sipper-Field" },
+	},
 };
