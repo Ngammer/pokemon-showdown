@@ -360,4 +360,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Sap Sipper-Berserker", 1: "Hydration-Berserker", H: "Gooey-Berserker" },
 	},
+	lycanroc: {
+		inherit: true,
+		abilities: { 0: "Keen Eye-Persecution", 1: "Sand Rush-Persecution", H: "Steadfast-Persecution" },
+	},
 };
