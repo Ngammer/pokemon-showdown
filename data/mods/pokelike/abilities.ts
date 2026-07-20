@@ -3038,8 +3038,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onFoeSwitchOut(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('odorsleuth', pokemon);
-				const data = side.getSideConditionData('odorsleuth');
+				side.addSideCondition('persecution', pokemon);
+				const data = side.getSideConditionData('persecution');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -3051,6 +3051,40 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onTryHit(target, pokemon) {
 			target.side.removeSideCondition('persecution');
+		},
+		condition: {
+			duration: 1,
+			onBeforeSwitchOut(pokemon) {
+				this.debug('Odor Sleuth start');
+				let alreadyAdded = false;
+				pokemon.removeVolatile('destinybond');
+				for (const source of this.effectState.sources) {
+					if (!source.isAdjacent(pokemon) || !this.queue.cancelMove(source) || !source.hp) continue;
+					if (!alreadyAdded) {
+						this.add('-activate', pokemon, 'move: Persecution');
+						alreadyAdded = true;
+					}
+					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
+					// If it is, then Mega Evolve before moving.
+					if (source.canMegaEvo || source.canUltraBurst || source.canTerastallize) {
+						for (const [actionIndex, action] of this.queue.entries()) {
+							if (action.pokemon === source) {
+								if (action.choice === 'megaEvo') {
+									this.actions.runMegaEvo(source);
+								} else if (action.choice === 'terastallize') {
+									// Also a "forme" change that happens before moves, though only possible in NatDex
+									this.actions.terastallize(source);
+								} else {
+									continue;
+								}
+								this.queue.list.splice(actionIndex, 1);
+								break;
+							}
+						}
+					}
+					this.actions.runMove('persecution', source, source.getLocOf(pokemon));
+				}
+			},
 		},
 		flags: { breakable: 1 },
 		name: "Keen Eye-Persecution",
@@ -3081,8 +3115,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onFoeSwitchOut(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('odorsleuth', pokemon);
-				const data = side.getSideConditionData('odorsleuth');
+				side.addSideCondition('persecution', pokemon);
+				const data = side.getSideConditionData('persecution');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -3094,6 +3128,40 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onTryHit(target, pokemon) {
 			target.side.removeSideCondition('persecution');
+		},
+		condition: {
+			duration: 1,
+			onBeforeSwitchOut(pokemon) {
+				this.debug('Odor Sleuth start');
+				let alreadyAdded = false;
+				pokemon.removeVolatile('destinybond');
+				for (const source of this.effectState.sources) {
+					if (!source.isAdjacent(pokemon) || !this.queue.cancelMove(source) || !source.hp) continue;
+					if (!alreadyAdded) {
+						this.add('-activate', pokemon, 'move: Persecution');
+						alreadyAdded = true;
+					}
+					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
+					// If it is, then Mega Evolve before moving.
+					if (source.canMegaEvo || source.canUltraBurst || source.canTerastallize) {
+						for (const [actionIndex, action] of this.queue.entries()) {
+							if (action.pokemon === source) {
+								if (action.choice === 'megaEvo') {
+									this.actions.runMegaEvo(source);
+								} else if (action.choice === 'terastallize') {
+									// Also a "forme" change that happens before moves, though only possible in NatDex
+									this.actions.terastallize(source);
+								} else {
+									continue;
+								}
+								this.queue.list.splice(actionIndex, 1);
+								break;
+							}
+						}
+					}
+					this.actions.runMove('persecution', source, source.getLocOf(pokemon));
+				}
+			},
 		},
 		flags: { },
 		name: "Sand Rush-Persecution",
@@ -3129,8 +3197,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onFoeSwitchOut(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('odorsleuth', pokemon);
-				const data = side.getSideConditionData('odorsleuth');
+				side.addSideCondition('persecution', pokemon);
+				const data = side.getSideConditionData('persecution');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -3142,6 +3210,40 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onTryHit(target, pokemon) {
 			target.side.removeSideCondition('persecution');
+		},
+		condition: {
+			duration: 1,
+			onBeforeSwitchOut(pokemon) {
+				this.debug('Odor Sleuth start');
+				let alreadyAdded = false;
+				pokemon.removeVolatile('destinybond');
+				for (const source of this.effectState.sources) {
+					if (!source.isAdjacent(pokemon) || !this.queue.cancelMove(source) || !source.hp) continue;
+					if (!alreadyAdded) {
+						this.add('-activate', pokemon, 'move: Persecution');
+						alreadyAdded = true;
+					}
+					// Run through each action in queue to check if the Pursuit user is supposed to Mega Evolve this turn.
+					// If it is, then Mega Evolve before moving.
+					if (source.canMegaEvo || source.canUltraBurst || source.canTerastallize) {
+						for (const [actionIndex, action] of this.queue.entries()) {
+							if (action.pokemon === source) {
+								if (action.choice === 'megaEvo') {
+									this.actions.runMegaEvo(source);
+								} else if (action.choice === 'terastallize') {
+									// Also a "forme" change that happens before moves, though only possible in NatDex
+									this.actions.terastallize(source);
+								} else {
+									continue;
+								}
+								this.queue.list.splice(actionIndex, 1);
+								break;
+							}
+						}
+					}
+					this.actions.runMove('persecution', source, source.getLocOf(pokemon));
+				}
+			},
 		},
 		flags: { breakable: 1 },
 		name: "Steadfast-Persecution",
