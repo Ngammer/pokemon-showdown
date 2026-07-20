@@ -2478,7 +2478,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			default:
 				break;
 			}
-
 		},
 		flags: { breakable: 1 },
 		name: "Thick Fat-Rain Breath",

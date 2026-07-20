@@ -377,5 +377,4 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Protosynthesis-Explosive", 1: "Intimidate-Explosive 2", H: "Forewarm-Explosive" },
 	},
-	
 };
