@@ -20139,7 +20139,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega",
 		types: ["Rock", "Poison"],
 		baseStats: { hp: 83, atk: 90, def: 105, spa: 150, spd: 96, spe: 101 },
-		abilities: { 0: "Desicive Petal" },
+		abilities: { 0: "Decisive Petal" },
 		heightm: 2.8,
 		weightkg: 77,
 		color: "Blue",

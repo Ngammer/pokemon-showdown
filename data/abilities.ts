@@ -8517,4 +8517,29 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -207,
 	},
+	decisivepetal: {
+		onModifyMovePriority: -2,
+		onModifyMove(move, pokemon) {
+			if (pokemon.activeTurns % 2 === 0 && pokemon.activeTurns <= 6) {
+				if (move.secondaries) {
+					this.debug('doubling secondary chance');
+					for (const secondary of move.secondaries) {
+						if (secondary.chance) secondary.chance *= 2;
+					}
+				}
+				if (move.self?.chance) move.self.chance *= 2;
+			}
+		},
+		onBasePowerPriority: 30,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.activeTurns % 2 !== 0 && attacker.activeTurns <= 6) {
+				this.debug('Decisive Petal boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Decisive Petal",
+		rating: 3.5,
+		num: -208,
+	},
 };
