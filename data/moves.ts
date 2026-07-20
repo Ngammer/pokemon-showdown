@@ -23747,7 +23747,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Fiery Staff",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, metronome: 1, distance: 1, spin: 1},
+		flags: { protect: 1, metronome: 1, distance: 1, spin: 1 },
 		selfSwitch: true,
 		target: "normal",
 		type: "Fire",

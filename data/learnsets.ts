@@ -57229,6 +57229,7 @@ sylveon: {
 			willowisp: ["9M", "9M", "9M", "9M", "9M"],
 			workup: ["9M", "9M"],
 			zenheadbutt: ["9M"],
+			fierystaff: ["9M"],
 		},
 		eventData: [
 			{generation: 5, level: 100, gender: "M", moves: ["fireblast", "closecombat", "uturn", "grassknot"], pokeball: "cherishball"},
@@ -57536,6 +57537,7 @@ sylveon: {
 			weatherball: ["9M"],
 			whirlpool: ["9M", "9L39", "9L39", "9L39", "9L39", "9M", "9L39"],
 			workup: ["9M"],
+			tritorrent: ["9M"],
 		},
 		eventData: [
 			{generation: 5, level: 100, gender: "M", moves: ["hydropump", "icebeam", "aquajet", "grassknot"], pokeball: "cherishball"},
