@@ -2478,7 +2478,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			default:
 				break;
 			}
-			
+
 		},
 		flags: { breakable: 1 },
 		name: "Thick Fat-Rain Breath",
@@ -3035,11 +3035,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			return move.basePower;
 		},
-		onFoeSwitchOut(pokemon) {
+		onBeforeTurn(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('odorsleuth', pokemon);
-				const data = side.getSideConditionData('odorsleuth');
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -3050,7 +3050,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
 		},
 		onTryHit(target, pokemon) {
-			target.side.removeSideCondition('persecution');
+			target.side.removeSideCondition('pursuit');
 		},
 		flags: { breakable: 1 },
 		name: "Keen Eye-Persecution",
@@ -3078,11 +3078,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			return move.basePower;
 		},
-		onFoeSwitchOut(pokemon) {
+		onBeforeTurn(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('odorsleuth', pokemon);
-				const data = side.getSideConditionData('odorsleuth');
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -3093,7 +3093,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
 		},
 		onTryHit(target, pokemon) {
-			target.side.removeSideCondition('persecution');
+			target.side.removeSideCondition('pursuit');
 		},
 		flags: { },
 		name: "Sand Rush-Persecution",
@@ -3126,11 +3126,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			return move.basePower;
 		},
-		onFoeSwitchOut(pokemon) {
+		onBeforeTurn(pokemon) {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
-				side.addSideCondition('odorsleuth', pokemon);
-				const data = side.getSideConditionData('odorsleuth');
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
 				if (!data.sources) {
 					data.sources = [];
 				}
@@ -3141,7 +3141,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
 		},
 		onTryHit(target, pokemon) {
-			target.side.removeSideCondition('persecution');
+			target.side.removeSideCondition('pursuit');
 		},
 		flags: { breakable: 1 },
 		name: "Steadfast-Persecution",
