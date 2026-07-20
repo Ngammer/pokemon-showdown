@@ -1849,7 +1849,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon);
+			this.actions.useMove('surf', pokemon);
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, notransform: 1 },
 		name: "Zero to Hero-Surf",
