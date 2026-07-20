@@ -356,7 +356,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Iron Fist (Golurk)",
+		name: "Iron Fist-Golurk",
 		rating: 3,
 		num: 89,
 	},
@@ -377,7 +377,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Klutz (Golurk)",
+		name: "Klutz-Golurk",
 		rating: -1,
 		num: 103,
 	},
@@ -407,7 +407,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "No-Guard (Golurk)",
+		name: "No-Guard-Golurk",
 		rating: 3,
 		num: -195,
 	},
