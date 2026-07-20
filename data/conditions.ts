@@ -692,6 +692,13 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (result <= 5 * damageAmounts[this.effectState.layers]) {
 				pokemon.trySetStatus('frz', pokemon.side.foe.active[0]);
 			}
+			if (pokemon.side.sideConditions['oilspill']) {
+				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 20);
+				const result2 = this.random(100);
+				if (result2 <= 5 * damageAmounts[this.effectState.layers]) {
+					pokemon.trySetStatus('frz', pokemon.side.foe.active[0]);
+				}
+			}
 		},
 	},
 	snowscape: {
