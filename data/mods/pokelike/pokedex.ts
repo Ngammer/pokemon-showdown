@@ -373,4 +373,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Water Absorb-Eternal Rain", 1: "Damp-Eternal Rain", H: "Swift Swim-Eternal Rain" },
 	},
+	brutebonnet: {
+		inherit: true,
+		abilities: { 0: "Protosynthesis-Explosive", 1: "Intimidate-Explosive 2", H: "Forewarm-Explosive" },
+	},
+	
 };

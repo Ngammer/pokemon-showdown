@@ -1656,7 +1656,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target);
+				this.actions.useMove('selfdestruct', target);
 			}
 		},
 		flags: { },
@@ -1682,11 +1682,37 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target);
+				this.actions.useMove('selfdestruct', target);
 			}
 		},
 		flags: { },
 		name: "Intimidate-Explosive",
+		rating: 3.5,
+		num: 22,
+	},
+	intimidateexplosive2: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Intimidate', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ atk: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.actions.useMove('explosion', target);
+			}
+		},
+		flags: { },
+		name: "Intimidate-Explosive 2",
 		rating: 3.5,
 		num: 22,
 	},
@@ -1711,7 +1737,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target);
+				this.actions.useMove('selfdestruct', target);
 			}
 		},
 		flags: { breakable: 1 },
@@ -1735,7 +1761,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target);
+				this.actions.useMove('selfdestruct', target);
 			}
 		},
 		flags: { },
