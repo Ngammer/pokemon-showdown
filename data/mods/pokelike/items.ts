@@ -18,6 +18,7 @@ assaultvest: {
 				}
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 640,
 		gen: 6,
 	},
@@ -35,6 +36,7 @@ assaultvest: {
 				return this.chainModify([5324, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 296,
 		gen: 4,
 	},
@@ -53,6 +55,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 241,
 		gen: 2,
 	},
@@ -71,6 +74,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 240,
 		gen: 2,
 	},
@@ -89,6 +93,7 @@ assaultvest: {
 				return this.chainModify([4915, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 249,
 		gen: 2,
 	},
@@ -114,6 +119,7 @@ assaultvest: {
 			return this.chainModify(1.5);
 		},
 		isChoice: true,
+		itemUser: ["Iron Thorns"],
 		num: 220,
 		gen: 3,
 	},
@@ -138,6 +144,7 @@ assaultvest: {
 			return this.chainModify(1.5);
 		},
 		isChoice: true,
+		itemUser: ["Iron Thorns"],
 		num: 287,
 		gen: 4,
 	},
@@ -163,6 +170,7 @@ assaultvest: {
 			return this.chainModify(1.5);
 		},
 		isChoice: true,
+		itemUser: ["Iron Thorns"],
 		num: 297,
 		gen: 4,
 	},
@@ -181,6 +189,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 250,
 		gen: 2,
 	},
@@ -198,6 +207,7 @@ assaultvest: {
 				return this.chainModify([4915, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 268,
 		gen: 4,
 	},
@@ -216,6 +226,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 2401,
 		gen: 9,
 	},
@@ -238,6 +249,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 238,
 		gen: 2,
 	},
@@ -258,6 +270,7 @@ assaultvest: {
 				return this.chainModify(1.25);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 279,
 		gen: 4,
 	},
@@ -271,6 +284,7 @@ assaultvest: {
 			if(source.baseSpecies.num === 995) return this.chainModify(0.8);
 			return this.chainModify(0.9);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 255,
 		gen: 3,
 
@@ -289,6 +303,7 @@ assaultvest: {
 			}
 			this.heal(pokemon.baseMaxhp / 16);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 234,
 		gen: 2,
 	},
@@ -307,6 +322,7 @@ assaultvest: {
 				this.damage(source.baseMaxhp / 10, source, source, this.dex.items.get('lifeorb'));
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 270,
 		gen: 4,
 	},
@@ -328,6 +344,7 @@ assaultvest: {
 				return this.chainModify([1.1, 1]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 256,
 		gen: 2,
 	},
@@ -346,6 +363,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 242,
 		gen: 2,
 	},
@@ -364,6 +382,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 233,
 		gen: 2,
 	},
@@ -382,6 +401,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 239,
 		gen: 2,
 	},
@@ -400,6 +420,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 243,
 		gen: 2,
 	},
@@ -418,6 +439,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 246,
 		gen: 2,
 	},
@@ -435,6 +457,7 @@ assaultvest: {
 			if (pokemon.baseSpecies.num === 995) return this.chainModify(1.5);
 			return this.chainModify(1.25);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 292,
 		gen: 4,
 	},
@@ -451,6 +474,7 @@ assaultvest: {
 		onModifySpD(spd, pokemon) {
 			if (pokemon.baseSpecies.num === 995) return this.chainModify(1.5);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 290,
 		gen: 4,
 	},
@@ -467,6 +491,7 @@ assaultvest: {
 		onModifySpD(spd, pokemon) {
 			if (pokemon.baseSpecies.num === 995) return this.chainModify(1.5);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 289,
 		gen: 4,
 	},
@@ -483,6 +508,7 @@ assaultvest: {
 		onModifySpD(spd, pokemon) {
 			if (pokemon.baseSpecies.num === 995) return this.chainModify(1.5);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 291,
 		gen: 4,
 	},
@@ -500,6 +526,7 @@ assaultvest: {
 			if (move.category !== 'Status' && user.baseSpecies.num === 995) return this.chainModify([6144, 4096]);
 			if (move.category !== 'Status') return this.chainModify([5120, 4096]);
 		},
+		itemUser: ["Iron Thorns"],
 		num: 294,
 		gen: 4,
 	},
@@ -520,6 +547,7 @@ assaultvest: {
 				return this.chainModify(1.1);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		// protective effect handled in Battle#checkMoveMakesContact
 		num: 880,
 		gen: 7,
@@ -541,6 +569,7 @@ assaultvest: {
 				return this.chainModify(1.25);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 1884,
 		gen: 9,
 	},
@@ -555,6 +584,7 @@ assaultvest: {
 		fling: {
 			basePower: 80,
 		},
+		itemUser: ["Iron Thorns"],
 		num: 217,
 		gen: 2,
 	},
@@ -576,6 +606,7 @@ assaultvest: {
 				return this.chainModify(1.25);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 327,
 		gen: 4,
 	},
@@ -594,6 +625,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 244,
 		gen: 2,
 	},
@@ -612,6 +644,7 @@ assaultvest: {
 				this.heal(move.totalDamage / 6, pokemon);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 253,
 		gen: 3,
 	},
@@ -630,6 +663,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 251,
 		gen: 3,
 	},
@@ -648,6 +682,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 222,
 		gen: 2,
 	},
@@ -666,6 +701,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 237,
 		gen: 2,
 	},
@@ -684,6 +720,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 247,
 		gen: 2,
 	},
@@ -702,6 +739,7 @@ assaultvest: {
 				return this.chainModify([5120, 4096]);
 			}
 		},
+		itemUser: ["Iron Thorns"],
 		num: 248,
 		gen: 2,
 	},
