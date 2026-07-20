@@ -23739,4 +23739,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		contestType: "Beautiful",
 	},
+	emergingwildlife: {
+		num: -143,
+		accuracy: 90,
+		basePower: 100,
+		category: "Physical",
+		name: "Emerging Wildlife",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, nonsky: 1, metronome: 1, field: 1 },
+		secondary: {
+			chance: 100,
+			self: {
+				onHit() {
+					this.field.setTerrain('electricterrain');
+				},
+			},
+		},
+		target: "allAdjacent",
+		type: "Grass",
+		contestType: "Tough",
+	},
 };
