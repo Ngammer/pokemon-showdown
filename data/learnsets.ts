@@ -56887,6 +56887,7 @@ sylveon: {
 			workup: ["9M"],
 			worryseed: ["9T", "9T", "9T", "9T"],
 			zenheadbutt: ["9M"],
+			emergingwildlife: ["9M"],
 		},
 		eventData: [
 			{generation: 5, level: 100, gender: "M", moves: ["woodhammer", "earthquake", "outrage", "stoneedge"], pokeball: "cherishball"},
