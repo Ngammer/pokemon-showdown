@@ -322,6 +322,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	crowthsola: {
 		inherit: true,
 		baseStats: { hp: 105, atk: 58, def: 110, spa: 82, spd: 110, spe: 40 }, // + 5 Ps
+		abilities: { 0: "Joyful-Crowthsola", 1: "Regenerator-Crowthsola", H: "Blessed Body-Crowthsola" },
 	},
 	kingambit: {
 		inherit: true,
