@@ -1860,9 +1860,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 108,
 	},
 	zerotoherosurf: {
-		onStart(pokemon) {
-			this.actions.useMove('surf', pokemon);
-		},
 		onSwitchOut(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Palafin') return;
 			if (pokemon.species.forme !== 'Hero') {
@@ -1871,6 +1868,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onSwitchIn(pokemon) {
+			this.actions.useMove('surf', pokemon);
 			if (pokemon.baseSpecies.baseSpecies !== 'Palafin') return;
 			if (!pokemon.heroMessageDisplayed && pokemon.species.forme === 'Hero') {
 				this.add('-activate', pokemon, 'ability: Zero to Hero-Surf');
