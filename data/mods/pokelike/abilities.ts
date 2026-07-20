@@ -508,7 +508,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: -163,
 	},
 	dragonizestabhit: {
-		isNonstandard: "Future",
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [

@@ -1132,7 +1132,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 88,
 	},
 	dragonize: {
-		isNonstandard: "Future",
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [
@@ -1253,7 +1252,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 297,
 	},
 	eelevate: {
-		isNonstandard: "Future",
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
 				const bestStat = source.getBestStat(true, true);
@@ -1401,7 +1399,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 111,
 	},
 	firemane: {
-		isNonstandard: "Future",
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
@@ -2805,7 +2802,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 178,
 	},
 	megasol: {
-		isNonstandard: "Future",
 		onWeatherModifyDamagePriority: 1,
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			(this.dex.conditions.getByID('sunnyday' as ID) as any).onWeatherModifyDamage
@@ -3627,7 +3623,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 53,
 	},
 	piercingdrill: {
-		isNonstandard: "Future",
 		onHitProtect(source, target, move) {
 			if (move.flags['contact']) {
 				target.getMoveHitData(move).bypassProtect = this.effect;
@@ -5006,7 +5001,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 3,
 	},
 	spicyspray: {
-		isNonstandard: "Future",
 		onDamagingHit(damage, target, source, move) {
 			if (!source.trySetStatus('brn', target) && !source.status && source.hasType('Fire')) {
 				this.add('-immune', source);
