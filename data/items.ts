@@ -53,7 +53,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2638,
 		gen: 9,
-		
+
 	},
 	absorbbulb: {
 		name: "Absorb Bulb",
@@ -425,7 +425,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2581,
 		gen: 9,
-		
+
 	},
 	baxcalibrite: {
 		name: "Baxcalibrite",
@@ -437,7 +437,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2648,
 		gen: 9,
-		
+
 	},
 	beastball: {
 		name: "Beast Ball",
@@ -898,7 +898,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2574,
 		gen: 9,
-		
+
 	},
 	charcoal: {
 		name: "Charcoal",
@@ -1005,7 +1005,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2575,
 		gen: 9,
-		
+
 	},
 	chestoberry: {
 		name: "Chesto Berry",
@@ -1079,7 +1079,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2637,
 		gen: 9,
-		
+
 	},
 	chippedpot: {
 		name: "Chipped Pot",
@@ -1242,7 +1242,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2559,
 		gen: 9,
-		
+
 	},
 	cloversweet: {
 		name: "Clover Sweet",
@@ -1396,7 +1396,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2644,
 		gen: 9,
-		
+
 	},
 	crackedpot: {
 		name: "Cracked Pot",
@@ -1505,7 +1505,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2568,
 		gen: 9,
-		
+
 	},
 	dawnstone: {
 		name: "Dawn Stone",
@@ -1580,7 +1580,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2576,
 		gen: 9,
-		
+
 	},
 	destinyknot: {
 		name: "Destiny Knot",
@@ -1698,7 +1698,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2582,
 		gen: 9,
-		
+
 	},
 	dragonfang: {
 		name: "Dragon Fang",
@@ -1738,7 +1738,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2562,
 		gen: 9,
-		
+
 	},
 	dragoniumz: {
 		name: "Dragonium Z",
@@ -1806,7 +1806,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2585,
 		gen: 9,
-		
+
 	},
 	dreadplate: {
 		name: "Dread Plate",
@@ -1949,7 +1949,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2573,
 		gen: 9,
-		
+
 	},
 	eeviumz: {
 		name: "Eevium Z",
@@ -2155,7 +2155,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2569,
 		gen: 9,
-		
+
 	},
 	enigmaberry: {
 		name: "Enigma Berry",
@@ -2211,7 +2211,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2570,
 		gen: 9,
-		
+
 	},
 	expertbelt: {
 		name: "Expert Belt",
@@ -2300,7 +2300,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2587,
 		gen: 9,
-		
+
 	},
 	fastball: {
 		name: "Fast Ball",
@@ -2322,7 +2322,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2564,
 		gen: 9,
-		
+
 	},
 	fightinggem: {
 		name: "Fighting Gem",
@@ -2545,7 +2545,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2579,
 		gen: 9,
-		
+
 	},
 	flowersweet: {
 		name: "Flower Sweet",
@@ -2744,7 +2744,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2566,
 		gen: 9,
-		
+
 	},
 	fullincense: {
 		name: "Full Incense",
@@ -2843,7 +2843,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2640,
 		gen: 9,
-		
+
 	},
 	gardevoirite: {
 		name: "Gardevoirite",
@@ -2938,7 +2938,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2650,
 		gen: 9,
-		
+
 	},
 	goldbottlecap: {
 		name: "Gold Bottle Cap",
@@ -2969,7 +2969,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2645,
 		gen: 9,
-		
+
 	},
 	golurkite: {
 		name: "Golurkite",
@@ -2981,7 +2981,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2642,
 		gen: 9,
-		
+
 	},
 	grassgem: {
 		name: "Grass Gem",
@@ -3105,7 +3105,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2577,
 		gen: 9,
-		
+
 	},
 	grepaberry: {
 		name: "Grepa Berry",
@@ -3283,7 +3283,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2583,
 		gen: 9,
-		
+
 	},
 	healball: {
 		name: "Heal Ball",
@@ -3332,7 +3332,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2567,
 		gen: 9,
-		
+
 	},
 	heatrock: {
 		name: "Heat Rock",
@@ -4122,7 +4122,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2641,
 		gen: 9,
-		
+
 	},
 	luckypunch: {
 		name: "Lucky Punch",
@@ -4300,7 +4300,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2646,
 		gen: 9,
-		
+
 	},
 	magmarizer: {
 		name: "Magmarizer",
@@ -4403,7 +4403,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2580,
 		gen: 9,
-		
+
 	},
 	maliciousarmor: {
 		name: "Malicious Armor",
@@ -4564,7 +4564,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2563,
 		gen: 9,
-		
+
 	},
 	mentalherb: {
 		name: "Mental Herb",
@@ -4618,7 +4618,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2643,
 		gen: 9,
-		
+
 	},
 	metagrossite: {
 		name: "Metagrossite",
@@ -5854,7 +5854,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2578,
 		gen: 9,
-		
+
 	},
 	qualotberry: {
 		name: "Qualot Berry",
@@ -5948,7 +5948,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2635,
 		gen: 9,
-		
+
 	},
 	raichunitey: {
 		name: "Raichunite Y",
@@ -5960,7 +5960,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2636,
 		gen: 9,
-		
+
 	},
 	rarebone: {
 		name: "Rare Bone",
@@ -6552,7 +6552,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2571,
 		gen: 9,
-		
+
 	},
 	scopelens: {
 		name: "Scope Lens",
@@ -6579,7 +6579,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2647,
 		gen: 9,
-		
+
 	},
 	scraftinite: {
 		name: "Scraftinite",
@@ -6591,7 +6591,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2572,
 		gen: 9,
-		
+
 	},
 	seaincense: {
 		name: "Sea Incense",
@@ -6814,7 +6814,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2565,
 		gen: 9,
-		
+
 	},
 	skullfossil: {
 		name: "Skull Fossil",
@@ -7057,7 +7057,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2639,
 		gen: 9,
-		
+
 	},
 	starfberry: {
 		name: "Starf Berry",
@@ -7101,7 +7101,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2561,
 		gen: 9,
-		
+
 	},
 	starsweet: {
 		name: "Star Sweet",
@@ -7417,7 +7417,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2649,
 		gen: 9,
-		
+
 	},
 	terrainextender: {
 		name: "Terrain Extender",
@@ -9269,7 +9269,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2560,
 		gen: 9,
-		
+
 	},
 	wacanberry: {
 		name: "Wacan Berry",
@@ -9649,7 +9649,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2586,
 		gen: 9,
-		
+
 	},
 	zoomlens: {
 		name: "Zoom Lens",
@@ -9678,7 +9678,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2584,
 		gen: 9,
-		
+
 	},
 
 	// Gen 2 items
