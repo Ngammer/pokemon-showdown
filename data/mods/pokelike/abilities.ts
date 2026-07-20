@@ -2475,7 +2475,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			case 'primordialsea':
 				pokemon.heal(pokemon.maxhp / 2);
 				break;
+			default:
+				break;
 			}
+			
 		},
 		flags: { breakable: 1 },
 		name: "Thick Fat-Rain Breath",
@@ -2506,6 +2509,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			case 'raindance':
 			case 'primordialsea':
 				pokemon.heal(pokemon.maxhp / 2);
+				break;
+			default:
 				break;
 			}
 		},
@@ -2550,6 +2555,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			case 'raindance':
 			case 'primordialsea':
 				pokemon.heal(pokemon.maxhp / 2);
+				break;
+			default:
 				break;
 			}
 		},
