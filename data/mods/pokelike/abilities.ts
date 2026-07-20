@@ -1860,6 +1860,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 108,
 	},
 	zerotoherosurf: {
+		onStart(pokemon) {
+			this.actions.useMove('surf', pokemon);
+		},
 		onSwitchOut(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Palafin') return;
 			if (pokemon.species.forme !== 'Hero') {
@@ -1870,12 +1873,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onSwitchIn(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Palafin') return;
 			if (!pokemon.heroMessageDisplayed && pokemon.species.forme === 'Hero') {
-				this.add('-activate', pokemon, 'ability: Zero to Hero');
+				this.add('-activate', pokemon, 'ability: Zero to Hero-Surf');
 				pokemon.heroMessageDisplayed = true;
 			}
-		},
-		onStart(pokemon) {
-			this.actions.useMove('surf', pokemon);
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, notransform: 1 },
 		name: "Zero to Hero-Surf",
@@ -2469,38 +2469,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onStart(pokemon) {
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
-		/* onWeatherChange(pokemon) {
-			var weather = 'noraindance'
-			if(this.field.weather == 'raindance'){
-				weather = 'raindance'
-			}
-			if (weather == 'raindance'){
-				var rained = true;
-			}
-
+		onWeatherChange(pokemon) {
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-				pokemon.heal(pokemon.maxhp / 4);
-				break;
-			default:
-				rained ??= false;
-				this.add('-message', `DEBUG: Rained Status=${rained}`); // ← temporal
-				if (weather == 'noraindance' && rained){
-					pokemon.heal(pokemon.maxhp / 4);
-					rained = false;
-				}
+				pokemon.heal(pokemon.maxhp / 2);
 				break;
 			}
-		}, */
-		onWeatherChange(pokemon) {
-			const isRaining = ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather());
-			if (isRaining) {
-				pokemon.heal(pokemon.maxhp / 4);
-			} else if (this.effectState.wasRaining) {
-				pokemon.heal(pokemon.maxhp / 4);
-			}
-			this.effectState.wasRaining = isRaining;
 		},
 		flags: { breakable: 1 },
 		name: "Thick Fat-Rain Breath",
@@ -2527,25 +2502,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
 		onWeatherChange(pokemon) {
-			let weather = 'noraindance';
-			if (this.field.weather === 'raindance') {
-				weather = 'raindance';
-			}
-			if (weather === 'raindance') {
-				var rained = true;
-			}
-
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-				pokemon.heal(pokemon.maxhp / 4);
-				break;
-			default:
-				rained ??= false;
-				if (weather === 'noraindance' && rained) {
-					pokemon.heal(pokemon.maxhp / 4);
-					rained = false;
-				}
+				pokemon.heal(pokemon.maxhp / 2);
 				break;
 			}
 		},
@@ -2586,25 +2546,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
 		onWeatherChange(pokemon) {
-			if (this.field.weather === 'raindance') {
-				weather = 'raindance';
-			}
-			var weather = 'noraindance';
-			if (weather === 'raindance') {
-				var rained = true;
-			}
-
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-				pokemon.heal(pokemon.maxhp / 4);
-				break;
-			default:
-				rained ??= false;
-				if (weather === 'noraindance' && rained) {
-					pokemon.heal(pokemon.maxhp / 4);
-					rained = false;
-				}
+				pokemon.heal(pokemon.maxhp / 2);
 				break;
 			}
 		},
@@ -3083,6 +3028,23 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			return move.basePower;
 		},
+		onFoeSwitchOut(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('odorsleuth', pokemon);
+				const data = side.getSideConditionData('odorsleuth');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('persecution');
+		},
 		flags: { breakable: 1 },
 		name: "Keen Eye-Persecution",
 		rating: 0.5,
@@ -3108,6 +3070,23 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return move.basePower * 2;
 			}
 			return move.basePower;
+		},
+		onFoeSwitchOut(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('odorsleuth', pokemon);
+				const data = side.getSideConditionData('odorsleuth');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('persecution');
 		},
 		flags: { },
 		name: "Sand Rush-Persecution",
@@ -3139,6 +3118,23 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return move.basePower * 2;
 			}
 			return move.basePower;
+		},
+		onFoeSwitchOut(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('odorsleuth', pokemon);
+				const data = side.getSideConditionData('odorsleuth');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('persecution');
 		},
 		flags: { breakable: 1 },
 		name: "Steadfast-Persecution",
