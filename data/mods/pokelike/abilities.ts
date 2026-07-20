@@ -233,7 +233,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Torrent-STAB hit",
+		name: "Torrent-STAB Hit",
 		rating: 2,
 		num: 67,
 	},
@@ -251,7 +251,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Gluttony-STAB hit",
+		name: "Gluttony-STAB Hit",
 		rating: 1.5,
 		num: 82,
 	},
@@ -318,7 +318,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Metal Breaker-STAB hit",
+		name: "Metal Breaker-STAB Hit",
 		rating: 3.5,
 		num: -197,
 	},
@@ -431,7 +431,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Beast Boost-STAB hit",
+		name: "Beast Boost-STAB Hit",
 		rating: 3.5,
 		num: 224,
 	},
@@ -444,7 +444,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Levitate-STAB hit",
+		name: "Levitate-STAB Hit",
 		rating: 3.5,
 		num: 26,
 	},
