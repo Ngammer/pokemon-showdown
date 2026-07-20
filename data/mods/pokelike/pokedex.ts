@@ -279,6 +279,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	hydreigon: {
 		inherit: true,
+		abilities: { 0: "Hustle-Multihead", 1: "Levitate-Multihead", H: "Dark Aura-Multihead" },
 	},
 	blissey: {
 		inherit: true,

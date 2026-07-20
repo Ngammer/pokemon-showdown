@@ -840,7 +840,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-				return this.clampIntRange(move.basePower + 10, 0, 1000);
+			return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { breakable: 1 },
 		name: "Insomnia-More Power",
@@ -863,7 +863,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-				return this.clampIntRange(move.basePower + 10, 0, 1000);
+			return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { },
 		name: "Stakeout-More Power",
@@ -877,12 +877,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (this.randomChance(10, 10)) {
 				this.boost({ spe: -1 }, target, source, null, true, false);
 			}
-			if (this.randomChance(3, 10)){
+			if (this.randomChance(3, 10)) {
 				target.addVolatile('weaver');
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-				return this.clampIntRange(move.basePower + 10, 0, 1000);
+			return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		condition: {
 			onTrapPokemon(pokemon) {
@@ -1001,7 +1001,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			pokemon.removeVolatile('motordrive');
 		},
 		onBasePower(basePower, attacker, defender, move) {
-				return this.clampIntRange(move.basePower + 10, 0, 1000);
+			return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
@@ -1058,7 +1058,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-				return this.clampIntRange(move.basePower + 10, 0, 1000);
+			return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { breakable: 1 },
 		name: "Lightning Rod-More Power",
@@ -1088,7 +1088,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-				return this.clampIntRange(move.basePower + 10, 0, 1000);
+			return this.clampIntRange(move.basePower + 10, 0, 1000);
 		},
 		flags: { breakable: 1 },
 		name: "Sap Sipper-More Power",
@@ -1489,7 +1489,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		flags: { },
 		name: "Early Bird-Random",
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon)
+			this.actions.useMove('metronome', pokemon);
 		},
 		onModifyPriority(priority, source, target, move) {
 			if (['sunnyday', 'desolateland'].includes(source.effectiveWeather()) || source.volatiles['dreamball']) {
@@ -1507,7 +1507,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	scrappyrandom: {
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon)
+			this.actions.useMove('metronome', pokemon);
 		},
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
@@ -1530,7 +1530,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	innerfocusrandom: {
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon)
+			this.actions.useMove('metronome', pokemon);
 		},
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'flinch') return null;
@@ -1552,7 +1552,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	seedsowerrandom: {
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon)
+			this.actions.useMove('metronome', pokemon);
 		},
 		onDamagingHit(damage, target, source, move) {
 			this.field.setTerrain('grassyterrain');
@@ -1592,7 +1592,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { },
@@ -1621,7 +1621,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHit(damage, target, source, move) {
 			source.removeVolatile('itemignored');
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		condition: {
@@ -1656,7 +1656,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { },
@@ -1682,7 +1682,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { },
@@ -1711,7 +1711,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { breakable: 1 },
@@ -1735,7 +1735,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { },
@@ -1808,7 +1808,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
@@ -1825,7 +1825,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { },
@@ -1849,7 +1849,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon)
+			this.actions.useMove('metronome', pokemon);
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1, notransform: 1 },
 		name: "Zero to Hero-Surf",
@@ -2446,7 +2446,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onStart(pokemon) {
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
-		/*onWeatherChange(pokemon) {
+		/* onWeatherChange(pokemon) {
 			var weather = 'noraindance'
 			if(this.field.weather == 'raindance'){
 				weather = 'raindance'
@@ -2454,7 +2454,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (weather == 'raindance'){
 				var rained = true;
 			}
-			
+
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
@@ -2466,19 +2466,19 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				if (weather == 'noraindance' && rained){
 					pokemon.heal(pokemon.maxhp / 4);
 					rained = false;
-				} 
+				}
 				break;
 			}
 		}, */
 		onWeatherChange(pokemon) {
-		const isRaining = ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather());
-		if (isRaining) {
-			pokemon.heal(pokemon.maxhp / 4);
-		} else if (this.effectState.wasRaining) {
-			pokemon.heal(pokemon.maxhp / 4);
-		}
-		this.effectState.wasRaining = isRaining; 
-	},
+			const isRaining = ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather());
+			if (isRaining) {
+				pokemon.heal(pokemon.maxhp / 4);
+			} else if (this.effectState.wasRaining) {
+				pokemon.heal(pokemon.maxhp / 4);
+			}
+			this.effectState.wasRaining = isRaining;
+		},
 		flags: { breakable: 1 },
 		name: "Thick Fat-Rain Breath",
 		rating: 3.5,
@@ -2504,14 +2504,14 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
 		onWeatherChange(pokemon) {
-			var weather = 'noraindance'
-			if(this.field.weather == 'raindance'){
-				weather = 'raindance'
+			let weather = 'noraindance';
+			if (this.field.weather === 'raindance') {
+				weather = 'raindance';
 			}
-			if (weather == 'raindance'){
+			if (weather === 'raindance') {
 				var rained = true;
 			}
-			
+
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
@@ -2519,10 +2519,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				break;
 			default:
 				rained ??= false;
-				if (weather == 'noraindance' && rained){
+				if (weather === 'noraindance' && rained) {
 					pokemon.heal(pokemon.maxhp / 4);
 					rained = false;
-				} 
+				}
 				break;
 			}
 		},
@@ -2563,14 +2563,14 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
 		},
 		onWeatherChange(pokemon) {
-			if(this.field.weather == 'raindance'){
-				weather = 'raindance'
+			if (this.field.weather === 'raindance') {
+				weather = 'raindance';
 			}
-			var weather = 'noraindance'
-			if (weather == 'raindance'){
+			var weather = 'noraindance';
+			if (weather === 'raindance') {
 				var rained = true;
 			}
-			
+
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
@@ -2578,10 +2578,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				break;
 			default:
 				rained ??= false;
-				if (weather == 'noraindance' && rained){
+				if (weather === 'noraindance' && rained) {
 					pokemon.heal(pokemon.maxhp / 4);
 					rained = false;
-				} 
+				}
 				break;
 			}
 		},
@@ -3142,7 +3142,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onModifyMove(move) {
 			if (move.flags['sound']) {
 				move.forceSwitch = true;
-
 			}
 		},
 		onModifyPriority(priority, pokemon, target, move) {
@@ -3173,7 +3172,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onModifyMove(move) {
 			if (move.flags['sound']) {
 				move.forceSwitch = true;
-
 			}
 		},
 		onModifyPriority(priority, pokemon, target, move) {
@@ -3213,7 +3211,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onModifyMove(move) {
 			if (move.flags['sound']) {
 				move.forceSwitch = true;
-
 			}
 		},
 		onModifyPriority(priority, pokemon, target, move) {
@@ -3241,7 +3238,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onDamagingHit(damage, target, source, move) {
 			source.removeVolatile('itemignored');
 			if (!target.hp) {
-				this.actions.useMove('explosion', target)
+				this.actions.useMove('explosion', target);
 			}
 		},
 		flags: { breakable: 1 },
@@ -3251,7 +3248,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	parentalbondrandom: {
 		onStart(pokemon) {
-			this.actions.useMove('metronome', pokemon)
+			this.actions.useMove('metronome', pokemon);
 		},
 		onPrepareHit(source, target, move) {
 			if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
