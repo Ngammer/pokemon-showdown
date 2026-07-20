@@ -8492,7 +8492,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return this.chainModify(2);
 		},
 		flags: { },
-		name: "Inner Power",
+		name: "Inner Energy",
 		rating: 5,
 		num: -206,
 	},
