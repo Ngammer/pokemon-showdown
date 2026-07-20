@@ -369,4 +369,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Cud Chew-Field", 1: "Armor Tail-Field", H: "Sap Sipper-Field" },
 	},
+	poliwrath: {
+		inherit: true,
+		abilities: { 0: "Water Absorb-Eternal Rain", 1: "Damp-Eternal Rain", H: "Swift Swim-Eternal Rain" },
+	},
 };
