@@ -166,7 +166,15 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	xatu: {
 		inherit: true,
 	},
-	xatutotem: {
+	xatutotemserious: {
+		inherit: true,
+		abilities: { 0: "Hierarchical Head-Omni Boost" },
+	},
+	xatutotemgrief: {
+		inherit: true,
+		abilities: { 0: "Hierarchical Head-Omni Boost" },
+	},
+	xatutotemwrath: {
 		inherit: true,
 		abilities: { 0: "Hierarchical Head-Omni Boost" },
 	},
