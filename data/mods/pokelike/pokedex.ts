@@ -189,9 +189,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	scizor: {
 		inherit: true,
+		baseStats: { hp: 75, atk: 130, def: 100, spa: 55, spd: 80, spe: 65 },
 	},
 	scizormega: {
 		inherit: true,
+		baseStats: { hp: 75, atk: 150, def: 140, spa: 65, spd: 100, spe: 75 },
 	},
 	mamoswine: {
 		inherit: true,
