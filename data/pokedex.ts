@@ -8476,7 +8476,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Shellos",
 		evoLevel: 30,
 		eggGroups: ["Water 1", "Amorphous"],
-		changesFrom: "Gastrodon",
 	},
 	ambipom: {
 		num: 424,
