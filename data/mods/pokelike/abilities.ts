@@ -1440,7 +1440,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.boost({ [bestStat]: 1 }, pokemon);
 		},
 		flags: { breakable: 1 },
-		name: "Sand Veil-Plpus",
+		name: "Sand Veil-Plus",
 		rating: 1.5,
 		num: 8,
 	},
@@ -1457,7 +1457,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.boost({ [bestStat]: 1 }, pokemon);
 		},
 		flags: { },
-		name: "Poison Point",
+		name: "Poison Point-Plus",
 		rating: 1.5,
 		num: 38,
 	},
@@ -1481,7 +1481,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.boost({ [bestStat]: 1 }, pokemon);
 		},
 		flags: { },
-		name: "Sheer Force",
+		name: "Sheer Force-Plus",
 		rating: 3.5,
 		num: 125,
 	},
