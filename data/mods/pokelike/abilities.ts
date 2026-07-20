@@ -2431,14 +2431,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	swiftswimeternalrain: {
 		onModifySpe(spe, pokemon) {
-			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) || pokemon.volatiles['lureball']) {
-				return this.chainModify(2);
-			}
-		},
-		onEnd(pokemon) {
-			if (pokemon.getItem().name === 'Lure Ball') {
-				pokemon.useItem();
-			}
+			return this.chainModify(2);
 		},
 		onWeatherModifyDamagePriority: 1,
 		onWeatherModifyDamage(damage, attacker, defender, move) {
@@ -2473,7 +2466,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-				pokemon.heal(pokemon.maxhp / 2);
+				this.heal(pokemon.maxhp / 2);
 				break;
 			default:
 				break;
@@ -2507,7 +2500,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-				pokemon.heal(pokemon.maxhp / 2);
+				this.heal(pokemon.maxhp / 2);
 				break;
 			default:
 				break;
@@ -2553,7 +2546,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			switch (pokemon.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-				pokemon.heal(pokemon.maxhp / 2);
+				this.heal(pokemon.maxhp / 2);
 				break;
 			default:
 				break;
