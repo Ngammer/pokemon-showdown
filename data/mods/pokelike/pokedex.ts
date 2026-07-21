@@ -161,7 +161,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	naganadel: {
 		inherit: true,
-		abilities: { 0: "Beast Boost-Only STAB", 1: "Levitate-Only STAB", H: "Filthy-Only STAB" },
+		abilities: { 0: "Beast Boost-STAB Hit", 1: "Levitate-STAB Hit", H: "Filthy-STAB Hit" },
 	},
 	xatu: {
 		inherit: true,
@@ -226,7 +226,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	golurk: {
 		inherit: true,
-		abilities: { 0: "Iron Fist (Golurk)", 1: "Klutz (Golurk)", H: "No Guard (Golurk)" },
+		abilities: { 0: "Iron Fist-Golurk", 1: "Klutz-Golurk", H: "No Guard-Golurk" },
 	},
 	toxtricitylowkey: {
 		inherit: true,
