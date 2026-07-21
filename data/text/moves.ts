@@ -717,7 +717,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	breakingswipe: {
 		name: "Breaking Swipe",
 		desc: "Has a 100% chance to lower the target's Attack by 1 stage. Has a 30% chance to make the target flinch.",
-		shortDesc: "100% chance to lower the foe(s) Attack by 1. 30% chance to flinch.",
+		shortDesc: "Lower the foe(s) Attack by 1. 30% chance to flinch.",
 	},
 	breakneckblitz: {
 		name: "Breakneck Blitz",
@@ -750,7 +750,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	brutalswing: {
 		name: "Brutal Swing",
-		shortDesc: "100% chance to lower the target's Atk by 1. 30% chance to confuse the target. Hits adjacent pokemon",
+		desc: "100% chance to lower the target's Atk by 1. 30% chance to confuse the target. Hits adjacent pokemon",
+		shortDesc: "Lower target's Atk by 1. 30%: confuse the target. Hits adjacent pokemon",
 	},
 	bubble: {
 		name: "Bubble",
@@ -1070,8 +1071,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	constrict: {
 		name: "Constrict",
-		desc: "Has a 100% chance to lower the target's Speed by 2 stage.",
-		shortDesc: "100% chance to lower the target's Speed by 2. User: +1 Atk",
+		desc: "Has a 100% chance to lower the target's Speed by 2 stage. Raises user's attack by 1",
+		shortDesc: "lower the target's Speed by 2. User: +1 Atk",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
 			shortDesc: "33% chance to lower the target's Speed by 1.",
@@ -1626,7 +1627,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	dragoncheer: {
 		name: "Dragon Cheer",
 		desc: "Raises the target's chance for a critical hit by 1 stage, or by 2 stages if the target is Dragon type. Fails if there is no ally adjacent to the user, or if the target already has this effect or the Focus Energy effect. Baton Pass can be used to transfer this effect to an ally. Raises the user's Attack by 1.",
-		shortDesc: "Ally: Crit ratio +1, or +2 if ally is Dragon type. Raises the user's Attack by 1.",
+		shortDesc: "Ally: Crit ratio +1, or +2 is Dragon type. User atk: +1.",
 
 		start: "#focusenergy",
 	},
@@ -2007,7 +2008,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	faketears: {
 		name: "Fake Tears",
-		shortDesc: "For 5 turns, all damage to the user is reduced by 30%.",
+		shortDesc: "For 5 turns, damage to the user is reduced by 30%.",
 	},
 	falsesurrender: {
 		name: "False Surrender",
@@ -2055,7 +2056,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	ficklebeam: {
 		name: "Fickle Beam",
-		shortDesc: "Hits 5 times in one turn. Increase a random stat +1",
+		shortDesc: "Hits 5 times. Decrease a target random stat -1",
 
 		activate: "  [POKEMON] is going all out for this attack!",
 	},
@@ -3530,7 +3531,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	jawlock: {
 		name: "Jaw Lock",
 		desc: "Prevents the user and the target from switching out. The user and the target can still switch out if either of them is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field. Type depends on the user's secondary type",
-		shortDesc: "Prevents both user and target from switching out. Type depends on the user.",
+		shortDesc: "Neither can switching out. Type depends on the user.",
 	},
 	jetpunch: {
 		name: "Jet Punch",
@@ -3644,7 +3645,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	lashout: {
 		name: "Lash Out",
 		desc: "Power doubles if the user had a stat stage lowered this turn. Power doubles if user is burn/poison/paralyzed/Freeze.",
-		shortDesc: "2x power if the user had a stat lowered or user is brn/psn/par/frz.",
+		shortDesc: "2x power: User had a stat lowered or is status ailment.",
 	},
 	lastresort: {
 		name: "Last Resort",
@@ -4159,8 +4160,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	memento: {
 		name: "Memento",
-		desc: "Lowers the target's Attack and Special Attack by 2 stages. The user faints unless this move misses or there is no target. Fails entirely if this move hits a substitute, but does not fail if the target's stats cannot be changed.",
-		shortDesc: "Lowers target's Attack, Sp. Atk by 2. User faints.",
+		desc: "Lowers the target's Attack and Special Attack by 2 stages. If this move is successful, the user loses 1/4 of its maximum HP, rounded down. This move fails entirely if it hits a Pokemon behind a substitute, but does not fail if the target's stats cannot be lowered.",
+		shortDesc: "Lowers target's Atk, SpA by 2. User loses 1/4 max HP",	
 		gen4: {
 			desc: "Lowers the target's Attack and Special Attack by 2 stages. The user faints, even if this move misses. This move can hit targets in the middle of a two-turn move. Fails entirely if there is no target, but does not fail if the target's stats cannot be changed.",
 		},
@@ -4967,7 +4968,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	powder: {
 		name: "Powder",
 		desc: "If the target uses a Fire-type move this turn, it is prevented from executing and the target loses 1/4 of its maximum HP, rounded half up. This effect does not happen if the Fire-type move is prevented by Primordial Sea. Active for 5 turns",
-		shortDesc: "If using a Fire move, target loses 1/4 max HP. Active for 5 turns",
+		shortDesc: "Using a Fire move, loses 1/4 max HP. Active for 5 turns",
 		gen6: {
 			desc: "If the target uses a Fire-type move this turn, it is prevented from executing and the target loses 1/4 of its maximum HP, rounded half up. This effect happens before the Fire-type move would be prevented by Primordial Sea.",
 		},
@@ -6529,7 +6530,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	steamroller: {
 		name: "Steamroller",
 		desc: "Has a 30% chance to make the target flinch. If this move is successful, it has a 30% chance to set up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in, unless it is a Flying-type Pokemon or has the Levitate Ability. A maximum of three layers may be set, and opponents lose 1/8 of their maximum HP with one layer, 1/6 of their maximum HP with two layers, and 1/4 of their maximum HP with three layers, all rounded down. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "30% chance to make the target flinch. 30% chance to set a layer of Spikes",
+		shortDesc: "30% chance to make the target flinch or set a layer of Spikes",
 		gen5: {
 			desc: "Has a 30% chance to make the target flinch. Damage doubles if the target has used Minimize while active.",
 		},
