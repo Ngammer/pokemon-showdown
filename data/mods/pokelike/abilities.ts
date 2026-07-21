@@ -1562,6 +1562,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 269,
 	},
 	harvestrandom: {
+		onStart(pokemon) {
+			this.actions.useMove('metronome', pokemon);
+		},
 		onResidualOrder: 28,
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
