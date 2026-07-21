@@ -20582,67 +20582,6 @@ chansey: {
 			uproar: ["9M"],
 			wish: ["9M"],
 			workup: ["9M"],
-			//zenheadbutt //Removido
-			//zapcannon //Removido
-			//wildcharge //Removido
-			//waterpulse //Removido
-			//watergun //Removido
-			//triattack //Removido
-			//trailblaze //Removido
-			//toxic //Removido
-			//thunderpunch //Removido
-			//thunderbolt //Removido
-			//thunder //Removido
-			//thief //Removido
-			//teleport //Removido
-			//telekinesis //Removido
-			//takedown //Removido
-			//swift //Removido
-			//swagger //Removido
-			//sunnyday //Removido
-			//strength //Removido
-			//solarbeam //Removido
-			//snowscape //Removido
-			//snatch //Removido
-			//skullbash //Removido
-			//skillswap //Removido
-			//shockwave //Removido
-			//seismictoss //Removido
-			//sandstorm //Removido
-			//safeguard //Removido
-			//round //Removido
-			//rollout //Removido
-			//rocktomb //Removido
-			//rocksmash //Removido
-			//rockslide //Removido
-			//raindance //Removido
-			//rage //Removido
-			//present //Removido
-			//pound //Removido
-			//mudbomb //Removido
-			//megapunch //Removido
-			//megakick //Removido
-			//lifedew //Removido
-			//laserfocus //Removido
-			//incinerate //Removido
-			//hail //Removido
-			//growl //Removido
-			//gravity //Removido
-			//focuspunch //Removido
-			//fling //Removido
-			//flash //Removido
-			//firepunch //Removido
-			//electricterrain //Removido
-			//echoedvoice //Removido
-			//earthquake //Removido
-			//dynamicpunch //Removido
-			//drainpunch //Removido
-			//doubleteam //Removido
-			//counter //Removido
-			//confide //Removido
-			//celebrate //Removido
-			//bubblebeam //Removido
-			//brickbreak //Removido
 		},
 	},
 blissey: {
@@ -20650,7 +20589,6 @@ blissey: {
 			afteryou: ["9M"], //Añadido
 			alluringvoice: ["9M"],
 			attract: ["9M"],
-			avalanche: ["9M"],
 			batonpass: ["9M"], //Añadido
 			bestow: ["9M"],
 			blizzard: ["9M"],
@@ -43246,7 +43184,6 @@ sylveon: {
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			swagger: ["9M", "9M", "9M", "9M", "9T"],
-			swift: ["9M", "9M", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			synthesis: ["9E", "9E", "9T", "9E", "9T", "9E", "9T", "9E", "9T", "9E"],
 			takedown: ["9M"],
@@ -43258,10 +43195,6 @@ sylveon: {
 			workup: ["9M", "9M"],
 			worryseed: ["9E", "9E", "9T", "9E", "9T", "9E", "9T", "9E", "9T", "9E"],
 		},
-		eventData: [
-			{generation: 3, level: 10, gender: "M", moves: ["pound", "leer", "absorb"], pokeball: "pokeball"},
-			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["pound", "leer", "absorb"]},
-		],
 	},
 	grovyle: {
 		learnset: {
@@ -43343,7 +43276,6 @@ sylveon: {
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			swagger: ["9M", "9M", "9M", "9M", "9T"],
-			swift: ["9M", "9M", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			synthesis: ["9T", "9T", "9T", "9T"],
 			takedown: ["9M"],
@@ -43459,7 +43391,6 @@ sylveon: {
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			swagger: ["9M", "9M", "9M", "9M", "9T"],
-			swift: ["9M", "9M", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			synthesis: ["9T", "9T", "9T", "9T"],
 			takedown: ["9M"],
@@ -43474,9 +43405,6 @@ sylveon: {
 			worryseed: ["9T", "9T", "9T", "9T"],
 			xscissor: ["9M", "9L1", "9M", "9L1", "9M", "9L45", "9M", "9L16", "9M", "9L16", "9M", "9L16"],
 		},
-		eventData: [
-			{generation: 5, level: 50, shiny: 1, moves: ["leafstorm", "dragonpulse", "focusblast", "rockslide"], pokeball: "cherishball"},
-		],
 	},
 	torchic: {
 		learnset: {
@@ -43553,7 +43481,6 @@ sylveon: {
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			swagger: ["9M", "9M", "9M", "9M", "9E", "9T", "9E"],
-			swift: ["9M", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
@@ -43562,11 +43489,6 @@ sylveon: {
 			willowisp: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			workup: ["9M", "9M"],
 		},
-		eventData: [
-			{generation: 3, level: 10, gender: "M", moves: ["scratch", "growl", "focusenergy", "ember"], pokeball: "pokeball"},
-			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["scratch", "growl", "focusenergy", "ember"]},
-			{generation: 6, level: 10, gender: "M", isHidden: true, moves: ["scratch", "growl", "focusenergy", "ember"], pokeball: "cherishball"},
-		],
 	},
 	combusken: {
 		learnset: {
@@ -43656,7 +43578,6 @@ sylveon: {
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			swagger: ["9M", "9M", "9M", "9M", "9T"],
-			swift: ["9M", "9M", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
@@ -43776,7 +43697,6 @@ sylveon: {
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			superpower: ["9M", "9T", "9T", "9T", "9T"],
 			swagger: ["9M", "9M", "9M", "9M", "9T"],
-			swift: ["9M", "9M", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
@@ -43818,7 +43738,6 @@ sylveon: {
 			doubleedge: ["9M", "9E", "9E", "9E", "9E", "9E", "9E", "9T"],
 			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
 			earthpower: ["9M", "9M", "9T", "9T", "9T", "9T"],
-			echoedvoice: ["9M", "9M", "9M"],
 			endeavor: ["9M", "9L36", "9L36", "9T", "9L44", "9T", "9L44", "9T", "9L46", "9T", "9L46", "9L46"],
 			endure: ["9M", "9M", "9M", "9T"],
 			facade: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -43854,7 +43773,6 @@ sylveon: {
 			rockthrow: ["9L9", "9L9", "9L25", "9L25"],
 			rocktomb: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			rollout: ["9T", "9T"],
-			round: ["9M", "9M", "9M", "9M"],
 			scald: ["9M", "9M", "9M", "9M"],
 			screech: ["9L33", "9M", "9L33"],
 			secretpower: ["9M", "9M", "9M"],
@@ -43912,7 +43830,6 @@ sylveon: {
 			dynamicpunch: ["9T"],
 			earthpower: ["9M", "9M", "9T", "9T", "9T", "9T"],
 			earthquake: ["9M", "9M", "9L1", "9M", "9L48", "9M", "9L46", "9M", "9L46", "9M", "9L46", "9M", "9L46"],
-			echoedvoice: ["9M", "9M", "9M"],
 			endeavor: ["9M", "9L50", "9L50", "9T", "9L52", "9T", "9L52", "9T", "9L53", "9T", "9L53", "9L53"],
 			endure: ["9M", "9M", "9M", "9T"],
 			facade: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -43952,7 +43869,6 @@ sylveon: {
 			rockthrow: ["9L9", "9L9"],
 			rocktomb: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			rollout: ["9T", "9T"],
-			round: ["9M", "9M", "9M", "9M"],
 			sandtomb: ["9M", "9M"],
 			scald: ["9M", "9M", "9M", "9M"],
 			screech: ["9L45", "9M", "9L45"],
@@ -44008,7 +43924,6 @@ sylveon: {
 			dynamicpunch: ["9T"],
 			earthpower: ["9M", "9M", "9T", "9T", "9T", "9T"],
 			earthquake: ["9M", "9L1", "9M", "9L1", "9M", "9L51", "9M", "9L51", "9M", "9L52", "5S0", "9M", "9L52", "9M", "9L52"],
-			echoedvoice: ["9M", "9M", "9M"],
 			endeavor: ["9M", "9L56", "9L56", "9T", "9L56", "9T", "9L56", "9T", "9L61", "9T", "9L61", "9L61"],
 			endure: ["9M", "9M", "9M", "9T"],
 			facade: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -44060,7 +43975,6 @@ sylveon: {
 			rockthrow: ["9L9", "9L9"],
 			rocktomb: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			rollout: ["9T", "9T"],
-			round: ["9M", "9M", "9M", "9M"],
 			sandtomb: ["9M", "9M"],
 			scald: ["9M", "9M", "9M", "9M"],
 			scaryface: ["9M"],
@@ -44092,9 +44006,6 @@ sylveon: {
 			whirlpool: ["9M", "9M", "9M"],
 			workup: ["9M", "9M"],
 		},
-		eventData: [
-			{generation: 5, level: 50, shiny: 1, moves: ["earthquake", "icebeam", "hydropump", "hammerarm"], pokeball: "cherishball"},
-		],
 	},
 	poochyena: {
 		learnset: {
@@ -44113,7 +44024,6 @@ sylveon: {
 			dig: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			doubleedge: ["9M", "9T"],
 			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
-			embargo: ["9M", "9L28", "9M", "9L28", "9M", "9L41", "9M", "9L41"],
 			endeavor: ["9M"],
 			endure: ["9M", "9M", "9T"],
 			facade: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -44127,7 +44037,6 @@ sylveon: {
 			howl: ["9L4", "9L4", "9L4", "9L5", "5D", "9L5", "9L5", "9M"],
 			hypervoice: ["9M", "9T", "9T", "9T"],
 			icefang: ["9M", "9E", "9E", "9E", "9E"],
-			incinerate: ["9M", "9M"],
 			irontail: ["9T", "9T", "9T", "9M", "9M"],
 			lashout: ["9M"],
 			leer: ["9L13", "9E", "9E", "9E", "9E", "9E"],
@@ -44198,7 +44107,6 @@ sylveon: {
 			dig: ["9M", "9M", "9M", "9M", "9M"],
 			doubleedge: ["9M", "9T"],
 			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
-			embargo: ["9M", "9L32", "9M", "9L32", "9M", "9L47", "9M", "9L47"],
 			endeavor: ["9M"],
 			endure: ["9M", "9M", "9T"],
 			facade: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -44213,7 +44121,6 @@ sylveon: {
 			hyperbeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			hypervoice: ["9M", "9T", "9T", "9T"],
 			icefang: ["9M", "9L1", "9L1", "7S0"],
-			incinerate: ["9M", "9M"],
 			irontail: ["9T", "9T", "9T", "9M", "9M"],
 			laserfocus: ["9T"],
 			lashout: ["9M"],
@@ -44228,7 +44135,6 @@ sylveon: {
 			protect: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			psychicfangs: ["9M"],
 			psychup: ["9T"],
-			raindance: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			rest: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			retaliate: ["9M", "9M"],
 			return: ["9M", "9M", "9M", "9M", "9M"],
@@ -44247,7 +44153,6 @@ sylveon: {
 			strength: ["9M", "9M", "9M", "9M"],
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9T"],
 			suckerpunch: ["9L52", "9L52", "9L48", "9L62", "9T", "9L62"],
-			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			superfang: ["9M", "9T", "9T", "9T", "9T"],
 			swagger: ["9L20", "9M", "9L20", "9M", "9L20", "9M", "9L27", "9M", "9L27", "9T", "9L27"],
 			tackle: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
@@ -44262,9 +44167,6 @@ sylveon: {
 			uproar: ["9M", "9T", "9T", "9T", "9T"],
 			yawn: ["9L44", "9L44"],
 		},
-		eventData: [
-			{generation: 7, level: 64, gender: "M", abilities: ["intimidate"], moves: ["crunch", "firefang", "icefang", "thunderfang"], pokeball: "cherishball"},
-		],
 	},
 	zigzagoon: {
 		learnset: {
@@ -44275,7 +44177,6 @@ sylveon: {
 			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			bodyslam: ["9M", "9T"],
 			captivate: ["9M"],
-			chargebeam: ["9M", "9M", "9M", "9M"],
 			charm: ["9M", "9E", "9E", "9E", "9E", "9E"],
 			confide: ["9M", "9M"],
 			covet: ["9L9", "9T", "9L23", "9T", "9L23", "9T", "9L29", "9L29", "9L29"],
@@ -44325,7 +44226,6 @@ sylveon: {
 			secretpower: ["9M", "9M", "9M"],
 			seedbomb: ["9M", "9T", "9T", "9T", "9T"],
 			shadowball: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			shockwave: ["9T", "9T", "9M", "9M"],
 			simplebeam: ["9E", "9E", "9E", "9E"],
 			sleeptalk: ["9M", "9M", "9E", "9M", "9E", "9T", "9E", "9M", "9T"],
 			snore: ["9M", "9T", "9T", "9T", "9T", "9T"],
@@ -44346,16 +44246,187 @@ sylveon: {
 			tickle: ["9E", "9E", "9E", "9E", "9E", "9E"],
 			trick: ["9M", "9T", "9E", "9T", "9E", "9T", "9E", "5D", "9T", "9E", "9E"],
 			waterpulse: ["9T", "9T", "9M", "9M"],
-			whirlpool: ["9M", "9M"],
 			workup: ["9M", "9M", "9M"],
 		},
-		eventData: [
-			{generation: 3, level: 5, shiny: true, abilities: ["pickup"], moves: ["tackle", "growl", "tailwhip"], pokeball: "pokeball"},
-			{generation: 3, level: 5, shiny: 1, abilities: ["pickup"], moves: ["tackle", "growl", "tailwhip", "extremespeed"], pokeball: "pokeball", emeraldEventEgg: true},
-		],
-		encounters: [
-			{generation: 3, level: 2},
-		],
+	},
+	linoone: {
+		learnset: {
+			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			babydolleyes: ["9L1", "6S0"],
+			bellydrum: ["9L43", "9L43", "9L43", "9L59", "9L53", "9L53"],
+			bestow: ["9L27", "9L27", "9L41"],
+			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			bodyslam: ["9M", "9T"],
+			captivate: ["9M"],
+			charm: ["9M"],
+			confide: ["9M", "9M"],
+			covet: ["9L9", "9T", "9L24", "9T", "9L24", "9T", "9L35", "9L35", "9L35"],
+			cut: ["9M", "9M", "9M", "9M"],
+			defensecurl: ["9T"],
+			dig: ["9M", "9M", "9M", "9M", "9M"],
+			doubleedge: ["9L48", "9L35", "9L35", "9T"],
+			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
+			echoedvoice: ["9M", "9M", "9M"],
+			endure: ["9M", "9M", "9T"],
+			extremespeed: ["6S0"],
+			facade: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			flail: ["9L38"],
+			fling: ["9M", "9L33", "9M", "9L48", "9M", "9L48", "9M", "9L65", "9M", "9L59"],
+			frustration: ["9M", "9M", "9M", "9M", "9M"],
+			furycutter: ["9T", "9T"],
+			furyswipes: ["9L18", "9L19", "9L19", "9L29", "9L29", "9L29"],
+			gigaimpact: ["9M", "9M", "9M", "9M", "9M"],
+			grassknot: ["9M", "9M", "9M", "9M", "9M"],
+			growl: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			gunkshot: ["9M", "9T", "9T", "9T", "9T"],
+			headbutt: ["9L12", "9L11", "9L1", "9L1", "9T", "9L1", "9L1"],
+			helpinghand: ["9M", "9T", "9T", "6S0", "9T", "9T"],
+			hiddenpower: ["9M", "9M", "9M", "9M", "9M"],
+			honeclaws: ["9L15", "9M", "9M"],
+			hyperbeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			hypervoice: ["9M", "9T", "9T", "9T"],
+			icebeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			icywind: ["9M", "9T", "9T", "9T", "9T", "9T"],
+			irontail: ["9M", "9T", "9T", "9T", "9M", "9M"],
+			lastresort: ["9T", "9T", "9T", "9T"],
+			mimic: ["9T"],
+			mudshot: ["9M"],
+			mudslap: ["9T", "9T"],
+			mudsport: ["9L17", "9L17", "9L23", "9L23", "9L23"],
+			naturalgift: ["9M"],
+			odorsleuth: ["9L13", "9L13", "9L17", "9L17", "9L17"],
+			pinmissile: ["9M", "9L1"],
+			playrough: ["9M", "9L1", "9L1"],
+			protect: ["9M", "9M", "9M", "6S0", "9M", "9M", "9M"],
+			raindance: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			rest: ["9M", "9L23", "9M", "9L40", "9M", "9L40", "9M", "9L53", "9M", "9L47", "9M", "9L47"],
+			retaliate: ["9M", "9M", "9M"],
+			return: ["9M", "9M", "9M", "9M", "9M"],
+			roar: ["9M", "9M", "9M", "9M", "9M"],
+			rocksmash: ["9M", "9M", "9M", "9M"],
+			rollout: ["9T", "9T"],
+			rototiller: ["9L1", "9L1"],
+			round: ["9M", "9M", "9M", "9M"],
+			sandattack: ["9L1", "9L1", "9L1", "9L13", "9L13", "9L13"],
+			secretpower: ["9M", "9M", "9M"],
+			seedbomb: ["9M", "9T", "9T", "9T", "9T"],
+			shadowball: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			shadowclaw: ["9M", "9M", "9M", "9M", "9M"],
+			slash: ["9L0", "9L32", "9L32", "9L47", "9L41", "9L41"],
+			sleeptalk: ["9M", "9M", "9M", "9T", "9M", "9T"],
+			snore: ["9M", "9T", "9T", "9T", "9T", "9T"],
+			stompingtantrum: ["9M", "9T"],
+			strength: ["9M", "9M", "9M", "9M"],
+			substitute: ["9M", "9M", "9M", "9M", "9M", "9T"],
+			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			superfang: ["9T", "9T", "9T", "9T"],
+			surf: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			swagger: ["9M", "9M", "9M", "9M", "9T"],
+			swift: ["9M", "9T", "9T"],
+			switcheroo: ["9L1", "9L1", "9L1", "9L1", "9L1"],
+			tackle: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			tailslap: ["9M"],
+			tailwhip: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			takedown: ["9L28"],
+			thief: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			throatchop: ["9M", "9T"],
+			thunder: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			thunderwave: ["9M", "9M", "9M", "9M", "9M", "9T"],
+			trick: ["9M", "9T", "9T", "9T", "9T"],
+			waterpulse: ["9T", "9T", "9M", "9M"],
+			workup: ["9M", "9M", "9M"],
+		},
+	},
+	scalgoon: {
+		learnset: {
+			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			babydolleyes: ["9L1", "6S0"],
+			bellydrum: ["9L43", "9L43", "9L43", "9L59", "9L53", "9L53"],
+			bestow: ["9L27", "9L27", "9L41"],
+			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			bodyslam: ["9M", "9T"],
+			captivate: ["9M"],
+			charm: ["9M"],
+			confide: ["9M", "9M"],
+			covet: ["9L9", "9T", "9L24", "9T", "9L24", "9T", "9L35", "9L35", "9L35"],
+			cut: ["9M", "9M", "9M", "9M"],
+			defensecurl: ["9T"],
+			dig: ["9M", "9M", "9M", "9M", "9M"],
+			doubleedge: ["9L48", "9L35", "9L35", "9T"],
+			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
+			echoedvoice: ["9M", "9M", "9M"],
+			endure: ["9M", "9M", "9T"],
+			extremespeed: ["6S0"],
+			facade: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			flail: ["9L38"],
+			fling: ["9M", "9L33", "9M", "9L48", "9M", "9L48", "9M", "9L65", "9M", "9L59"],
+			frustration: ["9M", "9M", "9M", "9M", "9M"],
+			furycutter: ["9T", "9T"],
+			furyswipes: ["9L18", "9L19", "9L19", "9L29", "9L29", "9L29"],
+			gigaimpact: ["9M", "9M", "9M", "9M", "9M"],
+			grassknot: ["9M", "9M", "9M", "9M", "9M"],
+			growl: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			gunkshot: ["9M", "9T", "9T", "9T", "9T"],
+			headbutt: ["9L12", "9L11", "9L1", "9L1", "9T", "9L1", "9L1"],
+			helpinghand: ["9M", "9T", "9T", "6S0", "9T", "9T"],
+			hiddenpower: ["9M", "9M", "9M", "9M", "9M"],
+			honeclaws: ["9L15", "9M", "9M"],
+			hyperbeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			hypervoice: ["9M", "9T", "9T", "9T"],
+			icebeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			icywind: ["9M", "9T", "9T", "9T", "9T", "9T"],
+			irontail: ["9M", "9T", "9T", "9T", "9M", "9M"],
+			lastresort: ["9T", "9T", "9T", "9T"],
+			mimic: ["9T"],
+			mudshot: ["9M"],
+			mudslap: ["9T", "9T"],
+			mudsport: ["9L17", "9L17", "9L23", "9L23", "9L23"],
+			naturalgift: ["9M"],
+			odorsleuth: ["9L13", "9L13", "9L17", "9L17", "9L17"],
+			pinmissile: ["9M", "9L1"],
+			playrough: ["9M", "9L1", "9L1"],
+			protect: ["9M", "9M", "9M", "6S0", "9M", "9M", "9M"],
+			raindance: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			rest: ["9M", "9L23", "9M", "9L40", "9M", "9L40", "9M", "9L53", "9M", "9L47", "9M", "9L47"],
+			retaliate: ["9M", "9M", "9M"],
+			return: ["9M", "9M", "9M", "9M", "9M"],
+			roar: ["9M", "9M", "9M", "9M", "9M"],
+			rocksmash: ["9M", "9M", "9M", "9M"],
+			rollout: ["9T", "9T"],
+			rototiller: ["9L1", "9L1"],
+			round: ["9M", "9M", "9M", "9M"],
+			sandattack: ["9L1", "9L1", "9L1", "9L13", "9L13", "9L13"],
+			secretpower: ["9M", "9M", "9M"],
+			seedbomb: ["9M", "9T", "9T", "9T", "9T"],
+			shadowball: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			shadowclaw: ["9M", "9M", "9M", "9M", "9M"],
+			sheddinclaws: ["9M"],
+			slash: ["9L0", "9L32", "9L32", "9L47", "9L41", "9L41"],
+			sleeptalk: ["9M", "9M", "9M", "9T", "9M", "9T"],
+			snore: ["9M", "9T", "9T", "9T", "9T", "9T"],
+			stompingtantrum: ["9M", "9T"],
+			strength: ["9M", "9M", "9M", "9M"],
+			substitute: ["9M", "9M", "9M", "9M", "9M", "9T"],
+			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			superfang: ["9T", "9T", "9T", "9T"],
+			surf: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			swagger: ["9M", "9M", "9M", "9M", "9T"],
+			swift: ["9M", "9T", "9T"],
+			switcheroo: ["9L1", "9L1", "9L1", "9L1", "9L1"],
+			tackle: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			tailslap: ["9M"],
+			tailwhip: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
+			takedown: ["9L28"],
+			thief: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			throatchop: ["9M", "9T"],
+			thunder: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M"],
+			thunderwave: ["9M", "9M", "9M", "9M", "9M", "9T"],
+			trick: ["9M", "9T", "9T", "9T", "9T"],
+			waterpulse: ["9T", "9T", "9M", "9M"],
+			workup: ["9M", "9M", "9M"],
+		},
 	},
 	zigzagoongalar: {
 		learnset: {
@@ -44413,108 +44484,8 @@ sylveon: {
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
 			trick: ["9M"],
-			whirlpool: ["9M"],
 			workup: ["9M"],
 		},
-	},
-	linoone: {
-		learnset: {
-			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			babydolleyes: ["9L1", "6S0"],
-			bellydrum: ["9L43", "9L43", "9L43", "9L59", "9L53", "9L53"],
-			bestow: ["9L27", "9L27", "9L41"],
-			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			bodyslam: ["9M", "9T"],
-			captivate: ["9M"],
-			chargebeam: ["9M", "9M", "9M", "9M"],
-			charm: ["9M"],
-			confide: ["9M", "9M"],
-			covet: ["9L9", "9T", "9L24", "9T", "9L24", "9T", "9L35", "9L35", "9L35"],
-			cut: ["9M", "9M", "9M", "9M"],
-			defensecurl: ["9T"],
-			dig: ["9M", "9M", "9M", "9M", "9M"],
-			doubleedge: ["9L48", "9L35", "9L35", "9T"],
-			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
-			echoedvoice: ["9M", "9M", "9M"],
-			endure: ["9M", "9M", "9T"],
-			extremespeed: ["6S0"],
-			facade: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			flail: ["9L38"],
-			fling: ["9M", "9L33", "9M", "9L48", "9M", "9L48", "9M", "9L65", "9M", "9L59"],
-			frustration: ["9M", "9M", "9M", "9M", "9M"],
-			furycutter: ["9T", "9T"],
-			furyswipes: ["9L18", "9L19", "9L19", "9L29", "9L29", "9L29"],
-			gigaimpact: ["9M", "9M", "9M", "9M", "9M"],
-			grassknot: ["9M", "9M", "9M", "9M", "9M"],
-			growl: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
-			gunkshot: ["9M", "9T", "9T", "9T", "9T"],
-			headbutt: ["9L12", "9L11", "9L1", "9L1", "9T", "9L1", "9L1"],
-			helpinghand: ["9M", "9T", "9T", "6S0", "9T", "9T"],
-			hiddenpower: ["9M", "9M", "9M", "9M", "9M"],
-			honeclaws: ["9L15", "9M", "9M"],
-			hyperbeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			hypervoice: ["9M", "9T", "9T", "9T"],
-			icebeam: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			icywind: ["9M", "9T", "9T", "9T", "9T", "9T"],
-			irontail: ["9M", "9T", "9T", "9T", "9M", "9M"],
-			lastresort: ["9T", "9T", "9T", "9T"],
-			mimic: ["9T"],
-			mudshot: ["9M"],
-			mudslap: ["9T", "9T"],
-			mudsport: ["9L17", "9L17", "9L23", "9L23", "9L23"],
-			naturalgift: ["9M"],
-			odorsleuth: ["9L13", "9L13", "9L17", "9L17", "9L17"],
-			pinmissile: ["9M", "9L1"],
-			playrough: ["9M", "9L1", "9L1"],
-			protect: ["9M", "9M", "9M", "6S0", "9M", "9M", "9M"],
-			raindance: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			rest: ["9M", "9L23", "9M", "9L40", "9M", "9L40", "9M", "9L53", "9M", "9L47", "9M", "9L47"],
-			retaliate: ["9M", "9M", "9M"],
-			return: ["9M", "9M", "9M", "9M", "9M"],
-			roar: ["9M", "9M", "9M", "9M", "9M"],
-			rocksmash: ["9M", "9M", "9M", "9M"],
-			rollout: ["9T", "9T"],
-			rototiller: ["9L1", "9L1"],
-			round: ["9M", "9M", "9M", "9M"],
-			sandattack: ["9L1", "9L1", "9L1", "9L13", "9L13", "9L13"],
-			secretpower: ["9M", "9M", "9M"],
-			seedbomb: ["9M", "9T", "9T", "9T", "9T"],
-			shadowball: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			shadowclaw: ["9M", "9M", "9M", "9M", "9M"],
-			shockwave: ["9T", "9T", "9M", "9M"],
-			slash: ["9L0", "9L32", "9L32", "9L47", "9L41", "9L41"],
-			sleeptalk: ["9M", "9M", "9M", "9T", "9M", "9T"],
-			snore: ["9M", "9T", "9T", "9T", "9T", "9T"],
-			stompingtantrum: ["9M", "9T"],
-			strength: ["9M", "9M", "9M", "9M"],
-			substitute: ["9M", "9M", "9M", "9M", "9M", "9T"],
-			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			superfang: ["9T", "9T", "9T", "9T"],
-			surf: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			swagger: ["9M", "9M", "9M", "9M", "9T"],
-			swift: ["9M", "9T", "9T"],
-			switcheroo: ["9L1", "9L1", "9L1", "9L1", "9L1"],
-			tackle: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
-			tailslap: ["9M"],
-			tailwhip: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
-			takedown: ["9L28"],
-			thief: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			throatchop: ["9M", "9T"],
-			thunder: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M"],
-			thunderwave: ["9M", "9M", "9M", "9M", "9M", "9T"],
-			trick: ["9M", "9T", "9T", "9T", "9T"],
-			waterpulse: ["9T", "9T", "9M", "9M"],
-			whirlpool: ["9M", "9M"],
-			workup: ["9M", "9M", "9M"],
-		},
-		eventData: [
-			{generation: 6, level: 50, moves: ["extremespeed", "helpinghand", "babydolleyes", "protect"], pokeball: "cherishball"},
-		],
-		encounters: [
-			{generation: 4, level: 3},
-			{generation: 6, level: 17, maxEggMoves: 1},
-		],
 	},
 	linoonegalar: {
 		learnset: {
@@ -44579,7 +44550,6 @@ sylveon: {
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
 			trick: ["9M"],
-			whirlpool: ["9M"],
 			workup: ["9M"],
 		},
 	},
@@ -44663,7 +44633,6 @@ sylveon: {
 			thunderpunch: ["9M"],
 			thunderwave: ["9M"],
 			trick: ["9M"],
-			whirlpool: ["9M"],
 			workup: ["9M"],
 			xscissor: ["9M"],
 		},
@@ -44677,23 +44646,16 @@ sylveon: {
 			stringshot: ["9L1", "9L1", "9L1", "9T", "9L1", "9L1"],
 			tackle: ["9L1", "9L1", "9L1", "9L1", "9L1"],
 		},
-		encounters: [
-			{generation: 3, level: 2},
-		],
 	},
 	silcoon: {
 		learnset: {
-			bugbite: ["9T", "9T", "9T", "9T"],
+			bugbite: ["9T", "9L15", "9T", "9L15", "9T", "9L15", "5D", "9T", "9L15"],
 			electroweb: ["9T", "9T", "9T"],
-			harden: ["9L1", "9L1", "9L1", "9L1", "9L1"],
-			irondefense: ["9T", "9T", "9T", "9T"],
-			stringshot: ["9T"],
+			poisonsting: ["9L5", "9L5", "9L5", "5D", "9L5", "9L5"],
+			snore: ["9T", "9T", "9T", "5D", "9T"],
+			stringshot: ["9L1", "9L1", "9L1", "9T", "9L1", "9L1"],
+			tackle: ["9L1", "9L1", "9L1", "9L1", "9L1"],
 		},
-		encounters: [
-			{generation: 3, level: 5},
-			{generation: 4, level: 5},
-			{generation: 6, level: 2, maxEggMoves: 1},
-		],
 	},
 	beautifly: {
 		learnset: {
@@ -44715,7 +44677,6 @@ sylveon: {
 			flash: ["9M", "9M", "9M", "9M"],
 			frustration: ["9M", "9M", "9M", "9M", "9M"],
 			gigadrain: ["9T", "9L32", "9T", "9L32", "9T", "9L38", "9M", "9L38", "9M", "9L38"],
-			gigaimpact: ["9M", "9M", "9M", "9M"],
 			gust: ["9L1", "9L1", "9L13", "9L13", "9L13"],
 			hiddenpower: ["9M", "9M", "9M", "9M", "9M"],
 			hyperbeam: ["9M", "9M", "9M", "9M", "9M"],
@@ -44735,7 +44696,6 @@ sylveon: {
 			roost: ["9M", "9M", "9T", "9M"],
 			round: ["9M", "9M", "9M"],
 			safeguard: ["9M", "9M", "9M", "9M", "9M"],
-			secretpower: ["9M", "9M", "9M"],
 			shadowball: ["9M", "9M", "9M", "9M", "9M"],
 			signalbeam: ["9T", "9T", "9T", "9T"],
 			silverwind: ["9L25", "9L25", "9L34", "9M", "9L34", "9L34"],
@@ -44765,11 +44725,6 @@ sylveon: {
 			irondefense: ["9T", "9T", "9T", "9T"],
 			stringshot: ["9T"],
 		},
-		encounters: [
-			{generation: 3, level: 5},
-			{generation: 4, level: 5},
-			{generation: 6, level: 2, maxEggMoves: 1},
-		],
 	},
 	dustox: {
 		learnset: {
@@ -44791,7 +44746,6 @@ sylveon: {
 			flash: ["9M", "9M", "9M", "9M"],
 			frustration: ["9M", "9M", "9M", "9M", "9M"],
 			gigadrain: ["9T", "9T", "9T", "9M", "9M"],
-			gigaimpact: ["9M", "9M", "9M", "9M"],
 			gust: ["9L1", "9L1", "9L13", "9L13", "9L13"],
 			hiddenpower: ["9M", "9M", "9M", "9M", "9M"],
 			hyperbeam: ["9M", "9M", "9M", "9M", "9M"],
@@ -44908,12 +44862,6 @@ sylveon: {
 			whirlpool: ["9M", "9M", "9M"],
 			zenheadbutt: ["9M", "9L38", "9M", "9L38", "9T", "9L33", "9T", "9L31", "9T", "9L31", "9T", "9L27"],
 		},
-		eventData: [
-			{generation: 3, level: 10, gender: "M", moves: ["astonish", "growl", "absorb"], pokeball: "pokeball"},
-		],
-		encounters: [
-			{generation: 3, level: 3},
-		],
 	},
 	lombre: {
 		learnset: {
@@ -44965,8 +44913,6 @@ sylveon: {
 			leechseed: ["9L30"],
 			magicalleaf: ["9M"],
 			megadrain: ["9L12", "9L12"],
-			megakick: ["9M"],
-			megapunch: ["9M"],
 			metronome: ["9M"],
 			mimic: ["9T"],
 			mist: ["9L9", "9L9"],
@@ -44975,7 +44921,6 @@ sylveon: {
 			mudslap: ["9T", "9T"],
 			naturalgift: ["9M"],
 			naturepower: ["9L30", "9M", "9L28", "9M", "9L7", "9L7", "9L7", "9L13"],
-			poweruppunch: ["9M"],
 			protect: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			raindance: ["9M", "9M", "9L43", "9M", "9M", "9M", "9M", "9M"],
 			rest: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -44988,7 +44933,6 @@ sylveon: {
 			sleeptalk: ["9M", "9M", "9M", "9M", "9T", "9M", "9T"],
 			snore: ["9M", "9T", "9T", "9T", "9T", "9T"],
 			solarbeam: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
-			strength: ["9M", "9M", "9M", "9M"],
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			surf: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -45010,9 +44954,6 @@ sylveon: {
 			whirlpool: ["9M", "9M", "9M"],
 			zenheadbutt: ["9M", "9L50", "9M", "9L50", "9T", "9L40", "9T", "9L31", "9T", "9L31", "9T", "9L27"],
 		},
-		encounters: [
-			{generation: 6, level: 13, maxEggMoves: 1},
-		],
 	},
 	ludicolo: {
 		learnset: {
@@ -45070,8 +45011,6 @@ sylveon: {
 			leafstorm: ["9M", "9M"],
 			magicalleaf: ["9M"],
 			megadrain: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
-			megakick: ["9M", "9T"],
-			megapunch: ["9M", "9T"],
 			metronome: ["9M", "9M", "9T"],
 			mimic: ["9T"],
 			mist: ["9L1", "9L1"],
@@ -45080,7 +45019,6 @@ sylveon: {
 			mudslap: ["9T", "9T"],
 			naturalgift: ["9M"],
 			naturepower: ["9L1", "9M", "9L1", "9M", "9L1", "9L1", "9L1", "9L1"],
-			poweruppunch: ["9M"],
 			protect: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
 			raindance: ["9M", "9L1", "9M", "9L1", "9M", "9M", "9M", "9M", "9M"],
 			rest: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -45095,7 +45033,6 @@ sylveon: {
 			sleeptalk: ["9M", "9M", "9M", "9M", "9T", "9M", "9T"],
 			snore: ["9M", "9T", "9T", "9T", "9T", "9T"],
 			solarbeam: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
-			strength: ["9M", "9M", "9M", "9M"],
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "9S1", "9M", "9M"],
 			surf: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -45117,10 +45054,6 @@ sylveon: {
 			whirlpool: ["9M", "9M", "9M"],
 			zenheadbutt: ["9M", "9L1", "9M", "9L1", "9T", "9T", "9T", "9T"],
 		},
-		eventData: [
-			{generation: 5, level: 50, shiny: 1, abilities: ["swiftswim"], moves: ["fakeout", "hydropump", "icebeam", "gigadrain"], pokeball: "cherishball"},
-			{generation: 5, level: 30, gender: "M", nature: "Calm", abilities: ["swiftswim"], moves: ["scald", "gigadrain", "icebeam", "sunnyday"], pokeball: "pokeball"},
-		],
 	},
 	seedot: {
 		learnset: {
@@ -45518,12 +45451,6 @@ sylveon: {
 			wingattack: ["9L13", "9L13", "9L13", "9L13", "9L13"],
 			workup: ["9M", "9M"],
 		},
-		eventData: [
-			{generation: 3, level: 5, shiny: 1, moves: ["peck", "growl", "focusenergy", "featherdance"], pokeball: "pokeball", emeraldEventEgg: true},
-		],
-		encounters: [
-			{generation: 3, level: 4},
-		],
 	},
 	swellow: {
 		learnset: {
@@ -45584,12 +45511,6 @@ sylveon: {
 			wingattack: ["9L13", "9L13", "9L13", "9L13", "9L13"],
 			workup: ["9M", "9M"],
 		},
-		eventData: [
-			{generation: 3, level: 43, moves: ["batonpass", "skyattack", "agility", "facade"]},
-		],
-		encounters: [
-			{generation: 4, level: 20},
-		],
 	},
 	wingull: {
 		learnset: {
@@ -45671,9 +45592,6 @@ sylveon: {
 			wideguard: ["9E", "9E", "9E", "9E"],
 			wingattack: ["9L15", "9L15", "9L8", "9L8", "9L9", "9L11", "9L13"],
 		},
-		encounters: [
-			{generation: 3, level: 2},
-		],
 	},
 	pelipper: {
 		learnset: {
@@ -47163,7 +47081,6 @@ sylveon: {
 	},
 	whismur: {
 		learnset: {
-			astonish: ["9L1", "9L8", "9L8", "9L11", "9L11", "9L11"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			bodyslam: ["9M", "9T"],
@@ -47242,7 +47159,6 @@ sylveon: {
 	},
 	loudred: {
 		learnset: {
-			astonish: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			bite: ["9L0", "9L1", "9L20", "9L20", "9L20"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -47327,7 +47243,6 @@ sylveon: {
 	},
 	exploud: {
 		learnset: {
-			astonish: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			avalanche: ["9M", "9M"],
 			bite: ["9L1", "9L1", "9L20", "9L20", "9L20"],
@@ -47989,6 +47904,7 @@ sylveon: {
 	},
 	cattmory: {
 		learnset: {
+			alluringvoice: ["9M"],
 			attract: ["9M", "9L1", "9M", "9L1", "9M", "9L1", "9M", "9L1", "9M", "9L1", "9M"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M"],
 			bodyslam: ["9T"],
@@ -47997,6 +47913,7 @@ sylveon: {
 			chargebeam: ["9M", "9M", "9M", "9M"],
 			confide: ["9M", "9M"],
 			covet: ["9T", "9T", "9T"],
+			dazzlinggleam: ["9M"],
 			defensecurl: ["9T"],
 			dig: ["9M", "9M", "9M", "9M"],
 			doubleedge: ["9T"],
@@ -48004,9 +47921,11 @@ sylveon: {
 			doubleteam: ["9M", "9M", "9M", "9M", "9M"],
 			dreameater: ["9M", "9M", "9M", "9M", "9T"],
 			echoedvoice: ["9M", "9M", "9M"],
+			embargo: ["9M"],
 			endure: ["9M", "9T"],
 			facade: ["9M", "9M", "9M", "9M", "9M"],
 			fakeout: ["9L1", "9L1", "9L1", "9L1"],
+			flmaethrower: ["9M"],
 			flash: ["9M", "9M", "9M", "9M"],
 			flashcannon: ["9M", "9M", "9M", "9M"],
 			frustration: ["9M", "9M", "9M", "9M", "9M"],
@@ -48021,29 +47940,38 @@ sylveon: {
 			hypervoice: ["9T", "9T", "9T"],
 			icebeam: ["9M", "9M", "9M", "9M", "9M"],
 			icywind: ["9T", "9T", "9T", "9T", "9T"],
+			irondefense: ["9M"],
 			ironhead: ["9M"],
 			irontail: ["9T", "9T", "9T", "9M", "9M"],
 			laserfocus: ["9T"],
 			lastresort: ["9T", "9T", "9T", "9T"],
+			lightscreen: ["9M"],
 			mimic: ["9T"],
 			mirrorshot: ["9M"],
 			mudslap: ["9T", "9T"],
 			naturalgift: ["9M"],
 			payback: ["9M", "9M", "9M", "9M"],
+			powergem: ["9M"],
 			protect: ["9M", "9M", "9M", "9M", "9M"],
 			psychup: ["9M", "9M", "9M", "9M", "9T"],
 			raindance: ["9M", "9M", "9M", "9M", "9M"],
+			reflect: ["9M"],
+			reflecttype: ["9M"],
 			rest: ["9M", "9M", "9M", "9M", "9M"],
 			retaliate: ["9M", "9M"],
 			return: ["9M", "9M", "9M", "9M", "9M"],
 			rocksmash: ["9M", "9M", "9M", "9M"],
+			rockpolish: ["9M"],
 			rollout: ["9T", "9T"],
 			round: ["9M", "9M", "9M"],
 			safeguard: ["9M", "9M", "9M", "9M", "9M"],
 			secretpower: ["9M", "9M", "9M", "9M"],
+			selfdestruct: ["9M"],
 			shadowball: ["9M", "9M", "9M", "9M", "9M"],
 			shockwave: ["9T", "9T", "9M", "9M", "9M"],
 			sing: ["9L1", "9L1", "9L1", "9L1", "9L1"],
+			slackoff: ["9M"],
+			slam: ["9M"],
 			sleeptalk: ["9M", "9M", "9T", "9M", "9T"],
 			snore: ["9T", "9T", "9T", "9T", "9T"],
 			solarbeam: ["9M", "9M", "9M", "9M", "9M"],
@@ -48053,6 +47981,7 @@ sylveon: {
 			substitute: ["9M", "9M", "9M", "9M", "9T"],
 			suckerpunch: ["9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M"],
+			supersonic: ["9M"],
 			swagger: ["9M", "9M", "9M", "9M", "9T"],
 			sweetkiss: ["9M"],
 			swift: ["9T", "9T"],
@@ -48060,6 +47989,7 @@ sylveon: {
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "9T"],
 			uproar: ["9T", "9T", "9T"],
+			voltswitch: ["9M"],
 			waterpulse: ["9T", "9T", "9M", "9M"],
 			wildcharge: ["9M", "9M", "9M"],
 			workup: ["9M", "9M"],
@@ -48474,7 +48404,6 @@ sylveon: {
 			ancientpower: ["9T"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			autotomize: ["9L48", "9L51", "9L48", "9L48"],
-			avalanche: ["9M", "9M"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			block: ["9T", "9T", "9T", "9T"],
 			bodypress: ["9M"],
@@ -86218,7 +86147,6 @@ sylveon: {
 		learnset: {
 			aquaring: ["9L16", "9L16", "9L24"],
 			attract: ["9M", "9M"],
-			aurorabeam: ["9E"],
 			bite: ["9L8", "9L8", "9L21"],
 			blizzard: ["9M", "9M", "9M"],
 			bubble: ["9L1"],
@@ -88855,7 +88783,6 @@ sylveon: {
 			anchorshot: ["9L52", "9L32"],
 			assurance: ["9M"],
 			astonish: ["9L4", "9L1"],
-			attract: ["9M"],
 			block: ["9T"],
 			bodypress: ["9M"],
 			brickbreak: ["9M", "9M"],
