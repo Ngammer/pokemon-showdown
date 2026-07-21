@@ -381,4 +381,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Seed Sower-Random", 1: "Oil Spill-Random", H: "Harvest-Random" },
 	},
+	talonflame: {
+		inherit: true,
+		abilities: { 0: "Flame Body-Only STAB", 1: "Tough Claws-Only STAB", H: "Gale Wings-Only STAB" },
+	},
 };

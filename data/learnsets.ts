@@ -10109,6 +10109,7 @@ golduck: {
 			aerialace: ["9M"],
 			allyswitch: ["9M"], //Añadido
 			amnesia: ["9M"],
+			aquacutter: ["9M"],
 			aquajet: ["9M"],
 			aquatail: ["9M"],
 			aurorabeam: ["9M"], //Añadido
@@ -17141,35 +17142,11 @@ onix: {
 			terablast: ["9M"], //Añadido
 			trailblaze: ["9M"], //Añadido
 			wideguard: ["9M"],
-			//twister //Removido
-			//toxic //Removido
-			//torment //Removido
-			//taunt //Removido
-			//takedown //Removido
-			//tackle //Removido
-			//swagger //Removido
-			//sunnyday //Removido
-			//strength //Removido
-			//skullbash //Removido
-			//selfdestruct //Removido
-			//screech //Removido
-			//scorchingsands //Removido
-			//sandstorm //Removido
-			//round //Removido
-			//rototiller //Removido
-			//flail //Removido
-			//explosion //Removido
-			//doubleteam //Removido
-			//confide //Removido
-			//captivate //Removido
-			//block //Removido
-			//attract //Removido
 		},
 	},
 steelix: {
 		learnset: {
 			ancientpower: ["9M"],
-			aquatail: ["9M"],
 			autotomize: ["9M"],
 			bind: ["9M"],
 			block: ["9M"],
@@ -17261,26 +17238,6 @@ steelix: {
 			terablast: ["9M"], //Añadido
 			thunderfang: ["9M"],
 			trailblaze: ["9M"], //Añadido
-			//twister //Removido
-			//toxic //Removido
-			//torment //Removido
-			//taunt //Removido
-			//tackle //Removido
-			//swagger //Removido
-			//sunnyday //Removido
-			//strength //Removido
-			//steelbeam //Removido
-			//selfdestruct //Removido
-			//screech //Removido
-			//scorchingsands //Removido
-			//sandstorm //Removido
-			//round //Removido
-			//explosion //Removido
-			//doubleteam //Removido
-			//darkpulse //Removido
-			//confide //Removido
-			//captivate //Removido
-			//attract //Removido
 		},
 	},
 drowzee: {
@@ -18187,7 +18144,6 @@ electrodehisuitotem: {
 exeggcute: {
 		learnset: {
 			absorb: ["9M"],
-			ancientpower: ["9M"],
 			barrage: ["9M"],
 			bestow: ["9M"],
 			bide: ["9M"],
@@ -18291,7 +18247,6 @@ exeggcute: {
 exeggutor: {
 		learnset: {
 			absorb: ["9M"],
-			ancientpower: ["9M"],
 			barrage: ["9M"],
 			bide: ["9M"],
 			bodyslam: ["9M"],
@@ -21849,6 +21804,7 @@ starmie: {
 			amnesia: ["9M"], //Añadido
 			ancientpower: ["9M"], //Añadido
 			aquaring: ["9M"], //Añadido
+			aquajet: ["9M"],
 			bide: ["9M"],
 			blizzard: ["9M"],
 			bubblebeam: ["9M"],
@@ -23262,6 +23218,7 @@ electabuzz: {
 	},
 electivire: {
 		learnset: {
+			armthrust: ["9M"],
 			attract: ["9M"],
 			bodyslam: ["9M"],
 			brickbreak: ["9M"],
@@ -26309,7 +26266,6 @@ aerodactyl: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			ancientpower: ["9M"],
-			aquatail: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
@@ -30855,7 +30811,6 @@ ledstar: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
-			armthrust: ["9M"], //Añadido
 			attract: ["9M"],
 			aurasphere: ["9M"], //Añadido
 			batonpass: ["9M"],
@@ -48441,7 +48396,6 @@ sylveon: {
 	aggron: {
 		learnset: {
 			ancientpower: ["9T"],
-			aquatail: ["9T", "9T", "9T", "9T"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			autotomize: ["9L48", "9L51", "9L48", "9L48"],
 			avalanche: ["9M", "9M"],
@@ -49775,7 +49729,7 @@ sylveon: {
 	sharpedo: {
 		learnset: {
 			agility: ["9M", "9L40", "9L45", "9L45", "9L45", "9L45", "9L53"],
-			ancientpower: ["9T"],
+			aquacutter: ["9M"],
 			aquajet: ["9L1", "9L11", "9L11", "6S0", "9L34", "9L34"],
 			assurance: ["9M", "9L15", "9L15", "9L26", "9L26"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
@@ -51004,6 +50958,7 @@ sylveon: {
 		learnset: {
 			absorb: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			acupressure: ["9M"],
+			aquacutter: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M"],
 			block: ["9T", "9T", "9T"],
 			bodyslam: ["9M", "9T"],
@@ -51895,6 +51850,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			ancientpower: ["9E", "9E", "9E", "9E", "9E", "9T", "9E", "9E"],
+			aquacutter: ["9M"],
 			aquajet: ["9E", "9E", "9E", "9E"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -51984,6 +51940,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			ancientpower: ["9T"],
+			aquacutter: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			avalanche: ["9M", "9M", "9M"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M", "9M", "9M"],
@@ -52340,6 +52297,7 @@ sylveon: {
 			acid: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			amnesia: ["9M", "9L28", "9L36", "9L29", "9L29", "9L29", "9L36"],
 			ancientpower: ["9L16", "9L17", "9L17", "9L36", "9T", "9L36", "9L48"],
+			aquaring: ["9M"], 
 			astonish: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			bind: ["9T", "9T", "9T"],
@@ -52490,6 +52448,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			ancientpower: ["9L16", "9L21", "9L21", "9L31", "9T", "9L31", "9L37"],
+			aquacutter: ["9M"],
 			aquatail: ["9T", "9T", "9T", "9T"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			block: ["9T", "9T", "9T", "9T"],
@@ -52792,7 +52751,6 @@ sylveon: {
 	kecleon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
-			ancientpower: ["9L21", "9L1", "9L55", "9T", "9L55", "9L49"],
 			aquatail: ["9T", "9T", "9T", "9T"],
 			astonish: ["9L1", "9L1", "9L1", "9L1", "9L1"],
 			attract: ["9M", "9M", "9M", "9M", "9M"],
@@ -56800,6 +56758,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			agility: ["9M"],
+			aquacutter: ["9M"],
 			attract: ["9M", "9M", "9M", "9M"],
 			bide: ["9L24", "9L24", "9L24", "9L19"],
 			blizzard: ["9M", "9M", "9M", "9M", "9M"],
@@ -56890,6 +56849,7 @@ sylveon: {
 			agility: ["9M"],
 			aircutter: ["9M"],
 			airslash: ["9M"],
+			aquacutter: ["9M"],
 			aquajet: ["9L0", "9L1", "9L36", "9L36", "5S0", "9L36"],
 			attract: ["9M", "9M", "9M", "9M"],
 			avalanche: ["9M", "9M"],
@@ -60943,7 +60903,6 @@ sylveon: {
 			acupressure: ["9L49", "9L13", "9L13", "9L13", "9L17"],
 			aerialace: ["9M", "9M", "9M", "9M"],
 			agility: ["9M"],
-			aquatail: ["9T", "9T", "9T", "9T"],
 			assurance: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M"],
 			bite: ["9L12", "9L1", "9L1", "9L1", "9L1"],
@@ -62231,6 +62190,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M", "9M"],
 			ancientpower: ["9L16", "9L16", "8S11", "9L10", "9L10", "9L10", "9T", "9L10", "4S0"],
+			aquacutter: ["9M"],
 			aquaring: ["9L32", "9L32", "9L24"],
 			aquatail: ["9L64", "9L64", "9T", "9L24", "7S7", "7S8", "9T", "9L24", "9T", "9L24", "9T", "9L24"],
 			aurasphere: ["9M", "9L48", "9M", "9L48", "8S12", "9L37", "7S7", "7S8", "7S9", "7S10", "9L37", "6S5", "6S6", "9L37", "9S4", "9L37"],
@@ -68582,6 +68542,7 @@ sylveon: {
 			acupressure: ["9L52"],
 			aerialace: ["9M", "9M", "9M"],
 			afteryou: ["9L1", "9T", "9L1", "9T", "9L1", "9T", "9L57"],
+			aquacutter: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M", "9M", "9M", "9M"],
 			bounce: ["9M", "9T", "9E", "9T", "9E", "9T", "9E"],
@@ -69613,7 +69574,6 @@ sylveon: {
 			agility: ["9M", "9L33", "9L21", "9L21", "9L21"],
 			airslash: ["9M"],
 			ancientpower: ["9L12", "9L18", "9L18", "9L18"],
-			aquatail: ["9T", "9T", "9T"],
 			assurance: ["9M"],
 			attract: ["9M", "9M", "9M", "9M"],
 			bounce: ["9M", "9T", "9T", "9T"],
@@ -73303,6 +73263,7 @@ sylveon: {
 	beartic: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M"],
+			aquacutter: ["9M"],
 			aquajet: ["9L1", "9L1", "9L1", "9L1", "9L1"],
 			assurance: ["9M"],
 			attract: ["9M", "9M", "9M", "9M"],
@@ -73410,7 +73371,6 @@ sylveon: {
 	cryogonal: {
 		learnset: {
 			acidarmor: ["9L52", "9L52", "9L17", "9L29", "9L29"],
-			ancientpower: ["9L20", "9L24", "9L21"],
 			attract: ["9M", "9M", "9M"],
 			aurorabeam: ["9L24", "9L28", "9L13", "9L25", "9L25"],
 			auroraveil: ["9E", "9M"],
@@ -76742,6 +76702,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M", "9M", "9M"],
 			airslash: ["9M", "9M"],
+			aquacutter: ["9M"],
 			aquajet: ["9L1", "9L1", "9L1", "9L1", "6S2", "6S3", "9L1", "5S0", "9S1"],
 			aquatail: ["9L35", "9L35", "9T", "9L37", "9T", "9L37", "9T", "9L37"],
 			aurasphere: ["9M", "9M"],
@@ -77654,6 +77615,7 @@ sylveon: {
 		learnset: {
 			acrobatics: ["9M", "9M", "9M"],
 			aerialace: ["9M", "9M", "9M"],
+			aquacutter: ["9M"],
 			attract: ["9M", "9M"],
 			bestow: ["9E", "9E"],
 			blizzard: ["9M", "9M", "9M"],
@@ -77738,6 +77700,7 @@ sylveon: {
 		learnset: {
 			acrobatics: ["9M", "9M", "9M"],
 			aerialace: ["9M", "9M", "9M"],
+			aquacutter: ["9M"],
 			attract: ["9M", "9M"],
 			blizzard: ["9M", "9M", "9M"],
 			bounce: ["9L45", "9T", "9L45", "9T", "9L44"],
@@ -77818,6 +77781,7 @@ sylveon: {
 			acidspray: ["9M"],
 			acrobatics: ["9M", "9M", "9M"],
 			aerialace: ["9M", "9L33", "9M", "9M"],
+			aquacutter: ["9M"],
 			attract: ["9M", "9M"],
 			blizzard: ["9M", "9M", "9M"],
 			bounce: ["9T", "9T"],
@@ -80482,6 +80446,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9M", "9M"],
 			ancientpower: ["9L20", "9L28", "9L28"],
+			aquacutter: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M", "9M", "9M"],
 			beatup: ["9M"],
@@ -85045,6 +85010,7 @@ sylveon: {
 	crabominable: {
 		learnset: {
 			amnesia: ["9M"],
+			armthrust: ["9M"],
 			attract: ["9M"],
 			avalanche: ["9M", "9L29", "9L29"],
 			blizzard: ["9M", "9M"],
@@ -87007,6 +86973,7 @@ sylveon: {
 	bewear: {
 		learnset: {
 			aerialace: ["9M"],
+			armthrust: ["9M"],
 			attract: ["9M", "9M"],
 			babydolleyes: ["9L1", "9L10", "7S0"],
 			bide: ["9L5"],
@@ -87630,6 +87597,7 @@ sylveon: {
 	golisopod: {
 		learnset: {
 			aerialace: ["9M"],
+			aquacutter: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M", "9M"],
 			blizzard: ["9M", "9M"],
@@ -87978,6 +87946,7 @@ sylveon: {
 		learnset: {
 			aerialace: ["9L1", "9M", "9L20"],
 			airslash: ["9M", "9L30", "9L60"],
+			aquacutter: ["9M"],
 			bite: ["9L1", "9L15"],
 			confide: ["9M"],
 			crunch: ["9M", "9L45", "9L50"],
@@ -89867,6 +89836,7 @@ sylveon: {
 	},
 	buzzwole: {
 		learnset: {
+			armthrust: ["9M"],
 			bodyslam: ["9M"],
 			bounce: ["9M", "9T"],
 			brickbreak: ["9M", "9M"],
@@ -92417,6 +92387,7 @@ sylveon: {
 	},
 	drednaw: {
 		learnset: {
+			aquacutter: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
 			bite: ["9L1", "9L1"],
@@ -94506,6 +94477,7 @@ sylveon: {
 		learnset: {
 			agility: ["9M", "9M"],
 			amnesia: ["9M", "9L30", "9M", "9L30"],
+			aquacutter: ["9M"],
 			aquaring: ["9E", "9E"],
 			attract: ["9M"],
 			auroraveil: ["9L48", "9L48"],
@@ -102467,6 +102439,7 @@ sylveon: {
 	},
 	okidogi: {
 		learnset: {
+			armthrust: ["9M"],
 			bite: ["9L1"],
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
