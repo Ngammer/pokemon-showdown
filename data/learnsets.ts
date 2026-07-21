@@ -50818,7 +50818,7 @@ sylveon: {
 	unkbear: {
 		learnset: {
 			assist: ["9E", "9E", "9E", "9E", "9E"],
-			acipressure: ["9M"],
+			acupressure: ["9M"],
 			attract: ["9M", "9M", "9M", "9M", "9M"],
 			batonpass: ["9E", "9E", "9E", "9E", "9E"],
 			beatup: ["9M"],
