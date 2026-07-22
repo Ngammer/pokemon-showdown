@@ -2600,7 +2600,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
-		name: "Battle Bond- Seed Hit",
+		name: "Battle Bond-Seed Hit",
 		rating: 3.5,
 		num: 210,
 	},
