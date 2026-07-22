@@ -385,4 +385,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Flame Body-Only STAB", 1: "Tough Claws-Only STAB", H: "Gale Wings-Only STAB" },
 	},
+	sandslash: {
+		inherit: true,
+		abilities: { 0: "Sand Veil-Spin", 1: "Rough Skin-Spin", H: "Sand Rush-Spin" },
+	},
+	calyrex: {
+		inherit: true,
+		abilities: { 0: "Unnerve-Affinity", 1: "Healer-Affinity", H: "Telepathy-Affinity" },
+	},
 };
