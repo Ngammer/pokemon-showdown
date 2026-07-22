@@ -18491,7 +18491,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Kanto",
 		types: ["Steel", "Electric"],
 		baseStats: { hp: 60, atk: 85, def: 90, spa: 135, spd: 70, spe: 95 },
-		abilities: { 0: "Light Metal", 1: "Ligthning Rod", H: "Competitive" },
+		abilities: { 0: "Light Metal", 1: "Lightning Rod", H: "Competitive" },
 		heightm: 1.8, // cambiar
 		weightkg: 40, // cambiar
 		color: "White", // cambiar
