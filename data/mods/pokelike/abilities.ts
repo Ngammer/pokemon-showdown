@@ -3321,4 +3321,655 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3.5,
 		num: 181,
 	},
+	asoneglastrierstabhit: {
+		onSwitchInPriority: 1,
+		onStart(pokemon) {
+			if (this.effectState.unnerved) return;
+			this.add('-ability', pokemon, 'As One');
+			this.add('-ability', pokemon, 'Unnerve');
+			this.effectState.unnerved = true;
+		},
+		onEnd() {
+			this.effectState.unnerved = false;
+		},
+		onFoeTryEatItem() {
+			return !this.effectState.unnerved;
+		},
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({ atk: length }, source, source, this.dex.abilities.get('chillingneigh'));
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "As One (Glastrier)-STAB Hit",
+		rating: 3.5,
+		num: 266,
+	},
+	blazelucky: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Blaze boost');
+				return this.chainModify(1.2);
+			}
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { },
+		name: "Blaze-Lucky",
+		rating: 2,
+		num: 66,
+	},
+	megalauncherlucky: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['pulse']) {
+				return this.chainModify(1.5);
+			}
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { },
+		name: "Mega Launcher-Lucky",
+		rating: 3,
+		num: 178,
+	},
+	shellarmorlucky: {
+		onCriticalHit: false,
+		onSourceBasePowerPriority: 100, // exageradamente alto, para ir siempre primero
+		onSourceBasePower(basePower, source, target, move) {
+			const bannedItems = ['powerbelt', 'powerbracer', 'powerweight', 'expertbelt', 'ironball', 'laggingtail', 'lifeorb',
+				'protectivepads', 'punchingglove', 'razorfang', 'blackbelt', 'blackglasses',
+				'charcoal', 'dragonfang', 'hardstone', 'magnet', 'metalcoat', 'miracleseed', 'mysticwater', 'nevermeltice', 'poisonbarb', 'silverpowder', 'softsand', 'spelltag', 'twistedspoon', 'fairyfeather',
+				'buggem', 'darkgem', 'dragongem', 'electricgem', 'fairygem', 'fightinggem', 'firegem', 'flyinggem', 'ghostgem', 'grassgem', 'groundgem', 'icegem', 'normalgem', 'poisongem', 'psychicgem', 'rockgem',
+				'steelgem', 'watergem', 'dracoplate', 'dreadplate', 'earthplate', 'fistplate', 'flameplate', 'icicleplate', 'insectplate', 'ironplate', 'meadowplate', 'mindplate', 'pixieplate', 'skyplate',
+				'splashplate', 'spookyplate', 'stoneplate', 'toxicplate', 'zapplate', 'skullfossil', 'adamantorb', 'griseousorb', 'lustrousorb', 'souldew', 'deepseascale', 'deepseatooth', 'lightball', 'thickclub',
+				'stick', 'dragonscale', 'duskstone', 'firestone', 'waterstone', 'thunderstone', 'leafstone', 'shinyrock', 'ovalstone', 'icestone', 'bugmemory', 'darkmemory', 'dragonmemory', 'electricmemory',
+				'fairymemory', 'fightingmemory', 'firememory', 'flyingmemory', 'ghostmemory', 'grassmemory', 'groundmemory', 'icememory', 'normalmemory', 'poisonmemory', 'psychicmemory', 'rockmemory', 'steelmemory',
+				'watermemory', 'adamantcrystal', 'griseouscrystal', 'lustrouscrystal', 'leek', 'metalalloy', 'choicespecs', 'choiceband'];
+			if (bannedItems.includes(source.item)) {
+				source.addVolatile('itemignored');
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			source.removeVolatile('itemignored');
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-activate', pokemon, '[from] item suppression');
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, '[from] item suppression');
+			},
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { breakable: 1 },
+		name: "Shell Armor-Lucky",
+		rating: 1,
+		num: 75,
+	},
+	pickupaffinity: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			const oldItem = pokemon.item;
+			const pickupTargets = this.getAllActive().filter(target => (
+				target.lastItem && target.usedItemThisTurn && pokemon.isAdjacent(target)
+			));
+			if (!pickupTargets.length) return;
+			const randomTarget = this.sample(pickupTargets);
+			const item = randomTarget.lastItem;
+			randomTarget.lastItem = '';
+			this.add('-item', pokemon, this.dex.items.get(item), '[from] ability: Pickup');
+			pokemon.setItem(item);
+			if (pokemon.getItem().isBerry) {
+				pokemon.eatItem();
+			};
+			pokemon.useItem();
+			pokemon.setItem(oldItem);
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'ghost') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Pickup-Affinity",
+		rating: 0.5,
+		num: 53,
+	},
+	flashfireaffinity: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				move.accuracy = true;
+				if (!target.addVolatile('flashfire')) {
+					this.add('-immune', target, '[from] ability: Flash Fire');
+				}
+				return null;
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('flashfire');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Flash Fire');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (attacker.hasAbility('flashfire')) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.2);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (attacker.hasAbility('flashfire')) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.2);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Flash Fire', '[silent]');
+			},
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Cherish Ball') {
+				pokemon.addVolatile('flashfire');
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'ghost') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Flash Fire-Affinity",
+		rating: 3.5,
+		num: 18,
+	},
+	insomniaaffinity: {
+		onUpdate(pokemon) {
+			if (pokemon.status === 'slp') {
+				this.add('-activate', pokemon, 'ability: Insomnia');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'slp') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Insomnia');
+			}
+			return false;
+		},
+		onTryAddVolatile(status, target) {
+			if (status.id === 'yawn') {
+				this.add('-immune', target, '[from] ability: Insomnia');
+				return null;
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'ghost') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Insomnia-Affinity",
+		rating: 1.5,
+		num: 15,
+	},
+	chienpaofusion: {
+		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
+			this.add('-ability', pokemon, 'Sword of Ruin');
+		},
+		onAnyModifyDef(def, target, source, move) {
+			const abilityHolder = this.effectState.target;
+			if (target.hasAbility('Sword of Ruin')) return;
+			if (!move.ruinedDef?.hasAbility('Sword of Ruin')) move.ruinedDef = abilityHolder;
+			if (move.ruinedDef !== abilityHolder) return;
+			this.debug('Sword of Ruin Def drop');
+			return this.chainModify(0.75);
+		},
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bite']) {
+				return this.chainModify(1.5);
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 &&
+				this.field.isWeather(['hail', 'snowscape']))) mod *= 0.75;
+			return this.chainModify(mod);
+		},
+		flags: { },
+		name: "Chien-Pao Fusion",
+		rating: 4.5,
+		num: 285,
+	},
+	friskstabhit: {
+		// crear condicion propia
+		onStart(pokemon) {
+			for (const target of pokemon.foes()) {
+				if (target.item) {
+					this.add('-item', target, target.getItem().name, '[from] ability: Frisk', `[of] ${pokemon}`);
+					target.addVolatile("frisk");
+				}
+			}
+		},
+		condition: {
+			duration: 8,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Frisk');
+				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			},
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Frisk');
+			},
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Frisk-STAB Hit",
+		rating: 1.5,
+		num: 119,
+	},
+	magicalstabhit: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && move.type === 'Fairy' && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.8);
+			}
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Fairy') {
+				this.debug('Magical boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: { },
+		name: "Magical-STAB Hit",
+		rating: 2,
+		num: -169,
+	},
+	soulliberator: {
+		onStart(pokemon) {
+			if (pokemon.side.faintedLastTurn || pokemon.side.faintedThisTurn) {
+				const allies = [...pokemon.side.pokemon, ...pokemon.side.allySide?.pokemon || []];
+				for (const ally of allies) {
+					ally.heal(ally.baseMaxhp / 5);
+				}
+				pokemon.heal(pokemon.baseMaxhp / 5);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Soul Liberator",
+		rating: 2,
+		num: -119,
+	},
+	sturdyexplosive: {
+		onTryHit(pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[from] ability: Sturdy');
+				return null;
+			}
+		},
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add('-ability', target, 'Sturdy');
+				return target.hp - 1;
+			}
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.actions.useMove('explosion', target);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Sturdy-Explosive",
+		rating: 3,
+		num: 5,
+	},
+	speedboostexplosive: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({ spe: 1 });
+			}
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.actions.useMove('explosion', target);
+			}
+		},
+		flags: { },
+		name: "Speed Boost-Explosive",
+		rating: 4.5,
+		num: 3,
+	},
+	sandveilexplosive: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather('sandstorm'))) mod *= 0.75;
+			return this.chainModify(mod);
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.actions.useMove('explosion', target);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Sand Veil-Explosive",
+		rating: 1.5,
+		num: 8,
+	},
+	sageexplosive: {
+		onAnyModifyBoost(boosts, pokemon) {
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (unawareUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
+				boosts['spd'] = 0;
+				boosts['evasion'] = 0;
+			}
+			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
+				boosts['atk'] = 0;
+				boosts['def'] = 0;
+				boosts['spa'] = 0;
+				boosts['accuracy'] = 0;
+			}
+		},
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'confusion') return null;
+			if (status.id === 'taunt') return null;
+			if (status.id === 'torment') return null;
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.actions.useMove('explosion', target);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Sage-Explosive",
+		rating: 4,
+		num: -128,
+	},
+	stenchlucky: {
+		onResidualOrder: 10,
+		onResidualSubOrder: 5,
+		onResidual(pokemon) {
+			for (const foe of pokemon.adjacentFoes()) {
+				this.damage(foe.baseMaxhp / 16, foe, pokemon);
+			}
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { },
+		name: "Stench-Lucky",
+		rating: 0.5,
+		num: 1,
+	},
+	aftermathlucky: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp || target.getItem().name === 'Heavy Ball') {
+				this.damage(source.baseMaxhp / 3.33, source, target);
+				target.useItem();
+			}
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { },
+		name: "Aftermath-Lucky",
+		rating: 2,
+		num: 106,
+	},
+	keeneyelucky: {
+		onStart(pokemon) {
+			this.boost({ accuracy: 1 }, pokemon);
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { breakable: 1 },
+		name: "Keen Eye-Lucky",
+		rating: 0.5,
+		num: 51,
+	},
+	brutalkicklargeroots: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				return this.chainModify(1.5);
+			}
+		},
+		onSwitchIn(pokemon) {
+			this.actions.useMove('ingrain', pokemon);
+		},
+		flags: { },
+		name: "Brutal Kick-Large Roots",
+		rating: 3.5,
+		num: -149,
+	},
+	queenlymajestylargeroots: {
+		onFoeTryMove(target, source, move) {
+			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
+			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
+				return;
+			}
+
+			const dazzlingHolder = this.effectState.target;
+			if ((source.isAlly(dazzlingHolder) || move.target === 'all') && move.priority > 0.1) {
+				this.attrLastMove('[still]');
+				this.add('cant', dazzlingHolder, 'ability: Queenly Majesty', move, `[of] ${target}`);
+				return false;
+			}
+		},
+		onSwitchIn(pokemon) {
+			this.actions.useMove('ingrain', pokemon);
+		},
+		flags: { breakable: 1 },
+		name: "Queenly Majesty-Large Roots",
+		rating: 2.5,
+		num: 214,
+	},
+	sweetveillargeroots: {
+		onAllySetStatus(status, target, source, effect) {
+			if (status.id === 'slp') {
+				this.debug('Sweet Veil interrupts sleep');
+				const effectHolder = this.effectState.target;
+				this.add('-block', target, 'ability: Sweet Veil', `[of] ${effectHolder}`);
+				target.addVolatile('sweetveil');
+				return null;
+			}
+		},
+		onAllyTryAddVolatile(status, target) {
+			if (status.id === 'yawn') {
+				this.debug('Sweet Veil blocking yawn');
+				const effectHolder = this.effectState.target;
+				this.add('-block', target, 'ability: Sweet Veil', `[of] ${effectHolder}`);
+				target.addVolatile('sweetveil');
+				return null;
+			}
+		},
+		onMoveAborted(pokemon, target, move) {
+			pokemon.removeVolatile('sweetveil');
+		},
+		onAfterMove(pokemon, target, move) {
+			pokemon.removeVolatile('sweetveil');
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('sweetveil');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Sweet Veil');
+			},
+			onModifyPriority(priority, pokemon, target, move) {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Sweet Veil', '[silent]');
+			},
+		},
+		onSwitchIn(pokemon) {
+			this.actions.useMove('ingrain', pokemon);
+		},
+		flags: { breakable: 1 },
+		name: "Sweet Veil-Large Roots",
+		rating: 2,
+		num: 175,
+	},
+	clearbodyfallen: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.type === 'Rock' && !target.getVolatile('smackdown')) {
+				target.addVolatile('smackdown');
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Clear Body-Fallen",
+		rating: 2,
+		num: 29,
+	},
+	magicguardfallen: {
+		onDamage(damage, target, source, effect) {
+			if (effect.effectType !== 'Move') {
+				if (effect.effectType === 'Ability') this.add('-activate', source, 'ability: ' + effect.name);
+				return false;
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.type === 'Rock' && !target.getVolatile('smackdown')) {
+				target.addVolatile('smackdown');
+			}
+		},
+		flags: { },
+		name: "Magic Guard-Fallen",
+		rating: 4,
+		num: 98,
+	},
+	sturdyfallen: {
+		onTryHit(pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[from] ability: Sturdy');
+				return null;
+			}
+		},
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add('-ability', target, 'Sturdy');
+				return target.hp - 1;
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.type === 'Rock' && !target.getVolatile('smackdown')) {
+				target.addVolatile('smackdown');
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Sturdy-Fallen",
+		rating: 3,
+		num: 5,
+	},
 };

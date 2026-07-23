@@ -393,4 +393,68 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Unnerve-Affinity", 1: "Healer-Affinity", H: "Telepathy-Affinity" },
 	},
+	calyrexice: {
+		inherit: true,
+		abilities: { 0: "As One (Glastrier)-STAB Hit" },
+	},
+	clawitzerhoenn: {
+		inherit: true,
+		abilities: { 0: "Mega Launcher-Lucky", 1: "Shell Armor-Lucky", H: "Baze-Lucky" },
+	},
+	gourgeist: {
+		inherit: true,
+		abilities: { 0: "Pickup-Affinity", 1: "Flash Fire-Affinity", H: "Insomnia-Affinity" },
+	},
+	gourgeistsmall: {
+		inherit: true,
+		abilities: { 0: "Pickup-Affinity", 1: "Flash Fire-Affinity", H: "Insomnia-Affinity" },
+	},
+	gourgeistlarge: {
+		inherit: true,
+		abilities: { 0: "Pickup-Affinity", 1: "Flash Fire-Affinity", H: "Insomnia-Affinity" },
+	},
+	gourgeistsuper: {
+		inherit: true,
+		abilities: { 0: "Pickup-Affinity", 1: "Flash Fire-Affinity", H: "Insomnia-Affinity" },
+	},
+	chienpao: {
+		inherit: true,
+		abilities: { 0: "Chien-Pao Fusion" },
+	},
+	furrum: {
+		inherit: true,
+		abilities: { 0: "Frisk", 1: "Magical", H: "Soul Liberator" },
+	},
+	donphan: {
+		inherit: true,
+		abilities: { 0: "Sturdy-Explosive", 1: "Sand Veil-Explosive", H: "Speed Boost-Explosive" },
+	},
+	donphanfeudal: {
+		inherit: true,
+		abilities: { 0: "Sage-Explosive"},
+	},
+	delphox: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 79, def: 82, spa: 124, spd: 110, spe: 115 }, //+10 en todo
+	},
+	delphoxmega: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 79, def: 82, spa: 170, spd: 135, spe: 144 }, //+10 en todo
+	},
+	skuntank: {
+		inherit: true,
+		abilities: { 0: "Stench-Lucky", 1: "Aftermath-Lucky", H: "Keen Eye-Lucky" },
+	},
+	tsareena: {
+		inherit: true,
+		abilities: { 0: "Brutal Kick-Large Roots", 1: "Queenly Majesty-Large Roots", H: "Sweet Veil-Large Roots" },
+	},
+	fluttermane: {
+		inherit: true,
+		abilities: { 0: "Protosynthesis", 1: "Levitate", H: "Terrifying", S: "Beast Boost" },
+	},
+	carbink: {
+		inherit: true,
+		abilities: { 0: "Clear Body-Fallen", 1: "Magic Guard-Fallen", H: "Sturdy-Fallen" },
+	},
 };
