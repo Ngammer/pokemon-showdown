@@ -3992,6 +3992,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	aegislashblade: {
 
 	},
+	aegislashjohto: {
+
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	aegislashjohtosplinter: {
+
+	},
 	spritzee: {
 
 		tier: "LC",

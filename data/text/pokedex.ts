@@ -2627,6 +2627,12 @@ export const PokedexText: { [id: IDEntry]: PokedexText } = {
 	aegislashblade: {
 		name: "Aegislash-Blade",
 	},
+	aegislashjohto: {
+		name: "Aegislash-Johto",
+	},
+	aegislashjohtosplinter: {
+		name: "Aegislash-Johto-Splinter",
+	},
 	spritzee: {
 		name: "Spritzee",
 	},
