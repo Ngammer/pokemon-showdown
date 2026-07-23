@@ -14196,7 +14196,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Hoenn",
 		types: ["Water", "Fire"],
 		baseStats: { hp: 71, atk: 33, def: 94, spa: 167, spd: 96, spe: 39 },
-		abilities: { 0: "Mega Launcher" },
+		abilities: { 0: "Mega Launcher", 1: "Shell Armor", H: "Baze" },
 		heightm: 1.3, // cambiar
 		weightkg: 35.3, // cambiar
 		color: "Blue", // cambiar
