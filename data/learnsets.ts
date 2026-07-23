@@ -52680,7 +52680,7 @@ sylveon: {
 			acid: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			amnesia: ["9M", "9L28", "9L36", "9L29", "9L29", "9L29", "9L36"],
 			ancientpower: ["9L16", "9L17", "9L17", "9L36", "9T", "9L36", "9L48"],
-			aquaring: ["9M"], 
+			aquaring: ["9M"],
 			astonish: ["9L1", "9L1", "9L1", "9L1", "9L1", "9L1"],
 			attract: ["9M", "9M", "9M", "9M", "9M", "9M"],
 			bind: ["9T", "9T", "9T"],
