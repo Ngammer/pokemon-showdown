@@ -457,4 +457,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Clear Body-Fallen", 1: "Magic Guard-Fallen", H: "Sturdy-Fallen" },
 	},
+	obstagoon: {
+		inherit: true,
+		abilities: { 0: "Reckless-Persecution", 1: "Guts-Persecution", H: "Defiant-Persecution" },
+	},
 };
