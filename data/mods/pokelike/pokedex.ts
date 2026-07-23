@@ -310,6 +310,10 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		baseStats: { hp: 85, atk: 118, def: 100, spa: 79, spd: 83, spe: 80 }, // + 10 Ataque
 	},
+	feraligatrmega: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 170, def: 125, spa: 89, spd: 93, spe: 78 }, // + 10 Ataque
+	},
 	kyuremblack: {
 		inherit: true,
 		abilities: { 0: "Teravolt", S: "Sand Force", S2: "Ground Power", S3: "Sheer Force",
@@ -431,15 +435,15 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	donphanfeudal: {
 		inherit: true,
-		abilities: { 0: "Sage-Explosive"},
+		abilities: { 0: "Sage-Explosive" },
 	},
 	delphox: {
 		inherit: true,
-		baseStats: { hp: 85, atk: 79, def: 82, spa: 124, spd: 110, spe: 115 }, //+10 en todo
+		baseStats: { hp: 85, atk: 79, def: 82, spa: 124, spd: 110, spe: 115 }, // +10 en todo
 	},
 	delphoxmega: {
 		inherit: true,
-		baseStats: { hp: 85, atk: 79, def: 82, spa: 170, spd: 135, spe: 144 }, //+10 en todo
+		baseStats: { hp: 85, atk: 79, def: 82, spa: 170, spd: 135, spe: 144 }, // +10 en todo
 	},
 	skuntank: {
 		inherit: true,

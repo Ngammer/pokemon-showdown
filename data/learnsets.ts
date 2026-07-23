@@ -62286,22 +62286,22 @@ sylveon: {
 	},
 	rotomjohtostatue: {
 		learnset: {
-			zenheadbutt: ["9M"],
+			zenheadbutt: ["9R"],
 		},
 	},
 	rotomjohtosharp: {
 		learnset: {
-			ceasselessedge: ["9M"],
+			ceasselessedge: ["9R"],
 		},
 	},
 	rotomjohtoash: {
 		learnset: {
-			sacredfire: ["9M"],
+			sacredfire: ["9R"],
 		},
 	},
 	rotomjohtoberserk: {
 		learnset: {
-			dragonrush: ["9M"],
+			dragonrush: ["9R"],
 		},
 	},
 	uxie: {
