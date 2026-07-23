@@ -3972,4 +3972,126 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3,
 		num: 5,
 	},
+	recklesspersecution: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (defender.beingCalledBack || defender.switchFlag) {
+				this.debug('Persecution damage boost');
+				return move.basePower * 2;
+			}
+			if (move.recoil || move.hasCrashDamage) {
+				this.debug('Reckless boost');
+				return this.chainModify(1.5);
+			}
+			return move.basePower;
+		},
+		onBeforeTurn(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('pursuit');
+		},
+		flags: { },
+		name: "Reckless-Persecution",
+		rating: 3,
+		num: 120,
+	},
+	gutspersecution: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (defender.beingCalledBack || defender.switchFlag) {
+				this.debug('Persecution damage boost');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		onBeforeTurn(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('pursuit');
+		},
+		flags: { },
+		name: "Guts-Persecution",
+		rating: 3.5,
+		num: 62,
+	},
+	defiantpersecution: {
+		onAfterEachBoost(boost, target, source, effect) {
+			if (!source || target.isAlly(source)) {
+				return;
+			}
+			let statsLowered = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					statsLowered = true;
+				}
+			}
+			if (statsLowered) {
+				this.boost({ atk: 2 }, target, target, null, false, true);
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Sport Ball') {
+				this.boost({ atk: 2 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (defender.beingCalledBack || defender.switchFlag) {
+				this.debug('Persecution damage boost');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		onBeforeTurn(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('pursuit', pokemon);
+				const data = side.getSideConditionData('pursuit');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('pursuit');
+		},
+		flags: { },
+		name: "Defiant-Persecution",
+		rating: 3,
+		num: 128,
+	},
 };
