@@ -1,5 +1,5 @@
 export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
-assaultvest: {
+	assaultvest: {
 		name: "Assault Vest",
 		spritenum: 581,
 		fling: {
@@ -7,7 +7,7 @@ assaultvest: {
 		},
 		onModifySpDPriority: 1,
 		onModifySpD(spd, pokemon) {
-			if(pokemon.baseSpecies.num === 995) return this.chainModify(2);
+			if (pokemon.baseSpecies.num === 995) return this.chainModify(2);
 			return this.chainModify(1.5);
 		},
 		onDisableMove(pokemon) {
@@ -31,7 +31,7 @@ assaultvest: {
 		onTryHealPriority: 1,
 		onTryHeal(damage, target, source, effect) {
 			const heals = ['drain', 'leechseed', 'ingrain', 'aquaring', 'strengthsap'];
-			if(target.baseSpecies.num === 995 && heals.includes(effect.id)) return this.chainModify([6554, 4096]);
+			if (target.baseSpecies.num === 995 && heals.includes(effect.id)) return this.chainModify([6554, 4096]);
 			if (heals.includes(effect.id)) {
 				return this.chainModify([5324, 4096]);
 			}
@@ -115,7 +115,7 @@ assaultvest: {
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
 			if (pokemon.volatiles['dynamax']) return;
-			if(pokemon.baseSpecies.num === 995) return this.chainModify(2);
+			if (pokemon.baseSpecies.num === 995) return this.chainModify(2);
 			return this.chainModify(1.5);
 		},
 		isChoice: true,
@@ -140,7 +140,7 @@ assaultvest: {
 		},
 		onModifySpe(spe, pokemon) {
 			if (pokemon.volatiles['dynamax']) return;
-			if(pokemon.baseSpecies.num === 995) return this.chainModify(2);
+			if (pokemon.baseSpecies.num === 995) return this.chainModify(2);
 			return this.chainModify(1.5);
 		},
 		isChoice: true,
@@ -166,7 +166,7 @@ assaultvest: {
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
 			if (pokemon.volatiles['dynamax']) return;
-			if(pokemon.baseSpecies.num === 995) return this.chainModify(2);
+			if (pokemon.baseSpecies.num === 995) return this.chainModify(2);
 			return this.chainModify(1.5);
 		},
 		isChoice: true,
@@ -261,7 +261,7 @@ assaultvest: {
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
-			if(attacker.baseSpecies.num === 995 && move.flags['tail']){
+			if (attacker.baseSpecies.num === 995 && move.flags['tail']) {
 				this.debug('Lagging Tail boost');
 				return this.chainModify(1.5);
 			}
@@ -281,7 +281,7 @@ assaultvest: {
 			basePower: 10,
 		},
 		onSourceModifyDamage(damage, source, target, move) {
-			if(source.baseSpecies.num === 995) return this.chainModify(0.8);
+			if (source.baseSpecies.num === 995) return this.chainModify(0.8);
 			return this.chainModify(0.9);
 		},
 		itemUser: ["Iron Thorns"],
@@ -298,8 +298,8 @@ assaultvest: {
 		onResidualOrder: 5,
 		onResidualSubOrder: 4,
 		onResidual(pokemon) {
-			if(pokemon.baseSpecies.num === 995) {
-				this.heal(pokemon.baseMaxhp / 8)
+			if (pokemon.baseSpecies.num === 995) {
+				this.heal(pokemon.baseMaxhp / 8);
 			}
 			this.heal(pokemon.baseMaxhp / 16);
 		},
@@ -314,7 +314,7 @@ assaultvest: {
 			basePower: 30,
 		},
 		onModifyDamage(damage, source, target, move) {
-			if(source.baseSpecies.num === 995) return this.chainModify([6554, 4096]);
+			if (source.baseSpecies.num === 995) return this.chainModify([6554, 4096]);
 			return this.chainModify([5324, 4096]);
 		},
 		onAfterMoveSecondarySelf(source, target, move) {
@@ -340,7 +340,7 @@ assaultvest: {
 		onModifyDamage(damage, source, target, move) {
 			if (move.willCrit) {
 				this.debug('Lucky Punch crit damage modifier');
-				if(source.baseSpecies.num === 995) return this.chainModify([1.2, 1])
+				if (source.baseSpecies.num === 995) return this.chainModify([1.2, 1]);
 				return this.chainModify([1.1, 1]);
 			}
 		},
@@ -576,7 +576,7 @@ assaultvest: {
 	quickclaw: {
 		onModifySpe(spe, pokemon) {
 			if (pokemon.volatiles['dynamax']) return;
-			if(pokemon.baseSpecies.num === 995) return this.chainModify(1.2);
+			if (pokemon.baseSpecies.num === 995) return this.chainModify(1.2);
 			return this.chainModify(1.1);
 		},
 		name: "Quick Claw",
@@ -743,4 +743,4 @@ assaultvest: {
 		num: 248,
 		gen: 2,
 	},
-}
+};
