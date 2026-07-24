@@ -3558,14 +3558,14 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	chienpaofusion: {
 		onStart(pokemon) {
 			if (this.suppressingAbility(pokemon)) return;
-			this.add('-ability', pokemon, 'Sword of Ruin');
+			this.add('-ability', pokemon, 'Chien-Pao Fusion');
 		},
 		onAnyModifyDef(def, target, source, move) {
 			const abilityHolder = this.effectState.target;
-			if (target.hasAbility('Sword of Ruin')) return;
-			if (!move.ruinedDef?.hasAbility('Sword of Ruin')) move.ruinedDef = abilityHolder;
+			if (target.hasAbility('Chien-Pao Fusion')) return;
+			if (!move.ruinedDef?.hasAbility('Chien-Pao Fusion')) move.ruinedDef = abilityHolder;
 			if (move.ruinedDef !== abilityHolder) return;
-			this.debug('Sword of Ruin Def drop');
+			this.debug('Chien-Pao Fusion Def drop');
 			return this.chainModify(0.75);
 		},
 		onBasePowerPriority: 19,
