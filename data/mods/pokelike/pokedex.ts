@@ -403,7 +403,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	clawitzerhoenn: {
 		inherit: true,
-		abilities: { 0: "Mega Launcher-Lucky", 1: "Shell Armor-Lucky", H: "Baze-Lucky" },
+		abilities: { 0: "Mega Launcher-Lucky", 1: "Shell Armor-Lucky", H: "Blaze-Lucky" },
 	},
 	gourgeist: {
 		inherit: true,
