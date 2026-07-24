@@ -7320,7 +7320,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	ignomotor: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Fire') {
-				if (!this.boost({ spe: 1 })) {
+				if (!this.boost({ spe: 1 }) && !target.addVolatile('ignomotor')) {
 					this.add('-immune', target, '[from] ability: Ignomotor');
 				}
 				return null;
@@ -7334,6 +7334,42 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		pokemon.useItem();
 		}
 	}, */
+		onMoveAborted(pokemon, target, move) {
+			if (move.type === 'Fire' && move.category !== 'Status') {
+				pokemon.removeVolatile('ignomotor');
+			}
+		},
+		onAfterMove(pokemon, target, move) {
+			if (move.type === 'Fire' && move.category !== 'Status') {
+				pokemon.removeVolatile('ignomotor');
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('ignomotor');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Ignomotor');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Fire' && attacker.hasAbility('ignomotor')) {
+					this.debug('Ignomotor boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Fire' && attacker.hasAbility('ignomotor')) {
+					this.debug('Ignomotor boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Ignomotor', '[silent]');
+			},
+		},
 		flags: { breakable: 1 },
 		name: "Ignomotor",
 		rating: 3,
