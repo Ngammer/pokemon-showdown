@@ -427,7 +427,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	furrum: {
 		inherit: true,
-		abilities: { 0: "Frisk", 1: "Magical", H: "Soul Liberator" },
+		abilities: { 0: "Frisk-STAB Hit", 1: "Magical-STAB Hit", H: "Soul Liberator-STAB Hit" },
 	},
 	donphan: {
 		inherit: true,

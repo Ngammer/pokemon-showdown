@@ -3655,7 +3655,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Soul Liberator",
+		name: "Soul Liberator-STAB Hit",
 		rating: 2,
 		num: -119,
 	},

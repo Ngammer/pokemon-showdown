@@ -8572,4 +8572,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -208,
 	},
+	stenchspray: {
+		onDamagingHit(damage, target, source, move) {
+			if (!source.trySetStatus('tox', target) && !source.status && source.hasType('Poison')) {
+				this.add('-immune', source);
+			}
+		},
+		flags: {},
+		name: "Stench Spray",
+		rating: 3,
+		num: -209,
+	},
 };
