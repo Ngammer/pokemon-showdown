@@ -5170,6 +5170,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	eiscuehoenn: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	indeedee: {
 		tier: "OU",
 		doublesTier: "DUU",
