@@ -944,7 +944,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { },
-		name: "Intimidate-Only Stab",
+		name: "Intimidate-Only STAB",
 		rating: 3.5,
 		num: 22,
 	},
