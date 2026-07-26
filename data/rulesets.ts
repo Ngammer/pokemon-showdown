@@ -2378,8 +2378,6 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			if (!target) return; // Chat command
 			if (effect && ['imposter', 'transform'].includes(effect.id)) return;
 			const typesSet = new Set(species.types);
-			const bonusType = this.dex.types.get(target.teraType);
-			if (bonusType.exists) typesSet.add(bonusType.name);
 			return { ...species, types: [...typesSet] };
 		},
 		onSwitchIn(pokemon) {
