@@ -8624,11 +8624,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of targets) {
 				let randomAbility = '';
 				if (abilities.length) {
-				abilities.sort((a, b) => a.num - b.num);
-				randomAbility = this.sample(abilities).id;
-			}
-			if (!randomAbility) return false;
-				target.setAbility(randomAbility)
+					abilities.sort((a, b) => a.num - b.num);
+					randomAbility = this.sample(abilities).id;
+				}
+				if (!randomAbility) return false;
+				target.setAbility(randomAbility);
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1 },
