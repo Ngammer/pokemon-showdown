@@ -8592,4 +8592,48 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -210,
 	},
+	glitch: {
+		onStart(pokemon) {
+			this.effectState.seek = true;
+			// n.b. only affects Hackmons
+			// interaction with No Ability is complicated: https://www.smogon.com/forums/threads/pokemon-sun-moon-battle-mechanics-research.3586701/page-76#post-7790209
+			if (pokemon.adjacentFoes().some(foeActive => foeActive.ability === 'noability')) {
+				this.effectState.seek = false;
+			}
+			// interaction with Ability Shield is similar to No Ability
+			if (pokemon.hasItem('Ability Shield')) {
+				this.add('-block', pokemon, 'item: Ability Shield');
+				this.effectState.seek = false;
+			}
+			if (this.effectState.seek) {
+				this.singleEvent('Update', this.effect, this.effectState, pokemon);
+			}
+		},
+		onUpdate(pokemon) {
+			if (!this.effectState.seek) return;
+
+			const targets = this.getAllActive().filter(
+				target => !target.getAbility().flags['failskillswap']
+			);
+			const abilities = this.dex.abilities.all().filter(move => (
+				(!move.isNonstandard || move.isNonstandard === 'Unobtainable') &&
+				!move.flags['notrace']
+			));
+			if (!targets.length) return;
+
+			for (const target of targets) {
+				let randomAbility = '';
+				if (abilities.length) {
+				abilities.sort((a, b) => a.num - b.num);
+				randomAbility = this.sample(abilities).id;
+			}
+			if (!randomAbility) return false;
+				target.setAbility(randomAbility)
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1 },
+		name: "Glitch",
+		rating: 2.5,
+		num: -211,
+	},
 };
