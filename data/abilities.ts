@@ -8583,4 +8583,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -209,
 	},
+	steadywinds: {
+		onStart(source) {
+			source.side.addSideCondition('tailwind');
+		},
+		flags: { },
+		name: "Steady Winds",
+		rating: 4,
+		num: -210,
+	},
 };
