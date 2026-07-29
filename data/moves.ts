@@ -23780,7 +23780,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 100,
 			self: {
 				onHit() {
-					this.field.setTerrain('electricterrain');
+					this.field.setTerrain('grassyterrain');
 				},
 			},
 		},
