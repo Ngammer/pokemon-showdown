@@ -8636,4 +8636,33 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2.5,
 		num: -211,
 	},
+	divinationorb: {
+		onStart(pokemon) {
+			for (const foe of pokemon.adjacentFoes()) {
+				foe.side.addSlotCondition(foe, 'divinationorb');
+			}
+		},
+		condition: {
+			onStart(pokemon, source) {
+				this.effectState.startingTurn = this.getOverflowedTurnCount();
+				if (this.effectState.startingTurn === 255) {
+					this.hint(`In Gen 8+, Wish will never resolve when used on the ${this.turn}th turn.`);
+				}
+			},
+			onResidualOrder: 4,
+			onResidual(target: Pokemon) {
+				if (this.getOverflowedTurnCount() <= this.effectState.startingTurn + 3) return;
+				target.side.removeSlotCondition(this.getAtSlot(this.effectState.sourceSlot), 'divinationorb');
+			},
+			onEnd(target) {
+				if (target && !target.fainted) {
+					this.damage(target.baseMaxhp / 4, target);
+				}
+			},
+		},
+		flags: { },
+		name: "Divination Orb",
+		rating: 2,
+		num: -212,
+	},
 };
