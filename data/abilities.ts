@@ -8665,4 +8665,33 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -212,
 	},
+	courage: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({ spa: length }, source);
+			}
+		},
+		flags: { },
+		name: "Courage",
+		rating: 3,
+		num: -213,
+	},
+	iceclaws: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(25, 100)) {
+					source.trySetStatus('frz', target);
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['contact']) {
+				return this.chainModify([4710, 4096]);
+			}
+		},
+		flags: { },
+		name: "Ice Claws",
+		rating: 1.5,
+		num: -214,
+	},
 };
