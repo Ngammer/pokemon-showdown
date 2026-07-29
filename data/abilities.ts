@@ -8677,7 +8677,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -213,
 	},
 	iceclaws: {
-		onDamagingHit(damage, target, source, move) {
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(25, 100)) {
 					source.trySetStatus('frz', target);
@@ -8693,5 +8694,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Ice Claws",
 		rating: 1.5,
 		num: -214,
+	},
+	toxinsaturation: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.checkMoveMakesContact(move, target, source)) {
+				if (this.randomChance(3, 10)) {
+					target.trySetStatus('psn', source);
+				}
+			}
+			if (this.randomChance(2, 10) && ['psn', 'tox'].includes(target.status)) {
+				target.addVolatile('flinch');
+			}
+		},
+		flags: { },
+		name: "Toxin Saturation",
+		rating: 2,
+		num: -215,
 	},
 };
