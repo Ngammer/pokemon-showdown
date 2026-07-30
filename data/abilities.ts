@@ -8827,13 +8827,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const target of pokemon.foes()) {
 				if (target.status === 'slp' || target.hasAbility('comatose')) {
 					this.damage(target.baseMaxhp / 6, target, pokemon);
-					this.heal(target.baseMaxhp / 12, pokemon, pokemon, "drain")
+					this.heal(target.baseMaxhp / 12, pokemon, pokemon, "drain");
 				}
 			}
 		},
 		flags: { },
 		name: "Terrifying Dreams",
 		rating: 1.5,
-		num: -219	,
+		num: -219,
 	},
 };
