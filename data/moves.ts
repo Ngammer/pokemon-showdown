@@ -15864,12 +15864,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onAfterMoveSecondarySelf(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Meloetta' && !pokemon.transformed) {
-				const meloettaForme = pokemon.species.id === 'meloettapirouette' ? '' : '-Pirouette';
-				pokemon.formeChange('Meloetta' + meloettaForme, this.effect, false, '0', '[msg]');
+				pokemon.formeChange('Meloetta-Pirouette', this.effect, false, '0', '[msg]');
+				const RelicSong = pokemon.moveSlots.findIndex(x => x.id === 'relicsong');
+				if (RelicSong >= 0) {
+					const relicDance = this.dex.moves.get('relicdance');
+					pokemon.moveSlots[RelicSong] = pokemon.baseMoveSlots[RelicSong] = {
+						id: relicDance.id,
+						move: relicDance.name,
+						pp: pokemon.moveSlots[RelicSong].pp,
+						maxpp: pokemon.moveSlots[RelicSong].maxpp,
+						disabled: false,
+						used: false,
+					};
+				}
 			}
 		},
 		target: "allAdjacentFoes",
-		type: "Normal",
+		type: "Psychic",
 		contestType: "Beautiful",
 	},
 	rest: {
@@ -16897,7 +16908,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	secretsword: {
 		num: 548,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 100,
 		category: "Special",
 		overrideDefensiveStat: 'def',
 		name: "Secret Sword",
@@ -23754,7 +23765,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	tritorrent: {
-		num: -144,
+		num: -143,
 		accuracy: 100,
 		basePower: 30,
 		category: "Special",
@@ -23768,7 +23779,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 	},
 	emergingwildlife: {
-		num: -143,
+		num: -144,
 		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
@@ -23787,5 +23798,39 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacent",
 		type: "Grass",
 		contestType: "Tough",
+	},
+	relicdance: {
+		num: 547,
+		accuracy: 100,
+		basePower: 95,
+		category: "Physical",
+		name: "Relic Dance",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, dance: 1, metronome: 1, spin: 1 },
+		secondary: {
+			chance: 20,
+			status: 'flinch',
+		},
+		onAfterMoveSecondarySelf(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies === 'Meloetta' && !pokemon.transformed) {
+				pokemon.formeChange('Meloetta', this.effect, false, '0', '[msg]');
+				const relicDance = pokemon.moveSlots.findIndex(x => x.id === 'relicdance');
+				if (relicDance >= 0) {
+					const RelicSong = this.dex.moves.get('relicsong');
+					pokemon.moveSlots[relicDance] = pokemon.baseMoveSlots[relicDance] = {
+						id: RelicSong.id,
+						move: RelicSong.name,
+						pp: pokemon.moveSlots[relicDance].pp,
+						maxpp: pokemon.moveSlots[relicDance].maxpp,
+						disabled: false,
+						used: false,
+					};
+				}
+			}
+		},
+		target: "allAdjacentFoes",
+		type: "Fighting",
+		contestType: "Beautiful",
 	},
 };
