@@ -8757,4 +8757,59 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -216,
 	},
+	flashfreeze: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Ice') {
+				if (!target.addVolatile('flashfreeze')) {
+					this.add('-immune', target, '[from] ability: Flash Freeze');
+				}
+				return null;
+			}
+		},
+		onMoveAborted(pokemon, target, move) {
+			if (move.type === 'Ice' && move.category !== 'Status') {
+				pokemon.removeVolatile('flashfreeze');
+			}
+		},
+		onAfterMove(pokemon, target, move) {
+			if (move.type === 'Ice' && move.category !== 'Status') {
+				pokemon.removeVolatile('flashfreeze');
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('flashfreeze');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Flash Freeze');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Ice' && attacker.hasAbility('flashfreeze')) {
+					this.debug('Flash Freeze boost');
+					return this.chainModify(2);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Ice' && attacker.hasAbility('flashfreeze')) {
+					this.debug('Flash Freeze boost');
+					return this.chainModify(2);
+				}
+			},
+			onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+				if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+				target.trySetStatus('frz', source);
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Flash Freeze', '[silent]');
+			},
+		},
+		flags: { breakable: 1 },
+		name: "Flash Freeze",
+		rating: 3,
+		num: -217,
+	},
 };
