@@ -8713,4 +8713,48 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -215,
 	},
+	flarepower: {
+		onStart(target) {
+			let success = false;
+			const allies = [...target.side.pokemon, ...target.side.allySide?.pokemon || []];
+			for (const ally of allies) {
+				if (ally.hasType('Fire') && !ally.fainted) {
+					success = true;
+				}
+			}
+			if (success) {
+				target.addVolatile('flarepower');
+			}
+		},
+		onEnd(pokemon) {
+			delete pokemon.volatiles['flarepower'];
+			this.add('-end', pokemon, 'Flare Power', '[silent]');
+		},
+		condition: {
+			noCopy: true,
+			onStart(pokemon, source, effect) {
+				this.add('-activate', pokemon, 'ability: Flare Power');
+				if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) {
+					this.effectState.bestStat = 'atk';
+				} else {
+					this.effectState.bestStat = 'spa';
+				}
+				this.add('-start', pokemon, 'flarepower' + this.effectState.bestStat);
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, pokemon) {
+				if (this.effectState.bestStat !== 'atk' || pokemon.ignoringAbility()) return;
+				return this.chainModify(1.5);
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(spa, pokemon) {
+				if (this.effectState.bestStat !== 'spa' || pokemon.ignoringAbility()) return;
+				return this.chainModify(1.5);
+			},
+		},
+		flags: { },
+		name: "Flare Power",
+		rating: 3,
+		num: -216,
+	},
 };
