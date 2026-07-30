@@ -343,6 +343,36 @@ export class BattleActions {
 				this.runMove(move.id, dancer, dancersTargetLoc, { sourceEffect: this.dex.abilities.get('dancer'), externalMove: true });
 			}
 		}
+
+		// TODO: Refactor to use BattleQueue#prioritizeAction in onAnyAfterMove handlers
+		// Burst Fan's activation order is completely different from any other event, so it's handled separately
+		if (move.flags['wind'] && moveDidSomething && !move.isExternal) {
+			const fans = [];
+			for (const currentPoke of this.battle.getAllActive()) {
+				if (pokemon === currentPoke) continue;
+				if (currentPoke.hasAbility('burstfan') && !currentPoke.isSemiInvulnerable()) {
+					fans.push(currentPoke);
+				}
+			}
+			// Burst Fan activates in order of lowest speed stat to highest
+			// Note that the speed stat used is after any volatile replacements like Speed Swap,
+			// but before any multipliers like Agility or Choice Scarf
+			// Ties go to whichever Pokemon has had the ability for the least amount of time
+			fans.sort(
+				(a, b) => -(b.storedStats['spe'] - a.storedStats['spe']) || b.abilityState.effectOrder - a.abilityState.effectOrder
+			);
+			const targetOf1stWind = this.battle.activeTarget!;
+			for (const fan of fans) {
+				if (this.battle.faintMessages()) break;
+				if (fan.fainted) continue;
+				this.battle.add('-activate', fan, 'ability: Burst Fan');
+				const fansTarget = !targetOf1stWind.isAlly(fan) && pokemon.isAlly(fan) ?
+					targetOf1stWind :
+					pokemon;
+				const fansTargetLoc = fan.getLocOf(fansTarget);
+				this.runMove(move.id, fan, fansTargetLoc, { sourceEffect: this.dex.abilities.get('burstfan'), externalMove: true });
+			}
+		}
 		if (noLock && pokemon.volatiles['lockedmove']) delete pokemon.volatiles['lockedmove'];
 		this.battle.faintMessages();
 		this.battle.checkWin();

@@ -8812,4 +8812,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -217,
 	},
+	burstfan: {
+		flags: { },
+		name: "Burst Fan",
+		// implemented in runMove in scripts.js
+		rating: 1.5,
+		num: 216,
+	},
 };

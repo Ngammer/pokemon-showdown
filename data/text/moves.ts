@@ -4161,7 +4161,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	memento: {
 		name: "Memento",
 		desc: "Lowers the target's Attack and Special Attack by 2 stages. If this move is successful, the user loses 1/4 of its maximum HP, rounded down. This move fails entirely if it hits a Pokemon behind a substitute, but does not fail if the target's stats cannot be lowered.",
-		shortDesc: "Lowers target's Atk, SpA by 2. User loses 1/4 max HP",	
+		shortDesc: "Lowers target's Atk, SpA by 2. User loses 1/4 max HP",
 		gen4: {
 			desc: "Lowers the target's Attack and Special Attack by 2 stages. The user faints, even if this move misses. This move can hit targets in the middle of a two-turn move. Fails entirely if there is no target, but does not fail if the target's stats cannot be changed.",
 		},

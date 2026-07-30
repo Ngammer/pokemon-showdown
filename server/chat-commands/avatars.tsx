@@ -673,10 +673,6 @@ const CUSTOM_AVATARS_NGAMMER = new Set([
 	'juansssss', 'ngammer',
 ]);
 
-const CUSTOM_AVATARS_NGAMMER2 = new Set([
-	'ngammer2',
-]);
-
 const OFFICIAL_AVATARS_WISTERIAPURPLE = new Set([
 	'miku-fairy',
 ]);
