@@ -1834,4 +1834,52 @@ chesnaught: {
 			nightmare: ["9M"],
 		},
 	},
+	pikachucosplay: {
+		learnset: {
+			alluringvoice: ["9M"],
+			charge: ["9M"],
+			chargebeam: ["9M"],
+			covet: ["9M"],
+			disarmingvoice: ["9M"],
+			discharge: ["9M"],
+			drainingkiss: ["9M"],
+			eerieimpulse: ["9M"],
+			electricterrain: ["9M"],
+			electroball: ["9M"],
+			electroweb: ["9M"],
+			magnetrise: ["9M"],
+			nuzzle: ["9M"],
+			pikapapow: ["9M"], //Añadido
+			playrough: ["9M"],
+			risingvoltage: ["9M"],
+			shockwave: ["9M"],
+			spark: ["9M"],
+			sweetkiss: ["9M"],
+			thunder: ["9M"], //Añadido
+			thunderbolt: ["9M"], //Añadido
+			thunderpunch: ["9M"],
+			thundershock: ["9M"],
+			thunderwave: ["9M"],
+			voltswitch: ["9M"],
+			volttackle: ["9M"],
+			wildcharge: ["9M"],
+		},
+	},
+	pikachupopstar: {
+		learnset: {
+			babydolleyes: ["9M"],
+			craftyshield: ["9M"], //Añadido
+			dazzlinggleam: ["9M"], //Añadido
+			drainingkiss: ["9M"],
+			eerieimpulse: ["9M"], //Añadido
+			overdrive: ["9M"],
+			playrough: ["9M"], //Añadido
+			shockwave: ["9M"], //Añadido
+			sweetkiss: ["9M"], //Añadido
+			thunder: ["9M"], //Añadido
+			thunderbolt: ["9M"], //Añadido
+			thunderwave: ["9M"], //Añadido
+			voltswitch: ["9M"], //Añadido
+		},
+	},
 };

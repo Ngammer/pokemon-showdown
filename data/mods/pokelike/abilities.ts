@@ -4094,4 +4094,422 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3,
 		num: 128,
 	},
+	quarkdriveparadox: {
+		onSwitchInPriority: -2,
+		onSwitchIn(pokemon) {
+			pokemon.addVolatile('quarkdrive');
+		},
+		condition: {
+			noCopy: true,
+			onStart(pokemon, source, effect) {
+				this.add('-activate', pokemon, 'ability: Quark Drive');
+				this.effectState.bestStat = pokemon.getBestStat(false, true);
+				this.add('-start', pokemon, 'quarkdrive' + this.effectState.bestStat);
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, pokemon) {
+				if (this.effectState.bestStat !== 'atk' || pokemon.ignoringAbility()) return;
+				this.debug('Quark Drive atk boost');
+				return this.chainModify([5325, 4096]);
+			},
+			onModifyDefPriority: 6,
+			onModifyDef(def, pokemon) {
+				if (this.effectState.bestStat !== 'def' || pokemon.ignoringAbility()) return;
+				this.debug('Quark Drive def boost');
+				return this.chainModify([5325, 4096]);
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(spa, pokemon) {
+				if (this.effectState.bestStat !== 'spa' || pokemon.ignoringAbility()) return;
+				this.debug('Quark Drive spa boost');
+				return this.chainModify([5325, 4096]);
+			},
+			onModifySpDPriority: 6,
+			onModifySpD(spd, pokemon) {
+				if (this.effectState.bestStat !== 'spd' || pokemon.ignoringAbility()) return;
+				this.debug('Quark Drive spd boost');
+				return this.chainModify([5325, 4096]);
+			},
+			onModifySpe(spe, pokemon) {
+				if (this.effectState.bestStat !== 'spe' || pokemon.ignoringAbility()) return;
+				this.debug('Quark Drive spe boost');
+				return this.chainModify(1.5);
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Quark Drive');
+			},
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
+		name: "Quark Drive-Paradox",
+		rating: 3,
+		num: 282,
+	},
+	cursedbodystabhit: {
+		onDamagingHit(damage, target, source, move) {
+			if (source.volatiles['curse']) return;
+			if (!move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
+				if (this.randomChance(5, 10)) {
+					source.addVolatile('curse', this.effectState.target);
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Cursed Body-STAB Hit",
+		rating: 2,
+		num: 130,
+	},
+	lightningrodstabhit: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Electric') {
+				if (!this.boost({ spa: 1 })) {
+					this.add('-immune', target, '[from] ability: Lightning Rod');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Electric' || move.flags['pledgecombo']) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Lightning Rod');
+				}
+				return this.effectState.target;
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Fast Ball') {
+				this.boost({ spa: 1 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Lightning Rod-STAB Hit",
+		rating: 3,
+		num: 31,
+	},
+	rockheadstabhit: {
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'recoil') {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.hasType(move.type) && attacker.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Rock Head-STAB Hit",
+		rating: 3,
+		num: 69,
+	},
+	torrentlucky: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Water') {
+				this.debug('Torrent boost');
+				return this.chainModify(1.2);
+			}
+		},
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 2;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 2;
+		},
+		flags: { },
+		name: "Torrent-Lucky",
+		rating: 2,
+		num: 67,
+	},
+	battlebondlucky: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (source.bondTriggered) return;
+			if (effect?.effectType !== 'Move') return;
+			if (source.hp && !source.transformed && source.side.foePokemonLeft()) {
+				this.boost({ atk: 1, spa: 1, spe: 1 }, source, source, this.effect);
+				this.add('-activate', source, 'ability: Battle Bond');
+				source.bondTriggered = true;
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Strange Ball') {
+				this.boost({ spe: 1, spa: 1, atk: 1 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "Battle Bond-Lucky",
+		rating: 3.5,
+		num: 210,
+	},
+	pixilatestabhit: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Fairy';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (pokemon.hasType(move.type) && pokemon.activeMoveActions <= 1) {
+				this.debug('STAB boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Pixilate-STAB Hit",
+		rating: 4,
+		num: 182,
+	},
+	fullmetalbodyaffinity: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Full Metal Body", `[of] ${target}`);
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'steel') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Full Metal Body-Affinity",
+		rating: 2,
+		num: 230,
+	},
+	strongjawaffinity: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'steel' && move.flags['bite']) {
+				this.debug('STAB boost');
+				return this.chainModify(1.725);
+			}
+			else if (move.flags['bite']) {
+				return this.chainModify(1.5);
+			}
+			else if (move.type === 'steel') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Strong Jaw-Affinity",
+		rating: 3.5,
+		num: 173,
+	},
+	flashfiresolgaleo: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				move.accuracy = true;
+				if (!target.addVolatile('flashfire')) {
+					this.add('-immune', target, '[from] ability: Flash Fire');
+				}
+				return null;
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('flashfire');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Flash Fire');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (attacker.hasAbility('flashfire')) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.2);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (attacker.hasAbility('flashfire')) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.2);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Flash Fire', '[silent]');
+			},
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Cherish Ball') {
+				pokemon.addVolatile('flashfire');
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'steel') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Flash Fire-Solgaleo",
+		rating: 3.5,
+		num: 18,
+	},
+	lightmetalaffinity: {
+		onModifyWeight(weighthg) {
+			return this.trunc(weighthg / 2);
+		},
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Light Metal boost');
+				return this.chainModify(0.5);
+			}
+			if (move.type === 'electric') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move.type === 'Steel') {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Light Metal-Affinity",
+		rating: 1,
+		num: 135,
+	},
+	lightningrodaffinity: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Electric') {
+				if (!this.boost({ spa: 1 })) {
+					this.add('-immune', target, '[from] ability: Lightning Rod');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Electric' || move.flags['pledgecombo']) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Lightning Rod');
+				}
+				return this.effectState.target;
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Fast Ball') {
+				this.boost({ spa: 1 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'electric') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Lightning Rod-Affinity",
+		rating: 3,
+		num: 31,
+	},
+	competitive: {
+		onAfterEachBoost(boost, target, source, effect) {
+			if (!source || target.isAlly(source)) {
+				return;
+			}
+			let statsLowered = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					statsLowered = true;
+				}
+			}
+			if (statsLowered) {
+				this.boost({ spa: 2 }, target, target, null, false, true);
+			}
+		},
+		onStart(pokemon) {
+			if (pokemon.getItem().name === 'Love Ball') {
+				this.boost({ spa: 2 }, pokemon);
+				pokemon.useItem();
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'electric') {
+				this.debug('STAB boost');
+				return this.chainModify(1.15);
+			}
+		},
+		flags: { },
+		name: "Competitive",
+		rating: 2.5,
+		num: 172,
+	},
+	braviaryhisuifusion: {
+		onStart(pokemon) {
+			this.boost({ accuracy: 1 }, pokemon);
+		},
+		onModifyMove(move, pokemon) {
+			if (move.secondaries && !move.hasSheerForceBoost) {
+				delete move.secondaries;
+				// Technically not a secondary effect, but it is negated
+				delete move.self;
+				if (move.id === 'clangoroussoulblaze') delete move.selfBoost;
+				// Actual negation of `AfterMoveSecondary` effects implemented in scripts.js
+				move.hasSheerForce = true;
+			}
+		},
+		onBasePowerPriority: 21,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.hasSheerForce || move.hasSheerForceBoost) return this.chainModify([5325, 4096]);
+		},
+		onModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod < 0) {
+				this.debug('Tinted Lens boost');
+				return this.chainModify(2);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Braviary Hisui-Fusion",
+		rating: 0.5,
+		num: 51,
+	},
 };
