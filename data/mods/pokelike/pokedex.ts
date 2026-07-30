@@ -465,4 +465,36 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Reckless-Persecution", 1: "Guts-Persecution", H: "Defiant-Persecution" },
 	},
+	ironboulder: {
+		inherit: true,
+		abilities: { 0: "Quark Drive-Paradox", 1: "Sharpness", H: "Sturdy" },
+	},
+	marowakalola: {
+		inherit: true,
+		abilities: { 0: "Cursed Body-STAB Hit", 1: "Lightning Rod-STAB Hit", H: "Rock Head-STAB Hit" },
+	},
+	garbodoar: {
+		inherit: true,
+		types: ["Poison", "Psychic"],
+	},
+	samurott: {
+		inherit: true,
+		abilities: { 0: "Torrent-Lucky", 1: "Battle Bond-Lucky", H: "Shell Armor-Lucky" },
+	},
+	pikachupopstar: {
+		inherit: true,
+		abilities: { 0: "Pixilate-Only STAB",},
+	},
+	solgaleo: {
+		inherit: true,
+		abilities: { 0: "Full Metal Body-Affinity", 1: "Strong Jaw-Affinity", H: "Flash Fire-Affinity" },
+	},
+	duraludonkanto: {
+		inherit: true,
+		abilities: { 0: "Light Metal-Affinity", 1: "Lightning Rod-Affinity", H: "Competitive-Affinity" },
+	},
+	braviaryhisui: {
+		inherit: true,
+		abilities: { 0: "Braviary Hisui-Fusion",},
+	},
 };
