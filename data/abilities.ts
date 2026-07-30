@@ -8817,6 +8817,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Burst Fan",
 		// implemented in runMove in scripts.js
 		rating: 1.5,
-		num: 216,
+		num: -218,
+	},
+	terrifyingdreams: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (!pokemon.hp) return;
+			for (const target of pokemon.foes()) {
+				if (target.status === 'slp' || target.hasAbility('comatose')) {
+					this.damage(target.baseMaxhp / 6, target, pokemon);
+					this.heal(target.baseMaxhp / 12, pokemon, pokemon, "drain")
+				}
+			}
+		},
+		flags: { },
+		name: "Terrifying Dreams",
+		rating: 1.5,
+		num: -219	,
 	},
 };

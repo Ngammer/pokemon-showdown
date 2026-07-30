@@ -9771,7 +9771,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Dark"],
 		gender: "N",
 		baseStats: { hp: 70, atk: 120, def: 130, spa: 165, spd: 130, spe: 85 },
-		abilities: { 0: "Terrorific Dreams" },
+		abilities: { 0: "Terrifying Dreams" },
 		heightm: 3,
 		weightkg: 240,
 		color: "Black",
