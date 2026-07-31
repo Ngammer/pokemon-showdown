@@ -106,8 +106,38 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 				}
 				sharedPower.add(ally.baseAbility);
 			}
-			if (pokemon.species.id !== 'deoxys') {
-				sharedPower.delete(pokemon.baseAbility);
+			return sharedPower;
+		},
+		onBeforeSwitchIn(pokemon) {
+			let format = this.format;
+			if (!format.getSharedPower) format = this.dex.formats.get('gen9sharedpower');
+			if (pokemon.species.id !== 'deoxys') return;
+			for (const ability of format.getSharedPower!(pokemon)) {
+				const effect = 'ability:' + this.toID(ability);
+				pokemon.volatiles[effect] = this.initEffectState({ id: effect, target: pokemon });
+				if (!pokemon.m.abils) pokemon.m.abils = [];
+				if (!pokemon.m.abils.includes(effect)) pokemon.m.abils.push(effect);
+			}
+		},
+	},
+	{
+		name: "[Gen 9] PokeLike Doubles",
+		desc: `Once a Pok&eacute;mon switches in, its ability is shared with the rest of the team.`,
+		mod: 'pokelike',
+		gameType: 'doubles',
+		ruleset: ['Standard NatDex', 'Terastal Clause', '!Evasion Clause', '!OHKO Clause', 'Form Item Clause', 'Overflow Stat Mod', 'Bonus Type Mod'],
+		banlist: [],
+		unbanlist: [],
+		restricted: [],
+		getSharedPower(pokemon) {
+			const sharedPower = new Set<string>();
+			for (const ally of pokemon.side.pokemon) {
+				if (pokemon.battle.ruleTable.isRestricted(`ability:${ally.baseAbility}`)) continue;
+				if (pokemon.battle.dex.currentMod !== 'sharedpower' && ['trace', 'mirrorarmor'].includes(ally.baseAbility)) {
+					sharedPower.add('noability');
+					continue;
+				}
+				sharedPower.add(ally.baseAbility);
 			}
 			return sharedPower;
 		},
