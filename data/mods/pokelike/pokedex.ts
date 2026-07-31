@@ -497,4 +497,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Braviary Hisui-Fusion",},
 	},
+	haxorus: {
+		inherit: true,
+		abilities: { 0: "Rivalry", 1: "Mold Breaker", H: "Sharpness", S: "Slush Rush", S2: "Rattled", S3: "Snow Cloak" },
+	},
+	rhyperior: {
+		inherit: true,
+		abilities: { 0: "Stamina-Fallen", 1: "Solid Rock-Fallen", H: "Emergent Excavation-Fallen" },
+	},
 };

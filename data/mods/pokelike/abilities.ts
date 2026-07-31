@@ -4512,4 +4512,55 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 0.5,
 		num: 51,
 	},
+	staminafallen: {
+		onDamagingHit(damage, target, source, effect) {
+			this.boost({ def: 1 });
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.type === 'Rock' && !target.getVolatile('smackdown')) {
+				target.addVolatile('smackdown');
+			}
+		},
+		flags: { },
+		name: "Stamina-Fallen",
+		rating: 4,
+		num: 192,
+	},
+	solidrockfallen: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Solid Rock neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.type === 'Rock' && !target.getVolatile('smackdown')) {
+				target.addVolatile('smackdown');
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Solid Rock-Fallen",
+		rating: 3,
+		num: 116,
+	},
+	emergentexcavationfallen: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (pokemon.hasType(move.type) && pokemon.hp <= pokemon.maxhp / 2) {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.type === 'Rock' && !target.getVolatile('smackdown')) {
+				target.addVolatile('smackdown');
+			}
+		},
+		flags: { },
+		name: "Emergent Excavation-Fallen",
+		rating: 4,
+		num: -199,
+	},
 };
