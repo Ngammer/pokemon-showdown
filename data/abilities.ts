@@ -3884,9 +3884,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// most of the implementation is in Battle#getTarget
 			move.tracksTarget = move.target !== 'scripted';
 		},
-		onHit(target, source, move) {
+		onSourceDamagingHit(damage, target, source, move) {
 			if (move.flags['tail']) {
-				this.boost({ spe: 1 }, source, source, this.dex.abilities.get('propellertail'));
+				this.boost({ spe: 1 });
 			}
 		},
 		flags: { },
