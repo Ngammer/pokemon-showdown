@@ -4320,11 +4320,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (move.type === 'steel' && move.flags['bite']) {
 				this.debug('STAB boost');
 				return this.chainModify(1.725);
-			}
-			else if (move.flags['bite']) {
+			} else if (move.flags['bite']) {
 				return this.chainModify(1.5);
-			}
-			else if (move.type === 'steel') {
+			} else if (move.type === 'steel') {
 				this.debug('STAB boost');
 				return this.chainModify(1.15);
 			}

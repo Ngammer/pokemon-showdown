@@ -871,10 +871,12 @@ export class Pokemon {
 		if (this.volatiles['gastroacid']) return true;
 
 		// Check if any active pokemon have the ability Neutralizing Gas
-		if (this.hasItem('Ability Shield') || this.ability === ('neutralizinggas' as ID)) return false;
+		if (this.hasItem('Ability Shield') || this.ability === ('neutralizinggas' as ID) ||
+			this.ability === ('weezingfusion' as ID)) return false;
 		for (const pokemon of this.battle.getAllActive()) {
 			// can't use hasAbility because it would lead to infinite recursion
-			if (pokemon.ability === ('neutralizinggas' as ID) && !pokemon.volatiles['gastroacid'] &&
+			if ((pokemon.ability === ('neutralizinggas' as ID) || pokemon.ability === ('weezingfusion' as ID)) &&
+				!pokemon.volatiles['gastroacid'] &&
 				!pokemon.transformed && !pokemon.abilityState.ending && !this.volatiles['commanding']) {
 				return true;
 			}
@@ -2216,8 +2218,9 @@ export class Pokemon {
 			if (this.hasItem('utilityumbrella')) return '';
 		}
 		if (this.battle.activePokemon?.hasAbility('waterabsorbeternalrain') && sourceEffect &&
-			(sourceEffect.id === 'waterabsorbeternalrain' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
-			sourceEffect.id !== 'electroshot') {
+			(sourceEffect.id === 'waterabsorbeternalrain' || sourceEffect.effectType === 'Move' ||
+				sourceEffect.effectType === 'Weather') &&
+				sourceEffect.id !== 'electroshot') {
 			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Water Absorb-Eternal Rain');
 			return 'raindance' as ID;
 		}
@@ -2229,8 +2232,9 @@ export class Pokemon {
 			if (this.hasItem('utilityumbrella')) return '';
 		}
 		if (this.battle.activePokemon?.hasAbility('dampeternalrain') && sourceEffect &&
-			(sourceEffect.id === 'dampeternalrain' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
-			sourceEffect.id !== 'electroshot') {
+			(sourceEffect.id === 'dampeternalrain' || sourceEffect.effectType === 'Move' ||
+				sourceEffect.effectType === 'Weather') &&
+				sourceEffect.id !== 'electroshot') {
 			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Damp-Eternal Rain');
 			return 'raindance' as ID;
 		}
@@ -2242,8 +2246,9 @@ export class Pokemon {
 			if (this.hasItem('utilityumbrella')) return '';
 		}
 		if (this.battle.activePokemon?.hasAbility('swiftswimeternalrain') && sourceEffect &&
-			(sourceEffect.id === 'swiftswimeternalrain' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
-			sourceEffect.id !== 'electroshot') {
+			(sourceEffect.id === 'swiftswimeternalrain' || sourceEffect.effectType === 'Move' ||
+				sourceEffect.effectType === 'Weather') &&
+				sourceEffect.id !== 'electroshot') {
 			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Swift Swim-Eternal Rain');
 			return 'raindance' as ID;
 		}
