@@ -3128,6 +3128,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 152,
 	},
 	myceliummight: {
+		onFractionalPriorityPriority: -1,
+		onFractionalPriority(priority, pokemon, target, move) {
+			if (move.category === 'Status') {
+				return -0.1;
+			}
+		},
 		onModifyMove(move) {
 			if (move.category === 'Status') {
 				move.ignoreAbility = true;
@@ -3879,7 +3885,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onHit(target, source, move) {
 			if (move.flags['tail']) {
-				this.boost({ spe: 1 }, source, source, this.dex.abilities.get('propellertail') as Ability);
+				this.boost({ spe: 1 }, source, source, this.dex.abilities.get('propellertail'));
 			}
 		},
 		flags: { },
@@ -4942,6 +4948,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 220,
 	},
+	solidrock: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Solid Rock neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Solid Rock",
+		rating: 3,
+		num: 116,
+	},
 	soundproof: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.flags['sound']) {
@@ -5045,7 +5063,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMovePriority: 1,
 		onModifyMove(move) {
 			// most of the implementation is in Battle#getTarget
-			if(move.target === 'scripted') {
+			if (move.target === 'scripted') {
 				move.basePower *= 1.5;
 			}
 			move.tracksTarget = move.target !== 'scripted';
@@ -6190,12 +6208,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			if (move.flags['wind']) {
 				target.addVolatile('charge');
-
 			}
 		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.flags['wind']) {
-				return move.basePower *= 0.5;
+				move.basePower *= 0.5;
 			}
 		},
 		onSideConditionStart(side, source, sideCondition) {
@@ -8848,7 +8865,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			const side = source.isAlly(target) ? source.side.foe : source.side;
 			const spikes = side.sideConditions['spikes'];
-			if (move.category === 'Physical' && (!spikes || spikes.layers < 2)) {
+			if (move.category === 'Physical' && (!spikes || spikes.layers < 3)) {
 				this.add('-activate', target, 'ability: Spiky Debris');
 				side.addSideCondition('spikes', target);
 			}
@@ -8894,14 +8911,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.status === 'brn') {
-				this.add('-activate', pokemon, 'ability: Water Veil');
+				this.add('-activate', pokemon, 'ability: Buffet');
 				pokemon.cureStatus();
 			}
 		},
 		onSetStatus(status, target, source, effect) {
 			if (status.id !== 'brn') return;
 			if ((effect as Move)?.status) {
-				this.add('-immune', target, '[from] ability: Water Veil');
+				this.add('-immune', target, '[from] ability: Buffet');
 			}
 			return false;
 		},
@@ -8909,13 +8926,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return this.chainModify(1.2);
 		},
 		onModifySpe(spe, pokemon) {
-			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) || pokemon.volatiles['lureball']) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(2);
-			}
-		},
-		onEnd(pokemon) {
-			if (pokemon.getItem().name === 'Lure Ball') {
-				pokemon.useItem();
 			}
 		},
 		flags: { },
@@ -8928,7 +8940,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
-			if(move.flags['sound']) {
+			if (move.flags['sound']) {
 				target.addVolatile('confusion', source);
 				const r = this.random(100);
 				if (r < 15) {
@@ -8945,7 +8957,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// Implemented in sim/pokemon.js:Pokemon#setStatus
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
-			if(move.flags['palm']) {
+			if (move.flags['palm']) {
 				const r = this.random(100);
 				if (r < 30) {
 					target.addVolatile('flinch');
