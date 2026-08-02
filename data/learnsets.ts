@@ -35840,6 +35840,158 @@ wungsparcefeudal: {
 			//attract //Removido
 		},
 	},
+wungsparcehoenn: {
+	learnset: {
+		agility: ["9M"],
+		amnesia: ["9M"],
+		ancientpower: ["9M"],
+		aquajet: ["9M"],
+		aquaring: ["9M"],
+		aquatail: ["9M"],
+		astonish: ["9M"],
+		bide: ["9M"],
+		bind: ["9M"],
+		bite: ["9M"],
+		blizzard: ["9M"],
+		bodyslam: ["9M"],
+		bounce: ["9M"],
+		breakingswipe: ["9M"],
+		bubblebeam: ["9M"],
+		bulldoze: ["9M"],
+		calmmind: ["9M"],
+		chargebeam: ["9M"],
+		chillingwater: ["9M"],
+		coil: ["9M"],
+		copycat: ["9M"], //Añadido
+		counter: ["9M"],
+		curse: ["9M"],
+		cut: ["9M"], //Añadido
+		defensecurl: ["9M"],
+		defog: ["9M"],
+		dig: ["9M"],
+		doubleedge: ["9M"],
+		dragonbreath: ["9M"],
+		dragonpulse: ["9M"], //Añadido
+		drillrun: ["9M"],
+		endeavor: ["9M"],
+		endure: ["9M"],
+		energyball: ["9M"], //Añadido
+		facade: ["9M"],
+		flail: ["9M"], //Añadido
+		flipturn: ["9M"],
+		focusblast: ["9M"], //Añadido
+		frustration: ["9M"],
+		gigaimpact: ["9M"],
+		glare: ["9M"],
+		headbutt: ["9M"],
+		helpinghand: ["9M"],
+		hex: ["9M"],
+		hiddenpower: ["9M"],
+		hydropump: ["9M"], //Añadido
+		hyperbeam: ["9M"],
+		hyperdrill: ["9M"],
+		hypervoice: ["9M"],
+		icebeam: ["9M"],
+		icespinner: ["9M"],
+		irontail: ["9M"],
+		lastresort: ["9M"],
+		lunge: ["9M"],
+		magiccoat: ["9M"],
+		metronome: ["9M"], //Añadido
+		mimic: ["9M"],
+		mudshot: ["9M"],
+		mudslap: ["9M"],
+		mudsport: ["9M"], //Añadido
+		naturalgift: ["9M"],
+		painsplit: ["9M"],
+		poisonjab: ["9M"],
+		poisontail: ["9M"],
+		pounce: ["9M"],
+		protect: ["9M"],
+		psychup: ["9M"],
+		pursuit: ["9M"],
+		rage: ["9M"],
+		raindance: ["9M"],
+		rapidspin: ["9M"], //Añadido
+		razorwind: ["9M"], //Añadido
+		rest: ["9M"],
+		retaliate: ["9M"],
+		return: ["9M"],
+		reversal: ["9M"], //Añadido
+		rockslide: ["9M"],
+		rocksmash: ["9M"],
+		rocktomb: ["9M"],
+		rollout: ["9M"],
+		roost: ["9M"],
+		scaleshot: ["9M"],
+		scaryface: ["9M"],
+		secretpower: ["9M"], //Añadido
+		seismictoss: ["9M"], //Añadido
+		shadowball: ["9M"],
+		shockwave: ["9M"],
+		simplebeam: ["9M"], //Añadido
+		skullbash: ["9M"], //Añadido
+		skyattack: ["9M"], //Añadido
+		skydrop: ["9M"], //Añadido
+		slam: ["9M"], //Añadido
+		sleeptalk: ["9M"],
+		smartstrike: ["9M"],
+		snore: ["9M"],
+		spitup: ["9M"], //Añadido
+		stealthrock: ["9M"],
+		stockpile: ["9M"], //Añadido
+		stompingtantrum: ["9M"],
+		storedpower: ["9M"],
+		submission: ["9M"], //Añadido
+		substitute: ["9M"],
+		surf: ["9M"],
+		swallow: ["9M"], //Añadido
+		swift: ["9M"], //Añadido
+		teleport: ["9M"], //Añadido
+		terablast: ["9M"],
+		terrainpulse: ["9M"],
+		trailblaze: ["9M"], //Añadido
+		triattack: ["9M"], //Añadido
+		trumpcard: ["9M"],
+		uproar: ["9M"],
+		watergun: ["9M"], //Añadido
+		waterpulse: ["9M"],
+		watersport: ["9M"],
+		weatherball: ["9M"], //Añadido
+		whirlpool: ["9M"],
+		whirlwind: ["9M"], //Añadido
+		wingattack: ["9M"],
+		wish: ["9M"], //Añadido
+		workup: ["9M"], //Añadido
+		wrap: ["9M"], //Añadido
+		wringout: ["9M"], //Añadido
+		yawn: ["9M"],
+		zenheadbutt: ["9M"],
+		//zapcannon //Removido
+		//toxic //Removido
+		//thunderwave //Removido
+		//thunderbolt //Removido
+		//thunder //Removido
+		//thief //Removido
+		//takedown //Removido
+		//swagger //Removido
+		//sunnyday //Removido
+		//strength //Removido
+		//stoneedge //Removido
+		//spite //Removido
+		//skittersmack //Removido
+		//screech //Removido
+		//sandstorm //Removido
+		//round //Removido
+		//raindance //Removido
+		//flail //Removido
+		//doubleteam //Removido
+		//confide //Removido
+		//captivate //Removido
+		//batonpass //Removido
+		//attract //Removido
+	},
+},
 dudunsparce: {
 		learnset: {
 			airslash: ["9M"],
@@ -35939,6 +36091,100 @@ dudunsparce: {
 			//sandstorm //Removido
 			//raindance //Removido
 			//flail //Removido
+		},
+	},
+	dudunsparcehoenn: {
+		learnset: {
+			airslash: ["9M"],
+			amnesia: ["9M"],
+			ancientpower: ["9M"],
+			batonpass: ["9M"],
+			bodyslam: ["9M"],
+			boomburst: ["9M"],
+			breakingswipe: ["9M"],
+			bulldoze: ["9M"],
+			calmmind: ["9M"],
+			coil: ["9M"],
+			curse: ["9M"],
+			cut: ["9M"], //Añadido
+			defensecurl: ["9M"],
+			dig: ["9M"],
+			doubleedge: ["9M"],
+			dragonbreath: ["9M"],
+			dragonpulse: ["9M"],
+			dragonrush: ["9M"],
+			dragontail: ["9M"],
+			drillrun: ["9M"],
+			dualwingbeat: ["9M"],
+			earthpower: ["9M"],
+			earthquake: ["9M"],
+			endeavor: ["9M"],
+			endure: ["9M"],
+			facade: ["9M"],
+			fireblast: ["9M"],
+			firespin: ["9M"],
+			flameburst: ["9M"],
+			flamecharge: ["9M"],
+			flamethrower: ["9M"],
+			focusblast: ["9M"], //Añadido
+			frustration: ["9M"], //Añadido
+			gigaimpact: ["9M"],
+			glare: ["9M"],
+			gyroball: ["9M"],
+			heatcrash: ["9M"],
+			heatwave: ["9M"],
+			heavyslam: ["9M"],
+			helpinghand: ["9M"],
+			hex: ["9M"],
+			hiddenpower: ["9M"], //Añadido
+			hurricane: ["9M"],
+			hyperbeam: ["9M"],
+			hyperdrill: ["9M"],
+			hypervoice: ["9M"],
+			incinerate: ["9M"],
+			lunge: ["9M"],
+			metronome: ["9M"], //Añadido
+			mimic: ["9M"], //Añadido
+			mudshot: ["9M"],
+			mudslap: ["9M"],
+			naturalgift: ["9M"], //Añadido
+			outrage: ["9M"],
+			overheat: ["9M"],
+			painsplit: ["9M"],
+			poisonjab: ["9M"],
+			poisontail: ["9M"],
+			pounce: ["9M"],
+			protect: ["9M"],
+			psychup: ["9M"],
+			ragingfury: ["9M"],
+			rest: ["9M"],
+			return: ["9M"], //Añadido
+			rockslide: ["9M"],
+			rocktomb: ["9M"],
+			rollout: ["9M"],
+			roost: ["9M"],
+			scaleshot: ["9M"],
+			scaryface: ["9M"],
+			secretpower: ["9M"], //Añadido
+			shadowball: ["9M"],
+			slam: ["9M"], //Añadido
+			sleeptalk: ["9M"],
+			smartstrike: ["9M"],
+			smokescreen: ["9M"],
+			snore: ["9M"], //Añadido
+			solarbeam: ["9M"],
+			stompingtantrum: ["9M"],
+			stoneedge: ["9M"],
+			storedpower: ["9M"],
+			substitute: ["9M"],
+			sunnyday: ["9M"],
+			terablast: ["9M"],
+			throatchop: ["9M"],
+			trailblaze: ["9M"], //Añadido
+			uproar: ["9M"],
+			willowisp: ["9M"],
+			yawn: ["9M"],
+			zenheadbutt: ["9M"],
 		},
 	},
 gligar: {
@@ -95893,6 +96139,67 @@ sylveon: {
 			waterfall: ["9M", "9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M", "9L12", "9M", "9L12"],
+			whirlpool: ["9M", "9M"],
+			zenheadbutt: ["9M", "9M"],
+		},
+	},
+	eiscuehoenn: {
+		learnset: {
+			agility: ["9M", "9M"],
+			amnesia: ["9M", "9L30", "9M", "9L30"],
+			ancientpower: ["9M"],
+			aquacutter: ["9M"],
+			aquaring: ["9E", "9E"],
+			attract: ["9M"],
+			bellydrum: ["9E", "9E"],
+			bodyslam: ["9M"],
+			brine: ["9M"],
+			dive: ["9M"],
+			doubleedge: ["9M", "9E", "9E"],
+			endure: ["9M", "9M"],
+			facade: ["9M", "9M"],
+			featherdance: ["9M"],
+			flipturn: ["9M"],
+			gigaimpact: ["9M"],
+			hail: ["9M", "9L42"],
+			headbutt: ["9L24", "9L24"],
+			headsmash: ["9E", "9E"],
+			hydropump: ["9M", "9M"],
+			hyperbeam: ["9M"],
+			irondefense: ["9M", "9M"],
+			ironhead: ["9M", "9M"],
+			liquidation: ["9M", "9M"],
+			meteorbeam: ["9M"],
+			mist: ["9L6", "9L6"],
+			protect: ["9M", "9M"],
+			raindance: ["9M"],
+			reflect: ["9M", "9M"],
+			rest: ["9M", "9M"],
+			reversal: ["9M", "9M"],
+			rockblast: ["9M"],
+			rockpolish: ["9M"],
+			rockslide: ["9M"],
+			rockthrow: ["9M"],
+			rocktomb: ["9M"],
+			rockwrecker: ["9M"],
+			rollout: ["9M"],
+			round: ["9M"],
+			sharpen: ["9M"],
+			sleeptalk: ["9M", "9M"],
+			snore: ["9M"],
+			soak: ["9E", "9E"],
+			stealthrock: ["9M"],
+			stompingtantrum: ["9M"],
+			stoneedge: ["9M"],
+			substitute: ["9M", "9M"],
+			surf: ["9M", "9L54", "9M", "9L54"],
+			tackle: ["9L1", "9L1"],
+			takedown: ["9M"],
+			terablast: ["9M"],
+			waterfall: ["9M", "9M"],
+			waterpulse: ["9M"],
+			weatherball: ["9M", "9L12", "9M", "9L12"],
+			wideguard: ["9M"],
 			whirlpool: ["9M", "9M"],
 			zenheadbutt: ["9M", "9M"],
 		},

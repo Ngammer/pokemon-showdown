@@ -3137,6 +3137,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMove(move) {
 			if (move.category === 'Status') {
 				move.ignoreAbility = true;
+				move.accuracy = true;
 			}
 		},
 		flags: { },
