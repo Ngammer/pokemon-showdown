@@ -2594,6 +2594,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				source.setAbility('lingeringaroma', target);
 			}
 		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Lingering Aroma');
+				}
+				return this.effectState.target;
+			}
+		},
 		flags: { },
 		name: "Lingering Aroma",
 		rating: 2,
@@ -3118,12 +3128,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 152,
 	},
 	myceliummight: {
-		onFractionalPriorityPriority: -1,
-		onFractionalPriority(priority, pokemon, target, move) {
-			if (move.category === 'Status') {
-				return -0.1;
-			}
-		},
 		onModifyMove(move) {
 			if (move.category === 'Status') {
 				move.ignoreAbility = true;
@@ -3872,6 +3876,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMove(move) {
 			// most of the implementation is in Battle#getTarget
 			move.tracksTarget = move.target !== 'scripted';
+		},
+		onHit(target, source, move) {
+			if (move.flags['tail']) {
+				this.boost({ spe: 1 }, source, source, this.dex.abilities.get('propellertail') as Ability);
+			}
 		},
 		flags: { },
 		name: "Propeller Tail",
@@ -4923,18 +4932,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 94,
 	},
-	solidrock: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod > 0) {
-				this.debug('Solid Rock neutralize');
-				return this.chainModify(0.75);
-			}
-		},
-		flags: { breakable: 1 },
-		name: "Solid Rock",
-		rating: 3,
-		num: 116,
-	},
 	soulheart: {
 		onAnyFaintPriority: 1,
 		onAnyFaint() {
@@ -5048,6 +5045,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyMovePriority: 1,
 		onModifyMove(move) {
 			// most of the implementation is in Battle#getTarget
+			if(move.target === 'scripted') {
+				move.basePower *= 1.5;
+			}
 			move.tracksTarget = move.target !== 'scripted';
 		},
 		flags: { },
@@ -6190,12 +6190,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			if (move.flags['wind']) {
 				target.addVolatile('charge');
+
+			}
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['wind']) {
+				return move.basePower *= 0.5;
 			}
 		},
 		onSideConditionStart(side, source, sideCondition) {
 			const pokemon = this.effectState.target;
 			if (sideCondition.id === 'tailwind') {
 				pokemon.addVolatile('charge');
+				this.boost({ spa: 1 }, source, source);
+				this.boost({ spd: 1 }, source, source);
 			}
 		},
 		flags: { },
@@ -8835,5 +8843,161 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Terrifying Dreams",
 		rating: 1.5,
 		num: -219,
+	},
+	spikydebris: {
+		onDamagingHit(damage, target, source, move) {
+			const side = source.isAlly(target) ? source.side.foe : source.side;
+			const spikes = side.sideConditions['spikes'];
+			if (move.category === 'Physical' && (!spikes || spikes.layers < 2)) {
+				this.add('-activate', target, 'ability: Spiky Debris');
+				side.addSideCondition('spikes', target);
+			}
+		},
+		flags: { },
+		name: "Spiky Debris",
+		rating: 3.5,
+		num: -220,
+	},
+	blacksmoke: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			for (const target of pokemon.foes()) {
+				if (pokemon.activeTurns < 9) {
+					let stats: BoostID[] = [];
+					const boost: SparseBoostsTable = {};
+					let statPlus: BoostID;
+					for (statPlus in target.boosts) {
+						if (target.boosts[statPlus] < 6) {
+							stats.push(statPlus);
+						}
+					}
+					const randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
+					if (randomStat) boost[randomStat] = -1;
+					stats = [];
+
+					this.boost(boost, target, target);
+				}
+			}
+		},
+		flags: { },
+		name: "Black Smoke",
+		rating: 5,
+		num: -221,
+	},
+	buffet: {
+		onWeather(target, source, effect) {
+			if (target.effectiveWeather() !== effect.id) return;
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				this.heal(target.baseMaxhp / 8);
+			}
+		},
+		onUpdate(pokemon) {
+			if (pokemon.status === 'brn') {
+				this.add('-activate', pokemon, 'ability: Water Veil');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'brn') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Water Veil');
+			}
+			return false;
+		},
+		onModifySpD(spd) {
+			return this.chainModify(1.2);
+		},
+		onModifySpe(spe, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) || pokemon.volatiles['lureball']) {
+				return this.chainModify(2);
+			}
+		},
+		onEnd(pokemon) {
+			if (pokemon.getItem().name === 'Lure Ball') {
+				pokemon.useItem();
+			}
+		},
+		flags: { },
+		name: "Buffet",
+		rating: 5,
+		num: -222,
+	},
+	screaming: {
+		// Implemented in sim/pokemon.js:Pokemon#setStatus
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if(move.flags['sound']) {
+				target.addVolatile('confusion', source);
+				const r = this.random(100);
+				if (r < 15) {
+					target.addVolatile('flinch');
+				}
+			}
+		},
+		flags: { },
+		name: "Screaming",
+		rating: 2.5,
+		num: -223,
+	},
+	ironpalm: {
+		// Implemented in sim/pokemon.js:Pokemon#setStatus
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if(move.flags['palm']) {
+				const r = this.random(100);
+				if (r < 30) {
+					target.addVolatile('flinch');
+				}
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['palm']) {
+				this.debug('Iron Palm boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		flags: { },
+		name: "Iron Palm",
+		rating: 2.5,
+		num: -224,
+	},
+	burningskin: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Fire';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: { },
+		name: "Burning Skin",
+		rating: 4,
+		num: -225,
+	},
+	poisonplot: {
+		onAnyAfterSetStatus(status, target, source, effect) {
+			if (source.baseSpecies.name !== "Pecharunt") return;
+			if (source !== this.effectState.target || target === source || effect.effectType !== 'Move') return;
+			if (status.id === 'psn' || status.id === 'tox') {
+				target.addVolatile('confusion');
+				this.boost({ spa: -1 }, target, source, null, true, false);
+				this.boost({ atk: -1 }, target, source, null, true, false);
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1 },
+		name: "Poison Plot",
+		rating: 3,
+		num: -226,
 	},
 };
