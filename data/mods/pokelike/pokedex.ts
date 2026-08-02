@@ -483,7 +483,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	pikachupopstar: {
 		inherit: true,
-		abilities: { 0: "Pixilate-Only STAB",},
+		abilities: { 0: "Pixilate-Only STAB" },
 	},
 	solgaleo: {
 		inherit: true,
@@ -495,7 +495,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	braviaryhisui: {
 		inherit: true,
-		abilities: { 0: "Braviary Hisui-Fusion",},
+		abilities: { 0: "Braviary Hisui-Fusion" },
 	},
 	haxorus: {
 		inherit: true,
