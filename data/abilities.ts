@@ -5062,9 +5062,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	stalwart: {
 		onModifyMovePriority: 1,
-		onModifyMove(move) {
+		onModifyMove(move, pokemon, target) {
 			// most of the implementation is in Battle#getTarget
-			if (move.target === 'scripted') {
+			if (target?.volatiles['followme'] || target?.volatiles['ragepowder'] || target?.volatiles['spotlight'] ||
+				target?.volatiles['swagger'] || (target?.ability === 'stormdrain' && move.type === 'Water') ||
+				(target?.ability === 'lightningrod' && move.type === 'Electric') || target?.ability === 'lingeringaroma') {
 				move.basePower *= 1.5;
 			}
 			move.tracksTarget = move.target !== 'scripted';
