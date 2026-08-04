@@ -9015,4 +9015,25 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -226,
 	},
+	dobleaura: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			return this.chainModify(1.3);
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, pokemon) {
+			return this.chainModify(1.3);
+		},
+		onModifySpePriority: 5,
+		onModifySpe(spe, pokemon) {
+			const action = this.queue.willMove(pokemon);
+			if(action && this.dex.moves.get(action.move).category == 'Status') {
+				return this.chainModify(1.3);
+			}
+		},
+		flags: { },
+		name: "Double Aura",
+		rating: 4,
+		num: -227,
+	},
 };
