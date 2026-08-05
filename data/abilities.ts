@@ -973,17 +973,42 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 219,
 	},
 	defeatist: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, pokemon) {
+		onModifyMove(move, pokemon, target) {
 			if (pokemon.hp <= pokemon.maxhp / 2) {
-				return this.chainModify(0.5);
+				move.recoil = [1, 4];
 			}
 		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
-				return this.chainModify(0.5);
+		onStart(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && !pokemon.volatiles['defeatist']) {
+				pokemon.addVolatile('defeatist');
 			}
+			if (pokemon.hp > pokemon.maxhp / 2 && pokemon.volatiles['defeatist']) {
+				pokemon.removeVolatile('defeatist');
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && !pokemon.volatiles['defeatist']) {
+				pokemon.addVolatile('defeatist');
+			}
+			if (pokemon.hp > pokemon.maxhp / 2 && pokemon.volatiles['defeatist']) {
+				pokemon.removeVolatile('defeatist');
+			}
+			if (pokemon.volatiles['defeatist']) {
+				pokemon.volatiles['defeatist'].turns++;
+			}
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (pokemon.volatiles['defeatist']?.turns >= 3) {
+				pokemon.volatiles['defeatist'].turns = 0;
+				this.add('-activate', pokemon, 'ability: Defeatist');
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		condition: {
+			onStart() {
+				this.effectState.turns = 1;
+			},
 		},
 		flags: { },
 		name: "Defeatist",
