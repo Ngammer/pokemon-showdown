@@ -2663,6 +2663,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyType(move, pokemon) {
 			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
 				move.type = 'Water';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4506, 4096]);
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.typeChangerBoosted === this.effect) {
+				if (this.randomChance(2, 10)) {
+					target.addVolatile('confusion', source);
+				}
 			}
 		},
 		flags: { },
