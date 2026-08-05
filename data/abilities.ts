@@ -6296,17 +6296,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			if (pokemon.hp <= pokemon.maxhp / 2 && !['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
 				pokemon.addVolatile('zenmode');
-			} else if (pokemon.hp > pokemon.maxhp / 2 && ['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
-				pokemon.addVolatile('zenmode'); // in case of base Darmanitan-Zen
-				pokemon.removeVolatile('zenmode');
-			}
-		},
-		onEnd(pokemon) {
-			if (!pokemon.volatiles['zenmode'] || !pokemon.hp) return;
-			pokemon.transformed = false;
-			delete pokemon.volatiles['zenmode'];
-			if (pokemon.species.baseSpecies === 'Darmanitan' && pokemon.species.battleOnly) {
-				pokemon.formeChange(pokemon.species.battleOnly as string, this.effect, false, '0', '[silent]');
 			}
 		},
 		condition: {
@@ -9027,7 +9016,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifySpePriority: 5,
 		onModifySpe(spe, pokemon) {
 			const action = this.queue.willMove(pokemon);
-			if(action && this.dex.moves.get(action.move).category == 'Status') {
+			if (action && this.dex.moves.get(action.move).category === 'Status') {
 				return this.chainModify(1.3);
 			}
 		},
