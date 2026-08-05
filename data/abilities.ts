@@ -9033,35 +9033,28 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		onAnyModifyTypePriority: -1,
+		onModifyTypePriority: -1,
 		onAnyModifyType(move, pokemon) {
 			if (move.type === 'Water' && (this.activeMove?.isMax) &&
-			!(move.isZ && move.category !== 'Status')) {
-			move.type = 'Poison';
-			move.typeChangerBoosted = this.effect;
+				!(move.isZ && move.category !== 'Status')) {
+				move.type = 'Poison';
 			}
 		},
 		flags: { },
 		name: "Toxic Veil",
 		rating: 1.5,
-		num: 38,
+		num: -228,
 	},
 	snowplow: {
 		flags: { },
 		name: "Snow Plow",
 		onModifyPriority(priority, source, target, move) {
-			if (['snowscape'].includes(source.effectiveWeather()) || source.volatiles['moonball']) {
+			if (['snowscape'].includes(source.effectiveWeather())) {
 				return priority + 1;
 			}
 		},
-		onEnd(pokemon) {
-			if (pokemon.getItem().name === 'Dream Ball') {
-				pokemon.useItem();
-			}
-		},
-		// Implemented in statuses.js
 		rating: 1.5,
-		num: 48,
+		num: -229,
 	},
 	putrefactor: {
 		onSourceDamagingHit(damage, target, source, move) {
@@ -9085,6 +9078,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Putrefactor",
 		rating: 1.5,
-		num: 52,
+		num: -230,
 	},
 };
