@@ -23833,4 +23833,60 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fighting",
 		contestType: "Beautiful",
 	},
+	darumaritual: {
+		num: -145,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Daruma Ritual",
+		pp: 5,
+		priority: 0,
+		flags: { snatch: 1, metronome: 1, sound: 1, dance: 1 },
+		onHit(target) {
+			if (target.hp >= target.maxhp / 2 && target.baseSpecies.baseSpecies === 'Darmanitan' &&
+				!['Zen', 'Galar-Zen'].includes(target.species.forme) && target.ability === 'zenmode') {
+				this.directDamage(target.maxhp / 2 + 1);
+			}
+			if (['Galar-Zen'].includes(target.species.forme)) {
+				this.boost({ atk: 1, def: 2 }, target);
+			} else if (['Zen'].includes(target.species.forme)) {
+				this.boost({ spa: 1, spd: 2 }, target);
+			}
+		},
+		condition: {
+			onStart(pokemon, source, effect) {
+				this.add('-start', pokemon, 'Daruma Ritual');
+			},
+			onRestart(pokemon, source, effect) {
+				this.add('-start', pokemon, 'Daruma Ritual');
+			},
+			onBasePowerPriority: 9,
+			onBasePower(basePower, attacker, defender, move) {
+				if ((move.type === 'Fire' && attacker.species.id === 'darmanitangalarzen') ||
+					(move.type === 'Psychic' && attacker.species.id === 'darmanitanzen')) {
+					this.debug('darumaritual boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onMoveAborted(pokemon, target, move) {
+				if ((move.type === 'Fire' && pokemon.species.id === 'darmanitangalarzen') ||
+					(move.type === 'Psychic' && pokemon.species.id === 'darmanitanzen') && move.id !== 'darumaritual') {
+					pokemon.removeVolatile('darumaritual');
+				}
+			},
+			onAfterMove(pokemon, target, move) {
+				if ((move.type === 'Fire' && pokemon.species.id === 'darmanitangalarzen') ||
+					(move.type === 'Psychic' && pokemon.species.id === 'darmanitanzen') && move.id !== 'darumaritual') {
+					pokemon.removeVolatile('darumaritual');
+				}
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Daruma Ritual', '[silent]');
+			},
+		},
+		target: "self",
+		type: "Fire",
+		zMove: { effect: 'heal' },
+		contestType: "Cute",
+	},
 };
