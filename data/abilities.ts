@@ -4253,6 +4253,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const ability = target.getAbility();
 			if (ability.flags['noreceiver'] || ability.id === 'noability') return;
 			this.effectState.target.setAbility(ability, target);
+			this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, this.effectState.target);
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1 },
 		name: "Receiver",
