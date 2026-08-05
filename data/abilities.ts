@@ -9025,4 +9025,66 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -227,
 	},
+	toxicveil: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(2, 10)) {
+					source.trySetStatus('tox', target);
+				}
+			}
+		},
+		onAnyModifyTypePriority: -1,
+		onAnyModifyType(move, pokemon) {
+			if (move.type === 'Water' && (this.activeMove?.isMax) &&
+			!(move.isZ && move.category !== 'Status')) {
+			move.type = 'Poison';
+			move.typeChangerBoosted = this.effect;
+			}
+		},
+		flags: { },
+		name: "Toxic Veil",
+		rating: 1.5,
+		num: 38,
+	},
+	snowplow: {
+		flags: { },
+		name: "Snow Plow",
+		onModifyPriority(priority, source, target, move) {
+			if (['snowscape'].includes(source.effectiveWeather()) || source.volatiles['moonball']) {
+				return priority + 1;
+			}
+		},
+		onEnd(pokemon) {
+			if (pokemon.getItem().name === 'Dream Ball') {
+				pokemon.useItem();
+			}
+		},
+		// Implemented in statuses.js
+		rating: 1.5,
+		num: 48,
+	},
+	putrefactor: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (move.type === 'Dark') {
+				target.addVolatile('putrefactor');
+			}
+		},
+		condition: {
+			duration: 8,
+			onEnd(target) {
+				this.add('-start', target, 'putrefactor');
+				target.faint();
+			},
+			onResidualOrder: 24,
+			onResidual(pokemon) {
+				const duration = pokemon.volatiles['putrefactor'].duration;
+				this.add('-start', pokemon, `putrefactor${duration}`);
+			},
+		},
+		flags: { },
+		name: "Putrefactor",
+		rating: 1.5,
+		num: 52,
+	},
 };
