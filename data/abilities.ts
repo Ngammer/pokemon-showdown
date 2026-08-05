@@ -5199,6 +5199,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
+		onSourceHit(target, source, move) {
+			if (move.type === 'Steel' && move.category === 'Physical') {
+				this.boost({ atk: 1 });
+			} else if (move.type === 'Steel' && move.category === 'Special') {
+				this.boost({ spa: 1 });
+			} if (move.type === 'Steel' && move.category === 'Status') {
+				this.boost({ def: 1 });
+			}
+		},
 		flags: { },
 		name: "Steelworker",
 		rating: 3.5,
