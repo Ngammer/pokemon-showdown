@@ -6571,7 +6571,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2647,
 		gen: 9,
-
 	},
 	scraftinite: {
 		name: "Scraftinite",
@@ -10242,5 +10241,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -113,
 		gen: 6,
+	},
+	garbodorite: {
+		name: "Garbodorite",
+		spritenum: 511,
+		megaStone: { "Garbodor": "Garbodor-Mega" },
+		itemUser: ["Garbodor"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -114,
+		gen: 9,
 	},
 };
