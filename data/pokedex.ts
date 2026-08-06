@@ -18071,6 +18071,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Bug"],
 		canGigantamax: "G-Max Centiferno",
 	},
+	centiskorchmega: {
+		num: 851,
+		name: "Centiskorch-Mega",
+		baseSpecies: "Centiskorch",
+		forme: "Mega",
+		types: ["Fire", "Bug"],
+		baseStats: { hp: 100, atk: 125, def: 100, spa: 100, spd: 100, spe: 100 },
+		abilities: { 0: "Hundred Legs" },
+		heightm: 3, // cambiar
+		weightkg: 120, // cambiar
+		color: "Red",
+		eggGroups: ["Bug"],
+		requiredItem: "Centiskorite",
+	},
 	centiskorchgmax: {
 		num: 851,
 		name: "Centiskorch-Gmax",
@@ -18221,6 +18235,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Fairy"],
 		canGigantamax: "G-Max Smite",
 	},
+	hatterenemega: {
+		num: 858,
+		name: "Hatterene-Mega",
+		baseSpecies: "Hatterene",
+		forme: "Mega",
+		types: ["Psychic", "Fairy"],
+		gender: "F",
+		baseStats: { hp: 57, atk: 110, def: 125, spa: 166, spd: 133, spe: 29 },
+		abilities: { 0: "Magic Bounce" },
+		heightm: 2.1, // cambiar
+		weightkg: 5.1, // cambiar
+		color: "Pink",
+		eggGroups: ["Fairy"],
+		requiredItem: "Hatterenite",
+	},
 	hatterenegmax: {
 		num: 858,
 		name: "Hatterene-Gmax",
@@ -18279,6 +18308,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 42,
 		eggGroups: ["Fairy", "Human-Like"],
 		canGigantamax: "G-Max Snooze",
+	},
+	grimmsnarlmega: {
+		num: 861,
+		name: "Grimmsnarl-Mega",
+		baseSpecies: "Grimmsnarl",
+		forme: "Mega",
+		types: ["Dark", "Fairy"],
+		gender: "M",
+		baseStats: { hp: 95, atk: 153, def: 77, spa: 100, spd: 95, spe: 100 },
+		abilities: { 0: "Fur Coat" },
+		heightm: 1.5, // cambiar
+		weightkg: 61, // cambiar
+		color: "Purple",
+		eggGroups: ["Fairy", "Human-Like"],
+		requiredItem: "Grimmsnarlite",
 	},
 	grimmsnarlgmax: {
 		num: 861,
@@ -18530,6 +18574,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Flower Sweet",
 		gen: 9,
 	},
+	alcremiemega: {
+		num: 869,
+		name: "Alcremie-Mega",
+		baseSpecies: "Alcremie",
+		forme: "Mega",
+		types: ["Fairy"],
+		gender: "F",
+		baseStats: { hp: 65, atk: 108, def: 110, spa: 137, spd: 141, spe: 34 },
+		abilities: { 0: "Protean" },
+		heightm: 0.3, // cambiar
+		weightkg: 0.5, // cambiar
+		color: "Yellow",
+		eggGroups: ["Fairy", "Amorphous"],
+		requiredItem: "Alcremite",
+	},
 	alcremiegmax: {
 		num: 869,
 		name: "Alcremie-Gmax",
@@ -18765,6 +18824,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 34,
 		eggGroups: ["Field", "Mineral"],
 		canGigantamax: "G-Max Steelsurge",
+	},
+	copperajahmega: {
+		num: 879,
+		name: "Copperajah-Mega",
+		baseSpecies: "Copperajah",
+		forme: "Mega",
+		types: ["Steel"],
+		baseStats: { hp: 122, atk: 163, def: 104, spa: 92, spd: 104, spe: 15 },
+		abilities: { 0: "Earth Eater" },
+		heightm: 3, // cambiar
+		weightkg: 650, // cambiar
+		color: "Green",
+		eggGroups: ["Field", "Mineral"],
+		requiredItem: "Copperajite",
 	},
 	copperajahgmax: {
 		num: 879,
@@ -19067,6 +19140,36 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoCondition: "Defeat the Rapid Strike Tower",
 		eggGroups: ["Undiscovered"],
 		canGigantamax: "G-Max Rapid Flow",
+	},
+	urshifusinglestrikemega: {
+		num: 892,
+		name: "Urshifu-Single-Strike-Mega",
+		baseSpecies: "Urshifu",
+		forme: "Single-Strike-Mega",
+		types: ["Fighting", "Dark"],
+		genderRatio: { M: 0.875, F: 0.125 },
+		baseStats: { hp: 100, atk: 150, def: 120, spa: 113, spd: 80, spe: 117 },
+		abilities: { 0: "Unseen Fist" },
+		heightm: 1.9, // cambiar
+		weightkg: 105, // cambiar
+		color: "Gray",
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Urshifite",
+	},
+	urshifurapidstrikemega: {
+		num: 892,
+		name: "Urshifu-Rapid-Strike-Mega",
+		baseSpecies: "Urshifu",
+		forme: "Rapid-Strike-Mega",
+		types: ["Fighting", "Water"],
+		genderRatio: { M: 0.875, F: 0.125 },
+		baseStats: { hp: 100, atk: 150, def: 120, spa: 113, spd: 80, spe: 117 },
+		abilities: { 0: "Unseen Fist" },
+		heightm: 1.9, // cambiar
+		weightkg: 105, // cambiar
+		color: "Gray",
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Urshifite",
 	},
 	urshifugmax: {
 		num: 892,
