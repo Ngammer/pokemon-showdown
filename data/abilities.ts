@@ -9332,7 +9332,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Electric Rush",
 		onModifyPriority(priority, source, target, move) {
-			if (['electricterrain'].includes(source.effectiveWeather())) {
+			if (this.field.isTerrain('grassyterrain')) {
 				return priority + 1;
 			}
 		},
@@ -9356,10 +9356,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onResidualOrder: 29,
 		onResidual(pokemon) {
-				if (pokemon.volatiles['berryfactory']?.turns >= 2 && pokemon.getItem().isBerry) {
+				if (pokemon.volatiles['berryfactory']?.turns >= 2) {
 					pokemon.volatiles['berryfactory'].turns = 0;
 					this.add('-activate', pokemon, 'ability: Berry Factory');
-					this.singleEvent('Eat', pokemon.getItem(), pokemon.itemState, pokemon);
+					const items = this.dex.items.all().filter(item => (
+					(!item.isNonstandard || item.isNonstandard === 'Unobtainable') &&
+					item.isBerry));
+					let randomBerry = '';
+					if (items.length) {
+						items.sort((a, b) => a.num - b.num);
+						randomBerry = this.sample(items).id;
+					}
+					this.singleEvent('Eat', this.dex.items.get(randomBerry), pokemon.itemState, pokemon);
 				}
 			}
 		},

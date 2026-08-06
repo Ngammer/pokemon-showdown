@@ -23979,7 +23979,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Physical",
 		name: "Suction Wrench",
 		target: "normal",
-		type: "Dark",
+		type: "Fight",
 		contestType: "Clever",
 	},
 };
