@@ -9137,7 +9137,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 669,
 		gen: 6,
-
 	},
 	ultraball: {
 		name: "Ultra Ball",
@@ -10262,5 +10261,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -115,
 		gen: 9,
+	},
+	rillaboomite: {
+		name: "Rillaboomite",
+		spritenum: 607,
+		megaStone: { "Rillaboom": "Rillaboom-Mega" },
+		itemUser: ["Rillaboom"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -116,
+		gen: 6,
 	},
 };
