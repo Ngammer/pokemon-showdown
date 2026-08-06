@@ -17144,7 +17144,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Grass"],
 		baseStats: { hp: 100, atk: 145, def: 115, spa: 75, spd: 100, spe: 100 },
 		abilities: { 0: "Rhythmic" },
-		heightm: 2.1,
+		heightm: 2.1, // cambiar
 		weightkg: 90, // cambiar
 		color: "Green",
 		eggGroups: ["Field", "Grass"],
@@ -17208,6 +17208,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 35,
 		eggGroups: ["Field", "Human-Like"],
 		canGigantamax: "G-Max Fireball",
+	},
+	cinderacemega: {
+		num: 815,
+		name: "Cinderace-Mega",
+		baseSpecies: "Cinderace",
+		forme: "Mega",
+		types: ["Fire"],
+		baseStats: { hp: 80, atk: 149, def: 85, spa: 95, spd: 85, spe: 141 },
+		abilities: { 0: "Rhythmic" },
+		heightm: 1.4, // cambiar
+		weightkg: 33, // cambiar
+		color: "White",
+		eggGroups: ["Field", "Human-Like"],
+		requiredItem: "Cinderacite",
 	},
 	cinderacegmax: {
 		num: 815,
