@@ -89365,6 +89365,7 @@ sylveon: {
 			magiccoat: ["9T"],
 			metalsound: ["9L20", "9L45"],
 			multiattack: ["9L0", "9L1", "7S0"],
+			multiblast: ["9L0", "9L1", "7S0"],
 			outrage: ["9M", "9T"],
 			partingshot: ["9L60", "9L85", "7S0"],
 			payback: ["9M", "9M"],
