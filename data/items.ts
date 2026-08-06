@@ -1392,7 +1392,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2644,
 		gen: 9,
-
 	},
 	crackedpot: {
 		name: "Cracked Pot",
@@ -10251,6 +10250,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},
 		num: -114,
+		gen: 9,
+	},
+	melmetalite: {
+		name: "Melmetalite",
+		spritenum: 507,
+		megaStone: { "Melmetal": "Melmetal-Mega" },
+		itemUser: ["Melmetal"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -115,
 		gen: 9,
 	},
 };
