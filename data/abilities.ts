@@ -9353,7 +9353,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		condition: {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
-				if (pokemon.volatiles['berryfactory']?.turns >= 2) {
+				if (pokemon.volatiles['berryfactory']?.turns >= 1) {
 					pokemon.volatiles['berryfactory'].turns = 0;
 					this.add('-activate', pokemon, 'ability: Berry Factory');
 					const items = this.dex.items.all().filter(item => (
