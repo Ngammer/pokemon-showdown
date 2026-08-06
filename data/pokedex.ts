@@ -11426,7 +11426,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 107.3, // cambiar
 		color: "Green",
 		eggGroups: ["Mineral"],
-		requiredItem: "Garbodorite X",
+		requiredItem: "Garbodorite",
 	},
 	garbodorgmax: {
 		num: 569,
@@ -17061,6 +17061,21 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 		canGigantamax: "G-Max Meltdown",
 	},
+	melmetalmega: {
+		num: 809,
+		name: "Melmetal-Mega",
+		baseSpecies: "Melmetal",
+		forme: "Mega",
+		types: ["Steel"],
+		baseStats: { hp: 135, atk: 173, def: 173, spa: 54, spd: 85, spe: 80 },
+		abilities: { 0: "Iron Fist" },
+		heightm: 2.5, // cambiar
+		weightkg: 800, // cambiar
+		color: "Gray",
+		tags: ["Mythical"],
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Melmetalite",
+	},
 	melmetalgmax: {
 		num: 809,
 		name: "Melmetal-Gmax",
@@ -17120,6 +17135,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 35,
 		eggGroups: ["Field", "Grass"],
 		canGigantamax: "G-Max Drum Solo",
+	},
+	rillaboommega: {
+		num: 812,
+		name: "Rillaboom-Mega",
+		baseSpecies: "Rillaboom",
+		forme: "Mega",
+		types: ["Steel"],
+		baseStats: { hp: 100, atk: 145, def: 115, spa: 75, spd: 100, spe: 100 },
+		abilities: { 0: "Rhythmic" },
+		heightm: 2.1,
+		weightkg: 90, // cambiar
+		color: "Green",
+		eggGroups: ["Field", "Grass"],
+		requiredItem: "Rillaboomite",
 	},
 	rillaboomgmax: {
 		num: 812,
