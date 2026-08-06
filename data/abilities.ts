@@ -2089,7 +2089,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	hungerswitch: {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
-			var changeForme = false;
+			let changeForme = false;
 			if (pokemon.species.baseSpecies !== 'Morpeko' || pokemon.terastallized) return;
 			const targetForme = pokemon.species.name === 'Morpeko' ? 'Morpeko-Hangry' : 'Morpeko';
 			pokemon.formeChange(targetForme);
@@ -9277,21 +9277,21 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onStart() {
 				this.effectState.turns = 0;
 			},
-			onModifyAtk(atk, pokemon) {	
+			onModifyAtk(atk, pokemon) {
 				return this.chainModify(1 + 0.05 * this.effectState.turns);
 			},
-			onModifyDef(def, pokemon) {	
+			onModifyDef(def, pokemon) {
 				return this.chainModify(1 + 0.05 * this.effectState.turns);
 			},
-			onModifySpA(spa, pokemon) {	
+			onModifySpA(spa, pokemon) {
 				return this.chainModify(1 + 0.05 * this.effectState.turns);
 			},
-			onModifySpD(spd, pokemon) {	
+			onModifySpD(spd, pokemon) {
 				return this.chainModify(1 + 0.05 * this.effectState.turns);
 			},
-			onModifySpe(spe, pokemon) {	
+			onModifySpe(spe, pokemon) {
 				return this.chainModify(1 + 0.05 * this.effectState.turns);
-			}
+			},
 		},
 		flags: { },
 		name: "Rhythmic",
