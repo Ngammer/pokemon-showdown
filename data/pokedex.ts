@@ -17446,6 +17446,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Bug"],
 		canGigantamax: "G-Max Gravitas",
 	},
+	orbeetlemega: {
+		num: 826,
+		name: "Orbeetle-Mega",
+		baseSpecies: "Orbeetle",
+		forme: "Mega",
+		types: ["Bug", "Psychic"],
+		baseStats: { hp: 60, atk: 75, def: 140, spa: 120, spd: 150, spe: 60 },
+		abilities: { 0: "Strange Entry" },
+		heightm: 0.4, // cambiar
+		weightkg: 40.8, // cambiar
+		color: "Red",
+		eggGroups: ["Bug"],
+		requiredItem: "Orbeetlite",
+	},
 	orbeetlegmax: {
 		num: 826,
 		name: "Orbeetle-Gmax",
@@ -17562,6 +17576,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Monster", "Water 1"],
 		canGigantamax: "G-Max Stonesurge",
 	},
+	drednawmega: {
+		num: 834,
+		name: "Drednaw-Mega",
+		baseSpecies: "Drednaw",
+		forme: "Mega",
+		types: ["Water", "Rock"],
+		baseStats: { hp: 90, atk: 155, def: 120, spa: 48, spd: 93, spe: 79 },
+		abilities: { 0: "Solid Rock" },
+		heightm: 1, // cambiar
+		weightkg: 115.5, // cambiar
+		color: "Green",
+		eggGroups: ["Monster", "Water 1"],
+		requiredItem: "Drednawite",
+	},
 	drednawgmax: {
 		num: 834,
 		name: "Drednaw-Gmax",
@@ -17642,6 +17670,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 		canGigantamax: "G-Max Volcalith",
 	},
+	coalossalmega: {
+		num: 839,
+		name: "Coalossal-Mega",
+		baseSpecies: "Coalossal",
+		forme: "Mega",
+		types: ["Rock", "Fire"],
+		baseStats: { hp: 110, atk: 130, def: 125, spa: 130, spd: 100, spe: 55 },
+		abilities: { 0: "Steam Engine" },
+		heightm: 2.8, // cambiar
+		weightkg: 310.5, // cambiar
+		color: "Black",
+		eggGroups: ["Mineral"],
+		requiredItem: "Coalossite",
+	},
 	coalossalgmax: {
 		num: 839,
 		name: "Coalossal-Gmax",
@@ -17714,6 +17756,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Grass", "Dragon"],
 		canGigantamax: "G-Max Sweetness",
 	},
+	appletunmega: {
+		num: 842,
+		name: "Appletun-Mega",
+		baseSpecies: "Appletun",
+		forme: "Mega",
+		types: ["Grass", "Dragon"],
+		baseStats: { hp: 150, atk: 95, def: 110, spa: 145, spd: 110, spe: 30 },
+		abilities: { 0: "Berry Factory" },
+		heightm: 0.4, // cambiar
+		weightkg: 13, // cambiar
+		color: "Green",
+		eggGroups: ["Grass", "Dragon"],
+		requiredItem: "Appletunite",
+	},
 	appletungmax: {
 		num: 842,
 		name: "Appletun-Gmax",
@@ -17754,6 +17810,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 36,
 		eggGroups: ["Field", "Dragon"],
 		canGigantamax: "G-Max Sandblast",
+	},
+	sandacondamega: {
+		num: 844,
+		name: "Sandaconda-Mega",
+		baseSpecies: "Sandaconda",
+		forme: "Mega",
+		types: ["Ground"],
+		baseStats: { hp: 72, atk: 75, def: 135, spa: 137, spd: 80, spe: 111 },
+		abilities: { 0: "Sand Stream" },
+		heightm: 3.8, // cambiar
+		weightkg: 65.5, // cambiar
+		color: "Green",
+		eggGroups: ["Field", "Dragon"],
+		requiredItem: "Sandacondite",
 	},
 	sandacondagmax: {
 		num: 844,
