@@ -2090,7 +2090,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
 			let changeForme = false;
-			if (pokemon.species.baseSpecies !== 'Morpeko' || pokemon.terastallized || (pokemon.ateBerry && pokemon.species.name === 'Morpeko')) return;
+			if (pokemon.species.baseSpecies !== 'Morpeko' || pokemon.terastallized ||
+				(pokemon.ateBerry && pokemon.species.name === 'Morpeko')) return;
 			const targetForme = pokemon.species.name === 'Morpeko' ? 'Morpeko-Hangry' : 'Morpeko';
 			pokemon.formeChange(targetForme);
 			changeForme = true;
@@ -9351,14 +9352,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		condition: {
-		onResidualOrder: 29,
-		onResidual(pokemon) {
+			onStart() {
+				this.effectState.turns = 0;
+			},
+			onResidualOrder: 29,
+			onResidual(pokemon) {
 				if (pokemon.volatiles['berryfactory']?.turns >= 2) {
 					pokemon.volatiles['berryfactory'].turns = 0;
 					this.add('-activate', pokemon, 'ability: Berry Factory');
 					const items = this.dex.items.all().filter(item => (
-					(!item.isNonstandard || item.isNonstandard === 'Unobtainable') &&
-					item.isBerry));
+						(!item.isNonstandard || item.isNonstandard === 'Unobtainable') &&
+						item.isBerry));
 					let randomBerry = '';
 					if (items.length) {
 						items.sort((a, b) => a.num - b.num);
