@@ -17216,7 +17216,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega",
 		types: ["Fire"],
 		baseStats: { hp: 80, atk: 149, def: 85, spa: 95, spd: 85, spe: 141 },
-		abilities: { 0: "Rhythmic" },
+		abilities: { 0: "Libero" },
 		heightm: 1.4, // cambiar
 		weightkg: 33, // cambiar
 		color: "White",
@@ -17281,6 +17281,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 35,
 		eggGroups: ["Water 1", "Field"],
 		canGigantamax: "G-Max Hydrosnipe",
+	},
+	inteleonmega: {
+		num: 818,
+		name: "Inteleon-Mega",
+		baseSpecies: "Inteleon",
+		forme: "Mega",
+		types: ["Water"],
+		baseStats: { hp: 70, atk: 135, def: 100, spa: 177, spd: 103, spe: 50 },
+		abilities: { 0: "Accurate Shot" },
+		heightm: 1.9, // cambiar
+		weightkg: 45.2, // cambiar
+		color: "Blue",
+		eggGroups: ["Water 1", "Field"],
+		requiredItem: "Inteleonite",
 	},
 	inteleongmax: {
 		num: 818,
@@ -17362,6 +17376,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 38,
 		eggGroups: ["Flying"],
 		canGigantamax: "G-Max Wind Rage",
+	},
+	corviknightmega: {
+		num: 823,
+		name: "Corviknight-Mega",
+		baseSpecies: "Corviknight",
+		forme: "Mega",
+		types: ["Flying", "Steel"],
+		baseStats: { hp: 98, atk: 53, def: 125, spa: 137, spd: 105, spe: 87 },
+		abilities: { 0: "Mirror Armor" },
+		heightm: 2.2, // cambiar
+		weightkg: 75, // cambiar
+		color: "Purple",
+		eggGroups: ["Flying"],
+		requiredItem: "Corviknitite",
 	},
 	corviknightgmax: {
 		num: 823,
