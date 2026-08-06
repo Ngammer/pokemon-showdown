@@ -623,7 +623,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 661,
 		gen: 6,
-
 	},
 	blazikenite: {
 		name: "Blazikenite",
@@ -936,7 +935,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 678,
 		gen: 6,
-
 	},
 	chartiberry: {
 		name: "Charti Berry",
@@ -2864,7 +2862,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 656,
 		gen: 6,
-
 	},
 	ghostgem: {
 		name: "Ghost Gem",
@@ -9250,7 +9247,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 659,
 		gen: 6,
-
 	},
 	victreebelite: {
 		name: "Victreebelite",
@@ -10201,6 +10197,50 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		itemUser: ["Rayquaza", "Registeel", "Castform", "Relicanth", "Tropius"],
 		isPrimalOrb: true,
 		num: -109,
+		gen: 6,
+	},
+	venusauritex: {
+		name: "Venusaurite X",
+		spritenum: 608,
+		megaStone: { "Venusaur": "Venusaur-Mega-X" },
+		itemUser: ["Venusaur"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -110,
+		gen: 6,
+	},
+	charizarditez: {
+		name: "Charizardite Z",
+		spritenum: 586,
+		megaStone: { "Charizard": "Charizard-Mega-Z" },
+		itemUser: ["Charizard"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -111,
+		gen: 6,
+	},
+	blastoisinitex: {
+		name: "Blastoisinite X",
+		spritenum: 583,
+		megaStone: { "Blastoise": "Blastoise-Mega-X" },
+		itemUser: ["Blastoise"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -112,
+		gen: 6,
+	},
+	gengaritex: {
+		name: "Gengarite X",
+		spritenum: 588,
+		megaStone: { "Gengar": "Gengar-Mega-X" },
+		itemUser: ["Gengar"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -113,
 		gen: 6,
 	},
 };
