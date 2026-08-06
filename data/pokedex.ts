@@ -6992,6 +6992,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red", // cambiar
 		eggGroups: ["Fairy", "Amorphous"],
 		requiredItem: "Red Orb",
+		requiredMove: "Weather Ball",
 	},
 	castformrainy: {
 		num: 351,
@@ -7021,6 +7022,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue", // cambiar
 		eggGroups: ["Fairy", "Amorphous"],
 		requiredItem: "Blue Orb",
+		requiredMove: "Weather Ball",
 	},
 	castformsnowy: {
 		num: 351,
@@ -7050,6 +7052,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White", // cambiar
 		eggGroups: ["Fairy", "Amorphous"],
 		requiredItem: "Jade Orb",
+		requiredMove: "Weather Ball",
 	},
 	kecleon: {
 		num: 352,
@@ -7714,6 +7717,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Blue Orb",
+		requiredMove: "Origin Pulse",
 	},
 	groudon: {
 		num: 383,
@@ -7744,6 +7748,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Red Orb",
+		requiredMove: "Precipice Blades",
 	},
 	rayquaza: {
 		num: 384,
@@ -7789,6 +7794,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Jade Orb",
+		requiredMove: "Dragon Ascent",
 	},
 	jirachi: {
 		num: 385,
