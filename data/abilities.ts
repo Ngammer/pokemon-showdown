@@ -2090,7 +2090,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
 			let changeForme = false;
-			if (pokemon.species.baseSpecies !== 'Morpeko' || pokemon.terastallized) return;
+			if (pokemon.species.baseSpecies !== 'Morpeko' || pokemon.terastallized || (pokemon.ateBerry && pokemon.species.name === 'Morpeko')) return;
 			const targetForme = pokemon.species.name === 'Morpeko' ? 'Morpeko-Hangry' : 'Morpeko';
 			pokemon.formeChange(targetForme);
 			changeForme = true;
