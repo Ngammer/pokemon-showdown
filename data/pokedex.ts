@@ -17141,7 +17141,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Rillaboom-Mega",
 		baseSpecies: "Rillaboom",
 		forme: "Mega",
-		types: ["Steel"],
+		types: ["Grass"],
 		baseStats: { hp: 100, atk: 145, def: 115, spa: 75, spd: 100, spe: 100 },
 		abilities: { 0: "Rhythmic" },
 		heightm: 2.1,
