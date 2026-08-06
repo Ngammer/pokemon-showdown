@@ -2064,9 +2064,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	hungerswitch: {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
+			var changeForme = false;
 			if (pokemon.species.baseSpecies !== 'Morpeko' || pokemon.terastallized) return;
 			const targetForme = pokemon.species.name === 'Morpeko' ? 'Morpeko-Hangry' : 'Morpeko';
 			pokemon.formeChange(targetForme);
+			changeForme = true;
+			if (changeForme && pokemon.getItem().onEat) {
+				this.add('-activate', pokemon, 'ability: Hunger Switch');
+				this.singleEvent('Eat', pokemon.getItem(), pokemon.itemState, pokemon);
+			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
 		name: "Hunger Switch",
@@ -4431,6 +4437,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			this.field.setWeather('sandstorm');
 		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		onModifySpD(spd, pokemon) {
+			if (['sandstorm'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
 		flags: { },
 		name: "Sand Spit",
 		rating: 1,
@@ -4450,6 +4464,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			let mod = 1;
 			if (target.hp >= target.maxhp / 2 || (target.hp >= target.maxhp / 4 && this.field.isWeather('sandstorm'))) mod *= 0.75;
 			return this.chainModify(mod);
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
 		},
 		flags: { breakable: 1 },
 		name: "Sand Veil",
@@ -9044,7 +9061,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Toxic Veil",
 		rating: 1.5,
-		num: 38,
+		num: -228,
 	},
 	snowplow: {
 		flags: { },
@@ -9061,7 +9078,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		// Implemented in statuses.js
 		rating: 1.5,
-		num: 48,
+		num: -229,
 	},
 	putrefactor: {
 		onSourceDamagingHit(damage, target, source, move) {
@@ -9085,6 +9102,149 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Putrefactor",
 		rating: 1.5,
-		num: 52,
+		num: -230,
+	},
+	formation: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns < 6) {
+				pokemon.addVolatile('formation');
+			}
+		},
+		condition: {
+			onModifyAtk(atk, pokemon) {
+				if (pokemon.volatiles['formation']) {
+					return this.chainModify(1.25);
+				}
+			},
+			onModifyDef(def, pokemon) {
+				if (pokemon.volatiles['formation']) {
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpA(spa, pokemon) {
+				if (pokemon.volatiles['formation']) {
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpD(spd, pokemon) {
+				if (pokemon.volatiles['formation']) {
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpe(spe, pokemon) {
+				if (pokemon.volatiles['formation']) {
+					return this.chainModify(1.25);
+				}
+			},
+		},
+		flags: { },
+		name: "Formation",
+		rating: 5,
+		num: -231,
+	},
+	spiritofjungle: {
+		onDamagingHit(damage, target, source, move) {
+			this.field.setTerrain('grassyterrain');
+		},
+		onModifyDefPriority: 6,
+		onModifySpe(pokemon) {
+			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.3);
+		},
+		flags: { breakable: 1 },
+		name: "Spirit of Jungle",
+		rating: 3,
+		num: -232,
+	},
+	charming: {
+		onSourceDamagingHit(damage, target, source, move) {
+			const r = this.random(100);
+			if (r < 40) {
+				target.addVolatile('attract');
+			}
+		},
+		flags: { },
+		name: "Charming",
+		rating: 1.5,
+		num: -230,
+	},
+	loveshell: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Love Shell');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					target.addVolatile('attract', pokemon, this.dex.abilities.get('loveshell'));
+				}
+			}
+		},
+		flags: { },
+		name: "Love Shell",
+		rating: 3.5,
+		num: -184,
+	},
+	euphoricmetalhead: {
+		onEffectiveness(typeMod, target, type, move) {
+			if (typeMod > 0 && move.flags['contact']) {
+				return 0;
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Euphoric Metalhead",
+		rating: 3,
+		num: -120,
+	},
+	rhythmic: {
+		onModifyMove(move, pokemon, target) {
+			if (move.category !== "Status" && move.flags['sound']) {
+				if (pokemon.getStat('atk', false, false) > pokemon.getStat('spa', false, false) && move.category === "Special") {
+					move.overrideOffensiveStat = 'atk';
+				// eslint-disable-next-line @stylistic/max-len
+				} else if (pokemon.getStat('spa', false, false) > pokemon.getStat('atk', false, false) && move.category === "Physical") {
+					move.overrideOffensiveStat = 'spa';
+				}
+			}
+		},
+		onStart(pokemon) {
+			pokemon.addVolatile('rhythmic');
+		},
+		onEnd(target) {
+			target.removeVolatile('rhythmic');
+		},
+		onBeforeMove(pokemon, target, move) {
+			if (pokemon.volatiles['rhythmic'] && move.flags['sound']) {
+				pokemon.volatiles['rhythmic'].turns++;
+			}
+		},
+		condition: {
+			onStart() {
+				this.effectState.turns = 0;
+			},
+			onModifyAtk(atk, pokemon) {	
+				return this.chainModify(1 + 0.05 * this.effectState.turns);
+			},
+			onModifyDef(def, pokemon) {	
+				return this.chainModify(1 + 0.05 * this.effectState.turns);
+			},
+			onModifySpA(spa, pokemon) {	
+				return this.chainModify(1 + 0.05 * this.effectState.turns);
+			},
+			onModifySpD(spd, pokemon) {	
+				return this.chainModify(1 + 0.05 * this.effectState.turns);
+			},
+			onModifySpe(spe, pokemon) {	
+				return this.chainModify(1 + 0.05 * this.effectState.turns);
+			}
+		},
+		flags: { },
+		name: "Rhythmic",
+		rating: 3,
+		num: -173,
 	},
 };
