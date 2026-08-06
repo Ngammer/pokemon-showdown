@@ -11414,6 +11414,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 		canGigantamax: "G-Max Malodor",
 	},
+	garbodormega: {
+		num: 569,
+		name: "Garbodor-Mega",
+		baseSpecies: "Garbodor",
+		forme: "Mega",
+		types: ["Poison"],
+		baseStats: { hp: 80, atk: 146, def: 107, spa: 90, spd: 107, spe: 95 },
+		abilities: { 0: "Devourer" },
+		heightm: 1.9, // cambiar
+		weightkg: 107.3, // cambiar
+		color: "Green",
+		eggGroups: ["Mineral"],
+		requiredItem: "Garbodorite X",
+	},
 	garbodorgmax: {
 		num: 569,
 		name: "Garbodor-Gmax",
