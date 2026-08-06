@@ -973,17 +973,42 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 219,
 	},
 	defeatist: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, pokemon) {
+		onModifyMove(move, pokemon, target) {
 			if (pokemon.hp <= pokemon.maxhp / 2) {
-				return this.chainModify(0.5);
+				move.recoil = [1, 4];
 			}
 		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
-				return this.chainModify(0.5);
+		onStart(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && !pokemon.volatiles['defeatist']) {
+				pokemon.addVolatile('defeatist');
 			}
+			if (pokemon.hp > pokemon.maxhp / 2 && pokemon.volatiles['defeatist']) {
+				pokemon.removeVolatile('defeatist');
+			}
+		},
+		onResidual(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && !pokemon.volatiles['defeatist']) {
+				pokemon.addVolatile('defeatist');
+			}
+			if (pokemon.hp > pokemon.maxhp / 2 && pokemon.volatiles['defeatist']) {
+				pokemon.removeVolatile('defeatist');
+			}
+			if (pokemon.volatiles['defeatist']) {
+				pokemon.volatiles['defeatist'].turns++;
+			}
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (pokemon.volatiles['defeatist']?.turns >= 3) {
+				pokemon.volatiles['defeatist'].turns = 0;
+				this.add('-activate', pokemon, 'ability: Defeatist');
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		condition: {
+			onStart() {
+				this.effectState.turns = 1;
+			},
 		},
 		flags: { },
 		name: "Defeatist",
@@ -2644,6 +2669,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyType(move, pokemon) {
 			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
 				move.type = 'Water';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4506, 4096]);
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.typeChangerBoosted === this.effect) {
+				if (this.randomChance(2, 10)) {
+					target.addVolatile('confusion', source);
+				}
 			}
 		},
 		flags: { },
@@ -4222,6 +4259,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const ability = target.getAbility();
 			if (ability.flags['noreceiver'] || ability.id === 'noability') return;
 			this.effectState.target.setAbility(ability, target);
+			this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, this.effectState.target);
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1 },
 		name: "Receiver",
@@ -5178,6 +5216,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
+		onSourceHit(target, source, move) {
+			if (move.type === 'Steel' && move.category === 'Physical') {
+				this.boost({ atk: 1 });
+			} else if (move.type === 'Steel' && move.category === 'Special') {
+				this.boost({ spa: 1 });
+			} if (move.type === 'Steel' && move.category === 'Status') {
+				this.boost({ def: 1 });
+			}
+		},
 		flags: { },
 		name: "Steelworker",
 		rating: 3.5,
@@ -5919,6 +5966,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onModifyMove(move) {
 			move.ignoreAbility = true;
+		},
+		onAnyInvulnerabilityPriority: 1,
+		onAnyInvulnerability(target, source, move) {
+			if (move.type === 'Fire' && (source === this.effectState.target || target === this.effectState.target)) return 0;
+		},
+		onAnyAccuracyPriority: 1,
+		onAnyAccuracy(accuracy, target, source, move) {
+			if (move.type === 'Fire' && (source === this.effectState.target || target === this.effectState.target)) {
+				return true;
+			}
+			return accuracy;
 		},
 		flags: { },
 		name: "Turboblaze",
@@ -9050,12 +9108,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		onAnyModifyTypePriority: -1,
+		onModifyTypePriority: -1,
 		onAnyModifyType(move, pokemon) {
 			if (move.type === 'Water' && (this.activeMove?.isMax) &&
-			!(move.isZ && move.category !== 'Status')) {
-			move.type = 'Poison';
-			move.typeChangerBoosted = this.effect;
+				!(move.isZ && move.category !== 'Status')) {
+				move.type = 'Poison';
 			}
 		},
 		flags: { },
@@ -9067,16 +9124,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Snow Plow",
 		onModifyPriority(priority, source, target, move) {
-			if (['snowscape'].includes(source.effectiveWeather()) || source.volatiles['moonball']) {
+			if (['snowscape'].includes(source.effectiveWeather())) {
 				return priority + 1;
 			}
 		},
-		onEnd(pokemon) {
-			if (pokemon.getItem().name === 'Dream Ball') {
-				pokemon.useItem();
-			}
-		},
-		// Implemented in statuses.js
 		rating: 1.5,
 		num: -229,
 	},

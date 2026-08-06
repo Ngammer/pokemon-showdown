@@ -23889,4 +23889,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { effect: 'heal' },
 		contestType: "Cute",
 	},
+	multiblast: {
+		num: -146,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Multi-Blast",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, powder: 1, pulse: 1,
+			sound: 1, wind: 1, light: 1, beam: 1, darkness: 1, explosion: 1, cosmic: 1, distance: 1 },
+		onModifyType(move, pokemon) {
+			if (pokemon.ignoringItem()) return;
+			move.type = this.runEvent('Memory', pokemon, null, move, 'Normal');
+		},
+
+		target: "normal",
+		type: "Normal",
+		zMove: { basePower: 185 },
+		maxMove: { basePower: 95 },
+		contestType: "Tough",
+	},
 };
