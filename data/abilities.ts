@@ -9351,17 +9351,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		condition: {
-		onStart() {
-			this.effectState.turns = 0;
-		},
-		onResidualOrder: 29,
-		onResidual(pokemon) {
+			onStart() {
+				this.effectState.turns = 0;
+			},
+			onResidualOrder: 29,
+			onResidual(pokemon) {
 				if (pokemon.volatiles['berryfactory']?.turns >= 2 && pokemon.getItem().isBerry) {
 					pokemon.volatiles['berryfactory'].turns = 0;
 					this.add('-activate', pokemon, 'ability: Berry Factory');
 					this.singleEvent('Eat', pokemon.getItem(), pokemon.itemState, pokemon);
 				}
-			}
+			},
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
 		name: "Berry Factory",
