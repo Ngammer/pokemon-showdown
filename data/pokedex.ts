@@ -17954,11 +17954,11 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 		canGigantamax: "G-Max Stun Shock",
 	},
-	toxtricitymega: {
+	toxtricityampedmega: {
 		num: 849,
-		name: "Toxtricity-Mega",
+		name: "Toxtricity-Amped-Mega",
 		baseSpecies: "Toxtricity",
-		forme: "Mega",
+		forme: "Amped-Mega",
 		types: ["Electric", "Poison"],
 		baseStats: { hp: 75, atk: 75, def: 82, spa: 163, spd: 82, spe: 118 },
 		abilities: { 0: "Punk Rock" },
@@ -17973,7 +17973,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 849,
 		name: "Toxtricity-Low-Key-Mega",
 		baseSpecies: "Toxtricity",
-		forme: "Mega",
+		forme: "Low-Key-Mega",
 		types: ["Electric", "Poison"],
 		baseStats: { hp: 75, atk: 75, def: 82, spa: 163, spd: 82, spe: 118 },
 		abilities: { 0: "Punk Rock" },
