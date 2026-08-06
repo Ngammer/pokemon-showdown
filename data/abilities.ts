@@ -9351,9 +9351,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		condition: {
-		onStart() {
-			this.effectState.turns = 0;
-		},
 		onResidualOrder: 29,
 		onResidual(pokemon) {
 				if (pokemon.volatiles['berryfactory']?.turns >= 2) {
