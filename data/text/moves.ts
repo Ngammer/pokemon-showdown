@@ -1627,7 +1627,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	dragoncheer: {
 		name: "Dragon Cheer",
 		desc: "Raises the target's chance for a critical hit by 1 stage, or by 2 stages if the target is Dragon type. Fails if there is no ally adjacent to the user, or if the target already has this effect or the Focus Energy effect. Baton Pass can be used to transfer this effect to an ally. Raises the user's Attack by 1.",
-		shortDesc: "Ally: Crit ratio +1, or +2 is Dragon type. User atk: +1.",
+		shortDesc: "Ally:Crit ratio +1, or +2 is Dragon type. User atk:+1.",
 
 		start: "#focusenergy",
 	},

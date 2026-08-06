@@ -9238,7 +9238,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Love Shell",
 		rating: 3.5,
-		num: -184,
+		num: -231,
 	},
 	euphoricmetalhead: {
 		onEffectiveness(typeMod, target, type, move) {
@@ -9249,7 +9249,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Euphoric Metalhead",
 		rating: 3,
-		num: -120,
+		num: -232,
 	},
 	rhythmic: {
 		onModifyMove(move, pokemon, target) {
@@ -9296,6 +9296,103 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Rhythmic",
 		rating: 3,
-		num: -173,
+		num: -233,
+	},
+	suctionwrench: {
+		onBasePower(basePower, attacker, defender, move) {
+			if (defender.beingCalledBack || defender.switchFlag) {
+				this.debug('Suction Wrench damage boost');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		onBeforeTurn(pokemon) {
+			for (const side of this.sides) {
+				if (side.hasAlly(pokemon)) continue;
+				side.addSideCondition('suctionwrench', pokemon);
+				const data = side.getSideConditionData('suctionwrench');
+				if (!data.sources) {
+					data.sources = [];
+				}
+				data.sources.push(pokemon);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (target?.beingCalledBack || target?.switchFlag) move.accuracy = true;
+		},
+		onTryHit(target, pokemon) {
+			target.side.removeSideCondition('suctionwrench');
+		},
+		flags: { },
+		name: "Suction Wrench",
+		rating: 3,
+		num: -234,
+	},
+	electricrush: {
+		flags: { },
+		name: "Electric Rush",
+		onModifyPriority(priority, source, target, move) {
+			if (['electricterrain'].includes(source.effectiveWeather())) {
+				return priority + 1;
+			}
+		},
+		rating: 1.5,
+		num: -235,
+	},
+	berryfactory: {
+		onStart(pokemon) {
+			pokemon.addVolatile('berryfactory');
+		},
+		onResidualOrder: 1,
+		onResidualSubOrder: 1,
+		onResidual(pokemon) {
+			if (pokemon.volatiles['berryfactory']) {
+				pokemon.volatiles['berryfactory'].turns++;
+			}
+		},
+		condition: {
+		onStart() {
+			this.effectState.turns = 0;
+		},
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+				if (pokemon.volatiles['berryfactory']?.turns >= 2 && pokemon.getItem().isBerry) {
+					pokemon.volatiles['berryfactory'].turns = 0;
+					this.add('-activate', pokemon, 'ability: Berry Factory');
+					this.singleEvent('Eat', pokemon.getItem(), pokemon.itemState, pokemon);
+				}
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
+		name: "Berry Factory",
+		rating: 1,
+		num: -235,
+	},
+	hundredlegs: {
+		onBasePowerPriority: 30,
+		onBasePower(basePower, attacker, defender, move) {
+			const basePowerAfterMultiplier = this.modify(basePower, this.event.modifier);
+			this.debug(`Base Power: ${basePowerAfterMultiplier}`);
+			if (basePowerAfterMultiplier <= 100) {
+				this.debug('Hundred Legs boost');
+				return this.chainModify(1.4);
+			}
+		},
+		flags: { },
+		name: "Hundred Legs",
+		rating: 3.5,
+		num: -236,
+	},
+	accurateshot: {
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['bullet']) {
+				move.willCrit = true;
+				move.accuracy = true;
+			}
+		},
+		flags: { },
+		name: "Accurate Shot",
+		rating: 2,
+		num: -237,
 	},
 };
