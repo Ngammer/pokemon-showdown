@@ -5684,8 +5684,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 				}
 				else if (pokemon.types[0] === 'Dark') {
-					move.infiltrates = true;
-					this.field.removePseudoWeather('symbiosisfield');
+					const target = pokemon.side.foe;
+					if (target.sideConditions['lightscreen'] || target.sideConditions['reflect'] || target.sideConditions['auroraveil']) {
+						move.infiltrates = true;
+					}
 				}
 			},
 			onDamagingHit(damage, target, source, move) {
@@ -6334,6 +6336,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 199,
 	},
 	watercompaction: {
+		onSourceBasePowerPriority: -1,
+		onSourceBasePower(basePower, source, target, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(0.25);
+			}
+		},
 		onDamagingHit(damage, target, source, move) {
 			if (move.type === 'Water') {
 				this.boost({ def: 2 });
