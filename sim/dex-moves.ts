@@ -138,7 +138,7 @@ export interface MoveEventMethods {
 	onBasePower?: CommonHandlers['ModifierSourceMove'];
 
 	onEffectiveness?: (
-		this: Battle, typeMod: number, target: Pokemon | null, type: string, move: ActiveMove, source: Pokemon
+		this: Battle, typeMod: number, target: Pokemon | null, type: string, move: ActiveMove
 	) => number | void;
 	onHit?: CommonHandlers['ResultMove'];
 	onHitField?: CommonHandlers['ResultMove'];

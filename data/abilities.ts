@@ -4431,10 +4431,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.3);
 			}
 		},
-		onEffectiveness(typeMod, target, type, move, source){
-			if(source.item === 'fairymemory' && source.baseSpecies.name === 'Silvally' && this.field.isTerrain('mistyterrain')){
-				if (type === 'Dragon' || type === 'Dark' || type === 'Fighting') return 1;
-			}
+		onEffectiveness(typeMod, target, type, move){
+			const source = this.activePokemon;
+			if(!move || move.category === 'Status') return;
+			if(!source || source.item !== 'fairymemory' && source.baseSpecies.name !== 'Silvally') return;
+			if(!this.field.isTerrain('mistyterrain')) return;
+			if (type === 'Dragon' || type === 'Dark' || type === 'Fighting') return 1;
 		},
 		onModifySpD(spd, pokemon) {
 			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.item === 'groundmemory') || ((['snowscape'].includes(pokemon.effectiveWeather()) && pokemon.item === 'icememory')) && pokemon.baseSpecies.name === 'Silvally') {
