@@ -4365,6 +4365,101 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	rkssystem: {
 		// RKS System's type-changing itself is implemented in statuses.js
+		onStart(target) {
+			target.swordBoost = false;
+			if(target.item === 'grassmemory' && target.species.name === 'Silvally' && this.field.isTerrain('grassyterrain')){
+				this.heal(target.maxhp/4)
+			}
+		},
+		onSourceBasePowerPriority: -1,
+		onSourceBasePower(basePower, source, target, move) {
+			if (target.item === 'steelmemory' && target.species.name === 'Silvally') {
+				this.debug('RKS System debuff');
+				return this.chainModify(0.875);
+			}
+		},
+		onModifySpe(spe, pokemon) {
+			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && pokemon.item === 'watermemory') || 
+			(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.item === 'firememory')) && pokemon.species.name === 'Silvally') {
+				return this.chainModify(1.25);
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (!target.swordBoost && target.item === 'bugmemory' && target.species.name === 'Silvally') {
+				this.debug('RKS System weaken');
+				target.swordBoost = true;
+				return this.chainModify(0.75);
+			}
+		},
+		onModifyCritRatio(critRatio, source, target, move) {
+			if(source.item === 'dragonmemory' && source.species.name === 'Silvally' && move.type === 'Dragon') {
+				return critRatio + 1;
+			}
+		},
+		onModifyPriority(priority, source, target, move) {
+			if (this.field.isTerrain('electricterrain') && source.item === 'electricmemory' && source.species.name === 'Silvally' && move.type === 'Electric') {
+				return priority + 1;
+			}
+			if (move?.category === 'Status' && move.type === 'Normal') {
+				return priority + 1;
+			}
+		},
+		onModifyMove(move, pokemon) {
+			if(pokemon.item === 'ghostmemory' && pokemon.species.name === 'Silvally') {
+				if (!move.ignoreImmunity) move.ignoreImmunity = {};
+				if (move.ignoreImmunity !== true) {
+					move.ignoreImmunity['Ghost'] = true;
+				}
+			}
+			if(pokemon.item === 'darkmemory' && pokemon.species.name === 'Silvally') {
+				move.ignoreDefensive;
+			}
+			if(pokemon.item === 'flyingmemory' && pokemon.species.name === 'Silvally' && move.type === 'Flying'){
+				const activated = false;
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+					'sharproot', 'hail', 'iondeluge', 'oilspill'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !activated) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: RKS System (Flying)', `[of] ${pokemon}`);
+					}
+				}
+			}
+		},
+		onBasePower(basePower, attacker, defender, move){
+			if(attacker.item === 'psychicmemory' && attacker.species.name === 'Silvally' && this.field.isTerrain('psychicterrain') && (move.priority > 0)){
+				this.debug('RKS System boost');
+				return this.chainModify(1.3);
+			}
+		},
+		onEffectiveness(typeMod, target, type, move, source){
+			if(source.item === 'fairymemory' && source.species.name === 'Silvally' && this.field.isTerrain('mistyterrain')){
+				if (type === 'Dragon' || type === 'Dark' || type === 'Fighting') return 1;
+			}
+		},
+		onModifySpD(spd, pokemon) {
+			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.item === 'groundmemory') || ((['snowscape'].includes(pokemon.effectiveWeather()) && pokemon.item === 'icememory')) && pokemon.species.name === 'Silvally') {
+				return this.chainModify(1.25);
+			}
+		},
+		onModifyDamage(damage, source, target, move) {
+			if (move && target.getMoveHitData(move).typeMod > 0 && source.item === 'fightingmemory' && source.species.name === 'Silvally') {
+				return this.chainModify([4506, 4096]);
+			}
+		},
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (!target.hp && target.item === 'rockmemory' && target.species.name === 'Silvally' && !target.swordBoost) {
+				this.add('-ability', target, 'RKS System (Rock)');
+				target.swordBoost = true;
+				return target.hp - 1;
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.randomChance(10, 10) && (target.status === 'psn' || target.status === 'tox') && source.item === 'poisonmemory' && source.species.name === 'Silvally') {
+				this.boost({ spe: -1 }, target, source, null, true, false);
+			}
+		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
 		name: "RKS System",
 		rating: 4,
@@ -9478,7 +9573,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Electric Rush",
 		onModifyPriority(priority, source, target, move) {
-			if (this.field.isTerrain('grassyterrain')) {
+			if (this.field.isTerrain('electricterrain')) {
 				return priority + 1;
 			}
 		},

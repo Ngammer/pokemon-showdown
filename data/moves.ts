@@ -14966,6 +14966,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					}
 					return;
 				}
+				if (target.item === 'psychicmemory' && target.species.name === 'Silvally') {
+					const baseMove = this.dex.moves.get(effect.id);
+					if (baseMove.priority > 0) {
+						this.hint("Psychic Terrain doesn't affect Pokémon.");
+					}
+					return;
+				}
 				this.add('-activate', target, 'move: Psychic Terrain');
 				return null;
 			},
