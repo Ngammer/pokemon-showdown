@@ -5684,6 +5684,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 				}
 				else if (pokemon.types[0] === 'Dark') {
+					move.infiltrates = true;
 					this.field.removePseudoWeather('symbiosisfield');
 				}
 			},
