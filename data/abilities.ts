@@ -31,9 +31,6 @@ Ratings and how they work:
 	ex. Imposter, Shadow Tag
 
 */
-
-import { Pokemon } from '../sim';
-
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	noability: {
 
@@ -5563,11 +5560,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						}
 					}
 					this.field.removePseudoWeather('symbiosisfield');
-				}
-				else if (pokemon.types[0] === 'Electric') {
+				} else if (pokemon.types[0] === 'Electric') {
 					pokemon.addVolatile('Charge');
-				}
-				else if (pokemon.types[0] === 'Grass') {
+				} else if (pokemon.types[0] === 'Grass') {
 					this.heal(pokemon.baseMaxhp / 4);
 				}
 				if (this.effectState.turns > 3) {
@@ -5609,25 +5604,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (attacker.types[0] === 'Water') {
 					attacker.addVolatile('symbiosisweater');
 					(this.dex.conditions.getByID('raindance' as ID) as any).onWeatherModifyDamage
-					.call(this, damage, attacker, defender, move);
+						.call(this, damage, attacker, defender, move);
 					return damage; // fast exit from event
-				}
-				else if (attacker.types[0] === 'Fire') {
+				} else if (attacker.types[0] === 'Fire') {
 					attacker.addVolatile('symbiosisfire');
 					(this.dex.conditions.getByID('sunnyday' as ID) as any).onWeatherModifyDamage
-					.call(this, damage, attacker, defender, move);
+						.call(this, damage, attacker, defender, move);
 					return damage; // fast exit from event
-				}
-				else if (attacker.types[0] === 'Ice') {
+				} else if (attacker.types[0] === 'Ice') {
 					attacker.addVolatile('symbiosisice');
 					(this.dex.conditions.getByID('snowscape' as ID) as any).onWeatherModifyDamage
-					.call(this, damage, attacker, defender, move);
+						.call(this, damage, attacker, defender, move);
 					return damage; // fast exit from event
-				}
-				else if (attacker.types[0] === 'Rock') {
+				} else if (attacker.types[0] === 'Rock') {
 					attacker.addVolatile('symbiosisrock');
 					(this.dex.conditions.getByID('snowscape' as ID) as any).onWeatherModifyDamage
-					.call(this, damage, attacker, defender, move);
+						.call(this, damage, attacker, defender, move);
 					return damage; // fast exit from event
 				}
 			},
@@ -5636,13 +5628,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (attacker.types[0] === 'Fairy') {
 					attacker.addVolatile('symbiosisfairy');
 					(this.dex.conditions.getByID('mistyterrain' as ID) as any).onTerrainModifyDamage
-					.call(this, damage, attacker, defender, move);
+						.call(this, damage, attacker, defender, move);
 					return damage; // fast exit from event
-				}
-				else if (attacker.types[0] === 'Psychic') {
+				} else if (attacker.types[0] === 'Psychic') {
 					attacker.addVolatile('symbiosispsychic');
 					(this.dex.conditions.getByID('mistyterrain' as ID) as any).onTerrainModifyDamage
-					.call(this, damage, attacker, defender, move);
+						.call(this, damage, attacker, defender, move);
 					return damage; // fast exit from event
 				}
 			},
@@ -5654,36 +5645,31 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						move.ignoreImmunity['Dragon'] = true;
 						this.field.removePseudoWeather('symbiosisfield');
 					}
-				}
-				else if (pokemon.types[0] === 'Fighting') {
+				} else if (pokemon.types[0] === 'Fighting') {
 					if (!move.ignoreImmunity) move.ignoreImmunity = {};
 					if (move.ignoreImmunity !== true) {
 						move.ignoreImmunity['Fighting'] = true;
 						this.field.removePseudoWeather('symbiosisfield');
 					}
-				}
-				else if (pokemon.types[0] === 'Normal') {
+				} else if (pokemon.types[0] === 'Normal') {
 					if (!move.ignoreImmunity) move.ignoreImmunity = {};
 					if (move.ignoreImmunity !== true) {
 						move.ignoreImmunity['Normal'] = true;
 						this.field.removePseudoWeather('symbiosisfield');
 					}
-				}
-				else if (pokemon.types[0] === 'Ground') {
+				} else if (pokemon.types[0] === 'Ground') {
 					if (!move.ignoreImmunity) move.ignoreImmunity = {};
 					if (move.ignoreImmunity !== true) {
 						move.ignoreImmunity['Ground'] = true;
 						this.field.removePseudoWeather('symbiosisfield');
 					}
-				}
-				else if (pokemon.types[0] === 'Poison') {
+				} else if (pokemon.types[0] === 'Poison') {
 					if (!move.ignoreImmunity) move.ignoreImmunity = {};
 					if (move.ignoreImmunity !== true) {
 						move.ignoreImmunity['Poison'] = true;
 						this.field.removePseudoWeather('symbiosisfield');
 					}
-				}
-				else if (pokemon.types[0] === 'Dark') {
+				} else if (pokemon.types[0] === 'Dark') {
 					const target = pokemon.side.foe;
 					if (target.sideConditions['lightscreen'] || target.sideConditions['reflect'] || target.sideConditions['auroraveil']) {
 						move.infiltrates = true;
@@ -5691,11 +5677,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			},
 			onDamagingHit(damage, target, source, move) {
-			if (target.types[0] === 'Ghost') {
-				move.accuracy = 0;
-				this.field.removePseudoWeather('symbiosisfield');
-			}
-		},
+				if (target.types[0] === 'Ghost') {
+					move.accuracy = 0;
+					this.field.removePseudoWeather('symbiosisfield');
+				}
+			},
 			onSwitchOut(pokemon) {
 				this.field.removePseudoWeather('symbiosisfield');
 				pokemon.removeVolatile('symbiosisweater');
@@ -9420,8 +9406,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				} else if (pokemon.getStat('spa', false, false) > pokemon.getStat('atk', false, false) && move.category === "Physical") {
 					move.overrideOffensiveStat = 'spa';
 				}
-			}
-			else pokemon.removeVolatile('rhythmic');
+			} else pokemon.removeVolatile('rhythmic');
 		},
 		onStart(pokemon) {
 			pokemon.addVolatile('rhythmic');
