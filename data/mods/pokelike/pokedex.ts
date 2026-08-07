@@ -321,6 +321,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dubwool: {
 		inherit: true,
+		abilities: { 0: "Fluffy", 1: "Steadfast", H: "Bulletproof", S: "Wonder Skin" },
 		baseStats: { hp: 72, atk: 80, def: 110, spa: 60, spd: 90, spe: 88 }, // + 10 Defensa
 	},
 	crowthsola: {
@@ -504,5 +505,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	rhyperior: {
 		inherit: true,
 		abilities: { 0: "Stamina-Fallen", 1: "Solid Rock-Fallen", H: "Emergent Excavation-Fallen" },
+	},
+	deoxys: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Download", H: "Telepathy", S: "Photocollision" },
 	},
 };
