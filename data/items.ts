@@ -9214,19 +9214,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		// Partially implemented in Pokemon.effectiveWeather() in sim/pokemon.ts
 		onStart(pokemon) {
 			if (!pokemon.ignoringItem()) return;
-			if (['sunnyday', 'raindance', 'desolateland', 'primordialsea'].includes(this.field.effectiveWeather())) {
+			if (['sunnyday', 'raindance', 'desolateland', 'primordialsea', 'snowscape'].includes(this.field.effectiveWeather())) {
 				this.runEvent('WeatherChange', pokemon, pokemon, this.effect);
 			}
 		},
 		onUpdate(pokemon) {
 			if (!this.effectState.inactive) return;
 			this.effectState.inactive = false;
-			if (['sunnyday', 'raindance', 'desolateland', 'primordialsea'].includes(this.field.effectiveWeather())) {
+			if (['sunnyday', 'raindance', 'desolateland', 'primordialsea', 'snowscape'].includes(this.field.effectiveWeather())) {
 				this.runEvent('WeatherChange', pokemon, pokemon, this.effect);
 			}
 		},
 		onEnd(pokemon) {
-			if (['sunnyday', 'raindance', 'desolateland', 'primordialsea'].includes(this.field.effectiveWeather())) {
+			if (['sunnyday', 'raindance', 'desolateland', 'primordialsea', 'snowscape'].includes(this.field.effectiveWeather())) {
 				this.runEvent('WeatherChange', pokemon, pokemon, this.effect);
 			}
 			this.effectState.inactive = true;

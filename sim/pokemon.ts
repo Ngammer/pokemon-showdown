@@ -2206,49 +2206,36 @@ export class Pokemon {
 		const weather = this.battle.field.effectiveWeather();
 		if (this.battle.activePokemon?.hasAbility('megasol') && sourceEffect &&
 			(sourceEffect.id === 'megasol' || sourceEffect.effectType === 'Move' || sourceEffect.effectType === 'Weather') &&
-			sourceEffect.id !== 'electroshot') {
+			sourceEffect.id !== 'electroshot' || this.battle.activePokemon?.volatiles['symbiosisfire']) {
 			if (weather !== 'sunnyday' && message) this.battle.add('-activate', this, 'ability: Mega Sol');
 			return 'sunnyday' as ID;
 		}
-		switch (weather) {
-		case 'sunnyday':
-		case 'raindance':
-		case 'desolateland':
-		case 'primordialsea':
-			if (this.hasItem('utilityumbrella')) return '';
+		else if (this.battle.activePokemon?.volatiles['symbiosisice']) {
+			if (weather !== 'snowscape' && message) this.battle.add('-activate', this, 'ability: Symbiosis');
+			return 'snowscape' as ID;
 		}
-		if (this.battle.activePokemon?.hasAbility('waterabsorbeternalrain') && sourceEffect &&
+		else if (this.battle.activePokemon?.volatiles['symbiosisrock']) {
+			if (weather !== 'snowscape' && message) this.battle.add('-activate', this, 'ability: Symbiosis');
+			return 'snowscape' as ID;
+		}
+		else if (this.battle.activePokemon?.hasAbility('waterabsorbeternalrain') && sourceEffect &&
 			(sourceEffect.id === 'waterabsorbeternalrain' || sourceEffect.effectType === 'Move' ||
 				sourceEffect.effectType === 'Weather') &&
-				sourceEffect.id !== 'electroshot') {
+				sourceEffect.id !== 'electroshot' || this.battle.activePokemon?.volatiles['symbiosiswater']) {
 			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Water Absorb-Eternal Rain');
 			return 'raindance' as ID;
 		}
-		switch (weather) {
-		case 'sunnyday':
-		case 'raindance':
-		case 'desolateland':
-		case 'primordialsea':
-			if (this.hasItem('utilityumbrella')) return '';
-		}
-		if (this.battle.activePokemon?.hasAbility('dampeternalrain') && sourceEffect &&
+		else if (this.battle.activePokemon?.hasAbility('dampeternalrain') && sourceEffect &&
 			(sourceEffect.id === 'dampeternalrain' || sourceEffect.effectType === 'Move' ||
 				sourceEffect.effectType === 'Weather') &&
-				sourceEffect.id !== 'electroshot') {
+				sourceEffect.id !== 'electroshot' || this.battle.activePokemon?.volatiles['symbiosis']) {
 			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Damp-Eternal Rain');
 			return 'raindance' as ID;
 		}
-		switch (weather) {
-		case 'sunnyday':
-		case 'raindance':
-		case 'desolateland':
-		case 'primordialsea':
-			if (this.hasItem('utilityumbrella')) return '';
-		}
-		if (this.battle.activePokemon?.hasAbility('swiftswimeternalrain') && sourceEffect &&
+		else if (this.battle.activePokemon?.hasAbility('swiftswimeternalrain') && sourceEffect &&
 			(sourceEffect.id === 'swiftswimeternalrain' || sourceEffect.effectType === 'Move' ||
 				sourceEffect.effectType === 'Weather') &&
-				sourceEffect.id !== 'electroshot') {
+				sourceEffect.id !== 'electroshot' || this.battle.activePokemon?.volatiles['symbiosis']) {
 			if (weather !== 'raindance' && message) this.battle.add('-activate', this, 'ability: Swift Swim-Eternal Rain');
 			return 'raindance' as ID;
 		}
@@ -2257,9 +2244,24 @@ export class Pokemon {
 		case 'raindance':
 		case 'desolateland':
 		case 'primordialsea':
+		case 'snowscape':
 			if (this.hasItem('utilityumbrella')) return '';
 		}
 		return weather;
+	}
+
+	effectiveTerrain(sourceEffect?: Effect, message?: string | boolean) {
+		if (!sourceEffect && this.battle.effect) sourceEffect = this.battle.effect;
+		const terrain = this.battle.field.effectiveTerrain();
+		if (this.battle.activePokemon?.volatiles['symbiosisfairy']) {
+			if (terrain !== 'mistyterrain' && message) this.battle.add('-activate', this, 'ability: Symbiosis');
+			return 'mistyterrain' as ID;
+		}
+		else if (this.battle.activePokemon?.volatiles['symbiosispsychic']) {
+			if (terrain !== 'psychicterrain' && message) this.battle.add('-activate', this, 'ability: Symbiosis');
+			return 'psychicterrain' as ID;
+		}
+		return terrain;
 	}
 
 	runEffectiveness(move: ActiveMove) {

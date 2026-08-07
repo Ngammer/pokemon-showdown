@@ -32,6 +32,8 @@ Ratings and how they work:
 
 */
 
+import { Pokemon } from '../sim';
+
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	noability: {
 
@@ -5539,19 +5541,167 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 285,
 	},
 	symbiosis: {
-		onAllyAfterUseItem(item, pokemon) {
-			if (pokemon.switchFlag) return;
-			const source = this.effectState.target;
-			const myItem = source.takeItem();
-			if (!myItem) return;
-			if (
-				!this.singleEvent('TakeItem', myItem, source.itemState, pokemon, source, this.effect, myItem) ||
-				!pokemon.setItem(myItem)
-			) {
-				source.item = myItem.id;
-				return;
+		onSwitchOut(pokemon) {
+			this.field.addPseudoWeather('symbiosisfield', pokemon, this.effect);
+		},
+		condition: {
+			onStart(pokemon) {
+				this.effectState.turns = 0;
+				if (pokemon.types[0] === 'Flying') {
+					const activated = false;
+					const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+						'sharproot', 'hail', 'iondeluge'];
+					const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...sideConditions];
+					for (const condition of sideConditions) {
+						if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
+							this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Skill', `[of] ${pokemon}`);
+						}
+					}
+					for (const condition of removeTarget) {
+						if (pokemon.hp && pokemon.side.foe.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
+							this.add('-sideend', pokemon.side.foe, this.dex.conditions.get(condition).name, '[from] ability: Skill', `[of] ${pokemon}`);
+						}
+					}
+					this.field.removePseudoWeather('symbiosisfield');
+				}
+				else if (pokemon.types[0] === 'Electric') {
+					pokemon.addVolatile('Charge');
+				}
+				else if (pokemon.types[0] === 'Grass') {
+					this.heal(pokemon.baseMaxhp / 4);
+				}
+				if (this.effectState.turns > 3) {
+					this.field.removePseudoWeather('symbiosisfield');
+					pokemon.removeVolatile('symbiosisweater');
+					pokemon.removeVolatile('symbiosisfire');
+					pokemon.removeVolatile('symbiosisice');
+					pokemon.removeVolatile('symbiosisfairy');
+					pokemon.removeVolatile('symbiosispsychic');
+					pokemon.removeVolatile('symbiosisrock');
+				}
+			},
+			onResidualOrder: 21,
+			onResidual(pokemon) {
+				this.effectState.turns++;
+			},
+			onAnySwitchIn(pokemon) {
+				if (pokemon.types[0] === 'Bug') {
+					pokemon.addVolatile('endure');
+					this.field.removePseudoWeather('symbiosisfield');
+				}
+			},
+			onTryBoost(boost, target, source, effect) {
+				if (source && target === source || target.types[0] !== 'Steel') return;
+				let showMsg = false;
+				let i: BoostID;
+				for (i in boost) {
+					if (boost[i]! < 0) {
+						delete boost[i];
+						showMsg = true;
+					}
+				}
+				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+					this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
+				}
+			},
+			onWeatherModifyDamagePriority: 1,
+			onWeatherModifyDamage(damage, attacker, defender, move) {
+				if (attacker.types[0] === 'Water') {
+					attacker.addVolatile('symbiosisweater');
+					(this.dex.conditions.getByID('raindance' as ID) as any).onWeatherModifyDamage
+					.call(this, damage, attacker, defender, move);
+					return damage; // fast exit from event
+				}
+				else if (attacker.types[0] === 'Fire') {
+					attacker.addVolatile('symbiosisfire');
+					(this.dex.conditions.getByID('sunnyday' as ID) as any).onWeatherModifyDamage
+					.call(this, damage, attacker, defender, move);
+					return damage; // fast exit from event
+				}
+				else if (attacker.types[0] === 'Ice') {
+					attacker.addVolatile('symbiosisice');
+					(this.dex.conditions.getByID('snowscape' as ID) as any).onWeatherModifyDamage
+					.call(this, damage, attacker, defender, move);
+					return damage; // fast exit from event
+				}
+				else if (attacker.types[0] === 'Rock') {
+					attacker.addVolatile('symbiosisrock');
+					(this.dex.conditions.getByID('snowscape' as ID) as any).onWeatherModifyDamage
+					.call(this, damage, attacker, defender, move);
+					return damage; // fast exit from event
+				}
+			},
+			onTerrainModifyDamagePriority: 1,
+			onTerrainModifyDamage(damage, attacker, defender, move) {
+				if (attacker.types[0] === 'Fairy') {
+					attacker.addVolatile('symbiosisfairy');
+					(this.dex.conditions.getByID('mistyterrain' as ID) as any).onTerrainModifyDamage
+					.call(this, damage, attacker, defender, move);
+					return damage; // fast exit from event
+				}
+				else if (attacker.types[0] === 'Psychic') {
+					attacker.addVolatile('symbiosispsychic');
+					(this.dex.conditions.getByID('mistyterrain' as ID) as any).onTerrainModifyDamage
+					.call(this, damage, attacker, defender, move);
+					return damage; // fast exit from event
+				}
+			},
+			onModifyMovePriority: -5,
+			onModifyMove(move, pokemon) {
+				if (pokemon.types[0] === 'Dragon') {
+					if (!move.ignoreImmunity) move.ignoreImmunity = {};
+					if (move.ignoreImmunity !== true) {
+						move.ignoreImmunity['Dragon'] = true;
+						this.field.removePseudoWeather('symbiosisfield');
+					}
+				}
+				else if (pokemon.types[0] === 'Fighting') {
+					if (!move.ignoreImmunity) move.ignoreImmunity = {};
+					if (move.ignoreImmunity !== true) {
+						move.ignoreImmunity['Fighting'] = true;
+						this.field.removePseudoWeather('symbiosisfield');
+					}
+				}
+				else if (pokemon.types[0] === 'Normal') {
+					if (!move.ignoreImmunity) move.ignoreImmunity = {};
+					if (move.ignoreImmunity !== true) {
+						move.ignoreImmunity['Normal'] = true;
+						this.field.removePseudoWeather('symbiosisfield');
+					}
+				}
+				else if (pokemon.types[0] === 'Ground') {
+					if (!move.ignoreImmunity) move.ignoreImmunity = {};
+					if (move.ignoreImmunity !== true) {
+						move.ignoreImmunity['Ground'] = true;
+						this.field.removePseudoWeather('symbiosisfield');
+					}
+				}
+				else if (pokemon.types[0] === 'Poison') {
+					if (!move.ignoreImmunity) move.ignoreImmunity = {};
+					if (move.ignoreImmunity !== true) {
+						move.ignoreImmunity['Poison'] = true;
+						this.field.removePseudoWeather('symbiosisfield');
+					}
+				}
+				else if (pokemon.types[0] === 'Dark') {
+					this.field.removePseudoWeather('symbiosisfield');
+				}
+			},
+			onDamagingHit(damage, target, source, move) {
+			if (target.types[0] === 'Ghost') {
+				move.accuracy = 0;
+				this.field.removePseudoWeather('symbiosisfield');
 			}
-			this.add('-activate', source, 'ability: Symbiosis', myItem, `[of] ${pokemon}`);
+		},
+			onSwitchOut(pokemon) {
+				this.field.removePseudoWeather('symbiosisfield');
+				pokemon.removeVolatile('symbiosisweater');
+				pokemon.removeVolatile('symbiosisfire');
+				pokemon.removeVolatile('symbiosisice');
+				pokemon.removeVolatile('symbiosisfairy');
+				pokemon.removeVolatile('symbiosispsychic');
+				pokemon.removeVolatile('symbiosisrock');
+			},
 		},
 		flags: { },
 		name: "Symbiosis",
@@ -9262,6 +9412,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					move.overrideOffensiveStat = 'spa';
 				}
 			}
+			else pokemon.removeVolatile('rhythmic');
 		},
 		onStart(pokemon) {
 			pokemon.addVolatile('rhythmic');

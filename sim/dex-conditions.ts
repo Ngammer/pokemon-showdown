@@ -123,6 +123,7 @@ export interface EventMethods {
 	onUpdate?: (this: Battle, pokemon: Pokemon) => void;
 	onWeather?: (this: Battle, target: Pokemon, source: null, effect: Condition) => void;
 	onWeatherModifyDamage?: CommonHandlers['ModifierSourceMove'];
+	onTerrainModifyDamage?: CommonHandlers['ModifierSourceMove'];
 	onModifyDamagePhase1?: CommonHandlers['ModifierSourceMove'];
 	onModifyDamagePhase2?: CommonHandlers['ModifierSourceMove'];
 	onFoeDamagingHit?: (this: Battle, damage: number, target: Pokemon, source: Pokemon, move: ActiveMove) => void;
@@ -497,6 +498,7 @@ export interface EventMethods {
 	onTryPrimaryHitPriority?: number;
 	onTypePriority?: number;
 	onWeatherModifyDamagePriority?: number;
+	onTerrainModifyDamagePriority?: number;
 }
 
 export interface PokemonEventMethods extends EventMethods {
