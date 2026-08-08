@@ -9692,4 +9692,36 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2.5,
 		num: -239,
 	},
+	flameears: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['sound']) {
+				this.add('-immune', target, '[from] ability: Flame Ears');
+				source.trySetStatus('brn', target);
+				return null;
+			}
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (move.flags['sound']) {
+				this.add('-immune', this.effectState.target, '[from] ability: Flame Ears');
+				source.trySetStatus('brn', this.effectState.target);
+			}
+		},
+		onAnyAfterHit(source, target, move) {
+			if (move.type === 'Fire') {
+				target.addVolatile('flameears');
+			}
+		},
+		condition: {
+			duration: 2,
+			onEnd(pokemon) {
+				if (this.effectState.duration === 0) {
+					this.damage(pokemon.baseMaxhp / 10, pokemon);
+				}
+			},
+		},
+		flags: { breakable: 1 },
+		name: "Flame Ears",
+		rating: 2,
+		num: -240,
+	},
 };
