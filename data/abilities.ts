@@ -4367,8 +4367,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// RKS System's type-changing itself is implemented in statuses.js
 		onStart(target) {
 			target.swordBoost = false;
-			if(target.item === 'grassmemory' && target.baseSpecies.name === 'Silvally' && this.field.isTerrain('grassyterrain')){
-				this.heal(target.maxhp/4)
+			if (target.item === 'grassmemory' && target.baseSpecies.name === 'Silvally' && this.field.isTerrain('grassyterrain')) {
+				this.heal(target.maxhp / 4);
 			}
 		},
 		onSourceBasePowerPriority: -1,
@@ -4379,8 +4379,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifySpe(spe, pokemon) {
-			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && pokemon.item === 'watermemory') || 
-			(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.item === 'firememory')) && pokemon.baseSpecies.name === 'Silvally') {
+			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && pokemon.item === 'watermemory') ||
+				(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.item === 'firememory')) &&
+				pokemon.baseSpecies.name === 'Silvally') {
 				return this.chainModify(1.25);
 			}
 		},
@@ -4392,12 +4393,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifyCritRatio(critRatio, source, target, move) {
-			if(source.item === 'dragonmemory' && source.baseSpecies.name === 'Silvally' && move.type === 'Dragon') {
+			if (source.item === 'dragonmemory' && source.baseSpecies.name === 'Silvally' && move.type === 'Dragon') {
 				return critRatio + 1;
 			}
 		},
 		onModifyPriority(priority, source, target, move) {
-			if (this.field.isTerrain('electricterrain') && source.item === 'electricmemory' && source.baseSpecies.name === 'Silvally' && move.type === 'Electric') {
+			if (this.field.isTerrain('electricterrain') && source.item === 'electricmemory' &&
+				source.baseSpecies.name === 'Silvally' && move.type === 'Electric') {
 				return priority + 1;
 			}
 			if (move?.category === 'Status' && move.type === 'Normal') {
@@ -4405,16 +4407,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifyMove(move, pokemon) {
-			if(pokemon.item === 'ghostmemory' && pokemon.baseSpecies.name === 'Silvally') {
+			if (pokemon.item === 'ghostmemory' && pokemon.baseSpecies.name === 'Silvally') {
 				if (!move.ignoreImmunity) move.ignoreImmunity = {};
 				if (move.ignoreImmunity !== true) {
 					move.ignoreImmunity['Ghost'] = true;
 				}
 			}
-			if(pokemon.item === 'darkmemory' && pokemon.baseSpecies.name === 'Silvally') {
+			if (pokemon.item === 'darkmemory' && pokemon.baseSpecies.name === 'Silvally') {
 				move.ignoreDefensive = true;
 			}
-			if(pokemon.item === 'flyingmemory' && pokemon.baseSpecies.name === 'Silvally' && move.type === 'Flying'){
+			if (pokemon.item === 'flyingmemory' && pokemon.baseSpecies.name === 'Silvally' && move.type === 'Flying') {
 				const activated = false;
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 					'sharproot', 'hail', 'iondeluge', 'oilspill'];
@@ -4425,26 +4427,30 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		onBasePower(basePower, attacker, defender, move){
-			if(attacker.item === 'psychicmemory' && attacker.baseSpecies.name === 'Silvally' && this.field.isTerrain('psychicterrain') && (move.priority > 0)){
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.item === 'psychicmemory' && attacker.baseSpecies.name === 'Silvally' &&
+				this.field.isTerrain('psychicterrain') && (move.priority > 0)) {
 				this.debug('RKS System boost');
 				return this.chainModify(1.3);
 			}
 		},
-		onEffectiveness(typeMod, target, type, move){
+		onEffectiveness(typeMod, target, type, move) {
 			const source = this.activePokemon;
-			if(!move || move.category === 'Status') return;
-			if(!source || source.item !== 'fairymemory' && source.baseSpecies.name !== 'Silvally') return;
-			if(!this.field.isTerrain('mistyterrain')) return;
+			if (!move || move.category === 'Status') return;
+			if (!source || source.item !== 'fairymemory' && source.baseSpecies.name !== 'Silvally') return;
+			if (!this.field.isTerrain('mistyterrain')) return;
 			if (type === 'Dragon' || type === 'Dark' || type === 'Fighting') return 1;
 		},
 		onModifySpD(spd, pokemon) {
-			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.item === 'groundmemory') || ((['snowscape'].includes(pokemon.effectiveWeather()) && pokemon.item === 'icememory')) && pokemon.baseSpecies.name === 'Silvally') {
+			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.item === 'groundmemory') ||
+				((['snowscape'].includes(pokemon.effectiveWeather()) && pokemon.item === 'icememory')) &&
+				pokemon.baseSpecies.name === 'Silvally') {
 				return this.chainModify(1.25);
 			}
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (move && target.getMoveHitData(move).typeMod > 0 && source.item === 'fightingmemory' && source.baseSpecies.name === 'Silvally') {
+			if (move && target.getMoveHitData(move).typeMod > 0 && source.item === 'fightingmemory' &&
+				source.baseSpecies.name === 'Silvally') {
 				return this.chainModify([4506, 4096]);
 			}
 		},
@@ -4458,7 +4464,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSourceDamagingHit(damage, target, source, move) {
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
-			if (this.randomChance(10, 10) && (target.status === 'psn' || target.status === 'tox') && source.item === 'poisonmemory' && source.baseSpecies.name === 'Silvally') {
+			if (this.randomChance(10, 10) && (target.status === 'psn' || target.status === 'tox') &&
+				source.item === 'poisonmemory' && source.baseSpecies.name === 'Silvally') {
 				this.boost({ spe: -1 }, target, source, null, true, false);
 			}
 		},
@@ -8629,7 +8636,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.accuracy === true) accuracy = 100;
 			if (move.accuracy !== accuracy && typeof move.accuracy === 'number') accuracy = move.accuracy;
 			const final = this.clampIntRange(accuracy - 10, 0, 100);
-			this.add('-message', `DEBUG: accuracy original=${move.accuracy} accuracy recibida=${accuracy}, final=${final}`); // ← temporal
 			return final;
 		},
 		onAnyModifyBoost(boosts, pokemon) {
@@ -9645,5 +9651,45 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Accurate Shot",
 		rating: 2,
 		num: -237,
+	},
+	baconspear: {
+		onModifyMove(move) {
+			if (move.flags['contact']) {
+				delete move.flags['contact'];
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.randomChance(2, 10)) {
+				target.trySetStatus('brn', source);
+			}
+		},
+		flags: {},
+		name: "Bacon Spear",
+		rating: 1,
+		num: -238,
+	},
+	silentbush: {
+		onAnyModifyMove(move) {
+			if (move.type === 'Grass') {
+				move.infiltrates = true;
+			}
+		},
+		onAnyBeforeMove(source, target, move) {
+			if (move.flags['sound']) {
+				source.addVolatile('leechseed');
+			}
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			if (attacker.activeMoveActions <= 1) {
+				this.debug('Silent Bush boost');
+				return this.chainModify(1.7);
+			}
+		},
+		flags: { },
+		name: "Silent Bush",
+		rating: 2.5,
+		num: -239,
 	},
 };

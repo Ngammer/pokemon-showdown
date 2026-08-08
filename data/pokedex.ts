@@ -10276,7 +10276,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Fire", "Fighting"],
 		genderRatio: { M: 0.875, F: 0.125 },
 		baseStats: { hp: 110, atk: 148, def: 85, spa: 90, spd: 120, spe: 82 },
-		abilities: { 0: "Bacon Scepter" },
+		abilities: { 0: "Bacon Spear" },
 		heightm: 1.8,
 		weightkg: 180.3,
 		color: "Red",
