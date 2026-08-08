@@ -9724,4 +9724,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -240,
 	},
+	piercingboost: {
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.flags['piercing']) {
+				this.boost({ spe: 1 });
+			}
+		},
+		flags: { },
+		name: "Piercing Boost",
+		rating: 2,
+		num: -241,
+	},
 };
