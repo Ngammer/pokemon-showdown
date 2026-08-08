@@ -9880,4 +9880,85 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -247,
 	},
+	poisoncoated: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (!this.checkMoveMakesContact(move, target, source)) {
+				const r = this.random(100);
+				if (r < 70) {
+					target.trySetStatus('psn', source);
+				} else {
+					target.trySetStatus('tox', source);
+				}
+			}
+		},
+		flags: { },
+		name: "Poison-Coated",
+		rating: 2,
+		num: -248,
+	},
+	naturalaffinity: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Grass';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: { },
+		name: "Natural Affinity",
+		rating: 4,
+		num: -249,
+	},
+	bugsoul: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Bug';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: { },
+		name: "Bug Soul",
+		rating: 4,
+		num: -250,
+	},
+	tyrannicaloverlord: {
+		onStart(pokemon) {
+			this.add('-activate', pokemon, 'ability: Tyrannical Overlord');
+			const fallen = Math.min(pokemon.side.totalFainted, 5);
+			this.add('-start', pokemon, `fallen${fallen}`, '[silent]');
+			this.effectState.fallen = fallen;
+		},
+		onEnd(pokemon) {
+			this.add('-end', pokemon, `fallen${this.effectState.fallen}`, '[silent]');
+		},
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			const powMod = [5816, 5530, 5243, 4956, 4669, 4383];
+			this.debug(`Tyrannical Overlord boost: ${powMod[this.effectState.fallen]}/4096`);
+			return this.chainModify([powMod[this.effectState.fallen], 4096]);
+		},
+		flags: { },
+		name: "Tyrannical Overlord",
+		rating: 4,
+		num: 293,
+	},
 };
