@@ -9735,4 +9735,53 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -241,
 	},
+	rockcracking: {
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect?.effectType === 'Move') {
+				this.add('-activate', target, 'ability: Rock Cracking');
+				this.effectState.busted = true;
+				return 0;
+			}
+		},
+		onCriticalHit(target, source, move) {
+			if (!target) return;
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move)) return;
+			return false;
+		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target || move.category === 'Status') return;
+
+			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+			if (hitSub) return;
+
+			if (!target.runImmunity(move)) return;
+			return 0;
+		},
+		onUpdate(pokemon) {
+			if (this.effectState.busted) {
+				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon);
+				pokemon.side.foe.addSideCondition('stealthrock', pokemon);
+				pokemon.addVolatile('rockcracking');
+			}
+		},
+		condition: {
+			onModifyPriority(priority, pokemon, target, move) {
+				return priority - 1;
+			},
+			onAfterMove(pokemon) {
+				pokemon.removeVolatile('rockcracking');
+			}
+		},
+		flags: {
+			failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1,
+			breakable: 1, notransform: 1,
+		},
+		name: "Rock Cracking",
+		rating: 3.5,
+		num: -242,
+	},
 };
