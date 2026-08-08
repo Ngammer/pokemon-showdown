@@ -9841,4 +9841,31 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -245,
 	},
+	hydraattack: {
+		onPrepareHit(source, target, move) {
+			if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
+				move.flags['futuremove'] || move.spreadHit || move.isZ || move.isMax) return;
+			move.multihit = 9;
+			move.multihitType = 'hydraattack';
+		},
+		// Damage modifier implemented in BattleActions#modifyDamage()
+		onSourceModifySecondaries(secondaries, target, source, move) {
+			if (move.multihitType === 'hydraattack' && move.id === 'secretpower' && move.hit < 2) {
+				// hack to prevent accidentally suppressing King's Rock/Razor Fang
+				return secondaries.filter(effect => effect.volatileStatus === 'flinch');
+			}
+		},
+		onModifyMove(move) {
+			if (!move.secondaries) return;
+			for (const secondary of move.secondaries) {
+				if (secondary.chance) {
+					secondary.chance = Math.floor(secondary.chance / 4);
+				}
+			}
+		},
+		flags: { },
+		name: "Hydra Attack",
+		rating: 4.5,
+		num: -246,
+	},
 };

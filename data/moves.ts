@@ -4804,7 +4804,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Eerie Spell",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1, noparentalbond: 1 },
 		secondary: {
 			chance: 100,
 			onHit(target) {
@@ -13380,7 +13380,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Nature's Madness",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, field: 1 },
+		flags: { protect: 1, mirror: 1, field: 1, noparentalbond: 1 },
 
 		target: "normal",
 		type: "Fairy",
@@ -15160,11 +15160,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return this.clampIntRange(Math.floor(target.getUndynamaxedHP() / 2), 1);
 		},
 		category: "Special",
-
 		name: "Psywave",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, pulse: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, pulse: 1, noparentalbond: 1 },
 
 		target: "normal",
 		type: "Psychic",
@@ -16055,7 +16054,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { heal: 1, nosketch: 1, metronome: 1 },
 		onTryHit(source) {
-			if (!source.side.pokemon.filter(ally => ally.fainted).length) {
+			if (!source.side.pokemon.filter(ally => ally.fainted && ally.hasAbility('ancestorscall')).length) {
 				return false;
 			}
 		},
@@ -16493,7 +16492,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Ruination",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, darkness: 1, destiny: 1 },
+		flags: { protect: 1, mirror: 1, darkness: 1, destiny: 1, noparentalbond: 1 },
 
 		target: "normal",
 		type: "Dark",
@@ -18715,7 +18714,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Spite",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1, darkness: 1 },
+		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1, darkness: 1, noparentalbond: 1 },
 		onHit(target) {
 			let move: Move | ActiveMove | null = target.lastMove;
 			if (!move || move.isZ) return false;

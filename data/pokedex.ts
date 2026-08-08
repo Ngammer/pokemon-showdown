@@ -11283,7 +11283,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Sigilyph",
 		types: ["Psychic", "Flying"],
 		baseStats: { hp: 82, atk: 58, def: 80, spa: 103, spd: 80, spe: 97 },
-		abilities: { 0: "Wonder Skin", 1: "Magic Guard", H: "Ancestor Calling" },
+		abilities: { 0: "Wonder Skin", 1: "Magic Guard", H: "Ancestor's Call" },
 		heightm: 1.4,
 		weightkg: 14,
 		color: "Black",
