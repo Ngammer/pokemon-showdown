@@ -1000,7 +1000,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.volatiles['defeatist']?.turns >= 3) {
 				pokemon.volatiles['defeatist'].turns = 0;
 				this.add('-activate', pokemon, 'ability: Defeatist');
-				move.pranksterBoosted = true;
 				return priority + 1;
 			}
 		},
@@ -2548,7 +2547,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onModifyPriority(priority, pokemon, target, move) {
 			if (move.type === 'Steel') {
-				move.pranksterBoosted = true;
 				return priority + 1;
 			}
 		},
@@ -5595,7 +5593,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-start', target, 'ability: Sweet Veil');
 			},
 			onModifyPriority(priority, pokemon, target, move) {
-				move.pranksterBoosted = true;
 				return priority + 1;
 			},
 			onEnd(target) {
@@ -8215,7 +8212,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onModifyPriority(priority, pokemon, target, move) {
 			if (pokemon.hasType(move.type)) {
-				move.pranksterBoosted = true;
 				return priority + 1;
 			}
 		},
@@ -8511,7 +8507,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onAllyModifyPriority(priority, pokemon, target, move) {
 			if (this.effectState.source.activeMoveActions > 1 && pokemon !== this.effectState.source) {
-				move.pranksterBoosted = true;
 				return priority + 1;
 			}
 		},
@@ -8722,7 +8717,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	emergentexcavation: {
 		onModifyPriority(priority, pokemon, target, move) {
 			if (pokemon.hasType(move.type) && pokemon.hp <= pokemon.maxhp / 2) {
-				move.pranksterBoosted = true;
 				return priority + 1;
 			}
 		},
@@ -9806,7 +9800,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePower(basePower, attacker, defender, move) {
 			const types = attacker.getTypes();
-			let type = types[2];
+			const type = types[2];
 			if (move.type === type) {
 				this.debug('Seasons boost');
 				return this.chainModify(1.5);
@@ -9816,5 +9810,26 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Seasons",
 		rating: 3.5,
 		num: -243,
+	},
+	rolling: {
+		onHit(target, source, move) {
+			if (move?.flags['spin'] && !source.volatiles['rolling']) {
+				source.addVolatile('rolling');
+			}
+		},
+		condition: {
+			onModifyPriority(priority, pokemon, target, move) {
+				if (move?.flags['spin']) {
+					return priority + 1;
+				}
+			},
+			onAfterMove(pokemon) {
+				pokemon.removeVolatile('rolling');
+			}
+		},
+		flags: { },
+		name: "Rolling",
+		rating: 4,
+		num: -244,
 	},
 };
