@@ -9825,11 +9825,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 			onAfterMove(pokemon) {
 				pokemon.removeVolatile('rolling');
-			}
+			},
 		},
 		flags: { },
 		name: "Rolling",
 		rating: 4,
 		num: -244,
+	},
+	strangeentry: {
+		onStart(source) {
+			this.field.addPseudoWeather('trickroom');
+		},
+		flags: { },
+		name: "Strange Entry",
+		rating: 4,
+		num: -245,
 	},
 };
