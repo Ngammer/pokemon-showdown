@@ -9959,6 +9959,49 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { },
 		name: "Tyrannical Overlord",
 		rating: 4,
-		num: 293,
+		num: -251,
+	},
+	sharpleaf: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['slicing']) {
+				this.debug('Sharp Leaf boost');
+				return this.chainModify(1.25);
+			}
+		},
+		onModifyMove(move) {
+			if (move.type === 'Grass' && move.flags['contact']) {
+				move.willCrit = true;
+			}
+		},
+		flags: { },
+		name: "Sharp Leaf",
+		rating: 3.5,
+		num: -252,
+	},
+	cryogenic: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(2, 10)) {
+					source.trySetStatus('tox', target);
+				}
+			}
+		},
+		onModifyTypePriority: -1,
+		onAnyModifyType(move, pokemon) {
+			if (move.type === 'Water' && (this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status')) {
+				move.type = 'Ice';
+			}
+		},
+		onAnyEffectiveness(typeMod, target, type, move) {
+			if (move.type === 'Ice' && target?.hasType('Water')) {
+				return typeMod + 2;
+			}
+		},
+		flags: { },
+		name: "Cryogenic",
+		rating: 1.5,
+		num: -253,
 	},
 };
