@@ -16054,7 +16054,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { heal: 1, nosketch: 1, metronome: 1 },
 		onTryHit(source) {
-			if (!source.side.pokemon.filter(ally => ally.fainted && ally.hasAbility('ancestorscall')).length) {
+			if (!source.side.pokemon.filter(ally => ally.fainted && !ally.hasAbility('ancestorscall')).length) {
 				return false;
 			}
 		},
