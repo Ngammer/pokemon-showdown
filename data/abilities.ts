@@ -9774,7 +9774,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 			onAfterMove(pokemon) {
 				pokemon.removeVolatile('rockcracking');
-			}
+			},
 		},
 		flags: {
 			failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1,
@@ -9783,5 +9783,38 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Rock Cracking",
 		rating: 3.5,
 		num: -242,
+	},
+	seasons: {
+		onStart(pokemon) {
+			if (pokemon.baseSpecies.name !== 'Sawsbuck' && pokemon.baseSpecies.name !== 'Deerling') return;
+			let type;
+			switch (pokemon.species.forme) {
+			case 'Summer':
+				type = 'Fire';
+				break;
+			case 'Autumn':
+				type = 'Flying';
+				break;
+			case 'Winter':
+				type = 'Ice';
+				break;
+			default:
+				type = 'Fairy';
+				break;
+			}
+			this.add('-start', pokemon, 'typeadd', type, '[from] ability: Seasons');
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			const types = attacker.getTypes();
+			let type = types[2];
+			if (move.type === type) {
+				this.debug('Seasons boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Seasons",
+		rating: 3.5,
+		num: -243,
 	},
 };
