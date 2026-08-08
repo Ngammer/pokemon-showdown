@@ -9868,4 +9868,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4.5,
 		num: -246,
 	},
+	ancestorscall: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.actions.useMove('revivalblessing', target);
+			}
+		},
+		flags: { },
+		name: "Ancestor's Call",
+		rating: 2,
+		num: -247,
+	},
 };
