@@ -914,7 +914,7 @@ export class Side {
 			}
 			if (this.slotConditions[pokemon.position]['revivalblessing']) {
 				slot = 0;
-				while (!this.pokemon[slot].fainted) slot++;
+				while (!this.pokemon[slot].fainted || this.pokemon[slot].hasAbility('ancestorscall')) slot++;
 			} else {
 				if (!this.choice.forcedSwitchesLeft) return this.choosePass();
 				slot = this.active.length;

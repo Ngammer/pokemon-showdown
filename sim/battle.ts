@@ -2801,7 +2801,7 @@ export class Battle {
 			break;
 		case 'revivalblessing':
 			action.pokemon.side.pokemonLeft++;
-			if (action.target.position < action.pokemon.side.active.length) {
+			if (action.target.position < action.pokemon.side.active.length && !action.target.hasAbility('ancestorscall')) {
 				this.queue.addChoice({
 					choice: 'instaswitch',
 					pokemon: action.target,
