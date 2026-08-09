@@ -946,7 +946,7 @@ export class Side {
 		const targetPokemon = this.pokemon[slot];
 
 		if (this.slotConditions[pokemon.position]['revivalblessing']) {
-			if (!targetPokemon.fainted && targetPokemon.hasAbility('ancestorscall')) {
+			if (!targetPokemon.fainted || targetPokemon.hasAbility('ancestorscall')) {
 				return this.emitChoiceError(`Can't switch: You have to pass to a fainted Pokémon`);
 			}
 			// Should always subtract, but stop at 0 to prevent errors.
