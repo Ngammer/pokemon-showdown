@@ -2614,6 +2614,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 7,
 	},
 	lingeringaroma: {
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Lingering Aroma');
+		},
 		onDamagingHit(damage, target, source, move) {
 			const sourceAbility = source.getAbility();
 			if (sourceAbility.flags['cantsuppress'] || sourceAbility.id === 'lingeringaroma') {
@@ -10003,5 +10006,45 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Cryogenic",
 		rating: 1.5,
 		num: -253,
+	},
+	defensivecannons: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			this.damage(source.baseMaxhp / 10, source, target);
+		},
+		flags: { },
+		name: "Defensive Cannons",
+		rating: 2.5,
+		num: -254,
+	},
+	focuslight: {
+		onStart(pokemon) {
+			pokemon.addVolatile('followme');
+		},
+		flags: { },
+		name: "Focus Light",
+		rating: 3.5,
+		num: -255,
+	},
+	lactation: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			const alliesCount = pokemon.adjacentAllies().length;
+			if (pokemon.activeTurns) {
+				if (alliesCount > 0) {
+					for (const ally of pokemon.adjacentAllies()) {
+						this.heal(pokemon.baseMaxhp / (10 * alliesCount), ally, pokemon);
+					}
+					this.heal(pokemon.baseMaxhp / (10 * alliesCount), pokemon, pokemon);
+				} else {
+					this.heal(pokemon.baseMaxhp / 10, pokemon, pokemon);
+				}
+			}
+		},
+		flags: { },
+		name: "Lactation",
+		rating: 4.5,
+		num: -256,
 	},
 };
