@@ -966,6 +966,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
+		onSetStatus(status, target, source, effect) {
+			if (target.activeMoveActions > 1) return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Dazzling');
+			}
+			return false;
+		},
 		flags: { breakable: 1 },
 		name: "Dazzling",
 		rating: 2.5,
@@ -4169,6 +4176,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.attrLastMove('[still]');
 				this.add('cant', dazzlingHolder, 'ability: Queenly Majesty', move, `[of] ${target}`);
 				return false;
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source || target.activeMoveActions > 1) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
 			}
 		},
 		flags: { breakable: 1 },
