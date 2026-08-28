@@ -5671,6 +5671,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.effectState.turns = 0;
 				this.add('-sidestart', side, 'Symbiosis');
 			},
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Symbiosis');
+			},
 			onResidualOrder: 21,
 			onSideResidual(side, pokemon) {
 				this.effectState.turns++;
