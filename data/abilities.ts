@@ -5663,12 +5663,36 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 285,
 	},
 	symbiosis: {
-		onSwitchOut(pokemon) {
+		onBeforeSwitchOut(pokemon) {
 			pokemon.side.addSideCondition('symbiosis', pokemon, this.effect);
 		},
 		condition: {
 			onSideStart(side, pokemon) {
 				this.effectState.turns = 0;
+				this.add('-sidestart', side, 'Symbiosis');
+			},
+			onResidualOrder: 21,
+			onSideResidual(side, pokemon) {
+				this.effectState.turns++;
+				if (this.effectState.turns > 3) {
+					pokemon.side.removeSideCondition('symbiosis');
+					pokemon.removeVolatile('symbiosiswater');
+					pokemon.removeVolatile('symbiosisfire');
+					pokemon.removeVolatile('symbiosisice');
+					pokemon.removeVolatile('symbiosisfairy');
+					pokemon.removeVolatile('symbiosispsychic');
+					pokemon.removeVolatile('symbiosisrock');
+				}
+			},
+			onSwitchIn(pokemon) {
+				if (pokemon.types[0] === 'Electric') {
+					pokemon.addVolatile('charge');
+					pokemon.side.removeSideCondition('symbiosis');
+				}
+				if (pokemon.types[0] === 'Grass') {
+					this.heal(pokemon.baseMaxhp / 4);
+					pokemon.side.removeSideCondition('symbiosis');
+				}
 				if (pokemon.types[0] === 'Flying') {
 					const activated = false;
 					const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
@@ -5684,30 +5708,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 							this.add('-sideend', pokemon.side.foe, this.dex.conditions.get(condition).name, '[from] ability: Skill', `[of] ${pokemon}`);
 						}
 					}
-					this.field.removePseudoWeather('symbiosis');
-				} else if (pokemon.types[0] === 'Electric') {
-					pokemon.addVolatile('charge');
-				} else if (pokemon.types[0] === 'Grass') {
-					this.heal(pokemon.baseMaxhp / 4);
+					pokemon.side.removeSideCondition('symbiosis');
 				}
-			},
-			onResidualOrder: 21,
-			onSideResidual(side, pokemon) {
-				this.effectState.turns++;
-				if (this.effectState.turns > 3) {
-					this.field.removePseudoWeather('symbiosis');
-					pokemon.removeVolatile('symbiosiswater');
-					pokemon.removeVolatile('symbiosisfire');
-					pokemon.removeVolatile('symbiosisice');
-					pokemon.removeVolatile('symbiosisfairy');
-					pokemon.removeVolatile('symbiosispsychic');
-					pokemon.removeVolatile('symbiosisrock');
-				}
-			},
-			onSwitchIn(pokemon) {
 				if (pokemon.types[0] === 'Bug') {
 					pokemon.addVolatile('endure');
-					this.field.removePseudoWeather('symbiosis');
+					pokemon.side.removeSideCondition('symbiosis');
 				}
 			},
 			onTryBoost(boost, target, source, effect) {
