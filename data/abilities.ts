@@ -978,7 +978,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			},
 		},
-		
+
 		flags: { breakable: 1 },
 		name: "Dazzling",
 		rating: 2.5,
@@ -4393,56 +4393,54 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// RKS System's type-changing itself is implemented in statuses.js
 		onStart(target) {
 			target.swordBoost = false;
-			if (target.item === 'grassmemory' && target.baseSpecies.name === 'Silvally' && this.field.isTerrain('grassyterrain')) {
+			if (target.species.name === 'Silvally-Grass' && this.field.isTerrain('grassyterrain')) {
 				this.heal(target.maxhp / 4);
 			}
 		},
 		onSourceBasePowerPriority: -1,
 		onSourceModifyDamage(damage, source, target, move) {
-			if (target.item === 'steelmemory' && target.baseSpecies.name === 'Silvally') {
+			if (target.species.name === 'Silvally-Steel') {
 				this.debug('RKS System debuff');
 				return this.chainModify(0.875);
 			}
-			if (!target.swordBoost && target.item === 'bugmemory' && target.baseSpecies.name === 'Silvally') {
+			if (!target.swordBoost && target.species.name === 'Silvally-Bug') {
 				this.debug('RKS System weaken');
 				target.swordBoost = true;
 				return this.chainModify(0.75);
 			}
 		},
 		onModifySpe(spe, pokemon) {
-			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && pokemon.item === 'watermemory') ||
-				(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.item === 'firememory')) &&
-				pokemon.baseSpecies.name === 'Silvally') {
+			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && pokemon.species.name === 'Silvally-Water') ||
+				(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.species.name === 'Silvally-Fire'))) {
 				return this.chainModify(1.25);
 			}
 		},
 		onModifyCritRatio(critRatio, source, target, move) {
-			if (source.item === 'dragonmemory' && source.baseSpecies.name === 'Silvally' && move.type === 'Dragon') {
+			if (source.species.name === 'Silvally-Dragon' && move.type === 'Dragon') {
 				return critRatio + 1;
 			}
 		},
 		onModifyPriority(priority, source, target, move) {
-			if (this.field.isTerrain('electricterrain') && source.item === 'electricmemory' &&
-				source.baseSpecies.name === 'Silvally' && move.type === 'Electric') {
+			if (this.field.isTerrain('electricterrain') && source.species.name === 'Silvally-Electric' && move.type === 'Electric') {
 				return priority + 1;
 			}
-			if (move?.category === 'Status' && move.type === 'Normal') {
+			if (move?.category === 'Status' && move.type === 'Normal' && source.species.name === 'Silvally') {
 				return priority + 1;
 			}
 		},
 		onModifyMove(move, pokemon) {
-			if (pokemon.item === 'ghostmemory' && pokemon.baseSpecies.name === 'Silvally') {
+			if (pokemon.species.name === 'Silvally-Ghost') {
 				if (!move.ignoreImmunity) move.ignoreImmunity = {};
 				if (move.ignoreImmunity !== true) {
 					move.ignoreImmunity['Ghost'] = true;
 				}
 			}
-			if (pokemon.item === 'darkmemory' && pokemon.baseSpecies.name === 'Silvally') {
+			if (pokemon.species.name === 'Silvally-Dark') {
 				move.ignoreDefensive = true;
 			}
 		},
 		onAfterMove(source, target, move) {
-			if (source.item === 'flyingmemory' && source.baseSpecies.name === 'Silvally' && move.type === 'Flying') {
+			if (source.species.name === 'Silvally-Flying' && move.type === 'Flying') {
 				const activated = false;
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 					'sharproot', 'hail', 'iondeluge', 'oilspill'];
@@ -4454,7 +4452,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onBasePower(basePower, attacker, defender, move) {
-			if (attacker.item === 'psychicmemory' && attacker.baseSpecies.name === 'Silvally' &&
+			if (attacker.species.name === 'Silvally-Psychic' &&
 				this.field.isTerrain('psychicterrain') && (move.priority > 0)) {
 				this.debug('RKS System boost');
 				return this.chainModify(1.3);
@@ -4464,25 +4462,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const source = this.activePokemon;
 			if (!move || move.category === 'Status') return;
 			if ((type === 'Dragon' || type === 'Dark' || type === 'Fighting') && this.field.isTerrain('mistyterrain') &&
-				source?.item === 'fairymemory' && source.baseSpecies.name === 'Silvally') return +1;
+				source?.species.name === 'Silvally-Fairy') return +1;
 		},
 		onModifySpD(spd, pokemon) {
-			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.item === 'groundmemory') ||
-				((['snowscape'].includes(pokemon.effectiveWeather()) && pokemon.item === 'icememory')) &&
-				pokemon.baseSpecies.name === 'Silvally') {
+			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.species.name === 'Silvally-Ground') ||
+				((['snowscape'].includes(pokemon.effectiveWeather()) && pokemon.species.name === 'Silvally-Ice'))) {
 				return this.chainModify(1.25);
 			}
 		},
 		onModifyDamage(damage, source, target, move) {
-			if (move && target.getMoveHitData(move).typeMod > 0 && source.item === 'fightingmemory' &&
-				source.baseSpecies.name === 'Silvally') {
+			if (move && target.getMoveHitData(move).typeMod > 0 && source.species.name === 'Silvally-Fighting') {
 				return this.chainModify([4710, 4096]);
 			}
 		},
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
 			if (damage >= target.hp && effect && effect.effectType === 'Move' &&
-				target.item === 'rockmemory' && target.baseSpecies.name === 'Silvally' && !target.swordBoost) {
+				target.species.name === 'Silvally-Rock' && !target.swordBoost) {
 				this.add('-ability', target, 'RKS System (Rock)');
 				target.swordBoost = true;
 				return target.hp - 1;
@@ -4491,7 +4487,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceDamagingHit(damage, target, source, move) {
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
 			if ((target.status === 'psn' || target.status === 'tox') &&
-				source.item === 'poisonmemory' && source.baseSpecies.name === 'Silvally') {
+				source.species.name === 'Silvally-Poison') {
 				this.boost({ spe: -1 }, target, source);
 			}
 		},
