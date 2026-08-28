@@ -966,14 +966,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
-		onSetStatus(status, target, source, effect) {
-			if (target.activeMoveActions <= 1) {
+		onSwitchIn(pokemon){
+			pokemon.addVolatile('dazzling')
+		},
+		condition:{
+			duration: 1,
+			onSetStatus(status, target, source, effect) {
 				if ((effect as Move)?.status) {
 					this.add('-immune', target, '[from] ability: Dazzling');
 				}
 				return false;
-			}
+			},
 		},
+		
 		flags: { breakable: 1 },
 		name: "Dazzling",
 		rating: 2.5,
@@ -2163,13 +2168,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onImmunity(type, pokemon) {
 			if (type === 'hail') return false;
-		},
-		onBasePowerPriority: 19,
-		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Ice') {
-				this.debug('Ice Body boost');
-				return this.chainModify(1.1);
-			}
 		},
 		flags: { },
 		name: "Ice Body",
@@ -4179,8 +4177,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
-		onTryBoost(boost, target, source, effect) {
-			if (source && target === source || target.activeMoveActions <= 1) {
+		onSwitchIn(pokemon){
+			pokemon.addVolatile('queenlymajesty')
+		},
+		condition:{
+			duration: 1,
+			onTryBoost(boost, target, source, effect) {
 				let showMsg = false;
 				let i: BoostID;
 				for (i in boost) {
@@ -4192,7 +4194,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
 					this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
 				}
-			}
+			},
 		},
 		flags: { breakable: 1 },
 		name: "Queenly Majesty",
@@ -10069,5 +10071,99 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Lactation",
 		rating: 4.5,
 		num: -256,
+	},
+	heavystunning: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (move.flags['slamming']) {
+				const r = this.random(100);
+				if (r < 30) {
+					target.addVolatile('flinch');
+				}
+			}
+		},
+		flags: { },
+		name: "Heavy Stunning",
+		rating: 3.5,
+		num: -257,
+	},
+	icecracking: {
+		onModifyMovePriority: -1,
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['punch'] && target != null){
+				this.damage(target.baseMaxhp / 8, target, pokemon);
+			}
+		},
+		flags: { },
+		name: "Ice Cracking",
+		rating: 0.5,
+		num: -258,
+	},
+	featherfan: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move.flags["wind"]) {
+				return priority + 1;
+			}
+		},
+		flags: { },
+		name: "Feather Fan",
+		rating: 4,
+		num: -259,
+	},
+	cursedhit: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.checkMoveMakesContact(move, target, source)) {
+				const r = this.random(100);
+				if (r < 15) {
+					target.addVolatile('curse')
+				}
+			}
+		},
+		flags: { },
+		name: "Cursed Hit",
+		rating: 2,
+		num: -260,
+	},
+	groundbody: {
+		onWeather(target, source, effect) {
+			if (effect.id === 'sandstorm') {
+				this.heal(target.baseMaxhp / 8);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
+		flags: { },
+		name: "Ground Body",
+		rating: 1,
+		num: -261,
+	},
+	selfdefense: {
+		onSwitchIn(pokemon) {
+			pokemon.addVolatile('selfdefense');
+		},
+		condition: {
+			onStart(target, source, move) {
+				this.effectState.slot = null;
+				this.effectState.damage = 0;
+			},
+			onRedirectTargetPriority: -1,
+			onRedirectTarget(target, source, source2, move) {
+				if (source !== this.effectState.target || !this.effectState.slot) return;
+				return this.getAtSlot(this.effectState.slot);
+			},
+			onDamagingHit(damage, target, source, move) {
+				if (!source.isAlly(target)) {
+					this.effectState.slot = source.getSlot();
+					this.effectState.damage = 0.25 * damage;
+				}
+			},
+		},
+		flags: { },
+		name: "Self-Defense",
+		rating: 2,
+		num: -262,
 	},
 };
