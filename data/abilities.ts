@@ -9346,7 +9346,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -226,
 	},
-	dobleaura: {
+	doubleaura: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
 			return this.chainModify(1.3);
