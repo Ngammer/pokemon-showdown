@@ -4192,7 +4192,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 				}
 				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-					this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
+					this.add("-fail", target, "unboost", "[from] ability: Queenly Majesty", `[of] ${target}`);
 				}
 			},
 		},
@@ -10090,8 +10090,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	icecracking: {
 		onModifyMovePriority: -1,
 		onModifyMove(move, pokemon, target) {
-			if (move.flags['punch'] && target != null){
-				this.damage(target.baseMaxhp / 8, target, pokemon);
+			if (move.flags['contact'] && target != null){
+				this.damage(target.baseMaxhp / 8, pokemon, target);
 			}
 		},
 		flags: { },
@@ -10141,25 +10141,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -261,
 	},
 	selfdefense: {
-		onSwitchIn(pokemon) {
-			pokemon.addVolatile('selfdefense');
-		},
-		condition: {
-			onStart(target, source, move) {
-				this.effectState.slot = null;
-				this.effectState.damage = 0;
-			},
-			onRedirectTargetPriority: -1,
-			onRedirectTarget(target, source, source2, move) {
-				if (source !== this.effectState.target || !this.effectState.slot) return;
-				return this.getAtSlot(this.effectState.slot);
-			},
-			onDamagingHit(damage, target, source, move) {
-				if (!source.isAlly(target)) {
-					this.effectState.slot = source.getSlot();
-					this.effectState.damage = 0.25 * damage;
-				}
-			},
+		onDamagingHit(damage, target, source, move) {
+			if (!source.isAlly(target)) {
+				this.effectState.slot = source.getSlot();
+				this.effectState.damage = 0.25 * damage;
+			}
 		},
 		flags: { },
 		name: "Self-Defense",

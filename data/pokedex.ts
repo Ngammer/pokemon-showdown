@@ -15440,7 +15440,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Ghost", "Flying"],
 		genderRatio: { M: 0.25, F: 0.75 },
 		baseStats: { hp: 75, atk: 60, def: 70, spa: 102, spd: 70, spe: 113 },
-		abilities: { 0: "Dancer", 1: "Feather  Fan", H: "Cursed Hit" },
+		abilities: { 0: "Dancer", 1: "Feather Fan", H: "Cursed Hit" },
 		heightm: 0.6,
 		weightkg: 3.4,
 		color: "Purple",
