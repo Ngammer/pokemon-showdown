@@ -4479,7 +4479,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
-			if (damage >= target.hp && effect && effect.effectType === 'Move' && target.item === 'rockmemory' && target.baseSpecies.name === 'Silvally' && !target.swordBoost) {
+			if (damage >= target.hp && effect && effect.effectType === 'Move' &&
+				target.item === 'rockmemory' && target.baseSpecies.name === 'Silvally' && !target.swordBoost) {
 				this.add('-ability', target, 'RKS System (Rock)');
 				target.swordBoost = true;
 				return target.hp - 1;
