@@ -10145,7 +10145,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			if (!source.isAlly(target)) {
 				var damage = this.effectState.damage = 0.25 * damage;
-				this.damage(source.baseMaxhp - damage, source, target);
+				this.damage(damage, source, target);
 			}
 		},
 		flags: { },
