@@ -967,11 +967,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onSetStatus(status, target, source, effect) {
-			if (target.activeMoveActions > 1) return;
-			if ((effect as Move)?.status) {
-				this.add('-immune', target, '[from] ability: Dazzling');
+			if (target.activeMoveActions <= 1) {
+				if ((effect as Move)?.status) {
+					this.add('-immune', target, '[from] ability: Dazzling');
+				}
+				return false;
 			}
-			return false;
 		},
 		flags: { breakable: 1 },
 		name: "Dazzling",
@@ -4179,17 +4180,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onTryBoost(boost, target, source, effect) {
-			if (source && target === source || target.activeMoveActions > 1) return;
-			let showMsg = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					delete boost[i];
-					showMsg = true;
+			if (source && target === source || target.activeMoveActions <= 1) {
+				let showMsg = false;
+				let i: BoostID;
+				for (i in boost) {
+					if (boost[i]! < 0) {
+						delete boost[i];
+						showMsg = true;
+					}
 				}
-			}
-			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
+				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+					this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
+				}
 			}
 		},
 		flags: { breakable: 1 },
