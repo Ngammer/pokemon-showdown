@@ -4398,10 +4398,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onSourceBasePowerPriority: -1,
-		onSourceBasePower(basePower, source, target, move) {
+		onSourceModifyDamage(damage, source, target, move) {
 			if (target.item === 'steelmemory' && target.baseSpecies.name === 'Silvally') {
 				this.debug('RKS System debuff');
 				return this.chainModify(0.875);
+			}
+			if (!target.swordBoost && target.item === 'bugmemory' && target.baseSpecies.name === 'Silvally') {
+				this.debug('RKS System weaken');
+				target.swordBoost = true;
+				return this.chainModify(0.75);
 			}
 		},
 		onModifySpe(spe, pokemon) {
@@ -4409,13 +4414,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.item === 'firememory')) &&
 				pokemon.baseSpecies.name === 'Silvally') {
 				return this.chainModify(1.25);
-			}
-		},
-		onSourceModifyDamage(damage, source, target, move) {
-			if (!target.swordBoost && target.item === 'bugmemory' && target.baseSpecies.name === 'Silvally') {
-				this.debug('RKS System weaken');
-				target.swordBoost = true;
-				return this.chainModify(0.75);
 			}
 		},
 		onModifyCritRatio(critRatio, source, target, move) {
@@ -4442,13 +4440,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.item === 'darkmemory' && pokemon.baseSpecies.name === 'Silvally') {
 				move.ignoreDefensive = true;
 			}
-			if (pokemon.item === 'flyingmemory' && pokemon.baseSpecies.name === 'Silvally' && move.type === 'Flying') {
+		},
+		onAfterMove(source, target, move) {
+			if (source.item === 'flyingmemory' && source.baseSpecies.name === 'Silvally' && move.type === 'Flying') {
 				const activated = false;
 				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 					'sharproot', 'hail', 'iondeluge', 'oilspill'];
 				for (const condition of sideConditions) {
-					if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !activated) {
-						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: RKS System (Flying)', `[of] ${pokemon}`);
+					if (source.hp && source.side.removeSideCondition(condition) && !activated) {
+						this.add('-sideend', source.side, this.dex.conditions.get(condition).name, '[from] ability: RKS System (Flying)', `[of] ${source}`);
 					}
 				}
 			}
@@ -4460,12 +4460,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify(1.3);
 			}
 		},
-		onEffectiveness(typeMod, target, type, move) {
+		onFoeEffectiveness(typeMod, target, type, move) {
 			const source = this.activePokemon;
 			if (!move || move.category === 'Status') return;
-			if (!source || source.item !== 'fairymemory' && source.baseSpecies.name !== 'Silvally') return;
-			if (!this.field.isTerrain('mistyterrain')) return;
-			if (type === 'Dragon' || type === 'Dark' || type === 'Fighting') return 1;
+			if ((type === 'Dragon' || type === 'Dark' || type === 'Fighting') && this.field.isTerrain('mistyterrain') &&
+				source?.item === 'fairymemory' && source.baseSpecies.name === 'Silvally') return +1;
 		},
 		onModifySpD(spd, pokemon) {
 			if ((['sandstorm'].includes(pokemon.effectiveWeather()) && pokemon.item === 'groundmemory') ||
@@ -4477,12 +4476,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyDamage(damage, source, target, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0 && source.item === 'fightingmemory' &&
 				source.baseSpecies.name === 'Silvally') {
-				return this.chainModify([4506, 4096]);
+				return this.chainModify([4710, 4096]);
 			}
 		},
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
-			if (!target.hp && target.item === 'rockmemory' && target.baseSpecies.name === 'Silvally' && !target.swordBoost) {
+			if (damage >= target.hp && effect && effect.effectType === 'Move' &&
+				target.item === 'rockmemory' && target.baseSpecies.name === 'Silvally' && !target.swordBoost) {
 				this.add('-ability', target, 'RKS System (Rock)');
 				target.swordBoost = true;
 				return target.hp - 1;
@@ -4490,9 +4490,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSourceDamagingHit(damage, target, source, move) {
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
-			if (this.randomChance(10, 10) && (target.status === 'psn' || target.status === 'tox') &&
+			if ((target.status === 'psn' || target.status === 'tox') &&
 				source.item === 'poisonmemory' && source.baseSpecies.name === 'Silvally') {
-				this.boost({ spe: -1 }, target, source, null, true, false);
+				this.boost({ spe: -1 }, target, source);
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
