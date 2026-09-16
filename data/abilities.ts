@@ -10092,10 +10092,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -257,
 	},
 	icecracking: {
-		onModifyMovePriority: -1,
-		onSourceModifyMove(move, pokemon, target) {
-			if (move.flags['contact'] && target != null){
-				this.damage(target.baseMaxhp / 8, target, pokemon);
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.flags['contact']){
+				this.damage(target.baseMaxhp / 8, target, source);
 			}
 		},
 		flags: { },
@@ -10146,7 +10145,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	selfdefense: {
 		onDamagingHit(damage, target, source, move) {
-			if (!source.isAlly(target)) {
+			if (!source.isAlly(target) && target.hp > 0) {
 				var damage = this.effectState.damage = 0.25 * damage;
 				this.damage(damage, source, target);
 			}
