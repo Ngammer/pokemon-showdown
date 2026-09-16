@@ -10155,4 +10155,36 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -262,
 	},
+	devourer: {
+		onSwitchIn(pokemon) {
+			for (const active of this.getAllActive()) {
+				const item = active.takeItem();
+				if (item) {
+					if (item.isBerry) {
+						this.singleEvent('Eat', item, null, pokemon, null, null);
+						this.runEvent('EatItem', pokemon, null, null, item);
+					} 
+					this.add('-enditem', active, item.name, '[from] ability: Devourer', `[of] ${pokemon}`);
+					let stats: BoostID[] = [];
+					const boost: SparseBoostsTable = {};
+					let statPlus: BoostID;
+					for (statPlus in pokemon.boosts) {
+						if (statPlus === 'accuracy' || statPlus === 'evasion') continue;
+						if (pokemon.boosts[statPlus] < 6) {
+							stats.push(statPlus);
+						}
+					}
+					const randomStat: BoostID | undefined = stats.length ? this.sample(stats) : undefined;
+					if (randomStat) boost[randomStat] = 1;
+					stats = [];
+					this.boost(boost, pokemon, pokemon);
+				}
+			}
+			
+		},
+		flags: { },
+		name: "Devourer",
+		rating: 2,
+		num: -263,
+	},
 };
