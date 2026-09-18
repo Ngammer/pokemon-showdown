@@ -4942,6 +4942,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			} else {
 				if (pokemon.species.forme === 'Meteor') {
 					pokemon.formeChange(pokemon.set.species);
+					this.actions.useMove('swift', pokemon);
 				}
 			}
 		},
