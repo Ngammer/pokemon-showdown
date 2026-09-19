@@ -10266,7 +10266,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	foongusaffinity: {
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison' && move.type === 'Water') return typeMod + 1;
+			if (type === 'Poison') return typeMod + 1;
 		},
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
@@ -10337,5 +10337,126 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Overload",
 		rating: 3.5,
 		num: -270,
+	},
+	magicfur: {
+		onModifySpDPriority: 6,
+		onModifySpD(spd) {
+			return this.chainModify(2);
+		},
+		flags: { breakable: 1 },
+		name: "Magic Fur",
+		rating: 4,
+		num: -271,
+	},
+	teleporter: {
+		onDamagingHit(damage, source, target, move) {
+			if (target.hp <= target.maxhp/2) {
+				source.switchFlag = true;
+				this.add('-activate', target, 'ability: Teleporter');
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Teleporter",
+		rating: 3.5,
+		num: -272,
+	},
+	steamreaction: {
+		onSourceDamagingHit(damage, source, target, move) {
+			target.clearBoosts();
+		},
+		flags: { },
+		name: "Steam Reaction",
+		rating: 3,
+		num: -273,
+	},
+	energyexchange: {
+		onBasePower(basePower, attacker, defender, move) {
+			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather()) && move.type === 'Electric') {
+				return this.chainModify(1.5);
+			}
+			if (this.field.isTerrain('electricterrain') && move.type === 'Fire') {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { },
+		name: "Energy Exchange",
+		rating: 3,
+		num: -274,
+	},
+	foresttrap: {
+		onDamagingHit(damage, target, source, move) {
+			if (target.activeTurns === 1) {
+				this.actions.useMove('foresttrap', target);
+			}
+		},
+		flags: { },
+		name: "Forest Trap",
+		rating: 3,
+		num: -275,
+	},
+	invernalbody: {
+		onFoeEffectiveness(typeMod, target, type, move) {
+			if (type === 'Dragon' || type === 'Water' || type === 'Grass' || type === 'Fire') return typeMod + 1;
+		},
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' || move.type === 'Fire') {
+				this.debug('Invernal Body weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(spa, attacker, defender, move) {
+			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' || move.type === 'Fire') {
+				this.debug('Invernal Body weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Invernal Body",
+		rating: 2,
+		num: -276,
+	},
+	toxicslime: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				source.trySetStatus('tox', target);
+				target.trySetStatus('tox', source);
+			}
+		},
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'psn' || effect.id === 'tox') {
+				this.heal(target.baseMaxhp / 10);
+				return false;
+			}
+		},
+		flags: { },
+		name: "Toxic Slime",
+		rating: 1.5,
+		num: -277,
+	},
+	steammaster: {
+		onSourceDamagingHit(damage, source, target, move) {
+			target.clearBoosts();
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				if (!this.boost({ spa: 1 })) {
+					this.add('-immune', target, '[from] ability: Lightning Rod');
+				}
+				return null;
+			}
+			if (target !== source && move.type === 'Water') {
+				if (!this.boost({ spe: 1 })) {
+					this.add('-immune', target, '[from] ability: Lightning Rod');
+				}
+				return null;
+			}
+		},
+		flags: { },
+		name: "Steam Master",
+		rating: 3,
+		num: -278,
 	},
 };

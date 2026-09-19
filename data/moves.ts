@@ -24010,4 +24010,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fight",
 		contestType: "Clever",
 	},
+	foresttrap: {
+		num: 438,
+		accuracy: true,
+		basePower: 100,
+		category: "Physical",
+		name: "Forest Trap",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		target: "allAdjacentFoes",
+		type: "Grass",
+		contestType: "Tough",
+	},
 };
