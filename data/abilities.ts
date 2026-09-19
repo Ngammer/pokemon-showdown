@@ -10188,4 +10188,154 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -263,
 	},
+	seaopera: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			if (move.flags['sound'] && !pokemon.volatiles['dynamax']) { // hardcode
+				move.type = 'Water';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4506, 4096]);
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.typeChangerBoosted === this.effect) {
+				if (this.randomChance(2, 10)) {
+					target.addVolatile('confusion', source);
+				}
+			}
+			if (target.isAlly(source)) {
+				this.heal(target.baseMaxhp / 4, target, source);
+			}
+		},
+		flags: { },
+		name: "Sea Opera",
+		rating: 1.5,
+		num: -264,
+	},
+	foolproofarcher: {
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (!move.flags['contact']) {
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		onModifyMove(move) {
+			if (!move.flags['piercing']) {
+				move.accuracy = true;
+			}
+		},
+		flags: { },
+		name: "Foolproof Archer",
+		rating: 1,
+		num: -265,
+	},
+	combatarcher: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.flags['contact']) {
+				this.debug('Combat Archer neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		onModifyMove(move) {
+			if (!move.flags['piercing']) {
+				move.accuracy = true;
+			}
+		},
+		flags: { },
+		name: "Combat Archer",
+		rating: 1,
+		num: -266,
+	},
+	foulwrestler: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (move.flags['slamming'] ||move.flags['punch']) {
+				const r = this.random(100);
+				if (r < 30) {
+					this.boost({ def: -1 }, target, source, null, true, false);
+				}
+			}
+		},
+		flags: { },
+		name: "Foul Wrestler",
+		rating: 1,
+		num: -267,
+	},
+	foongusaffinity: {
+		onFoeEffectiveness(typeMod, target, type, move) {
+			if (type === 'Poison' && move.type === 'Water') return typeMod + 1;
+		},
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Poison') {
+				this.debug('Foongus Affinity weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(spa, attacker, defender, move) {
+			if (move.type === 'Poison') {
+				this.debug('Foongus Affinity weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.flags['powder']) {
+				const r = this.random(100);
+				if (r < 34) {
+					target.trySetStatus('psn', source);
+				} else if (r < 66) {
+					target.trySetStatus('par', source);
+				} else {
+					target.trySetStatus('slp', source);
+				}
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Foongus Affinity",
+		rating: 2,
+		num: -268,
+	},
+	vibrantscales: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.hp >= target.maxhp) {
+				this.debug('Vibrant Scales weaken');
+				return this.chainModify(0.667);
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['sound']) {
+				this.debug('Amplifier boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Vibrant Scales",
+		rating: 3.5,
+		num: -269,
+	},
+	overload: {
+		onAnyModifyMove(move, pokemon) {
+			if (move.type === 'Normal') {
+				move.type = 'Electric';
+			}
+		},
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Electric'] = true;
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Overload",
+		rating: 3.5,
+		num: -270,
+	},
 };
