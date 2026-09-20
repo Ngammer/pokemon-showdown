@@ -10207,7 +10207,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		onTryHit(target, source, move) {
+		onSourceTryHit(target, source, move) {
 			if (source.isAlly(target)) {
 				this.heal(target.baseMaxhp / 4, target, source);
 				this.add('-activate', target, 'ability: Sea Opera');
@@ -10270,7 +10270,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	foongusaffinity: {
 		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison') return typeMod - 1;
+			if (move.type === 'Poison') return typeMod - 1;
 		},
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
@@ -10386,7 +10386,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	invernalbody: {
 		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Dragon' || type === 'Water' || type === 'Grass' || type === 'Fire') return typeMod - 1;
+			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' || move.type === 'Fire') return typeMod - 1;
 		},
 		flags: { breakable: 1 },
 		name: "Invernal Body",
