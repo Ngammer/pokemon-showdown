@@ -10207,6 +10207,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 			if (target.isAlly(source)) {
+				target.damage(0, target);
 				this.heal(target.baseMaxhp / 4, target, source);
 			}
 		},
@@ -10223,7 +10224,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifyMove(move) {
-			if (!move.flags['piercing']) {
+			if (move.flags['piercing']) {
 				move.accuracy = true;
 			}
 		},
@@ -10240,7 +10241,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifyMove(move) {
-			if (!move.flags['piercing']) {
+			if (move.flags['piercing']) {
 				move.accuracy = true;
 			}
 		},
@@ -10266,21 +10267,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	foongusaffinity: {
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (type === 'Poison') return typeMod + 1;
-		},
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Poison') {
-				this.debug('Foongus Affinity weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(spa, attacker, defender, move) {
-			if (move.type === 'Poison') {
-				this.debug('Foongus Affinity weaken');
-				return this.chainModify(0.5);
-			}
+			if (type === 'Poison') return 2;
 		},
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
@@ -10311,7 +10298,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['sound']) {
-				this.debug('Amplifier boost');
+				this.debug('Vibrant Scales boost');
 				return this.chainModify([6144, 4096]);
 			}
 		},
@@ -10351,7 +10338,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	teleporter: {
 		onDamagingHit(damage, source, target, move) {
 			if (target.hp <= target.maxhp/2) {
-				source.switchFlag = true;
+				target.forceSwitchFlag = true;
 				this.add('-activate', target, 'ability: Teleporter');
 			}
 		},
@@ -10362,7 +10349,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	steamreaction: {
 		onSourceDamagingHit(damage, source, target, move) {
-			target.clearBoosts();
+			source.clearBoosts();
 		},
 		flags: { },
 		name: "Steam Reaction",
@@ -10396,21 +10383,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	invernalbody: {
 		onFoeEffectiveness(typeMod, target, type, move) {
-			if (type === 'Dragon' || type === 'Water' || type === 'Grass' || type === 'Fire') return typeMod + 1;
-		},
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' || move.type === 'Fire') {
-				this.debug('Invernal Body weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(spa, attacker, defender, move) {
-			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' || move.type === 'Fire') {
-				this.debug('Invernal Body weaken');
-				return this.chainModify(0.5);
-			}
+			if (type === 'Dragon' || type === 'Water' || type === 'Grass' || type === 'Fire') return 2;
 		},
 		flags: { breakable: 1 },
 		name: "Invernal Body",
@@ -10443,13 +10416,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Fire') {
 				if (!this.boost({ spa: 1 })) {
-					this.add('-immune', target, '[from] ability: Lightning Rod');
+					this.add('-immune', target, '[from] ability: Steam Master');
 				}
 				return null;
 			}
 			if (target !== source && move.type === 'Water') {
 				if (!this.boost({ spe: 1 })) {
-					this.add('-immune', target, '[from] ability: Lightning Rod');
+					this.add('-immune', target, '[from] ability: Steam Master');
 				}
 				return null;
 			}
