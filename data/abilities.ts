@@ -10206,13 +10206,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					target.addVolatile('confusion', source);
 				}
 			}
-			if (target.isAlly(source)) {
-				this.heal(target.baseMaxhp / 4, target, source);
-			}
 		},
 		onTryHit(target, source, move) {
 			if (source.isAlly(target)) {
-				move.basePower = 0;
+				this.heal(target.baseMaxhp / 4, target, source);
+				this.add('-activate', target, 'ability: Sea Opera');
+				return null;
 			}
 		},
 		flags: { },
@@ -10352,8 +10351,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -272,
 	},
 	steamreaction: {
-		onSourceDamagingHit(damage, source, target, move) {
-			source.clearBoosts();
+		onSourceDamagingHit(damage, target, source, move) {
+			target.clearBoosts();
 		},
 		flags: { },
 		name: "Steam Reaction",
@@ -10414,7 +10413,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -277,
 	},
 	steammaster: {
-		onSourceDamagingHit(damage, source, target, move) {
+		onSourceDamagingHit(damage, target, source, move) {
 			target.clearBoosts();
 		},
 		onTryHit(target, source, move) {

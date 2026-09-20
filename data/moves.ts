@@ -24020,6 +24020,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		volatileStatus: 'partiallytrapped',
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 100,
+			onHit(target, source, move) {
+				if (source.isActive) target.addVolatile('trapped', source, move, 'trapper');
+			},
+		},
 		target: "allAdjacentFoes",
 		type: "Grass",
 		contestType: "Tough",
