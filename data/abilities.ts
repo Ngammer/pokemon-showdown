@@ -10435,4 +10435,98 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -278,
 	},
+	pointy: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		flags: { },
+		name: "Pointy",
+		rating: 3,
+		num: -279,
+	},
+	pattern: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Bug') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Dark') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Dragon') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Electric') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Fairy') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Fighting') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Fire') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Flying') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Ghost') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Grass') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Ground') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Ice') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Normal') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Poison') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Psychic') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Rock') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Steel') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+			if (move.type === 'Water') {
+				this.debug('Pattern boost');
+				return this.chainModify(1.33);
+			}
+		},
+		flags: { },
+		name: "Pattern",
+		rating: 2,
+		num: -280,
+	},
 };
