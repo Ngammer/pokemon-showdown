@@ -10451,75 +10451,64 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	pattern: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Bug') {
+			if (move.type === 'Dark' && attacker.species.name === 'Vivillion-Monsoon') {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Dark') {
+			if (move.type === 'Electric' && attacker.species.name === 'Vivillion-Pokeball') {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Dragon') {
+			if (move.type === 'Fairy' && (attacker.species.name === 'Vivillion-Meadow' || attacker.species.name === 'Vivillion-Icy Snow'
+				|| attacker.species.name === 'Vivillion-Elegant' || attacker.species.name === 'Vivillion-River' 
+				|| attacker.species.name === 'Vivillion-Monsoon' || attacker.species.name === 'Vivillion-Sun' || attacker.species.name === 'Vivillion-Fancy')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Electric') {
+			if (move.type === 'Fire' && (attacker.species.name === 'Vivillion-Sun' || attacker.species.name === 'Vivillion-Savanna')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Fairy') {
+			if (move.type === 'Ghost' && (attacker.species.name === 'Vivillion-Ocean' || attacker.species.name === 'Vivillion-Jungle')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Fighting') {
+			if (move.type === 'Grass'  && (attacker.species.name === 'Vivillion-Meadow' || attacker.species.name === 'Vivillion-Garden'
+				|| attacker.species.name === 'Vivillion-High Plains' || attacker.species.name === 'Vivillion-Jungle' )) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Fire') {
+			if (move.type === 'Ground' && (attacker.species.name === 'Vivillion-Continental' || attacker.species.name === 'Vivillion-Sandstorm'
+				|| attacker.species.name === 'Vivillion-High Plains' || attacker.species.name === 'Vivillion-Savanna' )) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Flying') {
+			if (move.type === 'Ice' && (attacker.species.name === 'Vivillion-Icy Snow' || attacker.species.name === 'Vivillion-Polar'
+				|| attacker.species.name === 'Vivillion-Tundra')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Ghost') {
+			if (move.type === 'Normal' && (attacker.species.name === 'Vivillion-Elegant' || attacker.species.name === 'Vivillion-Modern'
+				|| attacker.species.name === 'Vivillion-Marine')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Grass') {
+			if (move.type === 'Psychic' && attacker.species.name === 'Vivillion-Fancy') {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Ground') {
+			if (move.type === 'Rock' && (attacker.species.name === 'Vivillion-Sandstorm' || attacker.species.name === 'Vivillion-Tundra' 
+				|| attacker.species.name === 'Vivillion-Archipelago' )) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Ice') {
+			if (move.type === 'Steel' && (attacker.species.name === 'Vivillion-Pokeball' || attacker.species.name === 'Vivillion-Modern')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Normal') {
-				this.debug('Pattern boost');
-				return this.chainModify(1.33);
-			}
-			if (move.type === 'Poison') {
-				this.debug('Pattern boost');
-				return this.chainModify(1.33);
-			}
-			if (move.type === 'Psychic') {
-				this.debug('Pattern boost');
-				return this.chainModify(1.33);
-			}
-			if (move.type === 'Rock') {
-				this.debug('Pattern boost');
-				return this.chainModify(1.33);
-			}
-			if (move.type === 'Steel') {
-				this.debug('Pattern boost');
-				return this.chainModify(1.33);
-			}
-			if (move.type === 'Water') {
+			if (move.type === 'Water' && (attacker.species.name === 'Vivillion-Polar' || attacker.species.name === 'Vivillion-Continental'
+				|| attacker.species.name === 'Vivillion-Garden' || attacker.species.name === 'Vivillion-Marine' || attacker.species.name === 'Vivillion-Archipelago' 
+				|| attacker.species.name === 'Vivillion-River' || attacker.species.name === 'Vivillion-Ocean' )) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
