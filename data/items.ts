@@ -9127,6 +9127,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 248,
 		gen: 2,
 	},
+	typhlosionite: {
+		name: "Typhlosionite",
+		spritenum: 607,
+		megaStone: { 
+			"Typhlosion": "Typhlosion-Mega",
+			"Typhlosion-Hisui": "Typhlosion-Hisui-Mega"},
+		itemUser: ["Typhlosion", "Typhlosion-Hisui"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: 669,
+		gen: 6,
+	},
 	tyranitarite: {
 		name: "Tyranitarite",
 		spritenum: 607,
