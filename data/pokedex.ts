@@ -8344,7 +8344,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 14.5,
 		color: "Green",
 		eggGroups: ["Fairy", "Grass"],
-		requiredItem: "Roseradeite",
+		requiredItem: "Roserite",
 		gen: 9,
 	},
 	cranidos: {
@@ -9413,7 +9413,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 51.5,
 		color: "Green",
 		eggGroups: ["Bug"],
-		requiredItem: "Yanmeganite",
+		requiredItem: "Yanmegite",
 		gen: 9,
 	},
 	leafeon: {
@@ -9987,7 +9987,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 85.6,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Cresselinite",
+		requiredItem: "Cresselite",
 		gen: 9,
 	},
 	phione: {
@@ -12714,7 +12714,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 35.5,
 		color: "Purple",
 		eggGroups: ["Field", "Human-Like"],
-		requiredItem: "Mienshaite",
+		requiredItem: "Mienshite",
 		gen: 9,
 	},
 	druddigon: {
@@ -14790,7 +14790,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 21,
 		color: "Yellow",
 		eggGroups: ["Monster", "Dragon"],
-		requiredItem: "Helioliskite",
+		requiredItem: "Heliolite",
 		gen: 9,
 	},
 	tyrunt: {
@@ -15007,7 +15007,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 150.5,
 		color: "Purple",
 		eggGroups: ["Dragon"],
-		requiredItem: "Goodraite",
+		requiredItem: "Goodrite",
 		gen: 9,
 	},
 	goodrahisui: {
@@ -15215,7 +15215,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Brown",
 		eggGroups: ["Amorphous"],
-		requiredItem: "Gourgeistite",
+		requiredItem: "Gourgite",
 		gen: 9,
 	},
 	gourgeistsmallmega: {
@@ -15230,7 +15230,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Brown",
 		eggGroups: ["Amorphous"],
-		requiredItem: "Gourgeistite",
+		requiredItem: "Gourgite",
 		gen: 9,
 	},
 	gourgeistlargemega: {
@@ -15245,7 +15245,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Brown",
 		eggGroups: ["Amorphous"],
-		requiredItem: "Gourgeistite",
+		requiredItem: "Gourgite",
 		gen: 9,
 	},
 	gourgeistsupermega: {
@@ -15260,7 +15260,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Brown",
 		eggGroups: ["Amorphous"],
-		requiredItem: "Gourgeistite",
+		requiredItem: "Gourgite",
 		gen: 9,
 	},
 	bergmite: {
@@ -15391,8 +15391,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
 		tags: ["Restricted Legendary"],
-		otherFormes: ["Xerneas-Neutral"],
-		formeOrder: ["Xerneas-Neutral", "Xerneas"],
+		otherFormes: ["Xerneas-Neutral", "Xerneas-Mega"],
+		formeOrder: ["Xerneas-Neutral", "Xerneas-Mega", "Xerneas"],
 	},
 	xerneasneutral: {
 		num: 716,
@@ -15406,8 +15406,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 3,
 		weightkg: 215,
 		color: "Blue",
-		otherFormes: ["Xerneas-Mega"],
-		formeOrder: ["Xerneas", "Xerneas-Mega"],
 		eggGroups: ["Undiscovered"],
 	},
 	xerneasmega: {
@@ -15422,7 +15420,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 215,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Xerneasite",
+		requiredItem: "Xernite",
 		gen: 9,
 	},
 	yveltal: {
@@ -15452,7 +15450,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 203,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Yveltalite",
+		requiredItem: "Yveltite",
 		gen: 9,
 	},
 	zygarde: {
@@ -15608,7 +15606,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 195,
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "volcanionite",
+		requiredItem: "volcanite",
 		gen: 9,
 	},
 	// gen 7
@@ -16519,7 +16517,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 0.3,
 		color: "Green",
 		eggGroups: ["Grass"],
-		requiredItem: "comfeyite",
+		requiredItem: "comfite",
 		gen: 9,
 	},
 	oranguru: {
@@ -17195,7 +17193,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 210,
 		color: "Green",
 		eggGroups: ["Mineral"],
-		requiredItem: "Dhelmisite",
+		requiredItem: "Dhelmite",
 		gen: 9,
 	},
 	jangmoo: {
@@ -19146,7 +19144,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 58.2,
 		color: "Purple",
 		eggGroups: ["Human-Like"],
-		requiredItem: "Mr. Rimeite",
+		requiredItem: "Mr. Rimite",
 	},
 	runerigus: {
 		num: 867,
@@ -21183,7 +21181,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 112.8,
 		color: "Pink",
 		eggGroups: ["Fairy"],
-		requiredItem: "Tinkatonite-X",
+		requiredItem: "Tinkatite-X",
 	},
 	tinkatonmegay: {
 		num: 959,
@@ -21198,7 +21196,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 112.8,
 		color: "Pink",
 		eggGroups: ["Fairy"],
-		requiredItem: "Tinkatonite-Y",
+		requiredItem: "Tinkatite-Y",
 	},
 	tinkatonkanto: {
 		num: 959,
@@ -22498,7 +22496,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 93,
 		color: "Green",
 		eggGroups: ["Grass", "Dragon"],
-		requiredItem: "Hydrappleite",
+		requiredItem: "Hydrapplite",
 	},
 	gougingfire: {
 		num: 1020,
