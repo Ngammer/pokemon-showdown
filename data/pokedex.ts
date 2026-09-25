@@ -12314,7 +12314,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Galvantula-Mega",
 		baseSpecies: "Galvantula",
 		forme: "Mega",
-		types: ["Bug", "Dark"],
+		types: ["Bug", "Electric"],
 		baseStats: { hp: 70, atk: 67, def: 70, spa: 139, spd: 80, spe: 149 },
 		abilities: { 0: "Galvanided  Hair" },
 		heightm: 0.8,
