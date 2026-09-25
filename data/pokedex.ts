@@ -18404,6 +18404,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Grass", "Dragon"],
 		canGigantamax: "G-Max Tartness",
 	},
+	flapplemega: {
+		num: 841,
+		name: "Flapple-Mega",
+		baseSpecies: "Flapple",
+		forme: "Mega",
+		types: ["Grass", "Dragon"],
+		baseStats: { hp: 70, atk: 155, def: 95, spa: 120, spd: 70, spe: 130 },
+		abilities: { 0: "Aerialite" },
+		heightm: 0.3, // cambiar
+		weightkg: 1, // cambiar
+		color: "Green", // cambiar
+		eggGroups: ["Grass", "Dragon"],
+		requiredItem: "Flapplite",
+	},
 	flapplegmax: {
 		num: 841,
 		name: "Flapple-Gmax",
@@ -18444,7 +18458,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Berry Factory" },
 		heightm: 0.4, // cambiar
 		weightkg: 13, // cambiar
-		color: "Green",
+		color: "Green", // cambiar
 		eggGroups: ["Grass", "Dragon"],
 		requiredItem: "Appletunite",
 	},
