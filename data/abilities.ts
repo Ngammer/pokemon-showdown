@@ -5666,7 +5666,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 285,
 	},
 	symbiosis: {
-		onBeforeSwitchIn(pokemon) {
+		onSwitchIn(pokemon) {
 			for (let i = pokemon.side.pokemon.length - 1; i > pokemon.position; i--) {
 				const possibleTarget = pokemon.side.pokemon[i];
 				if (!possibleTarget.fainted) {
