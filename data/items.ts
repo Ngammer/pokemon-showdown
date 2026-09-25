@@ -10946,4 +10946,15 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -138,
 		gen: 9,
 	},
+	talonflamite: {
+		name: "Talonflamite",
+		spritenum: 607,
+		megaStone: {"Talonflame": "Talonflame-Mega",},
+		itemUser: ["Talonflame"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -138,
+		gen: 9,
+	},
 };
