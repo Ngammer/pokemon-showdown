@@ -19855,12 +19855,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, cosmic: 1 },
 		onTry(source) {
-		if (source.species.baseSpecies === 'Minior') {
-			this.attrLastMove('[still]');
-			this.actions.useMove('meteorswift', source); 
-			return null; 
-		}
-	},
+			if (source.species.baseSpecies === 'Minior') {
+				this.attrLastMove('[still]');
+				this.actions.useMove('meteorswift', source);
+				return null;
+			}
+		},
 		target: "allAdjacentFoes",
 		type: "Rock",
 		contestType: "Cool",
@@ -19873,7 +19873,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Meteor Swift",
 		pp: 20,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, cosmic: 1 },
+		flags: { nosketch: 1, protect: 1, mirror: 1, bullet: 1, cosmic: 1 },
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
@@ -24019,7 +24019,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		volatileStatus: 'partiallytrapped',
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { nosketch: 1, contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
 			chance: 100,
 			onHit(target, source, move) {

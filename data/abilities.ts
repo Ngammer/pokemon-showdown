@@ -966,10 +966,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
-		onSwitchIn(pokemon){
-			pokemon.addVolatile('dazzling')
+		onSwitchIn(pokemon) {
+			pokemon.addVolatile('dazzling');
 		},
-		condition:{
+		condition: {
 			duration: 1,
 			onSetStatus(status, target, source, effect) {
 				if ((effect as Move)?.status) {
@@ -4177,10 +4177,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return false;
 			}
 		},
-		onSwitchIn(pokemon){
-			pokemon.addVolatile('queenlymajesty')
+		onSwitchIn(pokemon) {
+			pokemon.addVolatile('queenlymajesty');
 		},
-		condition:{
+		condition: {
 			duration: 1,
 			onTryBoost(boost, target, source, effect) {
 				let showMsg = false;
@@ -4410,8 +4410,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifySpe(spe, pokemon) {
-			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) && pokemon.species.name === 'Silvally-Water') ||
-				(['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) && pokemon.species.name === 'Silvally-Fire'))) {
+			if (((['raindance', 'primordialsea'].includes(pokemon.effectiveWeather()) &&
+				pokemon.species.name === 'Silvally-Water') || (['sunnydday', 'desolateland'].includes(pokemon.effectiveWeather()) &&
+					pokemon.species.name === 'Silvally-Fire'))) {
 				return this.chainModify(1.25);
 			}
 		},
@@ -4421,7 +4422,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onModifyPriority(priority, source, target, move) {
-			if (this.field.isTerrain('electricterrain') && source.species.name === 'Silvally-Electric' && move.type === 'Electric') {
+			if (this.field.isTerrain('electricterrain') &&
+				source.species.name === 'Silvally-Electric' && move.type === 'Electric') {
 				return priority + 1;
 			}
 			if (move?.category === 'Status' && move.type === 'Normal' && source.species.name === 'Silvally') {
@@ -5664,167 +5666,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 285,
 	},
 	symbiosis: {
-		onBeforeSwitchOut(pokemon) {
-			pokemon.side.addSideCondition('symbiosis', pokemon, this.effect);
-		},
-		condition: {
-			onSideStart(side, pokemon) {
-				this.effectState.turns = 0;
-				this.add('-sidestart', side, 'Symbiosis');
-			},
-			onSideEnd(side) {
-				this.add('-sideend', side, 'Symbiosis');
-			},
-			onResidualOrder: 21,
-			onSideResidual(side, pokemon) {
-				this.effectState.turns++;
-				if (this.effectState.turns > 3) {
-					pokemon.side.removeSideCondition('symbiosis');
-					pokemon.removeVolatile('symbiosiswater');
-					pokemon.removeVolatile('symbiosisfire');
-					pokemon.removeVolatile('symbiosisice');
-					pokemon.removeVolatile('symbiosisfairy');
-					pokemon.removeVolatile('symbiosispsychic');
-					pokemon.removeVolatile('symbiosisrock');
-				}
-			},
-			onSwitchIn(pokemon) {
-				if (pokemon.types[0] === 'Electric') {
-					pokemon.addVolatile('charge');
-					pokemon.side.removeSideCondition('symbiosis');
-				}
-				if (pokemon.types[0] === 'Grass') {
-					this.heal(pokemon.baseMaxhp / 4);
-					pokemon.side.removeSideCondition('symbiosis');
-				}
-				if (pokemon.types[0] === 'Flying') {
-					const activated = false;
-					const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
-						'sharproot', 'hail', 'iondeluge'];
-					const removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', ...sideConditions];
-					for (const condition of sideConditions) {
-						if (pokemon.hp && pokemon.side.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
-							this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] ability: Skill', `[of] ${pokemon}`);
-						}
+		onBeforeSwitchIn(pokemon) {
+			for (let i = pokemon.side.pokemon.length - 1; i > pokemon.position; i--) {
+				const possibleTarget = pokemon.side.pokemon[i];
+				if (!possibleTarget.fainted) {
+					// If Ogerpon is in the last slot while the Illusion Pokemon is Terastallized
+					// Illusion will not disguise as anything
+					if (!pokemon.terastallized || !['Ogerpon', 'Terapagos'].includes(possibleTarget.species.baseSpecies)) {
+						if (pokemon.hasType(possibleTarget.getTypes()[0])) return false;
+						if (!pokemon.addType(possibleTarget.getTypes()[0])) return false;
+						this.add('-start', pokemon, 'typeadd', possibleTarget.getTypes()[0], '[from] ability: Symbiosis');
 					}
-					for (const condition of removeTarget) {
-						if (pokemon.hp && pokemon.side.foe.removeSideCondition(condition) && !pokemon.hasItem('heavydutyboots') && !activated) {
-							this.add('-sideend', pokemon.side.foe, this.dex.conditions.get(condition).name, '[from] ability: Skill', `[of] ${pokemon}`);
-						}
-					}
-					pokemon.side.removeSideCondition('symbiosis');
+					break;
 				}
-				if (pokemon.types[0] === 'Bug') {
-					pokemon.addVolatile('endure');
-					pokemon.side.removeSideCondition('symbiosis');
-				}
-			},
-			onTryBoost(boost, target, source, effect) {
-				if (source && target === source || target.types[0] !== 'Steel') return;
-				let showMsg = false;
-				let i: BoostID;
-				for (i in boost) {
-					if (boost[i]! < 0) {
-						delete boost[i];
-						showMsg = true;
-					}
-				}
-				if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-					this.add("-fail", target, "unboost", "[from] ability: Clear Body", `[of] ${target}`);
-				}
-			},
-			onWeatherModifyDamagePriority: 1,
-			onWeatherModifyDamage(damage, attacker, defender, move) {
-				if (attacker.types[0] === 'Water') {
-					attacker.addVolatile('symbiosiswater');
-					(this.dex.conditions.getByID('raindance' as ID) as any).onWeatherModifyDamage
-						.call(this, damage, attacker, defender, move);
-					return damage; // fast exit from event
-				} else if (attacker.types[0] === 'Fire') {
-					attacker.addVolatile('symbiosisfire');
-					(this.dex.conditions.getByID('sunnyday' as ID) as any).onWeatherModifyDamage
-						.call(this, damage, attacker, defender, move);
-					return damage; // fast exit from event
-				} else if (attacker.types[0] === 'Ice') {
-					attacker.addVolatile('symbiosisice');
-					(this.dex.conditions.getByID('snowscape' as ID) as any).onWeatherModifyDamage
-						.call(this, damage, attacker, defender, move);
-					return damage; // fast exit from event
-				} else if (attacker.types[0] === 'Rock') {
-					attacker.addVolatile('symbiosisrock');
-					(this.dex.conditions.getByID('snowscape' as ID) as any).onWeatherModifyDamage
-						.call(this, damage, attacker, defender, move);
-					return damage; // fast exit from event
-				}
-			},
-			onTerrainModifyDamagePriority: 1,
-			onTerrainModifyDamage(damage, attacker, defender, move) {
-				if (attacker.types[0] === 'Fairy') {
-					attacker.addVolatile('symbiosisfairy');
-					(this.dex.conditions.getByID('mistyterrain' as ID) as any).onTerrainModifyDamage
-						.call(this, damage, attacker, defender, move);
-					return damage; // fast exit from event
-				} else if (attacker.types[0] === 'Psychic') {
-					attacker.addVolatile('symbiosispsychic');
-					(this.dex.conditions.getByID('mistyterrain' as ID) as any).onTerrainModifyDamage
-						.call(this, damage, attacker, defender, move);
-					return damage; // fast exit from event
-				}
-			},
-			onModifyMovePriority: -5,
-			onModifyMove(move, pokemon) {
-				if (pokemon.types[0] === 'Dragon') {
-					if (!move.ignoreImmunity) move.ignoreImmunity = {};
-					if (move.ignoreImmunity !== true) {
-						move.ignoreImmunity['Dragon'] = true;
-						this.field.removePseudoWeather('symbiosis');
-					}
-				} else if (pokemon.types[0] === 'Fighting') {
-					if (!move.ignoreImmunity) move.ignoreImmunity = {};
-					if (move.ignoreImmunity !== true) {
-						move.ignoreImmunity['Fighting'] = true;
-						this.field.removePseudoWeather('symbiosis');
-					}
-				} else if (pokemon.types[0] === 'Normal') {
-					if (!move.ignoreImmunity) move.ignoreImmunity = {};
-					if (move.ignoreImmunity !== true) {
-						move.ignoreImmunity['Normal'] = true;
-						this.field.removePseudoWeather('symbiosis');
-					}
-				} else if (pokemon.types[0] === 'Ground') {
-					if (!move.ignoreImmunity) move.ignoreImmunity = {};
-					if (move.ignoreImmunity !== true) {
-						move.ignoreImmunity['Ground'] = true;
-						this.field.removePseudoWeather('symbiosis');
-					}
-				} else if (pokemon.types[0] === 'Poison') {
-					if (!move.ignoreImmunity) move.ignoreImmunity = {};
-					if (move.ignoreImmunity !== true) {
-						move.ignoreImmunity['Poison'] = true;
-						this.field.removePseudoWeather('symbiosis');
-					}
-				} else if (pokemon.types[0] === 'Dark') {
-					const target = pokemon.side.foe;
-					if (target.sideConditions['lightscreen'] || target.sideConditions['reflect'] || target.sideConditions['auroraveil']) {
-						move.infiltrates = true;
-					}
-				}
-			},
-			onDamagingHit(damage, target, source, move) {
-				if (target.types[0] === 'Ghost') {
-					move.accuracy = 0;
-					this.field.removePseudoWeather('symbiosis');
-				}
-			},
-			onSwitchOut(pokemon) {
-				pokemon.side.removeSideCondition('symbiosis');
-				pokemon.removeVolatile('symbiosiswater');
-				pokemon.removeVolatile('symbiosisfire');
-				pokemon.removeVolatile('symbiosisice');
-				pokemon.removeVolatile('symbiosisfairy');
-				pokemon.removeVolatile('symbiosispsychic');
-				pokemon.removeVolatile('symbiosisrock');
-			},
+			}
 		},
 		flags: { },
 		name: "Symbiosis",
@@ -10094,7 +9949,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	icecracking: {
 		onSourceDamagingHit(damage, target, source, move) {
-			if (move.flags['contact']){
+			if (move.flags['contact']) {
 				this.damage(target.baseMaxhp / 8, target, source);
 			}
 		},
@@ -10121,7 +9976,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.checkMoveMakesContact(move, target, source)) {
 				const r = this.random(100);
 				if (r < 15) {
-					target.addVolatile('curse')
+					target.addVolatile('curse');
 				}
 			}
 		},
@@ -10147,7 +10002,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	selfdefense: {
 		onDamagingHit(damage, target, source, move) {
 			if (!source.isAlly(target) && target.hp > 0) {
-				var damage = this.effectState.damage = 0.25 * damage;
+				damage = this.effectState.damage = 0.25 * damage;
 				this.damage(damage, source, target);
 			}
 		},
@@ -10164,7 +10019,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					if (item.isBerry) {
 						this.singleEvent('Eat', item, null, pokemon, null, null);
 						this.runEvent('EatItem', pokemon, null, null, item);
-					} 
+					}
 					this.add('-enditem', active, item.name, '[from] ability: Devourer', `[of] ${pokemon}`);
 					let stats: BoostID[] = [];
 					const boost: SparseBoostsTable = {};
@@ -10181,7 +10036,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					this.boost(boost, pokemon, pokemon);
 				}
 			}
-			
 		},
 		flags: { },
 		name: "Devourer",
@@ -10256,7 +10110,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	foulwrestler: {
 		onSourceDamagingHit(damage, target, source, move) {
 			// Despite not being a secondary, Shield Dust / Covert Cloak block Poison Touch's effect
-			if (move.flags['slamming'] ||move.flags['punch']) {
+			if (move.flags['slamming'] || move.flags['punch']) {
 				const r = this.random(100);
 				if (r < 30) {
 					this.boost({ def: -1 }, target, source, null, true, false);
@@ -10340,7 +10194,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	teleporter: {
 		onDamagingHit(damage, source, target, move) {
-			if (target.hp <= target.maxhp/2) {
+			if (target.hp <= target.maxhp / 2) {
 				target.forceSwitchFlag = true;
 				this.add('-activate', target, 'ability: Teleporter');
 			}
@@ -10386,7 +10240,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	invernalbody: {
 		onEffectiveness(typeMod, target, type, move) {
-			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' || move.type === 'Fire') return typeMod - 1;
+			if (move.type === 'Dragon' || move.type === 'Water' || move.type === 'Grass' ||
+				move.type === 'Fire') return typeMod - 1;
 		},
 		flags: { breakable: 1 },
 		name: "Invernal Body",
@@ -10459,37 +10314,44 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Fairy' && (attacker.species.name === 'Vivillion-Meadow' || attacker.species.name === 'Vivillion-Icy Snow'
-				|| attacker.species.name === 'Vivillion-Elegant' || attacker.species.name === 'Vivillion-River' 
-				|| attacker.species.name === 'Vivillion-Monsoon' || attacker.species.name === 'Vivillion-Sun' || attacker.species.name === 'Vivillion-Fancy')) {
+			if (move.type === 'Fairy' && (attacker.species.name === 'Vivillion-Meadow' ||
+				attacker.species.name === 'Vivillion-Icy Snow' || attacker.species.name === 'Vivillion-Elegant' ||
+				attacker.species.name === 'Vivillion-River' || attacker.species.name === 'Vivillion-Monsoon' ||
+				attacker.species.name === 'Vivillion-Sun' || attacker.species.name === 'Vivillion-Fancy')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Fire' && (attacker.species.name === 'Vivillion-Sun' || attacker.species.name === 'Vivillion-Savanna')) {
+			if (move.type === 'Fire' &&
+				(attacker.species.name === 'Vivillion-Sun' || attacker.species.name === 'Vivillion-Savanna')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Ghost' && (attacker.species.name === 'Vivillion-Ocean' || attacker.species.name === 'Vivillion-Jungle')) {
+			if (move.type === 'Ghost' &&
+				(attacker.species.name === 'Vivillion-Ocean' || attacker.species.name === 'Vivillion-Jungle')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Grass'  && (attacker.species.name === 'Vivillion-Meadow' || attacker.species.name === 'Vivillion-Garden'
-				|| attacker.species.name === 'Vivillion-High Plains' || attacker.species.name === 'Vivillion-Jungle' )) {
+			if (move.type === 'Grass' &&
+				(attacker.species.name === 'Vivillion-Meadow' || attacker.species.name === 'Vivillion-Garden' ||
+					attacker.species.name === 'Vivillion-High Plains' || attacker.species.name === 'Vivillion-Jungle')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Ground' && (attacker.species.name === 'Vivillion-Continental' || attacker.species.name === 'Vivillion-Sandstorm'
-				|| attacker.species.name === 'Vivillion-High Plains' || attacker.species.name === 'Vivillion-Savanna' )) {
+			if (move.type === 'Ground' &&
+				(attacker.species.name === 'Vivillion-Continental' || attacker.species.name === 'Vivillion-Sandstorm' ||
+					attacker.species.name === 'Vivillion-High Plains' || attacker.species.name === 'Vivillion-Savanna')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Ice' && (attacker.species.name === 'Vivillion-Icy Snow' || attacker.species.name === 'Vivillion-Polar'
-				|| attacker.species.name === 'Vivillion-Tundra')) {
+			if (move.type === 'Ice' &&
+				(attacker.species.name === 'Vivillion-Icy Snow' || attacker.species.name === 'Vivillion-Polar' ||
+					attacker.species.name === 'Vivillion-Tundra')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Normal' && (attacker.species.name === 'Vivillion-Elegant' || attacker.species.name === 'Vivillion-Modern'
-				|| attacker.species.name === 'Vivillion-Marine')) {
+			if (move.type === 'Normal' &&
+				(attacker.species.name === 'Vivillion-Elegant' || attacker.species.name === 'Vivillion-Modern' ||
+					attacker.species.name === 'Vivillion-Marine')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
@@ -10497,18 +10359,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Rock' && (attacker.species.name === 'Vivillion-Sandstorm' || attacker.species.name === 'Vivillion-Tundra' 
-				|| attacker.species.name === 'Vivillion-Archipelago' )) {
+			if (move.type === 'Rock' &&
+				(attacker.species.name === 'Vivillion-Sandstorm' || attacker.species.name === 'Vivillion-Tundra' ||
+					attacker.species.name === 'Vivillion-Archipelago')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Steel' && (attacker.species.name === 'Vivillion-Pokeball' || attacker.species.name === 'Vivillion-Modern')) {
+			if (move.type === 'Steel' &&
+				(attacker.species.name === 'Vivillion-Pokeball' || attacker.species.name === 'Vivillion-Modern')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
-			if (move.type === 'Water' && (attacker.species.name === 'Vivillion-Polar' || attacker.species.name === 'Vivillion-Continental'
-				|| attacker.species.name === 'Vivillion-Garden' || attacker.species.name === 'Vivillion-Marine' || attacker.species.name === 'Vivillion-Archipelago' 
-				|| attacker.species.name === 'Vivillion-River' || attacker.species.name === 'Vivillion-Ocean' )) {
+			if (move.type === 'Water' &&
+				(attacker.species.name === 'Vivillion-Polar' || attacker.species.name === 'Vivillion-Continental' ||
+					attacker.species.name === 'Vivillion-Garden' || attacker.species.name === 'Vivillion-Marine' ||
+					attacker.species.name === 'Vivillion-Archipelago' || attacker.species.name === 'Vivillion-River' ||
+					attacker.species.name === 'Vivillion-Ocean')) {
 				this.debug('Pattern boost');
 				return this.chainModify(1.33);
 			}
