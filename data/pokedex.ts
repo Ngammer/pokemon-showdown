@@ -9147,7 +9147,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	toxicroakmega: {
-		num: 407,
+		num: 454,
 		name: "Toxicroak-Mega",
 		baseSpecies: "Toxicroak",
 		forme: "Mega",
