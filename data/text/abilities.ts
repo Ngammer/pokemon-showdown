@@ -2470,8 +2470,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Knowledge",
 		shortDesc: "This Pokemon's Psychic-type moves have their power multiplied by 1.2.",
 	},
-	conjurator: {
-		name: "Conjurator",
+	feared: {
+		name: "Feared",
 		desc: "On switch-in, this Pokemon lowers the Special Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of opponents by 1 stage.",
 	},
