@@ -9570,7 +9570,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Amorphous"],
 	},
 	dusknoirmega: {
-		num: 330,
+		num: 447,
 		name: "Dusknoir-Mega",
 		baseSpecies: "Dusknoir",
 		forme: "Mega",

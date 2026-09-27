@@ -9,7 +9,7 @@
                     ["Mega Drain", "Giga Drain"],
                     ["Earth Power", "Weather Ball"],
                     ["Sludge Bomb"],
-                    ["Growth"]
+                    ["Sunny Day"]
                 ],
                 "item": ["Life Orb"],
                 "nature": "modest",
@@ -37,7 +37,7 @@
                     ["Giga Drain"],
                     ["Acid Spray", "Sludge Bomb"],
                     ["Toxic", "Sleep Powder", "Poison Powder"],
-                    ["Knock Off"]
+                    ["Earth Power"]
                 ],
                 "item": ["Life Orb"],
                 "nature": "modest",
