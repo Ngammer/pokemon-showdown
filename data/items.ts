@@ -10116,6 +10116,57 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -107,
 		gen: 8,
 	},
+	ancientseed: {
+		name: "Ancient Seed",
+		spritenum: 744,
+		onTakeItem(item, pokemon, source) {
+			return false;
+		},
+		onStart(pokemon) {
+			const stats = {
+				atk: pokemon.getStat('atk', true, true),
+				def: pokemon.getStat('def', true, true),
+				spa: pokemon.getStat('spa', true, true),
+				spd: pokemon.getStat('spd', true, true),
+				spe: pokemon.getStat('spe', true, true),
+			};
+			const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
+			this.effectState.bestStats = sortedStats.slice(0, 1).map(s => s[0]);
+			this.debug(`Ancient Seed boosts: ${this.effectState.bestStats.join(', ')}`);
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (!this.effectState.bestStats?.includes('atk')) return;
+			this.debug('Ancient Seed atk boost');
+			return this.chainModify(1.2);
+		},
+		onModifyDefPriority: 6,
+		onModifyDef(def, pokemon) {
+			if (!this.effectState.bestStats?.includes('def')) return;
+			this.debug('Ancient Seed def boost');
+			return this.chainModify(1.2);
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			if (!this.effectState.bestStats?.includes('spa')) return;
+			this.debug('Ancient Seed spa boost');
+			return this.chainModify(1.2);
+		},
+		onModifySpDPriority: 6,
+		onModifySpD(spd, pokemon) {
+			if (!this.effectState.bestStats?.includes('spd')) return;
+			this.debug('Ancient Seed spd boost');
+			return this.chainModify(1.2);
+		},
+		onModifySpe(spe, pokemon) {
+			if (!this.effectState.bestStats?.includes('spe')) return;
+			this.debug('Ancient Seed spe boost');
+			return this.chainModify(1.2);
+		},
+		itemUser: ["Quagsire-Feudal", "Slowking-Feudal", "Wungsparce-Feudal", "Granbull-Feudal", "Qwilfish-Feudal", "Ursaring-Feudal", "Mantine-Feudal", "Kingdra-Feudal", "Donphan-Feudal", "Celebi-Feudal"],
+		num: -108,
+		gen: 8,
+	},
 	cryorb: {
 		name: "Cryorb",
 		spritenum: 219,

@@ -9493,7 +9493,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 	},
 	porygonzmega: {
-		num: 330,
+		num: 474,
 		name: "Porygon-Z-Mega",
 		baseSpecies: "Porygon-Z",
 		forme: "Mega",
@@ -9570,7 +9570,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Amorphous"],
 	},
 	dusknoirmega: {
-		num: 447,
+		num: 477,
 		name: "Dusknoir-Mega",
 		baseSpecies: "Dusknoir",
 		forme: "Mega",
@@ -15409,7 +15409,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	xerneasmega: {
-		num: 717,
+		num: 716,
 		name: "Xerneas-Mega",
 		baseSpecies: "Xerneas",
 		forme: "Mega",
