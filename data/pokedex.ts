@@ -15692,7 +15692,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Decidueye-Hisui-Mega",
 		baseSpecies: "Decidueye",
 		forme: "Mega",
-		types: ["Grass", "Ghost"],
+		types: ["Grass", "Fighting"],
 		baseStats: { hp: 88, atk: 152, def: 110, spa: 65, spd: 95, spe: 125 },
 		abilities: { 0: "Combat Archer" },
 		heightm: 1.6,
@@ -22485,7 +22485,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Grass", "Dragon"],
 	},
 	hydrapplemega: {
-		num: 887,
+		num: 1019,
 		name: "Hydrapple-Mega",
 		baseSpecies: "Hydrapple",
 		forme: "Mega",
