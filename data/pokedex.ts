@@ -15661,7 +15661,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega",
 		types: ["Grass", "Ghost"],
 		baseStats: { hp: 81, atk: 85, def: 105, spa: 157, spd: 105, spe: 105 },
-		abilities: { 0: "Invencible Archer" },
+		abilities: { 0: "Foolproof Archer" },
 		heightm: 1.6,
 		weightkg: 36.6,
 		color: "Brown",
