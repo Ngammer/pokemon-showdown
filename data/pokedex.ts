@@ -16194,7 +16194,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		battleOnly: "Wishiwashi",
 	},
 	wishiwashitotem: {
-		num: 743,
+		num: 746,
 		name: "Wishiwashi-Totem",
 		baseSpecies: "Wishiwashi",
 		forme: "Totem",
@@ -16208,7 +16208,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Giant Totem",
 	},
 	wishiwashischooltotem: {
-		num: 743,
+		num: 746,
 		name: "Wishiwashi-School-Totem",
 		baseSpecies: "Wishiwashi",
 		forme: "School-Totem",
