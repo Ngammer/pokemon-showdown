@@ -5268,7 +5268,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	eternatuseternamax: {
 
-		tier: "OU",
+		tier: "Illegal",
 	},
 	kubfu: {
 		tier: "LC",
