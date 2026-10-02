@@ -10010,7 +10010,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -262,
 	},
 	devourer: {
-		onSwitchIn(pokemon) {
+		onStart(pokemon) {
 			for (const active of this.getAllActive()) {
 				const item = active.takeItem();
 				if (item) {

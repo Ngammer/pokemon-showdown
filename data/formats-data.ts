@@ -2092,6 +2092,11 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	minum: {
+		tier: "LC",
+		doublesTier: "(DUU)",
+		natDexTier: "OU",
+	},
 	cheermin: {
 		tier: "OU",
 		doublesTier: "(DUU)",
