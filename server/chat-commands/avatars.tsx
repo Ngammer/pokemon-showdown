@@ -670,7 +670,7 @@ const OFFICIAL_AVATARS_SELENA = new Set([
 ]);
 
 const CUSTOM_AVATARS_NGAMMER = new Set([
-	'juansssss', 'ngammer',
+	'juansssss', 'ngammer', 'shinkahma',
 ]);
 
 const OFFICIAL_AVATARS_WISTERIAPURPLE = new Set([
