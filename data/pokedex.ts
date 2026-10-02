@@ -12316,7 +12316,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Mega",
 		types: ["Bug", "Electric"],
 		baseStats: { hp: 70, atk: 67, def: 70, spa: 139, spd: 80, spe: 149 },
-		abilities: { 0: "Galvanided  Hair" },
+		abilities: { 0: "Galvanized Hair" },
 		heightm: 0.8,
 		weightkg: 14.3,
 		color: "Yellow",
