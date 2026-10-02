@@ -9869,7 +9869,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
 				if (this.randomChance(2, 10)) {
-					source.trySetStatus('tox', target);
+					source.trySetStatus('frz', target);
 				}
 			}
 		},
