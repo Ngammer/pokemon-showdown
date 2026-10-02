@@ -5345,11 +5345,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSourceHit(target, source, move) {
 			if (move.type === 'Steel' && move.category === 'Physical') {
-				this.boost({ atk: 1 });
+				this.boost({ atk: 1 }, source);
 			} else if (move.type === 'Steel' && move.category === 'Special') {
-				this.boost({ spa: 1 });
+				this.boost({ spa: 1 }, source);
 			} if (move.type === 'Steel' && move.category === 'Status') {
-				this.boost({ def: 1 });
+				this.boost({ def: 1 }, source);
 			}
 		},
 		flags: { },
