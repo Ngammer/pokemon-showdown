@@ -12878,7 +12878,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Braviary-Hisui-Totem",
 		baseSpecies: "Braviary-Hisui",
 		forme: "Hisui-Totem",
-		types: ["Grass", "Fighting"],
+		types: ["Psychic", "Flying"],
 		gender: "M",
 		baseStats: { hp: 120, atk: 72, def: 70, spa: 150, spd: 83, spe: 65 },
 		abilities: { 0: "Gigantification" },
