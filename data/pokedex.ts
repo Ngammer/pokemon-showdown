@@ -16213,7 +16213,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Wishiwashi",
 		forme: "School-Totem",
 		types: ["Water"],
-		baseStats: { hp: 115, atk: 140, def: 130, spa: 140, spd: 130, spe: 25 },
+		baseStats: { hp: 115, atk: 140, def: 130, spa: 135, spd: 130, spe: 30 },
 		abilities: { 0: "Gigantification (Schooling)" },
 		heightm: 8.2,
 		weightkg: 78.6,
