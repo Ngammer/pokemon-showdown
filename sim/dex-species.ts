@@ -353,7 +353,8 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.isMega = this.forme.includes('Mega') || undefined;
 		this.isTotem = !!(this.forme && ['Alola-Totem', 'Totem', 'Hisui-Totem', 'Totem-Serious',
 			'Totem-Grief', 'Totem-Wrath'].includes(this.forme)) || undefined;
-		this.isPrimal = this.forme === 'Primal' || undefined;
+		this.isPrimal = this.forme === 'Primal' || this.forme === 'Snowy-Primal' ||
+			this.forme === 'Rainy-Primal' || this.forme === 'Sunny-Primal' || undefined;
 		this.canGigantamax = data.canGigantamax || undefined;
 		this.gmaxUnreleased = !!data.gmaxUnreleased;
 		this.cannotDynamax = !!data.cannotDynamax;
