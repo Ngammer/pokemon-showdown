@@ -20249,7 +20249,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "M-Totem",
 		types: ["Water", "Ghost"],
 		gender: "M",
-		baseStats: { hp: 145, atk: 152, def: 65, spa: 65, spd: 75, spe: 78 },
+		baseStats: { hp: 135, atk: 147, def: 65, spa: 80, spd: 75, spe: 78 },
 		abilities: { 0: "Gigantification" },
 		heightm: 3.6,
 		weightkg: 158.4,
