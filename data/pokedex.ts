@@ -16417,7 +16417,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Totem",
 		types: ["Poison", "Fire"],
 		gender: "F",
-		baseStats: { hp: 100, atk: 44, def: 60, spa: 149, spd: 60, spe: 117 },
+		baseStats: { hp: 100, atk: 64, def: 50, spa: 149, spd: 50, spe: 117 },
 		abilities: { 0: "Gigantification" },
 		heightm: 2.1,
 		weightkg: 81,
