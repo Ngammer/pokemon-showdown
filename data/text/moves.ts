@@ -216,8 +216,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	aromaticmist: {
 		name: "Aromatic Mist",
-		desc: "Raises the target's Special Defense by 1 stage. Fails if there is no ally adjacent to the user. Every Pokemon in the user's party is cured of its non-volatile status condition. Active Pokemon with the Sap Sipper Ability are not cured, unless they are the user.",
-		shortDesc: "Cures the user's party of all status. Raises an ally's Sp. Def by 2.",
+		desc: "Raises the user's Special Defense by 2 stages and cures the user of any major status condition.",
+		shortDesc: "+2 SpD; cures status.",
 	},
 	assist: {
 		name: "Assist",
@@ -270,8 +270,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	attract: {
 		name: "Attract",
-		desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Oblivious Ability or protected by the Aroma Veil Ability are immune.",
-		shortDesc: "A target of the opposite gender gets infatuated; -1 Def and Spd. ",
+		desc: "Infatuates the target if it is of the opposite gender. Lowers the target's Defense and Special Defense by 1 stage.",
+		shortDesc: "Infatuates if opposite gender; -1 Def, -1 SpD.",
 		gen5: {
 			desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Oblivious Ability are immune.",
 		},
@@ -384,8 +384,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	batonpass: {
 		name: "Baton Pass",
-		desc: "The user is replaced with another Pokemon in its party. The selected Pokemon restores 1/4 of its maximum HP.",
-		shortDesc: "User switches, healing the target by 25% of its max HP.",
+		desc: "The user switches out, and the incoming Pokémon heals 25% of its maximum HP.",
+		shortDesc: "User switches out; heals incoming Pokémon by 25%.",
 		gen8: {
 			desc: "The user is replaced with another Pokemon in its party. The selected Pokemon has the user's stat stage changes transferred to it, as well as the effects of confusion, Aqua Ring, Curse, Embargo, Focus Energy, Gastro Acid, Heal Block, Ingrain, Leech Seed, Lock-On (Mind Reader), Magnet Rise, Perish Song, Power Trick, Telekinesis, and a substitute with its remaining HP. The effect of Gastro Acid is not transferred if the recipient has an Ability that cannot be affected.",
 		},
@@ -471,8 +471,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bide: {
 		name: "Bide",
-		desc: "hits with the user's second type, its power is doubled if it was attacked first.",
-		shortDesc: "Power doubles if user is damaged by the target.",
+		desc: "Power doubles if the user is hit by the target before moving. Takes the type of the user's secondary type, or primary type if it lacks a secondary type.",
+		shortDesc: "Double power if hit first; adopts user's type.",
 		gen4: {
 			desc: "The user spends two turns locked into this move and then, on the second turn after using this move, the user attacks the last Pokemon that hit it, inflicting double the damage in HP it lost to attacks during the two turns. If the last Pokemon that hit it is no longer active, the user attacks a random opposing Pokemon instead. If the user is prevented from moving during this move's use, the effect ends. This move does not check accuracy and ignores type immunity.",
 		},
@@ -580,8 +580,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	block: {
 		name: "Block",
-		desc: "Prevents the target and user from switching out.  If they faint, the opponent boosts their 3 higest stats by 1 and heals 25%. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.",
-		shortDesc: "Prevents the target and user from switching out. If they faint, the opponent boosts their 3 higest stats by 1 and heals 25%.",
+		desc: "Prevents targets from switching out. If this knocks out the target, raises the user's highest three stats by 1 stage, heals the user by 25% of its max HP, and ends the trapping effect.",
+		shortDesc: "Traps; boosts top 3 stats & heals 25% on KO.",
 		gen7: {
 			desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
 		},
@@ -605,8 +605,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	blueflare: {
 		name: "Blue Flare",
-		desc: "Has a 30% chance to burn the target. Cannot be selected the turn after it's used.",
-		shortDesc: "30% chance to BRN the target. Cannot be selected the turn after it's used.",
+		desc: "Has a 30% chance to burn the target. Cannot be selected consecutively.",
+		shortDesc: "30% burn; cannot be selected consecutively.",
 	},
 	bodypress: {
 		name: "Body Press",
@@ -628,8 +628,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	boltstrike: {
 		name: "Bolt Strike",
-		desc: "Has a 30% chance to paralize the target. Cannot be selected the turn after it's used.",
-		shortDesc: "30% chance to PRZ the target. Cannot be selected the turn after it's used.",
+		desc: "Has a 30% chance to paralyze the target. Cannot be selected consecutively.",
+		shortDesc: "30% paralyze; cannot be selected consecutively.",
 	},
 	stickybomb: {
 		name: "Sticky Bomb",
@@ -750,8 +750,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	brutalswing: {
 		name: "Brutal Swing",
-		desc: "100% chance to lower the target's Atk by 1. 30% chance to confuse the target. Hits adjacent pokemon",
-		shortDesc: "Lower target's Atk by 1. 30%: confuse the target. Hits adjacent pokemon",
+		desc: "Has a 100% chance to lower the target's Attack by 1 stage and a 30% chance to confuse the target. Hits adjacent Pokemon.",
+		shortDesc: "100% to lower Atk by 1; 30% confuse. Hits foes.",
 	},
 	bubble: {
 		name: "Bubble",
@@ -840,7 +840,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	burnup: {
 		name: "Burn Up",
-		shortDesc: "The category changes depending on the user's attack.",
+		desc: "Usable only if the user is Fire-type. Category depends on the user's highest attacking stat. The user loses its Fire type after use.",
+		shortDesc: "Fire only; adapts category; loses Fire type.",
 		gen8: {
 			desc: "Fails unless the user is a Fire type. If this move is successful, the user's Fire type becomes typeless as long as it remains active.",
 		},
@@ -892,7 +893,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	celebrate: {
 		name: "Celebrate",
-		shortDesc: "if used after fainted an opponent it increases all stats",
+		desc: "Raises all stats by 1 stage if used after knocking out an opponent.",
+		shortDesc: "+1 to all stats if used after KO.",
 
 		activate: "  Congratulations, [TRAINER]!",
 	},
@@ -1057,7 +1059,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	confide: {
 		name: "Confide",
 		desc: "Lowers the target's Attack and Special Attack by 1 stage.",
-		shortDesc: "Lowers the target's Atk and Sp. Atk by 1. Usually goes first.",
+		shortDesc: "Lowers the target's Atk and Sp. Atk by 1.",
 	},
 	confuseray: {
 		name: "Confuse Ray",
@@ -1084,8 +1086,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	conversion: {
 		name: "Conversion",
-		desc: "The user's type changes to match the original type of the move in its first move slot. Raises the user's Special Attack by 2 stages. Fails if the user cannot change its type, or if the type is one of the user's current types.",
-		shortDesc: "Changes user's type to match its first move and raises the user's Sp. Atk by 2.",
+		desc: "Changes the user's type to match the type of its first move. Raises the user's Special Attack by 2 stages.",
+		shortDesc: "Changes type to 1st move's type; +2 SpA.",
 		gen5: {
 			desc: "The user's type changes to match the original type of one of its known moves besides this move, at random, but not either of its current types. Fails if the user cannot change its type, or if this move would only be able to select one of the user's current types.",
 			shortDesc: "Changes user's type to match a known move.",
@@ -1105,8 +1107,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	conversion2: {
 		name: "Conversion 2",
-		desc: "The user's type changes to match the original type of the move in its second move slot. Raises the user's Attack and Special Attack by 1 stage. Fails if the user cannot change its type, or if the type is one of the user's current types.",
-		shortDesc: "Changes user's type to match its second move and raises the user's Atk and Sp. Atk by 1.",
+		desc: "Changes the user's type to match the type of its second move. Raises the user's Special Attack and Special Defense by 1 stage.",
+		shortDesc: "Changes to 2nd move's type; +1 SpA, SpD.",
 		gen4: {
 			desc: "The user's type changes to match a type that resists or is immune to the type of the last move used against the user, if it was successful against the user, but not either of its current types. The determined type of the move is used rather than the original type. Fails if the last move used against the user was not successful, if the user has the Multitype Ability, or if this move would only be able to select one of the user's current types.",
 			shortDesc: "User's type changes to resist last move against it.",
@@ -1121,8 +1123,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	copycat: {
 		name: "Copycat",
-		desc: "The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Blazing Torque, Celebrate, Chatter, Circle Throw, Combat Torque, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Dynamax Cannon, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Magical Torque, Mat Block, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Tera Starstorm, Thief, Transform, Trick, Whirlwind, or Wicked Torque.",
-		shortDesc: "Uses the last move used in the battle with increased accuracy and power.",
+		desc: "Copies the user's last used move, increasing its Base Power and accuracy by 25%.",
+		shortDesc: "Copies last used move with +25% BP and accuracy.",
 		gen8: {
 			desc: "The user uses the last move used by any Pokemon, including itself. The base move of Max and G-Max Moves is considered for this purpose. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Dynamax Cannon, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, or Whirlwind.",
 		},
@@ -1156,8 +1158,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	corrosivegas: {
 		name: "Corrosive Gas",
-		desc: "The target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, Paradox Pokemon, or Ogerpon to lose their Blue Orb, Red Orb, Adamant Crystal, Lustrous Globe, Griseous Core, Plate, Drive, Memory, Rusted Sword, Rusted Shield, Booster Energy, or Mask, respectively. In this case, Paradox Pokemon include every species with the Protosynthesis and Quark Drive Abilities, except Gouging Fire, Raging Bolt, Iron Boulder, and Iron Crown. Items lost to this move cannot be regained with Recycle or the Harvest Ability. 30% chance to badly poison the target. Hits Steel type pokemon",
-		shortDesc: "Removes adjacent Pokemon's held items and 30% chance to badly poison the target.",
+		desc: "1.5x power if the target has an item. Removes the target's item. Has a 30% chance to poison the target.",
+		shortDesc: "1.5x power if item; removes it; 30% poison.",
 		gen8: {
 			desc: "The target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, Groudon, Giratina, Arceus, Genesect, Silvally, Zacian, or Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield, respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
 		},
@@ -1526,8 +1528,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	doodle: {
 		name: "Doodle",
-		desc: "The user swaps its Ability, Types and stat changes with the target's Ability. Fails if either the user or the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Wonder Guard, Zen Mode, or Zero to Hero.",
-		shortDesc: "The user and the target trade Abilities, Types and stat changes.",
+		desc: "Swaps types, ability, and stat changes with the target.",
+		shortDesc: "Swaps types, ability, and stat changes.",
 	},
 	doomdesire: {
 		name: "Doom Desire",
@@ -1605,7 +1607,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	doubleteam: {
 		name: "Double Team",
-		shortDesc: "Changes and increases the speed of the incoming pokemon.",
+		desc: "The user switches out. The incoming Pokémon's Speed is raised by 1 stage. Has +1 priority.",
+		shortDesc: "Switches user; incoming +1 Spe; +1 priority.",
 	},
 	dracometeor: {
 		name: "Draco Meteor",
@@ -1662,7 +1665,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	dragonrage: {
 		name: "Dragon Rage",
-		shortDesc: "Dragon hits Fairy.",
+		shortDesc: "Hits Fairy types with neutral damage.",
 	},
 	dragonrush: {
 		name: "Dragon Rush",
@@ -1784,15 +1787,16 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	electricterrain: {
 		name: "Electric Terrain",
-		desc: "For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.",
-		shortDesc: "5 turns. Grounded: +Electric power, can't sleep. Spe: +1",
+		desc: "For 5 turns, the terrain becomes Electric Terrain. Grounded Pokemon's Electric attacks do 1.3x damage and cannot fall asleep. Camouflage turns the user Electric, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to paralyze. Fails if already Electric Terrain.",
+		shortDesc: "Sets Electric Terrain; +1 Speed.",
 		gen7: {
 			desc: "For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.5 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Grounded Pokemon cannot become affected by Yawn or fall asleep from its effect. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.",
 		},
 	},
 	electrify: {
 		name: "Electrify",
-		shortDesc: "Target becomes weak to electric moves.",
+		desc: "Raises the user's Special Attack by 1 stage. Makes Electric-type moves super effective against the target, regardless of its typing or immunities.",
+		shortDesc: "+1 SpA; Electric hits target super effectively.",
 
 		start: "  [POKEMON] became weaker to electric!",
 	},
@@ -1903,8 +1907,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	entrainment: {
 		name: "Entrainment",
-		desc: "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Truant, Zen Mode, or Zero to Hero, or the same Ability as the user, or if the user's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, or Zero to Hero.",
-		shortDesc: "Target: Raises all stats by 1 (not acc/eva) and Heals 75% HP if they KOed an opponent last turn.",
+		desc: "If the target fainted a Pokémon last turn and its HP is above 75%, raises all its stats by 1 stage.",
+		shortDesc: "If target KO'd last turn and >75% HP, +1 all stats.",
 		gen8: {
 			desc: "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or the same Ability as the user, or if the user's Ability is As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode.",
 		},
@@ -1986,8 +1990,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	fairylock: {
 		name: "Fairy Lock",
-		desc: "Prevents all active Pokemon from switching next turn. A Pokemon can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the effect is already active. This move's type effectiveness against Rock, Fairy and Ice is changed to be super effective no matter what this move's type is.",
-		shortDesc: "Prevents all Pokemon from switching. Super effective on Fairy, Rock and Ice.",
+		desc: "Traps the target. Deals super effective damage to Fairy, Rock, and Ice types.",
+		shortDesc: "Traps target; super effective vs Fairy, Rock, Ice.",
 		gen7: {
 			desc: "Prevents all active Pokemon from switching next turn. A Pokemon can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. Fails if the effect is already active.",
 		},
@@ -2056,9 +2060,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	ficklebeam: {
 		name: "Fickle Beam",
-		shortDesc: "Hits 5 times. Decrease a target random stat -1",
-
-		activate: "  [POKEMON] is going all out for this attack!",
+		desc: "Hits five times. Each hit has a 10% chance to lower a random stat of the target by 1 stage.",
+		shortDesc: "Hits 5 times; 10% per hit to lower a stat.",
 	},
 	fierydance: {
 		name: "Fiery Dance",
@@ -2219,8 +2222,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flash: {
 		name: "Flash",
-		desc: "Has a 100% chance to make the target flinch. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken.",
-		shortDesc: "100% flinch chance.",
+		desc: "Causes the target to flinch. Cannot be used two turns in a row.",
+		shortDesc: "Flinches target; cannot be used consecutively.",
 	},
 	flashcannon: {
 		name: "Flash Cannon",
@@ -2229,8 +2232,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flatter: {
 		name: "Flatter",
-		desc: "Raises the target's Special Attack by 1 stage and confuses it.",
-		shortDesc: "Raises the target's Sp. Atk by 1 and confuses it.",
+		desc: "For 5 turns, priority moves on the opposing side are prevented.",
+		shortDesc: "For 5 turns, blocks opposing priority moves.",
 	},
 	fleurcannon: {
 		name: "Fleur Cannon",
@@ -2239,8 +2242,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	fling: {
 		name: "Fling",
-		desc: "The power of this move is based on the user's held item. The held item is lost and it activates for the target if applicable. If there is no target or the target avoids this move by protecting itself, the user's held item is still lost. The user can regain a thrown item with Recycle or the Harvest Ability. Fails if the user has no held item, if the held item cannot be thrown, if the user is under the effect of Embargo or Magic Room, or if the user has the Klutz Ability.",
-		shortDesc: "Flings the user's item at the target. Power varies.",
+		desc: "The power and effect of this move depend on the user's held item. The item is not lost. Fails if the user has no held item, if the user has the Klutz Ability, or if Embargo or Magic Room is in effect.",
+		shortDesc: "Flings item without losing it; effect varies.",
 		gen4: {
 			desc: "The power of this move is based on the user's held item. The held item is lost and it activates for the target if applicable. If the target avoids this move by protecting itself, the user's held item is still lost. The user can regain a thrown item with Recycle. Fails if the user has no held item, if the held item cannot be thrown, or if the user is under the effect of Embargo.",
 		},
@@ -2261,13 +2264,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	floralhealing: {
 		name: "Floral Healing",
-		desc: "The user restores 1/2 of its maximum HP, rounded half up. Resets stats below 0",
-		shortDesc: "Heals the user by 50% of its max HP. Resets stats below 0",
+		desc: "The user heals 50% of its max HP. Resets its negative stat stages to 0.",
+		shortDesc: "Heals 50% HP; resets negative stats.",
 	},
 	flowershield: {
 		name: "Flower Shield",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make no contact with the user have their Special Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from damaging attacks. No contact: -1 Spa.",
+		desc: "Protects the user from damaging moves. If the attacker makes no contact, its Special Attack is lowered by 1 stage.",
+		shortDesc: "Protects; non-contact lowers attacker SpA.",
 	},
 	flowertrick: {
 		name: "Flower Trick",
@@ -2308,8 +2311,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	focusenergy: {
 		name: "Focus Energy",
-		desc: "Raises the user's chance for a critical hit by 2 stages. Fails if the user already has the effect. Baton Pass can be used to transfer this effect to an ally. Raises the user's Speed by 1.",
-		shortDesc: "Raises the user's critical hit ratio by 2. Raises the user's Speed by 1.",
+		desc: "Raises the user's critical hit ratio by 2 stages and its Speed by 1 stage.",
+		shortDesc: "Raises crit ratio by 2 and Speed by 1.",
 		gen2: {
 			desc: "Raises the user's chance for a critical hit by 1 stage. Fails if the user already has the effect. Baton Pass can be used to transfer this effect to an ally.",
 			shortDesc: "Raises the user's critical hit ratio by 1.",
@@ -2374,8 +2377,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	forestscurse: {
 		name: "Forest's Curse",
-		desc: "Causes the Grass type to be added to the target, effectively making it have two or three types. Fails if the target is already a Grass type. If Trick-or-Treat adds a type to the target, it replaces the type added by this move and vice versa.",
-		shortDesc: "Adds Grass to the target's type(s).",
+		desc: "Makes the target weak to Grass, ignoring immunities. Raises the user's Attack by 1 stage.",
+		shortDesc: "Makes target weak to Grass; raises user Attack by 1.",
 	},
 	foulplay: {
 		name: "Foul Play",
@@ -3644,8 +3647,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	lashout: {
 		name: "Lash Out",
-		desc: "Power doubles if the user had a stat stage lowered this turn. Power doubles if user is burn/poison/paralyzed/Freeze.",
-		shortDesc: "2x power: User had a stat lowered or is status ailment.",
+		desc: "Power doubles if the user has a non-volatile status condition or any stat stage below 0.",
+		shortDesc: "Power doubles if user has status or stat drop.",
 	},
 	lastresort: {
 		name: "Last Resort",
@@ -3924,12 +3927,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	magneticflux: {
 		name: "Magnetic Flux",
-		shortDesc: "Set charge to steel and electric pokemon. Raises spa and atk with plus and minus.",
+		desc: "Afflicts Steel- and Electric-type Pokemon with the charged status. Raises the user's Attack and Special Attack if the user has the Plus or Minus ability.",
+		shortDesc: "Charges Steel/Electric; boosts via Plus/Minus.",
 	},
 	magnetrise: {
 		name: "Magnet Rise",
-		desc: "The user is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, Thousand Arrows, and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effects of Ingrain, Smack Down, or Thousand Arrows. effect is lost when switching",
-		shortDesc: "The user has immunity to Ground.",
+		desc: "The user becomes immune to Ground-type moves. Removes hazards from the user's side of the field.",
+		shortDesc: "User gains Ground immunity; clears hazards.",
 		gen5: {
 			desc: "For 5 turns, the user is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effects of Ingrain or Smack Down.",
 		},
@@ -4160,8 +4164,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	memento: {
 		name: "Memento",
-		desc: "Lowers the target's Attack and Special Attack by 2 stages. If this move is successful, the user loses 1/4 of its maximum HP, rounded down. This move fails entirely if it hits a Pokemon behind a substitute, but does not fail if the target's stats cannot be lowered.",
-		shortDesc: "Lowers target's Atk, SpA by 2. User loses 1/4 max HP",
+		desc: "Lowers the target's Attack and Special Attack by 2 stages in exchange for the user losing 1/4 of its maximum HP, rounded down.",
+		shortDesc: "User loses 25% HP; target -2 Atk/SpA.",
 		gen4: {
 			desc: "Lowers the target's Attack and Special Attack by 2 stages. The user faints, even if this move misses. This move can hit targets in the middle of a two-turn move. Fails entirely if there is no target, but does not fail if the target's stats cannot be changed.",
 		},
@@ -4599,8 +4603,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	nightdaze: {
 		name: "Night Daze",
-		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "100% chance to lower the foe(s) Speed by 1.",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage. Hits adjacent foes.",
+		shortDesc: "Lowers target's Speed by 1. Hits foes.",
 	},
 	nightmare: {
 		name: "Nightmare",
@@ -5172,8 +5176,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	punishment: {
 		name: "Punishment",
-		desc: "Power is equal to 60+(X*20), where X is the target's total stat stage changes that are greater than 0, but not more than 200 power.",
-		shortDesc: "60 power +20 for each of the target's stat boosts.",
+		desc: "Power increases by 40 for each of the user's stat stage boosts, and removes all of the user's stat boosts after use. Category depends on the user's higher offensive stat.",
+		shortDesc: "+40 power per boost; clears boosts.",
 	},
 	purify: {
 		name: "Purify",
@@ -6496,8 +6500,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	spotlight: {
 		name: "Spotlight",
-		desc: "Until the end of the turn, all single-target attacks from opponents of the target are redirected to the target. Such attacks are redirected to the target before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal. Paralyze on contact",
-		shortDesc: "Target's foes' moves are redirected to it. Paralyze on contact",
+		desc: "The user redirects single-target attacks to itself in double battles. If an attacker makes contact, it is paralyzed.",
+		shortDesc: "Redirects attacks in doubles; paralyzes on contact.",
 
 		start: "#followme",
 		startFromZEffect: "#followme",
