@@ -2396,8 +2396,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	freezeshock: {
 		name: "Freeze Shock",
-		desc: "Has a 100% chance to lower the target's Attack by 1 stage. Has 30% chance to paralyze the target.",
-		shortDesc: "Lower the target's Attack by 1. 30% chance to paralyze the target.",
+		desc: "Has a 30% chance to paralyze the target. Lowers the user's Attack by 1 stage.",
+		shortDesc: "30% paralyze target; -1 user Attack.",
 
 		prepare: "  [POKEMON] became cloaked in a freezing light!",
 	},
@@ -2517,8 +2517,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	gearup: {
 		name: "Gear Up",
-		desc: "Raises the Attack and Special Attack of Pokemon. Raises the Attack and Special Attack of Pokemon on the user's side with the Plus or Minus Abilities by 2 stage.",
-		shortDesc: "Raises Atk, Sp. Atk. Raises Atk, Sp. Atk by 2 with Plus/Minus ",
+		desc: "Raises the user's Attack and Special Attack by 1 stage. Raises them by 2 stages if the user has Plus or Minus.",
+		shortDesc: "+1 Atk, SpA; +2 if user has Plus or Minus.",
 	},
 	genesissupernova: {
 		name: "Genesis Supernova",
@@ -2797,8 +2797,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	grassyterrain: {
 		name: "Grassy Terrain",
-		desc: "For 5 turns, the terrain becomes Grassy Terrain. During the effect, the power of Grass-type attacks used by grounded Pokemon is multiplied by 1.3, the power of Bulldoze, Earthquake, and Magnitude used against grounded Pokemon is multiplied by 0.5, and grounded Pokemon have 1/16 of their maximum HP, rounded down, restored at the end of each turn, including the last turn. Camouflage transforms the user into a Grass type, Nature Power becomes Energy Ball, and Secret Power has a 30% chance to cause sleep. Fails if the current terrain is Grassy Terrain.",
-		shortDesc: "5 turns. Grounded: +Grass power, +1/16 max HP.",
+		desc: "For 5 turns, the terrain becomes Grassy Terrain. During the effect, the power of Grass-type attacks used by grounded Pokemon is multiplied by 1.3, the power of Bulldoze, Earthquake, and Magnitude used against grounded Pokemon is multiplied by 0.5, and grounded Pokemon have 1/16 of their maximum HP, rounded down, restored at the end of each turn, including the last turn. Camouflage transforms the user into a Grass type, Nature Power becomes Energy Ball, and Secret Power has a 30% chance to cause sleep. Fails if the current terrain is Grassy Terrain. Raises the user's Attack by 1 stage.",
+		shortDesc: "Sets Grassy Terrain; +1 user Attack.",
 		gen7: {
 			desc: "For 5 turns, the terrain becomes Grassy Terrain. During the effect, the power of Grass-type attacks used by grounded Pokemon is multiplied by 1.5, the power of Bulldoze, Earthquake, and Magnitude used against grounded Pokemon is multiplied by 0.5, and grounded Pokemon have 1/16 of their maximum HP, rounded down, restored at the end of each turn, including the last turn. Camouflage transforms the user into a Grass type, Nature Power becomes Energy Ball, and Secret Power has a 30% chance to cause sleep. Fails if the current terrain is Grassy Terrain.",
 		},
@@ -2810,8 +2810,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	gravity: {
 		name: "Gravity",
-		desc: "For 5 turns, the evasiveness of all active Pokemon is multiplied by 0.6. At the time of use, Bounce, Fly, Magnet Rise, Sky Drop, and Telekinesis end immediately for all active Pokemon. During the effect, Bounce, Fly, Flying Press, High Jump Kick, Jump Kick, Magnet Rise, Sky Drop, Splash, and Telekinesis are prevented from being used by all active Pokemon. Ground-type attacks, Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability can affect Flying types or Pokemon with the Levitate Ability. Fails if this move is already in effect.",
-		shortDesc: "5 turns: no Ground immunities, 1.67x accuracy.",
+		desc: "For 5 turns, the evasiveness of all active Pokemon is multiplied by 0.6. At the time of use, Bounce, Fly, Magnet Rise, Sky Drop, and Telekinesis end immediately for all active Pokemon. During the effect, Bounce, Fly, Flying Press, High Jump Kick, Jump Kick, Magnet Rise, Sky Drop, Splash, and Telekinesis are prevented from being used by all active Pokemon. Ground-type attacks, Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability can affect Flying types or Pokemon with the Levitate Ability. Fails if this move is already in effect. Raises the user's Speed by 1 stage.",
+		shortDesc: "Sets Gravity; +1 user Speed.",
 		gen7: {
 			desc: "For 5 turns, the evasiveness of all active Pokemon is multiplied by 0.6. At the time of use, Bounce, Fly, Magnet Rise, Sky Drop, and Telekinesis end immediately for all active Pokemon. During the effect, Bounce, Fly, Flying Press, High Jump Kick, Jump Kick, Magnet Rise, Sky Drop, Splash, and Telekinesis are prevented from being used by all active Pokemon. Ground-type attacks, Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability can affect Flying types or Pokemon with the Levitate Ability. Fails if this move is already in effect. Relevant Z-Powered moves can still be selected, but will be prevented at execution during this effect.",
 		},
@@ -2827,8 +2827,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	growl: {
 		name: "Growl",
-		desc: "Lowers the target's Attack by 1 stage.",
-		shortDesc: "Lowers the foe(s) Attack by 1.",
+		desc: "Forces the target to switch out. Has +1 priority. Cannot be used two turns in a row.",
+		shortDesc: "+1 priority; forces switch; no consecutive use.",
 		gen2: {
 			shortDesc: "Lowers the target's Attack by 1.",
 		},
@@ -2867,15 +2867,15 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	guardsplit: {
 		name: "Guard Split",
-		desc: "The user and the target have their Defense and Special Defense stats set to be equal to the average of the user and the target's Defense and Special Defense stats, respectively, rounded down. Stat stage changes are unaffected.",
-		shortDesc: "Averages Defense and Sp. Def stats with target.",
+		desc: "Bypasses protection and Substitute without breaking them.",
+		shortDesc: "Bypasses protect and Substitute.",
 
 		activate: "  [POKEMON] shared its guard with the target!",
 	},
 	guardswap: {
 		name: "Guard Swap",
-		desc: "The user swaps its Defense and Special Defense stat stage changes with the target.",
-		shortDesc: "Swaps Defense and Sp. Def changes with target.",
+		desc: "Swaps the user's Defense and Special Defense stat stages with its Attack and Special Attack stat stages. Raises the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Swaps Atk/SpA boosts with Def/SpD; +1 Def, SpD.",
 	},
 	guillotine: {
 		name: "Guillotine",
@@ -2921,8 +2921,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	hail: {
 		name: "Hail",
-		desc: "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type or have the Ice Body, Magic Guard, Overcoat, or Snow Cloak Abilities. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Hail.",
-		shortDesc: "For 5 turns, hail crashes down.",
+		desc: "Leaves an icicle on the field for 5 turns. Disappears instantly under Sun; lasts twice as long under Snow. Max 5 hazards on the field. Deals 5% damage and has a 5% chance to freeze switching-in Pokemon.",
+		shortDesc: "Sets icicle hazard; deals 5% and 5% freeze.",
 		gen4: {
 			desc: "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type or have the Ice Body, Magic Guard, or Snow Cloak Abilities. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Hail.",
 		},
